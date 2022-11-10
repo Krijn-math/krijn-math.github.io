@@ -20,6 +20,35 @@ rainbow is dead
             body { background-color: 	#BDEDE0; color: #373F51 }
             a { color: #36599b; }
             a:visited { color: 	#E26D5C; }
+            .fulljustify {
+                            text-align:justify;
+                        }
+                        .fulljustify:after {
+                            content: "";
+                            display: inline-block;
+                            width: 100%;	
+                        }
+                        #tagline {
+                            height: 80px;
+                            overflow: hidden;
+                            line-height: 80px; /* vert-center */
+                        }
+
+            @media (min-width: 100px) {
+                ol {  width: max-width; }
+                details {  width: max-width;  text-align: justify; }     
+                details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;  
+                                 cursor: pointer; } 
+                img { width: 100%; }
+                }
+            
+            @media (min-width: 500px) {
+                ol {  width: 420px; }
+                details {  width: 420px;  text-align: justify; }     
+                details > summary {  padding-left: 20px; padding-top: 6px;  width: 420px;  
+                                 cursor: pointer; } 
+                img { width: 420px; }
+                }
         </style>
         <link rel="icon" href="favicon.ico"/>
     <body>
@@ -31,21 +60,31 @@ rainbow is dead
 <br>
 <ol reversed class="spaced-list">
     <li>
+        <b>take your meds: digital signatures from matrix code equivalence</b><br/>
+        tung chou and ruben niederhagen, edoardo persichetti, tovohery hajatiana randrianarisoa,
+        krijn reijnders, simona samardjiska and monika trimoska.<br/>
+        <a href="//ia.cr/2022/" target="_blank">eprint</a><br/>
+    </li>
+    <br>
+    <li>
         <b>disorientation faults in csidh</b><br/>
-        gustavo banegas and juliane krämer and tanja lange and michael meyer<br/>
-        and lorenz panny and krijn reijnders and jana sotáková and monika trimoska.<br/>
+        gustavo banegas, juliane krämer, tanja lange, michael meyer,
+        lorenz panny, krijn reijnders, jana sotáková and monika trimoska.<br/>
         <a href="//ia.cr/2022/1202" target="_blank">eprint</a><br/>
     </li>
+    <br>
     <li>
         <b>patient zero & patient six: zero-value and correlation attacks on csidh and sike</b><br/>
         fabio campos and michael meyer and krijn reijnders and marc stöttinger. <i>sac 2022</i>.<br/>
         <a href="//ia.cr/2022/904" target="_blank">eprint</a><br/>
     </li>
+    <br>
     <li>
         <b>hardness estimates of the code equivalence problem in the rank metric</b><br/>
         krijn reijnders and simona samardjiska and monika trimoska. <i>wcc 2022</i>.<br/>
         <a href="//ia.cr/2022/276" target="_blank">eprint</a><br/>
     </li>
+    <br>
     <li>
         <b>fully projective radical isogenies in constant-time</b><br/>
         jesús-javier chi-domínguez and krijn reijnders. <i>ct-rsa 2022</i>.<br/>
