@@ -12,7 +12,7 @@
             width: 3236327px;
             height: 600px;
             position: relative;
-            animation: scrollGraph 10000s linear forwards;
+            animation: scrollGraph 300s ease-in-out forwards;
         }
         
         .graph-point {
@@ -71,6 +71,13 @@
             0% { left: 400px; }
             100% { left: -3236227px; }
         }
+
+        .static-content {
+            margin-top: 200px;
+            font-size: 60px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -104,8 +111,27 @@
                 document.write(graphPoint);
             }
 
-            for (let i = 1; i <= 1000; i++) {
+            for (let i = 1; i <= 10; i++) {
                 const leftPosition = i * 100;
+                const leftPositionMul = leftPosition * 1;
+                const isMultipleOf1000 = (i === 100);
+                const className = isMultipleOf1000 ? 'vertical-line multiple-of-1000' : 'vertical-line';
+                document.write(`<div class="${className}" style="left: ${leftPosition}px;"></div>`);
+                document.write(`<span class="x-value-label" style="left: ${leftPosition}px;">${leftPositionMul}</span>`);
+            }
+
+            for (let i = 1; i <= 100; i++) {
+                const leftPosition = i * 1000;
+                const leftPositionMul = leftPosition * 1;
+                const isMultipleOf1000 = (i === 100);
+                const className = isMultipleOf1000 ? 'vertical-line multiple-of-1000' : 'vertical-line';
+                document.write(`<div class="${className}" style="left: ${leftPosition}px;"></div>`);
+                document.write(`<span class="x-value-label" style="left: ${leftPosition}px;">${leftPositionMul}</span>`);
+            }
+
+
+            for (let i = 1; i <= 10; i++) {
+                const leftPosition = i * 10000;
                 const leftPositionMul = leftPosition * 1;
                 const isMultipleOf1000 = (i === 100);
                 const className = isMultipleOf1000 ? 'vertical-line multiple-of-1000' : 'vertical-line';
@@ -118,53 +144,57 @@
                 // document.write(`<div class="${className}" style="left: ${adjustedX}px;"></div>`);
                 // document.write(`<span class="x-value-label" style="left: ${adjustedX}px;">${x}</span>`);
         </script>
-
-        <!-- <script>
-            for (let i = 1; i <= 11; i++) {
-                const leftPosition = i * 1000;
-                const isMultipleOf1000 = (i === 11);
-                const className = isMultipleOf1000 ? 'vertical-line multiple-of-1000' : 'vertical-line';
-                document.write(`<div class="${className}" style="left: ${leftPosition}px;"></div>`);
-                document.write(`<span class="x-value-label" style="left: ${leftPosition}px;">${leftPosition}</span>`);
-            }
-        </script>
-        
-        <div class="graph-point" style="left: 90px; bottom: 237px;">
-            <span class="graph-label">SDitH</span>
-        </div>
-        <div class="graph-point" style="left: 2022704.375px; bottom: 39px;">
-            <span class="graph-label">WAVE</span>
-        </div>
-        <div class="graph-point" style="left: 9528.75px; bottom: 169px;">
-            <span class="graph-label">Durandal</span>
-        </div>
-        <div class="graph-point" style="left: 243.125px; bottom: 12px;">
-            <span class="graph-label">FuLeeCa</span>
-        </div>
-        <div class="graph-point" style="left: 7231.25px; bottom: 433px;">
-            <span class="graph-label">LESS-FM</span>
-        </div>
-        <div class="graph-point" style="left: 6201.875px; bottom: 412px;">
-            <span class="graph-label">MEDS</span>
-        </div>
-        <div class="graph-point" style="left: 6201.875px; bottom: 87px;">
-            <span class="graph-label">MEDS w/ trick</span>
-        </div>
-        <div class="graph-point" style="left: 820px; bottom: 101px;">
-            <span class="graph-label">Dilithium</span>
-        </div>
-        <div class="graph-point" style="left: 560.625px; bottom: 28px;">
-            <span class="graph-label">Falcon</span>
-        </div>
-        <div class="graph-point" style="left: 20px; bottom: 327px;">
-            <span class="graph-label">Sphincs+</span>
-        </div>
-        <div class="graph-point" style="left: 20px; bottom: 6px;">
-            <span class="graph-label">SQISign</span>
-        </div>
-        <div class="graph-point" style="left: 629.375px; bottom: 23px;">
-            <span class="graph-label">Hawk</span>
-        </div> -->
     </div>
+
+
+    <div class="static-content" id="message-container"></div>
+
+    <script>
+        const messageContainer = document.getElementById('message-container');
+        const animationDuration = 300; // seconds
+
+        const updateMessage = () => {
+            const currentTime = Math.floor((performance.now() / 1000) % animationDuration);
+
+            if (currentTime >= 0 && currentTime < 5) {
+                messageContainer.textContent = "Public key size -->";
+            } 
+            else if (currentTime >= 6 && currentTime < 10) {
+                messageContainer.textContent = "That were lattices";
+            } 
+            else if (currentTime >= 12 && currentTime < 13) {
+                messageContainer.textContent = "That was MEDS!";
+            } 
+            else if (currentTime >= 13 && currentTime < 14) {
+                messageContainer.textContent = "And LESS-FM!";
+            } 
+            else if (currentTime >= 14.5 && currentTime < 16) {
+                messageContainer.textContent = "Remember Durandal?";
+            } 
+
+
+            else if (currentTime >= 20 && currentTime < 25) {
+                messageContainer.textContent = "Now it might take a while";
+            } 
+            else if (currentTime >= 35 && currentTime < 36) {
+                messageContainer.textContent = "I'm sorry";
+            } 
+            else if (currentTime >= 38 && currentTime < 39) {
+                messageContainer.textContent = "I didn't design the last scheme";
+            } 
+            else if (currentTime >= 39 && currentTime < 40) {
+                messageContainer.textContent = "Don't blame me";
+            } 
+            
+            else  
+            {
+                messageContainer.textContent = "";
+            }
+
+            requestAnimationFrame(updateMessage);
+        };
+
+        updateMessage();
+    </script>
 </body>
 </html>
