@@ -3,62 +3,52 @@
 <head>
   <title>Where is WAVE?</title>
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-  <script src="script.js"></script> <!-- Link to your JavaScript file -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js library -->
+  <style>
+    #chart-container {
+      height: 100%;
+      overflow-x: scroll;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <!-- Header content goes here -->
-  </header>
+  <div id="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
   
-  <nav>
-    <!-- Navigation menu or links go here -->
-  </nav>
-  
-  <main>
-    <div id="scroll-container">
-      <div id="scroll-content">
-        <canvas id="myChart"></canvas>
-        <script>
-            // Get the canvas element
-            const canvas = document.getElementById('myChart');
-          
-            // Create the chart context
-            const ctx = canvas.getContext('2d');
-          
-            // Define the data points
-            const data = {
-              datasets: [{
-                data: [
-                  { x: 2, y: 10, name: 'ABC' },
-                  { x: 300000000, y: 156, name: 'POP' }
-                ],
-                pointBackgroundColor: 'rgba(75, 192, 192, 1)', // Customize the point color
-                pointRadius: 6, // Customize the point radius
-                pointHoverRadius: 8 // Customize the point hover radius
-              }]
-            };
-          
-            // Initialize the chart
-            new Chart(ctx, {
-              type: 'scatter',
-              data: data,
-              options: {
-                scales: {
-                  x: {
-                    type: 'linear',
-                    position: 'bottom'
-                  }
-                }
-              }
-            });
-          </script>          
-      </div>
-    </div>
-  </main>
-  
-  <footer>
-    <!-- Footer content goes here -->
-  </footer>
+  <script>
+    // Get the canvas element
+    const canvas = document.getElementById('myChart');
+
+    // Create the chart context
+    const ctx = canvas.getContext('2d');
+
+    // Define the data points
+    const data = {
+      datasets: [{
+        data: [
+          { x: 2, y: 10, name: 'ABC' },
+          { x: 300000, y: 156, name: 'POP' }
+        ],
+        pointBackgroundColor: 'rgba(75, 192, 192, 1)', // Customize the point color
+        pointRadius: 6, // Customize the point radius
+        pointHoverRadius: 8 // Customize the point hover radius
+      }]
+    };
+
+    // Initialize the chart
+    new Chart(ctx, {
+      type: 'scatter',
+      data: data,
+      options: {
+        scales: {
+          x: {
+            type: 'linear',
+            position: 'bottom'
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
