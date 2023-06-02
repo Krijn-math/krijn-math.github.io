@@ -9,10 +9,10 @@
         }
         
         .graph-container {
-            width: 10350px;
-            height: 400px;
+            width: 3236327px;
+            height: 600px;
             position: relative;
-            animation: scrollGraph 10s linear forwards;
+            animation: scrollGraph 10000s linear forwards;
         }
         
         .graph-point {
@@ -22,19 +22,149 @@
             height: 10px;
             border-radius: 50%;
         }
+
+        .graph-label {
+            position: right;
+            color: blue;
+            font-size: 12px;
+            margin-left: 20px;
+        }
+
+        .x-axis,
+        .y-axis {
+            position: absolute;
+            background-color: black;
+        }
         
+        .x-axis {
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+        }
+        
+        .y-axis {
+            width: 2px;
+            height: 100%;
+            left: 0;
+        }
+        
+        .vertical-line {
+            position: absolute;
+            background-color: lightgray;
+            width: 1px;
+            height: 100%;
+        }
+        
+        .vertical-line.multiple-of-1000 {
+            background-color: gray;
+        }
+
+        .x-value-label {
+            position: absolute;
+            color: black;
+            font-size: 12px;
+            bottom: -20px;
+            transform: translateX(-50%);
+        }
+
         @keyframes scrollGraph {
-            0% { left: 0; }
-            100% { left: -10900px; }
+            0% { left: 400px; }
+            100% { left: -3236227px; }
         }
     </style>
 </head>
 <body>
     <div class="graph-container">
-        <div class="graph-point" style="left: 123px; bottom: 342px;"></div>
-        <div class="graph-point" style="left: 435px; bottom: 127px;"></div>
-        <div class="graph-point" style="left: 10345px; bottom: 334px;"></div>
-        <div class="graph-point" style="left: 30px; bottom: 128px;"></div>
+        <div class="x-axis"></div>
+        <div class="y-axis"></div>
+
+        <script>
+            const data = [
+                ['SDitH', 144, 284],
+                ['WAVE', 3236327, 47],
+                ['Durandal', 15246, 203],
+                ['FuLeeCa', 389, 14],
+                ['LESS-FM', 11570, 520],
+                ['MEDS', 9923, 495],
+                ['MEDS w/ trick', 9923, 104],
+                ['Cross', 0, 0],
+                ['Dilithium', 1312, 121],
+                ['Falcon', 897, 33],
+                ['Sphincs+', 32, 393],
+                ['SQISign', 32, 7],
+                ['SQISignHD', 32, 5],
+                ['Hawk', 1007, 28]
+            ];
+            
+            for (let i = 0; i < data.length; i++) {
+                const [label, x, y] = data[i];              
+                const graphPoint = `<div class="graph-point" style="left: ${x}px; bottom: ${y}px;">
+                                        <span class="graph-label">${label}</span>
+                                    </div>`;
+                document.write(graphPoint);
+            }
+
+            for (let i = 1; i <= 1000; i++) {
+                const leftPosition = i * 100;
+                const leftPositionMul = leftPosition * 1;
+                const isMultipleOf1000 = (i === 100);
+                const className = isMultipleOf1000 ? 'vertical-line multiple-of-1000' : 'vertical-line';
+                document.write(`<div class="${className}" style="left: ${leftPosition}px;"></div>`);
+                document.write(`<span class="x-value-label" style="left: ${leftPosition}px;">${leftPositionMul}</span>`);
+            }
+                // const adjustedX = x * 20;
+                // const isMultipleOf10000 = (adjustedX === 10000);
+                // const className = isMultipleOf10000 ? 'vertical-line multiple-of-10000' : 'vertical-line';
+                // document.write(`<div class="${className}" style="left: ${adjustedX}px;"></div>`);
+                // document.write(`<span class="x-value-label" style="left: ${adjustedX}px;">${x}</span>`);
+        </script>
+
+        <!-- <script>
+            for (let i = 1; i <= 11; i++) {
+                const leftPosition = i * 1000;
+                const isMultipleOf1000 = (i === 11);
+                const className = isMultipleOf1000 ? 'vertical-line multiple-of-1000' : 'vertical-line';
+                document.write(`<div class="${className}" style="left: ${leftPosition}px;"></div>`);
+                document.write(`<span class="x-value-label" style="left: ${leftPosition}px;">${leftPosition}</span>`);
+            }
+        </script>
+        
+        <div class="graph-point" style="left: 90px; bottom: 237px;">
+            <span class="graph-label">SDitH</span>
+        </div>
+        <div class="graph-point" style="left: 2022704.375px; bottom: 39px;">
+            <span class="graph-label">WAVE</span>
+        </div>
+        <div class="graph-point" style="left: 9528.75px; bottom: 169px;">
+            <span class="graph-label">Durandal</span>
+        </div>
+        <div class="graph-point" style="left: 243.125px; bottom: 12px;">
+            <span class="graph-label">FuLeeCa</span>
+        </div>
+        <div class="graph-point" style="left: 7231.25px; bottom: 433px;">
+            <span class="graph-label">LESS-FM</span>
+        </div>
+        <div class="graph-point" style="left: 6201.875px; bottom: 412px;">
+            <span class="graph-label">MEDS</span>
+        </div>
+        <div class="graph-point" style="left: 6201.875px; bottom: 87px;">
+            <span class="graph-label">MEDS w/ trick</span>
+        </div>
+        <div class="graph-point" style="left: 820px; bottom: 101px;">
+            <span class="graph-label">Dilithium</span>
+        </div>
+        <div class="graph-point" style="left: 560.625px; bottom: 28px;">
+            <span class="graph-label">Falcon</span>
+        </div>
+        <div class="graph-point" style="left: 20px; bottom: 327px;">
+            <span class="graph-label">Sphincs+</span>
+        </div>
+        <div class="graph-point" style="left: 20px; bottom: 6px;">
+            <span class="graph-label">SQISign</span>
+        </div>
+        <div class="graph-point" style="left: 629.375px; bottom: 23px;">
+            <span class="graph-label">Hawk</span>
+        </div> -->
     </div>
 </body>
 </html>
