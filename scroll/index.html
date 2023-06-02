@@ -1,90 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Where is WAVE?</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!
-  -- Include Chart.js library -->
-  <style>
-        #chart-container {
-        width: 50000px; /* Set a large width to accommodate the chart */
-        overflow-x: scroll; /* Enable horizontal scrolling */
+    <title>Graph Display</title>
+    <style>
+        body {
+            overflow-x: auto;
+            overflow-y: hidden;
         }
-
-        #myChart {
-        width: 100%; /* Ensure the chart fills the container width */
+        
+        .graph-container {
+            width: 11000px;
+            height: 400px;
+            position: relative;
+            animation: scrollGraph 110s linear infinite;
         }
-  </style>
+        
+        .graph-point {
+            position: absolute;
+            background-color: blue;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        
+        @keyframes scrollGraph {
+            0% { left: 0; }
+            100% { left: -10900px; }
+        }
+    </style>
 </head>
 <body>
-  <div id="chart-container">
-    <canvas id="myChart"></canvas>
-  </div>
-  
-  <script>
-    // Create the chart and retrieve the chart object
-    // Get the canvas element
-    const canvas = document.getElementById('myChart');
-
-    // Create the chart context
-    const ctx = canvas.getContext('2d');
-    
-    const data = {
-      datasets: [{
-        data: [
-          { x: 2, y: 10, name: 'ABC' },
-          { x: 300000, y: 156, name: 'POP' }
-        ],
-        pointBackgroundColor: 'rgba(75, 192, 192, 1)', // Customize the point color
-        pointRadius: 6, // Customize the point radius
-        pointHoverRadius: 8 // Customize the point hover radius
-      }]
-    },
-        // Initialize the chart
-    new Chart(ctx, {
-      type: 'scatter',
-      data: data,
-      options: {
-        scales: {
-            xAxes: [
-                    {
-                        barPercentage: 1,
-                        categoryPercentage: 1,
-                        gridLines: {
-                        display: true
-                        }
-                    }
-                    ],
-        }
-      }
-    });
-
-
-    // Define the scrolling animation
-    const container = document.getElementById('chart-container');
-    const scrollSpeed = 10; // Adjust scrolling speed (smaller value = slower)
-
-    function scrollContainer() {
-    container.scrollLeft += 1; // Adjust scroll speed (smaller value = slower)
-    }
-
-    // Start the scrolling animation
-    let animation = setInterval(scrollContainer, scrollSpeed);
-
-    // Stop the scrolling animation when the end of the chart is reached
-    const chartWidth = chart.scales['x-axis-0'].width;
-    const containerWidth = container.offsetWidth;
-
-    if (chartWidth <= containerWidth) {
-    clearInterval(animation);
-    }
-
-
-
-    // Define the data points
-
-
-
-  </script>
+    <div class="graph-container">
+        <div class="graph-point" style="left: 123px; bottom: 342px;"></div>
+        <div class="graph-point" style="left: 435px; bottom: 127px;"></div>
+        <div class="graph-point" style="left: 10345px; bottom: 334px;"></div>
+        <div class="graph-point" style="left: 30px; bottom: 128px;"></div>
+    </div>
 </body>
 </html>
