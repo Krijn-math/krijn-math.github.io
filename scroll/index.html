@@ -6,10 +6,14 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!
   -- Include Chart.js library -->
   <style>
-    #chart-container {
-      height: 80%;
-      overflow-x: scroll;
-    }
+        #chart-container {
+        width: 50000px; /* Set a large width to accommodate the chart */
+        overflow-x: scroll; /* Enable horizontal scrolling */
+        }
+
+        #myChart {
+        width: 100%; /* Ensure the chart fills the container width */
+        }
   </style>
 </head>
 <body>
@@ -18,13 +22,13 @@
   </div>
   
   <script>
+    // Create the chart and retrieve the chart object
     // Get the canvas element
     const canvas = document.getElementById('myChart');
 
     // Create the chart context
     const ctx = canvas.getContext('2d');
-
-    // Define the data points
+    
     const data = {
       datasets: [{
         data: [
@@ -35,21 +39,52 @@
         pointRadius: 6, // Customize the point radius
         pointHoverRadius: 8 // Customize the point hover radius
       }]
-    };
-
-    // Initialize the chart
+    },
+        // Initialize the chart
     new Chart(ctx, {
       type: 'scatter',
       data: data,
       options: {
         scales: {
-          x: {
-            type: 'linear',
-            position: 'bottom'
-          }
+            xAxes: [
+                    {
+                        barPercentage: 1,
+                        categoryPercentage: 1,
+                        gridLines: {
+                        display: true
+                        }
+                    }
+                    ],
         }
       }
     });
+
+
+    // Define the scrolling animation
+    const container = document.getElementById('chart-container');
+    const scrollSpeed = 10; // Adjust scrolling speed (smaller value = slower)
+
+    function scrollContainer() {
+    container.scrollLeft += 1; // Adjust scroll speed (smaller value = slower)
+    }
+
+    // Start the scrolling animation
+    let animation = setInterval(scrollContainer, scrollSpeed);
+
+    // Stop the scrolling animation when the end of the chart is reached
+    const chartWidth = chart.scales['x-axis-0'].width;
+    const containerWidth = container.offsetWidth;
+
+    if (chartWidth <= containerWidth) {
+    clearInterval(animation);
+    }
+
+
+
+    // Define the data points
+
+
+
   </script>
 </body>
 </html>
