@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>NIST Signatures</title>
+        <style>
+            body { font-family: monospace; display: flex; justify-content: center;}
+            nav { margin-right: 2em; padding: 1em; }
+            ul { margin: 0; padding-left: 5em; }
+            .spaced-list > li { margin-bottom: 1ex; }
+            .spaced-list { display: inline-block;  text-align: left;}
+            hr { border: 1px solid gray; margin: 2ex 0; }
+            a { text-decoration: none; }
+            a:hover { text-decoration: underline; }
+            body { background-color: 	#BDEDE0; color: #373F51 }
+            button {
+  background-color: #BDEDE0;
+  border: none;
+  color: #36599b;
+  text-align: center;
+  display: inline-block;
+  font-family: monospace;
+}
+button:hover { text-decoration: underline; }
+            a { color: #36599b; }
+            a:visited { color: 	#E26D5C; }
+            .fulljustify {
+                            text-align:justify;
+                        }
+                        .fulljustify:after {
+                            content: "";
+                            display: inline-block;
+                            width: 100%;
+                        }
+                        #tagline {
+                            height: 80px;
+                            overflow: hidden;
+                            line-height: 80px; /* vert-center */
+                        }
+            div.container { text-align: center;  width: 400px; }
+            div.namediv { text-align: left;  width: 100px; display: inline-block;}
+            div.urldiv { text-align: center;  width: 100px; display: inline-block;}
+            /* div.values { text-align: center;  width: 200px; } */
+
+
+            @media (min-width: 100px) {
+                ul {  width: 400px; }
+                details {  width: max-width;  text-align: justify; }
+                details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;
+                                 cursor: pointer; }
+                img { width: 100%; }
+                }
+
+            @media (min-width: 500px) {
+                ul {  width: 400px; text-align: justify;}
+                details {  width: 400px;  text-align: justify; }
+                details > summary {  padding-left: 20px; padding-top: 6px;  width: 500px;
+                                 cursor: pointer; }
+                img { width: 500px; }
+                }
+
+            h1  {
+                text-align: center;
+                width: 400px;
+                padding-top: 20px;
+                padding-left: 0px;
+            }
+
+        .list-item {
+            text-align: justify;
+            width: 400px;
+        }
+        .item a {
+            display: inline-block; /* Set the link to be inline */
+            
+        }
+        .values {
+            display: inline-block; /* Hide the values by default */
+            text-align: justify;
+        }
+        .singlevalue {
+            display: inline-block;
+            text-align: right;
+            width: 66px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+
+        <header>
+            <h1>List of submissions to NIST Signature Schemes</h1>
+        </header>
+<br>
+
+<div class="container">
+<button onclick="revealValues()">(show sizes)</button>
+<br><br><br>
+
+<ul reversed class="spaced-list"; id="list"></ul>
+
+
+    <script>
+        function revealValues() {
+            var values = document.querySelectorAll('.values'); // Get all values divs
+
+            values.forEach(function(value) {
+                if (value.style.display === 'none') {
+                    value.style.display = 'inline-block'; // Show the values
+                } else {
+                    value.style.display = 'none'; // Hide the values
+                }
+            });
+        }
+
+        function loadListData() {
+            fetch('schemes.txt')
+                .then(response => response.text())
+                .then(data => {
+                    var list = document.getElementById('list');
+                    var lines = data.split('\n');
+
+                    lines.forEach(function(line) {
+                        var values = line.split(',');
+                        var name = values[0];
+                        var url = values[1];
+                        var value1 = values[2];
+                        var value2 = values[3];
+                        var value3 = values[4];
+
+                        var listItem = document.createElement('li');
+                        listItem.classList.add('list-item');
+                        var itemDiv = document.createElement('div');
+                        var nameDiv = document.createElement('div');
+                        nameDiv.classList.add('namediv');
+                        var nameHeading = document.createElement('b');
+
+                        var urlDiv = document.createElement('div');
+                        urlDiv.classList.add('urldiv');
+                        var urlLink = document.createElement('a');
+
+                        var valuesDiv = document.createElement('div');
+                        valuesDiv.classList.add('values');
+                        var value1Div = document.createElement('div');
+                        var value2Div = document.createElement('div');
+                        var value3Div = document.createElement('div');
+                        value1Div.classList.add('singlevalue');
+                        value2Div.classList.add('singlevalue');
+                        value3Div.classList.add('singlevalue');
+                        var value1Paragraph = document.createElement('span');
+                        var value2Paragraph = document.createElement('span');
+                        var value3Paragraph = document.createElement('span');
+                        var breakPar = document.createElement('br');
+
+                        nameHeading.textContent = name;
+                        urlLink.href = '//' + url + '.post-quantum-crypto.com';
+                        urlLink.textContent = 'link';
+                        value1Paragraph.textContent = value1;
+                        value2Paragraph.textContent = value2;
+                        value3Paragraph.textContent = (2*value1 + 3*value2)/5;
+
+                        value1Div.appendChild(value1Paragraph);
+                        value2Div.appendChild(value2Paragraph);
+                        value3Div.appendChild(value3Paragraph);
+
+
+                        valuesDiv.appendChild(value1Div);
+                        valuesDiv.appendChild(value2Div);
+                        valuesDiv.appendChild(value3Div);
+                        nameDiv.appendChild(nameHeading)
+                        urlDiv.appendChild(urlLink);
+                        
+                        itemDiv.appendChild(nameDiv);
+                        itemDiv.appendChild(urlDiv);
+                        itemDiv.appendChild(valuesDiv);
+
+                        listItem.appendChild(itemDiv);
+                        listItem.appendChild(breakPar);
+                        list.appendChild(listItem);
+                    });
+                });
+        }
+
+        loadListData();
+    </script>
+</body>
+</html>
