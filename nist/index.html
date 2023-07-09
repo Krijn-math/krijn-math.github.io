@@ -38,26 +38,23 @@
 
                                 var listItem = document.createElement('li');
                                 listItem.classList.add('list-item');
-                                var itemDiv = document.createElement('div');
+
                                 var nameDiv = document.createElement('div');
                                 nameDiv.classList.add('namediv');
                                 var nameHeading = document.createElement('b');
+                                nameHeading.textContent = name;
+                                nameDiv.appendChild(nameHeading)
 
                                 var urlDiv = document.createElement('div');
                                 urlDiv.classList.add('urldiv');
                                 var urlLink = document.createElement('a');
-
-                                nameHeading.textContent = name;
                                 urlLink.href = '//' + url + '.post-quantum-crypto.com';
                                 urlLink.textContent = 'link';
-
-                                nameDiv.appendChild(nameHeading)
                                 urlDiv.appendChild(urlLink);
 
-                                itemDiv.appendChild(nameDiv);
-                                itemDiv.appendChild(urlDiv);
-
-                                listItem.appendChild(itemDiv);
+                                listItem.appendChild(nameDiv);
+                                listItem.appendChild(urlDiv);
+                                
                                 list.appendChild(listItem);
                             });
                         });
