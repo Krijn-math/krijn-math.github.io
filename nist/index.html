@@ -1,139 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>NIST Signatures</title>
-        <style>
-            body { font-family: monospace; display: flex; justify-content: center;}
-            nav { margin-right: 2em; padding: 1em; }
-            ul { margin: 0; padding-left: 8em; }
-            .spaced-list > li { margin-bottom: 1ex; }
-            .spaced-list { display: inline-block;  text-align: left;}
-            hr { border: 1px solid gray; margin: 2ex 0; }
-            a { text-decoration: none; }
-            a:hover { text-decoration: underline; }
-            body { background-color: 	#BDEDE0; color: #373F51 }
-            button {
-  background-color: #BDEDE0;
-  border: none;
-  color: #36599b;
-  text-align: center;
-  display: inline-block;
-  font-family: monospace;
-}
-button:hover { text-decoration: underline; }
-            a { color: #36599b; }
-            a:visited { color: 	#E26D5C; }
-            .fulljustify {
-                            text-align:justify;
-                        }
-                        .fulljustify:after {
-                            content: "";
-                            display: inline-block;
-                            width: 100%;
-                        }
-                        #tagline {
-                            height: 80px;
-                            overflow: hidden;
-                            line-height: 80px; /* vert-center */
-                        }
+
+<head>
+    <meta charset="utf-8" />
+    <title>NIST Signatures</title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav {
+            margin-right: 2em;
+            padding: 1em;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 8em;
+        }
+
+        .spaced-list>li {
+            margin-bottom: 1ex;
+        }
+
+        .spaced-list {
+            display: inline-block;
+            text-align: left;
+        }
+
+        hr {
+            border: 1px solid gray;
+            margin: 2ex 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            background-color: #BDEDE0;
+            color: #373F51
+        }
+
+        button {
+            background-color: #BDEDE0;
+            border: none;
+            color: #36599b;
+            text-align: center;
+            display: inline-block;
+            font-family: monospace;
+        }
+
+        button:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            color: #36599b;
+        }
+
+        a:visited {
+            color: #E26D5C;
+        }
+
+        .fulljustify {
+            text-align: justify;
+        }
+
+        .fulljustify:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        #tagline {
+            height: 80px;
+            overflow: hidden;
+            line-height: 80px;
+            /* vert-center */
+        }
 
 
 
-            @media (min-width: 100px) {
-                ul {  width: 400px; }
-                details {  width: max-width;  text-align: justify; }
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;
-                                 cursor: pointer; }
-                img { width: 100%; }
-                }
-
-            @media (min-width: 500px) {
-                ul {  width: 400px; text-align: justify;}
-                details {  width: 400px;  text-align: justify; }
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: 500px;
-                                 cursor: pointer; }
-                img { width: 500px; }
-                }
-
-            h1  {
-                text-align: center;
+        @media (min-width: 100px) {
+            ul {
                 width: 400px;
-                padding-top: 20px;
-                padding-left: 0px;
             }
+
+            details {
+                width: max-width;
+                text-align: justify;
+            }
+
+            details>summary {
+                padding-left: 20px;
+                padding-top: 6px;
+                width: max-width;
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 500px) {
+            ul {
+                width: 400px;
+                text-align: justify;
+            }
+
+            details {
+                width: 400px;
+                text-align: justify;
+            }
+
+            details>summary {
+                padding-left: 20px;
+                padding-top: 6px;
+                width: 500px;
+                cursor: pointer;
+            }
+
+            img {
+                width: 500px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            width: 400px;
+            padding-top: 20px;
+            padding-left: 0px;
+        }
 
         .list-item {
             text-align: justify;
             width: 400px;
         }
-        .item a {
-            display: inline-block; /* Set the link to be inline */
-            
-        }
-        .container { text-align: center;  width: 400px; }
-        .namediv { text-align: left;  width: 100px; display: inline-block;}
-        .urldiv { text-align: center;  width: 100px; display: inline-block;}
 
+        .item a {
+            display: inline-block;
+            /* Set the link to be inline */
+
+        }
+
+        .container {
+            text-align: center;
+            width: 400px;
+        }
+
+        .namediv {
+            text-align: left;
+            width: 100px;
+            display: inline-block;
+        }
+
+        .urldiv {
+            text-align: center;
+            width: 100px;
+            display: inline-block;
+        }
     </style>
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="favicon.ico" />
 
 </head>
+
 <body>
     <main>
 
         <header>
             <h1>List of submissions to NIST Signature Schemes</h1>
         </header>
-<br>
+        <br>
 
-<div class="container">
-
-
-<ul reversed class="spaced-list"; id="list"></ul>
+        <div class="container">
 
 
-    <script>
-        function loadListData() {
-            fetch('schemes.txt')
-                .then(response => response.text())
-                .then(data => {
-                    var list = document.getElementById('list');
-                    var lines = data.split('\n');
+            <ul reversed class="spaced-list" ; id="list"></ul>
 
-                    lines.forEach(function(line) {
-                        var values = line.split(',');
-                        var name = values[0];
-                        var url = values[1];
 
-                        var listItem = document.createElement('li');
-                        listItem.classList.add('list-item');
-                        var itemDiv = document.createElement('div');
-                        var nameDiv = document.createElement('div');
-                        nameDiv.classList.add('namediv');
-                        var nameHeading = document.createElement('b');
+            <script>
+                function loadListData() {
+                    fetch('schemes.txt')
+                        .then(response => response.text())
+                        .then(data => {
+                            var list = document.getElementById('list');
+                            var lines = data.split('\n');
 
-                        var urlDiv = document.createElement('div');
-                        urlDiv.classList.add('urldiv');
-                        var urlLink = document.createElement('a');
+                            lines.forEach(function (line) {
+                                var values = line.split(',');
+                                var name = values[0];
+                                var url = values[1];
 
-                        nameHeading.textContent = name;
-                        urlLink.href = '//' + url + '.post-quantum-crypto.com';
-                        urlLink.textContent = 'link';
+                                var listItem = document.createElement('li');
+                                listItem.classList.add('list-item');
+                                var itemDiv = document.createElement('div');
+                                var nameDiv = document.createElement('div');
+                                nameDiv.classList.add('namediv');
+                                var nameHeading = document.createElement('b');
 
-                        nameDiv.appendChild(nameHeading)
-                        urlDiv.appendChild(urlLink);
-                        
-                        itemDiv.appendChild(nameDiv);
-                        itemDiv.appendChild(urlDiv);
+                                var urlDiv = document.createElement('div');
+                                urlDiv.classList.add('urldiv');
+                                var urlLink = document.createElement('a');
 
-                        listItem.appendChild(itemDiv);
-                        list.appendChild(listItem);
-                    });
-                });
-        }
+                                nameHeading.textContent = name;
+                                urlLink.href = '//' + url + '.post-quantum-crypto.com';
+                                urlLink.textContent = 'link';
 
-        loadListData();
-    </script>
+                                nameDiv.appendChild(nameHeading)
+                                urlDiv.appendChild(urlLink);
+
+                                itemDiv.appendChild(nameDiv);
+                                itemDiv.appendChild(urlDiv);
+
+                                listItem.appendChild(itemDiv);
+                                list.appendChild(listItem);
+                            });
+                        });
+                }
+
+                loadListData();
+            </script>
 </body>
+
 </html>
