@@ -1,0 +1,17 @@
+ALTEQ,alteq
+Biscuit,biscuit
+CROSS,cross
+FAEST,faest
+FuLeeca,fuleeca
+HAWK,hawk
+LESS,less
+MAYO,mayo
+MEDS,meds
+MiRitH,mirith
+PROV,prov
+QR-UOV,qruov
+Raccoon,raccoon
+SQIsign,sqisign
+UOV,uov
+VOX,vox
+Wave,wave
