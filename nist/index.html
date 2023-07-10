@@ -49,7 +49,8 @@
                                 urlDiv.classList.add('urldiv');
                                 var urlLink = document.createElement('a');
                                 urlLink.href = '//' + url + '.post-quantum-crypto.com';
-                                urlLink.textContent = 'link';
+                                if(url != 'todo')
+                                    urlLink.textContent = 'link';
                                 urlDiv.appendChild(urlLink);
 
                                 listItem.appendChild(nameDiv);
