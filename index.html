@@ -12,125 +12,209 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
 -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>post quantum crypto</title>
-        <style>
-            body { font-family: monospace; display: flex; justify-content: center;}
-            nav { margin-right: 2em; padding: 1em; }
-            ul { margin: 0; padding-left: 1em; }
-            .spaced-list > li { margin-bottom: 1ex; }
-            hr { border: 1px solid gray; margin: 2ex 0; }
-            a { text-decoration: none; }
-            a:hover { text-decoration: underline; }
-            body { background-color: 	#BDEDE0; color: #373F51 }
-            a { color: #36599b; }
-            a:visited { color: 	#E26D5C; }
-            .fulljustify {
-                            text-align:justify;
-                        }
-                        .fulljustify:after {
-                            content: "";
-                            display: inline-block;
-                            width: 100%;	
-                        }
-                        #tagline {
-                            height: 80px;
-                            overflow: hidden;
-                            line-height: 80px; /* vert-center */
-                        }
 
-            @media (min-width: 100px) {
-                ol {  width: max-width; }
-                details {  width: max-width;  text-align: justify; }     
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;  
-                                 cursor: pointer; } 
-                img { width: 100%; }
-                }
-            
-            @media (min-width: 500px) {
-                ol {  width: 390px; text-align: justify;}
-                details {  width: 500px;  text-align: justify; }     
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: 500px;  
-                                 cursor: pointer; } 
-                img { width: 500px; }
-                }
-        </style>
-        <link rel="icon" href="favicon.ico"/>
-    <body>
-        <main>
-            
-           <p style="text-align: center;"> 
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/b_AuzlaIxLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </p>
-            
-            <header>
-                <h1 style="text-align: center;">Kani came in like a wrecking ball</h1>
-            </header>
-<br>
-<p style="text-align: center;">
-With claws, with chains, no bits, no gains <br>
-We thought the security was strong <br>
-Ten years, we toiled, no breaks, we’re spoiled <br>
-    This scheme, nothing could go wrong <br></p>
+<head>
+    <meta charset="utf-8" />
+    <title>post quantum crypto</title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+        }
 
-<p style="text-align: center;">
-<strong> Bridge </strong><br>
-Don’t you ever say <br>
-    “Torsion is OK” <br>
-They will always hurt you <br><br>
-Don’t you ever say <br>
-    “SIKE is here to stay” <br>
-    And bet $50k on it too <br></p>
+        nav {
+            margin-right: 2em;
+            padding: 1em;
+        }
 
-           <p style="text-align: center;">
- <strong> Chorus </strong><br>
-Kani came in like a wrecking ball <br>
-With a diamond, they brought SIKE to fall <br>
-All we wanted was small keys, that’s all <br>
-But what Kani did was wreck SIKE <br>
-            Yeah, Kani, you wreck SIKE <r></p>
+        ul {
+            margin: 0;
+            padding-left: 1em;
+        }
 
- <p style="text-align: center;">
-Castryck-Decru in genus two, <br>
-And now, the Jacobian is split <br>
-The torsion points, I gave away <br>
-     And now, they got my private shit key <br></p> 
+        .spaced-list>li {
+            margin-bottom: 1ex;
+        }
 
-<p style="text-align: center;">
-<strong> Repeat Bridge </strong><br>
-<strong> Repeat Chorus </strong><br>
-</p>
-            <p style="text-align: center;">
-<strong> Chorus 2 </strong><br>
-Castryck-Decru like a wrecking ball <br>
-Followed up by Martindale-Maino <br>
-And Robert moved to dimension four <br>
-And together they all wrecked SIKE <br>
-                Yeah they, they wrecked SIKE <br></p>
+        hr {
+            border: 1px solid gray;
+            margin: 2ex 0;
+        }
 
-<p style="text-align: center;">
-Now that SIDH is dead <br>
-I guess we have to add a C <br>
-And signing with isogenies <br>
-    Requires us to learn to SQI <br></p>
+        .verse {
+            padding-left: 5em;
+        }
 
-            <p style="text-align: center;">
-Now that SIDH is dead <br>
-I guess we have to add a C <br>
-                I guess that we should go for SQI <br> </p>
+        a {
+            text-decoration: none;
+        }
 
-<p style="text-align: center;">
-Don’t you ever say <br>
-    “Torsion is OK” <br>
-    They will always hurt you <br></p>
+        a:hover {
+            text-decoration: underline;
+        }
 
-<p style="text-align: center;">
-<strong> Repeat Chorus </strong><br>
-<strong> Repeat Chorus 2 </strong><br>
-</p>
+        body {
+            background-color: #BDEDE0;
+            color: #373F51
+        }
 
-<!-- 
+        a {
+            color: #36599b;
+        }
+
+        a:visited {
+            color: #E26D5C;
+        }
+
+        .fulljustify {
+            text-align: justify;
+        }
+
+        .fulljustify:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        #tagline {
+            height: 80px;
+            overflow: hidden;
+            line-height: 80px;
+            /* vert-center */
+        }
+
+        @media (min-width: 100px) {
+            ol {
+                width: max-width;
+            }
+
+            details {
+                width: max-width;
+                text-align: justify;
+            }
+
+            details>summary {
+                padding-left: 20px;
+                padding-top: 6px;
+                width: max-width;
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 500px) {
+            ol {
+                width: 390px;
+                text-align: justify;
+            }
+
+            details {
+                width: 500px;
+                text-align: justify;
+            }
+
+            details>summary {
+                padding-left: 20px;
+                padding-top: 6px;
+                width: 500px;
+                cursor: pointer;
+            }
+
+            img {
+                width: 500px;
+            }
+        }
+    </style>
+    <link rel="icon" href="favicon.ico" />
+
+<body>
+    <main>
+
+        <p style="text-align: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b_AuzlaIxLs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </p>
+
+        <header>
+            <h1 style="text-align: center;">Kani came in like a wrecking ball</h1>
+        </header>
+        <br>
+        <div class="verse">
+            <div class="verse">
+                <p style="text-align: left;">
+                    With claws, with chains, no bits, no gains <br>
+                    We thought the security was strong <br>
+                    Ten years, we toiled, no breaks, we’re spoiled <br>
+                    This scheme, nothing could go wrong <br></p>
+
+                <p style="text-align: left;">
+                <div class="verse"><strong> Bridge </strong><br></div>
+                Don’t you ever say <br>
+                “Torsion is OK” <br>
+                They will always hurt you <br><br>
+                Don’t you ever say <br>
+                “SIKE is here to stay” <br>
+                And bet $50k on it too <br></p>
+
+                <p style="text-align: left;">
+                <div class="verse"><strong> Chorus </strong><br></div>
+                Kani came in like a wrecking ball <br>
+                With a diamond, they brought SIKE to fall <br>
+                All we wanted was small keys, that’s all <br>
+                But what Kani did was wreck SIKE <br>
+                Yeah, Kani, you wreck SIKE <r>
+                    </p>
+
+                    <p style="text-align: left;">
+                        Castryck-Decru in genus two, <br>
+                        And now, the Jacobian is split <br>
+                        The torsion points, I gave away <br>
+                        And now, they got my private shit key <br></p>
+
+                    <p style="text-align: left;">
+                        <div class="verse"><strong>Repeat Bridge</strong><br></div>
+                        <div class="verse"><strong>Repeat Chorus</strong><br></div>
+                    </p>
+                    <p style="text-align: left;">
+                    <div class="verse"><strong>Chorus 2 </strong><br></div>
+                        Castryck-Decru like a wrecking ball <br>
+                        Followed up by Martindale-Maino <br>
+                        And Robert moved to dimension four <br>
+                        And together they all wrecked SIKE <br>
+                        Yeah they, they wrecked SIKE <br>
+                    </p>
+
+                    <p style="text-align: left;">
+                        Now that SIDH is dead <br>
+                        I guess we have to add a C <br>
+                        And signing with isogenies <br>
+                        Requires us to learn to SQI <br></p>
+
+                    <p style="text-align: left;">
+                        Now that SIDH is dead <br>
+                        I guess we have to add a C <br>
+                        I guess that we should go for SQI <br> </p>
+
+                    <p style="text-align: left;">
+                        Don’t you ever say <br>
+                        “Torsion is OK” <br>
+                        They will always hurt you <br></p>
+
+                    <p style="text-align: left;">
+                        <div class="verse"><strong> Repeat Chorus </strong><br></div>
+                        <div class="verse"><strong> Repeat Chorus 2 </strong><br></div>
+                    </p>
+            </div>
+        </div>
+
+
+        <!-- 
 <ol reversed class="spaced-list">
     <li>
         <b>take your meds: digital signatures from matrix code equivalence.</b>
@@ -166,4 +250,4 @@ Don’t you ever say <br>
 <br>
 <h1 style="text-align: center;"><a href="//krijnreijnders.com" target="_blank">...</a></h1>
 -->
-</main>
+    </main>
