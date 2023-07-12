@@ -1,149 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>NIST Signatures</title>
-        <style>
-            body { font-family: monospace; display: flex; justify-content: center;}
-            nav { margin-right: 2em; padding: 1em; }
-            ul { margin: 0; padding-left: 10em; }
-            .spaced-list > li { margin-bottom: 1ex; }
-            .spaced-list { display: inline-block;  text-align: left;}
-            hr { border: 1px solid gray; margin: 2ex 0; }
-            a { text-decoration: none; }
-            a:hover { text-decoration: underline; }
-            body { background-color: 	#BDEDE0; color: #373F51 }
-            a { color: #36599b; }
-            a:visited { color: 	#E26D5C; }
-            .fulljustify {
-                            text-align:justify;
-                        }
-                        .fulljustify:after {
-                            content: "";
-                            display: inline-block;
-                            width: 100%;
-                        }
-                        #tagline {
-                            height: 80px;
-                            overflow: hidden;
-                            line-height: 80px; /* vert-center */
-                        }
-            div.container { text-align: center;  width: 20px; }
 
-            @media (min-width: 100px) {
-                ul {  width: 150px; }
-                details {  width: max-width;  text-align: justify; }
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;
-                                 cursor: pointer; }
-                img { width: 100%; }
-                }
+<head>
+    <meta charset="utf-8" />
+    <title>NIST Signatures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" />
 
-            @media (min-width: 500px) {
-                ul {  width: 150px; text-align: justify;}
-                details {  width: 500px;  text-align: justify; }
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: 500px;
-                                 cursor: pointer; }
-                img { width: 500px; }
-                }
-
-            h1  {
-                text-align: center;
-                width: 390px;
-                padding-top: 20px;
-                padding-left: 40px;
-            }
-        </style>
-        <link rel="icon" href="favicon.ico"/>
+</head>
 
 <body>
-        <main>
+    <main>
 
-            <header>
-                <h1>List of submissions to NIST Signature Schemes</h1>
-            </header>
-<br>
-<div class="container">
-<ul reversed class="spaced-list">
-    <li>
-        <b>ALTEQ
-        <span style="float:right;"><a href="//alteq.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>Biscuit
-        <span style="float:right;"><a href="//biscuit.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>CROSS
-        <span style="float:right;"><a href="//cross.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>FAEST
-        <span style="float:right;"><a href="//faest.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>FuLeeCa
-        <span style="float:right;"><a href="//fuleeca.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>HAWK
-        <span style="float:right;"><a href="//hawk.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>LIMA
-        <span style="float:right;"><a href="//lima.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>    
-    <li>
-        <b>LESS
-        <span style="float:right;"><a href="//less.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>MAYO
-        <span style="float:right;"><a href="//mayo.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>MEDS
-        <span style="float:right;"><a href="//meds.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>MiRitH
-        <span style="float:right;"><a href="//mirith.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>Raccoon
-        <span style="float:right;"><a href="//raccoon.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>SQISign
-        <!-- <span style="float:right;"><a href="//sqisign.post-quantum-crypto.com" target="_blank">link</a></span> -->
-    </li>
-    <br>
-    <li>
-        <b>UOV
-        <span style="float:right;"><a href="//uov.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>VOX
-        <span style="float:right;"><a href="//vox.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-    <li>
-        <b>Wave
-        <span style="float:right;"><a href="//wave.post-quantum-crypto.com" target="_blank">link</a></span>
-    </li>
-    <br>
-</ul>
-</div>
-</main>
+        <header>
+            <h1>List of submissions to NIST Signature Schemes</h1>
+        </header>
+        <br>
+
+        <div class="container">
+
+
+            <ul reversed class="spaced-list" ; id="list"></ul>
+
+
+            <script>
+                function loadListData() {
+                    fetch('schemes.txt')
+                        .then(response => response.text())
+                        .then(data => {
+                            var list = document.getElementById('list');
+                            var lines = data.split('\n');
+
+                            lines.forEach(function (line) {
+                                var values = line.split(',');
+                                var name = values[0];
+                                var url = values[1];
+
+                                var listItem = document.createElement('li');
+                                listItem.classList.add('list-item');
+
+                                var nameDiv = document.createElement('div');
+                                nameDiv.classList.add('namediv');
+                                var nameHeading = document.createElement('b');
+                                nameHeading.textContent = name;
+                                nameDiv.appendChild(nameHeading)
+
+                                var urlDiv = document.createElement('div');
+                                urlDiv.classList.add('urldiv');
+                                var urlLink = document.createElement('a');
+                                urlLink.href = '//' + url + '.post-quantum-crypto.com';
+                                if(url != 'todo')
+                                    urlLink.textContent = 'link';
+                                urlDiv.appendChild(urlLink);
+
+                                listItem.appendChild(nameDiv);
+                                listItem.appendChild(urlDiv);
+                                
+                                list.appendChild(listItem);
+                            });
+                        });
+                }
+
+                loadListData();
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>protips</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+
+<body>
+    <main>
+
+            <ul reversed class="spaced-list" ; id="list"></ul>
+
+
+            <script>
+                function loadListData() {
+                    fetch('protips.txt')
+                        .then(response => response.text())
+                        .then(data => {
+                            var list = document.getElementById('list');
+                            var lines = data.split('\n');
+
+                            lines.forEach(function (line) {
+
+                                var listItem = document.createElement('li');
+                                listItem.classList.add('list-item');
+                                listItem.textContent = line;
+                               
+                                list.appendChild(listItem);
+                            });
+                        });
+                }
+
+                loadListData();
+            </script>
+</body>
+
+</html>
