@@ -7,10 +7,15 @@ HAWK,hawk
 LESS,less
 MAYO,mayo
 MEDS,meds
+MIRA,mira
 MiRitH,mirith
+MQOM,todo
+PERK,perk
 PROV,prov
 QR-UOV,qruov
 Raccoon,raccoon
+RYDE,ryde
+SDitH,sdith
 SQIsign,sqisign
 TUOV,todo
 UOV,uov
