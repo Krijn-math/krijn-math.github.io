@@ -3,6 +3,7 @@ Biscuit,biscuit
 CROSS,cross
 FAEST,faest
 FuLeeca,fuleeca
+HAETAE,haetae
 HAWK,hawk
 LESS,less
 MAYO,mayo
