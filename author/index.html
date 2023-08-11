@@ -135,16 +135,8 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
     </style>
     <link rel="icon" href="favicon.ico" />
 
-<body>
-    <main>
-
-        <header>
-            <h1>Recent works</h1>
-        </header>
-        <br>
-
-        <ol reversed class="spaced-list" ; id="list">test</ol>
-        <script>
+    <script>
+        function getData() {
             var list = document.getElementById('list');
             var listItem = document.createElement('li');
             var listItem2 = document.createElement('li');
@@ -160,9 +152,9 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
             list.appendChild(listItem);
 
             var request = async () => {
-                    var response = await fetch(url);
-                    return response.json();
-                }
+                var response = await fetch(url);
+                return response.json();
+            }
             var data = request();
 
             var test2 = data;
@@ -172,8 +164,19 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
 
             listItem2.append(testItem2);
             list.appendChild(listItem2);
+        }
+    </script>
 
-        </script>
+<body onload="getData();">
+    <main>
+
+        <header>
+            <h1>Recent works</h1>
+        </header>
+        <br>
+
+        <ol reversed class="spaced-list" ; id="list">test</ol>
+
 </body>
 
 </html>
