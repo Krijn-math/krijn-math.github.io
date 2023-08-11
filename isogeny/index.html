@@ -102,13 +102,8 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
         }
 
         @media (min-width: 500px) {
-            ol {
-                width: 400px;
-                text-align: justify;
-            }
-
             ul {
-                width: 400px;
+                width: 430px;
                 text-align: justify;
             }
 
@@ -131,7 +126,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
 
         h1 {
             text-align: center;
-            width: 390px;
+            width: 430px;
             padding-top: 20px;
             padding-left: 40px;
         }
@@ -161,12 +156,13 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             var authors = values[1];
                             var authorlist = authors.split(',');
                             var id = values[2];
-
+                            
                             var listItem = document.createElement('li');
-                            listItem.setAttribute('data-prefix', id);
+                            //listItem.style.listStyleType = '"' + id + ' "';
+                            listItem.style.listStyleType = 'none';
 
                             var titleItem = document.createElement('b');
-                            titleItem.textContent = title;
+                            titleItem.textContent = title + ". ";
 
                             var authorItem = document.createElement('span');
                             authorFormatted = "";
@@ -188,12 +184,12 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             var urlItem = document.createElement('a');
                             urlItem.href = "//ia.cr/" + id;
                             urlItem.target = "_blank";
-                            urlItem.textContent = "eprint";
+                            urlItem.textContent = id;
 
                             floatItem.appendChild(urlItem);
 
                             listItem.appendChild(titleItem);
-                            listItem.appendChild(document.createElement('br'));
+                            //listItem.appendChild(document.createElement('br'));
                             listItem.appendChild(authorItem);
                             listItem.appendChild(floatItem);
 
