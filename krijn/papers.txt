@@ -1,0 +1,7 @@
+effective pairings in isogeny-based cryptography;krijn reijnders;2023/858
+on the practicality of post-quantum tls using large-parameter csidh;fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodríguez-henríquez, peter schwabe, thom wiggers;2023/793
+take your meds: digital signatures from matrix code equivalence;tung chou, ruben niederhagen, edoardo persichetti, tovohery hajatiana randrianarisoa, krijn reijnders, simona samardjiska, monika trimoska;2022/1559
+disorientation faults in csidh;gustavo banegas, juliane krämer, tanja lange, michael meyer, lorenz panny, krijn reijnders, jana sotáková, monika trimoska;2022/1202
+patient zero and patient six: zero-value and correlation attacks on csidh and sike;fabio campos, michael meyer, krijn reijnders, marc stöttinger;2022/904
+hardness estimates of the code equivalence problem in the rank metric;krijn reijnders, simona samardjiska, monika trimoska;2022/276
+fully projective radical isogenies in constant-time;jesús-javier chi-domínguez, krijn reijnders;2021/259

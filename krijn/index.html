@@ -12,113 +12,197 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
 -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>post quantum crypto</title>
-        <style>
-            body { font-family: monospace; display: flex; justify-content: center;}
-            nav { margin-right: 2em; padding: 1em; }
-            ul { margin: 0; padding-left: 1em; }
-            .spaced-list > li { margin-bottom: 1ex; }
-            hr { border: 1px solid gray; margin: 2ex 0; }
-            a { text-decoration: none; }
-            a:hover { text-decoration: underline; }
-            body { background-color: 	#BDEDE0; color: #373F51 }
-            a { color: #36599b; }
-            a:visited { color: 	#E26D5C; }
-            .fulljustify {
-                            text-align:justify;
-                        }
-                        .fulljustify:after {
-                            content: "";
-                            display: inline-block;
-                            width: 100%;
-                        }
-                        #tagline {
-                            height: 80px;
-                            overflow: hidden;
-                            line-height: 80px; /* vert-center */
-                        }
 
-            @media (min-width: 100px) {
-                ol {  width: max-width; }
-                details {  width: max-width;  text-align: justify; }
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;
-                                 cursor: pointer; }
-                img { width: 100%; }
-                }
+<head>
+    <meta charset="utf-8" />
+    <title>post quantum crypto</title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+        }
 
-            @media (min-width: 500px) {
-                ol {  width: 400px; text-align: justify;}
-                details {  width: 500px;  text-align: justify; }
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: 500px;
-                                 cursor: pointer; }
-                img { width: 500px; }
-                }
+        nav {
+            margin-right: 2em;
+            padding: 1em;
+        }
 
-            h1  {
-                text-align: center;
-                width: 390px;
-                padding-top: 20px;
-                padding-left: 40px;
+        ul {
+            margin: 0;
+            padding-left: 1em;
+        }
+
+        .spaced-list>li {
+            margin-bottom: 1ex;
+        }
+
+        hr {
+            border: 1px solid gray;
+            margin: 2ex 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            background-color: #BDEDE0;
+            color: #373F51
+        }
+
+        a {
+            color: #36599b;
+        }
+
+        a:visited {
+            color: #E26D5C;
+        }
+
+        .fulljustify {
+            text-align: justify;
+        }
+
+        .fulljustify:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        #tagline {
+            height: 80px;
+            overflow: hidden;
+            line-height: 80px;
+            /* vert-center */
+        }
+
+        @media (min-width: 100px) {
+            ol {
+                width: max-width;
             }
-        </style>
-        <link rel="icon" href="favicon.ico"/>
+
+            details {
+                width: max-width;
+                text-align: justify;
+            }
+
+            details>summary {
+                padding-left: 20px;
+                padding-top: 6px;
+                width: max-width;
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 500px) {
+            ol {
+                width: 400px;
+                text-align: justify;
+            }
+
+            details {
+                width: 500px;
+                text-align: justify;
+            }
+
+            details>summary {
+                padding-left: 20px;
+                padding-top: 6px;
+                width: 500px;
+                cursor: pointer;
+            }
+
+            img {
+                width: 500px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            width: 390px;
+            padding-top: 20px;
+            padding-left: 40px;
+        }
+    </style>
+    <link rel="icon" href="favicon.ico" />
 
 <body>
-        <main>
+    <main>
 
-            <header>
-                <h1>Recent works</h1>
-            </header>
-<br>
-<ol reversed class="spaced-list">
-    <li>
-        <b>effective pairings in isogeny-based cryptography.</b>
-        krijn reijnders. <i>latincrypt 2023</i>
-        <span style="float:right;"><a href="//ia.cr/2023/858" target="_blank">eprint</a></span>
-    </li>
-    <br>
-    <li>
-        <b>on the practicality of post-quantum tls using large-parameter csidh.</b>
-        fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodrígues-henríquez,
-        peter schwabe and thom wiggers.
-        <span style="float:right;"><a href="//ia.cr/2023/793" target="_blank">eprint</a></span>
-    </li>
-    <br>
-    <li>
-        <b>take your meds: digital signatures from matrix code equivalence.</b>
-        tung chou, ruben niederhagen, edoardo persichetti, tovohery hajatiana randrianarisoa,
-        krijn reijnders, simona samardjiska and monika trimoska. <i>africacrypt 2023</i>
-        <span style="float:right;"><a href="//ia.cr/2022/1559" target="_blank">eprint</a></span>
-    </li>
-    <br>
-    <li>
-        <b>disorientation faults in csidh.</b>
-        gustavo banegas, juliane krämer, tanja lange, michael meyer, lorenz panny, krijn reijnders, jana sotáková and monika trimoska. <i>eurocrypt 2023</i>
-        <span style="float:right;"><a href="//ia.cr/2022/1202" target="_blank">eprint</a></span>
-    </li>
-    <br>
-    <li>
-        <b>patient zero & patient six: zero-value and correlation attacks on csidh and sike.</b>
-        fabio campos, michael meyer, krijn reijnders and marc stöttinger. <i>sac 2022</i>.
-        <span style="float:right;"><a href="//ia.cr/2022/904" target="_blank">eprint</a></span>
-    </li>
-    <br>
-    <li>
-        <b>hardness estimates of the code equivalence problem in the rank metric.</b>
-        krijn reijnders, simona samardjiska and monika trimoska. <i>wcc 2022</i>.
-        <span style="float:right;"><a href="//ia.cr/2022/276" target="_blank">eprint</a></span>
-    </li>
-    <br>
-    <li>
-        <b>fully projective radical isogenies in constant-time</b>
-        jesús-javier chi-domínguez and krijn reijnders. <i>ct-rsa 2022</i>.
-        <span style="float:right;"><a href="//ia.cr/2021/259" target="_blank">eprint</a></span>
-    </li>
+        <header>
+            <h1>Recent works</h1>
+        </header>
+        <br>
+        <ol reversed class="spaced-list" ; id="list"></ol>
 
-</ol>
-<br>
+        <script>
+            function loadListData() {
+                fetch('papers.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        var list = document.getElementById('list');
+                        var lines = data.split('\n');
+
+                        lines.forEach(function (line) {
+                            var values = line.split(';');
+                            var title = values[0];
+                            var authors = values[1];
+                            var authorlist = authors.split(',');
+                            var id = values[2];
+
+                            var listItem = document.createElement('li');
+                            // listItem.classList.add('list-item');
+
+                            var titleItem = document.createElement('b');
+                            titleItem.textContent = title;
+
+                            var authorItem = document.createElement('span');
+                            authorFormatted = "";
+                            authorlist.forEach(function (author, index) {
+                                if (index === authorlist.length - 2) {
+                                    authorFormatted += author + " and ";
+                                }  else if (index === authorlist.length - 1) {
+                                    authorFormatted += author;
+                                } else {
+                                    authorFormatted += author + ", ";
+                                }
+                            });
+
+                            authorItem.textContent = authorFormatted;
+
+                            var floatItem = document.createElement('span');
+                            floatItem.style = "float:right";
+
+                            var urlItem = document.createElement('a');
+                            urlItem.href = "//ia.cr/" + id;
+                            urlItem.target = "_blank";
+                            urlItem.textContent = "eprint";
+
+                            floatItem.appendChild(urlItem);
+
+                            listItem.appendChild(titleItem);
+                            listItem.appendChild(document.createElement('br'));
+                            listItem.appendChild(authorItem);
+                            listItem.appendChild(floatItem);
+
+                            list.appendChild(listItem);
+                            list.appendChild(document.createElement('br'));
+                        });
+                    });
+            }
+
+            loadListData();
+        </script>
 <h1><a href="//krijnreijnders.com" target="_blank">...</a></h1>
 
-</main>
+</body>
+
+</html>
