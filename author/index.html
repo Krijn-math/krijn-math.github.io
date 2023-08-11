@@ -153,31 +153,19 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
             // Define the URL to scrape
             var url = "https://eprint.iacr.org/search?q=krijn";
 
-            function httpGet(theUrl) {
-                if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-                    xmlhttp = new XMLHttpRequest();
-                }
-                else {// code for IE6, IE5
-                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                }
-
-                xmlhttp.onreadystatechange = function () {
-                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                        return xmlhttp.responseText;
-                    }
-                }
-                xmlhttp.open("GET", theUrl, false);
-                xmlhttp.send();
-            }
-
-            var test = "12345";
+            var test = "123";
             var testItem = document.createElement('b');
             testItem.textContent = test;
-
             listItem.append(testItem);
             list.appendChild(listItem);
 
-            var test2 = httpGet(url);
+            var request = async () => {
+                    var response = await fetch(url);
+                    return response.json();
+                }
+            var data = request();
+
+            var test2 = data;
 
             var testItem2 = document.createElement('b');
             testItem2.textContent = test2;
