@@ -1,0 +1,2 @@
+deuring for the people: supersingular elliptic curves with prescribed endomorphism ring in general characteristic;jonathan komada eriksen, lorenz panny, jana sotáková, mattia veroni;2023/106
+cryptographic smooth neighbors;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael naehrig, michael meyer, bruno sterner;2022/1439
