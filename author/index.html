@@ -160,13 +160,14 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                 else {// code for IE6, IE5
                     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
                 }
+
                 xmlhttp.onreadystatechange = function () {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                         return xmlhttp.responseText;
                     }
                 }
                 xmlhttp.open("GET", theUrl, false);
-                return xmlhttp.responseText;
+                xmlhttp.send();
             }
 
             var test = "1234";
