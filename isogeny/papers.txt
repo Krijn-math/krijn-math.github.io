@@ -1,0 +1,100 @@
+towards a quantum-resistant weak verifiable delay function;thomas decru, luciano maino, antonio sanso;2023/1197
+two-round adaptively secure mpc from isogenies, lpn, or cdh;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;2023/1170
+quantum money from abelian group actions;mark zhandry;2023/1097
+adaptive attack for a possible pke scheme using festa trapdoor functions in the wrong way;tomoki moriya;2023/1092
+fast and frobenius: rational isogeny evaluation over finite fields;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;2023/995
+generating supersingular elliptic curves over $\mathbb{f}_p$ with unknown endomorphism ring;youcef mokrani, david jao;2023/984
+vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;2023/885
+effective pairings in isogeny-based cryptography;krijn reijnders;2023/858
+towards a constant-time implementation of isogeny-based signature, sqisign;david jacquemin, anisha mukherjee, sujoy sinha roy, péter kutas;2023/807
+on the practicality of post-quantum tls using large-parameter csidh;fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodríguez-henríquez, peter schwabe, thom wiggers;2023/793
+new sidh countermeasures for a more efficient key exchange;andrea basso, tako boris fouotsa;2023/791
+hidden stabilizers, the isogeny to endomorphism ring problem and the cryptanalysis of psidh;mingjie chen, muhammad imran, gábor ivanyos, péter kutas, antonin leroux, christophe petit;2023/779
+a faster software implementation of sqisign;kaizhan lin, weize wang, zheng xu, chang-an zhao;2023/753
+practical robust dkg protocols for csidh;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;2023/740
+non-interactive commitment from non-transitive group actions;giuseppe d'alconzo, andrea flamini, andrea gangemi;2023/723
+proving knowledge of isogenies – a survey;ward beullens, luca de feo, steven d. galbraith, christophe petit;2023/671
+festa: fast encryption from supersingular torsion attacks;andrea basso, luciano maino, giacomo pope;2023/660
+a direct key recovery attack on sidh;luciano maino, chloe martindale, lorenz panny, giacomo pope, benjamin wesolowski;2023/640
+oprfs from isogenies: designs and analysis;lena heimberger, fredrik meisingseth, christian rechberger;2023/639
+weak instances of class group action based cryptography via self-pairings;wouter castryck, marc houben, simon-philipp merz, marzio mula, sam van buuren, frederik vercauteren;2023/549
+computing quotient groups of smooth order with applications to isogenies over higher-dimensional abelian varieties;jesús-javier chi-domínguez, amalia pizarro-madariaga, edgardo riquelme;2023/508
+low memory attacks on small key csidh;jesús-javier chi-domínguez, andre esser, sabrina kunzweiler, alexander may;2023/507
+sqisignhd: new dimensions in cryptography;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;2023/436
+efficiency of sidh-based signatures (yes, sidh);wissam ghantous, federico pintore, mattia veroni;2023/433
+a tightly secure identity-based signature scheme from isogenies;hyungrok jo, shingo sato, junji shikata;2023/426
+efficient computation of $(3^n,3^n)$-isogenies;thomas decru, sabrina kunzweiler;2023/376
+simple two-round ot in the explicit isogeny model;emmanuela orsini, riccardo zanotto;2023/269
+a lower bound on the length of signatures based on group actions and generic isogenies;dan boneh, jiaxin guan, mark zhandry;2023/250
+a post-quantum round-optimal oblivious prf from isogenies;andrea basso;2023/225
+sieving for large twin smooth integers using single solutions to prouhet-tarry-escott;knud ahrens;2023/219
+capybara and tsubaki: verifiable random functions from group actions and isogenies;yi-fu lai;2023/182
+the geometric interpretation of the tate pairing and its applications;damien robert;2023/177
+public-key compression in m-sidh;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;2023/136
+hashing to elliptic curves over highly $2$-adic fields $\mathbb{f}_{\!q}$ with $o(\log(q))$ operations in $\mathbb{f}_{\!q}$;dmitrii koshelev;2023/121
+deuring for the people: supersingular elliptic curves with prescribed endomorphism ring in general characteristic;jonathan komada eriksen, lorenz panny, jana sotáková, mattia veroni;2023/106
+blind signatures from zero-knowledge arguments;paulo l. barreto, gustavo h. m. zanon;2023/067
+computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;antonin leroux;2023/064
+scallop: scaling the csi-fish;luca de feo, tako boris fouotsa, péter kutas, antonin leroux, simon-philipp merz, lorenz panny, benjamin wesolowski;2023/058
+efficient isogeny proofs using generic techniques;kelong cong, yi-fu lai, shai levin;2023/037
+cryptographic group and semigroup actions;oliver w. gnilke, jens zumbrägel;2023/017
+m-sidh and md-sidh: countering sidh attacks by masking information;tako boris fouotsa, tomoki moriya, christophe petit;2023/013
+candidate trapdoor claw-free functions from group actions with applications to quantum protocols;navid alamati, giulio malavolta, ahmadreza rahimi;2022/1775
+cryptographic primitives with hinting property;navid alamati, sikhar patranabis;2022/1770
+an algorithm for efficient detection of $(n,n)$-splittings and its application to the isogeny problem in dimension 2;maria corte-real santos, craig costello, sam frengley;2022/1736
+some applications of higher dimensional isogenies to elliptic curves (overview of results);damien robert;2022/1704
+applying castryck-decru attack on the masked torsion point images sidh variant;jesús-javier chi-domínguez;2022/1667
+another round of breaking and making quantum money: how to not build it from lattices, and more;jiahui liu, hart montgomery, mark zhandry;2022/1620
+round-optimal oblivious transfer and mpc from computational csidh;saikrishna badrinarayanan, daniel masny, pratyay mukherjee, sikhar patranabis, srinivasan raghuraman, pratik sarkar;2022/1511
+a note on constructing sidh-pok-based signatures after castryck-decru attack;jesús-javier chi-domínguez;2022/1479
+supersingular curves you can trust;andrea basso, giulio codogni, deirdre connolly, luca de feo, tako boris fouotsa, guido maria lido, travis morrison, lorenz panny, sikhar patranabis, benjamin wesolowski;2022/1469
+parallel isogeny path finding with limited memory;emanuele bellini, jorge chavez-saab, jesús-javier chi-domínguez, andre esser, sorina ionica, luis rivera-zamarripa, francisco rodríguez-henríquez, monika trimoska, floyd zweydinger;2022/1464
+radical isogenies and modular curves;valentina pribanić;2022/1446
+cryptographic smooth neighbors;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael naehrig, michael meyer, bruno sterner;2022/1439
+discrete exponential equations and noisy systems;trey li;2022/1344
+exploring rns for isogeny-based cryptography;david jacquemin, ahmet can mert, sujoy sinha roy;2022/1289
+a note on reimplementing the castryck-decru attack and lessons learned for sagemath;rémy oudompheng, giacomo pope;2022/1283
+horizontal racewalking using radical isogenies;wouter castryck, thomas decru, marc houben, frederik vercauteren;2022/1259
+group action key encapsulation and non-interactive key exchange in the qrom;julien duman, dominik hartmann, eike kiltz, sabrina kunzweiler, jonas lehmann, doreen riepel;2022/1230
+disorientation faults in csidh;gustavo banegas, juliane krämer, tanja lange, michael meyer, lorenz panny, krijn reijnders, jana sotáková, monika trimoska;2022/1202
+statistical security in two-party computation revisited;saikrishna badrinarayanan, sikhar patranabis, pratik sarkar;2022/1190
+csi-shark: csi-fish with sharing-friendly keys;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;2022/1189
+full quantum equivalence of group action dlog and cdh, and more;hart montgomery, mark zhandry;2022/1135
+projective geometry of hessian elliptic curves and genus 2 triple covers of cubics;rémy oudompheng;2022/1107
+speeding-up parallel computation of large smooth-degree isogeny using precedence-constrained scheduling;kittiphon phalakarn, vorapong suppakitpaisarn, m. anwar hasan;2022/1103
+evaluating isogenies in polylogarithmic time;damien robert;2022/1068
+sidh with masked torsion point images;tako boris fouotsa;2022/1054
+an attack on sidh with arbitrary starting curve;luciano maino, chloe martindale;2022/1026
+masked-degree sidh;tomoki moriya;2022/1019
+efficient computation of (2^n,2^n)-isogenies;sabrina kunzweiler;2022/990
+an efficient key recovery attack on sidh;wouter castryck, thomas decru;2022/975
+patient zero and patient six: zero-value and correlation attacks on csidh and sike;fabio campos, michael meyer, krijn reijnders, marc stöttinger;2022/904
+on the key generation in sqisign;hiroshi onuki;2022/900
+efficient supersingularity testing over $\mathbb{f}_p$ and csidh key validation;gustavo banegas, valerie gilchrist, benjamin smith;2022/880
+supersingular isogeny diffie-hellman with legendre form;jesse elliott, aaron hutchinson;2022/870
+a note on key control in csidh;antonio sanso;2022/847
+password-authenticated key exchange from group actions;michel abdalla, thorsten eisenhofer, eike kiltz, sabrina kunzweiler, doreen riepel;2022/770
+updatable encryption from group actions;antonin leroux, maxime roméas;2022/739
+like – lattice isomorphism-based non-interactive key exchange via group actions;alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni;2022/692
+new constructions of collapsing hashes;mark zhandry;2022/678
+torsion point attacks on ``sidh-like'' cryptosystems;péter kutas, christophe petit;2022/654
+supersingular non-superspecial abelian surfaces in cryptography;jason t. legrow, yan bo ti, lukas zobernig;2022/650
+post-quantum anonymous one-sided authenticated key exchange without random oracles;ren ishibashi, kazuki yoneyama;2022/616
+orientations and cycles in supersingular isogeny graphs;sarah arpin, mingjie chen, kristin e.  lauter, renate scheidler, katherine stange, ha t.  n.  tran;2022/562
+on random sampling of supersingular elliptic curves;marzio mula, nadir murru, federico pintore;2022/528
+failing to hash into supersingular isogeny graphs;jeremy booher, ross bowden, javad doliskani, tako boris fouotsa, steven d.  galbraith, sabrina kunzweiler, simon-philipp merz, christophe petit, benjamin smith, katherine e. stange, yan bo ti, christelle vincent, josé felipe voloch, charlotte weitkämper, lukas zobernig;2022/518
+sidh-sign: an efficient sidh pok-based signature;jesús-javier chi-domínguez, víctor mateu, lucas pandolfo perin;2022/475
+attack on sheals and heals: the second wave of gpst;steven d.  galbraith, yi-fu lai;2022/443
+computing isogenies between finite drinfeld modules;benjamin wesolowski;2022/438
+single-trace clustering power analysis of the point-swapping procedure in the three point ladder of cortex-m4 sike;aymeric genêt, novak kaluđerović;2022/364
+an effective lower bound on the number of orientable supersingular elliptic curves;antonin leroux;2022/357
+hard homogeneous spaces from the class field theory of imaginary hyperelliptic function fields;antoine leudière, pierre-jean spaenlehauer;2022/349
+on the decisional diffie-hellman problem for class group actions on oriented elliptic curves;wouter castryck, marc houben, frederik vercauteren, benjamin wesolowski;2022/345
+new algorithms for the deuring correspondence: towards practical and secure sqisign signatures;luca de feo, antonin leroux, patrick longa, benjamin wesolowski;2022/234
+cache-22: a highly deployable end-to-end encrypted cache system with post-quantum security;keita emura, shiho moriai, takuma nakajima, masato yoshimi;2022/220
+generalising fault attacks to genus two isogeny cryptosystems;ariana goh, chu-wee lim, yan bo ti;2022/196
+faulty isogenies: a new kind of leakage;gora adj, jesús-javier chi-domínguez, víctor mateu, francisco rodríguez-henríquez;2022/153
+the generalized montgomery coordinate: a new computational tool for isogeny-based cryptography;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;2022/150
+orienteering with one endomorphism;sarah arpin, mingjie chen, kristin e.  lauter, renate scheidler, katherine e. stange, ha t.  n.  tran;2022/098
+sike channels;luca de feo, nadia el mrabet, aymeric genêt, novak kaluđerović, natacha linard de guertechin, simon pontié, élise tasso;2022/054
+lattice-based signatures with tight adaptive corruptions and more;jiaxin pan, benedikt wagner;2022/015
