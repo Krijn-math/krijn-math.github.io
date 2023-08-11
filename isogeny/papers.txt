@@ -3,7 +3,7 @@ two-round adaptively secure mpc from isogenies, lpn, or cdh;navid alamati, hart 
 quantum money from abelian group actions;mark zhandry;2023/1097
 adaptive attack for a possible pke scheme using festa trapdoor functions in the wrong way;tomoki moriya;2023/1092
 fast and frobenius: rational isogeny evaluation over finite fields;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;2023/995
-generating supersingular elliptic curves over $\mathbb{f}_p$ with unknown endomorphism ring;youcef mokrani, david jao;2023/984
+generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;youcef mokrani, david jao;2023/984
 vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;2023/885
 effective pairings in isogeny-based cryptography;krijn reijnders;2023/858
 towards a constant-time implementation of isogeny-based signature, sqisign;david jacquemin, anisha mukherjee, sujoy sinha roy, péter kutas;2023/807
@@ -23,7 +23,7 @@ low memory attacks on small key csidh;jesús-javier chi-domínguez, andre esser,
 sqisignhd: new dimensions in cryptography;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;2023/436
 efficiency of sidh-based signatures (yes, sidh);wissam ghantous, federico pintore, mattia veroni;2023/433
 a tightly secure identity-based signature scheme from isogenies;hyungrok jo, shingo sato, junji shikata;2023/426
-efficient computation of $(3^n,3^n)$-isogenies;thomas decru, sabrina kunzweiler;2023/376
+efficient computation of (3ⁿ,3ⁿ)-isogenies;thomas decru, sabrina kunzweiler;2023/376
 simple two-round ot in the explicit isogeny model;emmanuela orsini, riccardo zanotto;2023/269
 a lower bound on the length of signatures based on group actions and generic isogenies;dan boneh, jiaxin guan, mark zhandry;2023/250
 a post-quantum round-optimal oblivious prf from isogenies;andrea basso;2023/225
@@ -31,7 +31,7 @@ sieving for large twin smooth integers using single solutions to prouhet-tarry-e
 capybara and tsubaki: verifiable random functions from group actions and isogenies;yi-fu lai;2023/182
 the geometric interpretation of the tate pairing and its applications;damien robert;2023/177
 public-key compression in m-sidh;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;2023/136
-hashing to elliptic curves over highly $2$-adic fields $\mathbb{f}_{\!q}$ with $o(\log(q))$ operations in $\mathbb{f}_{\!q}$;dmitrii koshelev;2023/121
+hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};dmitrii koshelev;2023/121
 deuring for the people: supersingular elliptic curves with prescribed endomorphism ring in general characteristic;jonathan komada eriksen, lorenz panny, jana sotáková, mattia veroni;2023/106
 blind signatures from zero-knowledge arguments;paulo l. barreto, gustavo h. m. zanon;2023/067
 computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;antonin leroux;2023/064
@@ -41,7 +41,7 @@ cryptographic group and semigroup actions;oliver w. gnilke, jens zumbrägel;2023
 m-sidh and md-sidh: countering sidh attacks by masking information;tako boris fouotsa, tomoki moriya, christophe petit;2023/013
 candidate trapdoor claw-free functions from group actions with applications to quantum protocols;navid alamati, giulio malavolta, ahmadreza rahimi;2022/1775
 cryptographic primitives with hinting property;navid alamati, sikhar patranabis;2022/1770
-an algorithm for efficient detection of $(n,n)$-splittings and its application to the isogeny problem in dimension 2;maria corte-real santos, craig costello, sam frengley;2022/1736
+an algorithm for efficient detection of (n,n)-splittings and its application to the isogeny problem in dimension 2;maria corte-real santos, craig costello, sam frengley;2022/1736
 some applications of higher dimensional isogenies to elliptic curves (overview of results);damien robert;2022/1704
 applying castryck-decru attack on the masked torsion point images sidh variant;jesús-javier chi-domínguez;2022/1667
 another round of breaking and making quantum money: how to not build it from lattices, and more;jiahui liu, hart montgomery, mark zhandry;2022/1620
@@ -70,7 +70,7 @@ efficient computation of (2^n,2^n)-isogenies;sabrina kunzweiler;2022/990
 an efficient key recovery attack on sidh;wouter castryck, thomas decru;2022/975
 patient zero and patient six: zero-value and correlation attacks on csidh and sike;fabio campos, michael meyer, krijn reijnders, marc stöttinger;2022/904
 on the key generation in sqisign;hiroshi onuki;2022/900
-efficient supersingularity testing over $\mathbb{f}_p$ and csidh key validation;gustavo banegas, valerie gilchrist, benjamin smith;2022/880
+efficient supersingularity testing over 𝔽ₚ and csidh key validation;gustavo banegas, valerie gilchrist, benjamin smith;2022/880
 supersingular isogeny diffie-hellman with legendre form;jesse elliott, aaron hutchinson;2022/870
 a note on key control in csidh;antonio sanso;2022/847
 password-authenticated key exchange from group actions;michel abdalla, thorsten eisenhofer, eike kiltz, sabrina kunzweiler, doreen riepel;2022/770
