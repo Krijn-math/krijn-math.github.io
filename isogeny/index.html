@@ -28,11 +28,6 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
             padding: 1em;
         }
 
-        ul {
-            margin: 0;
-            padding-left: 1em;
-        }
-
         .spaced-list>li {
             margin-bottom: 1ex;
         }
@@ -85,6 +80,10 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                 width: max-width;
             }
 
+            ul {
+                width: max-width;
+            }
+
             details {
                 width: max-width;
                 text-align: justify;
@@ -104,6 +103,11 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
 
         @media (min-width: 500px) {
             ol {
+                width: 400px;
+                text-align: justify;
+            }
+
+            ul {
                 width: 400px;
                 text-align: justify;
             }
@@ -141,7 +145,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
             <h1>Recent isogeny papers</h1>
         </header>
         <br>
-        <ol reversed class="spaced-list" ; id="list"></ol>
+        <ul reversed class="spaced-list" ; id="list"></ul>
 
         <script>
             function loadListData() {
@@ -159,7 +163,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             var id = values[2];
 
                             var listItem = document.createElement('li');
-                            // listItem.classList.add('list-item');
+                            listItem.setAttribute('data-prefix', id);
 
                             var titleItem = document.createElement('b');
                             titleItem.textContent = title;
