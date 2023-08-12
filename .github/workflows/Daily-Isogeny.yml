@@ -33,4 +33,5 @@ jobs:
         git config --local user.name "GitHub Action"
         git add isogeny/*.txt
         git commit -m "auto run"
+        git pull
         git push
