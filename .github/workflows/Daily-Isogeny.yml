@@ -31,6 +31,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add isogeny/papers.txt
+        git add isogeny/*.txt
         git commit -m "auto run"
         git push
