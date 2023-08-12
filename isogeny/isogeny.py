@@ -1,3 +1,4 @@
+from datetime import date
 import os
 import requests
 import unicodeit
@@ -36,5 +37,7 @@ with open(file_name, "w") as file:
         file.write(f"{authors.lower()};;;")
         file.write(f"{id}\n")
 
-
-print("Scraping and saving complete!")
+file_name = f"isogeny/log.txt"
+with open(file_name, "a") as file:
+        today = date.today()
+        file.write(f"logged at {today}\n")
