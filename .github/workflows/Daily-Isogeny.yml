@@ -25,3 +25,9 @@ jobs:
 
     - name: Run isogeny.py
       run: python isogeny/isogeny.py
+
+    - name: Commit and push changes
+      run: |
+        git add isogeny/papers.txt
+        git commit -m "auto run"
+        git push
