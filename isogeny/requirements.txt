@@ -1,0 +1,4 @@
+beautifulsoup4==4.8.2
+mdtex2html==1.2.0
+Requests==2.31.0
+unicodeit==0.7.5
