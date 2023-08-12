@@ -22,7 +22,7 @@ soup = BeautifulSoup(html_content, "html.parser")
 search_results = soup.find_all("div", class_="mb-4")
 total = len(search_results)
 
-file_name = f"isogeny/papers_test.txt"
+file_name = f"isogeny/papers.txt"
 
 with open(file_name, "w") as file:
     for index, result in enumerate(search_results, start=1):
