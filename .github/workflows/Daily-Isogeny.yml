@@ -1,0 +1,17 @@
+name: Daily Isogeny
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  run-gather-script:
+    name: Run isogeny.py
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Run isogeny.py
+      run: python isogeny/isogeny.py
