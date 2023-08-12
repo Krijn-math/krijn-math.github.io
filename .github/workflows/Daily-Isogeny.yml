@@ -2,7 +2,7 @@ name: Daily Isogeny
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/2 * * * *'
 
 jobs:
   run-gather-script:
