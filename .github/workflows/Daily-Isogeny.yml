@@ -5,7 +5,7 @@ on:
     - cron: '*/2 * * * *'
 
 jobs:
-  run-gather-script:
+  build:
     name: Run isogeny.py
     runs-on: ubuntu-latest
 
