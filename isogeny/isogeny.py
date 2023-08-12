@@ -13,28 +13,16 @@ def detexify(text):
     result = re.sub(pattern, repl, text)
     return result
 
-# Define the URL to scrape
 url = "https://eprint.iacr.org/search?q=isogeny+isogenies"
 
-# Send a GET request to the URL and retrieve the HTML content
 response = requests.get(url)
 html_content = response.text
-
-# Create a BeautifulSoup object to parse the HTML
 soup = BeautifulSoup(html_content, "html.parser")
 
-# Find all the search result elements on the page
 search_results = soup.find_all("div", class_="mb-4")
 total = len(search_results)
 
-# Create a directory to store the text files
-# directory = "/home/krijn/Documents/Mathematics/Website/krijn-math.github.io/isogeny"
-# os.makedirs(directory, exist_ok=True)
-
-
-
-file_name = f"papers2.txt"
-# file_path = os.path.join(website_directory, file_name)
+file_name = f"papers.txt"
 
 with open(file_name, "w") as file:
     for index, result in enumerate(search_results, start=1):
