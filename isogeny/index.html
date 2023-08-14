@@ -140,14 +140,15 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
             <h1>recent isogeny papers</h1>
         </header>
         <br>
-        <ul reversed class="spaced-list" ; id="list"></ul>
+        <h3>last week</h3>
+        <ul reversed class="spaced-list" ; id="last_week"></ul>
 
         <script>
             function loadListData() {
                 fetch('papers.txt')
                     .then(response => response.text())
                     .then(data => {
-                        var list = document.getElementById('list');
+                        var list = document.getElementById('last_week');
                         var lines = data.split('\n');
 
                         lines.forEach(function (line) {
@@ -156,52 +157,254 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             var authors = values[1];
                             var authorlist = authors.split(',');
                             var id = values[2];
-                            
-                            var listItem = document.createElement('li');
-                            //listItem.style.listStyleType = '"' + id + ' "';
-                            listItem.style.listStyleType = 'none';
+                            var date_class = values[3];
 
-                            var titleItem = document.createElement('b');
-                            titleItem.textContent = title + ". ";
+                            if (date_class === 'last_week') {
+                                var listItem = document.createElement('li');
+                                //listItem.style.listStyleType = '"' + id + ' "';
+                                listItem.style.listStyleType = 'none';
 
-                            var authorItem = document.createElement('span');
-                            authorFormatted = "";
-                            authorlist.forEach(function (author, index) {
-                                if (index === authorlist.length - 2) {
-                                    authorFormatted += author + " and ";
-                                }  else if (index === authorlist.length - 1) {
-                                    authorFormatted += author;
-                                } else {
-                                    authorFormatted += author + ", ";
-                                }
-                            });
+                                var titleItem = document.createElement('b');
+                                titleItem.textContent = title + ". ";
 
-                            authorItem.textContent = authorFormatted;
+                                var authorItem = document.createElement('span');
+                                authorFormatted = "";
+                                authorlist.forEach(function (author, index) {
+                                    if (index === authorlist.length - 2) {
+                                        authorFormatted += author + " and ";
+                                    } else if (index === authorlist.length - 1) {
+                                        authorFormatted += author;
+                                    } else {
+                                        authorFormatted += author + ", ";
+                                    }
+                                });
 
-                            var floatItem = document.createElement('span');
-                            floatItem.style = "float:right";
+                                authorItem.textContent = authorFormatted;
 
-                            var urlItem = document.createElement('a');
-                            urlItem.href = "//ia.cr/" + id;
-                            urlItem.target = "_blank";
-                            urlItem.textContent = id;
+                                var floatItem = document.createElement('span');
+                                floatItem.style = "float:right";
 
-                            floatItem.appendChild(urlItem);
+                                var urlItem = document.createElement('a');
+                                urlItem.href = "//ia.cr/" + id;
+                                urlItem.target = "_blank";
+                                urlItem.textContent = id;
 
-                            listItem.appendChild(titleItem);
-                            //listItem.appendChild(document.createElement('br'));
-                            listItem.appendChild(authorItem);
-                            listItem.appendChild(floatItem);
+                                floatItem.appendChild(urlItem);
 
-                            list.appendChild(listItem);
-                            list.appendChild(document.createElement('br'));
+                                listItem.appendChild(titleItem);
+                                //listItem.appendChild(document.createElement('br'));
+                                listItem.appendChild(authorItem);
+                                listItem.appendChild(floatItem);
+
+                                list.appendChild(listItem);
+                                list.appendChild(document.createElement('br'));
+                            };
+
                         });
                     });
             }
 
             loadListData();
         </script>
-<h1><a href="//krijnreijnders.com" target="_blank">...</a></h1>
+        <h3>last month</h3>
+        <ul reversed class="spaced-list" ; id="last_month"></ul>
+
+        <script>
+            function loadListData() {
+                fetch('papers.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        var list = document.getElementById('last_month');
+                        var lines = data.split('\n');
+
+                        lines.forEach(function (line) {
+                            var values = line.split(';;;');
+                            var title = values[0];
+                            var authors = values[1];
+                            var authorlist = authors.split(',');
+                            var id = values[2];
+                            var date_class = values[3];
+
+                            if (date_class === 'last_month') {
+                                var listItem = document.createElement('li');
+                                //listItem.style.listStyleType = '"' + id + ' "';
+                                listItem.style.listStyleType = 'none';
+
+                                var titleItem = document.createElement('b');
+                                titleItem.textContent = title + ". ";
+
+                                var authorItem = document.createElement('span');
+                                authorFormatted = "";
+                                authorlist.forEach(function (author, index) {
+                                    if (index === authorlist.length - 2) {
+                                        authorFormatted += author + " and ";
+                                    } else if (index === authorlist.length - 1) {
+                                        authorFormatted += author;
+                                    } else {
+                                        authorFormatted += author + ", ";
+                                    }
+                                });
+
+                                authorItem.textContent = authorFormatted;
+
+                                var floatItem = document.createElement('span');
+                                floatItem.style = "float:right";
+
+                                var urlItem = document.createElement('a');
+                                urlItem.href = "//ia.cr/" + id;
+                                urlItem.target = "_blank";
+                                urlItem.textContent = id;
+
+                                floatItem.appendChild(urlItem);
+
+                                listItem.appendChild(titleItem);
+                                //listItem.appendChild(document.createElement('br'));
+                                listItem.appendChild(authorItem);
+                                listItem.appendChild(floatItem);
+
+                                list.appendChild(listItem);
+                                list.appendChild(document.createElement('br'));
+                            };
+
+                        });
+                    });
+            }
+
+            loadListData();
+        </script>
+        <h3>last year</h3>
+        <ul reversed class="spaced-list" ; id="last_year"></ul>
+
+        <script>
+            function loadListData() {
+                fetch('papers.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        var list = document.getElementById('last_year');
+                        var lines = data.split('\n');
+
+                        lines.forEach(function (line) {
+                            var values = line.split(';;;');
+                            var title = values[0];
+                            var authors = values[1];
+                            var authorlist = authors.split(',');
+                            var id = values[2];
+                            var date_class = values[3];
+
+                            if (date_class === 'last_year') {
+                                var listItem = document.createElement('li');
+                                //listItem.style.listStyleType = '"' + id + ' "';
+                                listItem.style.listStyleType = 'none';
+
+                                var titleItem = document.createElement('b');
+                                titleItem.textContent = title + ". ";
+
+                                var authorItem = document.createElement('span');
+                                authorFormatted = "";
+                                authorlist.forEach(function (author, index) {
+                                    if (index === authorlist.length - 2) {
+                                        authorFormatted += author + " and ";
+                                    } else if (index === authorlist.length - 1) {
+                                        authorFormatted += author;
+                                    } else {
+                                        authorFormatted += author + ", ";
+                                    }
+                                });
+
+                                authorItem.textContent = authorFormatted;
+
+                                var floatItem = document.createElement('span');
+                                floatItem.style = "float:right";
+
+                                var urlItem = document.createElement('a');
+                                urlItem.href = "//ia.cr/" + id;
+                                urlItem.target = "_blank";
+                                urlItem.textContent = id;
+
+                                floatItem.appendChild(urlItem);
+
+                                listItem.appendChild(titleItem);
+                                //listItem.appendChild(document.createElement('br'));
+                                listItem.appendChild(authorItem);
+                                listItem.appendChild(floatItem);
+
+                                list.appendChild(listItem);
+                                list.appendChild(document.createElement('br'));
+                            };
+
+                        });
+                    });
+            }
+
+            loadListData();
+        </script>
+        <h3>before that</h3>
+        <ul reversed class="spaced-list" ; id="other"></ul>
+
+        <script>
+            function loadListData() {
+                fetch('papers.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        var list = document.getElementById('other');
+                        var lines = data.split('\n');
+
+                        lines.forEach(function (line) {
+                            var values = line.split(';;;');
+                            var title = values[0];
+                            var authors = values[1];
+                            var authorlist = authors.split(',');
+                            var id = values[2];
+                            var date_class = values[3];
+
+                            if (date_class === 'other') {
+                                var listItem = document.createElement('li');
+                                //listItem.style.listStyleType = '"' + id + ' "';
+                                listItem.style.listStyleType = 'none';
+
+                                var titleItem = document.createElement('b');
+                                titleItem.textContent = title + ". ";
+
+                                var authorItem = document.createElement('span');
+                                authorFormatted = "";
+                                authorlist.forEach(function (author, index) {
+                                    if (index === authorlist.length - 2) {
+                                        authorFormatted += author + " and ";
+                                    } else if (index === authorlist.length - 1) {
+                                        authorFormatted += author;
+                                    } else {
+                                        authorFormatted += author + ", ";
+                                    }
+                                });
+
+                                authorItem.textContent = authorFormatted;
+
+                                var floatItem = document.createElement('span');
+                                floatItem.style = "float:right";
+
+                                var urlItem = document.createElement('a');
+                                urlItem.href = "//ia.cr/" + id;
+                                urlItem.target = "_blank";
+                                urlItem.textContent = id;
+
+                                floatItem.appendChild(urlItem);
+
+                                listItem.appendChild(titleItem);
+                                //listItem.appendChild(document.createElement('br'));
+                                listItem.appendChild(authorItem);
+                                listItem.appendChild(floatItem);
+
+                                list.appendChild(listItem);
+                                list.appendChild(document.createElement('br'));
+                            };
+
+                        });
+                    });
+            }
+
+            loadListData();
+        </script>
+        <h1><a href="//krijnreijnders.com" target="_blank">...</a></h1>
 
 </body>
 
