@@ -1,3 +1,4 @@
+efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pintore, mattia veroni;;;2023/433;;;last_week
 two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco sica;;;2023/1229;;;last_week
 fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_month
 the generalized montgomery coordinate: a new computational tool for isogeny-based cryptography;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2022/150;;;last_month
@@ -34,7 +35,6 @@ low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esse
 scallop: scaling the csi-fish;;;luca de feo, tako boris fouotsa, péter kutas, antonin leroux, simon-philipp merz, lorenz panny, benjamin wesolowski;;;2023/058;;;last_year
 new algorithms for the deuring correspondence: towards practical and secure sqisign signatures;;;luca de feo, antonin leroux, patrick longa, benjamin wesolowski;;;2022/234;;;last_year
 efficient isogeny proofs using generic techniques;;;kelong cong, yi-fu lai, shai levin;;;2023/037;;;last_year
-efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pintore, mattia veroni;;;2023/433;;;last_year
 a tightly secure identity-based signature scheme from isogenies;;;hyungrok jo, shingo sato, junji shikata;;;2023/426;;;last_year
 disorientation faults in csidh;;;gustavo banegas, juliane krämer, tanja lange, michael meyer, lorenz panny, krijn reijnders, jana sotáková, monika trimoska;;;2022/1202;;;last_year
 simple two-round ot in the explicit isogeny model;;;emmanuela orsini, riccardo zanotto;;;2023/269;;;last_year
@@ -80,7 +80,7 @@ post-quantum anonymous one-sided authenticated key exchange without random oracl
 full quantum equivalence of group action dlog and cdh, and more;;;hart montgomery, mark zhandry;;;2022/1135;;;last_year
 speeding-up parallel computation of large smooth-degree isogeny using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, m. anwar hasan;;;2022/1103;;;last_year
 an attack on sidh with arbitrary starting curve;;;luciano maino, chloe martindale;;;2022/1026;;;last_year
-evaluating isogenies in polylogarithmic time;;;damien robert;;;2022/1068;;;last_year
+evaluating isogenies in polylogarithmic time;;;damien robert;;;2022/1068;;;other
 efficient computation of (2^n,2^n)-isogenies;;;sabrina kunzweiler;;;2022/990;;;other
 a note on key control in csidh;;;antonio sanso;;;2022/847;;;other
 efficient supersingularity testing over 𝔽ₚ and csidh key validation;;;gustavo banegas, valerie gilchrist, benjamin smith;;;2022/880;;;other
