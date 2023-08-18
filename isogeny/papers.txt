@@ -6,7 +6,7 @@ towards a quantum-resistant weak verifiable delay function;;;thomas decru, lucia
 effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;last_month
 a note on constructing sidh-pok-based signatures after castryck-decru attack;;;jesús-javier chi-domínguez;;;2022/1479;;;last_month
 two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;last_month
-adaptive attack for a possible pke scheme using festa trapdoor functions in the wrong way;;;tomoki moriya;;;2023/1092;;;last_month
+adaptive attack for a possible pke scheme using festa trapdoor functions in the wrong way;;;tomoki moriya;;;2023/1092;;;last_year
 radical isogenies and modular curves;;;valentina pribanić;;;2022/1446;;;last_year
 quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_year
 public-key compression in m-sidh;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_year
