@@ -1,5 +1,5 @@
 efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pintore, mattia veroni;;;2023/433;;;last_week
-two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco sica;;;2023/1229;;;last_week
+two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco sica;;;2023/1229;;;last_month
 fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_month
 the generalized montgomery coordinate: a new computational tool for isogeny-based cryptography;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2022/150;;;last_month
 towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;last_month
