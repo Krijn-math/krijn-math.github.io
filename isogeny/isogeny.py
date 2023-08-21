@@ -9,9 +9,9 @@ from bs4 import BeautifulSoup
 def classify_date(date_str):
     parsed_date = datetime.strptime(date_str, '%Y-%m-%d')
     current_date = datetime.now()
-    
+
     time_difference = current_date - parsed_date
-    
+
     if time_difference <= timedelta(days=7):
         return 'last_week'
     elif time_difference <= timedelta(days=30):
