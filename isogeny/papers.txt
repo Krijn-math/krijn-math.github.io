@@ -79,7 +79,7 @@ statistical security in two-party computation revisited;;;saikrishna badrinaraya
 post-quantum anonymous one-sided authenticated key exchange without random oracles;;;ren ishibashi, kazuki yoneyama;;;2022/616;;;last_year
 full quantum equivalence of group action dlog and cdh, and more;;;hart montgomery, mark zhandry;;;2022/1135;;;last_year
 speeding-up parallel computation of large smooth-degree isogeny using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, m. anwar hasan;;;2022/1103;;;last_year
-an attack on sidh with arbitrary starting curve;;;luciano maino, chloe martindale;;;2022/1026;;;last_year
+an attack on sidh with arbitrary starting curve;;;luciano maino, chloe martindale;;;2022/1026;;;other
 evaluating isogenies in polylogarithmic time;;;damien robert;;;2022/1068;;;other
 efficient computation of (2^n,2^n)-isogenies;;;sabrina kunzweiler;;;2022/990;;;other
 a note on key control in csidh;;;antonio sanso;;;2022/847;;;other
