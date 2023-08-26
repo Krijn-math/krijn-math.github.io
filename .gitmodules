@@ -1,0 +1,3 @@
+[submodule "ooij"]
+	path = ooij
+	url = git@github.com:Krijn-math/ooij.git
