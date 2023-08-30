@@ -4,7 +4,7 @@ fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo ban
 the generalized montgomery coordinate: a new computational tool for isogeny-based cryptography;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2022/150;;;last_month
 towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;last_month
 effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;last_month
-a note on constructing sidh-pok-based signatures after castryck-decru attack;;;jesús-javier chi-domínguez;;;2022/1479;;;last_month
+a note on constructing sidh-pok-based signatures after castryck-decru attack;;;jesús-javier chi-domínguez;;;2022/1479;;;last_year
 two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;last_year
 adaptive attack for a possible pke scheme using festa trapdoor functions in the wrong way;;;tomoki moriya;;;2023/1092;;;last_year
 radical isogenies and modular curves;;;valentina pribanić;;;2022/1446;;;last_year
