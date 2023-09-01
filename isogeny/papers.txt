@@ -1,14 +1,18 @@
+finding orientations of supersingular elliptic curves and quaternion orders;;;sarah arpin, james clements, pierrick dartois, jonathan komada eriksen, péter kutas, benjamin wesolowski;;;2023/1268;;;last_month
+faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
+deuring for the people: supersingular elliptic curves with prescribed endomorphism ring in general characteristic;;;jonathan komada eriksen, lorenz panny, jana sotáková, mattia veroni;;;2023/106;;;last_month
+verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_month
+quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_month
 efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pintore, mattia veroni;;;2023/433;;;last_month
+csi-otter: isogeny-based (partially) blind signatures from the class group action with a twist;;;shuichi katsumata, yi-fu lai, jason t. legrow, ling qin;;;2023/1239;;;last_month
 two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco sica;;;2023/1229;;;last_month
 fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_month
-the generalized montgomery coordinate: a new computational tool for isogeny-based cryptography;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2022/150;;;last_month
 towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;last_month
 effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;last_month
 a note on constructing sidh-pok-based signatures after castryck-decru attack;;;jesús-javier chi-domínguez;;;2022/1479;;;last_year
 two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;last_year
 adaptive attack for a possible pke scheme using festa trapdoor functions in the wrong way;;;tomoki moriya;;;2023/1092;;;last_year
 radical isogenies and modular curves;;;valentina pribanić;;;2022/1446;;;last_year
-quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_year
 public-key compression in m-sidh;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_year
 generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_year
 vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;;;2023/885;;;last_year
@@ -47,7 +51,6 @@ capybara and tsubaki: verifiable random functions from group actions and isogeni
 sidh with masked torsion point images;;;tako boris fouotsa;;;2022/1054;;;last_year
 round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna badrinarayanan, daniel masny, pratyay mukherjee, sikhar patranabis, srinivasan raghuraman, pratik sarkar;;;2022/1511;;;last_year
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;last_year
-deuring for the people: supersingular elliptic curves with prescribed endomorphism ring in general characteristic;;;jonathan komada eriksen, lorenz panny, jana sotáková, mattia veroni;;;2023/106;;;last_year
 some applications of higher dimensional isogenies to elliptic curves (overview of results);;;damien robert;;;2022/1704;;;last_year
 on the key generation in sqisign;;;hiroshi onuki;;;2022/900;;;last_year
 blind signatures from zero-knowledge arguments;;;paulo l. barreto, gustavo h. m. zanon;;;2023/067;;;last_year
@@ -67,7 +70,6 @@ parallel isogeny path finding with limited memory;;;emanuele bellini, jorge chav
 generalising fault attacks to genus two isogeny cryptosystems;;;ariana goh, chu-wee lim, yan bo ti;;;2022/196;;;last_year
 cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael naehrig, michael meyer, bruno sterner;;;2022/1439;;;last_year
 failing to hash into supersingular isogeny graphs;;;jeremy booher, ross bowden, javad doliskani, tako boris fouotsa, steven d.  galbraith, sabrina kunzweiler, simon-philipp merz, christophe petit, benjamin smith, katherine e. stange, yan bo ti, christelle vincent, josé felipe voloch, charlotte weitkämper, lukas zobernig;;;2022/518;;;last_year
-orienteering with one endomorphism;;;sarah arpin, mingjie chen, kristin e.  lauter, renate scheidler, katherine e. stange, ha t.  n.  tran;;;2022/098;;;last_year
 projective geometry of hessian elliptic curves and genus 2 triple covers of cubics;;;rémy oudompheng;;;2022/1107;;;last_year
 discrete exponential equations and noisy systems;;;trey li;;;2022/1344;;;last_year
 on the decisional diffie-hellman problem for class group actions on oriented elliptic curves;;;wouter castryck, marc houben, frederik vercauteren, benjamin wesolowski;;;2022/345;;;last_year
@@ -95,6 +97,4 @@ sidh-sign: an efficient sidh pok-based signature;;;jesús-javier chi-domínguez,
 hard homogeneous spaces from the class field theory of imaginary hyperelliptic function fields;;;antoine leudière, pierre-jean spaenlehauer;;;2022/349;;;other
 computing isogenies between finite drinfeld modules;;;benjamin wesolowski;;;2022/438;;;other
 single-trace clustering power analysis of the point-swapping procedure in the three point ladder of cortex-m4 sike;;;aymeric genêt, novak kaluđerović;;;2022/364;;;other
-faulty isogenies: a new kind of leakage;;;gora adj, jesús-javier chi-domínguez, víctor mateu, francisco rodríguez-henríquez;;;2022/153;;;other
 cache-22: a highly deployable end-to-end encrypted cache system with post-quantum security;;;keita emura, shiho moriai, takuma nakajima, masato yoshimi;;;2022/220;;;other
-sike channels;;;luca de feo, nadia el mrabet, aymeric genêt, novak kaluđerović, natacha linard de guertechin, simon pontié, élise tasso;;;2022/054;;;other
