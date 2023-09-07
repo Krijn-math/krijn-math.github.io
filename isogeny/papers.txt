@@ -6,7 +6,7 @@ quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_month
 efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pintore, mattia veroni;;;2023/433;;;last_month
 csi-otter: isogeny-based (partially) blind signatures from the class group action with a twist;;;shuichi katsumata, yi-fu lai, jason t. legrow, ling qin;;;2023/1239;;;last_month
 two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco sica;;;2023/1229;;;last_month
-fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_month
+fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_year
 towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;last_year
 effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;last_year
 a note on constructing sidh-pok-based signatures after castryck-decru attack;;;jesús-javier chi-domínguez;;;2022/1479;;;last_year
