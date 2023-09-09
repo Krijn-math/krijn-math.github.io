@@ -77,7 +77,7 @@ a note on reimplementing the castryck-decru attack and lessons learned for sagem
 horizontal racewalking using radical isogenies;;;wouter castryck, thomas decru, marc houben, frederik vercauteren;;;2022/1259;;;last_year
 group action key encapsulation and non-interactive key exchange in the qrom;;;julien duman, dominik hartmann, eike kiltz, sabrina kunzweiler, jonas lehmann, doreen riepel;;;2022/1230;;;last_year
 an effective lower bound on the number of orientable supersingular elliptic curves;;;antonin leroux;;;2022/357;;;last_year
-statistical security in two-party computation revisited;;;saikrishna badrinarayanan, sikhar patranabis, pratik sarkar;;;2022/1190;;;last_year
+statistical security in two-party computation revisited;;;saikrishna badrinarayanan, sikhar patranabis, pratik sarkar;;;2022/1190;;;other
 post-quantum anonymous one-sided authenticated key exchange without random oracles;;;ren ishibashi, kazuki yoneyama;;;2022/616;;;other
 full quantum equivalence of group action dlog and cdh, and more;;;hart montgomery, mark zhandry;;;2022/1135;;;other
 speeding-up parallel computation of large smooth-degree isogeny using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, m. anwar hasan;;;2022/1103;;;other
