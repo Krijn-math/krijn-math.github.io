@@ -2,8 +2,8 @@ finding orientations of supersingular elliptic curves and quaternion orders;;;sa
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
 deuring for the people: supersingular elliptic curves with prescribed endomorphism ring in general characteristic;;;jonathan komada eriksen, lorenz panny, jana sotáková, mattia veroni;;;2023/106;;;last_month
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_month
-quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_month
-efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pintore, mattia veroni;;;2023/433;;;last_month
+quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_year
+efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pintore, mattia veroni;;;2023/433;;;last_year
 csi-otter: isogeny-based (partially) blind signatures from the class group action with a twist;;;shuichi katsumata, yi-fu lai, jason t. legrow, ling qin;;;2023/1239;;;last_year
 two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco sica;;;2023/1229;;;last_year
 fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_year
@@ -75,7 +75,7 @@ discrete exponential equations and noisy systems;;;trey li;;;2022/1344;;;last_ye
 on the decisional diffie-hellman problem for class group actions on oriented elliptic curves;;;wouter castryck, marc houben, frederik vercauteren, benjamin wesolowski;;;2022/345;;;last_year
 a note on reimplementing the castryck-decru attack and lessons learned for sagemath;;;rémy oudompheng, giacomo pope;;;2022/1283;;;last_year
 horizontal racewalking using radical isogenies;;;wouter castryck, thomas decru, marc houben, frederik vercauteren;;;2022/1259;;;last_year
-group action key encapsulation and non-interactive key exchange in the qrom;;;julien duman, dominik hartmann, eike kiltz, sabrina kunzweiler, jonas lehmann, doreen riepel;;;2022/1230;;;last_year
+group action key encapsulation and non-interactive key exchange in the qrom;;;julien duman, dominik hartmann, eike kiltz, sabrina kunzweiler, jonas lehmann, doreen riepel;;;2022/1230;;;other
 an effective lower bound on the number of orientable supersingular elliptic curves;;;antonin leroux;;;2022/357;;;other
 statistical security in two-party computation revisited;;;saikrishna badrinarayanan, sikhar patranabis, pratik sarkar;;;2022/1190;;;other
 post-quantum anonymous one-sided authenticated key exchange without random oracles;;;ren ishibashi, kazuki yoneyama;;;2022/616;;;other
