@@ -1,5 +1,5 @@
 finding orientations of supersingular elliptic curves and quaternion orders;;;sarah arpin, james clements, pierrick dartois, jonathan komada eriksen, péter kutas, benjamin wesolowski;;;2023/1268;;;last_month
-faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
+faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_year
 deuring for the people: supersingular elliptic curves with prescribed endomorphism ring in general characteristic;;;jonathan komada eriksen, lorenz panny, jana sotáková, mattia veroni;;;2023/106;;;last_year
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_year
 quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_year
