@@ -73,7 +73,7 @@ failing to hash into supersingular isogeny graphs;;;jeremy booher, ross bowden, 
 projective geometry of hessian elliptic curves and genus 2 triple covers of cubics;;;rémy oudompheng;;;2022/1107;;;last_year
 discrete exponential equations and noisy systems;;;trey li;;;2022/1344;;;last_year
 on the decisional diffie-hellman problem for class group actions on oriented elliptic curves;;;wouter castryck, marc houben, frederik vercauteren, benjamin wesolowski;;;2022/345;;;last_year
-a note on reimplementing the castryck-decru attack and lessons learned for sagemath;;;rémy oudompheng, giacomo pope;;;2022/1283;;;last_year
+a note on reimplementing the castryck-decru attack and lessons learned for sagemath;;;rémy oudompheng, giacomo pope;;;2022/1283;;;other
 horizontal racewalking using radical isogenies;;;wouter castryck, thomas decru, marc houben, frederik vercauteren;;;2022/1259;;;other
 group action key encapsulation and non-interactive key exchange in the qrom;;;julien duman, dominik hartmann, eike kiltz, sabrina kunzweiler, jonas lehmann, doreen riepel;;;2022/1230;;;other
 an effective lower bound on the number of orientable supersingular elliptic curves;;;antonin leroux;;;2022/357;;;other
