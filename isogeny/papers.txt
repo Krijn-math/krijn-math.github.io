@@ -1,3 +1,5 @@
+defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;last_week
+patient zero and patient six: zero-value and correlation attacks on csidh and sike;;;fabio campos, michael meyer, krijn reijnders, marc stöttinger;;;2022/904;;;last_week
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;last_week
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_week
 the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benjamin lipp;;;2023/1480;;;last_week
@@ -11,7 +13,6 @@ qfesta: efficient algorithms and parameters for festa using quaternion algebras;
 cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael naehrig, michael meyer, bruno sterner;;;2022/1439;;;last_month
 aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krijn reijnders;;;2023/1559;;;last_month
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_month
-defend: verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;last_month
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux;;;2023/1488;;;last_month
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;last_month
 is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya;;;2023/1506;;;last_month
@@ -22,8 +23,8 @@ oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichl
 the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya;;;2023/1092;;;last_month
 identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;last_month
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;last_month
-a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;last_month
-festa: fast encryption from supersingular torsion attacks;;;andrea basso, luciano maino, giacomo pope;;;2023/660;;;last_month
+a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;last_year
+festa: fast encryption from supersingular torsion attacks;;;andrea basso, luciano maino, giacomo pope;;;2023/660;;;last_year
 solving the hidden number problem for csidh and csurf via automated coppersmith;;;jonas meers, julian nowakowski;;;2023/1409;;;last_year
 the supersingular endomorphism ring and one endomorphism problems are equivalent;;;aurel page, benjamin wesolowski;;;2023/1399;;;last_year
 parallel hardware for isogeny-based vdf: attacker's perspective;;;david jacquemin, anisha mukherjee, ahmet can mert, sujoy sinha roy;;;2023/1396;;;last_year
@@ -96,5 +97,4 @@ evaluating isogenies in polylogarithmic time;;;damien robert;;;2022/1068;;;other
 efficient computation of (2^n,2^n)-isogenies;;;sabrina kunzweiler;;;2022/990;;;other
 a note on key control in csidh;;;antonio sanso;;;2022/847;;;other
 efficient supersingularity testing over 𝔽ₚ and csidh key validation;;;gustavo banegas, valerie gilchrist, benjamin smith;;;2022/880;;;other
-patient zero and patient six: zero-value and correlation attacks on csidh and sike;;;fabio campos, michael meyer, krijn reijnders, marc stöttinger;;;2022/904;;;other
 supersingular isogeny diffie-hellman with legendre form;;;jesse elliott, aaron hutchinson;;;2022/870;;;other
