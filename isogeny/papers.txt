@@ -3,7 +3,7 @@ patient zero and patient six: zero-value and correlation attacks on csidh and si
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;last_week
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_week
 the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benjamin lipp;;;2023/1480;;;last_week
-breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;last_week
+breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;last_month
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;last_month
 computing isogenies of power-smooth degrees between ppavs;;;jesús-javier chi-domínguez, amalia pizarro-madariaga, edgardo riquelme;;;2023/508;;;last_month
 towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and its isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_month
@@ -21,7 +21,7 @@ lower bound of costs of formulas to compute image curves of 3-isogenies in the f
 non-interactive commitment from non-transitive group actions;;;giuseppe d'alconzo, andrea flamini, andrea gangemi;;;2023/723;;;last_month
 oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_month
 the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya;;;2023/1092;;;last_month
-identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;last_month
+identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;last_year
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;last_year
 a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;last_year
 festa: fast encryption from supersingular torsion attacks;;;andrea basso, luciano maino, giacomo pope;;;2023/660;;;last_year
