@@ -157,6 +157,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             var authors = values[1];
                             var authorlist = authors.split(',');
                             var id = values[2];
+                            var abstract = values[3];
 
                             var listItem = document.createElement('li');
                             // listItem.classList.add('list-item');
@@ -193,6 +194,16 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             listItem.appendChild(authorItem);
                             listItem.appendChild(floatItem);
 
+                            var abstractHeading = document.createElement('details');
+                            var summaryElement = document.createElement("summary");
+                            summaryElement.textContent = "abstract";
+                            var bodyElement = document.createElement("span");
+                            bodyElement.innerHTML = abstract;
+                            abstractHeading.appendChild(summaryElement);
+                            abstractHeading.appendChild(bodyElement);
+
+                            listItem.appendChild(abstractHeading)
+                            
                             list.appendChild(listItem);
                             list.appendChild(document.createElement('br'));
                         });
