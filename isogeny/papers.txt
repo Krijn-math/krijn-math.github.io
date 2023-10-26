@@ -1,3 +1,4 @@
+cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael meyer, michael naehrig, bruno sterner;;;2022/1439;;;last_week
 optimizations and practicality of high-security csidh;;;fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodríguez-henríquez, peter schwabe, thom wiggers;;;2023/793;;;last_week
 scallop: scaling the csi-fish;;;luca de feo, tako boris fouotsa, péter kutas, antonin leroux, simon-philipp merz, lorenz panny, benjamin wesolowski;;;2023/058;;;last_week
 defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;last_week
@@ -12,7 +13,6 @@ towards optimally small smoothness bounds for cryptographic-sized twin smooth in
 new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako boris fouotsa;;;2023/791;;;last_month
 sqisignhd: new dimensions in cryptography;;;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;;;2023/436;;;last_month
 qfesta: efficient algorithms and parameters for festa using quaternion algebras;;;kohei nakagawa, hiroshi onuki;;;2023/1468;;;last_month
-cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael naehrig, michael meyer, bruno sterner;;;2022/1439;;;last_month
 aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krijn reijnders;;;2023/1559;;;last_month
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_month
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux;;;2023/1488;;;last_month
@@ -83,7 +83,7 @@ cryptographic primitives with hinting property;;;navid alamati, sikhar patranabi
 another round of breaking and making quantum money: how to not build it from lattices, and more;;;jiahui liu, hart montgomery, mark zhandry;;;2022/1620;;;last_year
 exploring rns for isogeny-based cryptography;;;david jacquemin, ahmet can mert, sujoy sinha roy;;;2022/1289;;;last_year
 an algorithm for efficient detection of (n,n)-splittings and its application to the isogeny problem in dimension 2;;;maria corte-real santos, craig costello, sam frengley;;;2022/1736;;;last_year
-parallel isogeny path finding with limited memory;;;emanuele bellini, jorge chavez-saab, jesús-javier chi-domínguez, andre esser, sorina ionica, luis rivera-zamarripa, francisco rodríguez-henríquez, monika trimoska, floyd zweydinger;;;2022/1464;;;last_year
+parallel isogeny path finding with limited memory;;;emanuele bellini, jorge chavez-saab, jesús-javier chi-domínguez, andre esser, sorina ionica, luis rivera-zamarripa, francisco rodríguez-henríquez, monika trimoska, floyd zweydinger;;;2022/1464;;;other
 projective geometry of hessian elliptic curves and genus 2 triple covers of cubics;;;rémy oudompheng;;;2022/1107;;;other
 discrete exponential equations and noisy systems;;;trey li;;;2022/1344;;;other
 a note on reimplementing the castryck-decru attack and lessons learned for sagemath;;;rémy oudompheng, giacomo pope;;;2022/1283;;;other
