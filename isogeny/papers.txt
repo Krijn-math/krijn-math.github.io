@@ -1,7 +1,8 @@
+π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_week
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;last_week
 cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael meyer, michael naehrig, bruno sterner;;;2022/1439;;;last_week
 optimizations and practicality of high-security csidh;;;fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodríguez-henríquez, peter schwabe, thom wiggers;;;2023/793;;;last_week
-scallop: scaling the csi-fish;;;luca de feo, tako boris fouotsa, péter kutas, antonin leroux, simon-philipp merz, lorenz panny, benjamin wesolowski;;;2023/058;;;last_week
+scallop: scaling the csi-fish;;;luca de feo, tako boris fouotsa, péter kutas, antonin leroux, simon-philipp merz, lorenz panny, benjamin wesolowski;;;2023/058;;;last_month
 defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;last_month
 patient zero and patient six: zero-value and correlation attacks on csidh and sike;;;fabio campos, michael meyer, krijn reijnders, marc stöttinger;;;2022/904;;;last_month
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_month
@@ -95,6 +96,5 @@ speeding-up parallel computation of large smooth-degree isogeny using precedence
 an attack on sidh with arbitrary starting curve;;;luciano maino, chloe martindale;;;2022/1026;;;other
 evaluating isogenies in polylogarithmic time;;;damien robert;;;2022/1068;;;other
 efficient computation of (2^n,2^n)-isogenies;;;sabrina kunzweiler;;;2022/990;;;other
-a note on key control in csidh;;;antonio sanso;;;2022/847;;;other
 efficient supersingularity testing over 𝔽ₚ and csidh key validation;;;gustavo banegas, valerie gilchrist, benjamin smith;;;2022/880;;;other
 supersingular isogeny diffie-hellman with legendre form;;;jesse elliott, aaron hutchinson;;;2022/870;;;other
