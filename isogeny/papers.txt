@@ -1,3 +1,4 @@
+malleable commitments from group actions and zero-knowledge proofs for circuits based on isogenies;;;mingjie chen, yi-fu lai, abel laval, laurane marco, christophe petit;;;2023/1710;;;last_week
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;last_month
 cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael meyer, michael naehrig, bruno sterner;;;2022/1439;;;last_month
@@ -97,4 +98,3 @@ an attack on sidh with arbitrary starting curve;;;luciano maino, chloe martindal
 evaluating isogenies in polylogarithmic time;;;damien robert;;;2022/1068;;;other
 efficient computation of (2^n,2^n)-isogenies;;;sabrina kunzweiler;;;2022/990;;;other
 efficient supersingularity testing over 𝔽ₚ and csidh key validation;;;gustavo banegas, valerie gilchrist, benjamin smith;;;2022/880;;;other
-supersingular isogeny diffie-hellman with legendre form;;;jesse elliott, aaron hutchinson;;;2022/870;;;other
