@@ -12,9 +12,9 @@ the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benja
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;last_month
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;last_month
 computing isogenies of power-smooth degrees between ppavs;;;jesús-javier chi-domínguez, amalia pizarro-madariaga, edgardo riquelme;;;2023/508;;;last_month
-towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and its isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_month
-new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako boris fouotsa;;;2023/791;;;last_month
-sqisignhd: new dimensions in cryptography;;;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;;;2023/436;;;last_month
+towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and its isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_year
+new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako boris fouotsa;;;2023/791;;;last_year
+sqisignhd: new dimensions in cryptography;;;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;;;2023/436;;;last_year
 aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krijn reijnders;;;2023/1559;;;last_year
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_year
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux;;;2023/1488;;;last_year
