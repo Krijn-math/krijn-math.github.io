@@ -1,3 +1,5 @@
+an algorithmic approach to (2,2)-isogenies in the theta model and applications to isogeny-based cryptography;;;pierrick dartois, luciano maino, giacomo pope, damien robert;;;2023/1747;;;last_week
+csidh with level structure;;;steven d. galbraith, derek perrin, josé felipe voloch;;;2023/1726;;;last_week
 qfesta: efficient algorithms and parameters for festa using quaternion algebras;;;kohei nakagawa, hiroshi onuki;;;2023/1468;;;last_week
 malleable commitments from group actions and zero-knowledge proofs for circuits based on isogenies;;;mingjie chen, yi-fu lai, abel laval, laurane marco, christophe petit;;;2023/1710;;;last_month
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month
@@ -74,7 +76,6 @@ sidh with masked torsion point images;;;tako boris fouotsa;;;2022/1054;;;last_ye
 round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna badrinarayanan, daniel masny, pratyay mukherjee, sikhar patranabis, srinivasan raghuraman, pratik sarkar;;;2022/1511;;;last_year
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;last_year
 some applications of higher dimensional isogenies to elliptic curves (overview of results);;;damien robert;;;2022/1704;;;last_year
-on the key generation in sqisign;;;hiroshi onuki;;;2022/900;;;last_year
 blind signatures from zero-knowledge arguments;;;paulo l. barreto, gustavo h. m. zanon;;;2023/067;;;last_year
 computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_year
 cryptographic group and semigroup actions;;;oliver w. gnilke, jens zumbrägel;;;2023/017;;;last_year
@@ -97,4 +98,3 @@ speeding-up parallel computation of large smooth-degree isogeny using precedence
 an attack on sidh with arbitrary starting curve;;;luciano maino, chloe martindale;;;2022/1026;;;other
 evaluating isogenies in polylogarithmic time;;;damien robert;;;2022/1068;;;other
 efficient computation of (2^n,2^n)-isogenies;;;sabrina kunzweiler;;;2022/990;;;other
-efficient supersingularity testing over 𝔽ₚ and csidh key validation;;;gustavo banegas, valerie gilchrist, benjamin smith;;;2022/880;;;other
