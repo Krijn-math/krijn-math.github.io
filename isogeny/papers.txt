@@ -7,7 +7,7 @@ malleable commitments from group actions and zero-knowledge proofs for circuits 
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;last_month
 cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael meyer, michael naehrig, bruno sterner;;;2022/1439;;;last_month
-optimizations and practicality of high-security csidh;;;fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodríguez-henríquez, peter schwabe, thom wiggers;;;2023/793;;;last_month
+optimizations and practicality of high-security csidh;;;fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodríguez-henríquez, peter schwabe, thom wiggers;;;2023/793;;;last_year
 scallop: scaling the csi-fish;;;luca de feo, tako boris fouotsa, péter kutas, antonin leroux, simon-philipp merz, lorenz panny, benjamin wesolowski;;;2023/058;;;last_year
 defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;last_year
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_year
