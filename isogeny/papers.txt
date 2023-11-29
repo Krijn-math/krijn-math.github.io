@@ -1,3 +1,4 @@
+quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_week
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_week
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_month
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
@@ -36,7 +37,6 @@ solving the hidden number problem for csidh and csurf via automated coppersmith;
 the supersingular endomorphism ring and one endomorphism problems are equivalent;;;aurel page, benjamin wesolowski;;;2023/1399;;;last_year
 parallel hardware for isogeny-based vdf: attacker's perspective;;;david jacquemin, anisha mukherjee, ahmet can mert, sujoy sinha roy;;;2023/1396;;;last_year
 hidden stabilizers, the isogeny to endomorphism ring problem and the cryptanalysis of psidh;;;mingjie chen, muhammad imran, gábor ivanyos, péter kutas, antonin leroux, christophe petit;;;2023/779;;;last_year
-quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_year
 finding orientations of supersingular elliptic curves and quaternion orders;;;sarah arpin, james clements, pierrick dartois, jonathan komada eriksen, péter kutas, benjamin wesolowski;;;2023/1268;;;last_year
 deuring for the people: supersingular elliptic curves with prescribed endomorphism ring in general characteristic;;;jonathan komada eriksen, lorenz panny, jana sotáková, mattia veroni;;;2023/106;;;last_year
 efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pintore, mattia veroni;;;2023/433;;;last_year
