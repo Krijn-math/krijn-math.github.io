@@ -1,4 +1,4 @@
-quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_week
+quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_month
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_month
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
