@@ -1,3 +1,4 @@
+computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_week
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_week
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_week
 exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;last_week
@@ -78,7 +79,6 @@ round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna b
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;last_year
 some applications of higher dimensional isogenies to elliptic curves (overview of results);;;damien robert;;;2022/1704;;;last_year
 blind signatures from zero-knowledge arguments;;;paulo l. barreto, gustavo h. m. zanon;;;2023/067;;;last_year
-computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_year
 cryptographic group and semigroup actions;;;oliver w. gnilke, jens zumbrägel;;;2023/017;;;last_year
 m-sidh and md-sidh: countering sidh attacks by masking information;;;tako boris fouotsa, tomoki moriya, christophe petit;;;2023/013;;;last_year
 applying castryck-decru attack on the masked torsion point images sidh variant;;;jesús-javier chi-domínguez;;;2022/1667;;;last_year
