@@ -1,4 +1,4 @@
-computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_week
+computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_month
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_month
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
 exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;last_month
@@ -85,7 +85,7 @@ applying castryck-decru attack on the masked torsion point images sidh variant;;
 candidate trapdoor claw-free functions from group actions with applications to quantum protocols;;;navid alamati, giulio malavolta, ahmadreza rahimi;;;2022/1775;;;last_year
 cryptographic primitives with hinting property;;;navid alamati, sikhar patranabis;;;2022/1770;;;last_year
 another round of breaking and making quantum money: how to not build it from lattices, and more;;;jiahui liu, hart montgomery, mark zhandry;;;2022/1620;;;last_year
-exploring rns for isogeny-based cryptography;;;david jacquemin, ahmet can mert, sujoy sinha roy;;;2022/1289;;;last_year
+exploring rns for isogeny-based cryptography;;;david jacquemin, ahmet can mert, sujoy sinha roy;;;2022/1289;;;other
 an algorithm for efficient detection of (n,n)-splittings and its application to the isogeny problem in dimension 2;;;maria corte-real santos, craig costello, sam frengley;;;2022/1736;;;other
 parallel isogeny path finding with limited memory;;;emanuele bellini, jorge chavez-saab, jesús-javier chi-domínguez, andre esser, sorina ionica, luis rivera-zamarripa, francisco rodríguez-henríquez, monika trimoska, floyd zweydinger;;;2022/1464;;;other
 projective geometry of hessian elliptic curves and genus 2 triple covers of cubics;;;rémy oudompheng;;;2022/1107;;;other
