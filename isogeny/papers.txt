@@ -1,3 +1,4 @@
+capybara and tsubaki: verifiable random functions from group actions and isogenies;;;yi-fu lai;;;2023/182;;;last_week
 computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_month
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_month
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
@@ -73,7 +74,6 @@ masked-degree sidh;;;tomoki moriya;;;2022/1019;;;last_year
 a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;last_year
 a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;last_year
 sieving for large twin smooth integers using single solutions to prouhet-tarry-escott;;;knud ahrens;;;2023/219;;;last_year
-capybara and tsubaki: verifiable random functions from group actions and isogenies;;;yi-fu lai;;;2023/182;;;last_year
 sidh with masked torsion point images;;;tako boris fouotsa;;;2022/1054;;;last_year
 round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna badrinarayanan, daniel masny, pratyay mukherjee, sikhar patranabis, srinivasan raghuraman, pratik sarkar;;;2022/1511;;;last_year
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;last_year
