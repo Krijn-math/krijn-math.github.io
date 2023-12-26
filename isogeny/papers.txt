@@ -84,7 +84,7 @@ m-sidh and md-sidh: countering sidh attacks by masking information;;;tako boris 
 applying castryck-decru attack on the masked torsion point images sidh variant;;;jesús-javier chi-domínguez;;;2022/1667;;;last_year
 candidate trapdoor claw-free functions from group actions with applications to quantum protocols;;;navid alamati, giulio malavolta, ahmadreza rahimi;;;2022/1775;;;last_year
 cryptographic primitives with hinting property;;;navid alamati, sikhar patranabis;;;2022/1770;;;last_year
-another round of breaking and making quantum money: how to not build it from lattices, and more;;;jiahui liu, hart montgomery, mark zhandry;;;2022/1620;;;last_year
+another round of breaking and making quantum money: how to not build it from lattices, and more;;;jiahui liu, hart montgomery, mark zhandry;;;2022/1620;;;other
 exploring rns for isogeny-based cryptography;;;david jacquemin, ahmet can mert, sujoy sinha roy;;;2022/1289;;;other
 an algorithm for efficient detection of (n,n)-splittings and its application to the isogeny problem in dimension 2;;;maria corte-real santos, craig costello, sam frengley;;;2022/1736;;;other
 parallel isogeny path finding with limited memory;;;emanuele bellini, jorge chavez-saab, jesús-javier chi-domínguez, andre esser, sorina ionica, luis rivera-zamarripa, francisco rodríguez-henríquez, monika trimoska, floyd zweydinger;;;2022/1464;;;other
