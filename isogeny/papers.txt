@@ -1,4 +1,4 @@
-capybara and tsubaki: verifiable random functions from group actions and isogenies;;;yi-fu lai;;;2023/182;;;last_week
+capybara and tsubaki: verifiable random functions from group actions and isogenies;;;yi-fu lai;;;2023/182;;;last_month
 computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_month
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_month
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
