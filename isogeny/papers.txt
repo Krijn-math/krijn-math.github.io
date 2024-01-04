@@ -79,7 +79,7 @@ round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna b
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;last_year
 some applications of higher dimensional isogenies to elliptic curves (overview of results);;;damien robert;;;2022/1704;;;last_year
 blind signatures from zero-knowledge arguments;;;paulo l. barreto, gustavo h. m. zanon;;;2023/067;;;last_year
-cryptographic group and semigroup actions;;;oliver w. gnilke, jens zumbrägel;;;2023/017;;;last_year
+cryptographic group and semigroup actions;;;oliver w. gnilke, jens zumbrägel;;;2023/017;;;other
 m-sidh and md-sidh: countering sidh attacks by masking information;;;tako boris fouotsa, tomoki moriya, christophe petit;;;2023/013;;;other
 applying castryck-decru attack on the masked torsion point images sidh variant;;;jesús-javier chi-domínguez;;;2022/1667;;;other
 candidate trapdoor claw-free functions from group actions with applications to quantum protocols;;;navid alamati, giulio malavolta, ahmadreza rahimi;;;2022/1775;;;other
