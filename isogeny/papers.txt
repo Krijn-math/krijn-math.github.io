@@ -1,6 +1,7 @@
+zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;last_week
 generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_week
-on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_week
-computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_week
+on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_month
+computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_month
 capybara and tsubaki: verifiable random functions from group actions and isogenies;;;yi-fu lai;;;2023/182;;;last_month
 computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_year
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_year
@@ -75,7 +76,6 @@ supersingular curves you can trust;;;andrea basso, giulio codogni, deirdre conno
 a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;last_year
 a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;last_year
 sieving for large twin smooth integers using single solutions to prouhet-tarry-escott;;;knud ahrens;;;2023/219;;;last_year
-sidh with masked torsion point images;;;tako boris fouotsa;;;2022/1054;;;last_year
 round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna badrinarayanan, daniel masny, pratyay mukherjee, sikhar patranabis, srinivasan raghuraman, pratik sarkar;;;2022/1511;;;last_year
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;last_year
 some applications of higher dimensional isogenies to elliptic curves (overview of results);;;damien robert;;;2022/1704;;;last_year
