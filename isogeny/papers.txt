@@ -1,3 +1,4 @@
+new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_week
 zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;last_week
 generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_week
 on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_month
@@ -19,7 +20,6 @@ cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig c
 optimizations and practicality of high-security csidh;;;fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodríguez-henríquez, peter schwabe, thom wiggers;;;2023/793;;;last_year
 scallop: scaling the csi-fish;;;luca de feo, tako boris fouotsa, péter kutas, antonin leroux, simon-philipp merz, lorenz panny, benjamin wesolowski;;;2023/058;;;last_year
 defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;last_year
-new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_year
 the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benjamin lipp;;;2023/1480;;;last_year
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;last_year
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;last_year
