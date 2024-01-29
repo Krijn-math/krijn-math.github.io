@@ -1,4 +1,4 @@
-on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_week
+on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_month
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_month
 zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;last_month
 generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_month
