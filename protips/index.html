@@ -4,14 +4,148 @@
 <head>
     <meta charset="utf-8" />
     <title>stellingen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" />
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+        }
 
-</head>
+        nav {
+            margin-right: 2em;
+            padding: 1em;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 1em;
+        }
+
+        .spaced-list>li {
+            margin-bottom: 1ex;
+        }
+
+        hr {
+            border: 1px solid gray;
+            margin: 2ex 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            background-color: #BDEDE0;
+            color: #373F51
+        }
+
+        a {
+            color: #36599b;
+        }
+
+        a:visited {
+            color: #E26D5C;
+        }
+
+        .fulljustify {
+            text-align: justify;
+        }
+
+        .fulljustify:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        #tagline {
+            height: 80px;
+            overflow: hidden;
+            line-height: 80px;
+            /* vert-center */
+        }
+
+        @media (min-width: 100px) {
+            ol {
+                width: max-width;
+            }
+
+            ul {
+                width: max-width;
+            }
+
+            details {
+                width: max-width;
+                text-align: justify;
+            }
+
+            details>summary {
+                padding-left: 20px;
+                padding-top: 6px;
+                width: max-width;
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 500px) {
+            ol {
+                width: 420px;
+                text-align: justify;
+            }
+
+            ul {
+                width: 380px;
+                padding-left: 60px;
+                text-align: justify;
+            }
+
+            details {
+                width: 420px;
+                text-align: justify;
+            }
+
+            details>summary {
+                padding-left: 20px;
+                padding-top: 6px;
+                width: 420px;
+                cursor: pointer;
+            }
+
+            img {
+                width: 420px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            width: 390px;
+            padding-top: 20px;
+            padding-left: 40px;
+        }
+        
+        h2 {
+            text-align: center;
+            width: 390px;
+            padding-top: 20px;
+            padding-left: 40px;
+        }
+    </style>
+    <link rel="icon" href="favicon.ico" />
 
 <body>
     <main>
 
+        <header>
+            <h2>stellingen</h2>
+        </header>
+        <br>
             <ul reversed class="spaced-list" ; id="list"></ul>
 
 
