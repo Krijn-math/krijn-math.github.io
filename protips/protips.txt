@@ -5,3 +5,4 @@ never start with char(F_q) or two
 domain names, domain names, domain names
 don't run the race, go to your happy place
 make notation easy, not hard
+the speed of any isogeny-based scheme is lower bounded by the speed of computing a 2^256 isogeny
