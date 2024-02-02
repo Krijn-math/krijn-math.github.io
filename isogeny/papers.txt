@@ -1,3 +1,4 @@
+the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya, hiroshi onuki;;;2023/1092;;;last_week
 properties of lattice isomorphism as a cryptographic group action;;;alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni, benjamin benčina;;;2023/1093;;;last_week
 on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_month
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_month
@@ -37,7 +38,6 @@ vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery,
 lower bound of costs of formulas to compute image curves of 3-isogenies in the framework of generalized montgomery coordinates;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2023/1511;;;last_year
 non-interactive commitment from non-transitive group actions;;;giuseppe d'alconzo, andrea flamini, andrea gangemi;;;2023/723;;;last_year
 oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_year
-the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya;;;2023/1092;;;last_year
 identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;last_year
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;last_year
 a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;last_year
@@ -78,8 +78,8 @@ a lower bound on the length of signatures based on group actions and generic iso
 a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;last_year
 sieving for large twin smooth integers using single solutions to prouhet-tarry-escott;;;knud ahrens;;;2023/219;;;last_year
 round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna badrinarayanan, daniel masny, pratyay mukherjee, sikhar patranabis, srinivasan raghuraman, pratik sarkar;;;2022/1511;;;last_year
-hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;last_year
-some applications of higher dimensional isogenies to elliptic curves (overview of results);;;damien robert;;;2022/1704;;;last_year
+hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;other
+some applications of higher dimensional isogenies to elliptic curves (overview of results);;;damien robert;;;2022/1704;;;other
 blind signatures from zero-knowledge arguments;;;paulo l. barreto, gustavo h. m. zanon;;;2023/067;;;other
 cryptographic group and semigroup actions;;;oliver w. gnilke, jens zumbrägel;;;2023/017;;;other
 m-sidh and md-sidh: countering sidh attacks by masking information;;;tako boris fouotsa, tomoki moriya, christophe petit;;;2023/013;;;other
