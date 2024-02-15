@@ -1,3 +1,4 @@
+oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_week
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;last_week
 ready to sqi? safety first! towards a constant-time implementation of isogeny-based signature, sqisign;;;david jacquemin, anisha mukherjee, péter kutas, sujoy sinha roy;;;2023/807;;;last_week
 an algorithm for efficient detection of (n,n)-splittings and its application to the isogeny problem in dimension 2;;;maria corte-real santos, craig costello, sam frengley;;;2022/1736;;;last_month
@@ -42,7 +43,6 @@ is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya
 vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/992;;;last_year
 lower bound of costs of formulas to compute image curves of 3-isogenies in the framework of generalized montgomery coordinates;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2023/1511;;;last_year
 non-interactive commitment from non-transitive group actions;;;giuseppe d'alconzo, andrea flamini, andrea gangemi;;;2023/723;;;last_year
-oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_year
 identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;last_year
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;last_year
 a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;last_year
