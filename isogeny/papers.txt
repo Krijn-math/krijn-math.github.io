@@ -1,6 +1,6 @@
 oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_week
-a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;last_week
-ready to sqi? safety first! towards a constant-time implementation of isogeny-based signature, sqisign;;;david jacquemin, anisha mukherjee, péter kutas, sujoy sinha roy;;;2023/807;;;last_week
+a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;last_month
+ready to sqi? safety first! towards a constant-time implementation of isogeny-based signature, sqisign;;;david jacquemin, anisha mukherjee, péter kutas, sujoy sinha roy;;;2023/807;;;last_month
 an algorithm for efficient detection of (n,n)-splittings and its application to the isogeny problem in dimension 2;;;maria corte-real santos, craig costello, sam frengley;;;2022/1736;;;last_month
 computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;last_month
 efficient (3,3)-isogenies on fast kummer surfaces;;;maria corte-real santos, craig costello, benjamin smith;;;2024/144;;;last_month
