@@ -79,7 +79,7 @@ disorientation faults in csidh;;;gustavo banegas, juliane krämer, tanja lange, 
 simple two-round ot in the explicit isogeny model;;;emmanuela orsini, riccardo zanotto;;;2023/269;;;last_year
 supersingular curves you can trust;;;andrea basso, giulio codogni, deirdre connolly, luca de feo, tako boris fouotsa, guido maria lido, travis morrison, lorenz panny, sikhar patranabis, benjamin wesolowski;;;2022/1469;;;last_year
 a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;last_year
-a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;last_year
+a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;other
 sieving for large twin smooth integers using single solutions to prouhet-tarry-escott;;;knud ahrens;;;2023/219;;;other
 round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna badrinarayanan, daniel masny, pratyay mukherjee, sikhar patranabis, srinivasan raghuraman, pratik sarkar;;;2022/1511;;;other
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;other
