@@ -1,5 +1,5 @@
 qfesta: efficient algorithms and parameters for festa using quaternion algebras;;;kohei nakagawa, hiroshi onuki;;;2023/1468;;;last_week
-oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_week
+oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_month
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;last_month
 ready to sqi? safety first! towards a constant-time implementation of isogeny-based signature, sqisign;;;david jacquemin, anisha mukherjee, péter kutas, sujoy sinha roy;;;2023/807;;;last_month
 an algorithm for efficient detection of (n,n)-splittings and its application to the isogeny problem in dimension 2;;;maria corte-real santos, craig costello, sam frengley;;;2022/1736;;;last_month
@@ -7,7 +7,7 @@ computing orientations from the endomorphism ring of supersingular curves and ap
 efficient (3,3)-isogenies on fast kummer surfaces;;;maria corte-real santos, craig costello, benjamin smith;;;2024/144;;;last_month
 the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya, hiroshi onuki;;;2023/1092;;;last_month
 properties of lattice isomorphism as a cryptographic group action;;;alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni, benjamin benčina;;;2023/1093;;;last_month
-on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_month
+on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_year
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_year
 zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;last_year
 generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_year
@@ -78,7 +78,7 @@ a tightly secure identity-based signature scheme from isogenies;;;hyungrok jo, s
 disorientation faults in csidh;;;gustavo banegas, juliane krämer, tanja lange, michael meyer, lorenz panny, krijn reijnders, jana sotáková, monika trimoska;;;2022/1202;;;last_year
 simple two-round ot in the explicit isogeny model;;;emmanuela orsini, riccardo zanotto;;;2023/269;;;last_year
 supersingular curves you can trust;;;andrea basso, giulio codogni, deirdre connolly, luca de feo, tako boris fouotsa, guido maria lido, travis morrison, lorenz panny, sikhar patranabis, benjamin wesolowski;;;2022/1469;;;last_year
-a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;last_year
+a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;other
 a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;other
 sieving for large twin smooth integers using single solutions to prouhet-tarry-escott;;;knud ahrens;;;2023/219;;;other
 round-optimal oblivious transfer and mpc from computational csidh;;;saikrishna badrinarayanan, daniel masny, pratyay mukherjee, sikhar patranabis, srinivasan raghuraman, pratik sarkar;;;2022/1511;;;other
