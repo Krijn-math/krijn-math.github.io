@@ -1,4 +1,5 @@
-qfesta: efficient algorithms and parameters for festa using quaternion algebras;;;kohei nakagawa, hiroshi onuki;;;2023/1468;;;last_week
+is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya;;;2023/1506;;;last_week
+qfesta: efficient algorithms and parameters for festa using quaternion algebras;;;kohei nakagawa, hiroshi onuki;;;2023/1468;;;last_month
 oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_month
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;last_month
 ready to sqi? safety first! towards a constant-time implementation of isogeny-based signature, sqisign;;;david jacquemin, anisha mukherjee, péter kutas, sujoy sinha roy;;;2023/807;;;last_month
@@ -39,7 +40,6 @@ aprèssqi: extra fast verification for sqisign using extension-field signing;;;m
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_year
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux;;;2023/1488;;;last_year
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;last_year
-is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya;;;2023/1506;;;last_year
 vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/992;;;last_year
 lower bound of costs of formulas to compute image curves of 3-isogenies in the framework of generalized montgomery coordinates;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2023/1511;;;last_year
 non-interactive commitment from non-transitive group actions;;;giuseppe d'alconzo, andrea flamini, andrea gangemi;;;2023/723;;;last_year
