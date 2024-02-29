@@ -8,7 +8,7 @@ an algorithm for efficient detection of (n,n)-splittings and its application to 
 computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;last_month
 efficient (3,3)-isogenies on fast kummer surfaces;;;maria corte-real santos, craig costello, benjamin smith;;;2024/144;;;last_month
 the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya, hiroshi onuki;;;2023/1092;;;last_month
-properties of lattice isomorphism as a cryptographic group action;;;alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni, benjamin benčina;;;2023/1093;;;last_month
+properties of lattice isomorphism as a cryptographic group action;;;alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni, benjamin benčina;;;2023/1093;;;last_year
 on computing the multidimensional scalar multiplication on elliptic curves;;;walid haddaji, loubna ghammam, nadia el mrabet, leila ben abdelghani;;;2024/038;;;last_year
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_year
 zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;last_year
