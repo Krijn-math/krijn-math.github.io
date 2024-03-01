@@ -1,3 +1,4 @@
+universal composable password authenticated key exchange for the post-quantum world;;;you lyu, shengli liu, shuai han;;;2024/374;;;last_week
 an efficient adaptive attack against festa;;;guoqing zhou, maozhi xu;;;2024/345;;;last_week
 is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya;;;2023/1506;;;last_week
 qfesta: efficient algorithms and parameters for festa using quaternion algebras;;;kohei nakagawa, hiroshi onuki;;;2023/1468;;;last_month
@@ -97,4 +98,3 @@ discrete exponential equations and noisy systems;;;trey li;;;2022/1344;;;other
 a note on reimplementing the castryck-decru attack and lessons learned for sagemath;;;rémy oudompheng, giacomo pope;;;2022/1283;;;other
 horizontal racewalking using radical isogenies;;;wouter castryck, thomas decru, marc houben, frederik vercauteren;;;2022/1259;;;other
 group action key encapsulation and non-interactive key exchange in the qrom;;;julien duman, dominik hartmann, eike kiltz, sabrina kunzweiler, jonas lehmann, doreen riepel;;;2022/1230;;;other
-statistical security in two-party computation revisited;;;saikrishna badrinarayanan, sikhar patranabis, pratik sarkar;;;2022/1190;;;other
