@@ -2,7 +2,7 @@ computing orientations from the endomorphism ring of supersingular curves and ap
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;last_week
 sqisignhd: new dimensions in cryptography;;;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;;;2023/436;;;last_week
 universal composable password authenticated key exchange for the post-quantum world;;;you lyu, shengli liu, shuai han;;;2024/374;;;last_week
-an efficient adaptive attack against festa;;;guoqing zhou, maozhi xu;;;2024/345;;;last_week
+an efficient adaptive attack against festa;;;guoqing zhou, maozhi xu;;;2024/345;;;last_month
 is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya;;;2023/1506;;;last_month
 qfesta: efficient algorithms and parameters for festa using quaternion algebras;;;kohei nakagawa, hiroshi onuki;;;2023/1468;;;last_month
 oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_month
