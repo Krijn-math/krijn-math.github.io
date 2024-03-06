@@ -1,3 +1,5 @@
+silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_week
+aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krijn reijnders;;;2023/1559;;;last_week
 computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;last_week
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;last_week
 sqisignhd: new dimensions in cryptography;;;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;;;2023/436;;;last_week
@@ -38,7 +40,6 @@ m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;
 computing isogenies of power-smooth degrees between ppavs;;;jesús-javier chi-domínguez, amalia pizarro-madariaga, edgardo riquelme;;;2023/508;;;last_year
 towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and its isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_year
 new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako boris fouotsa;;;2023/791;;;last_year
-aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krijn reijnders;;;2023/1559;;;last_year
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_year
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux;;;2023/1488;;;last_year
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;last_year
@@ -76,7 +77,6 @@ a direct key recovery attack on sidh;;;luciano maino, chloe martindale, lorenz p
 low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esser, sabrina kunzweiler, alexander may;;;2023/507;;;last_year
 efficient isogeny proofs using generic techniques;;;kelong cong, yi-fu lai, shai levin;;;2023/037;;;last_year
 a tightly secure identity-based signature scheme from isogenies;;;hyungrok jo, shingo sato, junji shikata;;;2023/426;;;last_year
-disorientation faults in csidh;;;gustavo banegas, juliane krämer, tanja lange, michael meyer, lorenz panny, krijn reijnders, jana sotáková, monika trimoska;;;2022/1202;;;last_year
 simple two-round ot in the explicit isogeny model;;;emmanuela orsini, riccardo zanotto;;;2023/269;;;other
 supersingular curves you can trust;;;andrea basso, giulio codogni, deirdre connolly, luca de feo, tako boris fouotsa, guido maria lido, travis morrison, lorenz panny, sikhar patranabis, benjamin wesolowski;;;2022/1469;;;other
 a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;other
