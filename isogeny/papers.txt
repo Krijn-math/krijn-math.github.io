@@ -1,3 +1,4 @@
+the supersingular endomorphism ring and one endomorphism problems are equivalent;;;aurel page, benjamin wesolowski;;;2023/1399;;;last_week
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_week
 aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krijn reijnders;;;2023/1559;;;last_week
 computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;last_month
@@ -51,7 +52,6 @@ the supersingular endomorphism ring problem given one endomorphism;;;arthur herl
 a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;last_year
 festa: fast encryption from supersingular torsion attacks;;;andrea basso, luciano maino, giacomo pope;;;2023/660;;;last_year
 solving the hidden number problem for csidh and csurf via automated coppersmith;;;jonas meers, julian nowakowski;;;2023/1409;;;last_year
-the supersingular endomorphism ring and one endomorphism problems are equivalent;;;aurel page, benjamin wesolowski;;;2023/1399;;;last_year
 parallel hardware for isogeny-based vdf: attacker's perspective;;;david jacquemin, anisha mukherjee, ahmet can mert, sujoy sinha roy;;;2023/1396;;;last_year
 hidden stabilizers, the isogeny to endomorphism ring problem and the cryptanalysis of psidh;;;mingjie chen, muhammad imran, gábor ivanyos, péter kutas, antonin leroux, christophe petit;;;2023/779;;;last_year
 finding orientations of supersingular elliptic curves and quaternion orders;;;sarah arpin, james clements, pierrick dartois, jonathan komada eriksen, péter kutas, benjamin wesolowski;;;2023/1268;;;last_year
