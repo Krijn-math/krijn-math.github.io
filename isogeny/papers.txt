@@ -1,3 +1,4 @@
+compressed m-sidh: an instance of compressed sidh-like schemes with isogenies of highly composite degrees;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_week
 the supersingular endomorphism ring and one endomorphism problems are equivalent;;;aurel page, benjamin wesolowski;;;2023/1399;;;last_month
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_month
 aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krijn reijnders;;;2023/1559;;;last_month
@@ -65,7 +66,6 @@ effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;
 a note on constructing sidh-pok-based signatures after castryck-decru attack;;;jesús-javier chi-domínguez;;;2022/1479;;;last_year
 two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;last_year
 radical isogenies and modular curves;;;valentina pribanić;;;2022/1446;;;last_year
-public-key compression in m-sidh;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_year
 vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;;;2023/885;;;last_year
 weak instances of class group action based cryptography via self-pairings;;;wouter castryck, marc houben, simon-philipp merz, marzio mula, sam van buuren, frederik vercauteren;;;2023/549;;;last_year
 proving knowledge of isogenies – a survey;;;ward beullens, luca de feo, steven d. galbraith, christophe petit;;;2023/671;;;last_year
