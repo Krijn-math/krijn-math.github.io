@@ -1,3 +1,4 @@
+isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_week
 compressed m-sidh: an instance of compressed sidh-like schemes with isogenies of highly composite degrees;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_week
 the supersingular endomorphism ring and one endomorphism problems are equivalent;;;aurel page, benjamin wesolowski;;;2023/1399;;;last_month
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_month
@@ -76,7 +77,7 @@ efficient computation of (3ⁿ,3ⁿ)-isogenies;;;thomas decru, sabrina kunzweile
 a direct key recovery attack on sidh;;;luciano maino, chloe martindale, lorenz panny, giacomo pope, benjamin wesolowski;;;2023/640;;;last_year
 low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esser, sabrina kunzweiler, alexander may;;;2023/507;;;last_year
 efficient isogeny proofs using generic techniques;;;kelong cong, yi-fu lai, shai levin;;;2023/037;;;last_year
-a tightly secure identity-based signature scheme from isogenies;;;hyungrok jo, shingo sato, junji shikata;;;2023/426;;;last_year
+a tightly secure identity-based signature scheme from isogenies;;;hyungrok jo, shingo sato, junji shikata;;;2023/426;;;other
 simple two-round ot in the explicit isogeny model;;;emmanuela orsini, riccardo zanotto;;;2023/269;;;other
 supersingular curves you can trust;;;andrea basso, giulio codogni, deirdre connolly, luca de feo, tako boris fouotsa, guido maria lido, travis morrison, lorenz panny, sikhar patranabis, benjamin wesolowski;;;2022/1469;;;other
 a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;other
@@ -97,4 +98,3 @@ parallel isogeny path finding with limited memory;;;emanuele bellini, jorge chav
 discrete exponential equations and noisy systems;;;trey li;;;2022/1344;;;other
 a note on reimplementing the castryck-decru attack and lessons learned for sagemath;;;rémy oudompheng, giacomo pope;;;2022/1283;;;other
 horizontal racewalking using radical isogenies;;;wouter castryck, thomas decru, marc houben, frederik vercauteren;;;2022/1259;;;other
-group action key encapsulation and non-interactive key exchange in the qrom;;;julien duman, dominik hartmann, eike kiltz, sabrina kunzweiler, jonas lehmann, doreen riepel;;;2022/1230;;;other
