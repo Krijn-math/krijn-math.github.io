@@ -1,6 +1,6 @@
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;last_week
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_week
-introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_week
+introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_month
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;last_month
 isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_month
 compressed m-sidh: an instance of compressed sidh-like schemes with isogenies of highly composite degrees;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_month
