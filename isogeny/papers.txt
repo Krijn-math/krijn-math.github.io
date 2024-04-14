@@ -1,6 +1,6 @@
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_week
 the geometric interpretation of the tate pairing and its applications;;;damien robert;;;2023/177;;;last_week
-supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_week
+supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_month
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;last_month
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;last_month
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;last_month
