@@ -1,5 +1,3 @@
-sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_week
-the geometric interpretation of the tate pairing and its applications;;;damien robert;;;2023/177;;;last_week
 supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_month
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;last_month
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;last_month
@@ -39,6 +37,7 @@ quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_year
 an algorithmic approach to (2,2)-isogenies in the theta model and applications to isogeny-based cryptography;;;pierrick dartois, luciano maino, giacomo pope, damien robert;;;2023/1747;;;last_year
 csidh with level structure;;;steven d. galbraith, derek perrin, josé felipe voloch;;;2023/1726;;;last_year
 malleable commitments from group actions and zero-knowledge proofs for circuits based on isogenies;;;mingjie chen, yi-fu lai, abel laval, laurane marco, christophe petit;;;2023/1710;;;last_year
+cryptographic smooth neighbors;;;giacomo bruno, maria corte-real santos, craig costello, jonathan komada eriksen, michael meyer, michael naehrig, bruno sterner;;;2022/1439;;;last_year
 optimizations and practicality of high-security csidh;;;fabio campos, jorge chavez-saab, jesús-javier chi-domínguez, michael meyer, krijn reijnders, francisco rodríguez-henríquez, peter schwabe, thom wiggers;;;2023/793;;;last_year
 scallop: scaling the csi-fish;;;luca de feo, tako boris fouotsa, péter kutas, antonin leroux, simon-philipp merz, lorenz panny, benjamin wesolowski;;;2023/058;;;last_year
 defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;last_year
@@ -77,6 +76,7 @@ weak instances of class group action based cryptography via self-pairings;;;wout
 proving knowledge of isogenies – a survey;;;ward beullens, luca de feo, steven d. galbraith, christophe petit;;;2023/671;;;last_year
 a faster software implementation of sqisign;;;kaizhan lin, weize wang, zheng xu, chang-an zhao;;;2023/753;;;last_year
 practical robust dkg protocols for csidh;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/740;;;last_year
+the geometric interpretation of the tate pairing and its applications;;;damien robert;;;2023/177;;;last_year
 efficient computation of (3ⁿ,3ⁿ)-isogenies;;;thomas decru, sabrina kunzweiler;;;2023/376;;;last_year
 a direct key recovery attack on sidh;;;luciano maino, chloe martindale, lorenz panny, giacomo pope, benjamin wesolowski;;;2023/640;;;last_year
 low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esser, sabrina kunzweiler, alexander may;;;2023/507;;;other
