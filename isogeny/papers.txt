@@ -1,3 +1,5 @@
+efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_week
+hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_week
 fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_week
 pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;last_week
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux, lorenz panny;;;2023/1488;;;last_week
@@ -8,8 +10,8 @@ distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/50
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_month
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;last_month
-isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_month
-compressed m-sidh: an instance of compressed sidh-like schemes with isogenies of highly composite degrees;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_month
+isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_year
+compressed m-sidh: an instance of compressed sidh-like schemes with isogenies of highly composite degrees;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_year
 the supersingular endomorphism ring and one endomorphism problems are equivalent;;;aurel page, benjamin wesolowski;;;2023/1399;;;last_year
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_year
 aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krijn reijnders;;;2023/1559;;;last_year
@@ -83,7 +85,6 @@ low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esse
 efficient isogeny proofs using generic techniques;;;kelong cong, yi-fu lai, shai levin;;;2023/037;;;other
 a tightly secure identity-based signature scheme from isogenies;;;hyungrok jo, shingo sato, junji shikata;;;2023/426;;;other
 simple two-round ot in the explicit isogeny model;;;emmanuela orsini, riccardo zanotto;;;2023/269;;;other
-supersingular curves you can trust;;;andrea basso, giulio codogni, deirdre connolly, luca de feo, tako boris fouotsa, guido maria lido, travis morrison, lorenz panny, sikhar patranabis, benjamin wesolowski;;;2022/1469;;;other
 a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;other
 a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;other
 sieving for large twin smooth integers using single solutions to prouhet-tarry-escott;;;knud ahrens;;;2023/219;;;other
@@ -97,4 +98,3 @@ applying castryck-decru attack on the masked torsion point images sidh variant;;
 candidate trapdoor claw-free functions from group actions with applications to quantum protocols;;;navid alamati, giulio malavolta, ahmadreza rahimi;;;2022/1775;;;other
 cryptographic primitives with hinting property;;;navid alamati, sikhar patranabis;;;2022/1770;;;other
 another round of breaking and making quantum money: how to not build it from lattices, and more;;;jiahui liu, hart montgomery, mark zhandry;;;2022/1620;;;other
-parallel isogeny path finding with limited memory;;;emanuele bellini, jorge chavez-saab, jesús-javier chi-domínguez, andre esser, sorina ionica, luis rivera-zamarripa, francisco rodríguez-henríquez, monika trimoska, floyd zweydinger;;;2022/1464;;;other
