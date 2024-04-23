@@ -1,7 +1,8 @@
+sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_week
 computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_week
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_week
-hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_week
-fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_week
+hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_month
+fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_month
 pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;last_month
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux, lorenz panny;;;2023/1488;;;last_month
 supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_month
@@ -71,7 +72,6 @@ two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco s
 fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_year
 towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;last_year
 effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;last_year
-a note on constructing sidh-pok-based signatures after castryck-decru attack;;;jesús-javier chi-domínguez;;;2022/1479;;;last_year
 two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;last_year
 vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;;;2023/885;;;last_year
 weak instances of class group action based cryptography via self-pairings;;;wouter castryck, marc houben, simon-philipp merz, marzio mula, sam van buuren, frederik vercauteren;;;2023/549;;;last_year
