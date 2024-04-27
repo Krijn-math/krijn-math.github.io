@@ -1,3 +1,4 @@
+efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_week
 properties of lattice isomorphism as a cryptographic group action;;;benjamin benčina, alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni;;;2023/1093;;;last_week
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_week
 poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_week
@@ -13,7 +14,7 @@ lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki mori
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;last_month
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_month
-cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;last_month
+cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;last_year
 isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_year
 compressed m-sidh: an instance of compressed sidh-like schemes with isogenies of highly composite degrees;;;kaizhan lin, jianming lin, shiping cai, weize wang, chang-an zhao;;;2023/136;;;last_year
 the supersingular endomorphism ring and one endomorphism problems are equivalent;;;aurel page, benjamin wesolowski;;;2023/1399;;;last_year
@@ -37,7 +38,6 @@ zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef m
 generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_year
 capybara and tsubaki: verifiable random functions from group actions and isogenies;;;yi-fu lai;;;2023/182;;;last_year
 computation of hilbert class polynomials and modular polynomials from supersingular elliptic curves;;;antonin leroux;;;2023/064;;;last_year
-efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_year
 exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;last_year
 quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_year
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_year
