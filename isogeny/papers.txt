@@ -1,6 +1,6 @@
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_week
 properties of lattice isomorphism as a cryptographic group action;;;benjamin benčina, alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni;;;2023/1093;;;last_week
-sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_week
+sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_month
 poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_month
 computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_month
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_month
@@ -11,8 +11,8 @@ scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin le
 supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_month
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;last_month
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;last_month
-distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;last_month
-faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_month
+distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;last_year
+faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_year
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_year
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;last_year
 isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_year
