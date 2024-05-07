@@ -8,7 +8,7 @@ hash your keys before signing: buff security of the additional nist pqc signatur
 fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_month
 pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;last_month
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux, lorenz panny;;;2023/1488;;;last_month
-supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_month
+supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_year
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;last_year
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;last_year
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;last_year
