@@ -80,7 +80,7 @@ proving knowledge of isogenies – a survey;;;ward beullens, luca de feo, steven
 a faster software implementation of sqisign;;;kaizhan lin, weize wang, zheng xu, chang-an zhao;;;2023/753;;;last_year
 practical robust dkg protocols for csidh;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/740;;;last_year
 the geometric interpretation of the tate pairing and its applications;;;damien robert;;;2023/177;;;last_year
-efficient computation of (3ⁿ,3ⁿ)-isogenies;;;thomas decru, sabrina kunzweiler;;;2023/376;;;last_year
+efficient computation of (3ⁿ,3ⁿ)-isogenies;;;thomas decru, sabrina kunzweiler;;;2023/376;;;other
 a direct key recovery attack on sidh;;;luciano maino, chloe martindale, lorenz panny, giacomo pope, benjamin wesolowski;;;2023/640;;;other
 low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esser, sabrina kunzweiler, alexander may;;;2023/507;;;other
 efficient isogeny proofs using generic techniques;;;kelong cong, yi-fu lai, shai levin;;;2023/037;;;other
