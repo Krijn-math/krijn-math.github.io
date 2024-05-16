@@ -1,11 +1,12 @@
+towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and their isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_week
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_month
 properties of lattice isomorphism as a cryptographic group action;;;benjamin benčina, alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni;;;2023/1093;;;last_month
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_month
 poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_month
 computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_month
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_month
-hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_month
-fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_month
+hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_year
+fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_year
 pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;last_year
 scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux, lorenz panny;;;2023/1488;;;last_year
 supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_year
@@ -51,7 +52,6 @@ the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benja
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;last_year
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;last_year
 computing isogenies of power-smooth degrees between ppavs;;;jesús-javier chi-domínguez, amalia pizarro-madariaga, edgardo riquelme;;;2023/508;;;last_year
-towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and its isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_year
 new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako boris fouotsa;;;2023/791;;;last_year
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_year
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;last_year
