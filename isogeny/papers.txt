@@ -3,7 +3,7 @@ efficient post-quantum secure deterministic threshold wallets from isogenies;;;p
 properties of lattice isomorphism as a cryptographic group action;;;benjamin benčina, alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni;;;2023/1093;;;last_month
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_month
 poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_month
-computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_month
+computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_year
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_year
 hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_year
 fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_year
