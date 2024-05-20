@@ -1,3 +1,4 @@
+sqisign2d-west: the fast, the small, and the safer;;;andrea basso, luca de feo, pierrick dartois, antonin leroux, luciano maino, giacomo pope, damien robert, benjamin wesolowski;;;2024/760;;;last_week
 towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and their isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_week
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_month
 properties of lattice isomorphism as a cryptographic group action;;;benjamin benčina, alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni;;;2023/1093;;;last_month
@@ -97,4 +98,3 @@ m-sidh and md-sidh: countering sidh attacks by masking information;;;tako boris 
 applying castryck-decru attack on the masked torsion point images sidh variant;;;jesús-javier chi-domínguez;;;2022/1667;;;other
 candidate trapdoor claw-free functions from group actions with applications to quantum protocols;;;navid alamati, giulio malavolta, ahmadreza rahimi;;;2022/1775;;;other
 cryptographic primitives with hinting property;;;navid alamati, sikhar patranabis;;;2022/1770;;;other
-another round of breaking and making quantum money: how to not build it from lattices, and more;;;jiahui liu, hart montgomery, mark zhandry;;;2022/1620;;;other
