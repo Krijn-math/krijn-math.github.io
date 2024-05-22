@@ -8,3 +8,4 @@ make notation easy, not hard
 the speed of any isogeny-based scheme is lower bounded by the speed of computing a 2^256 isogeny
 if a paper has a line length of more than 80 characters, dont read it
 luckily, in genus 2, things are slightly more complicated
+the real juice is always in the appendix
