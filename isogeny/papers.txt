@@ -1,10 +1,13 @@
 generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_week
+sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies;;;max duparc, tako boris fouotsa;;;2024/773;;;last_week
+sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_week
+time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_week
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_week
 sqisign2d-west: the fast, the small, and the safer;;;andrea basso, luca de feo, pierrick dartois, antonin leroux, luciano maino, giacomo pope, damien robert, benjamin wesolowski;;;2024/760;;;last_week
 towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and their isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_month
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_month
 properties of lattice isomorphism as a cryptographic group action;;;benjamin benčina, alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni;;;2023/1093;;;last_month
-sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_month
+sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_year
 poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_year
 computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_year
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_year
@@ -33,7 +36,6 @@ qfesta: efficient algorithms and parameters for festa using quaternion algebras;
 oprfs from isogenies: designs and analysis;;;lena heimberger, tobias hennerbichler, fredrik meisingseth, sebastian ramacher, christian rechberger;;;2023/639;;;last_year
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;last_year
 ready to sqi? safety first! towards a constant-time implementation of isogeny-based signature, sqisign;;;david jacquemin, anisha mukherjee, péter kutas, sujoy sinha roy;;;2023/807;;;last_year
-an algorithm for efficient detection of (n,n)-splittings and its application to the isogeny problem in dimension 2;;;maria corte-real santos, craig costello, sam frengley;;;2022/1736;;;last_year
 efficient (3,3)-isogenies on fast kummer surfaces;;;maria corte-real santos, craig costello, benjamin smith;;;2024/144;;;last_year
 the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya, hiroshi onuki;;;2023/1092;;;last_year
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_year
@@ -91,10 +93,8 @@ a lower bound on the length of signatures based on group actions and generic iso
 a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;other
 sieving for large twin smooth integers using single solutions to prouhet-tarry-escott;;;knud ahrens;;;2023/219;;;other
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;other
-some applications of higher dimensional isogenies to elliptic curves (overview of results);;;damien robert;;;2022/1704;;;other
 blind signatures from zero-knowledge arguments;;;paulo l. barreto, gustavo h. m. zanon;;;2023/067;;;other
 cryptographic group and semigroup actions;;;oliver w. gnilke, jens zumbrägel;;;2023/017;;;other
 m-sidh and md-sidh: countering sidh attacks by masking information;;;tako boris fouotsa, tomoki moriya, christophe petit;;;2023/013;;;other
-applying castryck-decru attack on the masked torsion point images sidh variant;;;jesús-javier chi-domínguez;;;2022/1667;;;other
 candidate trapdoor claw-free functions from group actions with applications to quantum protocols;;;navid alamati, giulio malavolta, ahmadreza rahimi;;;2022/1775;;;other
 cryptographic primitives with hinting property;;;navid alamati, sikhar patranabis;;;2022/1770;;;other
