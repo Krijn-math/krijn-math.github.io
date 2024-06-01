@@ -1,3 +1,4 @@
+on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;last_week
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_month
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_month
@@ -97,4 +98,3 @@ sieving for large twin smooth integers using single solutions to prouhet-tarry-e
 hashing to elliptic curves over highly 2-adic fields 𝔽_{\!q} with o(łog(q)) operations in 𝔽_{\!q};;;dmitrii koshelev;;;2023/121;;;other
 blind signatures from zero-knowledge arguments;;;paulo l. barreto, gustavo h. m. zanon;;;2023/067;;;other
 cryptographic group and semigroup actions;;;oliver w. gnilke, jens zumbrägel;;;2023/017;;;other
-m-sidh and md-sidh: countering sidh attacks by masking information;;;tako boris fouotsa, tomoki moriya, christophe petit;;;2023/013;;;other
