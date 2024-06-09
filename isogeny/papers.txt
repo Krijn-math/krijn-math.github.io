@@ -3,8 +3,8 @@ elliptic curve cryptography for the masses: simple and fast finite field arithme
 ideal-to-isogeny algorithm using 2-dimensional isogenies and its application to sqisign;;;hiroshi onuki, kohei nakagawa;;;2024/778;;;last_week
 universal composable password authenticated key exchange for the post-quantum world;;;you lyu, shengli liu, shuai han;;;2024/374;;;last_week
 an algorithmic approach to (2,2)-isogenies in the theta model and applications to isogeny-based cryptography;;;pierrick dartois, luciano maino, giacomo pope, damien robert;;;2023/1747;;;last_week
-extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_week
-radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_week
+extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_month
+radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_month
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;last_month
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_month
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month
