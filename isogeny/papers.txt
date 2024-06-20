@@ -1,6 +1,6 @@
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_week
 extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_week
-return of the kummer: a toolbox for genus 2 cryptography;;;maria corte-real santos, krijn reijnders;;;2024/948;;;last_week
+return of the kummer: a toolbox for genus 2 cryptography;;;maria corte-real santos, krijn reijnders;;;2024/948;;;last_month
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;last_month
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_month
 climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_month
@@ -13,7 +13,7 @@ radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_month
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;last_month
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_month
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month
-generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_month
+generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_year
 sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies;;;max duparc, tako boris fouotsa;;;2024/773;;;last_year
 sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_year
 faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_year
