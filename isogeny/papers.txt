@@ -1,5 +1,5 @@
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_week
-extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_week
+extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_month
 return of the kummer: a toolbox for genus 2 cryptography;;;maria corte-real santos, krijn reijnders;;;2024/948;;;last_month
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;last_month
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_month
