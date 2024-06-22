@@ -11,8 +11,8 @@ universal composable password authenticated key exchange for the post-quantum wo
 an algorithmic approach to (2,2)-isogenies in the theta model and applications to isogeny-based cryptography;;;pierrick dartois, luciano maino, giacomo pope, damien robert;;;2023/1747;;;last_month
 radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_month
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;last_month
-time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_month
-π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month
+time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_year
+π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_year
 generating supersingular elliptic curves over 𝔽ₚ with unknown endomorphism ring;;;youcef mokrani, david jao;;;2023/984;;;last_year
 sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies;;;max duparc, tako boris fouotsa;;;2024/773;;;last_year
 sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_year
