@@ -1,3 +1,4 @@
+a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_week
 cascade: (time-based) cryptography from space communications delay;;;carsten baum, bernardo david, elena pagnin, akira takahashi;;;2023/405;;;last_week
 a faster software implementation of sqisign;;;kaizhan lin, weize wang, zheng xu, chang-an zhao;;;2023/753;;;last_month
 climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_month
@@ -54,7 +55,6 @@ efficient (3,3)-isogenies on fast kummer surfaces;;;maria corte-real santos, cra
 the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya, hiroshi onuki;;;2023/1092;;;last_year
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_year
 zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;last_year
-capybara and tsubaki: verifiable random functions from group actions and isogenies;;;yi-fu lai;;;2023/182;;;last_year
 exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;last_year
 quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;last_year
 csidh with level structure;;;steven d. galbraith, derek perrin, josé felipe voloch;;;2023/1726;;;last_year
