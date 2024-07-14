@@ -5,7 +5,7 @@ a faster software implementation of sqisign;;;kaizhan lin, weize wang, zheng xu,
 climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_month
 on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_month
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_month
-extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_month
+extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_year
 return of the kummer: a toolbox for genus 2 cryptography;;;maria corte-real santos, krijn reijnders;;;2024/948;;;last_year
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;last_year
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_year
