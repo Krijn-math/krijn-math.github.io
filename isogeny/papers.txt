@@ -1,10 +1,10 @@
 sqisignhd: new dimensions in cryptography;;;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;;;2023/436;;;last_week
-a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_week
+a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_month
 cascade: (time-based) cryptography from space communications delay;;;carsten baum, bernardo david, elena pagnin, akira takahashi;;;2023/405;;;last_month
 a faster software implementation of sqisign;;;kaizhan lin, weize wang, zheng xu, chang-an zhao;;;2023/753;;;last_month
 climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_month
 on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_month
-a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_month
+a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_year
 extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_year
 return of the kummer: a toolbox for genus 2 cryptography;;;maria corte-real santos, krijn reijnders;;;2024/948;;;last_year
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;last_year
