@@ -1,5 +1,5 @@
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_week
-finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_week
+finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_month
 sqisignhd: new dimensions in cryptography;;;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;;;2023/436;;;last_month
 a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_month
 cascade: (time-based) cryptography from space communications delay;;;carsten baum, bernardo david, elena pagnin, akira takahashi;;;2023/405;;;last_month
