@@ -1,3 +1,6 @@
+efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_week
+erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;last_week
+fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_week
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_month
 finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_month
 sqisignhd: new dimensions in cryptography;;;pierrick dartois, antonin leroux, damien robert, benjamin wesolowski;;;2023/436;;;last_month
@@ -95,6 +98,3 @@ efficient computation of (3ⁿ,3ⁿ)-isogenies;;;thomas decru, sabrina kunzweile
 a direct key recovery attack on sidh;;;luciano maino, chloe martindale, lorenz panny, giacomo pope, benjamin wesolowski;;;2023/640;;;other
 low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esser, sabrina kunzweiler, alexander may;;;2023/507;;;other
 a tightly secure identity-based signature scheme from isogenies;;;hyungrok jo, shingo sato, junji shikata;;;2023/426;;;other
-simple two-round ot in the explicit isogeny model;;;emmanuela orsini, riccardo zanotto;;;2023/269;;;other
-a lower bound on the length of signatures based on group actions and generic isogenies;;;dan boneh, jiaxin guan, mark zhandry;;;2023/250;;;other
-a post-quantum round-optimal oblivious prf from isogenies;;;andrea basso;;;2023/225;;;other
