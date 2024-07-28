@@ -89,7 +89,7 @@ two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco s
 fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_year
 towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;last_year
 effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;last_year
-two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;last_year
+two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;other
 vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;;;2023/885;;;other
 weak instances of class group action based cryptography via self-pairings;;;wouter castryck, marc houben, simon-philipp merz, marzio mula, sam van buuren, frederik vercauteren;;;2023/549;;;other
 proving knowledge of isogenies – a survey;;;ward beullens, luca de feo, steven d. galbraith, christophe petit;;;2023/671;;;other
