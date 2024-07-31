@@ -1,4 +1,4 @@
-efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_week
+efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_month
 erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;last_month
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_month
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_month
@@ -8,7 +8,7 @@ a fast and efficient sike co-design: coarse-grained reconfigurable accelerators 
 cascade: (time-based) cryptography from space communications delay;;;carsten baum, bernardo david, elena pagnin, akira takahashi;;;2023/405;;;last_month
 a faster software implementation of sqisign;;;kaizhan lin, weize wang, zheng xu, chang-an zhao;;;2023/753;;;last_month
 climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_month
-on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_month
+on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_year
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_year
 extending class group action attacks via pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_year
 return of the kummer: a toolbox for genus 2 cryptography;;;maria corte-real santos, krijn reijnders;;;2024/948;;;last_year
