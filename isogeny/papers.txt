@@ -1,7 +1,7 @@
 efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_week
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_week
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_week
-foldable, recursive proofs of isogeny computation with reduced time complexity;;;krystal maughan, joseph near, christelle vincent;;;2024/1219;;;last_week
+foldable, recursive proofs of isogeny computation with reduced time complexity;;;krystal maughan, joseph near, christelle vincent;;;2024/1219;;;last_month
 erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;last_month
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_month
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_month
@@ -88,8 +88,8 @@ efficiency of sidh-based signatures (yes, sidh);;;wissam ghantous, federico pint
 csi-otter: isogeny-based (partially) blind signatures from the class group action with a twist;;;shuichi katsumata, yi-fu lai, jason t. legrow, ling qin;;;2023/1239;;;last_year
 two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco sica;;;2023/1229;;;last_year
 fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo banegas, valerie gilchrist, anaëlle le dévéhat, benjamin smith;;;2023/995;;;last_year
-towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;last_year
-effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;last_year
+towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;other
+effective pairings in isogeny-based cryptography;;;krijn reijnders;;;2023/858;;;other
 two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;other
 vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;;;2023/885;;;other
 weak instances of class group action based cryptography via self-pairings;;;wouter castryck, marc houben, simon-philipp merz, marzio mula, sam van buuren, frederik vercauteren;;;2023/549;;;other
