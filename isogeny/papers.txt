@@ -1,3 +1,4 @@
+a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_week
 efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_month
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_month
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_month
@@ -97,4 +98,3 @@ proving knowledge of isogenies – a survey;;;ward beullens, luca de feo, steven
 practical robust dkg protocols for csidh;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/740;;;other
 a direct key recovery attack on sidh;;;luciano maino, chloe martindale, lorenz panny, giacomo pope, benjamin wesolowski;;;2023/640;;;other
 low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esser, sabrina kunzweiler, alexander may;;;2023/507;;;other
-a tightly secure identity-based signature scheme from isogenies;;;hyungrok jo, shingo sato, junji shikata;;;2023/426;;;other
