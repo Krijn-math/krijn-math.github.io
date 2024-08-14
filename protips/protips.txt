@@ -11,3 +11,4 @@ luckily, in genus 2, things are slightly more complicated
 the real juice is always in the appendix
 the tate pairing is more intuitive than the weil pairing
 a generalized φ-tate pairing is "nice" whenever ker φ ≅ coker φ ≅ μ<sup>d</sup>
+(unnecessary brackets are often unnecessary)
