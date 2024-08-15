@@ -12,3 +12,7 @@ the real juice is always in the appendix
 the tate pairing is more intuitive than the weil pairing
 a generalized φ-tate pairing is "nice" whenever ker φ ≅ coker φ ≅ μ<sup>d</sup>
 (unnecessary brackets are often unnecessary)
+this, however, is unnecessary
+Orwell gave great advice on writing, read it
+almost every square matrix is invertible
+light only travels 100km during a single SQIsign verification
