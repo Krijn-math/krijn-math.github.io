@@ -4,7 +4,7 @@ efficient implementation of super-optimal pairings on curves with small prime fi
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_month
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_month
 foldable, recursive proofs of isogeny computation with reduced time complexity;;;krystal maughan, joseph near, christelle vincent;;;2024/1219;;;last_month
-erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;last_month
+erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;last_year
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_year
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_year
 finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_year
