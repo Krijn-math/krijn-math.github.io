@@ -45,6 +45,8 @@ full_date = []
 for index, result in enumerate(search_results, start=1):
     title = result.find("strong").get_text().strip()
     authors = result.find("span", class_="fst-italic").get_text().strip()
+    if "krijn" in authors.lower() or "reijnders" in authors.lower():
+        authors = authors.replace("ij", "ĳ")
     id = result.find("a", class_="paperlink").get_text().strip()
     dates = result.find("small", class_="ms-auto").get_text().strip()
     dates = dates[14:24]
