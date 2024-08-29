@@ -18,3 +18,4 @@ almost every square matrix is invertible
 light only travels 100km during a single SQIsign verification
 the squeeze makes worth the juice
 an algorithm can be both variable time and constant time at the same time
+scheme-specific techniques can bring ell_G down to 2 lambda, which gives 2.8kB. We can only get a bit further with generic techniques
