@@ -1,7 +1,7 @@
 poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_month
 return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real santos, krĳn reĳnders;;;2024/948;;;last_month
 a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_month
-efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_month
+efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_year
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_year
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_year
 foldable, recursive proofs of isogeny computation with reduced time complexity;;;krystal maughan, joseph near, christelle vincent;;;2024/1219;;;last_year
