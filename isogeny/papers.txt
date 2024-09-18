@@ -1,3 +1,4 @@
+breaking and repairing sqisign2d-east;;;wouter castryck, mingjie chen, riccardo invernizzi, gioella lorenzon, frederik vercauteren;;;2024/1453;;;last_week
 sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_month
 π-signhd: a new structure for the sqisign family with flexible applicability;;;kaizhan lin, weize wang, chang-an zhao, yunlei zhao;;;2024/1404;;;last_month
 key policy attribute-based encryption leveraging isogeny-based cryptography;;;madické diadji mbodj, anis bkakria;;;2024/1392;;;last_month
@@ -82,7 +83,7 @@ identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;last_year
 a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;last_year
 festa: fast encryption from supersingular torsion attacks;;;andrea basso, luciano maino, giacomo pope;;;2023/660;;;last_year
-solving the hidden number problem for csidh and csurf via automated coppersmith;;;jonas meers, julian nowakowski;;;2023/1409;;;last_year
+solving the hidden number problem for csidh and csurf via automated coppersmith;;;jonas meers, julian nowakowski;;;2023/1409;;;other
 parallel hardware for isogeny-based vdf: attacker's perspective;;;david jacquemin, anisha mukherjee, ahmet can mert, sujoy sinha roy;;;2023/1396;;;other
 hidden stabilizers, the isogeny to endomorphism ring problem and the cryptanalysis of psidh;;;mingjie chen, muhammad imran, gábor ivanyos, péter kutas, antonin leroux, christophe petit;;;2023/779;;;other
 finding orientations of supersingular elliptic curves and quaternion orders;;;sarah arpin, james clements, pierrick dartois, jonathan komada eriksen, péter kutas, benjamin wesolowski;;;2023/1268;;;other
@@ -97,4 +98,3 @@ weak instances of class group action based cryptography via self-pairings;;;wout
 proving knowledge of isogenies – a survey;;;ward beullens, luca de feo, steven d. galbraith, christophe petit;;;2023/671;;;other
 practical robust dkg protocols for csidh;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/740;;;other
 a direct key recovery attack on sidh;;;luciano maino, chloe martindale, lorenz panny, giacomo pope, benjamin wesolowski;;;2023/640;;;other
-low memory attacks on small key csidh;;;jesús-javier chi-domínguez, andre esser, sabrina kunzweiler, alexander may;;;2023/507;;;other
