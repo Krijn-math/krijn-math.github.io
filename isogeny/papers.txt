@@ -1,10 +1,11 @@
+isogeny-based secure voting systems for large-scale elections;;;mohammed el baraka, siham ezzouak;;;2024/1472;;;last_week
 sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies;;;max duparc, tako boris fouotsa;;;2024/773;;;last_week
 breaking and repairing sqisign2d-east;;;wouter castryck, mingjie chen, riccardo invernizzi, gioella lorenzon, frederik vercauteren;;;2024/1453;;;last_week
 sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_month
 π-signhd: a new structure for the sqisign family with flexible applicability;;;kaizhan lin, weize wang, chang-an zhao, yunlei zhao;;;2024/1404;;;last_month
 key policy attribute-based encryption leveraging isogeny-based cryptography;;;madické diadji mbodj, anis bkakria;;;2024/1392;;;last_month
 efficient (3,3)-isogenies on fast kummer surfaces;;;maria corte-real santos, craig costello, benjamin smith;;;2024/144;;;last_month
-poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_month
+poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_year
 return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real santos, krĳn reĳnders;;;2024/948;;;last_year
 a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_year
 efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_year
@@ -72,14 +73,13 @@ defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens
 the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benjamin lipp;;;2023/1480;;;last_year
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;last_year
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;last_year
-computing isogenies of power-smooth degrees between ppavs;;;jesús-javier chi-domínguez, amalia pizarro-madariaga, edgardo riquelme;;;2023/508;;;last_year
 new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako boris fouotsa;;;2023/791;;;last_year
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_year
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;last_year
 vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/992;;;last_year
 lower bound of costs of formulas to compute image curves of 3-isogenies in the framework of generalized montgomery coordinates;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2023/1511;;;last_year
 non-interactive commitment from non-transitive group actions;;;giuseppe d'alconzo, andrea flamini, andrea gangemi;;;2023/723;;;last_year
-identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;last_year
+identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;other
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;other
 a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;other
 festa: fast encryption from supersingular torsion attacks;;;andrea basso, luciano maino, giacomo pope;;;2023/660;;;other
