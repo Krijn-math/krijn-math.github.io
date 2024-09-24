@@ -1,6 +1,7 @@
+elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_week
 isogeny-based secure voting systems for large-scale elections;;;mohammed el baraka, siham ezzouak;;;2024/1472;;;last_week
 sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies;;;max duparc, tako boris fouotsa;;;2024/773;;;last_week
-breaking and repairing sqisign2d-east;;;wouter castryck, mingjie chen, riccardo invernizzi, gioella lorenzon, frederik vercauteren;;;2024/1453;;;last_week
+breaking and repairing sqisign2d-east;;;wouter castryck, mingjie chen, riccardo invernizzi, gioella lorenzon, frederik vercauteren;;;2024/1453;;;last_month
 sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_month
 π-signhd: a new structure for the sqisign family with flexible applicability;;;kaizhan lin, weize wang, chang-an zhao, yunlei zhao;;;2024/1404;;;last_month
 key policy attribute-based encryption leveraging isogeny-based cryptography;;;madické diadji mbodj, anis bkakria;;;2024/1392;;;last_month
@@ -14,7 +15,6 @@ silbe: an updatable public key encryption scheme from lollipop attacks;;;max dup
 foldable, recursive proofs of isogeny computation with reduced time complexity;;;krystal maughan, joseph near, christelle vincent;;;2024/1219;;;last_year
 erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;last_year
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_year
-elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_year
 finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_year
 a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_year
 a faster software implementation of sqisign;;;kaizhan lin, weize wang, zheng xu, chang-an zhao;;;2023/753;;;last_year
