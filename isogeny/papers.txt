@@ -1,8 +1,9 @@
+sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_week
+verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_week
 extending class group action attacks via sesquilinear pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_week
-efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_week
+efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_month
 ideal-to-isogeny algorithm using 2-dimensional isogenies and its application to sqisign;;;hiroshi onuki, kohei nakagawa;;;2024/778;;;last_month
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_month
-sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_month
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_month
 isogeny-based secure voting systems for large-scale elections;;;mohammed el baraka, siham ezzouak;;;2024/1472;;;last_month
 sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies;;;max duparc, tako boris fouotsa;;;2024/773;;;last_month
@@ -75,9 +76,8 @@ the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benja
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;last_year
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;last_year
 new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako boris fouotsa;;;2023/791;;;last_year
-verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_year
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;last_year
-vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/992;;;last_year
+vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/992;;;other
 lower bound of costs of formulas to compute image curves of 3-isogenies in the framework of generalized montgomery coordinates;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2023/1511;;;other
 non-interactive commitment from non-transitive group actions;;;giuseppe d'alconzo, andrea flamini, andrea gangemi;;;2023/723;;;other
 identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;other
