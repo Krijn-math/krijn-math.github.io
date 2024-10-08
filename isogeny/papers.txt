@@ -1,3 +1,6 @@
+quantum money from class group actions on elliptic curves;;;hart montgomery, shahed sharif;;;2024/1585;;;last_week
+halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_week
+on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_week
 the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_week
 the module action for isogeny based cryptography;;;damien robert;;;2024/1556;;;last_week
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_week
@@ -5,7 +8,7 @@ optimized one-dimensional sqisign verification on intel and cortex-m4;;;marius a
 newton polytope-based strategy for finding small roots of multivariate polynomials;;;yansong feng, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_week
 sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_week
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_week
-extending class group action attacks via sesquilinear pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_week
+extending class group action attacks via sesquilinear pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_month
 efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_month
 ideal-to-isogeny algorithm using 2-dimensional isogenies and its application to sqisign;;;hiroshi onuki, kohei nakagawa;;;2024/778;;;last_month
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_month
@@ -28,7 +31,6 @@ finding practical parameters for isogeny-based cryptography;;;maria corte-real s
 a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_year
 a faster software implementation of sqisign;;;kaizhan lin, weize wang, zheng xu, chang-an zhao;;;2023/753;;;last_year
 climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_year
-on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_year
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_year
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;last_year
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_year
@@ -82,7 +84,6 @@ new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako 
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;other
 vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/992;;;other
 lower bound of costs of formulas to compute image curves of 3-isogenies in the framework of generalized montgomery coordinates;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2023/1511;;;other
-non-interactive commitment from non-transitive group actions;;;giuseppe d'alconzo, andrea flamini, andrea gangemi;;;2023/723;;;other
 identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;other
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;other
 a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;other
@@ -97,4 +98,3 @@ towards a quantum-resistant weak verifiable delay function;;;thomas decru, lucia
 effective pairings in isogeny-based cryptography;;;krĳn reĳnders;;;2023/858;;;other
 two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;other
 vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;;;2023/885;;;other
-practical robust dkg protocols for csidh;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/740;;;other
