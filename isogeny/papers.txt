@@ -1,10 +1,10 @@
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_week
-quantum money from class group actions on elliptic curves;;;hart montgomery, shahed sharif;;;2024/1585;;;last_week
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_week
+quantum money from class group actions on elliptic curves;;;hart montgomery, shahed sharif;;;2024/1585;;;last_week
 on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_week
 the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_week
-the module action for isogeny based cryptography;;;damien robert;;;2024/1556;;;last_week
-elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_week
+the module action for isogeny based cryptography;;;damien robert;;;2024/1556;;;last_month
+elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_month
 optimized one-dimensional sqisign verification on intel and cortex-m4;;;marius a. aardal, gora adj, arwa alblooshi, diego f. aranha, isaac a. canales-martínez, jorge chavez-saab, décio luiz gazzoni filho, krĳn reĳnders, francisco rodríguez-henríquez;;;2024/1563;;;last_month
 newton polytope-based strategy for finding small roots of multivariate polynomials;;;yansong feng, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_month
 sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_month
@@ -79,7 +79,7 @@ optimizations and practicality of high-security csidh;;;fabio campos, jorge chav
 defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;last_year
 the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benjamin lipp;;;2023/1480;;;last_year
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;last_year
-m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;last_year
+m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;other
 new sidh countermeasures for a more efficient key exchange;;;andrea basso, tako boris fouotsa;;;2023/791;;;other
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;other
 vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/992;;;other
