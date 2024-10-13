@@ -2,7 +2,7 @@ faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_week
 quantum money from class group actions on elliptic curves;;;hart montgomery, shahed sharif;;;2024/1585;;;last_week
 on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_week
-the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_week
+the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_month
 the module action for isogeny based cryptography;;;damien robert;;;2024/1556;;;last_month
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_month
 optimized one-dimensional sqisign verification on intel and cortex-m4;;;marius a. aardal, gora adj, arwa alblooshi, diego f. aranha, isaac a. canales-martínez, jorge chavez-saab, décio luiz gazzoni filho, krĳn reĳnders, francisco rodríguez-henríquez;;;2024/1563;;;last_month
