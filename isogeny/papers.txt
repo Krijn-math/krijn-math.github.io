@@ -1,7 +1,7 @@
 pearl-scallop: parameter extension applicable in real-life scallop;;;bill allombert, jean-françois biasse, jonathan komada eriksen, péter kutas, chris leonardi, aurel page, renate scheidler, márton tot bagi;;;2024/1744;;;last_week
 efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_week
 more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_week
-radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_week
+radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_month
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_month
 the module action for isogeny based cryptography;;;damien robert;;;2024/1556;;;last_month
 verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_month
