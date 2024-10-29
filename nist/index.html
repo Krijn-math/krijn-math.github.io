@@ -17,6 +17,13 @@
         </header>
         <br>
 
+        <div class="row">
+            <div class="column">Round 1</div>
+            <div class="column">Round 2</div>
+            <div class="column">URL</div>
+        </div>
+
+
         <div class="container">
 
 
@@ -35,6 +42,7 @@
                                 var values = line.split(',');
                                 var name = values[0];
                                 var url = values[1];
+                                var round = values[2];
 
                                 var listItem = document.createElement('li');
                                 listItem.classList.add('list-item');
@@ -45,6 +53,14 @@
                                 nameHeading.textContent = name;
                                 nameDiv.appendChild(nameHeading)
 
+                                var nameDiv2 = document.createElement('div');
+                                nameDiv2.classList.add('namediv2');
+                                var nameHeading2 = document.createElement('b');
+                                if (round == 2){
+                                    nameHeading2.textContent = name;
+                                }                                
+                                nameDiv2.appendChild(nameHeading2)
+
                                 var urlDiv = document.createElement('div');
                                 urlDiv.classList.add('urldiv');
                                 var urlLink = document.createElement('a');
@@ -54,6 +70,7 @@
                                 urlDiv.appendChild(urlLink);
 
                                 listItem.appendChild(nameDiv);
+                                listItem.appendChild(nameDiv2);
                                 listItem.appendChild(urlDiv);
                                 
                                 list.appendChild(listItem);

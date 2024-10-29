@@ -1,0 +1,14 @@
+CROSS,cross
+FAEST,faest
+HAWK,hawk
+LESS,less
+MAYO,mayo
+Mirath,mira
+MQOM,mqom
+PERK,perk
+QR-UOV,qruov
+RYDE,ryde
+SDitH,sdith
+SNOVA,snova
+SQIsign,sqisign
+UOV,uov

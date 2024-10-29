@@ -13,7 +13,7 @@ nav {
 
 ul {
     margin: 0;
-    padding-left: 8em;
+    padding-left: 0em;
 }
 
 .spaced-list>li {
@@ -58,14 +58,14 @@ button:hover {
 
 h1 {
     text-align: center;
-    width: 400px;
+    width: 450px;
     padding-top: 20px;
     padding-left: 0px;
 }
 
 .list-item {
     text-align: justify;
-    width: 400px;
+    width: 450px;
 }
 
 .item a {
@@ -74,18 +74,24 @@ h1 {
 
 .container {
     text-align: center;
-    width: 400px;
+    width: 450px;
 }
 
 .namediv {
     text-align: left;
-    width: 200px;
+    width: 150px;
+    display: inline-block;
+}
+
+.namediv2 {
+    text-align: center;
+    width: 150px;
     display: inline-block;
 }
 
 .urldiv {
     text-align: center;
-    width: 100px;
+    width: 150px;
     display: inline-block;
 }
 
@@ -150,3 +156,27 @@ h1 {
         width: 500px;
     }
 }
+
+.column {
+    float: left;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+ }
+
+
+.columnn {
+    float: left;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+ }
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+ }
