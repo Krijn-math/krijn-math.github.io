@@ -1,6 +1,7 @@
+an efficient collision attack on castryck-decru-smith’s hash function;;;ryo ohashi, hiroshi onuki;;;2024/1776;;;last_week
 more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_week
 pearl-scallop: parameter extension applicable in real-life scallop;;;bill allombert, jean-françois biasse, jonathan komada eriksen, péter kutas, chris leonardi, aurel page, renate scheidler, márton tot bagi;;;2024/1744;;;last_week
-efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_week
+efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_month
 radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_month
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_month
 the module action for isogeny based cryptography;;;damien robert;;;2024/1556;;;last_month
@@ -71,7 +72,6 @@ improved algorithms for finding fixed-degree isogenies between supersingular ell
 an efficient adaptive attack against festa;;;guoqing zhou, maozhi xu;;;2024/345;;;last_year
 is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya;;;2023/1506;;;last_year
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;last_year
-ready to sqi? safety first! towards a constant-time implementation of isogeny-based signature, sqisign;;;david jacquemin, anisha mukherjee, péter kutas, sujoy sinha roy;;;2023/807;;;last_year
 the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya, hiroshi onuki;;;2023/1092;;;last_year
 zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;last_year
 exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;last_year
