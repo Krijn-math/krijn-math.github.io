@@ -27,7 +27,7 @@ function displayObject(index, data) {
         document.getElementById("authors").textContent = "Author: " + obj.authors.join(", ");
     }
 
-    document.getElementById("name").textContent = obj.name;
+    document.getElementById("name").textContent = "ePrint " + obj.name;
 
     // Add animation for smooth transition between objects
     const contentContainer = document.getElementById("content-container");
