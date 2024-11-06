@@ -14,11 +14,15 @@ def detexify(text):
     pattern = r'[ \~\\]+cite{(.*?)\}'
     result = re.sub(pattern, '', result)
 
+    result = re.sub(r'\${2}(.*?)\${2}', r'\\[ \1 \\]', result)
+    result = re.sub(r'\$(.*?)\$', r'\\( \1 \\)', result)
+
     return result
 
 def detexify_data(data):
     for obj in data:
         obj['abstract'] = detexify(obj['abstract'])
+        obj['title'] = re.sub(r'\$(.*?)\$', r'\\( \1 \\)', obj['title'])
     
     return data
 
@@ -48,9 +52,10 @@ def clean_data(data):
     return data
 
 
-with open('data.json', 'r') as f:
-    data = json.load(f)
-    papers = data["papers"]
+with open('short_data.json', 'r') as f:
+    papers = json.load(f)
+    # data = json.load(f)
+    # papers = data["papers"]
 
 papers = radboudify(papers)
 

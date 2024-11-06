@@ -22,6 +22,7 @@ function displayObject(index, data) {
     document.getElementById("title").textContent = obj.title;
     document.getElementById("abstract").textContent = obj.abstract;
     MathJax.typeset();
+
     if (obj.authors.length > 1){
         document.getElementById("authors").textContent = "Authors: " + obj.authors.join(", ");
     } else {
@@ -61,6 +62,12 @@ function displayObject(index, data) {
         progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
 
         if (elapsedTime >= totalTime) {
+            progressBar.style.transition = "none"; 
+            progressBar.style.width = "0%";
+            setTimeout(() => {
+                progressBar.style.transition = "width 1s linear"; 
+            }, 10);
+            
             clearInterval(interval);
             setTimeout(() => {
                 // Move to the next object, looping back to the first one if necessary
