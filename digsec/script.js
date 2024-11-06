@@ -4,13 +4,6 @@ const totalTime = 30; // Time for each object (in seconds)
 const progressBar = document.getElementById("progress-bar");
 const indexIndicator = document.getElementById("index-indicator");
 
-fetch('staff.txt')
-    .then(response => response.json())
-    .then(staff => {
-
-    });
-
-
 // Fetch the data from 'data.json' file
 fetch('website_data.json')
     .then(response => response.json())  // Automatically parses the JSON
@@ -91,6 +84,7 @@ document.addEventListener("keydown", (event) => {
         }, 10);
 
     } else if (event.key === "ArrowRight") {
+
         progressBar.style.transition = "none"; 
 
         elapsedTime = 30;
@@ -100,9 +94,6 @@ document.addEventListener("keydown", (event) => {
             progressBar.style.transition = "width 1s linear"; 
         }, 10);
 
-        clearInterval(interval);  // Clear current interval
-        currentIndex = (currentIndex + 1) % data.length;
-        displayObject(currentIndex, data);  // Display the next object immediately
     }
 });
 
