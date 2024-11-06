@@ -3,6 +3,13 @@ const totalTime = 30; // Time for each object (in seconds)
 const progressBar = document.getElementById("progress-bar");
 const indexIndicator = document.getElementById("index-indicator");
 
+fetch('staff.txt')
+    .then(response => response.json())
+    .then(staff => {
+
+    });
+
+
 // Fetch the data from 'data.json' file
 fetch('website_data.json')
     .then(response => response.json())  // Automatically parses the JSON
@@ -38,9 +45,15 @@ function displayObject(index, data) {
         contentContainer.classList.add("show");  // Show new content after fade out
     }, 500);  // Wait for 0.5s before showing new content
 
+    if (obj.radboud == "true") {
+        document.body.style.backgroundColor = "#e3000b";  // Make the entire page background red
+    } else {
+        document.body.style.backgroundColor = "";     // Reset to default background if radboud is false
+    }
+
     // Reset progress bar
     progressBar.style.width = "0%";
-    indexIndicator.textContent = `ePrint ${index + 1} of ${data.length} from last week`;
+    indexIndicator.textContent = `${index + 1} of ${data.length} from recent ePrints`;
 
     let elapsedTime = 0;
     const interval = setInterval(() => {

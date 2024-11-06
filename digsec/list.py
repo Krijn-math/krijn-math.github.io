@@ -1,7 +1,11 @@
 from datetime import date, datetime, timedelta
+from random import shuffle
 import unicodeit
 import re
 import json
+
+with open('staff.txt', 'r') as f:
+    staff = f.read().split(',')
 
 def detexify(text):
     pattern = r' \[(.*?)\]'
@@ -25,12 +29,20 @@ def rekrijn_data(data):
 
     return data
 
-def untexcommand(data):
+def radboudify(data):
+    for obj in data:
+        obj['radboud'] = 'false'
+
+        for author in obj['authors']:
+            if author in staff:
+                obj['radboud'] = 'true'
+
     return data
 
 def clean_data(data):
     if isinstance(data, list):
         data = detexify_data(data)
+        data = radboudify(data)
         data = rekrijn_data(data)
 
     return data
@@ -40,6 +52,8 @@ with open('data.json', 'r') as f:
     data = json.load(f)
     papers = data["papers"]
 
+papers = radboudify(papers)
+
 lastweek = []
 timer = True
 i = 0
@@ -48,13 +62,17 @@ while timer:
     current_date = datetime.now()
     time_diff = current_date - parsed_date
 
-    if time_diff <= timedelta(days=7):
+    if time_diff <= timedelta(days=7) or (time_diff <= timedelta(days = 31) and papers[i]['radboud'] == "true"):
         lastweek.append(papers[i])
-        i += 1
-    else:
+    
+    i += 1
+    
+    if time_diff > timedelta(days = 31):
         timer = False
 
 lastweek = clean_data(lastweek)
+
+shuffle(lastweek)
 
 with open('website_data.json', 'w') as f:
     json.dump(lastweek, f, indent=4)
