@@ -1,0 +1,79 @@
+/* Basic styling for a minimal look */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#content-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @supports (-webkit-line-clamp: 15) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: initial;
+        display: -webkit-box;
+        -webkit-line-clamp: 15;
+        -webkit-box-orient: vertical;
+    }
+}
+
+
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+}
+
+#title {
+    text-wrap: balance;
+    max-width: 400px; /* Adjust as needed */
+    margin-left: auto;   /* This centers the element horizontally */
+    margin-right: auto;  /* This centers the element horizontally */
+}
+
+#abstract {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    max-width: 400px; /* Adjust as needed */
+    text-align: justify; /* This justifies the text */
+    margin-left: auto;   /* This centers the element horizontally */
+    margin-right: auto;  /* This centers the element horizontally */
+}
+
+#authors {
+    font-size: 1.1em;
+    color: #888;
+    max-width: 400px; /* Adjust as needed */
+    text-align: justify; /* This justifies the text */
+    margin-left: auto;   /* This centers the element horizontally */
+    margin-right: auto;  /* This centers the element horizontally */
+}
+
+#content-container.show {
+    opacity: 1;
+}
