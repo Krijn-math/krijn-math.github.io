@@ -1,3 +1,4 @@
+let elapsedTime = 0;
 let currentIndex = 0;
 const totalTime = 30; // Time for each object (in seconds)
 const progressBar = document.getElementById("progress-bar");
@@ -15,7 +16,7 @@ fetch('website_data.json')
     .then(response => response.json())  // Automatically parses the JSON
     .then(data => {
         // Call cycle function with the fetched data
-        cycleThroughObjects(data);
+        displayObject(currentIndex, data);    
     })
     .catch(error => {
         console.error('Error fetching JSON:', error);
@@ -43,7 +44,7 @@ function displayObject(index, data) {
     contentContainer.classList.remove("show");  // Hide content
     setTimeout(() => {
         contentContainer.classList.add("show");  // Show new content after fade out
-    }, 500);  // Wait for 0.5s before showing new content
+    }, 10);  // Wait for 0.5s before showing new content
 
     if (obj.radboud == "true") {
         document.body.style.backgroundColor = "#e3000b";  // Make the entire page background red
@@ -52,10 +53,16 @@ function displayObject(index, data) {
     }
 
     // Reset progress bar
+    progressBar.style.transition = "none"; 
     progressBar.style.width = "0%";
+    setTimeout(() => {
+        progressBar.style.transition = "width 1s linear"; 
+    }, 10);
+
     indexIndicator.textContent = `${index + 1} of ${data.length} from recent ePrints`;
 
-    let elapsedTime = 0;
+    elapsedTime = 0
+
     const interval = setInterval(() => {
         elapsedTime++;
         progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
@@ -66,17 +73,36 @@ function displayObject(index, data) {
                 // Move to the next object, looping back to the first one if necessary
                 currentIndex = (currentIndex + 1) % data.length;
                 displayObject(currentIndex, data);
-            }, 500);
+            }, 10);
         }
     }, 1000); // Update every second
 
 }
 
-function cycleThroughObjects(data) {
-    displayObject(currentIndex, data);
+document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+        progressBar.style.transition = "none"; 
 
-    // Move to the next object every 5 seconds
-    // currentIndex = (currentIndex + 1) % data.length;  // Wrap back to the first object when done
+        elapsedTime = Math.max(0, elapsedTime - 5);  // Prevent negative values
+        progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
 
-    // setTimeout(() => cycleThroughObjects(data), 20000);  // 5-second interval
-}
+        setTimeout(() => {
+            progressBar.style.transition = "width 1s linear"; 
+        }, 10);
+
+    } else if (event.key === "ArrowRight") {
+        progressBar.style.transition = "none"; 
+
+        elapsedTime = 30;
+        progressBar.style.width = `0%`;
+
+        setTimeout(() => {
+            progressBar.style.transition = "width 1s linear"; 
+        }, 10);
+
+        clearInterval(interval);  // Clear current interval
+        currentIndex = (currentIndex + 1) % data.length;
+        displayObject(currentIndex, data);  // Display the next object immediately
+    }
+});
+
