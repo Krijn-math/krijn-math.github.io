@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const totalTime = 250; // Time for each object (in seconds)
+const totalTime = 150; // Time for each object (in seconds)
 const progressBar = document.getElementById("progress-bar");
 
 // Fetch the data from 'data.json' file
