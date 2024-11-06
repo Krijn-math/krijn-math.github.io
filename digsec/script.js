@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const totalTime = 150; // Time for each object (in seconds)
+const totalTime = 30; // Time for each object (in seconds)
 const progressBar = document.getElementById("progress-bar");
 const indexIndicator = document.getElementById("index-indicator");
 
@@ -55,7 +55,7 @@ function displayObject(index, data) {
                 displayObject(currentIndex, data);
             }, 500);
         }
-    }, 200); // Update every second
+    }, 1000); // Update every second
 
 }
 

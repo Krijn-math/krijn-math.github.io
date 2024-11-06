@@ -26,7 +26,7 @@ body {
     height: 100%;
     background-color: #4caf50;  /* Green color */
     width: 0%;
-    transition: width 0.1s linear;
+    transition: width 1s linear; /* Smooth transition over 1 second */
 }
 
 /* Index Indicator Styles */
