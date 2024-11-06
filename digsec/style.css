@@ -11,19 +11,37 @@ body {
     text-align: center;
 }
 
+/* Progress Bar Styles */
+#progress-bar-container {
+    width: 100%;
+    height: 4px;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #4caf50;  /* Green color */
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
 #content-container {
     background-color: white;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    max-width: 750px;
     width: 100%;
     transition: opacity 1s ease-in-out;
     opacity: 0;
 }
 
-h1 {
-    font-size: 3em;
+h2 {
+    font-size: 1.4em;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -50,25 +68,25 @@ p {
 
 #title {
     text-wrap: balance;
-    max-width: 400px; /* Adjust as needed */
+    max-width: 600px; /* Adjust as needed */
     margin-left: auto;   /* This centers the element horizontally */
     margin-right: auto;  /* This centers the element horizontally */
 }
 
 #abstract {
-    font-size: 12px;
+    font-size: 1.2em;
     color: #555;
     margin-bottom: 20px;
-    max-width: 400px; /* Adjust as needed */
+    max-width: 600px; /* Adjust as needed */
     text-align: justify; /* This justifies the text */
     margin-left: auto;   /* This centers the element horizontally */
     margin-right: auto;  /* This centers the element horizontally */
 }
 
 #authors {
-    font-size: 11px;
+    font-size: 1.1em;
     color: #888;
-    max-width: 400px; /* Adjust as needed */
+    max-width: 600px; /* Adjust as needed */
     text-align: justify; /* This justifies the text */
     margin-left: auto;   /* This centers the element horizontally */
     margin-right: auto;  /* This centers the element horizontally */

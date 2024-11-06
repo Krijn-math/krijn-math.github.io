@@ -1,4 +1,6 @@
 let currentIndex = 0;
+const totalTime = 250; // Time for each object (in seconds)
+const progressBar = document.getElementById("progress-bar");
 
 // Fetch the data from 'data.json' file
 fetch('website_data.json')
@@ -32,13 +34,32 @@ function displayObject(index, data) {
     setTimeout(() => {
         contentContainer.classList.add("show");  // Show new content after fade out
     }, 500);  // Wait for 0.5s before showing new content
+
+    // Reset progress bar
+    progressBar.style.width = "0%";
+
+    let elapsedTime = 0;
+    const interval = setInterval(() => {
+        elapsedTime++;
+        progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
+
+        if (elapsedTime >= totalTime) {
+            clearInterval(interval);
+            setTimeout(() => {
+                // Move to the next object, looping back to the first one if necessary
+                currentIndex = (currentIndex + 1) % data.length;
+                displayObject(currentIndex, data);
+            }, 500);
+        }
+    }, 200); // Update every second
+
 }
 
 function cycleThroughObjects(data) {
     displayObject(currentIndex, data);
 
     // Move to the next object every 5 seconds
-    currentIndex = (currentIndex + 1) % data.length;  // Wrap back to the first object when done
+    // currentIndex = (currentIndex + 1) % data.length;  // Wrap back to the first object when done
 
-    setTimeout(() => cycleThroughObjects(data), 20000);  // 5-second interval
+    // setTimeout(() => cycleThroughObjects(data), 20000);  // 5-second interval
 }
