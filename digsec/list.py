@@ -62,17 +62,19 @@ while timer:
     current_date = datetime.now()
     time_diff = current_date - parsed_date
 
-    if time_diff <= timedelta(days=7) or (time_diff <= timedelta(days = 31) and papers[i]['radboud'] == "true"):
+    if time_diff <= timedelta(days=7) or (time_diff <= timedelta(days = 100) and papers[i]['radboud'] == "true"):
         lastweek.append(papers[i])
     
     i += 1
     
-    if time_diff > timedelta(days = 31):
+    if time_diff > timedelta(days = 100):
         timer = False
 
 lastweek = clean_data(lastweek)
 
 shuffle(lastweek)
+
+print(len(lastweek))
 
 with open('website_data.json', 'w') as f:
     json.dump(lastweek, f, indent=4)
