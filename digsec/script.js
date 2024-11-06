@@ -1,6 +1,7 @@
 let currentIndex = 0;
 const totalTime = 150; // Time for each object (in seconds)
 const progressBar = document.getElementById("progress-bar");
+const indexIndicator = document.getElementById("index-indicator");
 
 // Fetch the data from 'data.json' file
 fetch('website_data.json')
@@ -37,6 +38,7 @@ function displayObject(index, data) {
 
     // Reset progress bar
     progressBar.style.width = "0%";
+    indexIndicator.textContent = `ePrint ${index + 1} of ${data.length} from last week`;
 
     let elapsedTime = 0;
     const interval = setInterval(() => {

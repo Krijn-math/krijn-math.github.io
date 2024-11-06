@@ -29,6 +29,14 @@ body {
     transition: width 0.1s linear;
 }
 
+/* Index Indicator Styles */
+#index-indicator {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #cfcfcf;
+}
+
 #content-container {
     background-color: white;
     padding: 30px;

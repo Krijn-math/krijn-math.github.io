@@ -40,10 +40,24 @@ with open('data.json', 'r') as f:
     data = json.load(f)
     papers = data["papers"]
 
-last100 = clean_data(papers[:100])
+lastweek = []
+timer = True
+i = 0
+while timer:
+    parsed_date = datetime.strptime(papers[i]['lastmodified'], '%Y-%m-%d %H:%M:%S')
+    current_date = datetime.now()
+    time_diff = current_date - parsed_date
+
+    if time_diff <= timedelta(days=7):
+        lastweek.append(papers[i])
+        i += 1
+    else:
+        timer = False
+
+lastweek = clean_data(lastweek)
 
 with open('website_data.json', 'w') as f:
-    json.dump(last100, f, indent=4)
+    json.dump(lastweek, f, indent=4)
 
 
 
