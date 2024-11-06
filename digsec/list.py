@@ -4,17 +4,17 @@ import re
 import json
 
 def detexify(text):
-    def repl(match):
-        return str(unicodeit.replace((match.group(1))))
+    pattern = r' \[(.*?)\]'
+    result = re.sub(pattern, '', text)
 
-    pattern = r'\$(.*?)\$'
-    result = re.sub(pattern, repl, text)
+    pattern = r'[ \~\\]+cite{(.*?)\}'
+    result = re.sub(pattern, '', result)
+
     return result
 
 def detexify_data(data):
     for obj in data:
         obj['abstract'] = detexify(obj['abstract'])
-        obj['title'] = detexify(obj['title'])
     
     return data
 
@@ -23,6 +23,9 @@ def rekrijn_data(data):
         if 'Krijn Reijnders' in obj['authors']:
             obj['authors'] = ["Krĳn Reĳnders" if name == "Krijn Reijnders" else name for name in obj['authors']]
 
+    return data
+
+def untexcommand(data):
     return data
 
 def clean_data(data):
