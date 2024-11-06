@@ -46,6 +46,7 @@ body {
     width: 100%;
     transition: opacity 1s ease-in-out;
     opacity: 0;
+    cursor: pointer; 
 }
 
 h2 {
@@ -102,4 +103,12 @@ p {
 
 #content-container.show {
     opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(0, 117, 172);
 }

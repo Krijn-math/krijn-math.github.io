@@ -29,8 +29,10 @@ function displayObject(index, data) {
 
     document.getElementById("name").textContent = "ePrint " + obj.name;
 
+
     // Add animation for smooth transition between objects
     const contentContainer = document.getElementById("content-container");
+    contentContainer.href = "https://eprint.iacr.org/" + obj.pdffile;
     contentContainer.classList.remove("show");  // Hide content
     setTimeout(() => {
         contentContainer.classList.add("show");  // Show new content after fade out
