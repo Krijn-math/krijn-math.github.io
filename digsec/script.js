@@ -1,5 +1,6 @@
 let elapsedTime = 0;
 let currentIndex = 0;
+let interval = null;
 const totalTime = 30; // Time for each object (in seconds)
 const progressBar = document.getElementById("progress-bar");
 const indexIndicator = document.getElementById("index-indicator");
@@ -10,12 +11,35 @@ fetch('website_data.json')
     .then(data => {
         // Call cycle function with the fetched data
         displayObject(currentIndex, data);    
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") {
+                progressBar.style.transition = "none"; 
+        
+                elapsedTime = Math.max(0, elapsedTime - 5);  // Prevent negative values
+                progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
+        
+                setTimeout(() => {
+                    progressBar.style.transition = "width 1s linear"; 
+                }, 10);
+        
+            } else if (event.key === "ArrowRight") {
+        
+                clearInterval(interval);
+
+                currentIndex = (currentIndex + 1) % data.length;
+                displayObject(currentIndex, data);
+        
+            }
+        });
+
     })
     .catch(error => {
         console.error('Error fetching JSON:', error);
     });
 
 function displayObject(index, data) {
+    
     const obj = data[index];
 
     // Display the title, abstract, and authors
@@ -57,7 +81,7 @@ function displayObject(index, data) {
 
     elapsedTime = 0
 
-    const interval = setInterval(() => {
+    interval = setInterval(() => {
         elapsedTime++;
         progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
 
@@ -69,6 +93,7 @@ function displayObject(index, data) {
             }, 10);
             
             clearInterval(interval);
+
             setTimeout(() => {
                 // Move to the next object, looping back to the first one if necessary
                 currentIndex = (currentIndex + 1) % data.length;
@@ -79,28 +104,28 @@ function displayObject(index, data) {
 
 }
 
-document.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowLeft") {
-        progressBar.style.transition = "none"; 
+// document.addEventListener("keydown", (event) => {
+//     if (event.key === "ArrowLeft") {
+//         progressBar.style.transition = "none"; 
 
-        elapsedTime = Math.max(0, elapsedTime - 5);  // Prevent negative values
-        progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
+//         elapsedTime = Math.max(0, elapsedTime - 5);  // Prevent negative values
+//         progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
 
-        setTimeout(() => {
-            progressBar.style.transition = "width 1s linear"; 
-        }, 10);
+//         setTimeout(() => {
+//             progressBar.style.transition = "width 1s linear"; 
+//         }, 10);
 
-    } else if (event.key === "ArrowRight") {
+//     } else if (event.key === "ArrowRight") {
 
-        progressBar.style.transition = "none"; 
+//         progressBar.style.transition = "none"; 
 
-        elapsedTime = 30;
-        progressBar.style.width = `0%`;
+//         elapsedTime = 30;
+//         progressBar.style.width = `0%`;
 
-        setTimeout(() => {
-            progressBar.style.transition = "width 1s linear"; 
-        }, 10);
+//         setTimeout(() => {
+//             progressBar.style.transition = "width 1s linear"; 
+//         }, 10);
 
-    }
-});
+//     }
+// });
 
