@@ -154,7 +154,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
 
         <script>
             function loadListData() {
-                fetch('isogeny_data.json')
+                fetch('git_data.json')
                     .then(response => response.json())
                     .then(data => {
                         var list = document.getElementById('last_week');
@@ -163,6 +163,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             var authors = obj['authors'];
                             var id = obj['name'];
                             var date_class = obj['classification'];
+                            var repos = obj['gits'];
 
                             if (date_class === 'last_week') {
                                 var listItem = document.createElement('li');
@@ -188,12 +189,24 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                                 var floatItem = document.createElement('span');
                                 floatItem.style = "float:right";
 
+                                if (repos != []){
+                                    var gitItem = document.createElement('a');
+                                    gitItem.href = repos[0];
+                                    gitItem.target = "_blank";
+                                    gitItem.textContent = "git?";
+                                    floatItem.appendChild(gitItem);
+                                }
+
+                                var space = document.createTextNode('\u00A0\u00A0')
+                                floatItem.appendChild(space);
+
                                 var urlItem = document.createElement('a');
                                 urlItem.href = "//ia.cr/" + id;
                                 urlItem.target = "_blank";
                                 urlItem.textContent = id;
-
                                 floatItem.appendChild(urlItem);
+
+
 
                                 listItem.appendChild(titleItem);
                                 listItem.appendChild(authorItem);
@@ -214,7 +227,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
 
         <script>
             function loadListData() {
-                fetch('isogeny_data.json')
+                fetch('git_data.json')
                     .then(response => response.json())
                     .then(data => {
                         var list = document.getElementById('last_month');
@@ -223,6 +236,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             var authors = obj['authors'];
                             var id = obj['name'];
                             var date_class = obj['classification'];
+                            var repos = obj['gits'];
 
                             if (date_class === 'last_month') {
                                 var listItem = document.createElement('li');
@@ -248,11 +262,21 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                                 var floatItem = document.createElement('span');
                                 floatItem.style = "float:right";
 
+                                if (repos != []){
+                                    var gitItem = document.createElement('a');
+                                    gitItem.href = repos[0];
+                                    gitItem.target = "_blank";
+                                    gitItem.textContent = "git?";
+                                    floatItem.appendChild(gitItem);
+                                }
+
+                                var space = document.createTextNode('\u00A0\u00A0')
+                                floatItem.appendChild(space);
+
                                 var urlItem = document.createElement('a');
                                 urlItem.href = "//ia.cr/" + id;
                                 urlItem.target = "_blank";
                                 urlItem.textContent = id;
-
                                 floatItem.appendChild(urlItem);
 
                                 listItem.appendChild(titleItem);
@@ -271,68 +295,74 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
         </script>
         <h3>last year</h3>
         <ul reversed class="spaced-list" ; id="last_year"></ul>
-
         <script>
-            function loadListData() {
-                fetch('isogeny_data.json')
-                    .then(response => response.text())
-                    .then(data => {
-                        var list = document.getElementById('last_year');
-                        var lines = data.split('\n');
+        function loadListData() {
+            fetch('git_data.json')
+                .then(response => response.json())
+                .then(data => {
+                    var list = document.getElementById('last_year');
+                    data.forEach(function (obj) {
+                        var title = obj['title'];
+                        var authors = obj['authors'];
+                        var id = obj['name'];
+                        var date_class = obj['classification'];
+                        var repos = obj['gits'];
 
-                        lines.forEach(function (line) {
-                            var values = line.split(';;;');
-                            var title = values[0];
-                            var authors = values[1];
-                            var id = values[2];
-                            var date_class = values[3];
+                        if (date_class === 'last_year') {
+                            var listItem = document.createElement('li');
+                            listItem.style.listStyleType = 'none';
 
-                            if (date_class === 'last_year') {
-                                var listItem = document.createElement('li');
-                                //listItem.style.listStyleType = '"' + id + ' "';
-                                listItem.style.listStyleType = 'none';
+                            var titleItem = document.createElement('b');
+                            titleItem.textContent = title + ". ";
 
-                                var titleItem = document.createElement('b');
-                                titleItem.textContent = title + ". ";
+                            var authorItem = document.createElement('span');
+                            var authorFormatted = "";
+                            authors.forEach(function (author, index) {
+                                if (index === authors.length - 2) {
+                                    authorFormatted += author + " and ";
+                                } else if (index === authors.length - 1) {
+                                    authorFormatted += author;
+                                } else {
+                                    authorFormatted += author + ", ";
+                                }
+                            });
 
-                                var authorItem = document.createElement('span');
-                                var authorFormatted = "";
-                                authors.forEach(function (author, index) {
-                                    if (index === authors.length - 2) {
-                                        authorFormatted += author + " and ";
-                                    } else if (index === authors.length - 1) {
-                                        authorFormatted += author;
-                                    } else {
-                                        authorFormatted += author + ", ";
-                                    }
-                                });
+                            authorItem.textContent = authorFormatted;
 
-                                authorItem.textContent = authorFormatted;
+                            var floatItem = document.createElement('span');
+                            floatItem.style = "float:right";
 
-                                var floatItem = document.createElement('span');
-                                floatItem.style = "float:right";
+                            if (repos != []){
+                                var gitItem = document.createElement('a');
+                                gitItem.href = repos[0];
+                                gitItem.target = "_blank";
+                                gitItem.textContent = "git?";
+                                floatItem.appendChild(gitItem);
+                            }
 
-                                var urlItem = document.createElement('a');
-                                urlItem.href = "//ia.cr/" + id;
-                                urlItem.target = "_blank";
-                                urlItem.textContent = id;
+                            var space = document.createTextNode('\u00A0\u00A0')
+                            floatItem.appendChild(space);
 
-                                floatItem.appendChild(urlItem);
+                            var urlItem = document.createElement('a');
+                            urlItem.href = "//ia.cr/" + id;
+                            urlItem.target = "_blank";
+                            urlItem.textContent = id;
+                            floatItem.appendChild(urlItem);
 
-                                listItem.appendChild(titleItem);
-                                listItem.appendChild(authorItem);
-                                listItem.appendChild(floatItem);
+                            listItem.appendChild(titleItem);
+                            listItem.appendChild(authorItem);
+                            listItem.appendChild(floatItem);
 
-                                list.appendChild(listItem);
-                                list.appendChild(document.createElement('br'));
-                            };
+                            list.appendChild(listItem);
+                            list.appendChild(document.createElement('br'));
+                        };
 
-                        });
                     });
-            }
+                });
+        }
 
-            loadListData();
-        </script>
+        loadListData();
+    </script>
         <h3>before that</h3>
         <ul reversed class="spaced-list" ; id="other"></ul>
 
@@ -402,5 +432,4 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
         <h1><a href="//krijnreijnders.com" target="_blank">...</a></h1>
 
 </body>
-
 </html>
