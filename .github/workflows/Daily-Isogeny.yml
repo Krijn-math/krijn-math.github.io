@@ -24,8 +24,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r isogeny/requirements.txt
 
-    - name: Run isogeny.py
-      run: python isogeny/isogeny.py
+    - name: Run isogeny2.py
+      run: python isogeny/isogeny2.py
 
     - name: Commit and push changes
       run: |
