@@ -15,8 +15,16 @@ fetch('website_data.json')
         document.addEventListener("keydown", (event) => {
             if (event.key === "ArrowLeft") {
                 progressBar.style.transition = "none"; 
+
+                if (elapsedTime < 1){
+                    clearInterval(interval);
+
+                    currentIndex = (currentIndex - 1) % data.length;
+                    displayObject(currentIndex, data);
+                } else {
+                    elapsedTime = Math.max(0, elapsedTime - 5);  // Prevent negative values
+                }
         
-                elapsedTime = Math.max(0, elapsedTime - 5);  // Prevent negative values
                 progressBar.style.width = `${(elapsedTime / totalTime) * 100}%`;
         
                 setTimeout(() => {
