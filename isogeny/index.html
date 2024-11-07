@@ -403,6 +403,7 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                             var authorlist = authors.split(',');
                             var id = values[2];
                             var date_class = values[3];
+                            var repo = values[4];
 
                             if (date_class === 'other') {
                                 var listItem = document.createElement('li');
@@ -429,11 +430,22 @@ baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0
                                 var floatItem = document.createElement('span');
                                 floatItem.style = "float:right";
 
+                                if (repo != 'none'){
+                                    var gitItem = document.createElement('a');
+                                    gitItem.href = repo;
+                                    gitItem.target = "_blank";
+                                    gitItem.textContent = "git?";
+                                    floatItem.appendChild(gitItem);
+                                }
+                                
                                 var urlItem = document.createElement('a');
                                 urlItem.href = "//ia.cr/" + id;
                                 urlItem.target = "_blank";
                                 urlItem.textContent = id;
 
+                                var space = document.createTextNode('\u00A0\u00A0')
+
+                                floatItem.appendChild(space);
                                 floatItem.appendChild(urlItem);
 
                                 listItem.appendChild(titleItem);
