@@ -98,3 +98,4 @@ fast and frobenius: rational isogeny evaluation over finite fields;;;gustavo ban
 towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;other;;;github.com/pq-vdf-isogeny/pq-
 two-round adaptively secure mpc from isogenies, lpn, or cdh;;;navid alamati, hart montgomery, sikhar patranabis, pratik sarkar;;;2023/1170;;;other;;;none
 vectorized and parallel computation of large smooth-degree isogenies using precedence-constrained scheduling;;;kittiphon phalakarn, vorapong suppakitpaisarn, francisco rodríguez-henríquez, m. anwar hasan;;;2023/885;;;other;;;github.com/kittiphonp/PCS
+logged at 2024-11-07
