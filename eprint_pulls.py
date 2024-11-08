@@ -120,17 +120,3 @@ while good_resp:
     append_to_json(f'eprint/eprintdata{year}.json', paper)
 
 print(f'done up to eprint {year}/{id - 1}')
-
-# for paper in papers:
-#     try:
-#         pdf = get_pdf(paper)
-#         paper['gits'] = get_repo(pdf)
-#     except:
-#         print(f"error on {paper['name']}")
-#         continue
-
-#     if paper['gits'] != []:
-#         print(f"{paper['name']} has repo {paper['gits'][0]}")
-    
-# with open('git_data.json', 'w') as f:
-#     json.dump(papers, f, indent=4)
