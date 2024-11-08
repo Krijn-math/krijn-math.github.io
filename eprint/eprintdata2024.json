@@ -70317,4 +70317,372 @@
         "https://github.com/bandprotocol/vrf-and-bridge-contracts/blob/34df2ebb75355beffb9ad24efb12c4c3e2c328e5/contracts/vrf/provider_v2/VRFProviderBaseV2.sol#L111"
     ]
 }
+,
+{
+    "abstract": "t-out-of-n threshold ring signature (TRS) is a type of anonymous signature designed for t signers to  jointly sign a message while hiding their identities among n parties that include themselves. However,  can TRS address those needs if one of the signers wants to revoke his signature or, additively, sign  separately later? Can non-signers be revoked without compromising anonymity? Previous research  has only discussed opposing situations. The present study introduces a novel property for TRS-  revocability- addressing the need for improved flexibility and privacy security in TRS. Our proposed  revocable threshold ring signature (RTRS) scheme is innovative in several ways: (1) It allows a signer to  non-interactively revoke their identity and update the signature from t-out-of-n to t \u2212 1-out-of-n; (2) It is possible to reduce the ring size and clip non-signers along with revoked signers while maintaining  the anonymity level. We analyze and define the boundaries for these operations and implement and  evaluate our structure. With a sufficiently large ring size, we can optimize the signature size, resulting  in better signing performance as compared to the extensible signature scheme.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Da Teng",
+            "orcid": "0000-0003-1406-9941"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Yanqing Yao",
+            "orcid": "0000-0003-4766-5504"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2024-06-14T07:23:32Z"
+        }
+    ],
+    "keywords": [
+        "Threshold ring signatures",
+        "Revocability",
+        "Anonymity",
+        "Electronic voting"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/958.pdf",
+    "pid": "958",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Signer Revocability for Threshold Ring Signatures",
+    "year": 2024,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We propose a new framework based on random submersions \u2014 that is projection over a random subspace blinded by a small Gaussian noise \u2014 for constructing verifiable short secret sharing and showcase it to construct efficient threshold lattice-based signatures in the hash-and-sign paradigm, when based on noise flooding. This is, to our knowledge, the first hash-and-sign lattice-based threshold signature. Our threshold signature enjoys the very desirable property of robustness, including at key generation. In practice, we are able to construct a robust hash-and-sign threshold signature for threshold and provide a typical parameter set for threshold T = 16 and signature size 13kB. Our constructions are provably secure under standard MLWE assumption in the ROM and only require basic primitives as building blocks. In particular, we do not rely on FHE-type schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                }
+            ],
+            "fullName": "Thomas Espitau",
+            "orcid": "0000-0002-7655-9594"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                },
+                {
+                    "name": "Univ Rennes, CNRS, IRISA"
+                }
+            ],
+            "fullName": "Guilhem Niot",
+            "orcid": "0000-0002-2497-8770"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                }
+            ],
+            "fullName": "Thomas Prest",
+            "orcid": "0000-0003-1445-6212"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2024-06-14T11:08:46Z"
+        }
+    ],
+    "keywords": [
+        "threshold",
+        "signature scheme",
+        "robust",
+        "lattices",
+        "post-quantum",
+        "plover"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/959.pdf",
+    "pid": "959",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Flood and Submerse: Distributed Key Generation and Robust Threshold Signature from Lattices",
+    "year": 2024,
+    "repo": [
+        "https://github.com/malb/lattice-estimator",
+        "https://github.com/pq-crystals/security-estimates"
+    ]
+}
+,
+{
+    "abstract": "The Learning with Errors problem (LWE) and its variants are among the most popular assumptions underlying lattice-based cryptography. The Learning with Rounding problem (LWR) can be thought of as a deterministic variant of LWE. While lattice-based cryptography is known to enable many advanced constructions, constructing Fully Homomorphic Encryption schemes based on LWR remains an under-explored part of the literature. In this work, we present a thorough study of Somewhat Homomorphic Encryption schemes based on Ring-LWR that are the analogue of the Ring-LWE-based BFV scheme. Our main contribution is to present and analyse two new schemes, in the LPR and Regev paradigms. The Regev-type scheme can be seen as a generalisation of the only prior work in this direction (Costache-Smart, 2017). Both our schemes present several im- provements compared to this prior work, and in particular we resolve the \u201ctangled modulus\u201d issue in the Costache-Smart scheme that led to unmanageable noise growth. Our schemes inherit the many benefits of being based on LWR, including ease of implementation, avoiding the need for expensive Gaussian sampling, improved resistance to side channels, suitability for hardware, and improved ciphertext size. Indeed, we give a detailed comparison showing that the LPR and Regev-type schemes marginally outperform the BFV scheme in terms of ciphertext size. Moreover, we show that both our schemes support RNS variants, which would make their practical performance competitive with BFV.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bitdefender, Romania"
+                }
+            ],
+            "fullName": "Madalina Bolboceanu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTNU, Norway"
+                }
+            ],
+            "fullName": "Anamaria Costache"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway, University of London, UK"
+                }
+            ],
+            "fullName": "Erin Hales"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway, University of London, UK"
+                }
+            ],
+            "fullName": "Rachel Player"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Pi Squared Inc., USA"
+                }
+            ],
+            "fullName": "Miruna Rosca"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bitdefender, Romania"
+                }
+            ],
+            "fullName": "Radu Titiu"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2024-06-14T15:20:36Z"
+        }
+    ],
+    "keywords": [
+        "homomorphic encryption",
+        "public-key encryption",
+        "Ring-LWR",
+        "RNS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/960.pdf",
+    "pid": "960",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Designs for practical SHE schemes based on Ring-LWR",
+    "year": 2024,
+    "repo": [
+        "https://github.com/shaih/HElib",
+        "https://git.njit.edu/palisade/PALISADE",
+        "https://github.com/Microsoft/SEAL"
+    ]
+}
+,
+{
+    "abstract": "Security of blockchain technologies primarily relies on decentralization making them resilient against a subset of entities being taken down or corrupt. Blockchain scaling, crucial to decentralisation, has been addressed by architectural changes: i.e., the load of the nodes is reduced by parallelisation, called sharding or by taking computation load off the main blockchain via rollups. Both sharding and rollups have limitations in terms of decentralization and security.\r\nA crucial component in these architectures is a layer that allows to efficiently check the validity of incoming blocks in the system. We provide the first formalization and analysis of ELVES, the auditing layer that is currently deployed in the Polkadot and Kusama blockchains.\r\nIn this layer, \u201cauditing committees\u201d are formed independently for each block, and security relies on the fact that it is prohibitively expensive in expectation for an adversary to make ELVES to accept a block that is not valid. In addition, ELVES has the following characteristics: 1) Auditing committees wind up orders of magnitude smaller than pre-assigned committees. In fact, the size of the committees adapts automatically to network conditions but remains a low constant in expectation, in the order of tens or low hundreds; 2) Although synchronous per se, ELVES tolerates instant adaptive crashes, mirroring realistic network capabilities. Surprisingly, the committee-size analysis of our protocol is \u2019all but simple\u2019 and involves a novel strengthening of Cantelli\u2019s inequality, which may be of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Jeff Burdges"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Alfonso Cevallos"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Handan K\u0131l\u0131n\u00e7 Alper"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Chen-Da Liu-Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Fatemeh Shirazi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Alistair Stewart"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Rob Habermeier"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Parity Technologies"
+                }
+            ],
+            "fullName": "Robert Klotzner"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Parity Technologies"
+                }
+            ],
+            "fullName": "Andronik Ordian"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2024-06-14T16:01:39Z"
+        }
+    ],
+    "keywords": [
+        "blockchain",
+        "scaling",
+        "rollups",
+        "sharding",
+        "auditing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/961.pdf",
+    "pid": "961",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Execution Auditing for Blockchains under Byzantine Assumptions",
+    "year": 2024,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "If a web service is so secure that it does not even know\u2014and does not want to know\u2014the identity and contact info of its users, can it still offer account recovery if a user forgets their password? This paper is the culmination of the authors' work to design a cryptographic protocol for account recovery for use by a prominent secure matching system: a web-based service that allows survivors of sexual misconduct to become aware of other survivors harmed by the same perpetrator. In such a system, the list of account-holders must be safeguarded, even against the service provider itself.\r\n\r\nIn this work, we design an account recovery system that, on the surface, appears to follow the typical workflow: the user types in their email address, receives an email containing a one-time link, and answers some security questions. Behind the scenes, the defining feature of our recovery system is that the service provider can perform email-based account validation without knowing, or being able to learn, a list of users' email addresses. Our construction uses standardized cryptography for most components, and it has been deployed in production at the secure matching system.\r\n\r\nAs a building block toward our main construction, we design a new cryptographic primitive that may be of independent interest: an oblivious pseudorandom function that can either have a fully-private input or a partially-public input, and that reaches the same output either way. This primitive allows us to perform online rate limiting for account recovery attempts, without imposing a bound on the creation of new accounts. We provide an open-source implementation of this primitive and provide evaluation results showing that the end-to-end interaction time takes 8.4-60.4 ms in fully-private input mode and 3.1-41.2 ms in partially-public input mode.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Boston University",
+                    "ror": "https://ror.org/05qwgg493"
+                }
+            ],
+            "fullName": "Ryan Little",
+            "orcid": "0009-0008-7489-9262"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgetown University",
+                    "ror": "https://ror.org/05vzafd60"
+                }
+            ],
+            "fullName": "Lucy Qin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Boston University",
+                    "ror": "https://ror.org/05qwgg493"
+                }
+            ],
+            "fullName": "Mayank Varia",
+            "orcid": "0000-0002-7460-3272"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2024-06-14T18:05:24Z"
+        }
+    ],
+    "keywords": [
+        "account recovery",
+        "oblivious pseudorandom function",
+        "secure matching system"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/962.pdf",
+    "pid": "962",
+    "pubtype": {
+        "note": "USENIX Security 2024",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Secure Account Recovery for a Privacy-Preserving Web Service",
+    "year": 2024,
+    "repo": [
+        "https://github.com/ryanjlittle/kpop-oprf",
+        "https://github.com/data61/python-paillier",
+        "https://github.com/cfrg/draft-irtf-cfrg-voprf"
+    ]
+}
 ]
