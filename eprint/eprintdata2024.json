@@ -70837,4 +70837,300 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Internet of Medical Things (IoMT) has gained significant research focus in both academic and medical institutions. Nevertheless, the sensitive data involved in IoMT raises concerns regarding user validation and data privacy. To address these concerns, certificateless signcryption (CLSC) has emerged as a promising solution, offering authenticity, confidentiality, and unforgeability. Unfortunately, most existing CLSC schemes are impractical for IoMT due to their heavy computational and storage requirements. Additionally, these schemes are vulnerable to quantum computing attacks. Therefore, research focusing on designing an efficient post-quantum CLSC scheme is still far-reaching.\r\nIn this work, we propose PQ-CLSC, a novel post-quantum CLSC scheme that ensures quantum safety for IoMT. Our proposed design facilitates secure transmission of medical data between physicians and patients, effectively validating user legitimacy and minimizing the risk of private information leakage. To achieve this, we leverage lattice sampling algorithms and hash functions to generate the particial secret key and then employ the sign-then-encrypt method to obtain the ciphertext.\r\nWe also formally and prove the security of our design, including indistinguishability against chosen-ciphertext attacks (IND-CCA2) and existential unforgeability against chosen-message attacks (EU-CMA) security. Finally, through comprehensive performance evaluation, our signcryption overhead is only 30%-55% compared to prior arts, while our computation overhead is just around 45% of other existing schemes. The evaluation results demonstrate that our solution is practical and efficient.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                },
+                {
+                    "name": "Beijing Normal University",
+                    "ror": "https://ror.org/022k4wk35"
+                }
+            ],
+            "fullName": "Shiyuan Xu",
+            "orcid": "0000-0001-9076-1695"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong Polytechnic University",
+                    "ror": "https://ror.org/0030zas98"
+                }
+            ],
+            "fullName": "Xue Chen",
+            "orcid": "0000-0002-9456-3124"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Normal University",
+                    "ror": "https://ror.org/022k4wk35"
+                }
+            ],
+            "fullName": "Yu Guo",
+            "orcid": "0000-0002-9078-7462"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                }
+            ],
+            "fullName": "Siu-Ming Yiu",
+            "orcid": "0000-0002-3975-8500"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong Polytechnic University",
+                    "ror": "https://ror.org/0030zas98"
+                }
+            ],
+            "fullName": "Shang Gao",
+            "orcid": "0000-0003-2692-057X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong Polytechnic University",
+                    "ror": "https://ror.org/0030zas98"
+                }
+            ],
+            "fullName": "Bin Xiao",
+            "orcid": "0000-0003-4223-8220"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2024-06-15T05:49:21Z"
+        }
+    ],
+    "keywords": [
+        "Certificateless Signcryption",
+        "Internet of Medical Things",
+        "Information Security",
+        "Lattice-based Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/965.pdf",
+    "pid": "965",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient and Secure Post-Quantum Certificateless Signcryption for Internet of Medical Things",
+    "year": 2024,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Resilience against side-channel attacks is an important consideration for cryptographic implementations deployed in devices with physical access to the device. However, noise in side-channel measurements has a significant impact on the complexity of these attacks, especially when an implementation is protected with masking. Therefore, it is important to assess the ability of an attacker to deal with noise. While some previous works have considered approaches to remove (some) noise from measurements, these approaches generally require considerable expertise to be effectively employed or necessitate the ability of the attacker to capture a 'clean' set of traces without the noise. \r\nIn this paper, we introduce a method for utilizing diffusion models to remove measurement noise from side-channel traces in a fully non-profiled setting. Denoising traces using our method considerably lowers the complexity of mounting attacks in both profiled and non-profiled settings. For instance, for a collision attack against the ASCADv2 dataset, we reduced the number of traces required to retrieve the key by 40%, and we showed similar improvements for ESHARD using a state-of-the-art MORE attack. Furthermore, we provide analyses into the scenarios where our method is useful and generate insights into how the diffusion networks denoise traces.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Leiden University",
+                    "ror": "https://ror.org/027bh9e22"
+                }
+            ],
+            "fullName": "Sengim Karayalcin",
+            "orcid": "0009-0000-1598-8400"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Leiden University",
+                    "ror": "https://ror.org/027bh9e22"
+                }
+            ],
+            "fullName": "Guilherme Perin",
+            "orcid": "0000-0003-3799-7636"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Stjepan Picek",
+            "orcid": "0000-0001-7509-4337"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2024-06-15T07:53:36Z"
+        }
+    ],
+    "keywords": [
+        "Side-Channel Analysis",
+        "Deep Learning",
+        "Diffusion Models"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/966.pdf",
+    "pid": "966",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Diffuse Some Noise: Diffusion Models for Measurement Noise Removal in Side-channel Analysis",
+    "year": 2024,
+    "repo": [
+        "https://gitlab.com/eshard/nucleo_sw_aes_masked_shuffled",
+        "https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_fixed_key",
+        "https://github.com/ANSSI-FR/ASCAD/tree/master/STM32_AES_v2",
+        "https://github.com/AISyLab/AES_HD_Ext"
+    ]
+}
+,
+{
+    "abstract": "Masking is a widely adopted countermeasure against side-channel analysis (SCA) that protects cryptographic implementations from information leakage. However, current masking schemes often incur significant overhead in terms of electronic cost. RAMBAM, a recently proposed masking technique that fits elegantly with the AES algorithm, offers ultra-low latency/area by utilizing redundant representations of finite field elements. This paper presents a comprehensive generalization of RAMBAM and various other masking schemes within a unified framework and a mathematical representation known as Consolidated Linear Masking (CLM), where masking schemes are formalized by their encoding. We establish a theoretical foundation for CLM linking randomized isomorphic (code) representations and the entropy provided by the redundancy to a revised notion of masking order. Our analysis reveals that RAMBAM is a specific instance of CLM as well as other masking constructions, thus paving the way for significant enhancements. For example, a $1^{st}$-order secure design can be achieved almost without increasing the size of the representation of the variables. This property scales up to any order and is versatile. We demonstrate how CLM enables: (1) randomized selection of the isomorphic field for improved security; (2) flexible choice of the randomization polynomial; (3) embedded mask-refreshing via the randomized isomorphic representation that reduces randomness requirements significantly as well as improves performance; (4) a wider range of isomorphic randomized mappings that significantly increases the available randomization space compared to RAMBAM; (5) considerable improvement in securing fault-injection attacks and inherent security against probing adversaries, i.e., more required probes. In addition, our framework addresses ways to improve the brute-force parameter choices in the original RAMBAM. By offering a unifying theoretical perspective for masking and practical enhancements, this work advances the design of efficient and secure masking countermeasures against SCA threats.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University",
+                    "ror": "https://ror.org/03kgsv495"
+                }
+            ],
+            "fullName": "Itamar Levi",
+            "orcid": "0000-0002-5591-5799"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University",
+                    "ror": "https://ror.org/03kgsv495"
+                }
+            ],
+            "fullName": "Osnat Keren",
+            "orcid": "0000-0002-3101-9551"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2024-07-08T05:33:43Z"
+        },
+        {
+            "action": "received",
+            "when": "2024-06-15T18:16:18Z"
+        }
+    ],
+    "keywords": [
+        "Algebraic representation",
+        "Consolidated Linear Masking",
+        "CLM",
+        "Isomorphism",
+        "Side Channel Analysis",
+        "Masking",
+        "RAMBAM",
+        "Entropy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/967.pdf",
+    "pid": "967",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Consolidated Linear Masking (CLM): Generalized Randomized Isomorphic Representations, Powerful Degrees of Freedom and Low(er)-cost",
+    "year": 2024,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Distributed randomness beacons (DRBs) are fundamental for various decentralised applications, such as consensus protocols,  decentralised gaming and lotteries, and collective governance protocols. These applications are heavily used on modern blockchain platforms.\r\n\r\nThis paper presents the so far most efficient direct construction and implementation of a non-interactive distributed verifiable random function (NI-DVRF) that is fully compatible with Ethereum. Our NI-DVRF scheme adopts pairings and combines techniques from secret sharing, SNARKs, and BLS signatures.  The security properties of the resulting NI-DVRF scheme are formally modelled and proven in the random oracle model under standard pairing-based assumptions.\r\n\r\nTo justify the efficiency and cost claims and more generally its adoption potential in practice, the proposed NI-DVRF scheme was implemented in Rust and Solidity. Our implementation is highly optimised and is currently being investigated for deployment on the multichain layer-2 scaling solution provided by Boba Network to power its DRB service zkRand. Our experimental analysis, therefore, also evaluates performance and scalability properties of the proposed NI-DVRF and its implementation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Enya Labs"
+                }
+            ],
+            "fullName": "Jia Liu",
+            "orcid": "0000-0001-7094-9324"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e4t der Bundeswehr M\u00fcnchen"
+                }
+            ],
+            "fullName": "Mark Manulis",
+            "orcid": "0000-0002-1512-9670"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2024-06-20T14:02:45Z"
+        },
+        {
+            "action": "received",
+            "when": "2024-06-15T20:07:25Z"
+        }
+    ],
+    "keywords": [
+        "distributed verifiable random function",
+        "non-interactive DKG",
+        "SNARK",
+        "distributed randomness beacon",
+        "Ethereum",
+        "zkRand"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Minor revision to correct typos and do minor polishing.",
+    "pdffile": "2024/968.pdf",
+    "pid": "968",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fast SNARK-based Non-Interactive Distributed Verifiable Random Function with Ethereum Compatibility",
+    "year": 2024,
+    "repo": [
+        "https://github.com/bobanetwork/zkdvrf",
+        "https://github.com/privacy-scaling-explorations/halo2",
+        "https://github.com/privacy-scaling-explorations/halo2wrong",
+        "https://github.com/nikkolasg/ark-dkg"
+    ]
+}
 ]
