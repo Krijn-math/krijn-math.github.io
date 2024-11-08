@@ -108,7 +108,7 @@ good_resp = True
 
 while good_resp:
     id += 1
-    print(id)
+    print(f"try {id}")
     good_resp, paper = get_json(year, id)
     repo = ['none']
     try:
@@ -116,7 +116,7 @@ while good_resp:
     except:
         print('failed to read repo')
     paper['repo'] = repo
-    # papers.append(paper)
-    append_to_json(f'eprint/eprintdata{year}.json', paper)
+    if good_resp:
+        append_to_json(f'eprint/eprintdata{year}.json', paper)
 
 print(f'done up to eprint {year}/{id - 1}')
