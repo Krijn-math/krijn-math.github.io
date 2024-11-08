@@ -70685,4 +70685,156 @@
         "https://github.com/cfrg/draft-irtf-cfrg-voprf"
     ]
 }
+,
+{
+    "abstract": "We present unconditionally perfectly secure protocols in the\r\nsemi-honest setting for several functionalities: (1) private elementwise\r\nequality; (2) private bitwise integer comparison; and (3) bit-decomposition.\r\nThese protocols are built upon a new concept called Shared Oblivious Transfer (Shared OT). Shared OT extends the one-out-of-N String OT by replacing strings with integers modulo $M$ and allowing additive secret-sharing of all inputs and outputs. These extensions can be implemented\r\nby simple local computations without incurring additional OT invocations. We believe our  Shared OT may be of independent interest.\r\n\r\n\r\n Our protocols demonstrate the best round, communication, and computational complexities compared to all other protocols secure in a similar setting. Moreover, all of our protocols involve either 2 or 3 rounds.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Lucas Piske"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universidade Federal de Minas Gerais",
+                    "ror": "https://ror.org/0176yjw32"
+                }
+            ],
+            "fullName": "Jeroen van de Graaf"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Visa (United States)",
+                    "ror": "https://ror.org/05t1y0b59"
+                }
+            ],
+            "fullName": "Anderson C. A. Nascimento"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Ni Trieu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2024-06-14T22:07:24Z"
+        }
+    ],
+    "keywords": [
+        "unconditional security",
+        "secure comparison",
+        "bit-decomposition",
+        "equality test",
+        "OT."
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2024/963.pdf",
+    "pid": "963",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Shared OT and Its Applications to Unconditional Secure Integer Equality, Comparison and Bit-Decomposition",
+    "year": 2024,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Private Information Retrieval (PIR) enables a client to retrieve a database element from a semi-honest server while hiding the element being queried from the server. Maliciously-secure PIR (mPIR) [Colombo et al., USENIX Security '23] strengthens the guarantees of plain (i.e., semi-honest) PIR by ensuring that even a misbehaving server (a) cannot compromise client privacy via selective-failure attacks, and (b) must answer every query *consistently* (i.e., with respect to the same database). These additional security properties are crucial for many real-world applications. \r\n\r\nIn this work we present a generic compiler that transforms any PIR scheme into an mPIR scheme in a black-box manner, minimal overhead, and without requiring additional cryptographic assumptions. Since mPIR trivially implies PIR, our compiler establishes the equivalence of mPIR and PIR. By instantiating our compiler with existing PIR schemes, we immediately obtain mPIR schemes with $O(N^\\epsilon)$ communication cost. In fact, by applying our compiler to a recent doubly-efficient PIR [Lin et al., STOC '23], we are able to construct a *doubly-efficient* mPIR scheme that requires only $\\text{polylog}(N)$ communication and server and client computation. In comparison, all prior work incur a $\\Omega(\\sqrt{N})$ cost in these metrics.\r\n\r\nOur compiler makes use of smooth locally-decodable codes (LDCs) that have a robust decoding procedure. We term these codes \"subcode\"-LDCs, because they are LDCs where the query responses are from an error-correcting code. This property is shared by Reed--Muller codes (whose query responses are Reed--Solomon codewords) and more generally lifted codes.\r\n\r\nApplying our compiler requires us to consider decoding in the face of *non-signaling adversaries*, for reasons analogous to the need for non-signaling PCPs in the succinct-argument literature. We show how to construct such decoders for Reed--Muller codes, and more generally for smooth locally-decodable codes that have a robust decoding procedure.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Brett Falk",
+            "orcid": "0000-0002-4344-7406"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Pratyush Mishra",
+            "orcid": "0009-0000-6600-9719"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Matan Shtepel",
+            "orcid": "0000-0003-1296-0984"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2024-06-18T03:42:59Z"
+        },
+        {
+            "action": "revised",
+            "when": "2024-06-18T02:15:54Z"
+        },
+        {
+            "action": "revised",
+            "when": "2024-06-17T18:44:57Z"
+        },
+        {
+            "action": "received",
+            "when": "2024-06-14T22:34:50Z"
+        }
+    ],
+    "keywords": [
+        "Private Information Retrieval",
+        "PIR",
+        "Locally Decodable Codes",
+        "LDCs",
+        "Malicious Security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2024/964.pdf",
+    "pid": "964",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Malicious Security for PIR (almost) for Free",
+    "year": 2024,
+    "repo": [
+        "none"
+    ]
+}
 ]
