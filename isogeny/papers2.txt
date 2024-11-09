@@ -1,3 +1,4 @@
+on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_week;;;none
 isogeny interpolation and the computation of isogenies from higher dimensional representations;;;david jao, jeanne laflamme;;;2024/1796;;;last_week;;;https://git.uwaterloo.ca/jmlaflam/sidh-attack/
 an efficient collision attack on castryck-decru-smith’s hash function;;;ryo ohashi, hiroshi onuki;;;2024/1776;;;last_month;;;https://github.com/Ryo-Ohashi/CDScollision
 more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_month;;;https://github.com/QuSAC/IsogenyPoKviaCanonicalModPolys
@@ -12,7 +13,6 @@ sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_month;;;none
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_month;;;https://gitlab.inria.fr/nsarkis/half-diff-add
 quantum money from class group actions on elliptic curves;;;hart montgomery, shahed sharif;;;2024/1585;;;last_year;;;none
-on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_year;;;none
 the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_year;;;none
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_year;;;none
 newton polytope-based strategy for finding small roots of multivariate polynomials;;;yansong feng, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_year;;;none
