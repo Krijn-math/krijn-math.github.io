@@ -119,4 +119,7 @@ while good_resp:
     if good_resp:
         append_to_json(f'eprint/eprintdata{year}.json', paper)
 
-print(f'done up to eprint {year}/{id - 1}')
+file_name = f"eprint/log.txt"
+with open(file_name, "a") as file:
+        today = date.today()
+        file.write(f"logged at {today} up to eprint {year}/{id - 1}\n")
