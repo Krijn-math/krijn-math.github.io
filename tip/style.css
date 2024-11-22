@@ -217,10 +217,11 @@ footer h2 {
 
 body>header {
   margin-bottom: 2em;
+  margin-right: 3em;
 }
 
 #grid-wrapper>article {
-  max-width: 90ex;
+  max-width: 85ex;
   margin-right: auto;
   grid-column: 1;
 }
