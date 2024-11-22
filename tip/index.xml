@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
+text="Hello, World!">Hello, World!</fr:title><fr:source-path>/home/krijn/Documents/Mathematics/Website/IsogenyProject/trees/index.tree</fr:source-path><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">tip-0001</fr:addr><fr:route>tip-0001.xml</fr:route><fr:title
+text="An introduction to the isogeny project">An introduction to the isogeny project</fr:title><fr:source-path>/home/krijn/Documents/Mathematics/Website/IsogenyProject/trees/tip-0001.tree</fr:source-path><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="krijnreijnders.xml"
+addr="krijnreijnders"
+title="Krijn Reijnders">Krijn Reijnders</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Welcome to <fr:strong>The Isogeny Project</fr:strong>, an open source textbook on isogeny-based cryptography. After today, <fr:tex
+display="inline"><![CDATA[\varphi : E \to  E/G]]></fr:tex> holds no mysteries to you.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
