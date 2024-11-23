@@ -1,3 +1,4 @@
+finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_week;;;none
 faster algorithms for isogeny computations over extensions of finite fields;;;shiping cai, mingjie chen, christophe petit;;;2024/1852;;;last_month;;;https://github.com/wennycai/isoext/tree/master
 ideal-to-isogeny algorithm using 2-dimensional isogenies and its application to sqisign;;;hiroshi onuki, kohei nakagawa;;;2024/778;;;last_month;;;https://github.com/hiroshi-onuki/SQIsignIQO.jl/blob/main/measure_costs/measure_costs.py
 klapoti: an asymptotically efficient isogeny group action from 2-dimensional isogenies;;;lorenz panny, christophe petit, miha stopar;;;2024/1844;;;last_month;;;https://github.com/Jonathke/deuring-2D
@@ -35,7 +36,6 @@ silbe: an updatable public key encryption scheme from lollipop attacks;;;max dup
 foldable, recursive proofs of isogeny computation with reduced time complexity;;;krystal maughan, joseph near, christelle vincent;;;2024/1219;;;last_year;;;none
 erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;last_year;;;https://github.com/giacomoborin/RingSQISign-poc
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_year;;;https://github.com/Breaking-SIDH/direct-attack
-finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_year;;;none
 a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_year;;;https://github.com/defeo/ss-isogeny-software
 climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_year;;;none
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_year;;;none
