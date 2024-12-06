@@ -1,3 +1,4 @@
+further connections between isogenies of supersingular curves and bruhat-tits trees;;;steven galbraith, valerie gilchrist, shai levin, ari markowitz;;;2024/1971;;;last_week;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
 efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_week;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 ideal-to-isogeny algorithm using 2-dimensional isogenies and its application to sqisign;;;hiroshi onuki, kohei nakagawa;;;2024/778;;;last_week;;;https://github.com/hiroshi-onuki/SQIsignIQO.jl/blob/main/measure_costs/measure_costs.py
 finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_month;;;none
@@ -85,7 +86,6 @@ the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benja
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;other;;;none
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;other;;;none
 an efficient strong asymmetric pake compiler instantiable from group actions;;;ian mcquoid, jiayu xu;;;2023/1434;;;other;;;https://cfrg.github.io/draft-irtf-cfrg-opaque/draft-irtf-cfrg-opaque.html
-vss from distributed zk proofs and applications;;;shahla atapoor, karim baghery, daniele cozzo, robi pedersen;;;2023/992;;;other;;;none
 lower bound of costs of formulas to compute image curves of 3-isogenies in the framework of generalized montgomery coordinates;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2023/1511;;;other;;;none
 identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;other;;;none
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;other;;;none
