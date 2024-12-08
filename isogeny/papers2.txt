@@ -4,7 +4,7 @@ ideal-to-isogeny algorithm using 2-dimensional isogenies and its application to 
 finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_month;;;none
 faster algorithms for isogeny computations over extensions of finite fields;;;shiping cai, mingjie chen, christophe petit;;;2024/1852;;;last_month;;;https://github.com/wennycai/isoext/tree/master
 klapoti: an asymptotically efficient isogeny group action from 2-dimensional isogenies;;;lorenz panny, christophe petit, miha stopar;;;2024/1844;;;last_month;;;https://github.com/Jonathke/deuring-2D
-on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_month;;;none
+on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_year;;;none
 isogeny interpolation and the computation of isogenies from higher dimensional representations;;;david jao, jeanne laflamme;;;2024/1796;;;last_year;;;https://git.uwaterloo.ca/jmlaflam/sidh-attack/
 an efficient collision attack on castryck-decru-smith’s hash function;;;ryo ohashi, hiroshi onuki;;;2024/1776;;;last_year;;;https://github.com/Ryo-Ohashi/CDScollision
 more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_year;;;https://github.com/QuSAC/IsogenyPoKviaCanonicalModPolys
