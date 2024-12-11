@@ -1,5 +1,5 @@
 further connections between isogenies of supersingular curves and bruhat-tits trees;;;steven galbraith, valerie gilchrist, shai levin, ari markowitz;;;2024/1971;;;last_week;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
-efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_week;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
+efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_month;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 ideal-to-isogeny algorithm using 2-dimensional isogenies and its application to sqisign;;;hiroshi onuki, kohei nakagawa;;;2024/778;;;last_month;;;https://github.com/hiroshi-onuki/SQIsignIQO.jl/blob/main/measure_costs/measure_costs.py
 finding practical parameters for isogeny-based cryptography;;;maria corte-real santos, jonathan komada eriksen, michael meyer, francisco rodríguez-henríquez;;;2024/1150;;;last_month;;;none
 faster algorithms for isogeny computations over extensions of finite fields;;;shiping cai, mingjie chen, christophe petit;;;2024/1852;;;last_month;;;https://github.com/wennycai/isoext/tree/master
@@ -77,7 +77,7 @@ is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;last_year;;;none
 the wrong use of festa trapdoor functions leads to an adaptive attack;;;tomoki moriya, hiroshi onuki;;;2023/1092;;;last_year;;;none
 zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;last_year;;;none
-exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;last_year;;;https://espitau.github.io/bin/random_lattice.pdf
+exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;other;;;https://espitau.github.io/bin/random_lattice.pdf
 quantum money from abelian group actions;;;mark zhandry;;;2023/1097;;;other;;;none
 csidh with level structure;;;steven d. galbraith, derek perrin, josé felipe voloch;;;2023/1726;;;other;;;none
 malleable commitments from group actions and zero-knowledge proofs for circuits based on isogenies;;;mingjie chen, yi-fu lai, abel laval, laurane marco, christophe petit;;;2023/1710;;;other;;;none
