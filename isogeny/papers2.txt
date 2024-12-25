@@ -1,7 +1,7 @@
 isogeny interpolation and the computation of isogenies from higher dimensional representations;;;david jao, jeanne laflamme;;;2024/1796;;;last_week;;;https://git.uwaterloo.ca/jmlaflam/sidh-attack/
 an algorithmic approach to (2,2)-isogenies in the theta model and applications to isogeny-based cryptography;;;pierrick dartois, luciano maino, giacomo pope, damien robert;;;2023/1747;;;last_week;;;https://github.com/ThetaIsogenies/two-isogenies
 accelerating isogeny walks for vdf evaluation;;;david jacquemin, anisha mukherjee, ahmet can mert, sujoy sinha roy;;;2023/1396;;;last_week;;;none
-a note on isogeny group action-based pseudorandom functions;;;yi-fu lai;;;2024/2042;;;last_week;;;none
+a note on isogeny group action-based pseudorandom functions;;;yi-fu lai;;;2024/2042;;;last_month;;;none
 efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_month;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants;;;dimitri koshelev, antonio sanso;;;2024/1985;;;last_month;;;https://github.com/asanso/Endomorphisms-for-Faster-Cryptography-on-Elliptic-Curves-of-Moderate-CM-Discriminants
 further connections between isogenies of supersingular curves and bruhat-tits trees;;;steven galbraith, valerie gilchrist, shai levin, ari markowitz;;;2024/1971;;;last_month;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
