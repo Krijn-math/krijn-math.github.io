@@ -1,3 +1,5 @@
+constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_week;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
+a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_week;;;https: //github.com/levanin/leakysea-public
 isogeny interpolation and the computation of isogenies from higher dimensional representations;;;david jao, jeanne laflamme;;;2024/1796;;;last_month;;;https://git.uwaterloo.ca/jmlaflam/sidh-attack/
 an algorithmic approach to (2,2)-isogenies in the theta model and applications to isogeny-based cryptography;;;pierrick dartois, luciano maino, giacomo pope, damien robert;;;2023/1747;;;last_month;;;https://github.com/ThetaIsogenies/two-isogenies
 accelerating isogeny walks for vdf evaluation;;;david jacquemin, anisha mukherjee, ahmet can mert, sujoy sinha roy;;;2023/1396;;;last_month;;;none
@@ -35,7 +37,6 @@ key policy attribute-based encryption leveraging isogeny-based cryptography;;;ma
 efficient (3,3)-isogenies on fast kummer surfaces;;;maria corte-real santos, craig costello, benjamin smith;;;2024/144;;;last_year;;;https://github.com/mariascrs/KummerIsogenies
 poke: a framework for efficient pkes, split kems, and oprfs from higher-dimensional isogenies;;;andrea basso;;;2024/624;;;last_year;;;none
 return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real santos, krĳn reĳnders;;;2024/948;;;last_year;;;https://github.com/Krijn-math/return-of-the-kummer
-a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_year;;;https://github.com/levanin/leakysea-public
 efficient implementation of super-optimal pairings on curves with small prime fields at the 192-bit security level;;;jianming lin, chang-an zhao, yuhao zheng;;;2024/1195;;;last_year;;;none
 silbe: an updatable public key encryption scheme from lollipop attacks;;;max duparc, tako boris fouotsa, serge vaudenay;;;2024/400;;;last_year;;;none
 foldable, recursive proofs of isogeny computation with reduced time complexity;;;krystal maughan, joseph near, christelle vincent;;;2024/1219;;;last_year;;;none
@@ -56,7 +57,6 @@ faster constant-time evaluation of the kronecker symbol with application to elli
 sqisign2d-west: the fast, the small, and the safer;;;andrea basso, luca de feo, pierrick dartois, antonin leroux, luciano maino, giacomo pope, damien robert, benjamin wesolowski;;;2024/760;;;last_year;;;https://github.com/SQISign/the-sqisign
 towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and their isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_year;;;https://github.com/microsoft/twin-smooth-integers
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_year;;;https://github.com/theQRL/Whitepaper/blob/master/QRL_whitepaper.pdf
-properties of lattice isomorphism as a cryptographic group action;;;benjamin benčina, alessandro budroni, jesús-javier chi-domínguez, mukul kulkarni;;;2023/1093;;;last_year;;;https://github.com/JJChiDguez/lip-properties.git
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_year;;;none
 computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_year;;;https://gitlab.inria.fr/nsarkis/poc-scalar-multiplication-kummer-lines
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_year;;;none
