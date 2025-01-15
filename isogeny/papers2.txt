@@ -1,13 +1,13 @@
+a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_week;;;https: //github.com/levanin/leakysea-public
 structural results for maximal quaternion orders and connecting ideals of prime power norm in b_{p,∞};;;james clements;;;2025/042;;;last_week;;;https://github.com/jtcc2/structural-results-for-quaternion-orders-and-ideals
 hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_week;;;https://git.uni-regensburg.de/buff/wave_mbs
-parametrizing maximal orders along supersingular ℓ-isogeny paths;;;laia amorós, james clements, chloe martindale;;;2025/033;;;last_week;;;https://github.com/quaternion-graph-parametrizations/proofs
-constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_week;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
-a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_week;;;https: //github.com/levanin/leakysea-public
+parametrizing maximal orders along supersingular ℓ-isogeny paths;;;laia amorós, james clements, chloe martindale;;;2025/033;;;last_month;;;https://github.com/quaternion-graph-parametrizations/proofs
+constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_month;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
 isogeny interpolation and the computation of isogenies from higher dimensional representations;;;david jao, jeanne laflamme;;;2024/1796;;;last_month;;;https://git.uwaterloo.ca/jmlaflam/sidh-attack/
 an algorithmic approach to (2,2)-isogenies in the theta model and applications to isogeny-based cryptography;;;pierrick dartois, luciano maino, giacomo pope, damien robert;;;2023/1747;;;last_month;;;https://github.com/ThetaIsogenies/two-isogenies
 accelerating isogeny walks for vdf evaluation;;;david jacquemin, anisha mukherjee, ahmet can mert, sujoy sinha roy;;;2023/1396;;;last_month;;;none
 a note on isogeny group action-based pseudorandom functions;;;yi-fu lai;;;2024/2042;;;last_month;;;none
-efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_month;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
+efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_year;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants;;;dimitri koshelev, antonio sanso;;;2024/1985;;;last_year;;;https://github.com/asanso/Endomorphisms-for-Faster-Cryptography-on-Elliptic-Curves-of-Moderate-CM-Discriminants
 further connections between isogenies of supersingular curves and bruhat-tits trees;;;steven galbraith, valerie gilchrist, shai levin, ari markowitz;;;2024/1971;;;last_year;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
 ideal-to-isogeny algorithm using 2-dimensional isogenies and its application to sqisign;;;hiroshi onuki, kohei nakagawa;;;2024/778;;;last_year;;;https://github.com/hiroshi-onuki/SQIsignIQO.jl/blob/main/measure_costs/measure_costs.py
