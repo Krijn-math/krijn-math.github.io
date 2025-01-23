@@ -12,7 +12,7 @@ end = "?auth=i@cr_indexing"
 key = '/Annots'
 uri = '/URI'
 ank = '/A'
-year = 2024
+year = 2025
 
 try:
     with open(f'eprint/eprintdata{year}.json', 'r') as f:
