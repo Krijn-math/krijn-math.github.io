@@ -1,5 +1,6 @@
+dctidh: fast & deterministic ctidh;;;fabio campos, andreas hellenbrand, michael meyer, krĳn reĳnders;;;2025/107;;;last_week;;;https://github.com/PaZeZeVaAt/dCTIDH/
 towards optimally small smoothness bounds for cryptographic-sized twin smooth integers and their isogeny-based applications;;;bruno sterner;;;2023/1576;;;last_week;;;https://github.com/microsoft/twin-smooth-integers
-sqisign2d-west: the fast, the small, and the safer;;;andrea basso, luca de feo, pierrick dartois, antonin leroux, luciano maino, giacomo pope, damien robert, benjamin wesolowski;;;2024/760;;;last_week;;;https://github.com/SQISign/the-sqisign
+sqisign2d-west: the fast, the small, and the safer;;;andrea basso, luca de feo, pierrick dartois, antonin leroux, luciano maino, giacomo pope, damien robert, benjamin wesolowski;;;2024/760;;;last_month;;;https://github.com/SQISign/the-sqisign
 efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_month;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_month;;;https: //github.com/levanin/leakysea-public
 structural results for maximal quaternion orders and connecting ideals of prime power norm in b_{p,∞};;;james clements;;;2025/042;;;last_month;;;https://github.com/jtcc2/structural-results-for-quaternion-orders-and-ideals
@@ -97,4 +98,3 @@ solving the hidden number problem for csidh and csurf via automated coppersmith;
 finding orientations of supersingular elliptic curves and quaternion orders;;;sarah arpin, james clements, pierrick dartois, jonathan komada eriksen, péter kutas, benjamin wesolowski;;;2023/1268;;;other;;;none
 csi-otter: isogeny-based (partially) blind signatures from the class group action with a twist;;;shuichi katsumata, yi-fu lai, jason t. legrow, ling qin;;;2023/1239;;;other;;;none
 two remarks on torsion-point attacks in isogeny-based cryptography;;;francesco sica;;;2023/1229;;;other;;;none
-towards a quantum-resistant weak verifiable delay function;;;thomas decru, luciano maino, antonio sanso;;;2023/1197;;;other;;;https://github.com/pq-vdf-isogeny/pq-vdf-isogeny
