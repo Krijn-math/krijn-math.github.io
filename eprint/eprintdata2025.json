@@ -7315,4 +7315,1129 @@
         "none"
     ]
 }
+,
+{
+    "DOI": "https://doi.org/10.62056/ayiv4fe-3",
+    "abstract": "With the rapid development of quantum computers, proofs of quantumness have recently become an interesting and intriguing research direction. However, in all current schemes for proofs of quantumness, quantum provers almost invariably face the risk of being maliciously exploited by classical verifiers. In fact, through malicious strategies in interaction with quantum provers, classical verifiers could solve some instances of hard problems that arise from the specific scheme in use. In other words, malicious verifiers can break some schemes (that quantum provers are not aware of) through interaction with quantum provers. All this is due to the lack of formalization that prevents malicious verifiers from extracting useful information in proofs of quantumness.\r\n\r\nTo address this issue, we formalize zero-knowledge proofs of quantumness. Intuitively, the zero-knowledge property necessitates that the information gained by the classical verifier from interactions with the quantum prover should not surpass what can be simulated using a simulated classical prover interacting with the same verifier. As a result, the new zero-knowledge notion can prevent any malicious verifier from exploiting quantum advantage.\r\nInterestingly, we find that the classical zero-knowledge proof is sufficient to compile some existing proofs of quantumness schemes into zero-knowledge proofs of quantumness schemes.\r\n\r\nDue to some technical reasons, it appears to be more general to require zero-knowledge proof on the verifier side instead of the prover side. Intuitively, this helps to regulate the verifier's behavior from malicious to be honest-but-curious. As a result, both parties will play not only one role in the proofs of quantumness but also the dual role in the classical zero-knowledge proof. \r\n\r\nSpecifically, the two principle proofs of quantumness schemes: Shor's factoring-based scheme and learning with errors-based scheme in [Brakerski et al, FOCS, 2018], can be transformed into zero-knowledge proofs of quantumness by requiring an extractable non-interactive zero-knowledge argument on the verifier side. \r\nNotably, the zero-knowledge proofs of quantumness can be viewed as an enhanced security notion for proofs of quantumness. To prevent malicious verifiers from exploiting the quantum device's capabilities or knowledge, it is advisable to transition existing proofs of quantumness schemes to this framework whenever feasible.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "T\u00e9l\u00e9com Paris",
+                    "ror": "https://ror.org/01naq7912"
+                },
+                {
+                    "name": "Institut Polytechnique de Paris",
+                    "ror": "https://ror.org/042tfbd02"
+                }
+            ],
+            "fullName": "Duong Hieu Phan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "T\u00e9l\u00e9com Paris",
+                    "ror": "https://ror.org/01naq7912"
+                },
+                {
+                    "name": "Institut Polytechnique de Paris",
+                    "ror": "https://ror.org/042tfbd02"
+                }
+            ],
+            "fullName": "Weiqiang Wen",
+            "orcid": "0000-0001-5272-2572"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing University of Posts and Telecommunications",
+                    "ror": "https://ror.org/04w9fbh59"
+                },
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Xingyu Yan",
+            "orcid": "0000-0001-9147-6554"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "T\u00e9l\u00e9com Paris",
+                    "ror": "https://ror.org/01naq7912"
+                },
+                {
+                    "name": "Institut Polytechnique de Paris",
+                    "ror": "https://ror.org/042tfbd02"
+                }
+            ],
+            "fullName": "Jinwei Zheng",
+            "orcid": "0009-0007-4709-0348"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-22T09:54:37Z"
+        }
+    ],
+    "keywords": [
+        "Quantum cryptography",
+        "Zero-knowledge",
+        "Proofs of quantumness."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/100.pdf",
+    "pid": "100",
+    "pubtype": {
+        "pubtype": "CIC",
+        "revisiontype": "SAME",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Zero-Knowledge Proofs of Quantumness",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "As cloud-based quantum computing services, such as those offered by D-Wave, become more popular for practical applications, privacy-preserving methods (such as obfuscation) are essential to address data security, privacy, and legal compliance concerns.\r\nSeveral efficient obfuscation methods have been proposed, which do not increase the time complexity of solving the obfuscated problem, for quantum optimization problems. These include {\\em sign reversing}, {\\em variable permutation}, and the combination of both methods assumed to provide greater protection. Unfortunately, sign reversing has already been shown to be insecure. \r\n\r\nWe present two attacks on variable permutation and the combined method, where it is possible to efficiently recover the deobfuscated problem, particularly when given access to the obfuscated problem and its obfuscated solution, as a cloud-based quantum provider would have.\r\nOur attacks are in the context of an optimization problem of cryptanalysis of the Trivium cipher family, but our approach generalizes to other similarly structured problems.\r\n\r\nOur attacks are efficient and practical.\r\nDeobfuscating an optimization problem with \\( n \\) variables obfuscated with the combined method has a complexity of $O(n^2)$ compared to the complexity of $O\\left( n \\cdot n! \\cdot 2^n \\right)$ of the brute force attack.\r\nWe provide an implementation of our attack; using a commodity laptop, our attack using the full Trivium cipher takes less than two minutes if optimized.\r\nWe also present possible countermeasures to mitigate our attacks and bring attention to the need for further development in this area.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NASK National Research Institute",
+                    "ror": "https://ror.org/03ajsaw82"
+                }
+            ],
+            "fullName": "Mateusz Le\u015bniak",
+            "orcid": "0009-0001-0092-2975"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NASK National Research Institute",
+                    "ror": "https://ror.org/03ajsaw82"
+                }
+            ],
+            "fullName": "Micha\u0142 Wro\u0144ski",
+            "orcid": "0000-0002-8679-9399"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Trinity College",
+                    "ror": "https://ror.org/03j3dbz94"
+                }
+            ],
+            "fullName": "Ewa Syta",
+            "orcid": "0000-0003-0860-0927"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NASK National Research Institute",
+                    "ror": "https://ror.org/03ajsaw82"
+                }
+            ],
+            "fullName": "Miros\u0142aw Kuty\u0142owski",
+            "orcid": "0000-0003-3192-2430"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-22T11:58:36Z"
+        }
+    ],
+    "keywords": [
+        "Privacy preserving techniques",
+        "attacks",
+        "obfuscation",
+        "quantum computing and annealing",
+        "quantum optimization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/101.pdf",
+    "pid": "101",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Unveiling Privacy Risks in Quantum Optimization Services",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Skyscraper is a cryptographic permutation published in TCHES 2025, optimized for use in proof systems such as PlonK. This primitive is based on a 10-round Feistel network combining $x^2$ monomials and lookup-based functions to achieve competitive plain performances and efficiency in proof systems supporting lookups. In terms of security, the $x^2$ monomials are supposed to provide security against statistical attacks, while lookups are supposed to provide security against algebraic attacks.\r\n\r\nIn this note, we show that this primitive has a much lower security margin than expected. Using a rebound attack, we find practical truncated differentials on the full permutation. As a corollary, we also find a practical collision attack on the compression function based on a 9-round Skyscraper permutation, which significantly reduces the security margin of the primitive. All of these attacks have been implemented and work in practice.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                },
+                {
+                    "name": "Direction G\u00e9n\u00e9rale de l'Armement",
+                    "ror": "https://ror.org/04wsqd844"
+                }
+            ],
+            "fullName": "Antoine Bak"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-22T14:50:07Z"
+        }
+    ],
+    "keywords": [
+        "Skyscraper",
+        "split-and-lookup",
+        "rebound attack",
+        "cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/102.pdf",
+    "pid": "102",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A practical distinguisher on the full Skyscraper permutation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/AntoineBak/SkyScraperCryptanalysis"
+    ]
+}
+,
+{
+    "DOI": "10.62056/akmpdkp10",
+    "abstract": "Boolean formula minimization is a notoriously hard problem that is known to be $\\varSigma_2^P$-complete. Circuit minimization, typically studied in the context of a much broader subject known as synthesis and optimization of circuits, introduces another layer of complexity since ultimately those technology-independent epresentations (e.g., Boolean formulas and truth tables) has to be transformed into a netlist of cells of the target technology library. To manage those complexities, the industrial community typically separates the synthesis process into two steps: technology-independent optimization and technology mapping. In each step, this approach only tries to find the local optimal solution and relies heavily on heuristics rather than a systematic search. However, for small S-boxes, a more systematic exploration of the design space is possible. Aiming at the global optimum, we propose a method which can synthesize a truth table for a small S-box directly into a netlist of the cells of a given technology library. Compared with existing technology-dependent synthesis tools like LIGHTER and PEIGEN, our method produces improved results for many S-boxes with respect to circuit area. In particular, by applying our method to the $\\mathbb{F}_{2^4}$-inverter involved in the tower field implementation of the AES S-box, we obtain the currently known lightest implementation of the AES S-box. The search framework can be tweaked to take circuit delay into account. As a result, we find implementations for certain S-boxes with both latency and area improved.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Chinese Academy of Sciences",
+                    "ror": "https://ror.org/05qbk4x57"
+                },
+                {
+                    "name": "Data Communication Science and Technology Research Institute"
+                }
+            ],
+            "fullName": "Zihao Wei",
+            "orcid": "0000-0002-5836-0282"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Chinese Academy of Sciences",
+                    "ror": "https://ror.org/05qbk4x57"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptology",
+                    "ror": "https://ror.org/02pn5rj08"
+                }
+            ],
+            "fullName": "Siwei Sun",
+            "orcid": "0000-0002-3058-2377"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Data Communication Science and Technology Research Institute"
+                }
+            ],
+            "fullName": "Fengmei Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences",
+                    "ror": "https://ror.org/04r53se39"
+                },
+                {
+                    "name": "University of Chinese Academy of Sciences",
+                    "ror": "https://ror.org/05qbk4x57"
+                }
+            ],
+            "fullName": "Lei Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Chinese Academy of Sciences",
+                    "ror": "https://ror.org/05qbk4x57"
+                }
+            ],
+            "fullName": "Zhiyu Zhang",
+            "orcid": "0000-0001-8992-1647"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-22T16:02:37Z"
+        }
+    ],
+    "keywords": [
+        "Circuit minimization",
+        "Latency",
+        "Logic synthesis",
+        "Technology mapping",
+        "S-box",
+        "AES"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/103.pdf",
+    "pid": "103",
+    "pubtype": {
+        "pubtype": "CIC",
+        "revisiontype": "SAME",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Technology-Dependent Synthesis and Optimization of Circuits for Small S-boxes",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zihaowei/CiC2024_TechDepSboxCircuits"
+    ]
+}
+,
+{
+    "abstract": "Introduced by Halevi, Ishai, Kushilevitz, and Rabin (CRYPTO 2023), Additive randomized encodings (ARE) reduce the computation of a $k$-party function $f(x_1,\\dots,x_k)$ to locally computing encodings $\\hat x_i$ of each input $x_i$ and then adding them together over some Abelian group into an output encoding $\\hat y = \\sum \\hat x_i$, which reveals nothing but the result. The appeal of ARE comes from the simplicity of the non-local computation, involving only addition. This gives rise for instance to non-interactive secure function evaluation in the shuffle model where messages from different parties are anonymously shuffled before reaching their destination. Halevi, Ishai, Kushilevitz, and Rabin constructed ARE based on Diffie-Hellman type assumptions in bilinear groups.\r\n\r\nWe construct ARE assuming public-key encryption. The key insight behind our construction is that one-sided ARE, which only guarantees privacy for one of the parties, are relatively easy to construct, and yet can be lifted to full-fledged ARE. We also give a more efficient black-box construction from the CDH assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                },
+                {
+                    "name": "Tel Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Nir Bitansky",
+            "orcid": "0000-0001-8361-6035"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Saroja Erabelli",
+            "orcid": "0000-0002-6003-7134"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Rachit Garg",
+            "orcid": "0009-0001-4410-785X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-22T17:33:25Z"
+        }
+    ],
+    "keywords": [
+        "Randomized Encodings",
+        "Multi-Party Computation (MPC)",
+        "Oblivious Transfer (OT)"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/104.pdf",
+    "pid": "104",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Additive Randomized Encodings from Public Key Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A memory checking argument enables a prover to prove to a verifier that it is correctly processing reads and writes to memory. They are used widely in modern SNARKs, especially in zkVMs, where the prover proves the correct execution of a CPU including the correctness of memory operations.\r\n\r\nWe describe a new approach for memory checking, which we call the method of one-hot addressing and increments. We instantiate this method via two different families of protocols, called Twist and Shout. Twist supports read/write memories, while Shout targets read-only memories (also known as lookup arguments). Both Shout and Twist have logarithmic verifier costs. Unlike prior works, these protocols do not invoke \"grand product\" or \"grand sum\" arguments.\r\n\r\nTwist and Shout significantly improve the prover costs of prior works across the full range of realistic memory sizes, from tiny memories (e.g., 32 registers as in RISC-V), to memories that are so large they cannot be explicitly materialized (e.g., structured lookup tables of size $2^{64}$ or larger, which arise in Lasso and the Jolt zkVM). Detailed cost analysis shows that Twist and Shout are well over 10x cheaper for the prover than state-of-the-art memory-checking procedures configured to have logarithmic proof length.\r\n\r\nPrior memory-checking procedures can also be configured to have larger proofs. Even then, we estimate that Twist and Shout are at least 2--4x faster for the prover in key applications. \r\n \r\nFinally, using Shout, we provide two fast-prover SNARKs for non-uniform constraint systems, both of which achieve minimal commitment costs (the prover commits only to the witness): (1) SpeedySpartan applies to Plonkish constraints, substantially improving the previous state-of-the-art protocol, BabySpartan; and (2)Spartan++ applies to CCS (a generalization of Plonkish and R1CS), improving prover times over the previous state-of-the-art protocol, Spartan, by 6x.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Microsoft Research"
+                }
+            ],
+            "fullName": "Srinath Setty"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgetown University",
+                    "ror": "https://ror.org/05vzafd60"
+                },
+                {
+                    "name": "a16z crypto research"
+                }
+            ],
+            "fullName": "Justin Thaler"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-01-23T23:42:28Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-01-22T23:51:09Z"
+        }
+    ],
+    "keywords": [
+        "SNARKs",
+        "memory-checking arguments",
+        "sum-check protocol",
+        "zkVMs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/105.pdf",
+    "pid": "105",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Twist and Shout: Faster memory checking arguments via one-hot addressing and increments",
+    "year": 2025,
+    "repo": [
+        "https://github.com/privacy-scaling-explorations/perpetualpowersoftau",
+        "https://github.com/yacovm/DualDory",
+        "https://github.com/mratsim/constantine/pull/485",
+        "https://github.com/a16z/jolt"
+    ]
+}
+,
+{
+    "abstract": "We present a new lattice-based signature scheme, called \u2018NTRU+Sign\u2019, using the Fiat-Shamir with Aborts framework. The proposed scheme is designed based on a novel NTRU-based key structure that fits well with bimodal distributions, enabling efficiency improvements compared to its predecessor, BLISS. The novel NTRU-based key structure is characterized by: (1) effectively changing a modulus from 2q to q, which is different from the existing usage of 2q for bimodal distributions, and (2) drastically reducing the magnitude of a secret key, which directly leads to compactness of signature sizes. We provide two concrete parameter sets for NTRU+Sign, supporting 93-bit and 211-bit security levels. Using the technique from GALACTICS (that was suggested as the constant-time implementation of BLISS),\r\nour analysis shows that NTRU+Sign achieves a good balance between computational efficiency and signature compactness, with constant-time implementation. For instance, at the NIST-3 security level, NTRU+Sign produces signatures that are significantly smaller than Dilithium and HAETAE, while providing faster verification speeds. These advantages position NTRU+Sign as a competitive and practical\r\nsolution for real-world deployments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Joo Woo",
+            "orcid": "0000-0002-9415-5200"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Jonghyun Kim",
+            "orcid": "0000-0003-0958-392X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Ga Hee Hong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Seungwoo Lee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Affiliated Institute of ETRI"
+                }
+            ],
+            "fullName": "Minkyu Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Affiliated Institute of ETRI"
+                }
+            ],
+            "fullName": "Hochang Lee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sangmyung University",
+                    "ror": "https://ror.org/01x4whx42"
+                }
+            ],
+            "fullName": "Jong Hwan Park",
+            "orcid": "0000-0003-2742-6119"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-01-24T01:09:12Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-01-24T00:35:33Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-01-23T07:40:02Z"
+        }
+    ],
+    "keywords": [
+        "Post-quantum cryptography",
+        "Lattice-based signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/106.pdf",
+    "pid": "106",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "NTRU+Sign: Compact NTRU-Based Signatures Using Bimodal Distributions",
+    "year": 2025,
+    "repo": [
+        "https://github.com/espitau/GALACTICS",
+        "https://github.com/KU- Cryptographic-Protocol-Lab/ntruplus_sign"
+    ]
+}
+,
+{
+    "abstract": "This paper presents dCTIDH, a CSIDH implementation that combines two recent developments into a novel state-of-the-art deterministic implementation. We combine the approach of deterministic variants of CSIDH with the batching strategy of CTIDH, which shows that the full potential of this key space has not yet been explored. This high-level adjustment in itself leads to a significant speed-up. To achieve an effective deterministic evaluation in constant time, we introduce Wombats, a new approach to performing isogenies in batches, specifically tailored to the behavior required for deterministic CSIDH using CTIDH batching. \r\n\r\nFurthermore, we explore the two-dimensional space of optimal primes for dCTIDH, with regard to both the performance of dCTIDH in terms of finite-field operations per prime and the efficiency of finite-field operations, determined by the prime shape, in terms of cycles. This allows us to optimize both for choice of prime and scheme parameters simultaneously. Lastly, we implement and benchmark constant-time, deterministic dCTIDH. Our results show that dCTIDH not only outperforms state-of-the-art deterministic CSIDH, but even non-deterministic CTIDH: dCTIDH-2048 is faster than CTIDH-2048 by 17 percent, and is almost five times faster than dCSIDH-2048.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bonn-Rhein-Sieg University of Applied Sciences",
+                    "ror": "https://ror.org/04m2anh63"
+                }
+            ],
+            "fullName": "Fabio Campos"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "RheinMain University of Applied Sciences",
+                    "ror": "https://ror.org/0378gm372"
+                }
+            ],
+            "fullName": "Andreas Hellenbrand"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Regensburg",
+                    "ror": "https://ror.org/01eezs655"
+                }
+            ],
+            "fullName": "Michael Meyer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Krijn Reijnders"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-23T09:19:14Z"
+        }
+    ],
+    "keywords": [
+        "isogenies",
+        "post-quantum cryptography",
+        "CSIDH"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/107.pdf",
+    "pid": "107",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "dCTIDH: Fast & Deterministic CTIDH",
+    "year": 2025,
+    "repo": [
+        "https://github.com/PaZeZeVaAt/dCTIDH/",
+        "https://github.com/agl/ctgrind",
+        "https://github.com/agl/ctgrind"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we show that subset sum problem consists on finding a solution over $\\mathbb{N}_2$ of equation $n = \\textbf{A}X \\bullet U$ where A and n are given matrix and integer and U = $[(2^0)  (2^1) .... (2^{d-2})  (2^{d-1})]$.  We show that it can be subdivized into 2 solvable subproblems.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Samir Bouftass"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-23T09:42:49Z"
+        }
+    ],
+    "keywords": [
+        "Subset sum problem",
+        "Complexity",
+        "Polynomial time"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/108.pdf",
+    "pid": "108",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Subset sum, a new insight",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The adoption of Homomorphic Encryption (HE) and Secure\r\nFunction Evaluation (SFE) applications in the real world remains lim-\r\nited, even nearly 50 years after the introduction of HE. This is particu-\r\nlarly unfortunate given the strong privacy and confidentiality guarantees\r\nthese tools can offer to modern digital life.\r\nWhile attempting to incorporate a simple straw-man PSI protocol into\r\na web service for matching individuals based on their profiles, we en-\r\ncountered several shortcomings in current outsourcing frameworks. Ex-\r\nisting outsourced protocols either require clients to perform tasks beyond\r\nmerely contributing their inputs or rely on a non-collusion assumption\r\nbetween a server and a client, which appears implausible in standard web\r\nservice scenarios.\r\nTo address these issues, we present, to the best of our knowledge, the first\r\ngeneral construction for non-interactive outsourced computation based\r\non black-box homomorphic encryption. This approach relies on a non-\r\ncollusion assumption between two dedicated servers, which we consider\r\nmore realistic in a web-service setting. Furthermore, we provide a proof\r\nof our construction within the Universal Composability (UC) framework,\r\nassuming semi-honest (i.e., passive) adversaries.\r\nUnlike general one-sided two-party SFE protocols, our construction addi-\r\ntionally requires sender privacy. Specifically, the sender must contribute\r\nits inputs solely in encrypted form. This ensures stronger privacy guar-\r\nantees and broadens the applicability of the protocol.\r\nOverall, the range of applications for our construction includes all one-\r\nsided two-party sender-private SFE protocols as well as server-based\r\narithmetic computations on encrypted inputs. Finally, we demonstrate\r\nthe practical applicability of our general outsourced computation frame-\r\nwork by applying it to the specific use case of Outsourced Private Set\r\nIntersection (OPSI) in a real-world scenario, accompanied by a detailed\r\nevaluation of its efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Research Center for Information Technology",
+                    "ror": "https://ror.org/04kdh6x72"
+                }
+            ],
+            "fullName": "Wasilij Beskorovajnov"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Research Center for Information Technology",
+                    "ror": "https://ror.org/04kdh6x72"
+                }
+            ],
+            "fullName": "Sarai Eilebrecht"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "Yufan Jiang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "J\u00f6rn Mueller-Quade"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-23T13:01:38Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic Encryption (HE)",
+        "Secure Function Evaluation (SFE)",
+        "Universal Composability (UC)",
+        "Outsourced Computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/109.pdf",
+    "pid": "109",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Formal Treatment of Homomorphic Encryption Based Outsourced Computation in the Universal Composability Framework",
+    "year": 2025,
+    "repo": [
+        "https://www.daad.de/en/the-daad/what-we-do/digitalisation/bird/",
+        "https://github.com/tuneinsight/lattigo",
+        "https://github.com/collapsinghierarchy/opsi_sepdutyhe_bench",
+        "https://www.daad.de/en/the-daad/what-we-do/digitalisation/bird/",
+        "https://www.uni-potsdam.de/de/multimedia/projekte/bildungsraum-digital-bird",
+        "https://www.uni-potsdam.de/de/multimedia/projekte/bildungsraum-digital-bird"
+    ]
+}
+,
+{
+    "abstract": "Homomorphic signatures for NP (HSNP) allow proving that a signed value is the result of a non-deterministic computation on signed inputs. At CCS'22, Fiore and Tucker introduced HSNP, showed how to use them for verifying arbitrary computations on data streams, and proposed a generic HSNP construction obtained by efficiently combining zkSNARKs with linearly homomorphic signatures (LHS), namely those supporting linear functions. Their proposed LHS however suffered from an high verification cost. In this work we propose an efficient LHS that significantly improves on previous work in terms of verification time. Using the modular approach of Fiore and Tucker, this yields a verifier-efficient HSNP. We show that the HSNP instantiated with our LHS is particularly suited to the case when the data is taken from consecutive samples, which captures important use cases including sliding window statistics such as variances, histograms and stock market predictions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute",
+                    "ror": "https://ror.org/04xvfkh51"
+                },
+                {
+                    "name": "Universidad Polit\u00e9cnica de Madrid",
+                    "ror": "https://ror.org/03n6nwv02"
+                }
+            ],
+            "fullName": "Gaspard Anthoine",
+            "orcid": "0009-0004-3977-617X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute",
+                    "ror": "https://ror.org/04xvfkh51"
+                }
+            ],
+            "fullName": "Daniele Cozzo",
+            "orcid": "0000-0001-5289-3769"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute",
+                    "ror": "https://ror.org/04xvfkh51"
+                }
+            ],
+            "fullName": "Dario Fiore",
+            "orcid": "0000-0001-7274-6600"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-23T14:35:07Z"
+        }
+    ],
+    "keywords": [
+        "Verifiable Computation",
+        "homomorphic signatures",
+        "zero-knowledge proofs",
+        "SNARKs",
+        "Data Streams",
+        "Data Privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/110.pdf",
+    "pid": "110",
+    "pubtype": {
+        "note": "Financial Cryptography and Data Security",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Verification-efficient Homomorphic Signatures for Verifiable Computation over Data Streams",
+    "year": 2025,
+    "repo": [
+        "https://github.com/arkworks-rs"
+    ]
+}
+,
+{
+    "abstract": "Twisted generalized Reed-Solomon (TGRS) codes constitute an interesting family of evaluation codes, containing a large class of maximum distance separable codes non-equivalent to generalized Reed-Solomon (GRS) ones.\r\nMoreover, the Schur squares of TGRS codes may be much larger than those of GRS codes with same dimension.\r\nExploiting these structural differences, in 2018, Beelen, Bossert, Puchinger and Rosenkilde proposed a subfamily of Maximum Distance Separable (MDS) Twisted Reed--Solomon (TRS) codes over $\\mathbb{F}_q$ with $\\ell$ twists $q \\approx n^{2^{\\ell}}$ for McEliece encryption, claiming their resistance to both Sidelnikov Shestakov attack and\r\nSchur products--based attacks. In short, they claimed these codes to resist to classical key recovery attacks on McEliece encryption scheme instantiated with Reed-Solomon (RS) or GRS codes. In 2020, Lavauzelle and Renner presented an original attack on this system based on the computation of the subfield subcode of the public TRS code.\r\n\r\nIn this paper, we show that the original claim on the resistance of TRS and TGRS codes to Schur products based--attacks is wrong.\r\nWe identify a broad class of codes including TRS and TGRS ones that is distinguishable from random by computing the Schur square\r\nof some shortening of the code. Then, we focus on the case of single twist ({i.e.}, $\\ell = 1$), which is the most efficient one in terms of decryption complexity, to derive an attack. The technique is similar to the distinguisher-based attacks of RS code-based systems given by Couvreur, Gaborit, Gauthier-Uma\u00f1a, Otmani, Tillich in 2014.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Inria Saclay - \u00cele-de-France Research Centre",
+                    "ror": "https://ror.org/0315e5x55"
+                },
+                {
+                    "name": "Computer Science Laboratory of the \u00c9cole Polytechnique",
+                    "ror": "https://ror.org/04afed728"
+                }
+            ],
+            "fullName": "Alain Couvreur",
+            "orcid": "0000-0003-4554-6720"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Inria Saclay - \u00cele-de-France Research Centre",
+                    "ror": "https://ror.org/0315e5x55"
+                },
+                {
+                    "name": "Computer Science Laboratory of the \u00c9cole Polytechnique",
+                    "ror": "https://ror.org/04afed728"
+                }
+            ],
+            "fullName": "Rakhi Pratihar",
+            "orcid": "0000-0003-3101-183X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Inria Saclay - \u00cele-de-France Research Centre",
+                    "ror": "https://ror.org/0315e5x55"
+                },
+                {
+                    "name": "Computer Science Laboratory of the \u00c9cole Polytechnique",
+                    "ror": "https://ror.org/04afed728"
+                }
+            ],
+            "fullName": "Nihan Tanisali"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "XLIM",
+                    "ror": "https://ror.org/00f7srh09"
+                }
+            ],
+            "fullName": "Ilaria Zappatore",
+            "orcid": "0009-0000-8868-0298"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-23T14:37:57Z"
+        }
+    ],
+    "keywords": [
+        "Schur products",
+        "Twisted GRS codes",
+        "Code-based Cryptography",
+        "McEliece encryption scheme",
+        "Cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/111.pdf",
+    "pid": "111",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the structure of the Schur squares of Twisted Generalized Reed-Solomon codes and application to cryptanalysis",
+    "year": 2025,
+    "repo": [
+        "https://github.com/nihantanisali/TGRS"
+    ]
+}
+,
+{
+    "abstract": "The Stealth Address Protocol (SAP) allows users to receive assets through stealth addresses that are unlinkable to their stealth meta-addresses. The most widely used SAP, Dual-Key SAP (DKSAP), and the most performant SAP, Elliptic Curve Pairing Dual-Key SAP (ECPDKSAP), are based on elliptic curve cryptography, which is vulnerable to quantum attacks. These protocols depend on the elliptic curve discrete logarithm problem, which could be efficiently solved on a sufficiently powerful quantum computer using the Shor algorithm. In this paper three novel post-quantum SAPs based on lattice-based cryptography are presented: LWE SAP, Ring-LWE SAP and Module-LWE SAP. These protocols leverage Learning With Errors (LWE) problem to ensure quantum-resistant privacy. Among them, Module-LWE SAP, which is based on the Kyber key encapsulation mechanism, achieves the best performance and outperforms ECPDKSAP by approximately 66.8% in the scan time of the ephemeral public key registry.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Belgrade \u2013 Faculty of Mathematics",
+                    "ror": "https://ror.org/03jspcw28"
+                }
+            ],
+            "fullName": "Marija Miki\u0107",
+            "orcid": "0000-0003-2498-1467"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Belgrade \u2013 Faculty of Mathematics",
+                    "ror": "https://ror.org/03jspcw28"
+                }
+            ],
+            "fullName": "Mihajlo Srbakoski",
+            "orcid": "0009-0001-0210-9929"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Novi Sad",
+                    "ror": "https://ror.org/00xa57a59"
+                }
+            ],
+            "fullName": "Strahinja Pra\u0161ka",
+            "orcid": "0009-0005-3306-9666"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-23T15:01:35Z"
+        }
+    ],
+    "keywords": [
+        "Blockchain",
+        "privacy",
+        "stealth address",
+        "lattice-based cryptography",
+        "learning with errors",
+        "Kyber"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/112.pdf",
+    "pid": "112",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Post-Quantum Stealth Address Protocols",
+    "year": 2025,
+    "repo": [
+        "https://github.com/0x3327/ecpdksap",
+        "https://github.com/tornadocash/docs",
+        "https://github.com/0x3327/pq-sap/tree/main/src",
+        "https://github.com/0x3327/pq-sap/tree/main/src",
+        "https://github.com/Argyle-Software/kyber",
+        "https://github.com/Argyle-Software/kyber",
+        "https://github.com/newhopecrypto/newhope",
+        "https://github.com/microsoft/PQCrypto-LWEKE/commits/master/"
+    ]
+}
+,
+{
+    "abstract": "We propose efficient, post-quantum threshold ring signatures constructed from one-wayness of AES encryption and the VOLE-in-the-Head zero-knowledge proof system. Our scheme scales efficiently to large rings and extends the linkable ring signatures paradigm. We define and construct key-binding deterministic tags for signature linkability, that also enable succinct aggregation with approximate lower bound arguments of knowledge; this allows us to achieve succinct aggregation of our signatures without SNARKs. Finally, we extend our threshold ring signatures to realize post-quantum anonymous ledger transactions in the spirit of Monero. Our constructions assume symmetric key primitives only. \r\nWhilst it is common to build post-quantum signatures from the one-wayness property of AES and a post-quantum NIZK scheme, we extend this paradigm to define and construct novel security properties from AES that are useful for advanced signature applications. We introduce key-binding and pseudorandomness of AES to establish linkability and anonymity of our threshold ring signatures from deterministic tags, and similarly establish binding and hiding properties of block ciphers modeled as ideal permutations to build commitments from AES, a crucial building block for our proposed post-quantum anonymous ledger scheme.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "James Hsin-Yu Chiang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Ivan Damg\u00e5rd"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Trento",
+                    "ror": "https://ror.org/05trd4x28"
+                }
+            ],
+            "fullName": "William R. Duro"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Norwegian University of Science and Technology",
+                    "ror": "https://ror.org/05xg72x27"
+                }
+            ],
+            "fullName": "Sunniva Engan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Sebastian Kolby"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Peter Scholl"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-23T17:54:10Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography",
+        "Ring Signatures",
+        "Zero-Knowledge"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/113.pdf",
+    "pid": "113",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Post-Quantum Threshold Ring Signature Applications from VOLE-in-the-Head",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In the HQC cryptosystem, the length $n$ of the code determines several concrete parameters such as the bandwidth usage, the memory consumption, or the decoding efficiency. In this paper, we show that currently known methods to explicitly generate asymptotically good (especially with high relative distances), binary codes with efficient associated procedures cannot be used to improve $n$. We also show that concatenated codes are currently better suited, and by exhausting small codes, find a closer to optimal concatenated code for HQC, which improves upon currently used codes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "F\u00e9d\u00e9ration ENAC ISAE-SUPAERO ONERA, Universit\u00e9 de Toulouse"
+                }
+            ],
+            "fullName": "Cyrius Nugier",
+            "orcid": "0000-0003-1276-0296"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "F\u00e9d\u00e9ration ENAC ISAE-SUPAERO ONERA, Universit\u00e9 de Toulouse"
+                }
+            ],
+            "fullName": "Jean-Christophe Deneuville",
+            "orcid": "0000-0002-5128-6729"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-23T20:55:10Z"
+        }
+    ],
+    "keywords": [
+        "Post-quantum Cryptography",
+        "Code Based Cryptography",
+        "Optimization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/114.pdf",
+    "pid": "114",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Better Codes for the HQC Cryptosystem",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
