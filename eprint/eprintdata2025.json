@@ -8505,4 +8505,578 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "CROSS is a post-quantum secure digital signature scheme submitted to NIST\u2019s Call for Additional Signatures which was recently selected for round 2. It features signature and key sizes in the range of SLH-DSA while providing a substantially faster signing operation. Within this work, we provide the first passive side-channel attack on the scheme. The attack recovers the secret key from all except one parameter sets from a single power trace while requiring at maximum two power traces for the R-SDP(G) 1 Fast instance. To successfully mount the attack, we show how to recover the secret key from side-channel information gained from the syndrome computation in CROSS\u2019 identification protocol. We furthermore show how the hypothesis space for the attack can be restricted using information from the published signature.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "TUM School of Computation, Information and Technology Technical University of Munich, Munich, Germany",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Jonas Schupp",
+            "orcid": "0000-0002-4171-1656"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TUM School of Computation, Information and Technology Technical University of Munich, Munich, Germany",
+                    "ror": "https://ror.org/02kkvpp62"
+                },
+                {
+                    "name": "Fraunhofer Institute for Applied and Integrated Security (AISEC), Garching, Germany"
+                }
+            ],
+            "fullName": "Georg Sigl",
+            "orcid": "0000-0003-3152-941X"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-24T17:19:35Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography",
+        "Side-Channel",
+        "Horizontal Attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/116.pdf",
+    "pid": "116",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Horizontal Attack on the Codes and Restricted Objects Signature Scheme (CROSS)",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Post-quantum signatures have high costs compared to RSA and ECDSA, in particular for smart cards. A line of work originating from Even, Goldreich, and Micali (CRYPTO'89) aimed to reduce digital signature latency by splitting up signing into an online and offline phase. The online/offline paradigm combines an ordinary long-term signature scheme with a fast, generally one-time, signature scheme. We reconsider this paradigm in the context of lattice-based post-quantum signatures in the GPV framework, with an example instantiation based on Falcon.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "SandboxAQ"
+                }
+            ],
+            "fullName": "Martin R. Albrecht"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "SandboxAQ"
+                }
+            ],
+            "fullName": "Nicolas Gama",
+            "orcid": "0000-0001-7308-9171"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "SandboxAQ"
+                }
+            ],
+            "fullName": "James Howe",
+            "orcid": "0000-0002-6498-3099"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "SandboxAQ"
+                }
+            ],
+            "fullName": "Anand Kumar Narayanan",
+            "orcid": "0000-0002-0106-030X"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-24T17:33:04Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/117.pdf",
+    "pid": "117",
+    "pubtype": {
+        "note": "CT-RSA 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Post-Quantum Online/Offline Signatures",
+    "year": 2025,
+    "repo": [
+        "https://github.com/jameshoweee/online-offline-sigs/",
+        "https://github.com/orlp/ed25519"
+    ]
+}
+,
+{
+    "abstract": "The Fiat-Shamir (FS) transform is a prolific and powerful technique for compiling public-coin interactive protocols into non-interactive ones. Roughly speaking, the idea is to replace the random coins of the verifier with the evaluations of a complex hash function.\r\n    \r\nThe FS  transform is known to be sound in the random oracle model (i.e., when the hash function is modeled as a totally random function). However, when instantiating the random oracle using a concrete hash function, there are examples of  protocols in which the transformation is not sound. So far all of these examples have been contrived protocols that were specifically designed to fail.\r\n\r\nIn this work we show such an attack for a standard and popular interactive succinct argument, based on the GKR protocol, for verifying the correctness of a non-determinstic bounded-depth computation. For every choice of FS hash function, we show that a corresponding instantiation of this protocol, which was been widely studied in the literature and used also in practice, is not (adaptively) sound when compiled with the FS transform. Specifically, we construct an explicit circuit for which we can generate an accepting proof for a false statement.\r\n    \r\nWe further extend our attack and show that for every circuit $C$ and desired output $y$, we can construct a functionally equivalent circuit $C^*$, for which we can produce an accepting proof that $C^*$ outputs $y$ (regardless of whether or not this statement is true). This demonstrates that any security guarantee (if such exists) would have to depend on the specific implementation of the circuit $C$, rather than just its functionality.\r\n\r\nLastly, we also demonstrate versions of the attack that violate non-adaptive soundness of the protocol -- that is, we generate an attacking circuit that is independent of the underlying cryptographic objects. However, these versions are either less practical (as the attacking circuit has very large depth) or make some additional (reasonable) assumptions on the underlying cryptographic primitives.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Dmitry Khovratovich"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Succinct"
+                }
+            ],
+            "fullName": "Ron D. Rothblum",
+            "orcid": "0000-0001-5481-7276"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Lev Soukhanov"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-25T13:12:05Z"
+        }
+    ],
+    "keywords": [
+        "Fiat-Shamir",
+        "GKR",
+        "SNARK"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/118.pdf",
+    "pid": "118",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "How to Prove False Statements: Practical Attacks on Fiat-Shamir",
+    "year": 2025,
+    "repo": [
+        "https://github.com/PolyhedraZK/Expander/pull/184",
+        "https://github.com/PolyhedraZK/Expander"
+    ]
+}
+,
+{
+    "abstract": "PAKE protocols are used to establish secure communication channels using a relatively short, often human memorable, password for authentication. The currently standardized PAKEs however rely on classical asymmetric (public key) cryptography. Thus, these classical PAKEs may no longer maintain their security, should the expected quantum threat become a reality. Unlike prominent security protocols such as TLS, IKEv2 and VPN, quantum-safe PAKEs did not receive much attention from the ongoing PQC integration efforts. Thus, there is a significant gap in awareness compared to PQC schemes that are subject to the official governmental and institutional standardization processes. In the work at hand, we provide a comprehensive overview of the existing PQC PAKEs focusing on their design rationales, authentication methods and used asymmetric key agreement primitives. We highlight their performance and properties as per their assumed security assurances and practical usage in applications. Moreover, we address PAKE designs that are still non-present in the PQC realm and discuss the possibility of their adaptation. Thus, we offer a detailed reference and derive future work for quantum-safe PAKEs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Darmstadt University of Applied Sciences",
+                    "ror": "https://ror.org/047wbd030"
+                }
+            ],
+            "fullName": "Nouri Alnahawi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "David Haas"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Erik Mau\u00df"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Darmstadt University of Applied Sciences",
+                    "ror": "https://ror.org/047wbd030"
+                }
+            ],
+            "fullName": "Alexander Wiesmaier"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-26T06:04:12Z"
+        }
+    ],
+    "keywords": [
+        "Systematization of Knowledge",
+        "Password Authenticated Key Exchange",
+        "Post-Quantum Cryptography",
+        "Public-Key Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/119.pdf",
+    "pid": "119",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SoK: PQC PAKEs - Cryptographic Primitives, Design and Security",
+    "year": 2025,
+    "repo": [
+        "https://github.com/cfrg/pake-selection"
+    ]
+}
+,
+{
+    "abstract": "The Module Learning with Errors ($\\mathsf{MLWE}$) problem is one of the most commonly used hardness assumption in lattice-based cryptography. In its standard version, a matrix $\\mathbf{A}$ is sampled uniformly at random over a quotient ring $R_q$, as well as noisy linear equations in the form of $\\mathbf{A} \\mathbf{s}+ \\mathbf{e} \\bmod q$, where $\\mathbf{s}$ is the secret, sampled uniformly at random over $R_q$, and $\\mathbf{e}$ is the error, coming from a Gaussian distribution.  Many previous works have focused on variants of $\\mathsf{MLWE}$, where the secret and/or the error are sampled from different distributions. Only few works have focused on different distributions for the matrix $\\mathbf{A}$. One variant proposed in the literature is to consider matrix distributions where the low-order bits of a uniform $\\mathbf{A}$ are deleted. This seems a natural approach in order to save in bandwidth. We call it truncated $\\mathsf{MLWE}$.\r\n\r\nIn this work, we show that the hardness of standard $\\mathsf{MLWE}$ implies the hardness of truncated $\\mathsf{MLWE}$, both for search and decision versions. Prior works only covered the search variant and relied on the (module) $\\mathsf{NTRU}$ assumption, limitations which we are able to overcome. Overall, we provide two approaches, offering different advantages. The first uses a general R\u00e9nyi divergence argument, applicable to a wide range of secret/error distributions, but which only works for the search variants of (truncated) $\\mathsf{MLWE}$. The second applies to the decision versions, by going through an intermediate variant of $\\mathsf{MLWE}$, where additional hints on the secret are given to the adversary. However, the reduction makes use of discrete Gaussian distributions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CNRS, Univ Montpellier, LIRMM"
+                }
+            ],
+            "fullName": "Katharina Boudgoust",
+            "orcid": "0000-0002-3971-9368"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Hannah Keller",
+            "orcid": "0000-0002-4461-7067"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-26T12:50:35Z"
+        }
+    ],
+    "keywords": [
+        "Lattices",
+        "Module Learning with Errors",
+        "Truncation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/120.pdf",
+    "pid": "120",
+    "pubtype": {
+        "note": "PQCrypto 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Module Learning with Errors with Truncated Matrices",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The paper is dedicated to Multivariate Cryptography over general commutative ring K and protocols of symbolic computations for safe delivery of multivariate maps. We consider itera-tive algorithm of generation of multivariate maps of prescribed degree or density with the trapdoor accelerator, i.e. piece of information which allows to compute the reimage of the map in polynomial time. The concept of Jordan-Gauss temporal graphs is used for the obfus-cation of known graph based public keys  and constructions of new cryptosystems. We sug-gest use of the platforms of Noncommutative Cryptography defined in terms of Multivariate Cryptography over K for the conversion of Multivariate Public Keys into El Gamal type Cryptosystems. Some new platforms are introduced.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway University of London",
+                    "ror": "https://ror.org/04g2vpn86"
+                }
+            ],
+            "fullName": "Vasyl Ustimenko",
+            "orcid": "0000-0002-2138-2357"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-26T17:59:27Z"
+        }
+    ],
+    "keywords": [
+        "Multivariate Cryptography",
+        "Noncommutative protocols",
+        "Noncommutative Cryptography",
+        "Public Keys",
+        "Transformation Semigroups"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/121.pdf",
+    "pid": "121",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On symbolic computations over arbitrary commutative rings and  cryptography with the temporal Jordan-Gauss graphs.",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In a single secret leader election (SSLE) protocol, all parties collectively and obliviously elect one leader. No one else should learn its identity unless it reveals itself as the leader. The problem is first formalized by Boneh \\textit{et al.} (AFT'20), which proposes an efficient construction based on the Decision Diffie-Hellman (DDH) assumption. Considering the potential risk of quantum computers, several follow-ups focus on designing a post-quantum secure SSLE protocol based on pure lattices or fully homomorphic encryption. However, no concrete benchmarks demonstrate the feasibility of deploying such heavy cryptographic primitives.\r\n\r\nIn this work, we present Qelect, the first practical constant-round post-quantum secure SSLE protocol. We first adapt the commitment scheme in Boneh \\textit{et al.} (AFT'23) into a \\textit{multi-party randomizable commitment} scheme, and propose our novel construction based on an adapted version of ring learning with errors (RLWE) problem. We then use it as a building block and construct a \\textit{constant-round} single secret leader election (crSSLE) scheme. We utilize the single instruction multiple data (SIMD) property of a specific threshold fully homomorphic encryption (tFHE) scheme to evaluate our election circuit efficiently. Finally, we built Qelect from the crSSLE scheme, with performance optimizations including a preprocessing phase to amortize the local computation runtime and a retroactive detection phase to avoid the heavy zero-knowledge proofs during the election phase. Qelect achieves asymptotic improvements and is concretely practical. We implemented a prototype of Qelect and evaluated its performance in a WAN. Qelect is at least two orders of magnitude faster than the state-of-the-art.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Yunhao Wang",
+            "orcid": "0009-0006-8128-2346"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Fan Zhang",
+            "orcid": "0000-0002-8525-4514"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-26T19:07:58Z"
+        }
+    ],
+    "keywords": [
+        "SSLE",
+        "FHE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/122.pdf",
+    "pid": "122",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Qelect: Lattice-based Single Secret Leader Election Made Practical",
+    "year": 2025,
+    "repo": [
+        "https://ethereum.github.io/yellowpaper/paper.pdf",
+        "https://ethereum.github.io/yellowpaper/paper.pdf"
+    ]
+}
+,
+{
+    "abstract": "This note reports new implementation results for the Falcon signature algorithm on an ARM Cortex-M4 microcontroller. Compared with our previous implementation (in 2019), runtime cost has been about halved.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NCC Group"
+                }
+            ],
+            "fullName": "Thomas Pornin",
+            "orcid": "0009-0001-6231-3729"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-26T22:22:24Z"
+        }
+    ],
+    "keywords": [
+        "Falcon",
+        "FN-DSA",
+        "ARM Cortex-M4"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/123.pdf",
+    "pid": "123",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Falcon on ARM Cortex-M4: an Update",
+    "year": 2025,
+    "repo": [
+        "https://github.com/pornin/c-fn-dsa",
+        "https://github.com/XKCP/XKCP"
+    ]
+}
+,
+{
+    "abstract": "In this work, we report on the latest GPU implementations of the three well-known methods for the key switching operation, which is critical for Fully Homomorphic Encryption (FHE). Additionally, for the first time in the literature, we provide implementations of all three methods in GPU for leveled CKKS schemes. To ensure a fair comparison, we employ the most recent GPU implementation of the number-theoretic transform (NTT), which is the most time-consuming operation in key switching, and evaluate the performance across two fully homomorphic schemes: BFV and CKKS. Furthermore, we highlight the advantages and shortcomings of the three methods in the context of leveled HE schemes, and discuss other aspects such as memory requirements. Our GPU implementation is integrated with HEonGPU Library and delivers up to a \u00d7380 improvement in execution time compared to the Microsoft SEAL Library. Since key switching is a specialized form of the external product common in many HE schemes, our results are directly relevant to time-intensive homomorphic operations such as relinearization and rotation. As homomorphic rotation is one of the most dominant operations in bootstrapping, our results are also applicable in bootstrapping algorithms of BFV, BGV and CKKS schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sabanci University"
+                }
+            ],
+            "fullName": "Ali \u015eah \u00d6zcan",
+            "orcid": "0000-0001-9042-2650"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sabanci University"
+                }
+            ],
+            "fullName": "Erkay Sava\u015f",
+            "orcid": "0000-0002-4869-5556"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-26T22:40:31Z"
+        }
+    ],
+    "keywords": [
+        "GPU",
+        "Fully Homomorphic Encryption",
+        "Hardware Acceleration",
+        "BFV",
+        "CKKS",
+        "Key-Switching",
+        "Hybrid  Homomorphic Encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/124.pdf",
+    "pid": "124",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "GPU Implementations of Three Different Key-Switching Methods for Homomorphic Encryption Schemes",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Alisah-Ozcan/HEonGPU",
+        "https://github.com/Alisah-Ozcan/HEonGPU",
+        "https://github.com/Alisah-Ozcan/GPU-NTT",
+        "https://github.com/zama-ai/concrete",
+        "https://github.com/zama-ai/concrete",
+        "https://github.com/snucrypto/HEAAN",
+        "https://github.com/shaih/HElib/",
+        "https://github.com/shaih/HElib/",
+        "https://github.com/tuneinsight/lattigo",
+        "https://github.com/Microsoft/SEAL",
+        "https://gitlab.com/palisade/palisade-release/-/blob/master/doc/palisade_manual.pdf",
+        "https://gitlab.com/palisade/palisade-release/-/blob/master/doc/palisade_manual.pdf"
+    ]
+}
+,
+{
+    "abstract": "The Classical Bloom Filter (CBF) is a class of Probabilistic Data Structures (PDS) for handling Approximate Query Membership (AMQ). The Learned Bloom Filter (LBF) is a recently proposed class of PDS that combines the Classical Bloom Filter with a Learning Model while preserving the Bloom Filter's one-sided error guarantees. Bloom Filters have been used in settings where inputs are sensitive and need to be private in the presence of an adversary with access to the Bloom Filter through an API or in the presence of an adversary who has access to the internal state of the Bloom Filter. Prior work has investigated the privacy of the Classical Bloom Filter providing attacks and defenses under various privacy definitions. In this work, we formulate a stronger differential privacy-based model for the Bloom Filter. We propose constructions of the Classical and Learned Bloom Filter that satisfy $(\\epsilon, 0)$-differential privacy. This is also the first work that analyses and addresses the privacy of the Learned Bloom Filter under any rigorous model, which is an open problem.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "City College of New York"
+                }
+            ],
+            "fullName": "Hayder Tirmazi",
+            "orcid": "0009-0008-9360-9662"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-27T00:12:40Z"
+        }
+    ],
+    "keywords": [
+        "Differential Privacy",
+        "Adversarial Artificial Intelligence",
+        "Probabilistic Data Structures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/125.pdf",
+    "pid": "125",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Privacy Model for Classical & Learned Bloom Filters",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
