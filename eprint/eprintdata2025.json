@@ -9079,4 +9079,1047 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "With the development of decentralized identity (DID), anonymous credential (AC) technology, as well as its traceability, is receiving more and more attention. Most works introduce a trusted party (regulator) that holds a decryption key or backdoor to directly deanonymize the user identity of anonymous authentication. While some cryptographic primitives can help regulators handle complex tracing tasks among large amounts of user profiles (stored by the issuer) and authentication records (stored by the service provider), additional security primitives are still needed to ensure the privacy of other users. Besides, hardware-binding anonymous credential (hbAC) systems have been proposed to prevent credential sharing or address platform resource constraints, the traceability of hbAC has yet to be discussed.\r\n\r\nIn this paper, we introduce a public key encryption with equality test as a regulatory text for each authentication record to address the above-mentioned challenges. The security of this feature is guaranteed by the verifiability, non-frameability, and round isolation of the proposed scheme. We compared the asymptotic complexity of our scheme with other traceable AC schemes and shows our scheme has advantages in tracing tasks as well as securely outsourcing them. The key feature of our scheme is that the ability of equality test of regulatory texts is independent of the public key, but rather depends on the round identifier of the authentication. We instantiate a traceable, hardware-binding AC scheme based on smart cards and BBS+ signature and give the performance analysis of it.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Jiaotong University",
+                    "ror": "https://ror.org/01yj56c84"
+                }
+            ],
+            "fullName": "Chang Chen",
+            "orcid": "0000-0003-4165-3545"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Guangzhou University",
+                    "ror": "https://ror.org/05ar8rn06"
+                }
+            ],
+            "fullName": "Guoyu Yang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Guangzhou University",
+                    "ror": "https://ror.org/05ar8rn06"
+                }
+            ],
+            "fullName": "Qi Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Jiaotong University",
+                    "ror": "https://ror.org/01yj56c84"
+                }
+            ],
+            "fullName": "Wei Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Guangzhou University",
+                    "ror": "https://ror.org/05ar8rn06"
+                }
+            ],
+            "fullName": "Jin Li"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-27T04:35:31Z"
+        }
+    ],
+    "keywords": [
+        "anonymous credentials",
+        "traceability",
+        "fast tracing",
+        "equality test"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/126.pdf",
+    "pid": "126",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Always by Your Side: Constructing Traceable Anonymous Credentials with Hardware-Binding",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Signature schemes from multi-round interactive proofs are becoming increasingly relevant in post-quantum cryptography. A prominent example is CROSS, recently admitted to the second round of the NIST on-ramp standardisation process for post-quantum digital signatures. While the security of these constructions relies on the Fiat-Shamir transform, in the case of CROSS the use of the fixed-weight parallel-repetition optimisation makes the security analysis fuzzier than usual. A recent work has shown that the fixed-weight parallel repetition of a multi-round interactive proof is still knowledge sound, but no matching result appears to be known for the non-interactive version.\r\nIn this paper we provide two main results. First, we explicitly prove the EUF-CMA security of CROSS, filling a gap in the literature. We do this by showing that, in general, the Fiat-Shamir transform of an HVZK and knowledge-sound multi-round interactive proof is EUF-CMA secure. Second, we present a novel forgery attack on signatures obtained from fixed-weight repetitions of 5-round interactive proofs, substantially improving upon a previous attack on parallel repetitions due to Kales and Zaverucha. Our new attack has particular relevance for CROSS, as it shows that several parameter sets achieve a significantly lower security level than claimed, with reductions up to 24% in the worst case.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e0 Politecnica delle Marche",
+                    "ror": "https://ror.org/00x69rs40"
+                }
+            ],
+            "fullName": "Michele Battagliola",
+            "orcid": "0000-0002-8269-2148"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fondazione Bruno Kessler, Center for Cybersecurity",
+                    "ror": "https://ror.org/01j33xk10"
+                }
+            ],
+            "fullName": "Riccardo Longo",
+            "orcid": "0000-0002-8739-3091"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e0 di Trento",
+                    "ror": "https://ror.org/05trd4x28"
+                }
+            ],
+            "fullName": "Federico Pintore",
+            "orcid": "0000-0002-7985-3131"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Telsy",
+                    "ror": "https://ror.org/0120za682"
+                }
+            ],
+            "fullName": "Edoardo Signorini",
+            "orcid": "0000-0002-1224-6732"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e0 di Trento",
+                    "ror": "https://ror.org/05trd4x28"
+                }
+            ],
+            "fullName": "Giovanni Tognolini"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-27T17:48:21Z"
+        }
+    ],
+    "keywords": [
+        "CROSS",
+        "digital signatures",
+        "fixed-weight repetition",
+        "post-quantum"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/127.pdf",
+    "pid": "127",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures",
+    "year": 2025,
+    "repo": [
+        "https://github.com/edoars/revise-cross-parameters"
+    ]
+}
+,
+{
+    "abstract": "We present the first complete asynchronous MPC protocols for the YOSO (You Speak Only Once) setting. Our protocols rely on threshold additively homomorphic Paillier encryption and are adaptively secure. We rely on the paradigm of Blum et al. (TCC `20) in order to recursively refresh the setup needed for running future steps of YOSO MPC, but replace any use of heavy primitives such as threshold fully homomorphic encryption in their protocol with more efficient alternatives. In order to obtain an efficient YOSO MPC protocol, we also revisit the consensus layer upon which our protocol is built. To this end, we present a novel total-order broadcast protocol with subquadratic communication complexity in the total number $M$ of parties in the network and whose complexity is optimal in the message length. This improves on recent work of Banghale et al. (ASIACRYPT `22) by giving a simplified and more efficient broadcast extension protocol for the asynchronous setting that avoids the use of cryptographic accumulators.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Ivan Bjerre Damg\u00e5rd"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Simon Holmgaard Kamp"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Julian Loss"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Jesper Buus Nielsen"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-27T19:37:02Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/128.pdf",
+    "pid": "128",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Asynchronous YOSO a la Paillier",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We construct the first polynomial commitment scheme (PCS) that has a transparent setup, quasi-linear prover time,  $\\log N$ verifier time, and $\\log \\log N$ proof size, for multilinear polynomials of size $N$. Concretely, we have the smallest proof size amongst transparent PCS, with proof size less than $4.5$KB for $N\\leq 2^{30}$. We prove that our scheme is secure entirely under falsifiable assumptions about groups of unknown order. The scheme significantly improves on the prior work of Dew (PKC 2023), which has super-cubic prover time and relies on the Generic Group Model (a non-falsifiable assumption). Along the way, we make several contributions that are of independent interest: PoKEMath, a protocol for efficiently proving that an arbitrary predicate over committed integer vectors holds; SIPA, a bulletproofs-style inner product argument in groups of unknown order; we also distill out what prior work required from the Generic Group Model and frame this as a falsifiable assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Benedikt B\u00fcnz"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Tushar Mopuri"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Alireza Shirzad"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Sriram Sridhar",
+            "orcid": "0000-0002-2489-6935"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-27T20:08:17Z"
+        }
+    ],
+    "keywords": [
+        "SNARK",
+        "Polynomial Commitment Scheme",
+        "Groups of unknown order"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/129.pdf",
+    "pid": "129",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "DewTwo: a transparent PCS with quasi-linear prover, logarithmic verifier and 4.5KB proofs from falsifiable assumptions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The symmetric binary perceptron ($\\mathrm{SBP}_{\\kappa}$) problem with parameter $\\kappa : \\mathbb{R}_{\\geq1} \\to [0,1]$ is an average-case search problem defined as follows: given a random Gaussian matrix $\\mathbf{A} \\sim \\mathcal{N}(0,1)^{n \\times m}$ as input where $m \\geq n$, output a vector $\\mathbf{x} \\in \\{-1,1\\}^m$ such that $$|| \\mathbf{A} \\mathbf{x} ||_{\\infty} \\leq \\kappa(m/n) \\cdot \\sqrt{m}~.$$\r\nThe number partitioning problem ($\\mathrm{NPP}_{\\kappa}$) corresponds to the special case of setting $n=1$. There is considerable evidence that both problems exhibit large computational-statistical gaps.\r\n    \r\nIn this work, we show (nearly) tight average-case hardness for these problems, assuming the worst-case hardness of standard approximate shortest vector problems on lattices.\r\n\r\nFor $\\mathrm{SBP}_\\kappa$, statistically, solutions exist with $\\kappa(x) = 2^{-\\Theta(x)}$ (Aubin, Perkins and Zdeborova, Journal of Physics 2019). For large $n$, the best that efficient algorithms have been able to achieve is a far cry from the statistical bound, namely $\\kappa(x) = \\Theta(1/\\sqrt{x})$ (Bansal and Spencer, Random Structures and Algorithms 2020). The problem has been extensively studied in the TCS and statistics communities, and Gamarnik, Kizildag, Perkins and Xu (FOCS 2022) conjecture that Bansal-Spencer is tight: namely, $\\kappa(x) = \\widetilde{\\Theta}(1/\\sqrt{x})$ is the optimal value achieved by computationally efficient algorithms. \r\n        \r\nWe prove their conjecture assuming the worst-case hardness of approximating the shortest vector problem on lattices.\r\n\r\nFor $\\mathrm{NPP}_\\kappa$, statistically, solutions exist with $\\kappa(m) = \\Theta(2^{-m})$ (Karmarkar, Karp, Lueker and Odlyzko, Journal of Applied Probability 1986). Karmarkar and Karp's classical differencing algorithm achieves $\\kappa(m) = 2^{-O(\\log^2 m)}~.$\r\n        \r\nWe prove that Karmarkar-Karp is nearly tight: namely, no polynomial-time algorithm can achieve $\\kappa(m) = 2^{-\\Omega(\\log^3 m)}$, once again assuming the  worst-case subexponential hardness of approximating the shortest vector problem on lattices to within a subexponential factor.\r\n\r\nOur hardness results are versatile, and hold with respect to different distributions of the matrix $\\mathbf{A}$ (e.g., i.i.d. uniform entries from $[0,1]$) and weaker requirements on the solution vector $\\mathbf{x}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Neekon Vafa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Vinod Vaikuntanathan"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-27T21:19:23Z"
+        }
+    ],
+    "keywords": [
+        "lattices",
+        "perceptron",
+        "number partitioning",
+        "number balancing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/130.pdf",
+    "pid": "130",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Symmetric Perceptrons, Number Partitioning and Lattices",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-981-97-8013-6_10",
+    "abstract": "Security models provide a way of formalising security properties in a rigorous way, but it is sometimes difficult to ensure that the model really fits the concept that we are trying to formalise. In this paper, we illustrate this fact by showing the discrepancies between the security model of anonymity of linkable ring signatures and the security that is actually expected for this kind of signature. These signatures allow a user to sign anonymously within an ad hoc group generated from the public keys of the group members, but all their signatures can be linked together. Reading the related literature, it seems obvious that users' identities must remain hidden even when their signatures are linked, but we show that, surprisingly, almost none have adopted a security model that guarantees it. We illustrate this by presenting two counter-examples which are secure in most anonymity model of linkable ring signatures, but which trivially leak a signer's identity after only two signatures.\r\n\r\n  A natural fix to this model, already introduced in some previous work, is proposed in a corruption model where the attacker can generate the keys of certain users themselves, which seems much more coherent in a context where the group of users can be constructed in an ad hoc way at the time of signing. We believe that these two changes make the security model more realistic. Indeed, within the framework of this model, our counter-examples becomes insecure. Furthermore, we show that most of the schemes in the literature we surveyed appear to have been designed to achieve the security guaranteed by the latest model, which reinforces the idea that the model is closer to the informal intuition of what anonymity should be in linkable ring signatures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "LIFO, Universit\u00e9 d\u2019Orl\u00e9ans, INSA Centre Val de Loire, Inria, France"
+                }
+            ],
+            "fullName": "Xavier Bultel",
+            "orcid": "0000-0002-8309-8984"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "be ys Pay"
+                },
+                {
+                    "name": "LIFO, Universit\u00e9 d\u2019Orl\u00e9ans, INSA Centre Val de Loire, Inria, France"
+                },
+                {
+                    "name": "LIMOS, Universit\u00e9 Clermont Auvergne, CNRS, France"
+                }
+            ],
+            "fullName": "Charles Olivier-Anclin",
+            "orcid": "0000-0002-9365-3259"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-27T21:40:37Z"
+        }
+    ],
+    "keywords": [
+        "Linkable Ring Signature",
+        "Anonymity",
+        "Security Model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/131.pdf",
+    "pid": "131",
+    "pubtype": {
+        "note": "CANS 24",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Anonymity of Linkable Ring Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A private-information-retrieval (PIR) scheme lets a client fetch a record from a remote database without revealing which record it fetched. Classic PIR schemes treat all database records the same but, in practice, some database records are much more popular (i.e., commonly fetched) than others. We introduce distributional private information retrieval, a new type of PIR that can run faster than classic PIR\u2013both asymptotically and concretely\u2013when the popularity distribution is heavily skewed. Distributional PIR provides exactly the same cryptographic privacy as classic PIR. The speedup comes from a relaxed form of correctness: distributional PIR guarantees that in-distribution queries succeed with good probability, while out-of-distribution queries succeed with lower probability.\r\n\r\nWe construct a distributional-PIR scheme that makes black-box use of classic PIR protocols, and prove a lower bound on the server-runtime of a large class of distributional-PIR schemes. On two real-world popularity distributions, our distributional-PIR construction reduces compute costs by $5$-$77\\times$ compared to existing techniques. Finally, we build CrowdSurf, an end-to-end system for privately fetching tweets, and show that distributional-PIR reduces the end-to-end server cost by $8\\times$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Ryan Lehmkuhl",
+            "orcid": "0009-0005-3618-7510"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Alexandra Henzinger",
+            "orcid": "0009-0005-2346-809X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Henry Corrigan-Gibbs",
+            "orcid": "0009-0006-7577-4512"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-28T03:04:53Z"
+        }
+    ],
+    "keywords": [
+        "Private Information Retrieval"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/132.pdf",
+    "pid": "132",
+    "pubtype": {
+        "note": "USENIX Security '25",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Distributional Private Information Retrieval",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ryanleh/crowdsurf"
+    ]
+}
+,
+{
+    "abstract": "We present a key-recovery attack on DEFI, an efficient signature scheme proposed recently by Feussner and Semaev, and based on isotropic quadratic forms, borrowing from both multivariate and lattice cryptography.\r\nOur lattice-based attack is partially heuristic, but works on all proposed parameters: experimentally, it recovers the secret key in a few minutes, using less than ten (message,signature) pairs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, Ecole normale sup\u00e9rieure, PSL University, CNRS, Inria, Paris, France"
+                },
+                {
+                    "name": "DGA, Paris, France"
+                }
+            ],
+            "fullName": "Henry Bambury"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, Ecole normale sup\u00e9rieure, PSL University, CNRS, Inria, Paris, France"
+                }
+            ],
+            "fullName": "Phong Q. Nguyen"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-28T10:30:21Z"
+        }
+    ],
+    "keywords": [
+        "Cryptanalysis",
+        "Digital Signatures",
+        "Lattices",
+        "Multivariate Cryptography",
+        "Quadratic Forms"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/133.pdf",
+    "pid": "133",
+    "pubtype": {
+        "note": "PQCrypto 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cryptanalysis of an Efficient Signature Based on Isotropic Quadratic Forms",
+    "year": 2025,
+    "repo": [
+        "https://gitlab.inria.fr/hbambury/defi-nitely-broken",
+        "https://github.com/martinfeussner/DEFI/tree/dd038b3/DEFI128",
+        "https://github.com/martinfeussner/DEFI/tree/dd038b3/DEFI128",
+        "https://pqshield.github.io/nist-sigs-zoo/",
+        "https://pqshield.github.io/nist-sigs-zoo/",
+        "https://github.com/fplll/fpylll",
+        "https://github.com/fplll/fpylll"
+    ]
+}
+,
+{
+    "abstract": "BFT protocols usually have a waterfall-like degradation in performance in the face of crash faults. Some BFT protocols may not experience sudden performance degradation under crash faults. They achieve this at the expense of increased communication and round complexity in fault-free scenarios. In a nutshell, existing protocols lack the adaptability needed to perform optimally under varying conditions.\r\n\r\nWe propose TockOwl, the first asynchronous consensus protocol with fault adaptability. TockOwl features quadratic communication and constant round complexity, allowing it to remain efficient in fault-free scenarios. TockOwl also possesses crash robustness, enabling it to maintain stable performance when facing crash faults. These properties collectively ensure the fault adaptability of TockOwl.\r\n\r\nFurthermore, we propose TockOwl+ that has network adaptability. TockOwl+ incorporates both fast and slow tracks and employs hedging delays, allowing it to achieve low latency comparable to partially synchronous protocols without waiting for timeouts in asynchronous environments. Compared to the latest dual-track protocols, the slow track of TockOwl+ is simpler, implying shorter latency in fully asynchronous environments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                }
+            ],
+            "fullName": "Minghang Li",
+            "orcid": "0009-0008-0952-3760"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                }
+            ],
+            "fullName": "Qianhong Wu",
+            "orcid": "0000-0003-4604-1142"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London"
+                }
+            ],
+            "fullName": "Zhipeng Wang",
+            "orcid": "0000-0003-1089-1583"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Renmin University of China"
+                }
+            ],
+            "fullName": "Bo Qin",
+            "orcid": "0000-0002-9548-8306"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                }
+            ],
+            "fullName": "Bohang Wei",
+            "orcid": "0009-0001-3035-7831"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                }
+            ],
+            "fullName": "Hang Ruan",
+            "orcid": "0009-0002-0146-5101"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                }
+            ],
+            "fullName": "Shihong Xiong",
+            "orcid": "0009-0001-4222-6978"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                }
+            ],
+            "fullName": "Zhenyang Ding",
+            "orcid": "0009-0005-3190-2204"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-28T12:53:05Z"
+        }
+    ],
+    "keywords": [
+        "BFT",
+        "consensus",
+        "asynchronous"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/134.pdf",
+    "pid": "134",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "TockOwl: Asynchronous Consensus with Fault and Network Adaptability",
+    "year": 2025,
+    "repo": [
+        "https://github.com/xygdys/Dory-BFT-Consensus",
+        "https://github.com/syndtr/goleveldb",
+        "https://github.com/dedis/kyber",
+        "https://github.com/grpc/grpc-go"
+    ]
+}
+,
+{
+    "abstract": "The problem of computing an isogeny of large prime degree from a supersingular elliptic curve of unknown endomorphism ring is assumed to be hard both for classical as well as quantum computers.\r\nIn this work, we first build a two-round identification protocol whose security reduces to this problem.  The challenge consists of a random large prime $q$ and the prover simply replies with an efficient representation of an isogeny of degree $q$ from its public key.\r\nUsing the hash-and-sign paradigm, we then derive a signature scheme with a very simple and flexible signing procedure and prove its security in the standard model.\r\nOur optimized C implementation of the signature scheme shows that signing is roughly $1.8\\times$ faster than all SQIsign variants, whereas verification is $1.4\\times$ times slower.  The sizes of the public key and signature are comparable to existing schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research - Zurich",
+                    "ror": "https://ror.org/02js37d36"
+                }
+            ],
+            "fullName": "Andrea Basso",
+            "orcid": "0000-0002-3270-1069"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research - Zurich",
+                    "ror": "https://ror.org/02js37d36"
+                }
+            ],
+            "fullName": "Giacomo Borin",
+            "orcid": "0009-0001-7311-3802"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Wouter Castryck",
+            "orcid": "0000-0002-0191-5216"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure de Lyon",
+                    "ror": "https://ror.org/04zmssz18"
+                }
+            ],
+            "fullName": "Maria Corte-Real Santos",
+            "orcid": "0000-0003-2651-8951"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Riccardo Invernizzi",
+            "orcid": "0000-0002-2271-6822"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Direction G\u00e9n\u00e9rale de l'Armement",
+                    "ror": "https://ror.org/04wsqd844"
+                }
+            ],
+            "fullName": "Antonin Leroux",
+            "orcid": "0009-0002-3737-0075"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Bristol",
+                    "ror": "https://ror.org/0524sp257"
+                }
+            ],
+            "fullName": "Luciano Maino",
+            "orcid": "0009-0005-4495-5102"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Frederik Vercauteren",
+            "orcid": "0000-0002-7208-9599"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure de Lyon",
+                    "ror": "https://ror.org/04zmssz18"
+                }
+            ],
+            "fullName": "Benjamin Wesolowski",
+            "orcid": "0000-0003-1249-6077"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-28T13:42:21Z"
+        }
+    ],
+    "keywords": [
+        "post-quantum",
+        "isogenies",
+        "signatures",
+        "identification"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/135.pdf",
+    "pid": "135",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PRISM: Simple And Compact Identification and Signatures From Large Prime Degree Isogenies",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KULeuven-COSIC/PRISM",
+        "https://github.com/SQISign/sqisign2d-west-ac24",
+        "https://github.com/Pierrick-Dartois/SQISignHD-lib"
+    ]
+}
+,
+{
+    "abstract": "We investigate the algorithmic problem of computing isomorphisms between products of supersingular elliptic curves, given their endomorphism rings. This computational problem seems to be difficult when the domain and codomain are fixed, whereas we provide efficient algorithms to compute isomorphisms when part of the codomain is built during the construction. We propose an authentication protocol whose security relies on this asymmetry. Its most prominent feature is that the endomorphism rings of the elliptic curves are not hidden. Furthermore, it does not require a trusted setup.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 de Lorraine, CNRS, Inria"
+                }
+            ],
+            "fullName": "Pierrick Gaudry",
+            "orcid": "0000-0001-8263-8101"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 de Lorraine, CNRS, Inria"
+                }
+            ],
+            "fullName": "Julien Soumier"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 de Lorraine, CNRS, Inria"
+                }
+            ],
+            "fullName": "Pierre-Jean Spaenlehauer",
+            "orcid": "0000-0001-7906-0505"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-28T14:05:36Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/136.pdf",
+    "pid": "136",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Isogeny-based Cryptography using Isomorphisms of Superspecial Abelian Surfaces",
+    "year": 2025,
+    "repo": [
+        "https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments",
+        "https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments",
+        "https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments",
+        "https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments",
+        "https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments",
+        "https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments"
+    ]
+}
+,
+{
+    "abstract": "This work showcases Quatorze-bis, a state-of-the-art Number Theoretic Transform circuit for TFHE-like cryptosystems on FPGAs. It contains a novel modular multiplication design for modular multiplication with a constant for a constant modulus. This modular multiplication design does not require any DSP units or any dedicated multiplier unit, nor does it require extra logic whencompared to the state-of-the-art modular multipliers. Furthermore, we present an implementation of a constant multiplier Number Theoretic Transform design for TFHE-like schemes. Lastly, we use this Number Theoretic Transform design to implement a FINAL hardware accelerator for the AMD Alveo U55c which improves the Throughput metric of TFHE-like cryptosystems on FPGAs by a factor 9.28x over Li et al.'s NFP CHES 2024 accelerator and by 10-25% over the absolute state-of-the-art design FPT while using one third of FPTs DSPs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Jonas Bertels",
+            "orcid": "0000-0002-0842-6167"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State University of Campinas",
+                    "ror": "https://ror.org/04wffgt70"
+                }
+            ],
+            "fullName": "Hilder V. L. Pereira",
+            "orcid": "0000-0003-1303-3760"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Ingrid Verbauwhede",
+            "orcid": "0000-0002-0879-076X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-28T15:59:23Z"
+        }
+    ],
+    "keywords": [
+        "NTT",
+        "FHE",
+        "Hardware Design",
+        "FPGA",
+        "TFHE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "(The name Quatorze-bis is a reference to the speed of the design. Airplane speed in meters/hour = bootstrapping speed in bootstraps/second)",
+    "pdffile": "2025/137.pdf",
+    "pid": "137",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "FINAL bootstrap acceleration on FPGA using DSP-free constant-multiplier NTTs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In modern cryptography, relatively few instantiations of foundational cryptographic primitives are used across most cryptographic protocols. For example, elliptic curve groups are typically instantiated using P-256, P-384, Curve25519, or Curve448, while block ciphers are commonly instantiated with AES, and hash functions with SHA-2, SHA-3, or SHAKE. This limited diversity raises concerns that an adversary with nation-state-level resources could perform a preprocessing attack, generating a hint that might later be exploited to break protocols built on these primitives. It is often notoriously challenging to analyze and upper bound the advantage of a preprocessing attacker even if we assume that we have idealized instantiations of our cryptographic primitives (ideal permutations, ideal ciphers, random oracles, generic groups). Coretti et al. (CRYPTO/EUROCRYPT'18) demonstrated a powerful framework to simplify the analysis of preprocessing attacks, but they only proved that their framework applies when the cryptographic protocol uses a single idealized primitive. In practice, however, cryptographic constructions often utilize multiple different cryptographic primitives. \r\n\r\nWe verify that Coretti et al. (CRYPTO/EUROCRYPT'18)'s framework extends to settings with multiple idealized primitives and we apply this framework to analyze the multi-user security of (short) Schnorr Signatures and the CCA-security of PSEC-KEM against pre-processing attackers in the Random Oracle Model (ROM) plus the Generic Group Model (GGM). Prior work of Blocki and Lee (EUROCRYPT'22) used complicated compression arguments to analyze the security of {\\em key-prefixed} short Schnorr signatures where the random oracle is salted with the user's public key. However, the security analysis did not extend to standardized implementations of Schnorr Signatures (e.g., BSI-TR-03111 or ISO/IEC 14888-3) which do not adopt key-prefixing, but take other measures to protect against preprocessing attacks by disallowing signatures that use a preimage of $0$.  Blocki and Lee (EUROCRYPT'22) left the (in)security of such \"nonzero Schnorr Signature\" constructions as an open question. We fully resolve this open question demonstrating that (short) nonzero Schnorr Signatures are also secure against preprocessing attacks. We also analyze PSEC-KEM in the ROM+GGM demonstrating that this Key Encapsulation Mechanism (KEM) is CPA-secure against preprocessing attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Jeremiah Blocki",
+            "orcid": "0000-0002-5542-4674"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Seunghoon Lee",
+            "orcid": "0000-0003-4475-5686"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-28T17:22:06Z"
+        }
+    ],
+    "keywords": [
+        "Short Schnorr Signatures",
+        "Key Encapsulation Mechanism",
+        "PSEC-KEM",
+        "Preprocessing Attacks",
+        "Bit-Fixing Model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/138.pdf",
+    "pid": "138",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Preprocessing Security in Multiple Idealized Models with Applications to Schnorr Signatures and PSEC-KEM",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The rise of 5G and IoT has shifted secure communication from centralized and homogeneous to a landscape of heterogeneous mobile devices constantly travelling between myriad networks. In such environments, it is desirable for devices to securely extend their connection from one network to another, often referred to as a handover. In this work we introduce the first cryptographic formalisation of secure handover schemes. We leverage our formalisation to propose path privacy, a novel security property for handovers that has hitherto remained unexplored. We further develop a syntax for secure handovers, and identify security properties appropriate for secure handover schemes. Finally, we introduce a generic handover scheme that captures all the strong notions of security we have identified, combining our novel path privacy concept with other security properties characteristic to existing handover schemes, demonstrating the robustness and versatility of our framework.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sheffield",
+                    "ror": "https://ror.org/05krs5044"
+                }
+            ],
+            "fullName": "Rabiah Alnashwan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "King's College London",
+                    "ror": "https://ror.org/0220mzb33"
+                }
+            ],
+            "fullName": "Benjamin Dowling"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sheffield",
+                    "ror": "https://ror.org/05krs5044"
+                }
+            ],
+            "fullName": "Bhagya Wimalasiri"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-28T22:45:51Z"
+        }
+    ],
+    "keywords": [
+        "Secure Handover",
+        "Path Privacy",
+        "Formalisation",
+        "Provable Security",
+        "Protocol Analysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is the full version of the paper that has been accepted to appear at IEEE CSF 2025.",
+    "pdffile": "2025/139.pdf",
+    "pid": "139",
+    "pubtype": {
+        "note": "CSF 2025 \u2013 38th IEEE Computer Security Foundations Symposium",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Path Privacy and Handovers: Preventing Insider Traceability Attacks During Secure Handovers",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
