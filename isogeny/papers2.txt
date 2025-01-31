@@ -1,3 +1,4 @@
+efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;maria corte-real santos, craig costello, sam frengley;;;2025/147;;;last_week;;;https://github.com/mariascrs/SplitSearcher
 isogeny-based cryptography using isomorphisms of superspecial abelian surfaces;;;pierrick gaudry, julien soumier, pierre-jean spaenlehauer;;;2025/136;;;last_week;;;https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments
 prism: simple and compact identification and signatures from large prime degree isogenies;;;andrea basso, giacomo borin, wouter castryck, maria corte-real santos, riccardo invernizzi, antonin leroux, luciano maino, frederik vercauteren, benjamin wesolowski;;;2025/135;;;last_week;;;https://github.com/KULeuven-COSIC/PRISM
 dctidh: fast & deterministic ctidh;;;fabio campos, andreas hellenbrand, michael meyer, krĳn reĳnders;;;2025/107;;;last_month;;;https://github.com/PaZeZeVaAt/dCTIDH/
@@ -26,7 +27,6 @@ pearl-scallop: parameter extension applicable in real-life scallop;;;bill allomb
 radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_year;;;https://github.com/GiacomoPope/ThetaCGL
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_year;;;none
 the module action for isogeny based cryptography;;;damien robert;;;2024/1556;;;last_year;;;none
-verifiable random function from the deuring correspondence and higher dimensional isogenies;;;antonin leroux;;;2023/1251;;;last_year;;;https://github.com/SQISign/sqisign2d-west-ac24
 optimized one-dimensional sqisign verification on intel and cortex-m4;;;marius a. aardal, gora adj, arwa alblooshi, diego f. aranha, isaac a. canales-martínez, jorge chavez-saab, décio luiz gazzoni filho, krĳn reĳnders, francisco rodríguez-henríquez;;;2024/1563;;;last_year;;;https://github.com/SQISign/the-sqisign
 sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies;;;max duparc, tako boris fouotsa;;;2024/773;;;last_year;;;https://github.com/MaxDuparc/SQIPrime_SageMath
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_year;;;none
