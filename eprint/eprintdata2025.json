@@ -10122,4 +10122,765 @@
         "none"
     ]
 }
+,
+{
+    "DOI": "10.62056/a3w7tr-10k",
+    "abstract": "Everlasting (EL) privacy offers an attractive solution to the Store-Now-Decrypt-Later (SNDL) problem, where future increases in the attacker's capability could break systems which are believed to be secure today. Instead of requiring full information-theoretic security, everlasting privacy allows computationally-secure transmissions of ephemeral secrets, which are only \"effective\" for a limited periods of time, after which their compromise is provably useless for the SNDL attacker.\r\n\r\nIn this work we revisit such everlasting privacy model of Dodis and Yeo (ITC'21), which we call Hypervisor EverLasting Privacy (HELP). HELP is a novel architecture for generating shared randomness using a network of semi-trusted servers (or \"hypervisors\"), trading the need to store/distribute large shared secrets with the assumptions that it is hard to: (a) simultaneously compromise too many publicly accessible ad-hoc servers; and (b) break a computationally-secure encryption scheme very quickly. While Dodis and Yeo presented good HELP solutions in the asymptotic sense, their solutions were concretely expensive and used heavy tools (like large finite fields or gigantic Toeplitz matrices). \r\n\r\nWe abstract and generalize the HELP architecture to allow for more efficient instantiations, and construct several concretely efficient HELP solutions. Our solutions use elementary cryptographic operations, such as hashing and message authentication. We also prove a very strong composition theorem showing that our EL architecture can use any message transmission method which is computationally-secure in the Universal Composability (UC) framework. This is the first positive composition result for everlasting privacy, which was otherwise known to suffer from many \"non-composition\" results (M\u00fcller-Quade and Unruh; J of Cryptology'10).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Yevgeniy Dodis",
+            "orcid": "0000-0003-1013-6318"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Jiaxin Guan",
+            "orcid": "0000-0003-1823-8845"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Peter Hall"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Independent Contributor"
+                }
+            ],
+            "fullName": "Alison Lin"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-29T01:59:45Z"
+        }
+    ],
+    "keywords": [
+        "Everlasting Privacy",
+        "Composition",
+        "Store-Now-Decrypt-Later",
+        "Universal Composability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/140.pdf",
+    "pid": "140",
+    "pubtype": {
+        "pubtype": "CIC",
+        "revisiontype": "SAME",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "HELP: Everlasting Privacy through Server-Aided Randomness",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-78020-2_15",
+    "abstract": "Timed cryptography has initiated a paradigm shift in the design of cryptographic protocols: Using timed cryptography we can realize tasks fairly, which is provably out of range of standard cryptographic concepts. To a certain degree, the success of timed cryptography is rooted in the existence of efficient protocols based on the sequential squaring assumption.\r\n\r\n    In this work, we consider space analogues of timed cryptographic primitives, which we refer to as space-hard primitives. Roughly speaking, these notions require honest protocol parties to invest a certain amount of space and provide security against space constrained adversaries. While inefficient generic constructions of timed-primitives from strong assumptions such as indistinguishability obfuscation can be adapted to the space-hard setting, we currently lack concrete and versatile algebraically structured assumptions for space-hard cryptography.\r\n \r\n    In this work, we initiate the study of space-hard primitives from concrete algebraic assumptions relating to the problem of root-finding of sparse polynomials. Our motivation to study this problem is a candidate construction of VDFs by Boneh et al. (CRYPTO 2018) which are based on the hardness of inverting permutation polynomials. Somewhat anticlimactically, our first contribution is a full break of this candidate. However, we then revise this hardness assumption by dropping the permutation requirement and considering arbitrary sparse high degree polynomials. We argue that this type of assumption is much better suited for space-hardness rather than timed cryptography. We then proceed to construct both space-lock puzzles and verifiable space-hard functions from this assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Nico D\u00f6ttling",
+            "orcid": "0000-0002-5914-7635"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Saarland University",
+                    "ror": "https://ror.org/01jdpyv68"
+                }
+            ],
+            "fullName": "Jesko Dujmovic",
+            "orcid": "0000-0003-1043-5094"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Antoine Joux",
+            "orcid": "0000-0003-2682-6508"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-29T11:39:40Z"
+        }
+    ],
+    "keywords": [
+        "Spack-Lock Puzzle",
+        "Verifiable Space-Hard Function",
+        "SLP",
+        "VSHF",
+        "Sparse Polynomials",
+        "Root Finding"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/141.pdf",
+    "pid": "141",
+    "pubtype": {
+        "pubtype": "TCC",
+        "revisiontype": "MINOR",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Space-Lock Puzzles and Verifiable Space-Hard Functions from Root-Finding in Sparse Polynomials",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We present hax, a verification toolchain for Rust targeted at security-critical software such as cryptographic libraries, protocol imple- mentations, authentication and authorization mechanisms, and parsing and sanitization code. The key idea behind hax is the pragmatic observation that different verification tools are better at handling different kinds of verification goals. Consequently, hax supports multiple proof backends, including domain-specific security analysis tools like ProVerif and SSProve, as well as general proof assistants like Coq and F*. In this paper, we present the hax toolchain and show how we use it to translate Rust code to the input languages of different provers. We describe how we systematically test our translated models and our models of the Rust system libraries to gain confidence in their correctness. Finally, we briefly overview various ongoing verification projects that rely on hax.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Cryspen"
+                }
+            ],
+            "fullName": "Karthikeyan Bhargavan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryspen"
+                }
+            ],
+            "fullName": "Maxime Buyse"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryspen"
+                }
+            ],
+            "fullName": "Lucas Franceschino"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Lasse Letager Hansen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryspen"
+                }
+            ],
+            "fullName": "Franziskus Kiefer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryspen"
+                }
+            ],
+            "fullName": "Jonas Schneider-Bensch"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Bas Spitters"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-29T16:40:26Z"
+        }
+    ],
+    "keywords": [
+        "Formal Verification",
+        "Protocol Analysis",
+        "Cryptographic Libraries"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/142.pdf",
+    "pid": "142",
+    "pubtype": {
+        "note": "16th International Conference on Verified Software: Theories, Tools, and Experiments",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "hax: Verifying Security-Critical Rust Software using Multiple Provers",
+    "year": 2025,
+    "repo": [
+        "https://github.com/cryspen/hax",
+        "https://github.com/cryspen/bertie"
+    ]
+}
+,
+{
+    "abstract": "We translate the expand-and-extract framework by Fitzi, Liu-Zhang, and Loss (PODC 21) to the asynchronous setting.\r\nWhile they use it to obtain a synchronous BA with $2^{-\\lambda}$ error probability in $\\lambda+1$ rounds, we make it work in asynchrony in $\\lambda+3$ rounds. At the heart of their solution is a generalization of crusader agreement and graded agreement to any number of grades called proxcensus. They achieve graded consensus with $2^r+1$ grades in $r$ rounds by reducing proxcensus with $2s-1$ grades to proxcensus with $s$ grades in one round. The expand-and-extract paradigm uses proxcensus to expand binary inputs to $2^\\lambda+1$ grades in $\\lambda$ rounds before extracting a binary output by partitioning the grades using a $\\lambda$ bit common coin. However, the proxcensus protocol by Fitzi et al. does not translate to the asynchronous setting without lowering the corruption threshold or using more rounds in each recursive step.\r\n\r\nThis is resolved by attaching justifiers to all messages: forcing the adversary to choose between being ignored by the honest parties, or sending messages with certain validity properties. Using these we define validated proxcensus and show that it can be instantiated in asynchrony with the same recursive structure and round complexity as synchronous proxcensus. In asynchrony the extraction phase incurs a security loss of one bit which is recovered by expanding to twice as many grades using an extra round of communication. This results in a $\\lambda+2$ round VABA and a $\\lambda+3$ round BA, both with $2^{-\\lambda}$ error probability and communication complexity matching Fitzi et al.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Simon Holmgaard Kamp",
+            "orcid": "0000-0003-3356-1827"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-29T23:10:29Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/143.pdf",
+    "pid": "143",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A New Way to Achieve Round-Efficient Asynchronous Byzantine Agreement",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Accumulation schemes are powerful primitives that enable distributed and incremental verifiable computation with less overhead than recursive SNARKs. However, existing schemes with constant-size accumulation verifiers, suffer from linear-sized accumulators and deciders, leading to linear-sized proofs that are unsuitable in distributed settings. Motivated by the need for bandwidth efficient accountable voting protocols, (I) We introduce KZH, a novel polynomial commitment scheme, and (II) KZH-fold, the first sublinear accumulation scheme where the verifier only does $3$ group scalar multiplications and $O(n^{1/2})$ accumulator size and decider time. Our scheme generalizes to achieve accumulator and decider complexity of $k \\cdot n^{1/k}$ with verifier complexity $k$. Using the BCLMS compiler, (III) we build an IVC/PCD scheme with sublinear proof and decider. (IV) Next, we propose a new approach to non-uniform IVC, where the cost of proving a step is proportional only to the size of the step instruction circuit, and unlike previous approaches, the witness size is not linear in the number of instructions. (V) Leveraging these advancements, we demonstrate the power of KZH-fold by implementing an accountable voting scheme using a novel signature aggregation protocol supporting millions of participants, significantly reducing communication overhead and verifier time compared to BLS-based aggregation. We implemented and benchmarked our protocols and KZH-fold achieves a 2000x reduction in communication and a 50x improvement in decider time over Nova when proving 2000 Poseidon hashes, at the cost of 3x the prover time.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "George Kadianakis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Arantxa Zapico"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University (NYU)",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Hossein Hafezi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University (NYU)"
+                }
+            ],
+            "fullName": "Benedikt Bunz"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-30T02:00:41Z"
+        }
+    ],
+    "keywords": [
+        "Incrementally verifiable computation",
+        "Zero-knowledge proof",
+        "Accountable voting",
+        "Sublinear Accumulation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/144.pdf",
+    "pid": "144",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "KZH-Fold: Accountable Voting from Sublinear Accumulation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/asn-d6/kzh_fold",
+        "https://nexus-xyz.github.io/assets/nexus_whitepaper.pdf",
+        "https://github.com/microsoft/Spartan",
+        "https://github.com/asn-d6/kzh_fold",
+        "https://github.com/0xPolygonHermez/zkevm-techdocs/blob/main/docs/proof-recursion.pdf",
+        "https://github.com/0xPolygonHermez/zkevm-techdocs/blob/main/docs/proof-recursion.pdf",
+        "https://github.com/0xPolygonHermez/zkevm-techdocs/blob/main/docs/proof-recursion.pdf",
+        "https://github.com/0xPolygonHermez/zkevm-techdocs/blob/main/docs/proof-recursion.pdf",
+        "https://github.com/0xPolygonHermez/zkevm-techdocs/blob/main/docs/proof-recursion.pdf"
+    ]
+}
+,
+{
+    "abstract": "Overclocking is a a supported functionality of Nvidia GPUs, and is a common performance enhancement practice. However, overclocking poses a danger for cryptographic applications. As the temperature in the overclocked GPU increases, spurious computation faults occur. Coupled with well known fault attacks against RSA implementations, one can expect such faults to allow compromising RSA private keys during decryption or signing. \r\n\r\nWe first validate this hypothesis: We evaluate two commercial-grade GPU-based implementations of RSA within openSSL (called RNS and MP), under a wide range of overclocking levels and temperatures, and demonstrate that both implementations are vulnerable.\r\n\r\nHowever, and more importantly, we show for the first time that even if the GPU is benignly overclocked to a seemingly ``safe'' rate, a successful attack can still be mounted, over the network, by simply sending requests at an aggressive rate to increase the temperature. Hence, setting any level of overclocking on the GPU is risky.\r\n\r\nMoreover, we observe a huge difference in the implementations'\r\nvulnerability: the rate of RSA breaks for RNS is 4 orders of magnitude higher than that of MP. We attribute this difference to the implementations' memory usage patterns: RNS makes heavy use of the GPU's global memory, which is accessed via both the Unified (L1) cache and the L2 cache; MP primarily uses ``shared'' on-chip memory, which is local to each GPU Streaming MultiProcessor (SM) and is uncached,  utilizing the memory banks used for the L1 cache. We believe that the computation faults are caused by reads from the global memory, which under a combination of overclocking, high temperature and high memory contention, occasionally return stale values.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tel Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Reuven Yakar"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tel Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Avishai Wool",
+            "orcid": "0000-0002-8371-4759"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tel Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Eyal Ronen",
+            "orcid": "0000-0002-6013-7426"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-30T15:28:15Z"
+        }
+    ],
+    "keywords": [
+        "RSA",
+        "GPU",
+        "fault attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/145.pdf",
+    "pid": "145",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Breaking RSA with Overclocking-induced GPU Faults",
+    "year": 2025,
+    "repo": [
+        "https://github.com/integralfx/MemTestHelper/blob/master/DDR4%20OC%20Guide.md",
+        "https://github.com/integralfx/MemTestHelper/blob/master/DDR4%20OC%20Guide.md",
+        "https://gist.github.com/disq/995082",
+        "https://gist.github.com/disq/995082",
+        "https://github.com/brandonkovacs/nvidia-overclock-scripts",
+        "https://github.com/brandonkovacs/nvidia-overclock-scripts",
+        "https://github.com/geedo0/cuda_bitcoin_miner",
+        "https://github.com/geedo0/cuda_bitcoin_miner",
+        "https://github.com/lwakefield/libgpucrypto"
+    ]
+}
+,
+{
+    "abstract": "This paper presents a novel single-trace side-channel attack on FALCON---a lattice-based post-quantum digital signature protocol recently approved for standardization by NIST. We target the discrete Gaussian sampling operation within the FALCON key generation scheme and use a single power measurement trace to succeed. Notably, negating the 'shift right 63-bit' operation (for 64-bit values) leaks critical information about the '-1' vs. '0' assignments to intermediate coefficients. These leaks enable full recovery of the generated secret keys. The proposed attack is implemented on an ARM Cortex-M4 microcontroller running both reference and optimized software implementation from FALCON's NIST Round 3 package. \r\n Statistical analysis with 500k tests reveals a per coefficient success rate of 99.9999999478% and a full key recovery success rate of 99.99994654% for FALCON-512. This work highlights the vulnerability of current software solutions to single-trace attacks and underscores the urgent need to develop single-trace resilient software for embedded systems.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "North Carolina State University",
+                    "ror": "https://ror.org/04tj63d06"
+                }
+            ],
+            "fullName": "Jinyi Qiu",
+            "orcid": "0009-0008-0714-4302"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "North Carolina State University",
+                    "ror": "https://ror.org/04tj63d06"
+                }
+            ],
+            "fullName": "Aydin Aysu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-30T15:57:15Z"
+        }
+    ],
+    "keywords": [
+        "Post quantum cryptography",
+        "FALCON",
+        "Side-channel attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "note": "Original upload, submitted for peer review in 2024",
+    "pdffile": "2025/146.pdf",
+    "pid": "146",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SHIFT SNARE: Uncovering Secret Keys in FALCON via Single-Trace Analysis",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We develop an efficient algorithm to detect whether a superspecial genus 2 Jacobian is optimally $(N, N)$-split for each integer $N \\leq 11$. Incorporating this algorithm into the best-known attack against the superspecial isogeny problem in dimension 2 (due to Costello and Smith) gives rise to significant cryptanalytic improvements. Our implementation shows that when the underlying prime $p$ is 100 bits, the attack is sped up by a factor of $25$; when the underlying prime is 200 bits, the attack is sped up by a factor of $42$; and, when the underlying prime is 1000 bits, the attack is sped up by a factor of $160$. Furthermore, we describe a more general algorithm to find endomorphisms of superspecial genus 2 Jacobians.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure de Lyon",
+                    "ror": "https://ror.org/04zmssz18"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                }
+            ],
+            "fullName": "Maria Corte-Real Santos",
+            "orcid": "0000-0003-2651-8951"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Queensland University of Technology",
+                    "ror": "https://ror.org/03pnv4752"
+                }
+            ],
+            "fullName": "Craig Costello",
+            "orcid": "0000-0001-5423-7714"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Bristol",
+                    "ror": "https://ror.org/0524sp257"
+                }
+            ],
+            "fullName": "Sam Frengley",
+            "orcid": "0000-0002-8904-6253"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-30T17:30:30Z"
+        }
+    ],
+    "keywords": [
+        "isogenies",
+        "post-quantum cryptography",
+        "superspecial abelian surfaces",
+        "endomorphisms"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This article is an extended version of the PKC 2024 article \"An algorithm for efficient detection of (N,N)-splittings and its application to the isogeny problem in dimension 2\" (eprint 2022/1736), in which we additionally present an algorithm to detect superspecial Jacobians that have real multiplication by a maximal order in a real quadratic field using similar techniques.",
+    "pdffile": "2025/147.pdf",
+    "pid": "147",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient algorithms for the detection of $(N,N)$-splittings and endomorphisms",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mariascrs/SplitSearcher"
+    ]
+}
+,
+{
+    "abstract": "OPC UA is a standardized Industrial Control System (ICS) protocol, deployed in critical infrastructures, that aims to ensure security. The forthcoming version 1.05 includes major changes in the underlying cryptographic design, including a Diffie-Hellmann based key exchange, as opposed to the previous RSA based version. Version 1.05 is supposed to offer stronger security, including Perfect Forward Secrecy (PFS). \r\n\r\nWe perform a formal security analysis of the security protocols specified in OPC UA v1.05 and v1.04, for the RSA-based and the new DH-based mode, using the state-of-the-art symbolic protocol verifier ProVerif. Compared to previous studies, our model is much more comprehensive, including the new protocol version, combination of the different sub-protocols for establishing secure channels, sessions and their management, covering a large range of possible configurations. This results in one of the largest models ever studied in ProVerif raising many challenges related to its verification mainly due to the complexity of the state machine. We discuss how we mitigated this complexity to obtain meaningful analysis results. Our analysis uncovered several new vulnerabilities, that have been reported to and acknowledged by the OPC Foundation. We designed and proposed provably secure fixes, most of which are included in the upcoming version of the standard.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ANSSI, France"
+                },
+                {
+                    "name": "Universit\u00e9 de Lorraine, France"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                },
+                {
+                    "name": "LORIA, France"
+                }
+            ],
+            "fullName": "Vincent Diemunsch"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 de Lorraine, France"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                },
+                {
+                    "name": "LORIA, France"
+                }
+            ],
+            "fullName": "Lucca Hirschi",
+            "orcid": "0000-0003-4572-0581"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 de Lorraine, France"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                },
+                {
+                    "name": "LORIA, France"
+                }
+            ],
+            "fullName": "Steve Kremer",
+            "orcid": "0009-0004-6946-0678"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-30T18:21:39Z"
+        }
+    ],
+    "keywords": [
+        "formal methods",
+        "security analysis",
+        "proverif",
+        "OPC UA",
+        "ICS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "note": "Accepted for publication at USENIX Security 2025.\r\nArtifacts were evaluated and are available at: https://archive.softwareheritage.org/swh:1:dir:b6e5fd536d61364f60f67918dae71ad8cb9f75ea",
+    "pdffile": "2025/148.pdf",
+    "pid": "148",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Comprehensive Formal Security Analysis of OPC UA",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we study practical constructions of asynchronous distributed key reconfiguration ($\\mathsf{ADKR}$), which enables an asynchronous fault-tolerant system with an existing threshold cryptosystem to efficiently generate a new threshold cryptosystem for a reconfigured set of participants. While existing asynchronous distributed threshold key generation ($\\mathsf{ADKG}$) protocols theoretically solve $\\mathsf{ADKR}$, they fail to deliver satisfactory scalability due to cubic communication overhead, even with simplifications to the reconfiguration setting.\r\n\r\nWe introduce a more efficient \\textit{share-dispersal-then-agree-and-recast} paradigm for constructing $\\mathsf{ADKR}$ with preserving adaptive security. The method replaces expensive $O(n)$ asynchronous verifiable secret sharing   protocols in   classic $\\mathsf{ADKG}$ with $O(n)$ cheaper dispersals of publicly-verifiable sharing transcripts;  after consensus confirms a set of finished dispersals, it selects a small $\\kappa$-subset of finished dispersals for verification, reducing the total overhead to $O(\\kappa n^2)$ from $O(n^3)$, where $\\kappa$ is a small constant (typically $\\sim$30 or less). To further optimize concrete efficiency, we propose an interactive protocol with linear communication to generate publicly verifiable secret sharing (PVSS) transcripts, avoiding computationally expensive non-interactive PVSS. Additionally, we introduce a distributed PVSS verification mechanism, minimizing redundant computations across different parties and reducing the dominating PVSS verification cost by about one-third.\r\n\r\nOur design also enables diverse applications: (i) given a quadratic-communication asynchronous coin-flipping protocol, it implies the first quadratic-communication $\\mathsf{ADKG}$; and (ii) it can   be extended to realize the first quadratic-communication asynchronous dynamic proactive secret sharing (ADPSS) protocol with adaptive security. Experimental evaluations on a global network of 256 AWS servers show up to 40\\% lower latency compared to state-of-the-art $\\mathsf{ADKG}$ protocols (with simplifications to the reconfiguration setting), highlighting the practicality of our $\\mathsf{ADKR}$ in large-scale asynchronous systems.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sydney",
+                    "ror": "https://ror.org/0384j8v12"
+                }
+            ],
+            "fullName": "Hanwen Feng",
+            "orcid": "0000-0002-7069-5165"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Software Chinese Academy of Sciences"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptology",
+                    "ror": "https://ror.org/02pn5rj08"
+                },
+                {
+                    "name": "University of Chinese Academy of Sciences",
+                    "ror": "https://ror.org/05qbk4x57"
+                }
+            ],
+            "fullName": "Yingzi Gao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Software Chinese Academy of Sciences"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptology",
+                    "ror": "https://ror.org/02pn5rj08"
+                },
+                {
+                    "name": "University of Chinese Academy of Sciences",
+                    "ror": "https://ror.org/05qbk4x57"
+                }
+            ],
+            "fullName": "Yuan Lu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sydney",
+                    "ror": "https://ror.org/0384j8v12"
+                }
+            ],
+            "fullName": "Qiang Tang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Software Chinese Academy of Sciences"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptology",
+                    "ror": "https://ror.org/02pn5rj08"
+                },
+                {
+                    "name": "University of Chinese Academy of Sciences",
+                    "ror": "https://ror.org/05qbk4x57"
+                }
+            ],
+            "fullName": "Jing Xu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-01-30T23:38:54Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/149.pdf",
+    "pid": "149",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Practical Asynchronous Distributed Key Reconfiguration and Its Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
