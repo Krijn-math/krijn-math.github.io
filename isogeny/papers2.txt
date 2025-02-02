@@ -1,3 +1,4 @@
+cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_week;;;https://github.com/jtcc2/cycles-and-cuts
 efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;maria corte-real santos, craig costello, sam frengley;;;2025/147;;;last_week;;;https://github.com/mariascrs/SplitSearcher
 isogeny-based cryptography using isomorphisms of superspecial abelian surfaces;;;pierrick gaudry, julien soumier, pierre-jean spaenlehauer;;;2025/136;;;last_week;;;https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments
 prism: simple and compact identification and signatures from large prime degree isogenies;;;andrea basso, giacomo borin, wouter castryck, maria corte-real santos, riccardo invernizzi, antonin leroux, luciano maino, frederik vercauteren, benjamin wesolowski;;;2025/135;;;last_week;;;https://github.com/KULeuven-COSIC/PRISM
@@ -61,7 +62,6 @@ radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_year;;;none
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;last_year;;;https://github.com/TheParallelSquarerootVeluTeam/Parallel-Squareroot-Velu
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_year;;;none
 π: a unified framework for verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_year;;;https://github.com/Baghery/VSS-ABCP23
-faster constant-time evaluation of the kronecker symbol with application to elliptic curve hashing;;;diego f. aranha, benjamin salling hvass, bas spitters, mehdi tibouchi;;;2023/1261;;;last_year;;;https://github.com/relic-toolkit/relic
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_year;;;https://github.com/theQRL/Whitepaper/blob/master/QRL_whitepaper.pdf
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_year;;;none
 computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_year;;;https://gitlab.inria.fr/nsarkis/poc-scalar-multiplication-kummer-lines
