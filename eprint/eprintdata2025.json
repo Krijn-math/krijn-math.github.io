@@ -11314,4 +11314,217 @@
         "https://github.com/jtcc2/cycles-and-cuts"
     ]
 }
+,
+{
+    "abstract": "This paper presents a novel approach to verifiable vote tallying using additive  homomorphism, which can be appended to existing voting systems without modifying the underlying infrastructure.  Existing End-to-End Verifiable (E2E-V) systems like Belenios and ElectionGuard rely on distributed trust models or are vulnerable to decryption compromises, making them less suitable for general elections. Our approach introduces a tamper-evident commitment to votes through cryptographic hashes derived from homomorphic encryption schemes such as Paillier. The proposed system provides tallied-as-cast verifiability without revealing individual votes, thereby preventing coercion. The system also provides the ability to perform public verification of results. We also show that this system can be transitioned to quantum-secure encryption like Regev for future-proofing the system.  We discuss how to deploy this system in a real-world scenario, including for general political elections, analyzing the security implications and report on the limitations of this system. We believe that the proposed system offers a practical solution to the problem of verifiable vote tallying in general elections.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Madras",
+                    "ror": "https://ror.org/03v0r5n49"
+                }
+            ],
+            "fullName": "Athish Pranav Dharmalingam",
+            "orcid": "0009-0000-7326-4662"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Madras",
+                    "ror": "https://ror.org/03v0r5n49"
+                }
+            ],
+            "fullName": "Sai Venkata Krishnan",
+            "orcid": "0009-0008-9609-772X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Madras",
+                    "ror": "https://ror.org/03v0r5n49"
+                }
+            ],
+            "fullName": "KC Sivaramakrishnan",
+            "orcid": "0000-0002-3491-1780"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Madras",
+                    "ror": "https://ror.org/03v0r5n49"
+                }
+            ],
+            "fullName": "N.S. Narayanaswamy",
+            "orcid": "0000-0002-8771-3921"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-01T11:59:52Z"
+        }
+    ],
+    "keywords": [
+        "Electronic voting machine",
+        "Voter-verified paper audit trail",
+        "Tallied-as-cast",
+        "Homomorphic encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/156.pdf",
+    "pid": "156",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "TallyGuard: Privacy Preserving Tallied-as-cast Guarantee",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Physical side-channel analysis (SCA) operates on the foundational assumption of access to known plaintext or ciphertext. However, this assumption can be easily invalidated in various scenarios, ranging from common encryption modes like Cipher Block Chaining (CBC) to complex hardware implementations, where such data may be inaccessible. Blind SCA addresses this challenge by operating without the knowledge of plaintext or ciphertext. Unfortunately, prior such approaches have shown limited success in practical settings.\r\n\r\nIn this paper, we introduce the Deep Learning-based Blind Side-channel Analysis (DL-BSCA) framework, which leverages deep neural networks to recover secret keys in blind SCA settings. In addition, we propose a novel labeling method, Multi-point Cluster-based (MC) labeling, accounting for dependencies between leakage variables by exploiting multiple sample points for each variable, improving the accuracy of trace labeling. \r\nWe validate our approach across four datasets, including symmetric key algorithms (AES and Ascon) and a post-quantum cryptography algorithm, Kyber, with platforms ranging from high-leakage 8-bit AVR XMEGA to noisy 32-bit ARM STM32F4. Notably, previous methods failed to recover the key on the same datasets. Furthermore, we demonstrate the first successful blind SCA on a desynchronization countermeasure enabled by DL-BSCA and MC labeling. All experiments are validated with real-world SCA measurements, highlighting the practicality and effectiveness of our approach.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Delft University of Technology, The Netherlands"
+                }
+            ],
+            "fullName": "Azade Rezaeezade"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Trevor Yap"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Dirmanto Jap"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Shivam Bhasin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University, The Netherlands"
+                }
+            ],
+            "fullName": "Stjepan Picek"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-02T11:25:19Z"
+        }
+    ],
+    "keywords": [
+        "Deep Learning-based Side-Channel Attack",
+        "Blind Side-Channel Attack",
+        "Clustering",
+        "Kyber",
+        "Ascon"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/157.pdf",
+    "pid": "157",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Breaking the Blindfold: Deep Learning-based Blind Side-channel Analysis",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mupq/pqm4",
+        "https://github.com/mupq/pqm4"
+    ]
+}
+,
+{
+    "abstract": "Impossible differential (ID) cryptanalysis and impossible boomerang (IB) cryptanalysis are two methods of impossible cryptanalysis against block ciphers. Since the seminal work introduced by Boura et al. in 2014, there have been no substantial advancements in the key recovery process for impossible cryptanalysis, particularly for the IB attack.In this paper, we propose a generic key recovery framework for impossible cryptanalysis that supports arbitrary key-guessing strategies, enabling optimal key recovery attacks. Within the framework, we provide a formal analysis of probabilistic extensions in impossible cryptanalysis for the first time. Besides, for the construction of IB distinguishers, we propose a new method for finding contradictions in multiple rounds.\r\n\r\nBy incorporating these techniques, we propose an Mixed-Integer Linear Programming (MILP)-based tool for finding full ID and IB attacks. To demonstrate the power of our methods, we applied it to several block ciphers, including SKINNY, SKINNYee, Midori, and Deoxys-BC. Our approach yields a series of optimal results in impossible cryptanalysis, achieving significant improvements in time and memory complexities. Notably, our IB attack on SKINNYee is the first 30-round attack.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Jianing Zhang",
+            "orcid": "0009-0001-5837-0747"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Haoyang Wang",
+            "orcid": "0009-0005-0090-8101"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-02T14:23:04Z"
+        }
+    ],
+    "keywords": [
+        "Impossible differential cryptanalysis",
+        "Impossible boomerang cryptanalysis",
+        "Key recovery",
+        "SKINNY",
+        "SKINNYee",
+        "Midori",
+        "Deoxys-BC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/158.pdf",
+    "pid": "158",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Optimizing Key Recovery in Impossible Cryptanalysis and Its Automated Tool",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ImpossibleCryptanalysis-2024/Tool"
+    ]
+}
 ]
