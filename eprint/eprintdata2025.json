@@ -11527,4 +11527,685 @@
         "https://github.com/ImpossibleCryptanalysis-2024/Tool"
     ]
 }
+,
+{
+    "abstract": "In 2011, Lu introduced the impossible boomerang attack at DCC. This powerful cryptanalysis technique combines the strengths of the impossible differential and boomerang attacks, thereby inheriting the advantages of both cryptographic techniques. In this paper, we propose a holistic framework comprising two generic and effective algorithms and a MILP-based model to search for the optimal impossible boomerang attack systematically. The first algorithm incorporates any key guessing strategy, while the second integrates the meet-in-the-middle (MITM) attack into the key recovery process. Our framework is highly flexible, accommodating any set of attack parameters and returning the optimal attack complexity. When applying our framework to Deoxys-BC-256, Deoxys-BC-384, Joltik-BC-128, Joltik-BC-192, and SKINNYe v2, we achieve several significant improvements. We achieve the first 11-round impossible boomerang attacks on Deoxys-BC-256\\ and Joltik-BC-128. For SKINNYe v2, we achieve the first 33-round impossible boomerang attack, then using the MITM approach in the key recovery attack, the time complexity is significantly reduced. Additionally, for the 14-round Deoxys-BC-384 and Joltik-BC-192, the time complexity of the impossible boomerang attack is reduced by factors exceeding 2^{27} and 2^{12}, respectively.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "College of Cyber Security, Jinan University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Yincen Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "College of Cyber Security, Jinan University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Qinggan Fu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "College of Cyber Security, Jinan University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Ning Zhao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China; School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Jiahao Zhao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "College of Cyber Security, Jinan University, Guangzhou, China; National Joint Engineering Research Center of Network Security Detection and Protection Technology, Jinan University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Ling Song"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China; School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Qianqian Yang"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-03T03:50:36Z"
+        }
+    ],
+    "keywords": [
+        "Impossible boomerang",
+        "Guessing strategy",
+        "Meet-in-the-Middle",
+        "Deoxys-BC",
+        "Joltik-BC",
+        "SKINNYe v2"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/159.pdf",
+    "pid": "159",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Holistic Framework for Impossible Boomerang Attacks",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Icsnow/IB_models",
+        "https://github.com/Icsnow/IB_models"
+    ]
+}
+,
+{
+    "abstract": "The nonlinear filter model is an old and well understood approach to the design of secure stream ciphers. Extensive research over several decades has shown how to attack stream ciphers based on this model and has identified the security properties required of the Boolean function used as the filtering function to resist such attacks. This led to the problem of constructing Boolean functions which provide adequate security and at the same time are efficient to implement. Unfortunately, over the last two decades no good solutions to this problem appeared in the literature. The lack of good solutions has effectively led to nonlinear filter model becoming more or less obsolete. This is a big loss to the cryptographic design toolkit, since the great advantages of the nonlinear filter model are its simplicity, well understood security and the potential to provide low cost solutions for hardware oriented stream ciphers. In this paper we construct balanced functions on an odd number $n\\geq 5$ of variables with the following provable properties: linear bias equal to $2^{-\\lfloor n/2\\rfloor -1}$, algebraic degree equal to $2^{\\lfloor \\log_2\\lfloor n/2\\rfloor \\rfloor}$, algebraic immunity at least $\\lceil (n-1)/4\\rceil$, fast algebraic immunity at least $1+\\lceil (n-1)/4\\rceil $, and can be implemented using $O(n)$ NAND gates. The functions are obtained from a simple modification of the well known class of Maiorana-McFarland bent functions. By appropriately choosing $n$ and the length $L$ of the linear feedback shift register, we show that it is possible to obtain examples of stream ciphers which are $\\kappa$-bit secure against known types of attacks for various values of $\\kappa$. We provide concrete proposals for $\\kappa=80,128,160,192,224$ and $256$. For the $80$-bit, $128$-bit, and the $256$-bit security levels, the circuits for the corresponding stream ciphers require about 1743.5, 2771.5, and 5607.5 NAND gates respectively. For the $80$-bit and the $128$-bit security levels, the gate count estimates compare quite well to the famous ciphers Trivium and Grain-128a respectively, while for the $256$-bit security level, we do not know of any other stream cipher design which has such a low gate count.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Paris"
+                }
+            ],
+            "fullName": "Claude Carlet"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute",
+                    "ror": "https://ror.org/00q2w1j53"
+                }
+            ],
+            "fullName": "Palash Sarkar",
+            "orcid": "0000-0002-5346-2650"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-03T06:47:33Z"
+        }
+    ],
+    "keywords": [
+        "Boolean function",
+        "stream cipher",
+        "nonlinearity",
+        "algebraic immunity",
+        "efficient implementation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/160.pdf",
+    "pid": "160",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Nonlinear Filter Model of Stream Cipher Redivivus",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Anonymous Attribute-Based Credentials (ABCs) allow users to prove possession of attributes while adhering to various authentication policies and without revealing unnecessary information. Single-use ABCs are particularly appealing for their lightweight nature and practical efficiency. These credentials are typically built using blind signatures, with Anonymous Credentials Light (ACL) being one of the most prominent schemes in the literature. However, the security properties of single-use ABCs, especially their secure showing property, have not been fully explored, and prior definitions and corresponding security proofs fail to address scenarios involving partial attribute disclosure effectively. In this work, we propose a stronger secure showing definition that ensures robust security even under selective attribute revelation. Our definition extends the winning condition of the existing secure showing experiment by adding various constraints on the subsets of opened attributes. We show how to represent this winning condition as a matching problem in a suitable bipartite graph, thus allowing for it to be verified efficiently. We then prove that ACL satisfies our strong secure showing notion without any modification. Finally, we define double-spending prevention for single-use ABCs, and show how ACL satisfies the definition.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "George Mason University",
+                    "ror": "https://ror.org/02jqj7156"
+                },
+                {
+                    "name": "Mysten Labs"
+                }
+            ],
+            "fullName": "Foteini Baldimtsi",
+            "orcid": "0000-0003-3296-5336"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                }
+            ],
+            "fullName": "Julia Kastner",
+            "orcid": "0000-0002-8879-8226"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Julian Loss",
+            "orcid": "0000-0002-7979-3810"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Saarland University",
+                    "ror": "https://ror.org/01jdpyv68"
+                }
+            ],
+            "fullName": "Omar Renawi",
+            "orcid": "0009-0004-1019-4897"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-03T15:36:02Z"
+        }
+    ],
+    "keywords": [
+        "Blind Signatures",
+        "Anonymous Credentials"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/161.pdf",
+    "pid": "161",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Secure Showing of Partial Attributes",
+    "year": 2025,
+    "repo": [
+        "https://github.com/google/anonymous-tokens"
+    ]
+}
+,
+{
+    "abstract": "Private Join and Compute (PJC) is a two-party protocol recently proposed by Google for various use-cases, including ad conversion (Asiacrypt 2021) and which generalizes their deployed private set intersection sum (PSI-SUM) protocol (EuroS&P 2020).\r\n\r\nPJC allows two parties, each holding a key-value database, to privately evaluate the inner product of the values whose keys lie in the intersection. While the functionality output is not typically considered in the security model of the MPC literature, it may pose real-world privacy risks, thus raising concerns about the potential deployment of protocols like PJC. \r\n\r\nIn this work, we analyze the risks associated with the PJC functionality output. We consider an adversary that is a participating party of PJC and describe four practical attacks that break the other party's input privacy, and which are able to recover both membership of keys in the intersection and their associated values.  Our attacks consider the privacy threats associated with deployment and highlight the need to include the functionality output as part of the MPC security model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Francesca Falzon",
+            "orcid": "0000-0001-8415-6237"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Tianxin Tang",
+            "orcid": "0000-0003-2179-6709"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-03T16:02:28Z"
+        }
+    ],
+    "keywords": [
+        "private set intersection",
+        "private join and compute",
+        "MPC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/162.pdf",
+    "pid": "162",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Learning from Functionality Outputs: Private Join and Compute in the Real World",
+    "year": 2025,
+    "repo": [
+        "https://github.com/google/private-join-and-compute/commit/c0cb3f5b5b616caaaef80b7f7e9c335f4fe53ce7",
+        "https://github.com/google/private-join-and-compute/commit/c0cb3f5b5b616caaaef80b7f7e9c335f4fe53ce7",
+        "https://github.com/google/private-join-and-compute/blob/master/README.md",
+        "https://github.com/google/private-join-and-compute/blob/master/README.md",
+        "https://github.com/google/private-join-and-compute/blob/master/README.md"
+    ]
+}
+,
+{
+    "abstract": "The GINX method in TFHE offers low-latency ciphertext bootstrapping with relatively small bootstrapping keys, but is limited to binary or ternary key distributions. In contrast, the AP method supports arbitrary key distributions, however at the cost of significantly large bootstrapping keys. Building on AP, automorphism-based methods (LMK\u207a, EUROCRYPT 2023) achieve smaller keys, though each automorphism application necessitates a key switch, introducing computational overhead and noise.\r\nThis paper advances automorphism-based methods in two important ways. First, it proposes a novel traversal blind rotation algorithm that optimizes the number of key switches for a given key material. Second, it introduces an automorphism-parametrized external product that seamlessly applies an automorphism to one of the input ciphertexts. Together, these techniques substantially reduce the number of key switches, resulting in faster bootstrapping and improved noise control.  As an independent contribution, this paper also introduce a comprehensive theoretical framework for analyzing the expected number of automorphism key switches, whose predictions perfectly align with the results of extensive numerical experiments, demonstrating its practical relevance.\r\nIn a typical setting, by utilizing additional key material, the LLW\u207a approach (TCHES 2024) reduces key switches by 17% compared to LMK\u207a. Our combined techniques achieve a 46% reduction using similar key material and can eliminate an arbitrary large number (e.g., > 99%) of key switches  with only a moderate (9x) increase in key material size.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Zama, Paris, France",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Olivier Bernard",
+            "orcid": "0000-0002-3410-3134"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama, Paris, France",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Marc Joye",
+            "orcid": "0000-0003-4433-2333"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-04T01:02:31Z"
+        }
+    ],
+    "keywords": [
+        "Fully homomorphic encryption (FHE)",
+        "Ciphertext bootstrapping",
+        "Blind rotation",
+        "Automorphisms"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/163.pdf",
+    "pid": "163",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Bootstrapping (T)FHE Ciphertexts via Automorphisms: Closing the Gap Between Binary and Gaussian Keys",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zama-ai/tfhe-rs",
+        "https://github.com/zama-ai/tfhe-rs"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-78020-2_1",
+    "abstract": "Multi-Authority Functional Encryption ($\\mathsf{MA}$-$\\mathsf{FE}$) [Chase, TCC'07; Lewko-Waters, Eurocrypt'11; Brakerski et al., ITCS'17] is a popular generalization of functional encryption ($\\mathsf{FE}$) with the central goal of decentralizing the trust assumption from a single central trusted key authority to a group of multiple, independent and non-interacting, key authorities. Over the last several decades, we have seen tremendous advances in new designs and constructions for $\\mathsf{FE}$ supporting different function classes, from a variety of assumptions and with varying levels of security. Unfortunately, the same has not been replicated in the multi-authority setting. The current scope of $\\mathsf{MA}$-$\\mathsf{FE}$ designs is rather limited, with positive results only known for (all-or-nothing) attribute-based functionalities, or need full power of general-purpose code obfuscation. This state-of-the-art in $\\mathsf{MA}$-$\\mathsf{FE}$ could be explained in part by the implication provided by Brakerski et al. (ITCS'17). It was shown that a general-purpose obfuscation scheme can be designed from any $\\mathsf{MA}$-$\\mathsf{FE}$ scheme for circuits, even if the $\\mathsf{MA}$-$\\mathsf{FE}$ scheme is secure only in a bounded-collusion model, where at most two keys per authority get corrupted.\r\n\r\nIn this work, we revisit the problem of $\\mathsf{MA}$-$\\mathsf{FE}$, and show that existing implication from $\\mathsf{MA}$-$\\mathsf{FE}$ to obfuscation is not tight. We provide new methods to design $\\mathsf{MA}$-$\\mathsf{FE}$ for circuits from simple and minimal cryptographic assumptions. Our main contributions are summarized below\r\n\r\n  1. We design a $\\mathsf{poly}(\\lambda)$-authority $\\mathsf{MA}$-$\\mathsf{FE}$ for circuits in the bounded-collusion model. Under the existence of public-key encryption, we prove it to be statically simulation-secure. Further, if we assume sub-exponential security of public-key encryption, then we prove it to be adaptively simulation-secure in the Random Oracle Model.\r\n  2. We design a $O(1)$-authority $\\mathsf{MA}$-$\\mathsf{FE}$ for circuits in the bounded-collusion model. Under the existence of 2/3-party non-interactive key exchange, we prove it to be adaptively simulation-secure.\r\n  3. We provide a new generic bootstrapping compiler for $\\mathsf{MA}$-$\\mathsf{FE}$ for general circuits to design a simulation-secure $(n_1 + n_2)$-authority $\\mathsf{MA}$-$\\mathsf{FE}$ from any two $n_1$-authority and $n_2$-authority $\\mathsf{MA}$-$\\mathsf{FE}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Wisconsin-Madison"
+                }
+            ],
+            "fullName": "Rishab Goyal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Wisconsin-Madison"
+                }
+            ],
+            "fullName": "Saikumar Yadugiri",
+            "orcid": "0000-0002-5965-1057"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-04T01:25:24Z"
+        }
+    ],
+    "keywords": [
+        "Functional Encryption",
+        "Multi-Authority",
+        "Encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/164.pdf",
+    "pid": "164",
+    "pubtype": {
+        "pubtype": "TCC",
+        "revisiontype": "MINOR",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multi-Authority Functional Encryption with Bounded Collusions from Standard Assumptions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we revisit shuffle protocol for Shamir secret sharing. Upon examining previous works, we observe that existing constructions either produce non-uniform shuffle or require large communication and round complexity, e.g. exponential in the number of parties. We propose two shuffle protocols, both of which shuffle uniformly within $O(\\frac{k + l}{\\log k}n^2m\\log m)$ communication for shuffling rows of an $m\\times l$ matrix shared among $n$ parties, where $k\\leq m$ is a parameter balancing communication and computation. Our first construction is more concretely efficient, while our second construction requires only $O(nml)$ online communication within $O(n)$ round. In terms of overall communication and online communication, both shuffle protocols outperform current optimal shuffle protocols for Shamir secret sharing.\r\n        \r\nAt the core of our constructions is a novel permutation-sharing technique, which can be used to permute arbitrarily many vectors by computing matrix-vector products. Once shared, applying a permutation becomes much cheaper, which results in a faster online phase. Letting each party share one secret uniform permutation in the offline phase and applying them sequentially in the online phase, we obtain our first shuffle protocol. To further optimize online complexity and simplify the trade-off, we adopt the shuffle correlation proposed by Gao et al. and obtain the second shuffle protocol with $O(nml)$ online communication and $O(n^2ml)$ online computation. This brings an additional benefit that the online complexity is now independent of offline complexity, which reduces parameter optimization to optimizing offline efficiency.\r\n\r\nOur constructions require only most basic primitives in Shamir secret sharing scheme, and work for arbitrary field $\\mathbb{F}$ of size larger than $n$. As shuffle is a frequent operation in algorithm design, we expect them to accelerate many other primitives in context of Shamir secret sharing MPC, such as sorting, oblivious data structure, etc.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanjing University",
+                    "ror": "https://ror.org/01rxvg760"
+                }
+            ],
+            "fullName": "Jiacheng Gao",
+            "orcid": "0000-0003-4288-5954"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanjing University",
+                    "ror": "https://ror.org/01rxvg760"
+                }
+            ],
+            "fullName": "Yuan Zhang",
+            "orcid": "0000-0001-9682-5231"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanjing University",
+                    "ror": "https://ror.org/01rxvg760"
+                }
+            ],
+            "fullName": "Sheng Zhong",
+            "orcid": "0000-0002-6581-8730"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-04T03:10:06Z"
+        }
+    ],
+    "keywords": [
+        "Shuffle",
+        "Multiparty Computation",
+        "Shamir Secret Sharing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/165.pdf",
+    "pid": "165",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Shuffle Shamir Secret Shares Uniformly with Linear Online Communication",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The computation of the inverse of a polynomial over a quotient ring or a finite field plays a very important role during the key generation of post-quantum cryptosystems like NTRU, BIKE, and LEDACrypt. It is therefore important that there exist an efficient algorithm capable of running in constant time, to prevent timing side-channel attacks. In this article, we study both constant-time algorithms based on Fermat's Little Theorem and the Extended $GCD$ Algorithm, and provide a detailed comparison in terms of performance. According to our conclusion, we see that the constant-time Extended $GCD$-based Bernstein-Yang's algorithm shows a better performance with 1.76x-3.76x on \\texttt{x86} platforms compared to FLT-based methods. Although we report numbers from a software implementation, we additionally provide a short glimpse of some recent results when these two algorithms are implemented on various hardware platforms. Finally, we also explore other exponentiation algorithms that work similarly to the Itoh-Tsuji inversion method. These algorithms perform fewer polynomial multiplications and show a better performance with 1.56x-1.96x on \\texttt{x86} platform compared to Itoh-Tsuji inversion method.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Florida Atlantic University",
+                    "ror": "https://ror.org/05p8w6387"
+                }
+            ],
+            "fullName": "Abhraneel Dutta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Florida Atlantic University",
+                    "ror": "https://ror.org/05p8w6387"
+                }
+            ],
+            "fullName": "Emrah Karagoz"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Florida Atlantic University",
+                    "ror": "https://ror.org/05p8w6387"
+                }
+            ],
+            "fullName": "Edoardo Persichetti"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Florida Atlantic University",
+                    "ror": "https://ror.org/05p8w6387"
+                }
+            ],
+            "fullName": "Pakize Sanal"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-04T14:33:21Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum",
+        "Polynomial Inversion",
+        "Constant Time",
+        "QC-MDPC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/166.pdf",
+    "pid": "166",
+    "pubtype": {
+        "note": "Indocrypt 2024",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Polynomial Inversion Algorithms in Constant Time for Post-Quantum Cryptography",
+    "year": 2025,
+    "repo": [
+        "www.github.com/ekaragoz/polyinv"
+    ]
+}
+,
+{
+    "abstract": "Recent server-side optimizations like speculative decoding significantly enhance the interactivity and resource efficiency of Large Language Model (LLM) services. However, we show that these optimizations inadvertently introduce new side-channel vulnerabilities through network packet timing and size variations that tend to be input-dependent. Network adversaries can leverage these side channels to learn sensitive information contained in \\emph{encrypted} user prompts to and responses from public LLM services.  \r\n\r\nThis paper formalizes the security implications using a novel indistinguishability framework and introduces a novel attack that establishes the insecurity of real-world LLM services with streaming APIs under our security framework.\r\n\r\nOur proposed attack effectively deconstructs encrypted network packet traces to reveal the sizes of underlying LLM-generated tokens and whether the tokens were generated with or without certain server-side optimizations. Our attack can accurately predict private attributes in real-world privacy-sensitive LLM applications in medicine and finance with $71$--$92\\%$ accuracy on an open-source vLLM service and $50$--$90\\%$ accuracy on the commercial ChatGPT service. Finally, we show that solutions that hide these side channels to different degrees expose a tradeoff between security and performance --- specifically, interactivity and network bandwidth overheads.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Mahdi Soleimani",
+            "orcid": "0000-0003-1531-8639"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Grace Jia",
+            "orcid": "0009-0007-9295-802X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "In Gim",
+            "orcid": "0000-0002-7581-9526"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Seung-seob Lee",
+            "orcid": "0000-0002-5224-8599"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Anurag Khandelwal",
+            "orcid": "0000-0002-2199-6391"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-04T15:27:58Z"
+        }
+    ],
+    "keywords": [
+        "LLM privacy",
+        "Deep learning privacy",
+        "Machine learning privacy",
+        "Side channel attacks",
+        "Speculative decoding"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/167.pdf",
+    "pid": "167",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Wiretapping LLMs: Network Side-Channel Attacks on Interactive LLM Services",
+    "year": 2025,
+    "repo": [
+        "https://github.com/vllm-project/vllm.git",
+        "https://github.com/vllm-project/vllm.git",
+        "https://github.com/bitsandbytes-foundation/bitsandbytes?tab=readme-ov-file",
+        "https://github.com/bitsandbytes-foundation/bitsandbytes?tab=readme-ov-file",
+        "https://github.com/bitsandbytes-foundation/bitsandbytes?tab=readme-ov-file"
+    ]
+}
+,
+{
+    "abstract": "A secret sharing scheme is a cryptographic primitive that allows a dealer to share a secret among a set of parties, so that only authorized subsets of them can recover it. The access structure of the scheme is the family of authorized subsets. In a weighted threshold secret sharing scheme, each party is assigned a weight according to its importance, and the authorized subsets are those in which the sum of their weights is at least the threshold value. \r\n\r\nFor these access structures, the best general constructions were presented by Beimel and Weinreb [IPL 2006]: The scheme with perfect security has share size $n^{O(\\log n)}$, while the scheme with computational security has share size polynomial in $n$. However, these constructions require the use of shallow monotone sorting networks, which limits their practical use.\r\n\r\nIn this context, we revisit this work and provide variants of these constructions that are feasible in practice. This is done by considering alternative circuits and formulas for weighted threshold functions that do not require monotone sorting networks. We show that, under the assumption that subexponentially secure one-way functions exist, any WTAS over $n$ parties and threshold $\\sigma$ admits a computational secret sharing scheme where the size of the shares is $\\mathrm{polylog}(n)$ and the size of the public information is $O(n^2\\log n\\log \\sigma)$. Moreover, we show that any authorized subset only needs to download $O(n\\log n\\log \\sigma)$ bits of public information to recover the secret.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Rovira i Virgili University",
+                    "ror": "https://ror.org/00g5sqv46"
+                }
+            ],
+            "fullName": "Oriol Farr\u00e0s",
+            "orcid": "0000-0002-7495-5980"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Rovira i Virgili University",
+                    "ror": "https://ror.org/00g5sqv46"
+                }
+            ],
+            "fullName": "Miquel Guiot",
+            "orcid": "0009-0006-3187-2321"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-04T15:31:08Z"
+        }
+    ],
+    "keywords": [
+        "Secret sharing scheme",
+        "weighted threshold access structure",
+        "threshold cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/168.pdf",
+    "pid": "168",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Revisiting Beimel-Weinreb Weighted Threshold Secret Sharing Schemes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
