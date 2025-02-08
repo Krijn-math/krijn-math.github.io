@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Krijn Reijnders</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Override background for cv.html */
+        body {
+            background-color: rgb(211, 239, 189, 0.7);
+            /* Change as desired */
+        }
+
+        #photo-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+
+        .photo-item {
+            width: 100%;
+            /* height: 200px; */
+            /* Fixed height; adjust as needed */
+            overflow: hidden;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* This crops the image if necessary */
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="info">
+                <img class="circle-photo" src="krijn.jpg" alt="A photo of me.">
+                <p>Krĳn Reĳnders</p>
+                <p>Post-doc at <br> COSIC, KU Leuven</p>
+                <p>Previously, PhD at<br> Radboud University</p>
+                <p>
+                    <a href="mailto:reijnderskrijng@gmail.com">email</a> /
+                    <a href="https://bsky.app/profile/krijn.isogeni.es">bluesky</a>
+                </p>
+                </p>
+            </div>
+            <nav>
+                <!-- <h2>menu</h2> -->
+                <a class="internal" href="index.html">home</a>
+                <a class="internal" href="work.html">work</a>
+                <a class="internal" href="photos.html">photos</a>
+                <a class="internal" href="blurbs.html">blurbs</a>
+                <a class="internal" href="cv.html">cv</a>
+                <a class="internal" href="links.html">links</a>
+            </nav>
+        </div>
+        <main>
+            <h1>some of my photos</h1>
+
+            <p>I enjoy photography, mostly nature, animals, and landscapes.
+            </p>
+            <br>
+
+            <div id="photo-grid"></div>
+            <script>
+                // Shuffle function (Fisher-Yates)
+                function shuffleArray(array) {
+                    for (let i = array.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [array[i], array[j]] = [array[j], array[i]];
+                    }
+                }
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Create an array [1, 2, …, 30]
+                    const photoNumbers = Array.from({ length: 10 }, (_, i) => i + 1);
+                    shuffleArray(photoNumbers);
+                    const selected = photoNumbers.slice(0, 10);  // Pick 10 random numbers
+
+                    const grid = document.getElementById("photo-grid");
+
+                    selected.forEach(function (num) {
+                        const padded = num.toString().padStart(3, '0'); // "001", "002", etc.
+                        const imgSrc = "photos/photos" + padded + ".jpeg";
+
+                        const photoItem = document.createElement("div");
+                        photoItem.className = "photo-item";
+                        // Randomly assign a grid column span (1 or 2)
+                        // const span = Math.random() < 0.5 ? 1 : 2;
+                        // photoItem.style.gridColumn = `span ${span}`;
+
+                        const link = document.createElement("a");
+                        link.href = imgSrc;
+                        link.target = "_blank";
+
+                        const img = document.createElement("img");
+                        img.src = imgSrc;
+                        img.alt = "Photo " + padded;
+
+                        link.appendChild(img);
+                        photoItem.appendChild(link);
+                        grid.appendChild(photoItem);
+                    });
+                });
+            </script>
+        </main>
+    </div>
+</body>
+
+</html>
