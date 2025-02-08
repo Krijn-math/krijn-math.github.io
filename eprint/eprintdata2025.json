@@ -12667,4 +12667,447 @@
         "https://github.com/manel1874/private-phylogenetic-analysis/blob/4c8348c857bca0cfc74493067f3af7d15e8cd0b6/smc_engine/src/qHamParties.cpp#L810"
     ]
 }
+,
+{
+    "abstract": "Blockchain service offerings have seen a rapid rise\r\nin recent times. Many of these services realize a decentralized\r\narchitecture with a threshold adversary to avoid a single\r\npoint of failure and to mitigate key escrow issues. While\r\npayments to such services are straightforward in systems\r\nsupporting smart contracts, achieving fairness poses challenges\r\nin systems like Bitcoin, adhering to the UTXO model with\r\nlimited scripting capabilities. This is especially challenging\r\nwithout smart contracts, as we wish to pay only the required\r\nthreshold of t + 1 out of the n servers offering the service\r\ntogether, without any server claiming the payment twice.\r\n\r\nIn this paper, we introduce VITARIT 1, a novel payment\r\nsolution tailored for threshold cryptographic services in UTXO\r\nsystems like Bitcoin. Our approach guarantees robust provable\r\nsecurity while facilitating practical deployment. We focus on\r\nthe t-out-of-n distributed threshold verifiable random function\r\n(VRF) service with certain properties, such as threshold BLS\r\nsignatures, a recently highlighted area of interest. Our protocol\r\nenables clients to request verifiable random function (VRF)\r\nvalues from the threshold service, triggering payments to up\r\nto t + 1 servers of the distributed threshold VRF.\r\n\r\nOur efficient design relies on simple transactions using\r\nsignature verification scripts, making it immediately applicable\r\nin Bitcoin-like systems. We also introduce new tools and\r\ntechniques at both the cryptographic and transaction layers,\r\nincluding a novel signature-VRF exchange protocol for standard\r\nconstructions, which may be of independent interest. Addition-\r\nally, our transaction flow design prevents malicious servers\r\nfrom claiming payments twice, offering broader implications for\r\ndecentralized payment systems. Our prototype implementation\r\nshows that in the two-party interaction, the client takes 126.4\r\nmsec, and the server takes 204 msec, demonstrating practicality\r\nand deployability of the system",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security"
+                }
+            ],
+            "fullName": "Lucjan Hanzlik"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University/Supra Research"
+                }
+            ],
+            "fullName": "Aniket Kate"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Easwar Vivek Mangipudi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Pratyay Mukherjee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sydney"
+                }
+            ],
+            "fullName": "Sri AravindaKrishnan Thyagarajan"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-05T18:17:35Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/174.pdf",
+    "pid": "174",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "VITARIT: Paying for Threshold Services on Bitcoin and Friends",
+    "year": 2025,
+    "repo": [
+        "https://github.com/drand/",
+        "https://github.com/drand/",
+        "https://github.com/discreetlogcontracts/dlcspecs",
+        "https://github.com/discreetlogcontracts/dlcspecs",
+        "https://github.com/chatch/hashed-timelock-contract-ethereum",
+        "https://github.com/chatch/hashed-timelock-contract-ethereum"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-58754-2_1",
+    "abstract": "We revisit Updatable Public-Key Encryption (UPKE), which was introduced as a practical mechanism for building forward-secure cryptographic protocols. We begin by observing that all UPKE notions to date are neither syntactically flexible nor secure enough for the most important multi-party protocols motivating UPKE. We provide an intuitive taxonomy of UPKE properties -- some partially or completely overlooked in the past -- along with an overview of known (explicit and implicit) UPKE constructions. We then introduce a formal UPKE definition capturing all intuitive properties needed for multi-party protocols.\r\n\r\nNext, we provide a practical pairing-based construction for which we provide concrete security bounds under a standard assumption in the random oracle and the algebraic group model. The efficiency profile of the scheme compares very favorably with existing UPKE constructions (despite the added flexibility and stronger security). For example, when used to improve the forward security of the Messaging Layer Security protocol [RFC9420], our new UPKE construction requires $\\approx 1\\%$ of the bandwidth of the next-most efficient UPKE construction satisfying the strongest UPKE notion previously considered.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "AWS Wickr"
+                }
+            ],
+            "fullName": "Jo\u00ebl Alwen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Wien",
+                    "ror": "https://ror.org/04d836q62"
+                }
+            ],
+            "fullName": "Georg Fuchsbauer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "AWS Wickr"
+                }
+            ],
+            "fullName": "Marta Mularczyk"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-05T18:43:43Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/175.pdf",
+    "pid": "175",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Updatable Public-Key Encryption, Revisited",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Cross-chain bridges, realizing the transfer of information and assets between blockchains, form the core of blockchain interoperability solutions. Most existing bridge networks are modeled in an honest-malicious setting, where the bridge nodes are either honest or malicious. Rationality allows the nodes to deviate from the protocol arbitrarily for an economic incentive. In this work, we present HyperLoop, an efficient cross-chain multi-signature bridge and prove that it is safe and live game-theoretically, under the more realistic rational-malicious model.\r\n\r\nAs rational bridge nodes are allowed to deviate from the protocol and even collude, a monitor mechanism is necessitated, which we realize by introducing whistle-blower nodes. These whistle-blowers constantly check the operations of the bridge and raise complaints to a complaint resolution network in case of discrepancies. To enforce punishments, it is necessary for the nodes to stake an amount before participating as bridge nodes. Consequently, a cap on the volume of funds transferred over the bridge is established. We describe a sliding window mechanism and establish a relation between the stake and the sliding window limit necessary for the safety of the bridge.\r\n\r\nOur design yields an economic, computation, and communication-efficient bridge. We realize and deploy our bridge prototype bridging Ethereum and Polygon chains over testnets. For a 19-node bridge network, each bridge node takes an average of only 3 msec to detect and sign a source chain request, showing the highly efficiency and low-latency of the bridge.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                },
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Aniket Kate"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Easwar Vivek Mangipudi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Charan Nomula"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Raghavendra Ramesh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Athina Terzoglou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Joshua Tobkin"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-05T20:06:00Z"
+        }
+    ],
+    "keywords": [
+        "Cross-chain Bridge",
+        "Game Theory",
+        "Rational-Malicious model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/176.pdf",
+    "pid": "176",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "HyperLoop: Rationally secure efficient cross-chain bridge",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Lund et al. (JACM 1992) invented the powerful Sumcheck protocol that has been extensively used in complexity theory and also for designing concretely efficient (zero-knowledge) arguments. In this work, we systematically study Sumcheck in the context of secure multi-party computation (MPC). Our main result is a new generic framework for lifting semi-honest MPC protocols to malicious security, with a {\\em constant} multiplicative overhead in {\\em both} computation and communication, and even additional logarithmic communication in the best case. In general, our approach applies to any semi-honest linear secret-sharing based MPC secure up to additive attacks, where secret-sharings can be added with an authentication property. At a high-level, our approach has a highly distributive flavor, where the parties jointly emulate a Sumcheck prover that proves the correctness of MPC semi-honest evaluations in zero-knowledge, meanwhile they also jointly emulate a Sumcheck verifier and verify the proof themselves. Along the way, we provide a new angle of view on the {\\em fully linear interactive oracle proof} (FLIOP) systems proposed by Boneh et al. (CRYPTO 2019). That is, essentially distributed sumcheck on proving a batch of multiplications is an optimized concrete instantiation of the FLIOP-based approach.\r\n\r\nAs concrete applications of our techniques, we first consider semi-honest MPC protocols based on Shamir secret-sharing with an honest majority. Suppose $M$-party and circuit size $N$, to achieve malicious security, our approach only introduces additional $10MN+O(M\\log{N})$ total computation,  communication of reconstructions of $4\\log{N}+6$ secret-shared values, $O(\\log{N})$ rounds and $O(\\log{N})$ correlated randomness. This shows that malicious security with abort in honest majority MPC comes {\\em free} in terms of both computation and communication.\r\n\r\nWe then consider dishonest majority MPC, where the best known semi-honest protocol achieves $2N$ online communication per party and sublinear preprocessing by using programmable pseudorandom correlation generators (PCGs). We realize malicious MPC with $4N+O(\\log{N})$ online communication as well as sublinear preprocessing, matching the optimal $2\\times$ communication overhead in Hazay et al. (JOC 2024). Our protocol is essentially obtained by using Sumcheck techniques to check authenticated multiplication triple relations, which requires only $N+1$ {\\em standard Beaver triples} and $O(\\log{N})$ random authenticated shares for $N$ semi-honestly generated authenticated triples. Compared to the FLIOP-based checking mechanism (Boyle et al. CRYPTO 2022) that requires $O(\\sqrt{N})$ communication and $O(N^{1.5})$ computation, we do not introduce any cryptographic assumption beyond PCGs, and have $O(N)$ computation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Zhe Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Chaoping Xing",
+            "orcid": "0000-0002-1257-1033"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Yizhou Yao",
+            "orcid": "0009-0002-5720-906X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Chen Yuan",
+            "orcid": "0000-0002-3730-8397"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-06T03:03:57Z"
+        }
+    ],
+    "keywords": [
+        "MPC",
+        "Distributed Zero-Knowledge Proofs",
+        "Sumcheck"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/177.pdf",
+    "pid": "177",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Power of Sumcheck in Secure Multiparty Computation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "SIMON is a lightweight block cipher proposed by the National Security Agency. \r\nAccording to previous cryptanalytic results on SIMON, differential and linear cryptanalysis are the two most effective attacks on it. \r\nUsually, there are many trails sharing the same input and output differences (resp. masks). \r\nThese trails comprise the differential (resp. linear hull) and can be used together when mounting attacks. \r\nIn ASIACRYPT 2021, Leurent et al. proposed a matrix-based method on SIMON-like ciphers, where only trails whose active bits stay in a $w$-bit window are considered. \r\nThe static window in each round is chosen to be $w$ least significant bits. \r\nThey applied this efficient framework on SIMON and SIMECK, and have obtained many better differentials and linear hulls than before. For SIMON, they also found that there seems to be some potential for improvement, which should be further investigated.\r\n\r\nIn this paper, we dynamically choose window for each round to achieve better distinguishers. Benefiting from these dynamic windows, we can obtain stronger differentials and linear hulls than previously proposed for almost all versions of SIMON. \r\nFinally, we provided the best differential/linear attacks on SIMON48, SIMON64, and SIMON96 in terms of round number, complexity, or success rate.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University, Jinan, China"
+                },
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                }
+            ],
+            "fullName": "Chao Niu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University, Jinan, China"
+                },
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                }
+            ],
+            "fullName": "Muzhou Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University, Jinan, China"
+                },
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                }
+            ],
+            "fullName": "Jifu Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University, Jinan, China"
+                },
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "Quan Cheng Shandong Laboratory, Jinan, China"
+                }
+            ],
+            "fullName": "Meiqin Wang"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-06T07:21:24Z"
+        }
+    ],
+    "keywords": [
+        "SIMON",
+        "Dynamic Window",
+        "Differential Attack",
+        "Linear Attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/178.pdf",
+    "pid": "178",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Differential and Linear Cryptanalysis on Round-Reduced SIMON",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Improved-Simon"
+    ]
+}
+,
+{
+    "abstract": "Side-channel attacks (SCAs) pose a significant threat to the implementations of lightweight ciphers, particularly in resource-constrained environments where masking\u2014the primary countermeasure\u2014is constrained by tight resource limitations.\r\nThis makes it crucial to reduce the resource and randomness requirements of masking schemes. In this work, we investigate an approach to minimize the randomness complexity of masking algorithms. Specifically, we explore the theoretical foundations of\r\ndeterministic higher-order masking, which relies solely on offline randomness present in the initial input shares and eliminates the need for online (fresh) randomness during internal computations.\r\nWe demonstrate the feasibility of deterministic masking for ciphers such as Ascon, showing that their diffusion layer can act as a refresh subcircuit. This ensures that, up to a threshold number, probes placed in different rounds remain independent. Based on this observation, we propose composition theorems for deterministic masking\r\nschemes. On the practical side, we extend the proof of first- and second-order probing security for Ascon\u2019s protected permutation from a single round to an arbitrary number of rounds",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Vahid Jahandideh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Bart Mennink"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Lejla Batina"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-06T10:46:49Z"
+        }
+    ],
+    "keywords": [
+        "Side-Channel",
+        "Masking",
+        "Randomness Complexity",
+        "Ascon"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/179.pdf",
+    "pid": "179",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Higher-Order Deterministic Masking with Application to Ascon",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ascon/simpleserial-ascon",
+        "https://github.com/ascon/simpleserial-ascon",
+        "https://github.com/ascon/simpleserial-ascon"
+    ]
+}
 ]
