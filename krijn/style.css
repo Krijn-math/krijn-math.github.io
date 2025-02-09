@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+body {
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 11pt;
+    font-variation-settings: "wdth" 100;
+    display: grid;
+    background-color: rgb(102, 195, 255,0.7);
+    color: #373F51;
+    margin: 0;
+}
+
+/* New container to center the content */
+.container {
+    position: relative;
+    width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the container on the page */
+}
+
+.sidebar {
+    position: absolute;
+    left: -220px;  /* Adjust: 200px width + 20px gap */
+    top: 50px;  /* Adjust: 200px width + 20px gap */
+    width: 200px;
+    padding: 1em;
+    padding-left: 2em;
+}
+
+nav {
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.6);    /* Different background for distinction */
+    color: rgb(56, 56, 56);
+    text-align: center;  /* Center text inside nav */
+}
+
+.info {
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.3);    /* Different background for distinction */
+    color: rgb(54, 54, 54);
+    text-align: center;  /* Adjust if desired */
+}
+
+.circle-photo {
+    width: 125px;      /* Set your desired diameter */
+    height: 125px;     /* Must equal width for a perfect circle */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;    /* Centers the image */
+    border: 2px solid #333; /* Adjust thickness and color as needed */
+}
+
+/* Keep main centered in the container and justify its text */
+main {
+    top: 50px;  /* Adjust: 200px width + 20px gap */
+    position: relative;
+    margin: 0 auto; /* Centers the container on the page */
+    text-align: justify;
+    max-width: 500px; /* Adjust as desired */
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0em;
+}
+
+ol {
+    margin: 0;
+    padding-left: 0em;
+}
+
+.spaced-list > li {
+    margin-bottom: 4ex;
+}
+
+
+.works > li {
+    margin-bottom: 1ex;
+    width: 100%;
+}
+
+.insum {
+    width: 200px;
+}
+
+.talks > li {
+    margin-bottom: 4ex;
+    width: 460px;
+}
+
+hr {
+    border: 1px solid gray;
+    margin: 2ex 0;
+}
+
+a {
+    color: #003aa5;
+}
+
+a:visited {
+    color: #E26D5C;
+}
+
+a.internal {
+    color: rgb(12, 104, 0);
+}
+
+a.internal:hover {
+    text-decoration: underline;
+}
+
+.fulljustify {
+    text-align: justify;
+}
+
+.fulljustify:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+#tagline {
+    height: 80px;
+    overflow: hidden;
+    line-height: 80px;
+}
+
+@media (min-width: 100px) {
+    ol, ul, details {
+        width: max-width;
+        text-align: justify;
+    }
+
+    details > summary {
+        padding-left: 20px;
+        padding-top: 6px;
+        width: max-width;
+        cursor: pointer;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 500px) {
+    ol, ul, details {
+        width: 500px;
+        text-align: justify;
+    }
+
+    details > summary {
+        padding-left: 20px;
+        padding-top: 6px;
+        width: 400px;
+        cursor: pointer;
+    }
+
+    img {
+        width: 420px;
+    }
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    width: 450px;
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+.centered {
+    text-align: center;
+  }

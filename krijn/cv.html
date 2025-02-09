@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Krijn Reijnders</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Override background for cv.html */
+        body {
+            background-color: rgb(211, 239, 189, 0.7);
+            /* Change as desired */
+        }
+
+        /* Styling for CV lists */
+        .cv-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cv-list li {
+            position: relative;
+            margin: 1em 0;
+            padding-left: 100px;
+            /* Reserve space for the bullet */
+        }
+
+        .cv-list li::before {
+            content: attr(data-year);
+            position: absolute;
+            left: 0;
+            width: 80px;
+            text-align: right;
+            /* font-weight: bold; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="nav-placeholder"></div>
+        <main>
+            <h1>a short curriculum vitae</h1>
+
+            <p>This contains a very brief overview of my working experience and education.
+                A more detailed CV is available on request.
+            </p>
+            <br>
+
+            <section id="work-cv">
+                <h2 class="centered">Work</h2>
+                <ul class="cv-list">
+                    <li data-year="from 2025"><b>Post-doc</b> at COSIC, KU Leuven, in the group
+                        of <a href="https://www.esat.kuleuven.be/cosic/people/person/?u=u0031924" target="_blank">Fre
+                            Vercauteren</a>.</li>
+                    <li data-year="2020-2024"><b>PhD student</b> in post-quantum cryptography at Radboud University Nijmegen,
+                        under supervision of <a href="http://samardjiska.org/" target="_blank">Simona Samardjiska</a>.
+                        <span style="float:right;"><a
+                                href="http://thesis.post-quantum-cryptography.com">thesis</a></span>
+                    </li>
+                    <li data-year="2018-2020"><b>Business Analyst</b> at INNOPAY, Amsterdam.</li>
+                    <li data-year="2013-2017"><b>Student Assistant</b> at Radboud University, Nijmegen.</li>
+                </ul>
+            </section>
+
+            <br>
+            <br>
+            <section id="school-cv">
+                <h2 class="centered">School</h2>
+                <ul class="cv-list">
+                    <li data-year="2015-2019"><b>M.Sc. Mathematics</b>, Radboud University Nijmegen.<br>
+                        Thesis: Campana curves <span style="float:right;"><a
+                                href="http://masters.post-quantum-cryptography.com">pdf</a></span>
+                    </li>
+                    <li data-year="2012-2015"><b>B.Sc. Mathematics</b>, Radboud University Nijmegen.<br>
+                        Thesis: Heisenberg groups (<i>cum laude</i>) <span style="float:right;"><a
+                                href="http://bachelors.post-quantum-cryptography.com">pdf</a></span><br>
+
+                    </li>
+                </ul>
+            </section>
+            <br>
+            <br>
+
+            <h2 class="centered">Invited Talks</h2>
+            <ul class="talks">
+                <li>
+                    <b>Recent Developments in SQIsign</b>, Crypto Working Group,
+                    June 21, 2024. <span style="float:right"><a
+                            href="https://cwg.post-quantum-crypto.com">slides</a></span>
+                </li>
+                <li>
+                    <b>Using Kummer Surfaces in SQIsign Verification</b>,
+                    The Isogeny Club,
+                    May 7, 2024. <span style="float:right"><a
+                            href="https://www.youtube.com/watch?v=XNbqgxL6Loc">recording</a>, <a
+                            href="https://the-isogeny-club.github.io/season-4/4-6-krijn/slides.pdf">slides</a></span>
+                </li>
+                <li>
+                    <b>Return of the Kummer</b>,
+                    KULB Seminar,
+                    March 15, 2024. <span style="float:right"><a
+                            href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/wp-content/uploads/sites/4/2024/03/return_of_the_kummer.pdf">slides</a></span>
+                </li>
+                <li>
+                    <b>MCE and MEDS: From Group Actions to Signatures</b>,
+                    DeCifris '23,
+                    December 15, 2023. <span style="float:right"><a
+                            href="https://drive.google.com/file/d/1KlJJflGrOJeTzoexCccJlZfCnBOTssN8">pdf</a>, <a
+                            href="https://drive.google.com/file/d/12b8MqH4emL5P6bEEkwoEH2nlZP0r5Qqu/view">slides</a></span>
+                </li>
+                <li>
+                    <b>Disorientation Faults in CSIDH</b>,
+                    CWI Seminar,
+                    October 28, 2023. 
+                </li>
+                <li>
+                    <b>Matrix Equivalence Digital Signature</b>,
+                    SIAM AG23,
+                    July 12, 2023. <span style="float:right"><a href="http://siam.post-quantum-crypto.com/"
+                            target="_blank">slides</a></span>
+                </li>
+                <li>
+                    <b>Side-Channel Attacks on Isogeny-based Schemes</b>,
+                    Guest Lecture, Hochschule RheinMain,
+                    June 28, 2023. 
+                </li>
+                <li>
+                    <b>A Mathematical Quest for the Holy Grail</b>,
+                    University of Zagreb,
+                    June 14, 2023. <span style="float:right"><a href="http://zagreb.post-quantum-crypto.com/"
+                            target="_blank">slides</a></span>
+                </li>
+                <li>
+                    <b>An Overview of Code-based Cryptography</b>,
+                    Guest Lecture, University of Regensburg,
+                    June 6, 2023.
+                </li>
+                <li>
+                    <b>Matrix Code Equivalence and Applications in Post-Quantum Cryptography</b>,
+                    PICSeminar,
+                    May 5, 2022. <span style="float:right"><a
+                            href="https://drive.google.com/file/d/1NJxrPdgDTo7bGVi4T80cqIj01mwvO-lK/view?usp=sharing"
+                            target="_blank">slides</a></span>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <h2 class="centered">Activities</h2>
+            <ul class="talks">
+                <li>
+                    Cofounder, together with Jonathan Komada Eriksen, of <b>The Isogeny Club</b> (<a
+                        href="https://isogeny.club" target="_blank">link</a>).
+                    Ran the biweekly seminar for the first four seasons (2022-2024)
+                </li>
+                <li>Co-organiser, together with Jonathan Komada Eriksen,
+                    of the <b>Brainstorm Days</b> as an affiliated event to EUROCRYPT 2023 in Lyon, France.
+                </li>
+                <li>Co-organiser, together with Jonathan Komada Eriksen and Maria Corte-Real Santos,
+                    of the <b>Brainstorm Days</b> as an affiliated event to EUROCRYPT 2024 in Zürich, Switzerland.
+                </li>
+                <li>
+                    Co-organiser of <b>Applications of Isogenies in Cryptography</b>
+                    as a symposium at SIAM AG23 together with Tanja Lange and Monika Trimoska
+                    in Eindhoven, The Netherlands.
+                </li>
+                <li> Co-organiser of <b>Applications of Isogenies in Cryptography</b>
+                    as a symposium at SIAM AG25 together with Monika Trimoska
+                    and Lorenz Panny at Madison, USA.
+                </li>
+                <li>
+                    Co-organiser, together with Lorenz Panny, of the tutorial
+                    <b>Implementing Cutting-Edge Isogeny-based Cryptography</b>
+                    (<a href="https://vodice.post-quantum-crypto.com" target="_blank">link</a>)
+                    at the Croatia Summer School 2024, in Vodice, Croatia.
+                </li>
+            </ul>
+            <br>
+            <br>
+            <h2 class="centered">Other Presentations</h2>
+            <ul class="talks">
+                <li>
+                    <b>The Roadmap to Practical SQIsign</b>,
+                    2PQCSM,
+                    November 28, 2023.
+                    <span style="float: right;"><a
+                            href="https://drive.google.com/file/d/1H7sHCDRW2nKNykEdYPkfk-smW0oar64I/view?usp=sharing"
+                            target="_blank">slides</a></span>
+                </li>
+                <li>
+                    <b>Effective Pairings in Isogeny-based Cryptography</b>,
+                    Latincrypt 2023,
+                    October 4, 2023.
+                    <span style="float: right;"><a href="http://epic.post-quantum-crypto.com/"
+                        target="_blank">slides</a></span>
+                </li>
+                <li>
+                    <b>Disorientation Faults in CSIDH</b>,
+                    EUROCRYPT '23,
+                    April 26, 2023.
+                    <span style="float: right;"><a href="https://iacr.org/submit/files/slides/2023/eurocrypt/eurocrypt2023/332/slides.pdf"
+                        target="_blank">slides</a></span>
+                </li>
+                <li>
+                    <b>Transparent Security for Cryptographic Group Actions</b>,
+                    CBCrypto 23,
+                    April 23, 2023. <span style="float: right;">(<i>slides on request</i>)</span>
+                </li>
+                <li>
+                    <b>Disorientation Faults in CSIDH</b>,
+                    Leuven Isogeny Days 3,
+                    September 23, 2022.
+                    <span style="float: right;">
+                        <a href="https://youtu.be/_UjzAhzjID0"
+                        target="_blank">video</a>,                  
+                        <a href="https://www.esat.kuleuven.be/cosic/projects/isocrypt/wp-content/uploads/sites/4/2022/11/Krijn.pdf"
+                        target="_blank">slides</a>
+                    </span>
+                </li>
+                <li>
+                    <b>Cryptography using Matrix Code Equivalence</b>,
+                    CBCrypto 22,
+                    April 30, 2022. <span style="float: right;">(<i>slides on request</i>)</span>
+                </li>
+                <li>
+                    <b>Hardness estimates of the Code Equivalence Problem in the Rank Metric</b>,
+                    Workshop on Coding and Cryptography 2022,
+                    March 10, 2022. <span style="float: right;"><a href="https://www.wcc2022.uni-rostock.de/storages/uni-rostock/Tagungen/WCC2022/Papers/WCC_2022_paper_79.pdf" target="_blank">pdf</a></span>
+                </li>
+                <li>
+                    <b>Fully Projective Radical Isogenies.</b>,
+                    CT-RSA 2022,
+                    March 1, 2022.
+                    <span style="float: right;">
+                    <a href="https://www.youtube.com/watch?v=JMqFBSo3y8U"
+                    target="_blank">video</a>,
+                    <a href="https://static.rainfocus.com/rsac/us22/sess/1641588816605001WtjT/finalwebsite/2022_USA22_CRYP8_01_Fully-Projective-Radical-Isogenies-in-Constant-time_1643396817340001P6ga.pdf"
+                    target="_blank">slides</a>
+                    </span>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <h2 class="centered">Other</h2>
+            <ul class="talks">
+                <li>Round 1 submitter of the <a href="https://www.meds-pqc.org/" target="_blank">M E D S</a> scheme</li>
+                <li>Round 2 submitter of the <a href="https://sqisign.org/" target="_blank">SQIsign</a> scheme</li>
+                <li><b>Kani came in like a wrecking ball.</b> Together with Maria Corte-Real Santos, Jonathan Komada
+                    Eriksen, and Michael Gregor Meyer,
+                    at the rump session of EUROCRYPT 2024 in Lyon, France
+                    <span style="float: right;"><a href="https://sicq.post-quantum-crypto.com"
+                            target="_blank">video</a></span>
+                </li>
+                <li><b>Kyber, how does it work?</b> Together with Ruben Gonzalez,
+                    at rC3 2021.
+                    <span style="float: right;"><a
+                            href="https://media.ccc.de/v/rc3-2021-cwtv-230-kyber-and-post-quantum"
+                            target="_blank">video</a></span>
+                </li>
+            </ul>
+            <br>
+            <br>
+        </main>
+    </div>
+
+    <script>
+        fetch('sidebar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading nav:', error));
+      </script>
+</body>
+
+</html>

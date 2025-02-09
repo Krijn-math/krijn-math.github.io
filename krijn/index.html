@@ -1,236 +1,61 @@
-<!--
-violets are blue
-roses are red
-kyber is fast
-rainbow is dead
-
-8eafdfd15f5cbc6a1ecf695d02c0eedf7693f55cd16cdf5efc34032638fe1acb2d21c2827ff2914fc7079976
-baa336b9a56b02802f29008adce670c69938fae1a2074b21dc0562a00d17615465839a75682644b0340604bb
-60e75f532d0247bf695ffadf64828adb2db8298dc8e022a32dd760e639eb3d639f07b2f15b83335c5cf5e206
-38ec726ef642ee5c0ed1f5dcd094ad25f236f3cc93fd36063274650a0a1d37dac734e5e9
-
--->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>post quantum crypto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            /* font-family: monospace; */
-            font-family: "Noto Sans Mono", monospace;
-            font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
-            font-size: 10pt;
-            font-variation-settings: "wdth" 100;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav {
-            margin-right: 2em;
-            padding: 1em;
-        }
-
-        ul {
-            margin: 0;
-            padding-left: 1em;
-        }
-
-        .spaced-list>li {
-            margin-bottom: 1ex;
-        }
-
-        hr {
-            border: 1px solid gray;
-            margin: 2ex 0;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        body {
-            background-color: #BDEDE0;
-            color: #373F51
-        }
-
-        a {
-            color: #36599b;
-        }
-
-        a:visited {
-            color: #E26D5C;
-        }
-
-        .fulljustify {
-            text-align: justify;
-        }
-
-        .fulljustify:after {
-            content: "";
-            display: inline-block;
-            width: 100%;
-        }
-
-        #tagline {
-            height: 80px;
-            overflow: hidden;
-            line-height: 80px;
-            /* vert-center */
-        }
-
-        @media (min-width: 100px) {
-            ol {
-                width: max-width;
-            }
-
-            ul {
-                width: max-width;
-            }
-
-            details {
-                width: max-width;
-                text-align: justify;
-            }
-
-            details>summary {
-                padding-left: 20px;
-                padding-top: 6px;
-                width: max-width;
-                cursor: pointer;
-            }
-
-            img {
-                width: 100%;
-            }
-        }
-
-        @media (min-width: 500px) {
-            ol {
-                width: 420px;
-                text-align: justify;
-            }
-
-            ul {
-                width: 420px;
-                text-align: justify;
-            }
-
-            details {
-                width: 420px;
-                text-align: justify;
-            }
-
-            details>summary {
-                padding-left: 20px;
-                padding-top: 6px;
-                width: 420px;
-                cursor: pointer;
-            }
-
-            img {
-                width: 420px;
-            }
-        }
-
-        h1 {
-            text-align: center;
-            width: 390px;
-            padding-top: 20px;
-            padding-left: 40px;
-        }
-    </style>
-    <link rel="icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Krijn Reijnders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-    <main>
+    <div class="container">
+        <div id="nav-placeholder"></div>
+        <main>
+            <h1>Krĳn Reĳnders</h1>
+            <p>This is my website, which serves to host some of my (professional)
+                writings, some thoughts that I have at times and an online version of my
+                cv. </p>
 
-        <header>
-            <h1>recent papers by <a href="//krijnreijnders.com" target="_blank">me</a></h1></h1>
-        </header>
-        <br>
-        <ul reversed class="spaced-list" ; id="list" ; style="list-style: none;"></ul>
+            <br>
+            <h2>post-quantum cryptography</h2>
+            <p>My research focuses on <b>post-quantum cryptography</b>,
+                and at this moment specifically code-based and
+                isogeny-based schemes. You could say that I look at <b>isogenies</b> and
+                <b>isometries</b>. Both admit a cryptographic group action on which you can
+                design all sorts of schemes, although the former is commutative and the
+                latter non-commutative.</p>
 
-        <script>
-            function loadListData() {
-                fetch('papers.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        var list = document.getElementById('list');
-                        var lines = data.split('\n');
+            <p>
+                Within isogenies, my more specific research interests are (applications
+                of) <b>pairings</b> and <b>Kummer surfaces</b>. Within isometries, I focus on the
+                interplay between automorphism groups and <b>matrix code equivalence</b>.
+            </p>
 
-                        lines.forEach(function (line) {
-                            var values = line.split(';');
-                            var title = values[0];
-                            var authors = values[1];
-                            var authorlist = authors.split(',');
-                            var id = values[2];
-                            var abstract = values[3];
+            <br>
+            <h2>the isogeny club</h2>
+            <p>For the first two years, I organized <a href="https://isogeny.club" target="_blank">The Isogeny Club</a>,
+                together with Jonathan Eriksen.
+                Since, May 2024, I have stepped back and taken a more advisory role.
+                Currently, Jonathan and Maria Corte-Real Santos host the bi-weekly
+                virtual seminar for young isogenists. The Isogeny Club also hosts the
+                Brainstorm Days as an affiliated event (for all isogenists) at
+                Eurocrypt, where we brainstorm on cutting-edge ideas in isogeny-based
+                cryptography.</p>
+            <p></p>
+            <p></p>
 
-                            var listItem = document.createElement('li');
-                            // listItem.classList.add('list-item');
+        </main>
+    </div>
 
-                            var titleItem = document.createElement('b');
-                            titleItem.textContent = title;
-
-                            var authorItem = document.createElement('span');
-                            authorFormatted = "";
-                            authorlist.forEach(function (author, index) {
-                                if (index === authorlist.length - 2) {
-                                    authorFormatted += author + " and ";
-                                }  else if (index === authorlist.length - 1) {
-                                    authorFormatted += author;
-                                } else {
-                                    authorFormatted += author + ", ";
-                                }
-                            });
-
-                            authorItem.textContent = authorFormatted;
-
-                            var floatItem = document.createElement('span');
-                            floatItem.style = "float:right";
-
-                            var urlItem = document.createElement('a');
-                            urlItem.href = "//ia.cr/" + id;
-                            urlItem.target = "_blank";
-                            urlItem.textContent = "eprint";
-
-                            floatItem.appendChild(urlItem);
-
-                            listItem.appendChild(titleItem);
-                            listItem.appendChild(document.createElement('br'));
-                            listItem.appendChild(authorItem);
-                            listItem.appendChild(floatItem);
-
-                            var abstractHeading = document.createElement('details');
-                            var summaryElement = document.createElement("summary");
-                            summaryElement.textContent = "abstract";
-                            var bodyElement = document.createElement("span");
-                            bodyElement.innerHTML = abstract;
-                            abstractHeading.appendChild(summaryElement);
-                            abstractHeading.appendChild(bodyElement);
-
-                            listItem.appendChild(abstractHeading)
-                            
-                            list.appendChild(listItem);
-                            list.appendChild(document.createElement('br'));
-                        });
-                    });
-            }
-
-            loadListData();
-        </script>
-
+    <script>
+        fetch('sidebar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading nav:', error));
+      </script>
 </body>
 
 </html>
