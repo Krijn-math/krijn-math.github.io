@@ -1,3 +1,6 @@
+computing quaternion embeddings and endomorphism rings of supersingular oriented elliptic curves;;;maher mamah;;;2025/186;;;last_week;;;none
+the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_week;;;none
+experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_week;;;none
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_month;;;https://github.com/jtcc2/cycles-and-cuts
 efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;maria corte-real santos, craig costello, sam frengley;;;2025/147;;;last_month;;;https://github.com/mariascrs/SplitSearcher
 isogeny-based cryptography using isomorphisms of superspecial abelian surfaces;;;pierrick gaudry, julien soumier, pierre-jean spaenlehauer;;;2025/136;;;last_month;;;https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments
@@ -7,13 +10,12 @@ towards optimally small smoothness bounds for cryptographic-sized twin smooth in
 sqisign2d-west: the fast, the small, and the safer;;;andrea basso, luca de feo, pierrick dartois, antonin leroux, luciano maino, giacomo pope, damien robert, benjamin wesolowski;;;2024/760;;;last_month;;;https://github.com/SQISign/the-sqisign
 efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_month;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_month;;;https: //github.com/levanin/leakysea-public
-structural results for maximal quaternion orders and connecting ideals of prime power norm in b_{p,∞};;;james clements;;;2025/042;;;last_month;;;https://github.com/jtcc2/structural-results-for-quaternion-orders-and-ideals
+structural results for maximal quaternion orders and connecting ideals of prime power norm in b_{p,∞};;;james clements;;;2025/042;;;last_year;;;https://github.com/jtcc2/structural-results-for-quaternion-orders-and-ideals
 hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_year;;;https://git.uni-regensburg.de/buff/wave_mbs
 parametrizing maximal orders along supersingular ℓ-isogeny paths;;;laia amorós, james clements, chloe martindale;;;2025/033;;;last_year;;;https://github.com/quaternion-graph-parametrizations/proofs
 constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_year;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
 isogeny interpolation and the computation of isogenies from higher dimensional representations;;;david jao, jeanne laflamme;;;2024/1796;;;last_year;;;https://git.uwaterloo.ca/jmlaflam/sidh-attack/
 an algorithmic approach to (2,2)-isogenies in the theta model and applications to isogeny-based cryptography;;;pierrick dartois, luciano maino, giacomo pope, damien robert;;;2023/1747;;;last_year;;;https://github.com/ThetaIsogenies/two-isogenies
-accelerating isogeny walks for vdf evaluation;;;david jacquemin, anisha mukherjee, ahmet can mert, sujoy sinha roy;;;2023/1396;;;last_year;;;none
 a note on isogeny group action-based pseudorandom functions;;;yi-fu lai;;;2024/2042;;;last_year;;;none
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants;;;dimitri koshelev, antonio sanso;;;2024/1985;;;last_year;;;https://github.com/asanso/Endomorphisms-for-Faster-Cryptography-on-Elliptic-Curves-of-Moderate-CM-Discriminants
 further connections between isogenies of supersingular curves and bruhat-tits trees;;;steven galbraith, valerie gilchrist, shai levin, ari markowitz;;;2024/1971;;;last_year;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
@@ -33,7 +35,6 @@ sqiprime: a dimension 2 variant of sqisignhd with non-smooth challenge isogenies
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_year;;;none
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_year;;;https://gitlab.inria.fr/nsarkis/half-diff-add
 quantum money from class group actions on elliptic curves;;;hart montgomery, shahed sharif;;;2024/1585;;;last_year;;;none
-the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_year;;;none
 elliptic curve cryptography for the masses: simple and fast finite field arithmetic;;;michael scott;;;2024/779;;;last_year;;;none
 newton polytope-based strategy for finding small roots of multivariate polynomials;;;yansong feng, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_year;;;none
 sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2024/771;;;last_year;;;https://github.com/hiroshi-onuki/SQIsign2D-East.jl
@@ -97,4 +98,3 @@ identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;other;;;none
 a polynomial-time attack on instances of m-sidh and festa;;;wouter castryck, frederik vercauteren;;;2023/1433;;;other;;;none
 solving the hidden number problem for csidh and csurf via automated coppersmith;;;jonas meers, julian nowakowski;;;2023/1409;;;other;;;https://github.com/juliannowakowski/automated-coppersmith
-finding orientations of supersingular elliptic curves and quaternion orders;;;sarah arpin, james clements, pierrick dartois, jonathan komada eriksen, péter kutas, benjamin wesolowski;;;2023/1268;;;other;;;none
