@@ -13110,4 +13110,846 @@
         "https://github.com/ascon/simpleserial-ascon"
     ]
 }
+,
+{
+    "abstract": "Payment channels have emerged as a promising solution to address the performance limitations of cryptocurrencies payments, enabling efficient off-chain transactions while maintaining security guarantees. However, existing payment channel protocols, including the widely-deployed Lightning Network and the state-of-the-art Sleepy Channels, suffer from a fundamental vulnerability: non-atomic state transitions create race conditions that can lead to unexpected financial losses. We first formalize current protocols into a common paradigm and prove that this vulnerability is fundamental\u2014any protocol following this paradigm cannot guarantee balance security due to the inherent race conditions in their design. To address this limitation, we propose a novel atomic paradigm for payment channels that ensures atomic state transitions, effectively eliminating race conditions while maintaining all desired functionalities. Based on this paradigm, we introduce Ultraviolet, a secure and efficient payment channel protocol that achieves both atomicity and high performance, while avoiding the introduction of unimplemented Bitcoin features. Ultraviolet reduces the number of required messages per transaction by half compared to existing solutions, while maintaining comparable throughput. We formally prove the security of Ultraviolet under the universal composability framework and demonstrate its practical efficiency through extensive evaluations across multiple regions. This results in a 37% and 52% reduction in latency compared to the Lightning Network and Sleepy Channels, respectively. Regarding throughput, Ultraviolet achieves performance comparable to the Lightning Network and delivers 2\u00d7 the TPS of Sleepy Channels.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Di Wu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Shoupeng Ren"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Yuman Bai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Lipeng He"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Jian Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Wu Wen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Kui Ren"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Chun Chen"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-07T07:26:07Z"
+        }
+    ],
+    "keywords": [
+        "Blockchain",
+        "Payment Channels",
+        "Cryptocurrencies",
+        "Bitcoin"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/180.pdf",
+    "pid": "180",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Atomicity and Efficiency of Blockchain Payment Channels",
+    "year": 2025,
+    "repo": [
+        "https://github.com/lightningnetwork/lnd",
+        "https://github.com/lightningnetwork/lnd"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we build upon the blinding methods introduced in recent years to enhance the protection of lattice-based cryptographic schemes against side-channel and fault injection attacks. Specifically, we propose a cost-efficient blinded Number Theoretic Transform (NTT) that impedes the convergence of Soft Analytical Side-Channel Attacks (SASCA), even with limited randomness sampling. Additionally, we extend the blinding mechanism based on the Chinese Remainder Theorem (CRT) and  Redundant Number Representation (RNR) introduced by Heiz and P\u00f6ppelmann by reducing the randomness sampling overhead and accelerating the verification phase.\r\n\r\nThese two blinding mechanisms are nicely compatible with each other's and, when combined, provide enhanced resistance against side-channel attacks, both classical and soft analytical, as well as fault injection attacks, while maintaining high performance and low overhead, making the approach well-suited for practical applications, particularly in resource-constrained IoT environments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Max Duparc",
+            "orcid": "0009-0001-4179-9547"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kudelski (Switzerland)",
+                    "ror": "https://ror.org/022m5tt98"
+                }
+            ],
+            "fullName": "Mounir Taha"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-07T07:40:41Z"
+        }
+    ],
+    "keywords": [
+        "Kyber",
+        "Blinding",
+        "NTT",
+        "RNR",
+        "Side-Channel Attacks",
+        "Fault Attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/181.pdf",
+    "pid": "181",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved NTT and CRT-based RNR Blinding for Side-Channel and Fault Resistant Kyber",
+    "year": 2025,
+    "repo": [
+        "https://github.com/moun18/KYBER-CRT-NTT-SEC",
+        "https://github.com/moun18/KYBER-CRT-NTT-SEC",
+        "https://github.com/moun18/KYBER-CRT-NTT-SEC",
+        "https://github.com/moun18/KYBER-CRT-NTT-SEC",
+        "https://github.com/mupq/pqm4"
+    ]
+}
+,
+{
+    "abstract": "We introduce an enhanced requirement of deniable public key encryption that we call dual-deniability. It asks that a sender who is coerced should be able to produce fake randomness, which can explain the target ciphertext as the encryption of any alternative message under any valid key she/he desires to deny. Compared with the original notion of deniability (Canetti et al. in CRYPTO \u201997, hereafter named message-deniability), this term further provides a shield for the anonymity of the receiver against coercion attacks.\r\n      We first give a formal definition of dual-deniability, along with its weak-mode variant. For conceptual understanding, we then show dual-deniability implies semantic security and anonymity against CPA, separates full robustness, and even contradicts key-less or mixed robustness, while is (constructively) implied by key-deniability and full robustness with a minor assumption for bits encryption. As for the availability of dual-deniability, our main scheme is a generic approach from ciphertext-simulatable PKE, where we devise a subtle multi-encryption schema to hide the true message within random masking ciphertexts under plan-ahead setting. Further, we leverage the weak model to present a more efficient scheme having negligible detection probability and constant ciphertext size. Besides, we revisit the notable scheme (Sahai and Waters in STOC \u201914) and show it is inherently dual-deniable. Finally, we extend the Boneh-Katz transform to capture CCA security, deriving dual-deniable and CCA-secure PKE from any selectively dual-deniable IBE under multi-TA setting. Overall our work mounts the feasibility of anonymous messaging against coercion attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sun Yat-sen University",
+                    "ror": "https://ror.org/0064kty71"
+                }
+            ],
+            "fullName": "Zhiyuan An",
+            "orcid": "0000-0002-6766-0375"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sun Yat-sen University",
+                    "ror": "https://ror.org/0064kty71"
+                }
+            ],
+            "fullName": "Fangguo Zhang",
+            "orcid": "0000-0002-0486-6413"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-07T09:32:58Z"
+        }
+    ],
+    "keywords": [
+        "Deniable encryption",
+        "Anonymity",
+        "Key privacy",
+        "Generic Construction",
+        "CCA security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/182.pdf",
+    "pid": "182",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Deny Whatever You Want: Dual-Deniable Public-Key Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce oblivious parallel operators designed for both non-foreign key and foreign key equi-joins. Obliviousness ensures nothing is revealed about the data besides input/output sizes, even against a strong adversary that can observe memory access patterns.\r\nOur solution achieves this by combining trusted hardware with efficient oblivious primitives for compaction and sorting, and two oblivious algorithms: (i) an oblivious aggregation tree, which can be described as a variation of the parallel prefix sum, customized for trusted hardware, and (ii) a novel algorithm for obliviously expanding the elements of a relation.\r\nIn the sequential setting, our oblivious join performs $4.6\\times$- $5.14\\times$ faster than the prior state-of-the-art solution (Krastnikov et al., VLDB 2020) on data sets of size $n=2^{24}$. In the parallel setting, our algorithm achieves a speedup of up to roughly $16\\times$ over the sequential version, when running with 32 threads (becoming up to $80\\times$ compared to the sequential algorithm of Krastnikov et al.).\r\nFinally, our oblivious operators can be used independently to support other oblivious relational database queries, such as oblivious selection and oblivious group-by.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Cruz",
+                    "ror": "https://ror.org/03s65by71"
+                }
+            ],
+            "fullName": "Apostolos Mavrogiannakis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Xian Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Cruz",
+                    "ror": "https://ror.org/03s65by71"
+                }
+            ],
+            "fullName": "Ioannis Demertzis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Dimitrios Papadopoulos"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
+                    "ror": "https://ror.org/0576by029"
+                }
+            ],
+            "fullName": "Minos Garofalakis"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-07T17:30:28Z"
+        }
+    ],
+    "keywords": [
+        "Oblivious"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/183.pdf",
+    "pid": "183",
+    "pubtype": {
+        "note": "USENIX Security",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "OBLIVIATOR: Oblivious Parallel Joins and other Operators in Shared Memory Environments",
+    "year": 2025,
+    "repo": [
+        "https://github.com/openenclave/openenclave",
+        "https://github.com/openenclave/openenclave",
+        "https://github.com/signalapp/"
+    ]
+}
+,
+{
+    "abstract": "Blockchains enable decentralised applications that withstand Byzantine failures and do not need a central authority. Unfortunately, their massive replication requirements preclude their use on constrained devices.\r\n\r\nWe propose a novel blockchain-based data structure which forgoes replication without affecting the append-only nature of blockchains, making it suitable for maintaining data integrity over networks of storage-constrained devices. Our solution does not provide consensus, which is not required by our motivating application, namely securely storing sensor data of containers in cargo ships.\r\n\r\nWe elucidate the practical promise of our technique by following a multi-faceted approach: We (i) formally prove the security of our protocol in the\r\nUniversal Composition (UC) setting, as well as (ii) provide a small-scale proof-of-concept implementation, (iii) a performance simulation for large-scale deployments which showcases a reduction in storage of more than $1000$x compared to traditional blockchains, and (iv) a resilience simulation that predicts the practical effects of network jamming attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Orfeas Stefanos Thyfronitis Litos",
+            "orcid": "0000-0002-8229-297X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Zhaoxuan Wu",
+            "orcid": "0009-0000-5721-5764"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Alfredo Musumeci"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Songyun Hu",
+            "orcid": "0009-0003-8524-2315"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "James Helsby"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Michael Breza",
+            "orcid": "0000-0002-8548-2752"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "William Knottenbelt",
+            "orcid": "0000-0002-8490-1011"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-07T18:46:07Z"
+        }
+    ],
+    "keywords": [
+        "Blockchain",
+        "Data Integrity",
+        "Secure Data Storage",
+        "Constrained Devices",
+        "Universal Composition"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/184.pdf",
+    "pid": "184",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "NodeChain: Cheap Data Integrity Without Consensus",
+    "year": 2025,
+    "repo": [
+        "https://github.com/herumi/bls",
+        "https://github.com/herumi/bls"
+    ]
+}
+,
+{
+    "abstract": "Differential cryptanalysis is one of the main methods of cryptanalysis and has been applied to a wide range of ciphers. While it is very successful, it also relies on certain assumptions that do not necessarily hold in practice. One of these is the hypothesis of stochastic equivalence, which states that the probability of a differential characteristic behaves similarly for all keys. Several works have demonstrated examples where this hypothesis is violated, impacting the attack complexity and sometimes even invalidating the investigated prior attacks. Nevertheless, the hypothesis is still typically taken for granted. In this work, we propose AutoDiVer, an automatic tool that allows to thoroughly verify differential characteristics. First, the tool supports calculating the expected probability of differential characteristics while considering the key schedule of the cipher. Second, the tool supports estimating the size of the space of keys for which the characteristic permits valid pairs, and deducing conditions for these keys. AutoDiVer implements a custom SAT modeling approach and takes advantage of a combination of features of advanced SAT solvers, including approximate model counting and clause learning. To show applicability to many different kinds of block ciphers like strongly aligned, weakly aligned, and ARX ciphers, we apply AutoDiVer to GIFT, PRESENT, RECTANGLE, SKINNY, WARP, SPECK, and SPEEDY.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Marcel Nageler",
+            "orcid": "0000-0002-2329-7631"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Haifa",
+                    "ror": "https://ror.org/02f009v59"
+                },
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                }
+            ],
+            "fullName": "Shibam Ghosh",
+            "orcid": "0000-0002-4966-1681"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Marlene J\u00fcttler"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Maria Eichlseder",
+            "orcid": "0000-0002-8750-7423"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-08T11:36:13Z"
+        }
+    ],
+    "keywords": [
+        "Differential cryptanalysis",
+        "Hypothesis of stochastic equivalence",
+        "Tool",
+        "SAT solver"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/185.pdf",
+    "pid": "185",
+    "pubtype": {
+        "pubtype": "TOSC",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "AutoDiVer: Automatically Verifying Differential Characteristics and Learning Key Conditions",
+    "year": 2025,
+    "repo": [
+        "https://github.com/IAIK/AutoDiVer",
+        "https://github.com/meelgroup/approxmc",
+        "https://github.com/kste/cryptosmt"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we investigate several computational problems motivated by post-quantum cryptosystems based on isogenies and ideal class group actions on oriented elliptic curves. Our main technical contribution is an efficient algorithm for embedding the ring of integers of an imaginary quadratic field \\( K \\) into some maximal order of the quaternion algebra \\( B_{p,\\infty} \\) ramified at a prime \\( p \\) and infinity. Assuming the Generalized Riemann Hypothesis (GRH), our algorithm runs in probabilistic polynomial time, improving upon previous results that relied on heuristics or required the factorization of \\( \\textnormal{disc}(K) \\). Notably, this algorithm may be of independent interest.\r\n    Our approach enhances the work of Love and Boneh on computing isogenies between \\( M \\)-small elliptic curves by eliminating heuristics and improving computational efficiency. Furthermore, given a quadratic order \\( \\mathfrak{O} \\) in \\( K \\), we show that our algorithm reduces the computational endomorphism ring problem of \\( \\mathfrak{O} \\)-oriented elliptic curves to the Vectorization problem in probabilistic polynomial time, assuming the conductor of \\( \\mathfrak{O} \\) can be efficiently factorized. Previously, the best known result required the full factorization of \\( \\textnormal{disc}(\\mathfrak{O}) \\), which may be exponentially large.\r\n    Additionally, when the conductor of \\( \\mathfrak{O} \\) can be efficiently factorized, we establish a polynomial-time equivalence between the Quaternion Order Embedding Problem, which asks to embed a quadratic order \\( \\mathfrak{O} \\) into a maximal order in \\( B_{p,\\infty} \\), and computing horizontal isogenies between \\( \\mathfrak{O} \\)-oriented elliptic curves. Leveraging this reduction, we propose a rigorous algorithm, under GRH, that solves the quaternion order embedding problem in time \\( \\tilde{O}(|\\mathrm{disc}(\\mathfrak{O})|^{1/2}) \\), improving upon previous methods that required higher asymptotic time and relied on several heuristics.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Pennsylvania State University",
+                    "ror": "https://ror.org/04p491231"
+                }
+            ],
+            "fullName": "Maher Mamah",
+            "orcid": "0009-0000-1150-0017"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-02-10T02:51:42Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-02-10T02:45:41Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-02-10T02:40:26Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-02-08T15:58:45Z"
+        }
+    ],
+    "keywords": [
+        "isogeny-based cryptography",
+        "endomorphism ring",
+        "quaternion embeddings",
+        "orientations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/186.pdf",
+    "pid": "186",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Computing Quaternion Embeddings and Endomorphism rings of Supersingular Oriented Elliptic curves",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We present several new provable algorithms for two variants of the code equivalence problem on linear error-correcting codes, the Linear Code Equivalence Problem (LCE) and the Permutation Code Equivalence Problem (PCE). Specifically, for arbitrary codes of block length $n$ and dimension $k$ over any finite field $\\mathbb{F}_q$, we show:\r\n1) A deterministic algorithm running in $2^{n + o(n+q)}$ time for LCE.\r\n2) A randomized algorithm running in $2^{n/2 + o(n+q)}$ time for LCE and PCE.\r\n3) A quantum algorithm running in $2^{n/3 + o(n+q)}$ time for LCE and PCE.\r\nThe first algorithm complements the deterministic roughly $2^n$-time algorithm of Babai (SODA 2011) for PCE.\r\nThe second two algorithms improve on recent work of Nowakowski (PQCrypto 2025), which gave algorithms with similar running times, but only for code equivalence on \\emph{random} codes and only over fields of order $q \\geq 7$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Colorado Boulder",
+                    "ror": "https://ror.org/02ttsq026"
+                }
+            ],
+            "fullName": "Huck Bennett"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Drisana Bhatia"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of South Florida",
+                    "ror": "https://ror.org/032db5x82"
+                }
+            ],
+            "fullName": "Jean-Fran\u00e7ois Biasse"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Virginia Tech",
+                    "ror": "https://ror.org/02smfhw86"
+                }
+            ],
+            "fullName": "Medha Durisheti"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Maryland, College Park",
+                    "ror": "https://ror.org/047s2c258"
+                }
+            ],
+            "fullName": "Lucas LaBuff"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of South Florida",
+                    "ror": "https://ror.org/032db5x82"
+                }
+            ],
+            "fullName": "Vincenzo Pallozzi Lavorante"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of South Florida",
+                    "ror": "https://ror.org/032db5x82"
+                }
+            ],
+            "fullName": "Philip Waitkevich"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-08T16:35:49Z"
+        }
+    ],
+    "keywords": [
+        "Code Equivalence",
+        "Code based cryptography",
+        "Code Isomorphism"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/187.pdf",
+    "pid": "187",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Asymptotic improvements to provable algorithms for the code equivalence problem",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "RingCT signatures are essential components of Ring Confidential Transaction (RingCT) schemes on blockchain platforms, enabling anonymous transaction spending and significantly impacting the scalability of these schemes. This paper makes two primary contributions:\r\n\r\nWe provide the first thorough analysis of a recently developed Any-out-of-N proof in the discrete logarithm (DLOG) setting and the associated RingCT scheme, introduced by ZGSX23 (S&P '23). The proof conceals the number of the secrets to offer greater anonymity than K-out-of-N proofs and uses an efficient \"K-Weight\" technique for its construction. However, we identify for the first time several limitations of using Any-out-of-N proofs, such as increased transaction sizes, heightened cryptographic complexities and potential security risks. These limitations prevent them from effectively mitigating the longstanding scalability bottleneck.\r\n\r\nWe then continue to explore the potential of using K-out-of-N proofs to enhance scalability of RingCT schemes. Our primary innovation is a new DLOG-based RingCT signature that integrates a refined \"K-Weight\"-based K-out-of-N proof and an entirely new tag proof. The latter is the first to efficiently enable the linkability of RingCT signatures derived from the former, effectively resisting double-spending attacks.\r\n\r\nFinally, we identify and patch a linkability flaw in ZGSX23's signature. We benchmark our scheme against this patched one to show that our scheme achieves a boost in scalability, marking a promising step forward.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CSIRO's Data61"
+                }
+            ],
+            "fullName": "Nan Wang",
+            "orcid": "0000-0002-5399-1202"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Cambridge",
+                    "ror": "https://ror.org/013meh722"
+                }
+            ],
+            "fullName": "Qianhui Wang",
+            "orcid": "0009-0008-3920-1121"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CSIRO's Data61"
+                }
+            ],
+            "fullName": "Dongxi Liu",
+            "orcid": "0000-0002-0221-2571"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Monash University",
+                    "ror": "https://ror.org/02bfwt286"
+                }
+            ],
+            "fullName": "Muhammed F. Esgin",
+            "orcid": "0000-0003-1650-3748"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CSIRO's Data61"
+                }
+            ],
+            "fullName": "Alsharif Abuadbba",
+            "orcid": "0000-0001-9695-7947"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-08T22:06:24Z"
+        }
+    ],
+    "keywords": [
+        "Ring Confidential Transaction",
+        "K-out-of-N",
+        "Zero-Knowledge Proof",
+        "Linkable Ring Signature",
+        "Transparent Setup",
+        "Blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/188.pdf",
+    "pid": "188",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "BulletCT: Towards More Scalable Ring Confidential Transactions With Transparent Setup",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We study the problem of finding a path between conjugate supersingular elliptic curves over $\\mathbb{F}_{p^2}$ for a prime $p$, which is important for cycle finding in supersingular isogeny graphs. We see that for any given $p$, there is some $l$ corresponding to $p$ which accelerates the process of conjugate path-finding. Also, time-wise, the most efficient way of overviewing the graph is seeing $i(=3)$ steps at once. We have outlined methods in which the next vertex of any pseudo-random walk should be chosen to reach conjugate vertex faster. We have experimentally investigated the paths between frobenius conjugates for wide ranges of small prime $l$. We introduce sets to experimentally learn about the structure of the isogeny graphs when short cycles are present.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology, Madras"
+                }
+            ],
+            "fullName": "Madhurima Mukhopadhyay"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-09T15:57:18Z"
+        }
+    ],
+    "keywords": [
+        "Cycles",
+        "Frobenius conjugates",
+        "Path-finding",
+        "endomorphism rings",
+        "supersingular isogeny graph"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/189.pdf",
+    "pid": "189",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: Optimizing primes and powers to speed-up cycle finding",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We study error detection and correction in a computationally bounded world, where errors are introduced by an arbitrary $\\textit{polynomial-time}$ adversarial channel. Our focus is on $\\textit{seeded}$ codes, where the encoding and decoding procedures can share a public random seed, but are otherwise deterministic. We can ask for either $\\textit{selective}$ or $\\textit{adaptive}$ security, depending on whether the adversary can choose the message being encoded before or after seeing the seed. For large alphabets, a recent construction achieves essentially optimal rate versus error tolerance trade-offs under minimal assumptions, surpassing information-theoretic limits. However, for the binary alphabet, the only prior improvement over information theoretic codes relies on non-standard assumptions justified via the random oracle model. We show the following:\r\n\r\n$\\textbf{Selective Security under LWE:}$ Under the learning with errors (LWE) assumption, we construct selectively secure codes over the binary alphabet. For error detection, our codes achieve essentially optimal rate $R \\approx 1$ and relative error tolerance $\\rho \\approx \\frac{1}{2}$. For error correction, they can uniquely correct $\\rho < 1/4$ relative errors with a rate $R$ that essentially matches that of the best list-decodable codes with error tolerance $\\rho$. Both cases provide significant improvements over information-theoretic counterparts. The construction relies on a novel form of 2-input correlation intractable hash functions that we construct from LWE.\r\n\r\n$\\textbf{Adaptive Security via Crypto Dark Matter:}$  Assuming the exponential security of a natural collision-resistant hash function candidate based on the ``crypto dark matter'' approach  of mixing linear functions over different moduli, we construct adaptively secure codes over the binary alphabet, for both error detection and correction. They achieve essentially the same trade-offs between error tolerance $\\rho$ and rate $R$ as above, with the caveat that for error-correction they only do so for sufficiently small values of $\\rho$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/04t5xt781"
+                }
+            ],
+            "fullName": "Jad Silbak"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/04t5xt781"
+                }
+            ],
+            "fullName": "Daniel Wichs"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-09T20:21:45Z"
+        }
+    ],
+    "keywords": [
+        "LWE",
+        "Error Correction",
+        "Error Detection",
+        "Correlation Intractable Hash"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/190.pdf",
+    "pid": "190",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Binary Codes for Error Detection and Correction in a Computationally Bounded World",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
