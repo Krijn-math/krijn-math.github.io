@@ -13952,4 +13952,489 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "It is often desirable to break cryptographic primitives into two components: an input-independent offline component, and a cheap online component used when inputs arrive. Security of such online/offline primitives must be proved in the input-adaptive setting: the adversary chooses its input adaptively, based on what it sees in the offline-phase. Proving security in the input-adaptive setting can be difficult, particularly when one wishes to achieve simulation security and avoid idealized objects like a random oracle (RO).\r\n\r\nThis work proposes a framework for reasoning about input-adaptive primitives: adaptive distributional security (ADS). Roughly, an ADS primitive provides security when it is used with inputs drawn from one of two distributions that are themselves hard to distinguish. ADS is useful as a framework for the following reasons:\r\n    - An ADS definition can often circumvent impossibility results imposed on the corresponding simulation-based definition. This allows us to decrease the online-cost of primitives, albeit by using a weaker notion of security.\r\n    - With care, one can typically upgrade an ADS-secure object into a simulation-secure object (by increasing cost in the online-phase).\r\n    - ADS is robust, in the sense that (1) it enables a form of composition and (2) interesting ADS primitives are highly interconnected in terms of which objects imply which other objects.\r\n    - Many useful ADS-secure objects are plausibly secure from straightforward symmetric-key cryptography.\r\n\r\nWe start by defining the notion of an ADS encryption (ADE) scheme.\r\nA notion of input-adaptive encryption can be easily achieved from RO, and the ADE definition can be understood as capturing the concrete property provided by RO that is sufficient to achieve input-adaptivity. From there, we use ADE to achieve ADS variants of garbled circuits and oblivious transfer, to achieve simulation-secure garbled circuits, oblivious transfer, and two-party computation, and prove interconnectedness of these primitives. In sum, this results in a family of objects with extremely cheap online-cost.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Cruz Barnum"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "David Heath"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-10T03:33:58Z"
+        }
+    ],
+    "keywords": [
+        "Input-Adaptivity",
+        "Simulators",
+        "MPC",
+        "Garbled Circuits"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/191.pdf",
+    "pid": "191",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Adaptive Distributional Security: A Framework for Input-Adaptive Cryptography",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Machine learning (ML) has been widely deployed in various applications, with many applications being in critical infrastructures. One recent paradigm is edge ML, an implementation of ML on embedded devices for Internet-of-Things (IoT) applications. In this work, we have conducted a practical experiment on Intel Neural Compute Stick (NCS) 2, an edge ML device, with regard to fault injection (FI) attacks. More precisely, we have employed electromagnetic fault injection (EMFI) on NCS 2 to evaluate the practicality of the attack on a real target device. We have investigated multiple fault parameters with a low-cost pulse generator, aiming to achieve misclassification at the output of the inference. Our experimental results demonstrated the possibility of achieving practical and repeatable misclassifications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Shivam Bhasin",
+            "orcid": "0000-0002-6903-5127"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Dirmanto Jap",
+            "orcid": "0000-0002-3149-9401"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University, The Netherlands",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Marina Kr\u010dek",
+            "orcid": "0000-0001-8475-1853"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University, The Netherlands",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Stjepan Picek",
+            "orcid": "0000-0001-7509-4337"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Prasanna Ravi",
+            "orcid": "0000-0003-0201-3705"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-10T04:23:52Z"
+        }
+    ],
+    "keywords": [
+        "EMFI",
+        "Edge ML",
+        "Model Evasion"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/192.pdf",
+    "pid": "192",
+    "pubtype": {
+        "note": "DATE 2025 (Late Breaking Results)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Practical Electromagnetic Fault Injection on Intel Neural Compute Stick 2",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We exhibit a gap between the average random probing model, as defined by Dziembowski et al. at Eurocrypt 2015, and the same model, as defined in the recent paper of Brian et al. at Eurocrypt 2024. Whereas any noisy leakage can be tightly reduced to the former one, we show in this paper that it cannot be tightly reduced to the latter one, unless requiring extra assumptions, e.g., if the noisy leakage is deterministic. As a consequence, the reduction from noisy leakages to random probings \u2014 without field size loss \u2014 remains unproven.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "LTCI, T\u00e9l\u00e9com Paris, Institut Polytechnique de Paris",
+                    "ror": "https://ror.org/057er4c39"
+                }
+            ],
+            "fullName": "Julien B\u00e9guinot",
+            "orcid": "0009-0000-0729-6965"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LIRMM, Univ. Montpellier, CNRS",
+                    "ror": "https://ror.org/013yean28"
+                }
+            ],
+            "fullName": "Lo\u00efc Masure",
+            "orcid": "0000-0003-2978-4067"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-10T10:24:06Z"
+        }
+    ],
+    "keywords": [
+        "Masking",
+        "Noisy leakage",
+        "Random Probing",
+        "Average Random Probing",
+        "Reduction",
+        "Leakage Model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/193.pdf",
+    "pid": "193",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Average Random Probing Model",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The decentralized nature of blockchains is touted to provide censorship resistance. However, in reality, the ability of proposers to completely control the contents of a block makes censorship relatively fragile. To combat this, a notion of inclusion lists has been proposed in the blockchain community. This paper presents the first formal study of inclusion lists. Our inclusion list design leverages multiple proposers to propose transactions and improve censorship resistance. The design has two key components. The first component is a utility-maximizing input list creation mechanism that allows rational proposers to achieve a correlated equilibrium while prioritizing high-value transactions. The second component, AUCIL (auction-based inclusion list), is a mechanism for aggregating the input lists from the proposers to output an inclusion list.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Duke University",
+                    "ror": "https://ror.org/00py81415"
+                }
+            ],
+            "fullName": "Sarisht Wadhwa",
+            "orcid": "0000-0003-4343-9868"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Julian Ma"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Thomas Thiery"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Barnabe Monnot"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Luca Zanolini"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Fan Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Duke University",
+                    "ror": "https://ror.org/00py81415"
+                }
+            ],
+            "fullName": "Kartik Nayak",
+            "orcid": "0000-0001-5675-263X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-10T12:09:58Z"
+        }
+    ],
+    "keywords": [
+        "Blockchain",
+        "Censorship Resistance",
+        "Auctions",
+        "MEV"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/194.pdf",
+    "pid": "194",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "AUCIL: An Inclusion List Design for Rational Parties",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In Dilithium, the rejection sampling step is crucial for the proof of security and correctness of the scheme. However, to our knowledge, there is no attack in the literature that takes advantage of an attacker knowing rejected signatures. The aim of this paper is to create a practical black-box attack against Dilithium with a weakened rejection sampling. We succeed in showing that an adversary with enough rejected signatures can recover Dilithium's secret key in less than half an hour on a desktop computer. There is one possible application for this result: by physically preventing one of the rejection sampling tests from happening, we obtain two fault attacks against Dilithium.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire de Math\u00e9matiques de Versailles, UVSQ, CNRS, Universit\u00e9 Paris-Saclay, 78035 Versailles, France"
+                },
+                {
+                    "name": "Thales CDI, France"
+                }
+            ],
+            "fullName": "Paco Azevedo-Oliveira"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne Universit\u00e9, CNRS, Inria, LIP6, F-75005 Paris, France"
+                }
+            ],
+            "fullName": "Andersson Calle Viera"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Thales CDI, France"
+                }
+            ],
+            "fullName": "Beno\u00eet Cogliati"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire de Math\u00e9matiques de Versailles, UVSQ, CNRS, Universit\u00e9 Paris-Saclay, 78035 Versailles, France"
+                }
+            ],
+            "fullName": "Louis Goubin"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-10T13:21:09Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/195.pdf",
+    "pid": "195",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Finding a polytope: A practical fault attack against Dilithium",
+    "year": 2025,
+    "repo": [
+        "https://github.com/anders1901/Polytope_attack",
+        "https://github.com/pq-crystals/dilithium/",
+        "https://github.com/pq-crystals/dilithium/",
+        "https://github.com/pq-crystals/dilithium"
+    ]
+}
+,
+{
+    "abstract": "The present article is a natural extension of the previous one about the GLV method of accelerating a (multi-)scalar multiplication on elliptic curves of moderate CM discriminants $D < 0$. In comparison with the first article, much greater magnitudes of $D$ (in absolute value) are achieved, although the base finite fields of the curves have to be pretty large. This becomes feasible by resorting to quite powerful algorithmic tools developed primarily in the context of lattice-based and isogeny-based cryptography. Curiously, pre-quantum cryptography borrows research outcomes obtained when seeking conversely quantum-resistant solutions or attacks on them. \r\n\r\nFor instance, some $2$-cycle of pairing-friendly MNT curves (with $-D \\approx 100{,}000{,}000$, i.e., $\\log_2(-D) \\approx 26.5$) is relevant for the result of the current article. The given $2$-cycle was generated at one time by Guillevic to provide $\\approx 128$ security bits, hence it was close to application in real-world zk-SNARKs. Another more performant MNT $2$-cycle (with slightly smaller security level, but with much larger $D$) was really employed in the protocol Coda (now Mina) until zero-knowledge proof systems on significantly faster pairing-free (or half-pairing) $2$-cycles were invented. It is also shown in the given work that more lollipop curves, recently proposed by Costello and Korpal to replace MNT ones, are now covered by the GLV technique.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Lleida",
+                    "ror": "https://ror.org/050c3cw24"
+                }
+            ],
+            "fullName": "Dimitri Koshelev"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Antonio Sanso"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-10T15:13:14Z"
+        }
+    ],
+    "keywords": [
+        "binary quadratic forms",
+        "GLV",
+        "ideal class groups",
+        "isogeny loops",
+        "pairing-friendly curves",
+        "relation lattices"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/196.pdf",
+    "pid": "196",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Endomorphisms for Faster Cryptography on Elliptic Curves of Moderate CM Discriminants, II",
+    "year": 2025,
+    "repo": [
+        "https://github.com/daira/pluto-eris",
+        "https://github.com/daira/pluto-eris",
+        "https://github.com/asanso/Endomorphisms-for-Faster-Cryptography-on-Elliptic-Curves-of-Moderate-CM-Discriminants-II",
+        "https://github.com/asanso/Endomorphisms-for-Faster-Cryptography-on-Elliptic-Curves-of-Moderate-CM-Discriminants-II",
+        "https://o1-labs.github.io/proof-systems/specs/pasta.html#pasta-curves",
+        "https://o1-labs.github.io/proof-systems/specs/pasta.html#pasta-curves"
+    ]
+}
+,
+{
+    "abstract": "It is shown that the stream cipher proposed by Carlet and Sarkar in ePrint report 2025/160 is insecure. More precisely, one bit of the key can be deduced from a few keystream bytes. This property extends to an efficient key-recovery attack. For example, for the proposal with 80 bit keys, a few kilobytes of keystream material are sufficient to recover half of the key.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Tim Beyne",
+            "orcid": "0000-0001-5638-9885"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Michiel Verbauwhede",
+            "orcid": "0000-0002-5982-1984"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-02-11T15:29:41Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-02-10T21:23:25Z"
+        }
+    ],
+    "keywords": [
+        "cryptanalysis",
+        "stream cipher",
+        "truncated differential"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/197.pdf",
+    "pid": "197",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cryptanalysis of a nonlinear filter-based stream cipher",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
