@@ -14437,4 +14437,1149 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "This work proposes an encrypted hybrid database framework that combines vectorized data search and relational data query over quantized fully homomorphic encryption (FHE). We observe that, due to the lack of efficient encrypted data ordering capabilities, most existing encrypted database (EDB) frameworks do not support hybrid queries involving both vectorized and relational data. To further enrich query expressiveness while retaining evaluation efficiency, we propose Engorgio, a hybrid EDB framework based on quantized data ordering techniques over FHE.  Specifically, we design a new quantized data encoding scheme along with a set of novel comparison and permutation algorithms to accurately generate and apply orders between large-precision data items. Furthermore, we optimize specific query types, including full table scan, batched query, and Top-k query to enhance the practical performance of the proposed framework. In the experiment, we show that, compared to the state-of-the-art EDB frameworks, Engorgio is up to 28x--854x faster in homomorphic comparison, 65x--687x faster in homomorphic sorting and 15x--1,640x faster over a variety of end-to-end relational, vectorized, and hybrid SQL benchmarks. Using Engorgio, the amortized runtime for executing a relational and hybrid query on a 48-core processor is under 3 and 75 seconds, respectively, over a 10K-row hybrid database.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Song Bian"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Haowen Pan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Jiaqi Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Zhou Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Yunhao Fu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Huawei Technology"
+                }
+            ],
+            "fullName": "Jiafeng Hua"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Academy of Blockchain and Edge Computing"
+                }
+            ],
+            "fullName": "Yi Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Academy of Blockchain and Edge Computing"
+                }
+            ],
+            "fullName": "Bo Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China"
+                }
+            ],
+            "fullName": "Yier Jin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Academy of Blockchain and Edge Computing"
+                }
+            ],
+            "fullName": "Jin Dong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Zhenyu Guan"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T07:11:26Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic",
+        "Encrypted Database"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/198.pdf",
+    "pid": "198",
+    "pubtype": {
+        "note": "USENIX Security 25",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Engorgio: An Arbitrary-Precision Unbounded-Size Hybrid Encrypted Database via Quantized Fully Homomorphic Encryption",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zama-ai/tfhe-rs"
+    ]
+}
+,
+{
+    "abstract": "We propose a sublinear-sized proof system for rank-one constraint satisfaction over polynomial rings (Ring-R1CS), particularly for rings of the form $Z_{Q}[X]/(X^N+1)$. These rings are widely used in lattice-based constructions, \r\nwhich underlie many modern post-quantum cryptographic schemes. \r\nConstructing efficient proof systems for arithmetic over these rings is challenged by two key obstacles: (1) Under practical popular choices of $Q$ and $N$, the ring $Z_{Q}[X]/(X^N+1)$ is not field-like, and thus tools like Schwartz\u2013Zippel lemma cannot apply; (2) when $N$ is large, which is common in implementations of lattice-based cryptosystems, the ring is large, causing the proof size suboptimal.\r\nIn this paper, we address these two obstacles, enabling more efficient proofs for arithmetics over $Z_{Q}[X]/(X^N+1)$ when $Q$ is a `lattice-friendly' modulus, \r\nincluding moduli that support fast NTT computation or power-of-two moduli. \r\nOur primary tool is a novel \\emph{ring switching} technique. \r\nThe core idea of ring switching is to convert the R1CS over $Z_{Q}[X]/(X^N+1)$ into another R1CS instance over Galois rings, which is field-like and small (with size independent with $N$).\r\nAs (zero-knowledge) proofs have many applications in cryptography, we expect that efficient proof systems for polynomial ring arithmetic could lead to more efficient constructions of advanced primitives from lattice assumptions, such as aggregate signatures, group signatures, verifiable random function, or verifiable fully holomorphic encryption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Southern California",
+                    "ror": "https://ror.org/03taz7m60"
+                }
+            ],
+            "fullName": "Mi-Ying Miryam Huang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Southern California"
+                }
+            ],
+            "fullName": "Xinyu Mao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Southern California"
+                }
+            ],
+            "fullName": "Jiapeng Zhang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T07:15:03Z"
+        }
+    ],
+    "keywords": [
+        "proof system",
+        "lattice",
+        "NIZK",
+        "NIAoK"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/199.pdf",
+    "pid": "199",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Sublinear Proofs over Polynomial Rings",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Multiplication and other non-linear operations are widely recognized as the most costly components of secure two-party computation (2PC) based on linear secret sharing. Multiplication and non-linear operations are well known to be the most expensive protocols in secure two-party computation (2PC). Moreover, the comparison protocol (or $\\mathsf{Wrap}$ protocol) is essential for various operations such as truncation, signed extension, and signed non-uniform multiplication. This paper aims to optimize these protocols by avoiding invoking the costly comparison protocol, thereby improving their efficiency.\r\n\r\nWe propose a novel approach to study 2PC from a geometric perspective. Specifically, we interpret the two shares of a secret as the horizontal and vertical coordinates of a point in a Cartesian coordinate system, with the secret itself represented as the corresponding point. This reformulation allows us to address the comparison problem by determining the region where the point lies. Furthermore, we identify scenarios where the costly comparison protocol can be replaced by more efficient evaluating AND gate protocols within a constrained range. Using this method, we improve protocols for truncation, signed extension and signed non-uniform multiplication, all of which are fundamental to 2PC. In particular, for the one-bit error truncation protocol and signed extension protocols, we reduce the state-of-the-art communication complexities of Cheetah (USENIX\u201922) and SirNN (S\\&P\u201921) from $\\approx \\lambda (l + 1)$ to $\\approx \\lambda$ in two rounds, where $l$ is the input length and $\\lambda$ is the security parameter. For signed multiplication with non-uniform bit-width, we reduce the communication cost of SirNN's by 40\\% to 60\\%.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Chinese University of Hong Kong, Shenzhen",
+                    "ror": "https://ror.org/02d5ks197"
+                }
+            ],
+            "fullName": "Hao Guo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Liqiang Peng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Singapore Management University"
+                }
+            ],
+            "fullName": "Haiyang Xue"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Li Peng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Weiran Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang Lab"
+                }
+            ],
+            "fullName": "Zhe Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences"
+                }
+            ],
+            "fullName": "Lei Hu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T08:36:04Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/200.pdf",
+    "pid": "200",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Secure Two-party Computation from a Geometric Perspective",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mpc-msri/EzPC/tree/master/SCI",
+        "https://github.com/mpc-msri/EzPC/tree/master/SCI"
+    ]
+}
+,
+{
+    "abstract": "Quantum money is the cryptographic application of the quantum no-cloning theorem. It has recently been instantiated by Montgomery and Sharif (Asiacrypt'24) from class group actions on elliptic curves. In this work, we propose a novel method to forge a quantum banknote by leveraging the efficiency of evaluating division polynomials with the coordinates of rational points, offering a more efficient alternative to brute-force attack. Since our attack still requires exponential time, it remains impractical to forge a quantum banknote. Interestingly, due to the inherent properties of quantum money, our attack method also results in a more efficient verification procedure. As our algorithm employs the rational points and the quadratic twists to verify the cardinality of the superposition of elliptic curves, we expect it to inspire future research on elliptic-curve-based quantum cryptography.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Hyeonhak Kim",
+            "orcid": "0000-0003-2782-6999"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "DongHoe Heo",
+            "orcid": "0000-0001-9300-2985"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Seokhie Hong",
+            "orcid": "0000-0001-7506-4023"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T09:13:28Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Money",
+        "Quantum Lightning",
+        "Class Group Action"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/201.pdf",
+    "pid": "201",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Search and Verify Isogeny-Based Quantum Money with Rational Points",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Distributed certification is a set of mechanisms that allows an all-knowing prover to convince the units of a communication network that the network's state has some desired property, such as being $3$-colorable or triangle-free. Classical mechanisms, such as proof labeling schemes (PLS), consist of a message from the prover to each unit, followed by on-e round of communication between each unit and its neighbors. \r\nLater works consider extensions, called distributed interactive proofs, where the prover and the units can have multiple rounds of communication before the communication among the units. Recently, Bick, Kol, and Oshman (SODA '22) defined a zero-knowledge version of distributed interactive proofs, where the prover convinces the units of the network\u2019s state without revealing any other information about the network\u2019s state or structure.  In their work, they propose different variants of this model and show that many graph properties of interest can be certified with them.\r\n\r\nIn this work, we define and study distributed non-interactive zero-knowledge proofs (dNIZK); these can be seen as a non-interactive version of the aforementioned model, and also as a zero-knowledge version of PLS.  We prove the following: \r\n\r\n- There exists a dNIZK protocol for $3$-coloring with  $O(\\log n)$-bit messages from the prover and $O(\\log n)$-size messages among neighbors. This disproves a conjecture from previous work asserting that the total number of bits from the prover should grow linearly with the number of edges.  \r\n\r\n- There exists a family of dNIZK protocols for triangle-freeness, that presents a trade-off between the size of the messages from the prover and the size of the messages among neighbors. Interestingly, we also introduce a variant of this protocol where the message size depends only on the maximum degree of a node and not on the total number of nodes, improving upon the previous non-zero-knowledge protocol for this problem.  \r\n\r\n-  There exists a dNIZK protocol for any graph property in NP in the random oracle models, which is secure against an arbitrary number of malicious parties. Previous work considered compilers from PLS to distributed zero-knowledge protocol, which results in protocols with parameters that are incomparable to ours.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire de Recherche en Informatique de Paris 6",
+                    "ror": "https://ror.org/05krcen59"
+                }
+            ],
+            "fullName": "Alex B. Grilo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 Paris-Saclay, CNRS, LISN,",
+                    "ror": "https://ror.org/00rd81916"
+                }
+            ],
+            "fullName": "Ami Paz"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Academic College of Tel-Aviv-Yaffo",
+                    "ror": "https://ror.org/04cg6c004"
+                }
+            ],
+            "fullName": "Mor Perry"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T11:17:37Z"
+        }
+    ],
+    "keywords": [
+        "zero-knowledge",
+        "distributed computing",
+        "proof labeling schemes"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/202.pdf",
+    "pid": "202",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Distributed Non-Interactive Zero-Knowledge Proofs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Homomorphic Encryption (HE) is a privacy-enhancing technology that enables computation over encrypted data without the need for decryption. A primary application of HE is in the construction of communication-efficient Two-Party Computation (2PC) protocols between a client and a server, serving as the key owner and the evaluator, respectively. In this context, it is reasonable to assume that the evaluation circuit involves some confidential information of the server; otherwise, the client could compute it on their own. However, the 2PC protocol built on an HE scheme is not necessarily secure, as the standard IND-CPA security of HE does not guarantee the privacy of the evaluation circuit. Several enhanced security notions for HE, such as circuit privacy and sanitization, have been proposed to address this issue, but they require significant overhead in terms of parameter size or complexity.\r\n\r\nIn this work, we introduce a novel security notion for HE, called ciphertext simulatability, which precisely captures the security requirements of HE in the construction of 2PC. Then, we provide a concrete construction of ciphertext-simulatable HE from the BFV scheme by modifying its evaluation algorithm. We provide theoretical analysis and demonstrate experimental results to ensure that our solution has insignificant overhead in terms of parameter size and error growth. As a matter of independent interest, we demonstrate how our approach of designing ciphertext-simulatable BFV can be further extended to satisfy stronger security notions such as sanitization.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Intak Hwang",
+            "orcid": "0009-0005-3870-2096"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Seonhong Min",
+            "orcid": "0000-0002-1151-2453"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Yongsoo Song",
+            "orcid": "0000-0002-0496-9789"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T12:01:19Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic encryption",
+        "Circuit privacy",
+        "Ciphertext simulatability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/203.pdf",
+    "pid": "203",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Ciphertext-Simulatable HE from BFV with Randomized Evaluation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/SNUCP/BFV-2PC"
+    ]
+}
+,
+{
+    "abstract": "Deniable Authentication is a highly desirable guarantee for secure messaging: it allows Alice to authentically send a message $m$ to a designated receiver Bob in a *Plausibly Deniable* manner. Concretely, while Bob is guaranteed Alice sent $m$, he cannot convince a judge Judy that Alice really sent this message---even if he gives Judy his secret keys. This is because Judy knows Bob *can* make things up. This paper models the security of Multi-Designated Verifier Signatures (MDVS) and Multi-Designated Receiver Signed Public Key Encryption (MDRS-PKE)---two (related) types of schemes that provide such guarantees---in the Constructive Cryptography (CC) framework (Maurer and Renner, ICS '11).\r\n\r\nThe only work modeling dishonest parties' ability of \"making things up\" was by Maurer et al. (ASIACRYPT '21), who modeled the security of MDVS, also in CC. Their security model has two fundamental limitations:\r\n  1. deniability is not guaranteed when honest receivers read;\r\n  2. it relies on the CC-specific concept of specifications.  \r\n\r\nWe solve both problems. Regarding the latter, our model is a standard simulator-based one. Furthermore, our composable treatment allowed to identify a new property, Forgery Invalidity, without which we do not know how to prove the deniability of neither MDVS nor MDRS-PKE when honest receivers read. Finally, we prove that Chakraborty et al.'s MDVS (EUROCRYPT '23) has this property, and that Maurer et al.'s MDRS-PKE (EUROCRYPT '22) preserves it from the underlying MDVS.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Guilherme Rito",
+            "orcid": "0000-0002-0080-8670"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Concordium"
+                }
+            ],
+            "fullName": "Christopher Portmann"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Lucerne University of Applied Sciences and Arts",
+                    "ror": "https://ror.org/04nd0xd48"
+                },
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Chen-Da Liu-Zhang",
+            "orcid": "0000-0002-0349-3838"
+        }
+    ],
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T12:45:57Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/204.pdf",
+    "pid": "204",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Simpler and Stronger Models for Deniable Authentication",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Payment channels are auspicious candidates in layer-2 solutions to reduce the number of on-chain transactions on traditional blockchains and increase transaction throughput. To construct payment channels, peers lock funds on 2-of-2 multisig addresses and open channels between one another to transact via instant peer-to-peer transactions. Transactions between peers without a direct channel are made possible by routing the payment over a series of adjacent channels. In certain cases, this can lead to relatively low transaction success rates and high transaction fees. In this work, we introduce pliability to constructing payment channels and graft edges with more than two endpoints into the payment graph. We refer to these constructions as hyperedges. We present hyperedge-based topologies to form hypergraphs and compare them to Bitcoin's Lightning network and other state-of-the-art solutions. The results demonstrate that hyperedge-based implementations can both increase transaction success rate, in addition to decreasing the network cost by more than 50% compared to that of the Lightning Network.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technion - Israel Institute of Technology"
+                }
+            ],
+            "fullName": "Arad Kotzer",
+            "orcid": "0009-0000-9122-4525"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Budapest University of Technology and Economics, Hungary"
+                }
+            ],
+            "fullName": "Bence Lad\u00f3czki",
+            "orcid": "0000-0002-5056-4184"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Budapest University of Technology and Economics, Hungary"
+                }
+            ],
+            "fullName": "J\u00e1nos Tapolcai",
+            "orcid": "0000-0002-3512-9504"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion - Israel Institute of Technology"
+                }
+            ],
+            "fullName": "Ori Rottenstreich",
+            "orcid": "0000-0002-4064-1238"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T14:02:52Z"
+        }
+    ],
+    "keywords": [
+        "Blockchain",
+        "Lightning network",
+        "Payment Channel Networks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/205.pdf",
+    "pid": "205",
+    "pubtype": {
+        "note": "IEEE Transactions on Network and Service Management",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Addressing Scalability Issues of Blockchains with Hypergraph Payment Networks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The ChaCha stream cipher has become one of the best known ARX-based ciphers because of its widely use in several systems, such as in TLS, SSH and so on. In this paper, we find some errors in the attacks on ChaCha256 from IEEE TIT and INDOCRYPT 2024, and then corrected cryptanalytic attacks on ChaCha256 are given. However, the corrected attacks have extremely large time and data complexities. The corrected results show that the technique proposed in IEEE TIT may not be able to obtain improved differential-linear attacks on ChaCha.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University"
+                }
+            ],
+            "fullName": "Xinhai Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University"
+                }
+            ],
+            "fullName": "Lin Ding"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University"
+                }
+            ],
+            "fullName": "Zhengting Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University"
+                }
+            ],
+            "fullName": "Jiang Wan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University"
+                }
+            ],
+            "fullName": "Bin Hu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T14:07:01Z"
+        }
+    ],
+    "keywords": [
+        "Cryptanalysis",
+        "differential-linear attack",
+        "ChaCha",
+        "stream cipher"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/206.pdf",
+    "pid": "206",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Revisiting the Differential-Linear Attacks on ChaCha from IEEE TIT and INDOCRYPT 2024 (Extended Abstract)",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We present new techniques for garbling mixed arithmetic and boolean circuits, utilizing the homomorphic secret sharing scheme introduced by Roy \\& Singh (Crypto 2021), along with the half-tree protocol developed by Guo et al (Eurocrypt 2023). Compared to some two-party interactive protocols, our mixed garbling only requires several times $(<10)$ more communication cost.\r\n\r\nWe construct the bit decomposition/composition gadgets with communication cost $O((\\lambda+\\lambda_{\\text{DCR}}/k)b)$ for integers in the range $(-2^{b-1}, 2^{b-1})$, requiring $O(2^k)$ computations for the GGM-tree. Our approach is compatible with constant-rate multiplication protocols, and the cost decreases as $k$ increases. Even for a small $k=8$, the concrete efficiency ranges from $6\\lambda b$ ($b \\geq 1000$ bits) to $9\\lambda b$ ($b \\sim 100$ bits) per decomposition/composition. In addition, we develop the efficient gadgets for mod $q$ and unsigned truncation based on bit decomposition and composition.\r\n\r\nWe construct efficient arithmetic gadgets over various domains. For bound integers, we improve the multiplication rate in the work of Meyer et al. (TCC 2024) from $\\textstyle\\frac{\\zeta-2}{\\zeta+1}$ to $\\frac{\\zeta-2}{\\zeta}$. We propose new garbling schemes over other domains through bounded integers with our modular and truncation gadgets, which is more efficient than previous constructions. For $\\mathbb{Z}_{2^b}$, additions and multiplication can be garbled with a communication cost comparable to our bit decomposition. For general finite field $\\mathbb{F}_{p^n}$, particularly for large values of $p$ and $n$, we garble the addition and multiplication at the cost of $O((\\lambda+\\lambda_{\\text{DCR}}/k)b)$, where $b = n\\lceil \\log p \\rceil$. For applications to real numbers, we introduce an ``error-based'' truncation that makes the cost of multiplication dependent solely on the desired precision.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Jian Guo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Wenjie Nan"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T16:33:48Z"
+        }
+    ],
+    "keywords": [
+        "Garbled circuit",
+        "Mixed circuits",
+        "Secure computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/207.pdf",
+    "pid": "207",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Mixed Garbling from Homomorphic Secret Sharing and GGM-Tree",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper we present two reductions between variants of the Code Equivalence problem. We give polynomial-time Karp reductions from Permutation Code Equivalence (PCE) to both Linear Code Equivalence (LCE) and Signed Permutation Code Equivalence (SPCE). Along with a Karp reduction from SPCE to the Lattice Isomorphism Problem (LIP) proved in a paper by Bennett and Win (2024), our second result implies a reduction from PCE to LIP.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Michigan\u2013Ann Arbor",
+                    "ror": "https://ror.org/00jmfr291"
+                }
+            ],
+            "fullName": "Mahdi Cheraghchi",
+            "orcid": "0000-0001-8957-0306"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Michigan\u2013Ann Arbor",
+                    "ror": "https://ror.org/00jmfr291"
+                }
+            ],
+            "fullName": "Nikhil Shagrithaya"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Michigan\u2013Ann Arbor",
+                    "ror": "https://ror.org/00jmfr291"
+                }
+            ],
+            "fullName": "Alexandra Veliche",
+            "orcid": "0000-0003-2788-9447"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T19:21:56Z"
+        }
+    ],
+    "keywords": [
+        "code equivalence",
+        "lattice isomorphism",
+        "computational complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/208.pdf",
+    "pid": "208",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Reductions Between Code Equivalence Problems",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "NovaTEE is a novel private multilateral settlement network designed to address critical inefficiencies in both traditional financial markets and cryptocurrency trading. The current clearing landscape suffers from fragmented capital allocation, restrictive prime brokerage relationships, and prolonged settlement timeframes in traditional finance, while cryptocurrency markets face challenges with over-collateralization, siloed lending pools, and security risks from centralized exchanges.\r\n\r\nWe introduce a settlement system that leverages Trusted Execution Environments (TEEs) and threshold cryptography to enable secure, private, and efficient settlement of obligations between multiple parties. The system utilizes a distributed key generation model and novel clearing mechanisms to optimize capital efficiency through multilateral netting, while maintaining strong privacy guarantees and regulatory compliance capabilities. By combining TEE-based security with advanced cryptographic protocols, including zero-knowledge proofs and sparse Merkle trees for data verification, our solution enables efficient cross-venue and cross-chain settlement while protecting sensitive trading information. This approach significantly reduces capital requirements for market participants, optimizes transaction costs, and provides institutional-grade clearing infrastructure without compromising on security or privacy. The system's architecture ensures that no single party has complete access to transaction details while maintaining auditability through a distributed backup network, offering a practical solution for institutional adoption of on-chain settlement.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nethermind"
+                }
+            ],
+            "fullName": "Ahmet Ramazan A\u011f\u0131rta\u015f",
+            "orcid": "0000-0002-4574-0067"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nethermind"
+                }
+            ],
+            "fullName": "James Ball",
+            "orcid": "0000-0002-1052-9747"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nethermind"
+                }
+            ],
+            "fullName": "Michael Belegris",
+            "orcid": "0009-0006-7575-7587"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Gustave Charles-Saigne",
+            "orcid": "0009-0008-9984-9835"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-11T21:29:13Z"
+        }
+    ],
+    "keywords": [
+        "Trusted Execution Environments",
+        "Threshold Cryptography",
+        "Privacy",
+        "Clearing",
+        "Settlement"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/209.pdf",
+    "pid": "209",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "NovaTEE: Private Clearing and Settlement on Trusted Execution Hardware",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper introduces practical schemes for keyword Private Information Retrieval (keyword PIR), enabling private queries on public databases using keywords. Unlike standard index-based PIR, keyword PIR presents greater challenges, since the query's position within the database is unknown and the domain of keywords is vast. Our key insight is to construct an efficient and compact key-to-index mapping, thereby reducing the keyword PIR problem to standard PIR. To achieve this, we propose three constructions incorporating several new techniques. The high-level approach involves (1) encoding the server's key-value database into an indexable database with a key-to-index mapping and (2) invoking standard PIR on the encoded database to retrieve specific positions based on the mapping. We conduct comprehensive experiments, with results showing substantial improvements over the state-of-the-art keyword PIR, ChalametPIR (CCS'24), i.e., a $15\\sim178 \\times$ reduction in communication and $1.1 \\sim 2.4 \\times$ runtime improvement, depending on database size and entry length. Our constructions are practical, executing keyword PIR in just 47 ms for a database containing 1 million 32-byte entries.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computing & Information Systems, Singapore Management University"
+                }
+            ],
+            "fullName": "Meng Hao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group"
+                }
+            ],
+            "fullName": "Weiran Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group"
+                }
+            ],
+            "fullName": "Liqiang Peng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Advanced Study, BNRist, Tsinghua University"
+                }
+            ],
+            "fullName": "Cong Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computing & Information Systems, Singapore Management University"
+                }
+            ],
+            "fullName": "Pengfei Wu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group"
+                }
+            ],
+            "fullName": "Lei Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Peng Cheng Laboratory"
+                }
+            ],
+            "fullName": "Hongwei Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computing & Information Systems, Singapore Management University"
+                }
+            ],
+            "fullName": "Robert H. Deng"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T01:23:04Z"
+        }
+    ],
+    "keywords": [
+        "keyword PIR"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/210.pdf",
+    "pid": "210",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Practical Keyword Private Information Retrieval from Key-to-Index Mappings",
+    "year": 2025,
+    "repo": [
+        "https://github.com/alibaba-edu/mpc4j",
+        "https://github.com/alibaba-edu/mpc4j",
+        "https://github.com/alibaba-edu/mpc4j",
+        "https://github.com/FastFilter/fastfilter_java",
+        "https://github.com/FastFilter/fastfilter_java",
+        "https://github.com/claucece/chalamet",
+        "https://github.com/claucece/chalamet",
+        "https://github.com/gvinciguerra/PGM-index",
+        "https://github.com/gvinciguerra/PGM-index"
+    ]
+}
+,
+{
+    "abstract": "Differential privacy (DP) is a fundamental technique used in machine learning (ML) training for protecting the privacy of sensitive individual user data. In the past few years, a new approach for combining prior-based Local Differential Privacy (LDP) mechanisms with a relaxed DP criterion, known as Label DP, has shown great promise in increasing the utility of the final trained model without compromising on the DP privacy budget. In this work, we identify a crucial privacy gap in the current implementations of these prior-based LDP mechanisms, namely the leakage of sensitive priors. We address the challenge of implementing such LDP mechanisms without leaking any information about the priors while preserving the efficiency and accuracy of the current insecure implementations. To that end, we design simple and efficient secure two-party computation (2PC) protocols for addressing this challenge, implement them, and perform end-to-end testing on standard datasets such as MNIST, CIFAR-10. Our empirical results indicate that the added security benefit essentially comes almost for free in the sense that the gap between the current insecure implementations and our proposed secure version, in terms of run-time overhead and accuracy degradation, is minimal. E.g., for CIFAR-10, with strong DP privacy parameter, the additional runtime due to 2PC is $\\approx 3.9\\%$ over WAN with $0.4\\%$ decrease in accuracy over an insecure (non-2PC) approach.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Amit Agarwal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Stanislav Peceny"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Google (United States)",
+                    "ror": "https://ror.org/00njsd438"
+                }
+            ],
+            "fullName": "Mariana Raykova"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Google (United States)",
+                    "ror": "https://ror.org/00njsd438"
+                }
+            ],
+            "fullName": "Phillipp Schoppmann"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Google (United States)",
+                    "ror": "https://ror.org/00njsd438"
+                }
+            ],
+            "fullName": "Karn Seth"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T03:10:03Z"
+        }
+    ],
+    "keywords": [
+        "Secure Multiparty Computation",
+        "Differential Privacy",
+        "Privacy-Preserving Machine Learning",
+        "Randomized Response"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/211.pdf",
+    "pid": "211",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Prior-Based Label Differential Privacy via Secure Two-Party Computation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/google/googletest",
+        "https://github.com/google/googletest"
+    ]
+}
+,
+{
+    "abstract": "With the rapid development of quantum computers, optimizing the quantum implementations of symmetric-key ciphers, which constitute the primary components of the quantum oracles used in quantum attacks based on Grover and Simon's algorithms, has become an active topic in the cryptography community. In this field, a challenge is to construct quantum circuits that require the least amount of quantum resources. In this work, we aim to address the problem of constructing quantum circuits with the minimal T-depth or width (number of qubits) for nonlinear components, thereby enabling implementations of symmetric-key ciphers with the minimal T-depth or width. Specifically, we propose several general methods for obtaining quantum implementation of generic vectorial Boolean functions and multiplicative inversions in GF(2^n), achieving the minimal T-depth and low costs across other metrics. As an application, we present a highly compact T-depth-3 Clifford+T circuit for the AES S-box. Compared to the T-depth-3 circuits presented in previous works (ASIACRYPT 2022, IEEE TC 2024), our circuit has significant reductions in T-count, full depth and Clifford gate count. Compared to the state-of-the-art T-depth-4 circuits, our circuit not only achieves the minimal T-depth but also exhibits reduced full depth and closely comparable width. This leads to lower costs for the DW-cost and T-DW-cost. Additionally, we propose two methods for constructing minimal-width implementations of vectorial Boolean functions. As applications, for the first time, we present a 9-qubit Clifford+T circuit for the AES S-box, a 16-qubit Clifford+T circuit for a pair of AES S-boxes, and a 5-qubit Clifford+T circuit for the chi function of SHA3. These circuits can be used to derive quantum circuits that implement AES or SHA3 without ancilla qubits.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sate Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, China"
+                }
+            ],
+            "fullName": "Zhenyu Huang",
+            "orcid": "0000-0002-3499-538X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sate Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, China"
+                }
+            ],
+            "fullName": "Fuxin Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sate Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, China"
+                }
+            ],
+            "fullName": "Dongdai Lin"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T07:01:17Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Circuit",
+        "T-depth",
+        "Width",
+        "AES",
+        "SHA3"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/212.pdf",
+    "pid": "212",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Constructing Quantum Implementations with the Minimal T-depth or Minimal Width and Their Applications",
+    "year": 2025,
+    "repo": [
+        "https://github.com/hzy-cas/Minimal_T-depth_Width",
+        "https://github.com/hzy-cas/Minimal_T-depth_Width",
+        "https://github.com/hzy-cas/Minimal_T-depth_Width",
+        "https://github.com/hzy-cas/Minimal_T-depth_Width",
+        "https://github.com/hzy-cas/Minimal_T-depth_Width",
+        "https://github.com/hzy-cas/Minimal_T-depth_Width"
+    ]
+}
 ]
