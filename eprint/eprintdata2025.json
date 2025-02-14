@@ -15582,4 +15582,708 @@
         "https://github.com/hzy-cas/Minimal_T-depth_Width"
     ]
 }
+,
+{
+    "abstract": "This paper introduces \"Little OaldresPuzzle_Cryptic,\" a novel lightweight symmetric encryption algorithm.\r\n\r\nAt the core of this algorithm are two main cryptographic components: the NeoAlzette permutation S-box based on ARX (Addition-Rotation-XOR) primitives and the innovative pseudo-random number generator XorConstantRotation (XCR), used exclusively in the key expansion process. The NeoAlzette S-box, a non-linear function for 32-bit pairs, is meticulously designed for both encryption strength and operational efficiency, ensuring robust security in resource-constrained environments. During the encryption and decryption processes, a pseudo-randomly selected mixed linear diffusion function, distinct from XCR, is applied, enhancing the complexity and unpredictability of the encryption.\r\n\r\nWe comprehensively explore the various technical aspects of the Little OaldresPuzzle_Cryptic algorithm.\r\n\r\nIts design aims to balance speed and security in the encryption process, particularly for high-speed data transmission scenarios. Recognizing that resource efficiency and execution speed are crucial for lightweight encryption algorithms, without compromising security, we conducted a series of statistical tests to validate the cryptographic security of our algorithm. These tests included assessments of resistance to linear and differential cryptanalysis, among other measures.\r\n\r\nBy combining the NeoAlzette S-box with sophisticated key expansion using XCR, and integrating the pseudo-randomly selected mixed linear diffusion function in its encryption and decryption processes, our algorithm significantly enhances its capability to withstand advanced cryptographic analysis techniques while maintaining lightweight and efficient operation. Our test results demonstrate that the Little OaldresPuzzle_Cryptic algorithm effectively supports the encryption and decryption needs of high-speed data, ensuring robust security and making it an ideal choice for various modern cryptographic application scenarios.\r\n\r\nKeywords: Symmetric Encryption Algorithm, Lightweight Cryptography, ARX Primitives, PRNG, NeoAlzette S-boxes, XorConstantRotation, Diffusion and Confusion Layers, Cryptographic Security, Statistical Tests, Resource-Constrained Environments.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Jiang Yu"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T09:36:16Z"
+        }
+    ],
+    "keywords": [
+        "Symmetric Encryption Algorithm",
+        "Lightweight Cryptography",
+        "ARX Primitives",
+        "PRNG",
+        "NeoAlzette S-boxs",
+        "XorConstantRotation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/213.pdf",
+    "pid": "213",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An Innovative Lightweight Symmetric Encryption Algorithm Integrating NeoAlzette ARX S-box and XCR CSPRNG",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Twilight-Dream-Of-Magic/Algorithm_OaldresPuzzleCryptic/tree/master/OOP/TechnicalDetailPapers/%5BType%201%5D%20Statistical%20Test%20Result%20Tables",
+        "https://github.com/Twilight-Dream-Of-Magic/Algorithm_OaldresPuzzleCryptic/blob/master/OOP/README.md"
+    ]
+}
+,
+{
+    "abstract": "Rejection sampling is a crucial security mechanism in lattice-based signature schemes that follow the Fiat-Shamir with aborts paradigm, such as ML-DSA/CRYSTALS-Dilithium. This technique transforms secret-dependent signature samples into ones that are statistically close to a secret-independent distribution (in the random oracle model). While many side-channel attacks have directly targeted sensitive data such as nonces, secret keys, and decomposed commitments, fewer studies have explored the potential leakage associated with rejection sampling. Notably, Karabulut~et~al. showed that leakage from rejected challenges can undermine, but not entirely break, the security of the Dilithium scheme.\r\n\r\nMotivated by the above, we convert the problem of key recovery (from the leakage of rejection sampling) to an integer linear programming problem (ILP), where rejected responses of unique Hamming weights set upper/lower constraints of the product between the challenge and the private key. We formally study the worst-case complexity of the problem as well as empirically confirm the practicality of the rejected challenge attack. For all three security levels of Dilithium-2/3/5, our attack recovers the private key in seconds or minutes with a 100% Success Rate (SR).\r\n\r\nOur attack leverages knowledge of the rejected challenge and response, and thus we propose methods to extract this information by exploiting side-channel leakage from  Number Theoretic Transform (NTT) operations. We demonstrate the practicality of this rejected challenge attack by using real side-channel leakage on a Dilithium-2 implementation running on an ARM Cortex-M4 microcontroller. To the best of our knowledge, it is the first efficient side-channel key recovery attack on ML-DSA/Dilithium that targets the rejection sampling procedure. Furthermore, we discuss some countermeasures to mitigate this security issue.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "SGS Brightsight BV, Delft, The Netherlands"
+                }
+            ],
+            "fullName": "Yuanyuan Zhou",
+            "orcid": "0000-0002-8703-219X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University, School of Cyber Science and Technology, Qingdao, China"
+                },
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University, Qingdao, China"
+                }
+            ],
+            "fullName": "Weijia Wang",
+            "orcid": "0000-0001-6982-2537"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University, School of Cyber Science and Technology, Qingdao, China"
+                },
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University, Qingdao, China"
+                }
+            ],
+            "fullName": "Yiteng Sun",
+            "orcid": "0009-0009-7674-1327"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University, Shanghai 200240, China"
+                },
+                {
+                    "name": "Shanghai Qi Zhi Institute, 701 Yunjin Road, Shanghai 200232, China"
+                }
+            ],
+            "fullName": "Yu Yu",
+            "orcid": "0000-0002-9278-4521"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T09:51:47Z"
+        }
+    ],
+    "keywords": [
+        "Dilithium",
+        "ML-DSA",
+        "Side-channel attacks",
+        "Rejection sampling",
+        "Integer Linear Programming"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/214.pdf",
+    "pid": "214",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Rejected Challenges Pose New Challenges: Key Recovery of CRYSTALS-Dilithium via Side-Channel Attacks",
+    "year": 2025,
+    "repo": [
+        "https://github.com/pq-crystals/dilithium",
+        "https://github.com/pq-crystals/dilithium",
+        "https://github.com/pq-crystals/dilithium",
+        "https://github.com/randombit/botan/blob/master/src/lib/pubkey/dilithium/dilithium_common/dilithium_algos.cpp",
+        "https://github.com/randombit/botan/blob/master/src/lib/pubkey/dilithium/dilithium_common/dilithium_algos.cpp",
+        "https://github.com/mupq/pqm4",
+        "https://github.com/open-quantum-safe/liboqs/blob/main/src/sig/ml_dsa/pqcrystals-dilithium-standard_ml-dsa-44-ipd_ref/poly.c",
+        "https://github.com/open-quantum-safe/liboqs/blob/main/src/sig/ml_dsa/pqcrystals-dilithium-standard_ml-dsa-44-ipd_ref/poly.c",
+        "https://github.com/open-quantum-safe/liboqs/blob/main/src/sig/ml_dsa/pqcrystals-dilithium-standard_ml-dsa-44-ipd_ref/poly.c"
+    ]
+}
+,
+{
+    "abstract": "The cryptographic scheme and NIST candidate HAWK makes use of a particular module lattice and relies for its security on the assumption that finding module lattice isomorphisms (module LIP) is hard. To support this assumption, we compute the mass of the HAWK lattice, which gives a lower bound on the number of isometry classes of module lattices which cannot be distinguished from the HAWK lattice by an easily computed invariant called the genus. This number turns out to be so large that an attack based on the genus alone seems infeasible.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                }
+            ],
+            "fullName": "Dani\u00ebl M. H. van Gent",
+            "orcid": "0000-0001-9600-5954"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T10:24:42Z"
+        }
+    ],
+    "keywords": [
+        "HAWK",
+        "Module lattice"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/215.pdf",
+    "pid": "215",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A note on the genus of the HAWK lattice",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Fully homomorphic encryption (FHE) enables the computation of arbitrary circuits over encrypted data. A widespread application of FHE is a simple two-party computation (2PC) protocol, where the server evaluates a circuit over the client's encrypted data and its private inputs. However, while the security of FHE guarantees that the client's data is protected from the server, there is no inherent support for the privacy of the server's input and the circuit.\r\n\r\nOne effective solution to this problem is an additional algorithm for FHE called sanitization, introduced by Ducas and Stehl\u00e9 (Eurocrypt 2016). Roughly speaking, a sanitization algorithm removes any meaningful information contained in the ciphertext, including previous evaluations of circuits. Following their definition, several constructions for sanitization have been proposed, particularly for TFHE. However, all of these methods were impractical, requiring several bootstrappings or an excessive amount of randomized evaluations.\r\n\r\nIn this work, we construct a novel sanitization algorithm for TFHE that overcomes these issues. Our method only adds two lightweight randomization steps to the original TFHE bootstrapping, without any modifications to the core algorithms. As a result, our algorithm achieves sanitization with a single bootstrapping and minimal randomization, bringing sanitization closer to practicality.\r\n\r\nTo empirically evaluate the efficiency of our method, we provide concrete benchmark results based on our proof-of-concept implementation. Our algorithm sanitizes a single TFHE ciphertext in 35.88 ms, which is only 3.4% (1.18 ms) slower than the original TFHE bootstrapping with the same parameters. When directly compared to previous works, our method achieves a speedup by a factor of 4.82 to 209.03.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Intak Hwang",
+            "orcid": "0009-0005-3870-2096"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Seonhong Min",
+            "orcid": "0000-0002-1151-2453"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Yongsoo Song",
+            "orcid": "0000-0002-0496-9789"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T10:47:11Z"
+        }
+    ],
+    "keywords": [
+        "Fully Homomorphic Encryption",
+        "TFHE",
+        "Circuit Privacy",
+        "Sanitization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/216.pdf",
+    "pid": "216",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Practical Circuit Privacy/Sanitization for TFHE",
+    "year": 2025,
+    "repo": [
+        "https://github.com/SNUCP/tfhe-sanitization",
+        "https://github.com/sp301415/tfhe-go",
+        "https://github.com/sp301415/tfhe-go"
+    ]
+}
+,
+{
+    "abstract": "We present the first protocol for efficient Fuzzy Private Set Intersection (PSI) that achieves linear communication complexity, does not depend on restrictive assumptions on the distribution of party inputs, and abstains from inefficient fully homomorphic encryption. Specifically, our protocol enables two parties to compute all pairs of elements from their respective sets that are within a given Hamming distance, without constraints on how these sets are structured.\r\n\r\nOur key insight is that securely computing the (threshold) Hamming distance between two inputs can be reduced to securely computing their inner product. Leveraging this reduction, we construct a Fuzzy PSI protocol using recent techniques for inner-product predicate encryption. To enable the use of predicate encryption in our setting, we establish that these predicate encryption schemes satisfy a weak notion of simulation security and demonstrate how their internal key derivation can be efficiently distributed without a trusted third party.\r\n\r\nAs a result, our Fuzzy PSI on top of predicate encryption features not only asymptotically optimal linear communication complexity but is also concretely practical.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Airbus"
+                }
+            ],
+            "fullName": "Erik-Oliver Blass"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/04t5xt781"
+                }
+            ],
+            "fullName": "Guevara Noubir"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T16:29:52Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/217.pdf",
+    "pid": "217",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Assumption-Free Fuzzy PSI via Predicate Encryption",
+    "year": 2025,
+    "repo": [
+        "https://github.com/miracl/MIRACL/blob/master/source/curve/pairing/ipe.cpp",
+        "https://github.com/miracl/MIRACL/blob/master/source/curve/pairing/ipe.cpp",
+        "https://github.com/herumi/mcl",
+        "https://github.com/ladnir/cryptoTools",
+        "https://github.com/ladnir/cryptoTools",
+        "https://github.com/emp-toolkit"
+    ]
+}
+,
+{
+    "abstract": "The Log Structured Merge (LSM) Tree is a popular choice for key-value stores that focus on optimized write throughput while maintaining performant, production-ready read latencies. To optimize read performance, LSM stores rely on a probabilistic data structure called the Bloom Filter (BF). In this paper, we focus on adversarial workloads that lead to a sharp degradation in read performance by impacting the accuracy of BFs used within the LSM store. Our evaluation shows up to $800\\%$ increase in the read latency of lookups for popular LSM stores. We define adversarial models and security definitions for LSM stores. We implement adversary resilience into two popular LSM stores, LevelDB and RocksDB. We use our implementations to demonstrate how performance degradation under adversarial workloads can be mitigated.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Hayder Tirmazi",
+            "orcid": "0009-0008-9360-9662"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-12T22:42:07Z"
+        }
+    ],
+    "keywords": [
+        "LSM stores",
+        "Storage Security",
+        "Bloom Filters",
+        "Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/218.pdf",
+    "pid": "218",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "LSM Trees in Adversarial Environments",
+    "year": 2025,
+    "repo": [
+        "https://github.com/jadidbourbaki/db_attacks",
+        "https://github.com/google/leveldb/",
+        "https://github.com/facebook/rocksdb",
+        "https://github.com/wiredtiger/wiredtiger"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we demonstrate that Ethereum's current proof-of-stake (PoS) consensus mechanism poses a significant threat to decentralisation. Our research focuses on the manipulability of distributed randomness beacons (DRBs) in leader selection. Specifically, we show that RANDAO - Ethereum's DRB - is seriously vulnerable to manipulations in its current form.  For example, if a lucrative slot is foreseen, there is a risk that staking entities may temporarily collude to control $33\\%$ of the validators, enabling them to execute a series of RANDAO manipulation attacks that secure the target slot with a $99.5\\%$ success rate. The effectiveness of our method stems from the fact that we work with a significantly richer model of the possible attacks compared to previous works. Our manipulative strategies work by missing blocks from the canonical chain - either by withholding blocks in the adversary's own slots or by forking out blocks proposed by others. We argue that while PoS can pave the path in the future for blockchains, Ethereum's current DRB implementation has to be replaced with a more secure mechanism.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Technology and Economics",
+                    "ror": "https://ror.org/02w42ss30"
+                }
+            ],
+            "fullName": "J\u00e1nos Tapolcai",
+            "orcid": "0000-0002-3512-9504"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Technology and Economics",
+                    "ror": "https://ror.org/02w42ss30"
+                }
+            ],
+            "fullName": "Bence Lad\u00f3czki"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "E\u00f6tv\u00f6s L\u00f3r\u00e1nt University",
+                    "ror": "https://ror.org/01jsq2704"
+                }
+            ],
+            "fullName": "\u00c1bel Nagy",
+            "orcid": "0009-0006-0932-5591"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-02-14T03:04:42Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-02-13T12:29:05Z"
+        }
+    ],
+    "keywords": [
+        "blockchain",
+        "cryptocurrency",
+        "proof-of-stake",
+        "ethereum",
+        "strategic mining",
+        "centralization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/219.pdf",
+    "pid": "219",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Slot a la carte: Centralization Issues in Ethereum's Proof-of-Stake Protocol",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Quantum cryptography allows to achieve security goals which are unobtainable using classical cryptography alone: it offers the promise of everlasting privacy. Thatis, an adversary trying to attack a protocol must succeed during the run of the protocol.\r\nAfter the protocol has terminated, security holds unconditionally.\r\nIn this work, we initiate the study of a new model which we call the quantum decoherence model (QDM). In a nutshell, this model captures adversaries that are computationally bounded during the run of a protocol (and some time after), but become computationally unbounded long after the protocol terminates. Importantly, once the adversary becomes computationally unbounded, he can only remember a bounded number of qubits from before the computational bound was lifted.\r\nWe provide a variant of the Universal Composability framework which captures the new notion of quantum decoherence and augment it with quantum random oracles. As our main contribution, we construct a non-interactive commitment scheme achieving unconditional and statistical security against malicious senders and everlasting security against malicious receivers under our new security notion. Such commitments imply general secure multiparty computation with everlasting security.\r\nFinally, we show that our core technique can be applied to a broader spectrum of problems. We show that it gives rise to everlasting public key encryption and OT in the QDM. Finally, we also consider the weaker notion of incompressible encryption in the setting of quantum decoherence, and show that post-quantum IND-CPA secure public\r\nkey encryption is sufficient to realize this notion without resorting to random oracles.\r\nAt the technical core of our constructions is a new, conceptually simple yet powerful reverse entropic uncertainty relation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Nico D\u00f6ttling"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                }
+            ],
+            "fullName": "Alexander Koch",
+            "orcid": "0000-0002-3510-9669"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Sven Maier"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "Jeremias Mechler"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Anne M\u00fcller",
+            "orcid": "0000-0002-4468-2651"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "J\u00f6rn M\u00fcller-Quade"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "Marcel Tieplet",
+            "orcid": "0000-0002-3389-208X"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-13T13:08:09Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Cryptography",
+        "Everlasting Security",
+        "Commitments",
+        "In-compressible Encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/220.pdf",
+    "pid": "220",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Quantum Decoherence Model: Everlasting Composable Secure Computation and More",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce a general, low-cost, low-power statistical test for\r\ntransactions in transaction protocols with small anonymity set authentication (TPSASAs), such as Monero. The test classifies transactions as ad hoc (spontaneously constructed to spend a deterministically selected key) or self-churned (constructed from a probability distribution very close to that of the default wallet software, and with the same sender and receiver). The test is a uniformly most powerful (UMP) likelihood ratio tests (LRT) from the Neyman-Pearson Lemma, and makes no assumptions about user behavior. We extend these tests to expoit prior information about user behavior. We discuss test parameterization, as well as how anonymity set cardinality and user behavior impact test performance. We also describe a maximum-likelihood de-anonymization attack on Monero based on our test.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Cypher Stack"
+                }
+            ],
+            "fullName": "Brandon Goodell"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cypher Stack"
+                }
+            ],
+            "fullName": "Rigo Salazar"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Clemson University"
+                },
+                {
+                    "name": "Cypher Stack"
+                }
+            ],
+            "fullName": "Freeman Slaughter"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-13T19:09:32Z"
+        }
+    ],
+    "keywords": [
+        "transaction protocols",
+        "small anonymity sets",
+        "Monero",
+        "uniformly most powerful tests"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/221.pdf",
+    "pid": "221",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Uniformly Most Powerful Tests for Ad Hoc Transactions in Monero",
+    "year": 2025,
+    "repo": [
+        "https://www.github.com/cypherstack/churn",
+        "https://www.github.com/cypherstack/churn",
+        "https://www.github.com/cypherstack/churn",
+        "https://www.github.com/cypherstack/churn"
+    ]
+}
+,
+{
+    "abstract": "The ChaCha20-Poly1305 AEAD scheme is widely used as an alternative for AES-GCM on platforms without AES hardware instructions. Although recent analysis by Degabriele et al. shows that ChaCha20-Poly1305 provides adequate security in the conventional multiuser model, the construction is totally broken when a single nonce is repeated \u2013 a real-word scenario that can occur due to faulty implementations or the desire to use random nonces.\r\n\r\nWe present a new nonce-misuse resistant and key-committing authenticated encryption scheme, called ChaCha20-Poly1305-PSIV, that is based on carefully combining the ChaCha20-Poly1305 building blocks into the NSIV paradigm proposed by Peyrin and Seurin (CRYPTO 2016) without performance loss. We analyze the security of the underlying mode PSIV in the multi-user faulty-nonce model assuming that the underlying permutation is ideal, and prove its key-committing security in the cmt-1 model. Rust and C implementations are provided, and benchmarks confirm that performance is comparable to the ChaCha20-Poly1305 implementation in libsodium.\r\n\r\nIn terms of security and efficiency (without hardware support), our proposal compares favorably to AES-GCM-SIV. Since we reuse the ChaCha20-Poly1305 building blocks, we expect ChaCha20-Poly1305-PSIV to benefit from existing analysis and to be easy to deploy in practice.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Tim Beyne"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Yu Long Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Michiel Verbauwhede"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-13T22:07:06Z"
+        }
+    ],
+    "keywords": [
+        "Authenticated encryption",
+        "Nonce-misuse resistance",
+        "Key commitment",
+        "ChaCha20-Poly1305"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/222.pdf",
+    "pid": "222",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Robust Variant of ChaCha20-Poly1305",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We establish the following theorem:\r\n \r\nLet $\\mathsf{O}_0, \\mathsf{O}_1, \\mathsf{R}$ be random functions from $\\{0,1\\}^n$ to $\\{0,1\\}^n$, $n \\in \\mathbb{N}$. For all polynomial-query-bounded distinguishers $\\mathsf{D}$ making at most $q=\\mathsf{poly}(n)$ queries to each oracle, there exists a poly-time oracle simulator $\\mathsf{Sim}^{(\\cdot)}$ and a constant $c>0$ such that the probability is negligible, that is\r\n    $$\\left|\\Pr\\left[{\\mathsf{D}^{(\\mathsf{O}_0+\\mathsf{O}_1),(\\mathsf{O}_0,\\mathsf{O}_1,\\mathsf{O}_0^{-1},\\mathsf{O}_1^{-1})}(1^n)=1}\\right]-\\Pr\\left[{\\mathsf{D}^{\\mathsf{R},\\mathsf{Sim}^\\mathsf{R}}(1^n)=1}\\right]\\right| = negl(n).$$",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Yael Eisenberg"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Los Angeles",
+                    "ror": "https://ror.org/046rm7j60"
+                }
+            ],
+            "fullName": "Christopher Havens"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Los Angeles",
+                    "ror": "https://ror.org/046rm7j60"
+                }
+            ],
+            "fullName": "Alexis Korb",
+            "orcid": "0000-0001-6888-5296"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Los Angeles",
+                    "ror": "https://ror.org/046rm7j60"
+                }
+            ],
+            "fullName": "Amit Sahai",
+            "orcid": "0000-0003-2216-9600"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-13T22:12:11Z"
+        }
+    ],
+    "keywords": [
+        "random oracle simulator"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/223.pdf",
+    "pid": "223",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Building Hard Problems by Combining Easy Ones: Revisited",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
