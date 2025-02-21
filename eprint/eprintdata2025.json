@@ -20413,4 +20413,2241 @@
         "https://github.com/CryptoExperts/Transistor/"
     ]
 }
+,
+{
+    "abstract": "In this work, we consider the communication complexity of MPC protocols in honest majority setting achieving malicious security in both information-theoretic setting and computational setting. On the one hand, we study the possibility of basing honest majority MPC protocols on oblivious linear evaluation (OLE)-hybrid model efficiently with information-theoretic security. More precisely, we instantiate preprocessing phase of the recent work Sharing Transformation (Goyal, Polychroniadou, and Song, CRYPTO 2022) assuming random OLE correlations. Notably, we are able to prepare packed Beaver triples with malicious security achieving amortized communication of $O(n)$ field elements plus a number of $O(n)$ OLE correlations per packed Beaver triple, which is the best known result. To further efficiently prepare random OLE correlations, we resort to IKNP-style OT extension protocols (Ishai et al., CRYPTO 2003) in random oracle model. \r\n\r\nOn the other hand, we derive a communication lower bound for preparing OLE correlations in the information-theoretic setting based on negative results due to Damg\u00e5rd, Larsen, and Nielsen (CRYPTO 2019).\r\n\r\nCombining our positive result with the work of Goyal, Polychroniadou, and Song (CRYPTO 2022), we derive an MPC protocol with amortized communication of $O(\\ell+\\kappa)$ elements per gate in random oracle model achieving malicious security, where $\\ell$ denotes the length of a field element and $\\kappa$ is the security parameter.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University and Shanghai Qi Zhi Institute"
+                }
+            ],
+            "fullName": "Yifan Song"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Xiaxi Ye"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T07:43:38Z"
+        }
+    ],
+    "keywords": [
+        "Communication complexity",
+        "Multiparty computation",
+        "Information-theoretic security",
+        "Lightweight cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/283.pdf",
+    "pid": "283",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Honest Majority MPC with $\\tilde{O}(|C|)$ Communication in Minicrypt",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Decentralized Autonomous Organization operates without a central entity, being owned and governed collectively by its members. In this organization, decisions are carried out automatically through smart contracts for routine tasks, while members vote for unforeseen issues. Scalability in decision-making through voting on proposals is essential to accommodate a growing number of members without sacrificing security. This paper addresses this challenge by introducing a scalable and secure DAO voting system that ensures security through Groth16 zk-SNARKs and exponential ElGamal encryption algorithm while achieving scalability by verifiably delegating heavy computations to untrusted entities. While offline computation on the exponential ElGamal homomorphic encryption algorithm is enabled to reduce the computational cost of the blockchain, Groth16 is allowed to maintain robust off-chain calculation without revealing any further details. Specifically, the Groth16 proof guarantees that (i) the encrypted votes accurately reflect the voter's voting power, ensuring no unauthorized weight manipulation; (ii) only valid non-negative vote values are encrypted, preventing unintended or malicious vote tampering; and (iii) the homomorphic summation is performed correctly.  The implementation shows that the proofs are verified remarkably fast, making the S2DV protocol highly suitable for scalable DAO voting, while preserving the security of the election.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Istanbul Settlement and Custody Bank (Takasbank)"
+                },
+                {
+                    "name": "Istanbul Technical University",
+                    "ror": "https://ror.org/059636586"
+                }
+            ],
+            "fullName": "Ali Dogan",
+            "orcid": "0009-0009-4191-2982"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "FAME Crypt"
+                }
+            ],
+            "fullName": "Sermin Kocaman",
+            "orcid": "0000-0001-8334-8587"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T07:47:51Z"
+        }
+    ],
+    "keywords": [
+        "Decentralized Autonomous Organization",
+        "Voting",
+        "zk-SNARK"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/284.pdf",
+    "pid": "284",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "S2DV: Scalable and Secure DAO Voting",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We investigate two natural relaxations of quantum cryptographic assumptions. First, we examine primitives such as pseudorandom generators ($\\text{PRG}$s) and pseudorandom states ($\\text{PRS}$s), extended with quantum input sampling, which we term $\\text{PRG}^{qs}$ and $\\text{PRS}^{qs}$. In these primitives, the input is sampled via a quantum algorithm rather than uniformly at random. The second relaxation, $\\bot$-pseudodeterminism, allows the generator to output $\\bot$ on an inverse-polynomial fraction of inputs.\r\n\r\nWe demonstrate an equivalence between (bounded-query) logarithmic-sized $\\text{PRS}^{qs}$, logarithmic-sized $\\text{PRS}^{qs}$, and $\\text{PRG}^{qs}$. Notably, such an equivalence remains unknown for the uniform key sampling versions of these primitives. Furthermore, we establish that $\\text{PRG}^{qs}$ can be constructed from $\\bot$-pseudodeterministic $\\text{PRG}$s ($\\bot\\text{-PRG}$s). \r\n\r\nTo further justify our exploration, we present two separation results. First, we examine the relationship between $\\bot$-pseudodeterministic notions and their deterministic counterparts. We show that there does not exist a black-box construction of a one-way state generator $(\\text{OWSG})$ from a $\\bot\\text{-PRG}$, indicating that $\\bot$-pseudodeterministic primitives may be inherently weaker than their deterministic counterparts. Second, we explore the distinction between quantum and uniform input sampling. We prove that there does not exist a black-box construction of a $\\bot$-psuedodeterministic $\\text{OWSG}$ from a $\\text{PRF}^{qs}$, suggesting that primitives relying on quantum input sampling may be weaker than those using traditional uniform sampling. Given the broad cryptographic applicability  of $\\text{PRF}^{qs}$s and $\\bot\\text{-PRG}$s, these separation results yield numerous new insights into the hierarchy of primitives within MicroCrypt.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Mohammed Barhoush"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT (Japan)",
+                    "ror": "https://ror.org/00berct97"
+                }
+            ],
+            "fullName": "Ryo Nishimaki"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT (Japan)",
+                    "ror": "https://ror.org/00berct97"
+                }
+            ],
+            "fullName": "Takashi Yamakawa"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T09:26:25Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Cryptography",
+        "Pseudorandom States",
+        "Pseudodeterminism",
+        "Black-Box Separation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/285.pdf",
+    "pid": "285",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "MicroCrypt Assumptions with Quantum Input Sampling and Pseudodeterminism: Constructions and Separations",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We address the problem of proving the validity of computation on ciphertexts of homomorphic encryption (HE) schemes, a feature that enables outsourcing of data and computation while ensuring both data privacy and integrity.\r\nWe propose a new solution that handles computations in RingLWE-based schemes, particularly the CKKS scheme for approximate arithmetic. Our approach efficiently handles ciphertext arithmetic in the polynomial ring $R_q$ without emulation overhead and manages ciphertexts maintenance operations, such as modulus switching, key switching, and rescaling, with small cost.\r\nOur main result is a succinct argument that efficiently handles arithmetic computations and range checks over the ring $R_q$. To build this argument system, we construct new polynomial interactive oracle proofs (PIOPs) and multilinear polynomial commitments supporting polynomials over $R_q$, unlike prior work which focused on finite fields. We validate the concrete complexity of our approach through implementation and experimentation. Compared to the current state-of-the-art on verifiable HE for RNS schemes, we present similar performance for small circuits while being able to efficiently scale to larger ones, which was a major challenge for previous constructions as it requires verifying procedures such as relinearization.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute",
+                    "ror": "https://ror.org/04xvfkh51"
+                }
+            ],
+            "fullName": "Ignacio Cascudo",
+            "orcid": "0000-0001-5520-5386"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Norwegian University of Science and Technology",
+                    "ror": "https://ror.org/05xg72x27"
+                }
+            ],
+            "fullName": "Anamaria Costache",
+            "orcid": "0000-0001-8793-6116"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute",
+                    "ror": "https://ror.org/04xvfkh51"
+                }
+            ],
+            "fullName": "Daniele Cozzo",
+            "orcid": "0000-0001-5289-3769"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute",
+                    "ror": "https://ror.org/04xvfkh51"
+                }
+            ],
+            "fullName": "Dario Fiore",
+            "orcid": "0000-0001-7274-6600"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute",
+                    "ror": "https://ror.org/04xvfkh51"
+                }
+            ],
+            "fullName": "Antonio Guimar\u00e3es",
+            "orcid": "0000-0001-5110-6639"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Eduardo Soria-Vazquez",
+            "orcid": "0000-0002-4882-0230"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T09:36:05Z"
+        }
+    ],
+    "keywords": [
+        "Verifiable Computation",
+        "SNARK",
+        "FHE",
+        "CKKS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/286.pdf",
+    "pid": "286",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Verifiable Computation for Approximate Homomorphic Encryption Schemes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this article we present a non-uniform reduction from rank-\r\n2 module-LIP over Complex Multiplication fields, to a variant of the\r\nPrincipal Ideal Problem, in some fitting quaternion algebra. This reduction\r\nis classical deterministic polynomial-time in the size of the inputs. The\r\nquaternion algebra in which we need to solve the variant of the principal\r\nideal problem depends on the parameters of the module-LIP problem,\r\nbut not on the problem\u2019s instance. Our reduction requires the knowledge\r\nof some special elements of this quaternion algebras, which is why it is\r\nnon-uniform.\r\nIn some particular cases, these elements can be computed in polynomial\r\ntime, making the reduction uniform. This is the case for the Hawk\r\nsignature scheme: we show that breaking Hawk is no harder than solving\r\na variant of the principal ideal problem in a fixed quaternion algebra\r\n(and this reduction is uniform).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Univ Rennes, Inria, CNRS, Irisa, UMR 6074, France"
+                }
+            ],
+            "fullName": "Cl\u00e9mence Chevignard"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Univ Bordeaux, CNRS, Inria, Bordeaux INP, IMB, UMR 5251, Talence, France"
+                }
+            ],
+            "fullName": "Guilhem Mureau",
+            "orcid": "0009-0005-3057-6275"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQ Shield Ltd., United Kingdom"
+                }
+            ],
+            "fullName": "Thomas Espitau",
+            "orcid": "0000-0002-7655-9594"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Univ Bordeaux, CNRS, Inria, Bordeaux INP, IMB, UMR 5251, Talence, France"
+                }
+            ],
+            "fullName": "Alice Pellet-Mary",
+            "orcid": "0000-0002-7149-1965"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Insitute of Mathematics, NAS of Ukraine"
+                }
+            ],
+            "fullName": "Heorhii Pliatsok"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQ Shield Ltd., United Kingdom"
+                }
+            ],
+            "fullName": "Alexandre Wallet",
+            "orcid": "0000-0003-0492-2435"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T10:11:34Z"
+        }
+    ],
+    "keywords": [
+        "Hawk",
+        "Lattice Isomorphism Problem",
+        "Module lattice"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This article is the result of a merge between ePrint 2024/1147 (which had the same title) and ePrint 2024/1148.",
+    "pdffile": "2025/287.pdf",
+    "pid": "287",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A reduction from Hawk to the principal ideal problem in a quaternion algebra",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The wide adoption of deep neural networks (DNNs) raises the question of how can we equip them with a desired cryptographic functionality (e.g, to decrypt an encrypted input, to verify that this input is authorized, or to hide a secure watermark in the output). The problem is that cryptographic primitives are typically designed to run on digital computers that use Boolean gates to map sequences of bits to sequences of bits, whereas DNNs are a special type of analog computer that uses linear mappings and ReLUs to map vectors of real numbers to vectors of real numbers. This discrepancy between the discrete and continuous computational models raises the question of what is the best way to implement standard cryptographic primitives as DNNs, and whether DNN implementations of secure cryptosystems remain secure in the new setting, in which an attacker can ask the DNN to process a message whose \"bits\" are arbitrary real numbers. \r\nIn this paper we lay the foundations of this new theory, defining the meaning of correctness and security for implementations of cryptographic primitives as ReLU-based DNNs. We then show that the natural implementations of block ciphers as DNNs can be broken in linear time by using such nonstandard inputs. We tested our attack in the case of full round AES-128, and had $100\\%$ success rate in finding $1000$ randomly chosen keys. Finally, we develop a new method for implementing any desired cryptographic functionality as a standard ReLU-based DNN in a provably secure and correct way. Our protective technique has very low overhead (a constant number of additional layers and a linear number of additional neurons), and is completely practical.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "David Gerault",
+            "orcid": "0000-0001-8583-0668"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Anna Hambitzer",
+            "orcid": "0000-0002-5357-832X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tel Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Eyal Ronen",
+            "orcid": "0000-0002-6013-7426"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Weizmann Institute of Science",
+                    "ror": "https://ror.org/0316ej306"
+                }
+            ],
+            "fullName": "Adi Shamir",
+            "orcid": "0000-0002-5422-905X"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T13:35:45Z"
+        }
+    ],
+    "keywords": [
+        "Deep learning",
+        "DNN",
+        "cryptography",
+        "cryptanalysis",
+        "domain extension",
+        "secure implementation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/288.pdf",
+    "pid": "288",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "How to Securely Implement Cryptography in Deep Neural Networks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Over the past decade and a half, cryptanalytic techniques for Salsa20 have been increasingly refined, largely following the overarching concept of Probabilistically Neutral Bits (PNBs) by Aumasson et al. (FSE 2008). In this paper, we present a novel criterion for choosing key-$\\mathcal{IV}$ pairs using certain 2-round criteria and connect that with clever tweaks of existing techniques related to Probabilistically Independent $\\mathcal{IV}$ bits (earlier used for ARX ciphers, but not for Salsa20) and well-studied PNBs. Through a detailed examination of the matrix after initial rounds of Salsa20, we introduce the first-ever cryptanalysis of Salsa20 exceeding $8$ rounds. Specifically, Salsa20/$8.5$, consisting of $256$ secret key bits, can be cryptanalyzed with a time complexity of $2^{245.84}$ and data amounting to $2^{99.47}$. Further, the sharpness of our attack can be highlighted by showing that Salsa20/$8$ can be broken with time $2^{186.01}$ and data $2^{99.73}$, which is a significant improvement over the best-known result of Coutinho et al. (Journal of Cryptology, 2023, time $2^{217.14}$ and data $2^{113.14}$). Here, the refinements related to backward biases for PNBs are also instrumental in achieving the improvements. We also provide certain instances of how these ideas improve the cryptanalysis on $128$-bit versions. In the process, a few critical points are raised on some existing state-of-the-art works in this direction, and in those cases, their estimates of time and data are revisited to note the correct complexities, revising the incorrect numbers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Birla Institute of Technology and Science Pilani, Hyderabad Campus"
+                }
+            ],
+            "fullName": "Sabyasachi Dey"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute Kolkata"
+                }
+            ],
+            "fullName": "Subhamoy Maitra"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Madras",
+                    "ror": "https://ror.org/03v0r5n49"
+                }
+            ],
+            "fullName": "Santanu Sarkar"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Birla Institute of Technology and Science Pilani, Hyderabad Campus"
+                }
+            ],
+            "fullName": "Nitin Kumar Sharma"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T14:11:20Z"
+        }
+    ],
+    "keywords": [
+        "Salsa20",
+        "Differential-Linear Cryptanalysis",
+        "Probabilistically Neutral Bits",
+        "Probabilistically Independent Bits"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/289.pdf",
+    "pid": "289",
+    "pubtype": {
+        "pubtype": "TOSC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Significantly Improved Cryptanalysis of Salsa20 With Two-Round Criteria",
+    "year": 2025,
+    "repo": [
+        "https://github.com/SharmaNitinKumar/FSE"
+    ]
+}
+,
+{
+    "abstract": "Dynamic Decentralized Functional Encryption (DDFE) is a generalization of Functional Encryption which allows multiple users to join the system dynamically without interaction and without relying on a trusted third party.  Users can independently encrypt their inputs for a joint evaluation under functions embedded in functional decryption keys; and they keep control on these functions as they all have to contribute to the generation of the functional keys.\r\n \r\nIn this work, we present new generic compilers which, when instantiated with existing schemes from the literature, improve over the state-of-the-art in terms of security, computational assumptions and functionality. Specifically, we obtain the first adaptively secure DDFE schemes for inner products in both the standard and the stronger function-hiding setting which guarantees privacy not only for messages but also for the evaluated functions. Furthermore, we present the first DDFE for inner products whose security can be proven under the LWE assumption in the standard model. Finally, we give the first construction of a DDFE for the attribute-weighted sums functionality with attribute-based access control (with some limitations). All prior constructions guarantee only selective security, rely on group-based assumptions on pairings, and cannot provide access control.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, \u00c9cole normale sup\u00e9rieure, CNRS, Inria, PSL University"
+                }
+            ],
+            "fullName": "Ky Nguyen",
+            "orcid": "0000-0002-3867-4209"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, \u00c9cole normale sup\u00e9rieure, CNRS, Inria, PSL University"
+                },
+                {
+                    "name": "Cosmian"
+                }
+            ],
+            "fullName": "David Pointcheval",
+            "orcid": "0000-0002-6668-683X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, \u00c9cole normale sup\u00e9rieure, CNRS, Inria, PSL University"
+                }
+            ],
+            "fullName": "Robert Sch\u00e4dlich",
+            "orcid": "0000-0001-8643-9046"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T15:57:18Z"
+        }
+    ],
+    "keywords": [
+        "Functional Encryption",
+        "Adaptive Security",
+        "Function-Hiding",
+        "Inner Product",
+        "Attribute-Weighted Sum"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/290.pdf",
+    "pid": "290",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Dynamic Decentralized Functional Encryption: Generic Constructions with Strong Security",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We present the first construction for adaptively secure HIBE, that does not rely on bilinear pairings or random oracle heuristics. Notably, we design an adaptively secure HIBE from any selectively secure IBE system in the standard model. Combining this with known results, this gives the first adaptively secure HIBE system from a wide variety of standard assumptions such as CDH/Factoring/LWE/LPN. We also extend our adaptively secure HIBE system to satisfy full anonymity, giving the first adaptively secure anonymous HIBE under CDH/LWE assumption. All our HIBE systems support unbounded length identities as well as unbounded number of recursive delegation operations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "UW-Madison"
+                }
+            ],
+            "fullName": "Rishab Goyal",
+            "orcid": "0009-0005-9960-7287"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IIT Delhi"
+                }
+            ],
+            "fullName": "Venkata Koppula",
+            "orcid": "0000-0002-4429-2872"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz"
+                }
+            ],
+            "fullName": "Mahesh Sreekumar Rajasree",
+            "orcid": "0000-0002-8219-8270"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T20:47:40Z"
+        }
+    ],
+    "keywords": [
+        "hierarchical identity-based encryption",
+        "adaptive-security",
+        "anonymous"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/291.pdf",
+    "pid": "291",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Note on Adaptive Security in Hierarchical Identity-Based Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Komargodski et. al. defined evolving secret-sharing schemes with an unbounded number of parties. In this model, parties arrive one after the other and the number of parties that will arrive is not known.\r\nAnother cryptographic primitive related to secret-sharing is conditional disclosure of secrets protocols (CDS) that defined by Gertner et. al. \r\nA CDS protocol for a Boolean function $f$ involves $k$ servers and a referee. Each server holds a common secret $s$, a common random string $r$, and a private input $x_i$; using these $r$, each server locally computes one message and sends it to the referee. The referee, knowing the inputs $x_1, \\cdots, x_k$ and the messages, should be able to compute $s$ if $f(x_1, \\cdots, x_k) = 1$. Otherwise, the referee should not learn information about the secret. In a sense, this is a non-monotone version of secret sharing schemes. \r\n\r\nPeter (ISC 23'), defines evolving CDS, implementing in particular evolving predicate $f:\\{0,1\\}^*\\rightarrow\\{0,1\\}$ (he handles somewhat more general predicates for larger input domains, but generalizing to other input domains is not hard, and we focus on boolean predicates). In this setting, the number of parties is unbounded, where the parties arrive in sequential order. Each party, when arrives, sends one random message to a referee, that depending on its input, the secret, and a common randomness. He also devise evolving CDS protocols for a general evolving predicate via a black-box reduction to evolving secret-sharing scheme for a related access structure.\r\nHe analyzes this construction for general access structures, as well as other classes of functions, which yields message complexity $O(2^t)$ for the worst predicates.\r\n\r\nIn this work we provide new upper and lower bounds for evolving CDS.\r\nObserving that CDS has the potential for improved efficiency, as it is not restricted to monotone operations, we devise a new evolving general CDS construction.\r\nIn particular, our construction relies on representing the evolving predicate via an infinite branching program - LINBP, generalizing the monotone infinite branching program based construction of Alon et. al of evolving secret sharing schemes.\r\nWe obtain nontrivial ($2^{ct-o(t)}$ for $c<1$) message complexity for branching programs of larger width than Alon et al's construction (even when restricting attention to monotone predicates), as well as Peter's construction for certain (but not all) $f$'s.\r\n\r\nIndeed, we prove that our construction, as well as Peter's article (ISC 23\u2019) is tight for a certain evolving predicate -- as for evolving secret-sharing, (so called strong) evolving CDS also requires share complexity of $2^{t-o(t)}$. This is unlike the state of affairs for the finite setting, where the best known CDS constructions are much more efficient than the best known secret sharing schemes (for the hardest monotone functions).\r\nThe latter bound is proved based on an adaptation of Mazor's lower bound (in turns based on Csirmaz's lower bounding technique) to the CDS setting. It relies on a reduction from secret sharing for a certain class of infinite access structures -- the so called partite access structures to evolving CDS for a related (not necessarily monotone) function. Then, a partite evolving access structure is crafted using the Csirmaz-type argument.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ariel University",
+                    "ror": "https://ror.org/03nz8qe97"
+                }
+            ],
+            "fullName": "Tamar Ben David",
+            "orcid": "0009-0009-9149-7334"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ariel University",
+                    "ror": "https://ror.org/03nz8qe97"
+                }
+            ],
+            "fullName": "Anat Paskin-Cherniavsky",
+            "orcid": "0000-0001-6566-2644"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T21:09:47Z"
+        }
+    ],
+    "keywords": [
+        "Evolving secret-sharing",
+        "Evolving CDS",
+        "branching program",
+        "generalized infinite decision tree"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/292.pdf",
+    "pid": "292",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tight Lower Bounds and New Upper Bounds For Evolving CDS",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Ever since the introduction of encryption, society has been divided over whether the government (or law enforcement agencies) should have the capability to decrypt private messages (with or without a war- rant) of its citizens. From a technical viewpoint, the folklore belief is that semantic security always enables some form of steganography. Thus, adding backdoors to semantically secure schemes is pointless: it only weakens the security of the \u201cgood guys\u201d, while \u201cbad guys\u201d can easily circumvent censorship, even if forced to hand over their decryption keys. \r\n\r\nIn this paper we put a dent in this folklore. We formalize three worlds: Dictatoria (\u201cdictator wins\u201d: no convenient steganography, no user co- operation needed), Warrantland (\u201cchecks-and-balances\u201d: no convenient steganography, but need user\u2019s cooperation) and Privatopia (\u201cprivacy wins\u201d: built-in, high-rate steganography, even if giving away the decryption key). We give strong evidence that all these worlds are possible, thus reopening the encryption debate on a technical level. \r\n\r\nOur main novelty is the definition and design of special encryption schemes we call anamorphic-resistant (AR). In contrast to so called \u201canamorphic schemes\u201d, \u2014 which were studied in the literature and form the basis of Privatopia, \u2014 any attempt to steganographically communicate over an AR-encryption scheme will be either impossible or hugely slow (depending on the definitional details).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Yevgeniy Dodis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Eli Goldin"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-19T21:48:22Z"
+        }
+    ],
+    "keywords": [
+        "anamorphic encryption",
+        "anamorphic resistance",
+        "dictator"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/293.pdf",
+    "pid": "293",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Anamorphic-Resistant Encryption; Or Why the Encryption Debate is Still Alive",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper introduces Neo, a new lattice-based folding scheme for CCS, an NP-complete relation that generalizes R1CS, Plonkish, and AIR. Neo's folding scheme can be viewed as adapting the folding scheme in HyperNova (CRYPTO'24), which assumes elliptic-curve based linearly homomorphic commitments, to the lattice setting. Unlike HyperNova, Neo can use \u201csmall\u201d prime fields (e.g., over the Goldilocks prime). Additionally, Neo provides plausible post-quantum security.\r\n\r\nPrior to Neo, folding schemes in the lattice setting, notably LatticeFold (ePrint 2024/257), worked with constraint systems defined over a cyclotomic polynomial ring. This structure allows packing a fixed batch of constraint systems over a small prime field into a single constraint system over a polynomial ring. However, it introduces significant overheads, both for committing to witnesses (e.g., the commitment scheme cannot take advantage of bit-width of values), and within the folding protocol itself (e.g., the sum-check protocol is run over cyclotomic polynomial rings). Additionally, the required ring structure places restrictions on the choice of primes (e.g., LatticeFold is not compatible with the Goldilocks field). \r\n\r\nNeo addresses these problems, by drawing inspiration from both HyperNova and LatticeFold. A key contribution is a folding-friendly instantiation of Ajtai's commitments, with \"pay-per-bit\" commitment costs i.e., the commitment costs scale with the bit-width of the scalars (e.g., committing to a vector of bits is $32\\times$ cheaper than committing to a vector of $32$-bit values). This scheme commits to vectors over a small prime field. It does so by transforming the provided vector into a matrix and committing to that matrix. We prove that this commitment scheme provides the desired linear homomorphism for building a folding scheme. Additionally, like HyperNova, Neo runs a single invocation of the sum-check protocol, where in HyperNova it is over the scalar field of an elliptic curve and in Neo it is over an extension of a small prime field.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University"
+                }
+            ],
+            "fullName": "Wilson Nguyen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Microsoft Research"
+                }
+            ],
+            "fullName": "Srinath Setty"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T00:45:34Z"
+        }
+    ],
+    "keywords": [
+        "Folding",
+        "lattice",
+        "proof systems",
+        "small fields",
+        "commitments",
+        "CCS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/294.pdf",
+    "pid": "294",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Neo: Lattice-based folding scheme for CCS over small fields and pay-per-bit commitments",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Microsoft/Nova",
+        "https://github.com/Microsoft/Nova",
+        "https://github.com/nexus-xyz/nexus-zkvm"
+    ]
+}
+,
+{
+    "abstract": "Syndrome decoding (SD), and equivalently Learning Parity with Noise (LPN), is a fundamental problem in cryptography, which states that for a field $\\mathbb{F}$, some compressing public matrix $\\mathbf{G} \\in \\mathbb{F}^{k\\times n}$, and a secret sparse vector $\\mathbf{e} \\in\\mathbb{F}^{n}$ sampled from some noise distribution, $\\mathbf{G}\\mathbf{e}$ is indistinguishable from uniform. Recently, the SD has gained significant interest due to its use in pseudorandom correlation generators (PCGs).\r\n\r\nIn pursuit of better efficiency, we propose a new assumption called Stationary Syndrome Decoding (SSD). In SSD, we consider $q$ correlated noise vectors $\\mathbf{e}_{1},\\ldots,\\mathbf{e}_{q}\\in \\mathbb{F}^n$ and associated instances $\\mathbf{G}_{1}\\mathbf{e}_{1},\\ldots,\\mathbf{G}_{q}\\mathbf{e}_{q}$ where the noise vectors are restricted to having non-zeros in the same small subset of $t$ positions $L\\subset [n]$. That is, for all $i\\in L$, $\\mathbf{e}_{j,i}$ is uniformly random, while for all other $i$, $\\mathbf{e}_{j,i} = 0$.\r\n\r\nAlthough naively reusing the noise vector renders SD and LPN insecure via simple Gaussian elimination, we observe known attacks do not extend to our correlated noise. We show SSD is unconditionally secure against so-called linear attacks, e.g., advanced information set decoding and representation techniques (Esser and Santini, Crypto 2024). We further adapt the state-of-the-art nonlinear attack (Briaud and Oygarden, Eurocrypt 2023) to SSD and demonstrate both theoretically and experimentally resistance to the attack. \r\n\r\nWe apply SSD to PCGs to amortize the cost of noise generation protocol. For OT and VOLE generation, each instance requires $O(t)$ communication instead of $O(t\\log n)$. For suggested parameters, we observe a $1.5\\times$ improvement in the running time or between 6 and $18\\times$ reduction in communication. For Beaver triple generation using Ring LPN, our techniques have the potential for substantial amortization due to the high concrete overhead of the Ring LPN noise generation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Vladimir Kolesnikov",
+            "orcid": "0000-0002-0211-1244"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Stanislav Peceny",
+            "orcid": "0009-0002-6247-4255"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Visa (United States)",
+                    "ror": "https://ror.org/05t1y0b59"
+                },
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Srinivasan Raghuraman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Visa (United States)",
+                    "ror": "https://ror.org/05t1y0b59"
+                }
+            ],
+            "fullName": "Peter Rindal",
+            "orcid": "0000-0003-2402-7411"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T03:58:16Z"
+        }
+    ],
+    "keywords": [
+        "MPC",
+        "Syndrome Decoding",
+        "Pseudorandom Correlation Generators"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/295.pdf",
+    "pid": "295",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Stationary Syndrome Decoding for Improved PCGs",
+    "year": 2025,
+    "repo": [
+        "https://github.com/osu-crypto/libOTe",
+        "https://github.com/osu-crypto/libOTe"
+    ]
+}
+,
+{
+    "abstract": "Zero-Knowledge Succinct Non-interactive Arguments of Knowledge (zkSNARKs) lead to proofs that can be succinctly verified but require huge computational resources to generate. Prior systems outsource proof generation either through public delegation, which reveals the witness to the third party, or, more preferably, private delegation that keeps the witness hidden using multiparty computation (MPC). However, current private delegation schemes struggle with scalability and efficiency due to MPC inefficiencies, poor resource utilization, and suboptimal design of zkSNARK protocols.\r\n\r\nIn this paper, we introduce DFS, a new zkSNARK that is delegation-friendly for both public and private scenarios. Prior work focused on optimizing the MPC protocols for existing zkSNARKs, while DFS uses co-design between MPC and zkSNARK so that the protocol is efficient for both distributed computing and MPC. In particular, DFS achieves linear prover time and logarithmic verification cost in the non-delegated setting. For private delegation, DFS introduces a scheme with zero communication overhead in MPC and achieves malicious security for free, which results in logarithmic overall communication; while prior work required linear communication. Our evaluation shows that DFS is as efficient as state-of-the-art zkSNARKs in public delegation; when used for private delegation, it scales better than previous work.  In particular, for $2^{24}$ constraints, the total communication of DFS is less than $500$KB, while prior work incurs $300$GB, which is linear to the circuit size. Additionally, we identify and address a security flaw in prior work, EOS (USENIX'23).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Yuncong Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Pratyush Mishra"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northwestern University",
+                    "ror": "https://ror.org/000e0be47"
+                }
+            ],
+            "fullName": "Xiao Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Jie Xie"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology",
+                    "ror": "https://ror.org/02pn5rj08"
+                }
+            ],
+            "fullName": "Kang Yang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Yu Yu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UC Berkeley"
+                }
+            ],
+            "fullName": "Yuwen Zhang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T04:31:07Z"
+        }
+    ],
+    "keywords": [
+        "zero-knowledge proofs",
+        "multi-party computations",
+        "distributed computations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/296.pdf",
+    "pid": "296",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "DFS: Delegation-friendly zkSNARK and Private Delegation of Provers",
+    "year": 2025,
+    "repo": [
+        "https://github.com/AztecProtocol/AZTEC",
+        "https://github.com/AztecProtocol/AZTEC"
+    ]
+}
+,
+{
+    "abstract": "Threshold signatures have become a critical tool in cryptocurrency systems, offering enhanced security by distributing the signing process among multiple signers. In this work, we distribute this process between a client and a permissionless decentralized blockchain, and present novel protocols for ECDSA and EdDSA/Schnorr signatures in this setting. Typical threshold access architectures used by trusted custodians suffer from the honeypot problem, wherein the more assets the custodian holds, the greater the incentive of compromising it.\r\n\r\nImplementing threshold signatures over permissionless blockchains poses a few challenges.\r\nFirst, existing networks typically work over an asynchronous reliable broadcast communication channel. Accordingly, our protocol is implemented over such a channel. As a result, it also benefits from identifiable abort, public verifiability, and guaranteed output delivery, and the client benefits from censorship resistance of blockchain systems.\r\nSecond, upon signing each block, the participating quorum may dynamically change and is post-determined.\r\nTherefore, we design a fluid protocol, that supports a post-determined dynamic quorum in each communication round, thereby complying with existing broadcast channel implementations. Third, in permissionless networks, parties may join, leave, and change their stake. Therefore, we offer protocols for network reconfiguration, with complexity independent of the number of clients in the system, and our protocol efficiently supports a weighted threshold access structure for the network. Specifically, the complexity of distributed key generation and presign only depends on the number of parties and not on the overall weight, and the amortized cost of sign only depends on the individual weight.\r\n\r\nFurthermore, our protocol introduces key improvements, including the removal of zero-knowledge proofs towards the client, and presigns with a non-interactive client. For Schnorr, the presigns are client-independent, and can be collected by the blockchain in a common pool, available for all clients in the system. These optimizations reduce communication overhead and improve the system's ability to handle traffic spikes during high-demand periods.\r\n\r\nOur protocol is UC-secure, and is therefore natively designed for multiple clients to use the system in parallel. Notably, we propose a novel assumption, Slightly-Enhanced ECDSA Unforgeability, offering concrete security for 256-bit elliptic curves for threshold ECDSA with support for parallel execution of presigns.\r\n\r\nIn addition to securing cryptocurrency wallets, we demonstrate how our protocol enables various cross-chain applications, such as decentralized bridges, future transactions, andwallet transfer. Our system is designed for interoperability across multiple blockchains, enhancing security, scalability, and flexibility for decentralized finance (DeFi) ecosystems.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "dWallet Labs"
+                }
+            ],
+            "fullName": "Offir Friedman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "dWallet Labs"
+                }
+            ],
+            "fullName": "Avichai Marmor"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "dWallet Labs"
+                }
+            ],
+            "fullName": "Dolev Mutzari"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "dWallet Labs"
+                }
+            ],
+            "fullName": "Yehonatan Cohen Scaly"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "dWallet Labs"
+                }
+            ],
+            "fullName": "Yuval Spiizer"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T08:21:42Z"
+        }
+    ],
+    "keywords": [
+        "Threshold Signature Schemes",
+        "Distributed Systems",
+        "Asynchronous Networks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/297.pdf",
+    "pid": "297",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Practical Zero-Trust Threshold Signatures in Large-Scale Dynamic Asynchronous Networks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The U.S. National Institute of Standards and Technology\r\nrecently standardized the first set of post-quantum cryptography algo-\r\nrithms. These algorithms address the quantum threat, but also present\r\nnew challenges due to their larger memory and computational footprint.\r\nThree of the four standardized algorithms are lattice based, offering good\r\nperformance but posing challenges due to complex implementation and\r\nintricate security assumptions. A more conservative choice for quantum-\r\nsafe authentication are hash-based signature systems. However, due to\r\nlarge signature sizes and low signing speeds, hash-based systems have\r\nonly found use in niche applications. The first NIST standardized, state-\r\nless hash-based signature system is the SPHINCS+-based SLH-DSA.\r\nIn this work we combine different approaches to show that SPHINCS+\r\ncan be optimized in its parameters and implementation, to be high per-\r\nforming, even when signing in an embedded setting. We demonstrate\r\nthis in the context of user authentication using hardware security keys\r\nwithin FIDO. Our SPHINCS+-based implementation can even outper-\r\nform lattice-based solutions while remaining highly portable. Due to con-\r\nservative security assumptions, our solution does not require a hybrid\r\nconstruction and can perform authentication on current security keys.\r\nFor reproducibility and to encourage further research we publish our\r\nCortex M4-based implementation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Neodyme AG"
+                }
+            ],
+            "fullName": "Ruben Gonzalez"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T08:40:50Z"
+        }
+    ],
+    "keywords": [
+        "PQC",
+        "SPHINCS+",
+        "Hash",
+        "LWC",
+        "FIDO",
+        "Cortex-M4"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/298.pdf",
+    "pid": "298",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Stateless Hash-Based Signatures for Post-Quantum Security Keys",
+    "year": 2025,
+    "repo": [
+        "github.com/google/OpenSK",
+        "https://github.com/tock/tock",
+        "https://github.com/jedisct1/libsodium/blob/59a98bc7f9d507175f551a53bfc0b2081f06e3ba/src/libsodium/include/sodium/crypto_sign_ed25519.h#L34",
+        "https://github.com/jedisct1/libsodium/blob/59a98bc7f9d507175f551a53bfc0b2081f06e3ba/src/libsodium/include/sodium/crypto_sign_ed25519.h#L34",
+        "https://github.com/jedisct1/libsodium/blob/59a98bc7f9d507175f551a53bfc0b2081f06e3ba/src/libsodium/include/sodium/crypto_sign_ed25519.h#L34",
+        "https://github.com/mupq/pqm4"
+    ]
+}
+,
+{
+    "abstract": "The Fujisaki-Okamoto transform (FO) is the go-to method for achieving chosen-ciphertext (CCA) security for post-quantum key encapsulation mechanisms (KEMs). An important step in FO is augmenting the decryption/ decapsulation algorithm with a re-encryption step -- the decrypted message is re-encrypted to check whether the correct encryption randomness was used. While solving a security problem (ciphertext-malleability), re-encryption has turned out to introduce side-channel vulnerabilities and is computationally expensive, which has lead designers to searching for alternatives. In this work, we perform a comprehensive study of such alternatives. We formalize a central security property, computational rigidity, and show that it is sufficient  for obtaining CCA security. We present a framework for analyzing algorithms that can replace re-encryption and still achieve rigidity, and analyze existing proposals in this framework.\r\nAlong the way, we pick up a novel QROM security statement for explicitly rejecting KEMs based on  deterministic PKE schemes, something that so far only was possible when requiring a hard-to-ensure quantum property for the base PKE scheme.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Kathrin H\u00f6velmanns",
+            "orcid": "0000-0002-5478-0140"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                },
+                {
+                    "name": "SandboxAQ"
+                }
+            ],
+            "fullName": "Andreas H\u00fclsing",
+            "orcid": "0000-0003-2215-4134"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Denmark",
+                    "ror": "https://ror.org/04qtj9h94"
+                }
+            ],
+            "fullName": "Christian Majenz",
+            "orcid": "0000-0002-1877-8385"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Denmark",
+                    "ror": "https://ror.org/04qtj9h94"
+                }
+            ],
+            "fullName": "Fabrizio Sisinni",
+            "orcid": "0009-0007-9641-4329"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T08:47:39Z"
+        }
+    ],
+    "keywords": [
+        "Public-key encryption",
+        "post-quantum security",
+        "QROM",
+        "Fujisaki-Okamoto transformation",
+        "re-encryption",
+        "side-channel attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/299.pdf",
+    "pid": "299",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "(Un)breakable curses - re-encryption in the Fujisaki-Okamoto transform",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Although privately programmable pseudorandom functions (PPPRFs) are known to have numerous applications, so far, the only known constructions rely on Learning with Error (LWE) or indistinguishability obfuscation.  We show how to construct a relaxed PPPRF with only one-way functions (OWF). The resulting PPPRF satisfies $1/\\textsf{poly}$ security and works for polynomially sized input domains. Using the resulting PPPRF, we can get new results for preprocessing Private Information Retrieval (PIR) that improve the state of the art. Specifically, we show that relying only on OWF, we can get a 2-server preprocessing PIR with polylogarithmic bandwidth while consuming $\\widetilde{O}_\\lambda(N^{\\frac12 + \\epsilon})$ client space and $N^{1+\\epsilon}$ server space for an arbitrarily small constant $\\epsilon \\in (0, 1)$. In the 1-server setting, we get a preprocessing PIR from OWF that achieves polylogarithmic online bandwidth and $\\widetilde{O}_\\lambda(N^{\\frac12 + \\epsilon})$ offline bandwidth, while preserving the same client and server space as before. Our result, in combination with the lower bound of Ishai, Shi, and Wichs (CRYPTO'24), establishes a tight understanding of the bandwidth and client space tradeoff for 1-server preprocessing PIR from Minicrypt assumptions. Interestingly, we are also the first to show non-trivial ways to combine client-side and server-side preprocessing to get improved results for PIR.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University"
+                }
+            ],
+            "fullName": "Ashrujit Ghoshal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University"
+                }
+            ],
+            "fullName": "Mingxun Zhou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University"
+                }
+            ],
+            "fullName": "Elaine Shi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Peking University",
+                    "ror": "https://ror.org/02v51f717"
+                }
+            ],
+            "fullName": "Bo Peng"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T09:42:52Z"
+        }
+    ],
+    "keywords": [
+        "PIR"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/300.pdf",
+    "pid": "300",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Pseudorandom Functions with Weak Programming Privacy and Applications to Private Information Retrieval",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper examines whether a revocation function can be added to a protocol, protocol FSU, that has been adopted as an international standard, ISO/IEC11770-3. Protocol FSU is an IB-AKE protocol based on a mathematical problem, an asymmetric gap bilinear Diffie--Hellman (GBDH) problem.\r\nTo make protocol FSU revocable, a generic technique is applied, which converts an identity-based encryption scheme to a revocable identity-based encryption scheme by introducing a symmetric-key encryption scheme. In addition, to make the converted RIB-AKE protocol efficient, we reduce ephemeral information exchanged in the protocol, and introduce an additional parameter to the master public-key where the secret information of the additional parameter is not needed to include in the master secret-key.\r\nWe discuss the security of the resultant protocol, and prove that it is rid-eCK secure under the asymmetric GBDH assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Kanagawa University",
+                    "ror": "https://ror.org/02j6c0d67"
+                }
+            ],
+            "fullName": "Kazuma Wariki"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kanagawa University",
+                    "ror": "https://ror.org/02j6c0d67"
+                }
+            ],
+            "fullName": "Atsushi Fujioka",
+            "orcid": "0000-0001-8442-8116"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories",
+                    "ror": "https://ror.org/00berct97"
+                }
+            ],
+            "fullName": "Akira Nagai"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Kan Yasuda"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T10:08:31Z"
+        }
+    ],
+    "keywords": [
+        "Identity-based cryptography",
+        "authenticated key exchange",
+        "revocability",
+        "asymmetric GBDH assumption",
+        "protocol FSU"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/301.pdf",
+    "pid": "301",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Making Protocol FSU Revocable",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Verifiable Computation over encrypted data (VC) faces a critical dilemma between two competing paradigms: SNARK-FHE (applying SNARKs to prove FHE operations) and FHE-SNARK (homomorphically evaluating SNARK proofs). There are two interesting questions remain open to solving such a dilemma: 1) Are they identical in terms of security? 2) How practically efficient can we get? This work answers these questions through the following results: \r\n\r\n1) We establish a formal security analysis between VC and secure two-party computation (2PC). We investigate VC with server inputs and show the following: a) VC with server input has an exact 1-bit security loss compared to 2PC; b)  SNARK-FHE aligns with 2PC while  FHE-SNARK  naturally falls in the VC category; c) Existing  FHE-SNARK  works is vulnerable in the VC with server input setting, for which we formalize a input-dependent attack.\r\n\r\n2) We design an FHE-friendly SNARK that is: a) 3\u00d7 lower multiplicative depth than FRI-based SNARKs;  b) Compatible with FHE SIMD operations. Based on this novel SNARK, we construct an FHE-SNARK scheme that has: a) Stronger security: resistant against input-dependent attack; b) 8\u00d7 speedup: 3.6-hour proof generation for $2^{20}$-gate circuits  on a single core CPU (vs. 29 hours in the state-of-the-art); c) Practical verification: 65.3 MB proofs with 2.7 seconds verification (single core).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, CAS"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Science"
+                }
+            ],
+            "fullName": "Xinxuan Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, CAS"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Science"
+                }
+            ],
+            "fullName": "Ruida Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Zeyu Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, CAS"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Science"
+                }
+            ],
+            "fullName": "Binwu Xiang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, CAS"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Science"
+                }
+            ],
+            "fullName": "Yi Deng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, CAS"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Science"
+                }
+            ],
+            "fullName": "Xianhui Lu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T10:55:09Z"
+        }
+    ],
+    "keywords": [
+        "FHE",
+        "SNARK",
+        "Verifiable Computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/302.pdf",
+    "pid": "302",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "FHE-SNARK vs. SNARK-FHE: From Analysis to Practical Verifiable Computation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The celebrated Algorand protocol solves validated byzantine agreement in a scalable manner in the synchronous setting. In this paper, we study the feasibility of similar solutions in the asynchronous setting. Our main result is an asynchronous validated byzantine agreement protocol that we call Asynchronous Algorand. As with Algorand, it terminates in an expected constant number of rounds, and honest parties send an expected $O(n ~\\mathsf{polylog}~n)$ bits, where $n$ is the number of parties. The protocol is resilient to a fully-asynchronous weakly-adaptive adversary that can corrupt a near-optimal number of parties ($<(1/3-\\epsilon) n$) and requires just a VRF setup and secure erasures.\r\n\r\nA key innovation in Asynchronous Algorand is a rather simple but surprisingly effective method to do \\textit{committee-based role assignment} for asynchronous verifiable secret sharing in the YOSO (You Only Speak Once) model. This method achieves near-optimal resilience and near-linear communication complexity while relying solely on a verifiable random function (VRF) setup and secure erasures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Intel Labs"
+                }
+            ],
+            "fullName": "Ittai Abraham"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hebrew University of Jerusalem",
+                    "ror": "https://ror.org/03qxff017"
+                }
+            ],
+            "fullName": "Eli Chouatt"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Ivan Damg\u00e5rd"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hebrew University of Jerusalem",
+                    "ror": "https://ror.org/03qxff017"
+                }
+            ],
+            "fullName": "Yossi Gilad"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tel Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Gilad Stern"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Sophia Yakoubov"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T11:27:55Z"
+        }
+    ],
+    "keywords": [
+        "consensus",
+        "asynchrony"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/303.pdf",
+    "pid": "303",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Asynchronous Algorand: Reaching Agreement with Near Linear Communication and Constant Expected Time",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This survey, mostly written in the years 2022-2023, is meant as an as short as possible description of the current state-of-the-art lattice attacks on lattice-based cryptosystems, without losing the essence of the matter.\r\n\r\nThe main focus is the security of the NIST finalists and \r\nalternatives that are based on lattices, namely CRYSTALS-Kyber, CRYSTALS-Dilithium and Falcon. Instead of going through these cryptosystems case by case, this survey considers attacks on the underlying hardness assumptions: in the case of the mentioned lattice-based schemes, these are (variants of) LWE (Learning With Errors) and NTRU.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Leiden University",
+                    "ror": "https://ror.org/027bh9e22"
+                }
+            ],
+            "fullName": "Koen de Boer",
+            "orcid": "0009-0001-2024-637X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Bordeaux",
+                    "ror": "https://ror.org/057qpr032"
+                },
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                }
+            ],
+            "fullName": "Wessel van Woerden",
+            "orcid": "0000-0002-5565-4015"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T13:10:42Z"
+        }
+    ],
+    "keywords": [
+        "lattice-based cryptography",
+        "cryptanalysis",
+        "NIST candidates",
+        "NIST finalists",
+        "NTRU",
+        "LWE",
+        "security estimates",
+        "survey"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/304.pdf",
+    "pid": "304",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lattice-based Cryptography: A survey on the security of the lattice-based NIST finalists",
+    "year": 2025,
+    "repo": [
+        "https://github.com/malb/lattice-estimator/"
+    ]
+}
+,
+{
+    "abstract": "The concept of Anamorphic Encryption (Persiano, Phan and Yung, Eurocrypt '22), aims to enable private communication in settings where the usage of encryption is heavily controlled by a central authority (henceforth called the dictator) who can obtain users' secret keys.\r\nSince then, various works have improved our understanding of AE in several aspects, including its limitations. To this regard, two recent works constructed various Anamorphic-Resistant Encryption (ARE) schemes, i.e., schemes admitting at most $O(\\log(\\lambda))$ bits of covert communication.\r\nHowever, those results are still unsatisfactory, each coming with at least one of the following issues: (1) use of cryptographic heavy hammers such as indistinguishability obfuscation (iO); (2) abuse of the original definition to define overly powerful dictators; (3) reliance on the Random Oracle Model (ROM). In particular, proofs in the ROM are controversial as they fail to account for anamorphic schemes making non-black-box usage of the hash function used to instantiate the Random Oracle. \r\nIn this work, we overcome all of these limitations.\r\nFirst, we describe an anamorphic-resistant encryption (ARE) scheme approaching practicality by relying only on public-key encryption and Extremely Lossy Functions (ELFs), both known from the (exponential) DDH assumption. Moreover, further assuming Unique NIZKs (known from iO), we provide another construction, which we later use to realize the first $\\textit{definitive}$ ARE; that is, a $\\textit{single}$ scheme that $\\textit{simultaneously}$ achieves the strongest level of anamorphic resistance against each of the possible levels of anamorphic security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Insitute"
+                }
+            ],
+            "fullName": "Gennaro Avitabile"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sapienza University of Rome"
+                }
+            ],
+            "fullName": "Vincenzo Botta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute, Universidad Politecnica de Madrid"
+                }
+            ],
+            "fullName": "Emanuele Giunta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warsaw"
+                }
+            ],
+            "fullName": "Marcin Mielniczuk"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e0 di Catania"
+                }
+            ],
+            "fullName": "Francesco Migliaro"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T13:32:08Z"
+        }
+    ],
+    "keywords": [
+        "anamorphic encryption",
+        "lower bounds"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/305.pdf",
+    "pid": "305",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Malice of ELFs: Practical Anamorphic-Resistant Encryption without Random Oracles",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We revisit the polynomial attack to the $\\mathsf{ROS}$ problem modulo $p$ from [BLLOR22]. Our new algorithm achieves a polynomial time solution in dimension $\\ell \\gtrsim 0.725 \\cdot \\log_2 p$, extending the range of dimensions for which a polynomial attack is known beyond the previous bound of $\\ell > \\log_2p$. \r\n\r\nWe also combine our new algorithm with Wagner's attack to improve the general $\\mathsf{ROS}$ attack complexity for some of the dimensions where a polynomial solution is still not known.\r\n\r\nWe implement our polynomial attack and break the one-more unforgeability of blind Schnorr signatures over 256-bit elliptic curves in a few seconds with 192 concurrent sessions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Antoine Joux",
+            "orcid": "0000-0003-2682-6508"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Julian Loss",
+            "orcid": "0000-0002-7979-3810"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Saarland University",
+                    "ror": "https://ror.org/01jdpyv68"
+                }
+            ],
+            "fullName": "Giacomo Santato",
+            "orcid": "0009-0006-8870-6949"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T13:47:19Z"
+        }
+    ],
+    "keywords": [
+        "ROS problem",
+        "ROS attack",
+        "Schnorr signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/306.pdf",
+    "pid": "306",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Dimensional e$\\mathsf{ROS}$ion: Improving the $\\mathsf{ROS}$ Attack with Decomposition in Higher Bases",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Indistinguishability obfuscation (\\iO) is a powerful cryptographic primitive\r\nand has been quoted as the ``swiss army-knife of modern cryptography''.   Most prior works on \\iO focused on theoretical feasibility, and paid less attention to the efficiency of the constructions.   As a result, all prior constructions stopped at  achieving polynomial efficiency without worrying  about how large the polynomial is.\r\nIn fact, it has even been conjectured that  a polynomial dependence on the input length is necessary.  \r\n\r\nIn this work, we show that if the two circuits to be obfuscated enjoy a succinct propositional logic proof of equivalence, then we can  \r\ncreate obfuscated versions of  these programs that are computationally indistinguishable; and importantly, the obfuscated program's efficiency is quasi-linear in the circuit size and proof size.  We show that our quasi-linear \\iO construction also leads to new applications. Specifically, we show how to achieve quasi-linear efficiency for 1) \\iO for Turing Machines with unbounded inputs, and 2) multi-input functional encryption, also assuming succinct proofs of equivalence.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CMU and Tsinghua"
+                }
+            ],
+            "fullName": "Yaohua Ma"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CMU and Tsinghua"
+                }
+            ],
+            "fullName": "Chenxin Dai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CMU, Oblivious Labs, and 0xPARC"
+                }
+            ],
+            "fullName": "Elaine Shi"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T16:46:51Z"
+        }
+    ],
+    "keywords": [
+        "indistinguishability obfuscation",
+        "multi-input functional encryption",
+        "Turing Machines"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/307.pdf",
+    "pid": "307",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quasi-Linear Indistinguishability Obfuscation via Mathematical Proofs of Equivalence and Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We study the problem of embedded code encryption, i.e., encryption for binary software code for a secure microcontroller that is stored in an insecure external memory. As every single instruction must be decrypted before it can be executed, this scenario requires an extremely low latency decryption. We present a formal treatment of embedded code encryption security definitions, propose three constructions, namely ACE1, ACE2 and ACE3, and analyze their security. Further, we present ChiLow, a family of tweakable block ciphers and a related PRF specifically designed for embedded code encryption. At the core of ChiLow, there is ChiChi, a new family of non-linear layers of even dimension based on the well-known \u03c7 function. Our fully unrolled hardware implementation of ChiLow, using the Nangate 15nm Open Cell Library, achieves a decryption latency of less than 280 picoseconds.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Yanis Belkheyar",
+            "orcid": "0009-0004-0314-9385"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Univ Rennes, Inria, CNRS, IRISA, France"
+                }
+            ],
+            "fullName": "Patrick Derbez",
+            "orcid": "0000-0003-0478-8483"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Haifa",
+                    "ror": "https://ror.org/02f009v59"
+                },
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                }
+            ],
+            "fullName": "Shibam Ghosh",
+            "orcid": "0000-0002-4966-1681"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Gregor Leander",
+            "orcid": "0000-0002-2579-8587"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Silvia Mella",
+            "orcid": "0000-0002-4664-3541"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                }
+            ],
+            "fullName": "L\u00e9o Perrin",
+            "orcid": "0000-0002-4722-7005"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Shahram Rasoolzadeh",
+            "orcid": "0000-0001-6848-2227"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Lukas Stennes",
+            "orcid": "0000-0002-6703-6476"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Chinese Academy of Sciences",
+                    "ror": "https://ror.org/05qbk4x57"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptology",
+                    "ror": "https://ror.org/02pn5rj08"
+                }
+            ],
+            "fullName": "Siwei Sun",
+            "orcid": "0000-0002-3058-2377"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "STMicroelectronics (Belgium)",
+                    "ror": "https://ror.org/02km85a12"
+                }
+            ],
+            "fullName": "Gilles Van Assche",
+            "orcid": "0000-0001-5003-8937"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CSEM",
+                    "ror": "https://ror.org/058t64323"
+                }
+            ],
+            "fullName": "Damian Viz\u00e1r",
+            "orcid": "0009-0006-4459-2951"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T17:06:39Z"
+        }
+    ],
+    "keywords": [
+        "symmetric cryptography",
+        "lightweight cryptography",
+        "memory encryption",
+        "low latency encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/308.pdf",
+    "pid": "308",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "ChiLow and ChiChi: New Constructions for Code Encryption",
+    "year": 2025,
+    "repo": [
+        "https://github.com/qantik/gleeok",
+        "https://github.com/qantik/gleeok",
+        "https://github.com/subhadeep-banik/orthros"
+    ]
+}
+,
+{
+    "abstract": "Receiver anamorphic encryption (hereafter anamorphic encryption), introduced by Persiano et al. at Eurocrypt 2022, allows for a double message to be symmetrically hidden in a public-key encryption ciphertext via a pre-shared -double key-. In anamorphic encryption, confidentiality must be preserved even if the adversary (or the -dictator-) has access to all regular keys. It has been the subject of several works since its introduction that explore tweaks and extensions to the core primitive. However, this study has not been systematic, and so disparate security notions have been proposed, for which their relationships are not clear. Moreover, there are clear gaps in the literature, including in the treatment of chosen-ciphertext attacks.\r\n    \r\nIn this work, we conduct a systematic study of receiver anamorphic encryption. We unify existing security notions and propose several new ones, and prove implications and separations between them. Our main findings are as follows. First, we identify gaps in previous security notions against an anamorphic -sender-, namely an adversary who is given the double key, and propose three new security notions to bridge these gaps. We also identify several gaps in the treatment of chosen-ciphertext attacks, a setting only very recently considered in anamorphic cryptography (Jaeger and Stracovsky, Asiacrypt 2024). Moreover, observing that no previous construction achieves all desirable security properties in this setting, we propose a suitable construction that does. Finally, we propose several security notions for -asymmetric- anamorphic encryption, and explore the case here where the dictator and the anamorphic sender collude.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                },
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Wonseok Choi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Texas A&M University",
+                    "ror": "https://ror.org/01f5ytq51"
+                }
+            ],
+            "fullName": "Daniel Collins"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                },
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Xiangyu Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Vassilis Zikas"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T21:01:14Z"
+        }
+    ],
+    "keywords": [
+        "anamorphic encryption",
+        "anamorphic signatures",
+        "anamorphic cryptography",
+        "anamorphism"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/309.pdf",
+    "pid": "309",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Unified Treatment of Anamorphic Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Non-interactive key exchange (NIKE) is a simple and elegant cryptographic primitive that allows two or more users to agree on a secret shared key without any interaction. NIKE schemes have been formalized in different scenarios (such as the public-key, or the identity-based setting), and have found many applications in cryptography.\r\n\r\nIn this work, we propose a NIKE variant that generalizes public-key and identity-based NIKE: a multi-authority identity-based NIKE (MA-ID-NIKE) is defined like an identity-based NIKE, only with several identity domains (i.e., several instances of an identity-based NIKE), and such that users from different identity domains can compute shared keys. This makes MA-ID-NIKE schemes more versatile than existing NIKE or identity-based NIKE schemes, for instance, in an application in which users from different (centrally managed) companies need to compute shared keys.\r\n\r\nWe show several results for MA-ID-NIKE schemes:\r\n - We show that MA-ID-NIKE schemes generically imply public-key NIKEs, identity-based NIKEs, as well as forward-secure NIKE schemes, the latter of which are notoriously hard to construct.\r\n - We propose two simple constructions of MA-ID-NIKE schemes from indistinguishability obfuscation (iO) and multilinear maps, respectively. These constructions achieve only selective security, but can be leveraged to adaptive security for small groups of users (that want to be able to agree on a joint shared key) in the random oracle model.\r\n - We give a simple and elegant construction of MA-ID-NIKEs from identity-based encryption (IBE) and universal samplers. This construction achieves adaptive security also for large groups of users based on the adaptive security of the used universal samplers. Universal samplers, in turn, are known to be achievable using iO in the random oracle model. As a nice feature, the same construction yields hierarchical MA-ID-NIKEs or public-key NIKEs when instantiated with hierarchical IBE or public-key encryption instead of IBE schemes.\r\nWhile these results are clearly only feasibility results, they do demonstrate the achievability of a concept that itself has very practical use cases.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Visa Research"
+                }
+            ],
+            "fullName": "Suvradip Chakraborty"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Dennis Hofheinz"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Roman Langrehr",
+            "orcid": "0000-0002-4083-8073"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T21:23:20Z"
+        }
+    ],
+    "keywords": [
+        "Non-interactive key exchange",
+        "indistinguishability obfuscation",
+        "multilinear maps"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/310.pdf",
+    "pid": "310",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Non-Interactive Key Exchange: New Notions, New Constructions, and Forward Security",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Succinct non-interactive arguments of knowledge (SNARKs) are variants of non-interactive zero-knowledge proofs (NIZKs) in which complex statements can be proven in a compact way. SNARKs have had tremendous impact in several areas of cryptography, including verifiable computing, blockchains, and anonymous communication. A recurring concept in many applications is the concept of recursive SNARKs, in which a proof references a previous proof to show an evolved statement.\r\n\r\nIn this work, we investigate malleable SNARKs, a generalization of this concept of recursion. An adaptation of the existing concept of malleable NIZKs, malleable SNARKs allow to modify SNARK proofs to show related statements, but such that such mauled proofs are indistinguishable from \u201cproperly generated\u201d fresh proofs of the related statement. We show how to instantiate malleable SNARKs for universal languages and relations, and give a number of applications: the first post-quantum RCCA-secure rerandomizable and updatable encryption schemes, a generic construction of reverse firewalls, and an unlinkable (i.e., computation-hiding) targeted malleable homomorphic encryption scheme.\r\n\r\nTechnically, our malleable SNARK construction relies on recursive proofs, but with a twist: in order to support the strong indistinguishability properties of mauled and fresh SNARK proofs, we need to allow an unbounded recursion depth. To still allow for a reasonable notion of extractability in this setting (and in particular to guarantee that extraction eventually finishes with a \u201cproper\u201d witness that does not refer to a previous SNARK proof), we rely on a new and generic computational primitive called adversarial one-way function (AOWF) that may be of independent interest. We give an AOWF candidate and prove it secure in the random oracle model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Visa Research"
+                }
+            ],
+            "fullName": "Suvradip Chakraborty"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Dennis Hofheinz"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Roman Langrehr",
+            "orcid": "0000-0002-4083-8073"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Jesper Buus Nielsen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Austrian Institute of Technology",
+                    "ror": "https://ror.org/04knbh022"
+                }
+            ],
+            "fullName": "Christoph Striecks",
+            "orcid": "0000-0003-4724-8022"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sapienza University of Rome",
+                    "ror": "https://ror.org/02be6w209"
+                }
+            ],
+            "fullName": "Daniele Venturi",
+            "orcid": "0000-0003-2379-8564"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-20T21:24:29Z"
+        }
+    ],
+    "keywords": [
+        "SNARKs",
+        "malleability",
+        "homomorphic encryption",
+        "rerandomizable encryption",
+        "updatable encryption",
+        "reverse firewalls"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/311.pdf",
+    "pid": "311",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Malleable SNARKs and Their Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A threshold verifiable random function (threshold VRF) is a VRF where the evaluation key is secret shared among $n$ parties, and a quorum of $t$ parties is needed to evaluate the VRF. Threshold VRFs are used widely in practice in applications such as randomness beacons and deterministic wallets. Despite their long history, the question of accountability for leaking key shares in a threshold VRF has not been studied. Specifically, consider a set of $f$ parties who use their key shares to create an evaluation box $E$ that lets anyone evaluate the VRF at any point in the domain of the VRF. When $f$ is less than the threshold $t$, this box $E$ must also take as input $t-f$ additional evaluation shares. Our goal is to design a threshold VRF where there is a tracing algorithm that can trace any such box $E$ to the coalition of $f$ parties that created it, using only blackbox access to $E$. The risk of tracing should deter the coalition from selling such a box. Questions in this vein were previously explored in the context of threshold decryption and secret sharing. Here we define and study traceability for a threshold VRF. \r\n\r\nOur traceable threshold VRF is built from a VRF based on Paillier encryption. The starting point for our tracing algorithm is the tracing technique of Boneh-Partap-Rotem (Crypto 2024) designed for tracing leaks in the context of secret sharing. However, there are multiple technical challenges in making this approach work, and we develop the necessary tools to overcome all these challenges. The end result is a threshold VRF with a provably secure tracing algorithm.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University",
+                    "ror": "https://ror.org/00f54p054"
+                }
+            ],
+            "fullName": "Dan Boneh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University",
+                    "ror": "https://ror.org/00f54p054"
+                }
+            ],
+            "fullName": "Aditi Partap"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University",
+                    "ror": "https://ror.org/00f54p054"
+                }
+            ],
+            "fullName": "Lior Rotem"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T01:57:19Z"
+        }
+    ],
+    "keywords": [
+        "Traceability",
+        "Verifiable Random Functions",
+        "threshold VRFs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/312.pdf",
+    "pid": "312",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Traceable Verifiable Random Functions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
