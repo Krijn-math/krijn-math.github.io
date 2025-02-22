@@ -22650,4 +22650,459 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "We propose new techniques for enhancing the efficiency of $\\Sigma$-protocols in lattice settings.\r\n  One major challenge in lattice-based $\\Sigma$-protocols is restricting the norm of the extracted witness in soundness proofs.\r\n  Most of existing solutions either repeat the protocol several times or opt for a relaxation version of the original relation.\r\n  Recently, Boneh and Chen have propose an innovative solution called $\\mathsf{LatticeFold}$,\r\n  which utilizes a sum-check protocol to enforce the norm bound on the witness.\r\n  In this paper, we elevate this idea to efficiently proving multiple polynomial relations without relaxation.\r\n  Simply incorporating the techniques from $\\mathsf{LatticeFold}$ into $\\Sigma$-protocols leads to inefficient results;\r\n  therefore, we introduce several new techniques to ensure efficiency.\r\n  First, to enable the amortization in [AC20] for multiple polynomial relations,\r\n  we propose a general linearization technique to reduce polynomial relations to homomorphic ones.\r\n  Furthermore, we generalize the folding protocol in LatticeFold, enabling us to efficiently perform folding and other complex operations multiple times without the need to repeatedly execute sum-checks. Moreover, we achieve zero-knowledge by designing hiding claims and elevating the zero-knowledge sum-check protocol [XZZ+19] on rings.\r\n  Our protocol achieves standard soundness, thereby enabling the efficient integration of the compressed $\\Sigma$-protocol theory [AC20, ACF21] in lattice settings.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University, Hong Kong, China"
+                }
+            ],
+            "fullName": "Lizhen Zhang",
+            "orcid": "0009-0003-7313-0551"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University, Hong Kong, China"
+                }
+            ],
+            "fullName": "Shang Gao",
+            "orcid": "0000-0003-2692-057X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University, Hong Kong, China"
+                }
+            ],
+            "fullName": "Bin Xiao",
+            "orcid": "0000-0003-4223-8220"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-02-22T02:50:41Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-02-21T02:52:39Z"
+        }
+    ],
+    "keywords": [
+        "Lattice-based cryptography",
+        "Sigma-protocol",
+        "sum-check protocol"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/313.pdf",
+    "pid": "313",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lattice-based $\\Sigma$-Protocols for Polynomial Relations with Standard Soundness",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The public comments received for the review process for NIST (SP) 800-38A pointed out two important issues that most companies face: (1) the limited security that AES can provide due to its 128-bit block size and (2) the problem of nonce-misuse in practice. In this paper, we provide an alternative solution to these problems by introducing two optimally secure deterministic authenticated encryption (DAE) schemes, denoted as DENC1 and DENC2 respectively. We show that our proposed constructions improve the state-of-the-art in terms of security and efficiency. Specifically, DENC1 achieves a robust security level of $O(r^2\\sigma^2\\ell/2^{2n})$, while DENC2 attains a near-optimal security level of $O(r\\sigma/2^{n})$, where $\\sigma$ is the total number of blocks, $\\ell$ is maximum number of blocks in each query, and $r$ is a user-defined parameter closely related to the rate of the construction. Our research centers on the development of two IV-based encryption schemes, referred to as IV1 and IV2, which respectively offer security levels of $O(r^2\\sigma^2\\ell/2^{2n})$ and $O(r\\sigma/2^{n})$. Notably, both of our DAE proposals are nearly rate 1/2 constructions. In terms of efficiency, our proposals compare favorably with state-of-the-art AE modes on contemporary microprocessors.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven, Leuven, Belgium",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Yu Long Chen",
+            "orcid": "0000-0002-6281-6430"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IAI TCG CREST, Kolkata, India"
+                },
+                {
+                    "name": "AcSIR, Ghaziabad, India"
+                }
+            ],
+            "fullName": "Avijit Dutta",
+            "orcid": "0000-0003-2672-7331"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr-University of Bochum, Bochum, Germany",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Ashwin Jha",
+            "orcid": "0000-0001-5957-2837"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute, Kolkata, India",
+                    "ror": "https://ror.org/00q2w1j53"
+                }
+            ],
+            "fullName": "Mridul Nandi",
+            "orcid": "0000-0002-1029-6576"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T05:24:46Z"
+        }
+    ],
+    "keywords": [
+        "IV-based encryption",
+        "Deterministic AE",
+        "SIV",
+        "GCM-SIV"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/314.pdf",
+    "pid": "314",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Towards Optimally Secure Deterministic Authenticated Encryption Schemes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "SCARF is a tweakable block cipher dedicated to cache address randomization, proposed at the USENIX Security conference.  It has a 10-bit block, 48-bit tweak, and 240-bit key.  SCARF is aggressively optimized to meet the harsh latency constraints of cache address randomization, and uses a dedicated model for its security claim.\r\nThe full version of SCARF has 8 rounds, and its designers claim security up to $2^{40}$ queries and $2^{80}$ computations.  In this work we present a distinguisher against 6-round SCARF under the collision model with time and query complexity $2^{30}$, and a key-recovery attack against the full 8-round SCARF under the encryption-decryption model with $2^{39}$ queries and time $2^{76.2}$. As part of the attack, we present a novel method to compute the minimal number of right pairs following a differential characteristic when the input pairs are restricted to a subspace of the domain of the primitive.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories, NTT Corporation, Japan"
+                }
+            ],
+            "fullName": "Antonio Fl\u00f3rez-Guti\u00e9rrez",
+            "orcid": "0000-0001-7749-8925"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Mathematics, Bar-Ilan University, Ramat Gan, Israel"
+                }
+            ],
+            "fullName": "Eran Lambooij"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Inria, Paris, France",
+                    "ror": "https://ror.org/02kvxyf05"
+                }
+            ],
+            "fullName": "Ga\u00ebtan Leurent",
+            "orcid": "0000-0001-5903-9055"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Simula UiB, Bergen, Norway",
+                    "ror": "https://ror.org/05kmggt55"
+                }
+            ],
+            "fullName": "H\u00e5vard Raddum",
+            "orcid": "0000-0001-9779-5986"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Denmark, Denmark",
+                    "ror": "https://ror.org/04qtj9h94"
+                }
+            ],
+            "fullName": "Tyge Tiessen",
+            "orcid": "0000-0003-1189-9528"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven, Leuven, Belgium",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Michiel Verbauwhede",
+            "orcid": "0000-0002-5982-1984"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T06:43:52Z"
+        }
+    ],
+    "keywords": [
+        "SCARF",
+        "tweakable block cipher",
+        "cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is an expanded version of the corresponding Eurocrypt paper.",
+    "pdffile": "2025/315.pdf",
+    "pid": "315",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cryptanalysis of Full SCARF",
+    "year": 2025,
+    "repo": [
+        "https://github.com/SCARF-Cryptanalysis/SCARF-cryptanalysis"
+    ]
+}
+,
+{
+    "abstract": "We introduce $\\mathsf{Zinc}$, a hash-based succinct argument for integer arithmetic. $\\mathsf{Zinc}$'s goal is to provide a practically efficient scheme that  bypasses the arithmetization overheads that many succinct arguments present. These overheads can be of orders of magnitude in many applications. By enabling proving statements over the integers, we are able to arithmetize many operations of interest with almost no overhead. This includes modular operations involving any moduli, not necessarily prime, and possibly involving multiple moduli in the same statement. In particular, $\\mathsf{Zinc}$ allows to prove statements for the ring $\\mathbb{Z}/n\\mathbb{Z}$ for arbitrary $n\\geq 1$. Importantly, and departing from prior work, our schemes are purely code and hash-based, and do not require hidden order groups. In its final form, $\\mathsf{Zinc}$ operates similarly to other hash-based schemes using Brakedown as their PCS, and at the same time it benefits from the arithmetization perks brought by  working over $\\mathbb{Z}$ (and $\\mathbb{Q}$) natively. \r\n\r\nAt its core, $\\mathsf{Zinc}$ is a succinct argument for proving relations over the rational numbers $\\mathbb{Q}$, even though when applied to integer statements, an honest prover and verifier will only operate with small integers. $\\mathsf{Zinc}$ consists of two main components: 1) $\\mathsf{Zinc}$-$\\mathsf{PIOP}$, a framework for proving algebraic statements over the rationals by reducing modulo a randomly chosen prime $q$, followed by running a suitable PIOP over $\\mathbb{F}_q$ (this is similar to the approach taken in prior works, with the difference that we use localizations of $\\mathbb{Q}$ to enable prime modular projection); and 2) $\\mathsf{Zip}$, a Brakedown-type polynomial commitment scheme built from an IOP of proximity to the integers, a novel primitive that we introduce. The latter primitive guarantees that a prover is using a polynomial with coefficients close to being integral. With these two primitives in place, one can use a lookup argument over the rationals to ensure that the witness contains only integer elements.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nethermind Research"
+                }
+            ],
+            "fullName": "Albert Garreta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nethermind Research"
+                }
+            ],
+            "fullName": "Hendrik Waldner"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Keterina Hristova"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Luca Dall'Ava"
+        }
+    ],
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T11:56:57Z"
+        }
+    ],
+    "keywords": [
+        "succinct arguments",
+        "zk-proof",
+        "SNARK",
+        "Polynomial Commitment Schemes",
+        "ring arithmetic"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/316.pdf",
+    "pid": "316",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "$\\mathsf{Zinc}$: Succinct Arguments with Small Arithmetization Overheads from IOPs of Proximity to the Integers",
+    "year": 2025,
+    "repo": [
+        "https://github.com/hash-based-snargs-book",
+        "https://github.com/Plonky3/Plonky3"
+    ]
+}
+,
+{
+    "abstract": "We present PIR protocols for offline/online two-server setting where a client $C$ wants to privately retrieve a batch of entries from database of size $N$ by interacting with a servers $S_1$. The client has interacted with a server $S_2$ ahead of time, not colluding with $S_1$. We present simple protocols based on one-way functions that substantially improve on the query complexity or runtime over existing works. Concrete instantiations of our general paradigm lead to batch PIR protocols with the following parameters:\r\n    - A protocol for batches of $\\sqrt{N}$, where $C,S_1$, and $S_2$ each spend a total of $\\tilde{O}(N)$ work and exchange $\\tilde{O}(\\sqrt{N})$ bits of communication. This yields an amortized complexity of $\\tilde{O}(\\sqrt{N})$ work and $\\tilde{O}(1)$ communication per query in the batch.\r\n   - A more balanced protocol for batches of size $N^{1/3}$ in which $C$ spends a total of $\\tilde{O}(N^{2/3})$ work, $S_1$ and $S_2$ spend $\\tilde{O}(N)$ work, and the total communication is of size $\\tilde{O}(N^{2/3})$.\r\n  Our protocols have immediate applications such as Private Set Intersection (PSI) in the two-server setting with preprocessing and unbalanced set sizes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Nico D\u00f6ttling",
+            "orcid": "0000-0002-5914-7635"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Jesko Dujmovic",
+            "orcid": "0000-0003-1043-5094"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Julian Loss",
+            "orcid": "0000-0002-7979-3810"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Maciej Obremski",
+            "orcid": "0000-0003-4174-0438"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T12:34:44Z"
+        }
+    ],
+    "keywords": [
+        "PIR",
+        "Private Information Retrieval",
+        "offline/online",
+        "minicrypt",
+        "one-way functions",
+        "batch"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/317.pdf",
+    "pid": "317",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Minicrypt PIR for Big Batches",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A secret sharing scheme allows a trusted dealer to divide a secret among multiple parties so that a sufficient number of them can recover the secret, while a smaller group cannot. In CRYPTO'21, Goyal, Song, and Srinivasan introduced Traceable Secret Sharing (TSS), which enhances traditional secret sharing by enabling the identification of parties involved in secret reconstruction, deterring malicious behavior like selling shares. Recently, Boneh, Partap, and Rotem (CRYPTO'24) presented two more efficient TSS schemes. However, these existing TSS schemes assume that all distributed shares are valid and shareholders act honestly during the secret reconstruction phase. In this paper, we introduce Traceable Verifiable Secret Sharing (TVSS), a concept designed to ensure both traceability and verifiability in the face of malicious actions by either the dealer or shareholders. We propose a general strategy for transforming a Shamir-based, computationally secure Verifiable Secret Sharing (VSS) scheme into an efficient TVSS scheme. Building on this strategy, we construct two practical TVSS schemes in the honest-majority setting, based on  well-known VSS schemes proposed by Feldman (SFCS'87) and Pedersen (CRYPTO'91). Our proposed TVSS schemes retain public shareholder indexes, enhancing flexibility in designing accountable threshold protocols (e.g., Distributed Key Generation protocols) using TVSS. Compared to the original VSS schemes, the individual share size in the new TVSS schemes increases by only a single field element and is just two or three times the size of the main secret. \r\nMotivated by a recent study on Accountable Threshold Cryptosystems (ATCs) by Boneh, Partap, and Rotem (CRYPTO'24), and by leveraging our proposed Feldman-based TVSS scheme, we also introduce an efficient ATC based on ElGamal cryptosystem. This new ATC enables a tracer to uniquely identify the parties involved in the decryption process while introducing minimal overhead to existing actively secure (and/or robust) threshold protocols built on the ElGamal cryptosystem.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven"
+                }
+            ],
+            "fullName": "Karim Baghery",
+            "orcid": "0000-0001-7213-8496"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Luxembourg, Luxembourg"
+                }
+            ],
+            "fullName": "Ehsan Ebrahimi",
+            "orcid": "0000-0001-6917-7734"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven"
+                }
+            ],
+            "fullName": "Omid Mirzamohammadi",
+            "orcid": "0009-0007-4908-649X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven"
+                },
+                {
+                    "name": "Soundness Labs"
+                }
+            ],
+            "fullName": "Mahdi Sedaghat",
+            "orcid": "0000-0002-1507-6927"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T15:39:04Z"
+        }
+    ],
+    "keywords": [
+        "Verifiable Secret Sharing",
+        "Traceable Secret Sharing",
+        "Traceable Verifiable Secret Sharing",
+        "Shamir Secret Sharing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/318.pdf",
+    "pid": "318",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Traceable Verifiable Secret Sharing and Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
