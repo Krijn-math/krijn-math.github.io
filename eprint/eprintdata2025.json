@@ -23105,4 +23105,426 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "This paper presents a novel single-trace side-channel attack on FALCON\u2014a lattice-based post-quantum digital signature protocol recently approved for standardization by NIST. We target the discrete Gaussian sampling operation within the FALCON key generation scheme and use a single power measurement trace to succeed. Notably, negating the \u2018shift right 63-bit\u2019 operation (for 64-bit values) leaks critical information about the \u2018-1\u2019 vs. \u20180\u2019 assignments to intermediate coefficients. These leaks enable full recovery of the generated secret keys. The proposed attack is simulated on the ELMO simulator running both reference and optimized software implementation from FALCON\u2019s NIST Round 3 package. Statistical analysis with 20k tests reveals a full key-recovery success rate of 100% for FALCON-512. This work highlights the vulnerability of current software solutions to single-trace attacks and underscores the urgent need to develop single-trace resilient software for embedded systems in the presilicon phase.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "North Carolina State University",
+                    "ror": "https://ror.org/04tj63d06"
+                }
+            ],
+            "fullName": "Jinyi Qiu",
+            "orcid": "0009-0008-0714-4302"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T15:40:32Z"
+        }
+    ],
+    "keywords": [
+        "Side-Channal Attack",
+        "FALCON",
+        "post-quantum Cryptography",
+        "ELMO"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/319.pdf",
+    "pid": "319",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Single Trace Side-Channel Vulnerabilities Discovery Using Statistical Leakage Simulator",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Recent applications and attacks have highlighted the need for authenticated encryption (AE) schemes to achieve the so-called committing security beyond privacy and authenticity. As a result, several generic solutions have been proposed to transform a non-committing AE scheme to a committing one, for both basic unique-nonce security and advanced misuse-resistant (MR) security. We observe that all existing practical generic transforms are subject to at least one of the following limitations: (i) not committing to the entire encryption context, (ii) involving non-standard primitives, (iii) not being a black-box transform, (iv) providing limited committing security. Furthermore, so far, there has been no generic transform that can directly elevate a basic AE scheme to a committing AE scheme that offers MR security. Our work fills these gaps by developing black-box generic transforms that crucially rely on hash functions, which are well standardized and widely deployed.\r\n\r\nFirst, we construct three basic transforms that combine AE with a single hash function, which we call $\\mathsf{HtAE}, \\mathsf{AEaH}$ and $\\mathsf{EtH}$. They all guarantee strong security, and $\\mathsf{EtH}$ can be applied to both AE and basic privacy-only encryption schemes. Next, for MR security, we propose two advanced hash-based transforms that we call $\\mathsf{AEtH}$ and $\\mathsf{chaSIV}$. $\\mathsf{AEtH}$ is an MRAE-preserving transform that adds committing security to an MR-secure AE scheme. $\\mathsf{chaSIV}$ is the first generic transform that can directly elevate basic AE to one with both committing and MR security; moreover, $\\mathsf{chaSIV}$ also works with arbitrary privacy-only encryption schemes. Both of them feature a simple design and ensure strong security.\r\n\r\nFor performance evaluation, we compare our transforms to similar existing ones, both in theory and through practical implementations. The results show that our $\\mathsf{AEaH}$ achieves the highest practical efficiency among basic transforms, while $\\mathsf{AEtH}$ excels in MRAE-preserving transforms. Our MRAE-lifting transform $\\mathsf{chaSIV}$ demonstrates comparable performance to MRAE-preserving ones and surpasses them for messages larger than approximately $360$ bytes; for longer messages, it even outperforms the benchmark, non-committing standardized $\\mathsf{AES}\\text{-}\\mathsf{GCM}\\text{-}\\mathsf{SIV}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Southern University of Science and Technology",
+                    "ror": "https://ror.org/049tv2d57"
+                }
+            ],
+            "fullName": "Shan Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Vuka\u0161in Karad\u017ei\u0107"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T15:51:43Z"
+        }
+    ],
+    "keywords": [
+        "Authenticated Encryption",
+        "Committing Security",
+        "Misuse Resistance",
+        "Generic Transform",
+        "Hash Function",
+        "Random Oracle Model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/320.pdf",
+    "pid": "320",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Committing Authenticated Encryption: Generic Transforms with Hash Functions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Pointer Authentication Code ($\\textsf{PAC}$) feature in the Arm architecture is used to enforce the Code Flow Integrity ($\\textsf{CFI}$) of running programs.\r\n    It does so by generating a short $\\textsf{MAC}$ - called the $\\textsf{PAC}$ - of the return address and some additional context information upon function entry, and checking it upon exit.\r\n    An attacker that wants to overwrite the stack with manipulated addresses now faces an additional hurdle, as they now have to guess, forge, or reuse $\\textsf{PAC}$ values.\r\n   $\\textsf{PAC}$ is deployed on billions of devices as a first line of defense to harden system software and complex programs against software exploitation.\r\n\r\n    The original version of the feature uses a 12-round version the $\\textsf{QARMA-64}$ block cipher.\r\n    The output is then truncated to between 3 and 32 bits, in order to be inserted into unused bits of 64-bit pointers.\r\n    A later revision of the specification allows the use of an 8-round version of $\\textsf{QARMA-64}$.\r\n    This reduction may introduce vulnerabilities such as high-probability distinguishers, potentially enabling key recovery attacks.\r\n    The present paper explores this avenue.\r\n\r\n    A cryptanalysis of the $\\textsf{PAC}$ computation function entails restricting the inputs to valid virtual addresses, meaning that certain most significant bits are fixed to zero,\r\n    and considering only the truncated output.\r\n    Within these constraints, we present practical attacks on various $\\textsf{PAC}$ configurations.\r\n    These attacks, while not presenting immediate threat to the $\\textsf{PAC}$ mechanism, show that some versions of the feature\r\n    do miss the security targets made for the original function.\r\n    This offers new insights into the practical security of constructing $\\textsf{MAC}$ from truncated block ciphers, expanding on the mostly theoretical understanding of creating PRFs from truncated PRPs.\r\n\r\n    We note that the results do not affect the security of $\\textsf{QARMA-64}$ when used with the recommended number of rounds for general purpose applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Haifa, Haifa, Israel"
+                }
+            ],
+            "fullName": "Roberto Avanzi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Haifa, Haifa, Israel"
+                },
+                {
+                    "name": "TU Berlin, Germany"
+                }
+            ],
+            "fullName": "Orr Dunkelman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Haifa, Haifa, Israel"
+                },
+                {
+                    "name": "Inria, Paris, France"
+                }
+            ],
+            "fullName": "Shibam Ghosh"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T15:52:29Z"
+        }
+    ],
+    "keywords": [
+        "Tweakable Block Ciphers",
+        "Lightweight Cryptography",
+        "Pseudo-Random Functions",
+        "Pseudo-Random Permutations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/321.pdf",
+    "pid": "321",
+    "pubtype": {
+        "pubtype": "TOSC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Differential Cryptanalysis of the Reduced Pointer Authentication Code Function used in Arm\u2019s FEAT_PACQARMA3 Feature",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ShibamCrS/DifferentialAttackPACQARMA3.git",
+        "https://github.com/ShibamCrS/DifferentialAttackPACQARMA3.git",
+        "https://github.com/kste/cryptosmt",
+        "https://github.com/pakt/ropc",
+        "https://github.com/pakt/ropc"
+    ]
+}
+,
+{
+    "abstract": "In many areas of cybersecurity, we require access to Personally Identifiable Information (PII), such as names, postal addresses and email addresses. Unfortunately, this can lead to data breaches, especially in relation to data compliance regulations such as GDPR. An IP address is a typical identifier which is used to map a network address to a person. Thus, in applications which are privacy-aware, we may aim to hide the IP address while aiming to determine if the address comes from a blacklist. One solution to this is to use homomorphic encryption to match an encrypted version of an IP address to a blacklisted network list. This matching allows us to encrypt the IP address and match it to an encrypted version of a blacklist. In this paper, we use the OpenFHE library \\cite{OpenFHE} to convert network addresses into the BFV homomorphic encryption method. In order to assess the performance impact of BFV, it implements a matching method using the OpenFHE library and compares this against the partial homomorphic methods of Paillier, Damgard-Jurik, Okamoto-Uchiyama, Naccache-Stern and Benaloh. The main findings are that the BFV method compares favourably against the partial homomorphic methods in most cases.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "William J Buchanan",
+            "orcid": "0000-0003-0809-3523"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "Hisham Ali"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-21T20:36:43Z"
+        }
+    ],
+    "keywords": [
+        "partial homomorphic encryption",
+        "fully homomorphic encryption",
+        "openfhe",
+        "paillier"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/322.pdf",
+    "pid": "322",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Partial and Fully Homomorphic Matching of IP Addresses Against Blacklists for Threat Analysis",
+    "year": 2025,
+    "repo": [
+        "https://github.com/openfheorg/openfhe-development",
+        "https://github.com/openfheorg/openfhe-development",
+        "https://github.com/openfheorg/openfhe-development",
+        "https://github.com/openfheorg/openfhe-development/blob/main/src/pke/unittest/UnitTestSHE.cpp",
+        "https://github.com/openfheorg/openfhe-development/blob/main/src/pke/unittest/UnitTestSHE.cpp",
+        "https://github.com/openfheorg/openfhe-development/blob/main/src/pke/unittest/UnitTestSHE.cpp",
+        "https://github.com/openfheorg/openfhe-development/blob/main/src/pke/unittest/UnitTestSHE.cpp",
+        "https://github.com/serengil/LightPHE",
+        "https://github.com/serengil/LightPHE",
+        "https://github.com/serengil/LightPHE"
+    ]
+}
+,
+{
+    "abstract": "Broadcast encryption allows a user to encrypt a message to $N$ recipients with a ciphertext whose size scales sublinearly with $N$. The natural security notion for broadcast encryption is adaptive security which allows an adversary to choose the set of recipients after seeing the public parameters. Achieving adaptive security in broadcast encryption is challenging, and in the plain model, the primary technique is the celebrated dual-systems approach, which can be implemented over groups with bilinear maps. Unfortunately, it has been challenging to replicate the dual-systems approach in other settings (e.g., with lattices or witness encryption). Moreover, even if we focus on pairing-based constructions, the dual-systems framework critically relies on decisional (and source-group) assumptions. We do not have constructions of adaptively-secure broadcast encryption from search (or target-group) assumptions in the plain model.\r\n\r\nGentry and Waters (EUROCRYPT 2009) described a compiler that takes any semi-statically-secure broadcast encryption scheme and transforms it into an adaptively-secure scheme in the random oracle model. While semi-static security is easier to achieve and constructions are known from witness encryption as well as search (and target-group) assumptions on pairing groups, the transformed scheme relies on random oracles. In this work, we show that using publicly-sampleable projective PRGs, we can achieve adaptive security in the plain model. We then show how to build publicly-sampleable projective PRGs from many standard number-theoretic assumptions (e.g., CDH, LWE, RSA).\r\n\r\nOur compiler yields the first adaptively-secure broadcast encryption scheme from search assumptions as well as the first such scheme from witness encryption in the plain model. We also obtain the first adaptively-secure pairing-based scheme in the plain model with $O_\\lambda(N)$-size public keys and $O_\\lambda(1)$-size ciphertexts (where $O_\\lambda(\\cdot)$ suppresses polynomial factors in the security parameter $\\lambda$). Previous adaptively-secure pairing-based schemes in the plain model with $O_\\lambda(1)$-size ciphertexts required $O_\\lambda(N^2)$-size public keys.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Yao-Ching Hsieh",
+            "orcid": "0009-0008-5244-7222"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                },
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Brent Waters",
+            "orcid": "0009-0008-9718-8623"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "David J. Wu",
+            "orcid": "0000-0002-5191-692X"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-22T00:46:04Z"
+        }
+    ],
+    "keywords": [
+        "broadcast encryption",
+        "adaptive security",
+        "projective PRGs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/323.pdf",
+    "pid": "323",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Generic Approach to Adaptively-Secure Broadcast Encryption in the Plain Model",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The study of fine-grained cryptography has proliferated in recent years due to its allure of potentially relying on weaker assumptions compared to standard cryptography. As fine-grained cryptography only requires polynomial gaps between the adversary and honest parties, it seems plausible to build primitives relying upon popular hardness assumptions about problems in $\\mathbf{P}$ such as $k$-$\\mathsf{SUM}$ or $\\mathsf{Zero}$-$k$-$\\mathsf{Clique}$. The ultimate hope is that fine-grained cryptography could still be viable even if all current cryptographic assumptions are false, such as if $\\mathbf{P} = \\mathbf{NP}$ or if we live in Pessiland where one-way functions do not exist.\r\n\r\nIn our work, we consider whether this approach is viable by studying fine-grained complexity when all standard cryptographic assumptions are false. As our main result, we show that many popular fine-grained complexity problems are easy to solve in the average-case when one-way functions do not exist. In other words, many candidate hardness assumptions for building fine-grained cryptography are no longer options in Pessiland. As an example, we prove that the average-case $k$-$\\mathsf{SUM}$ and $\\mathsf{Zero}$-$k$-$\\mathsf{Clique}$ conjectures are false for sufficiently large constant $k$ when no one-way functions exist. The average-case $\\mathsf{Zero}$-$k$-$\\mathsf{Clique}$ assumption was used to build fine-grained key-exchange by Lavigne et al. [CRYPTO'19].\r\n\r\nWe also show that barriers for reductions in fine-grained complexity may be explained by problems in cryptography. First, we show that finding faster algorithms for computing discrete logarithms is equivalent to designing average-case equivalence between $k$-$\\mathsf{SUM}$ and $k$-$\\mathsf{CYC}$ (an extension of $k$-$\\mathsf{SUM}$ to cyclic groups). In particular, finding such a reduction from $k$-$\\mathsf{CYC}$ to $k$-$\\mathsf{SUM}$ could potentially lead to breakthrough algorithms for the discrete logarithm, factoring, RSA and quadratic residuosity problems. Finally, we show that discrete logarithms with preprocessing may be reduced to the $k$-$\\mathsf{CYC}$-$\\mathsf{Index}$ problem, and we present faster algorithms for average-case $k$-$\\mathsf{SUM}$-$\\mathsf{Index}$ and $k$-$\\mathsf{CYC}$-$\\mathsf{Index}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Josh Alman",
+            "orcid": "0009-0002-2204-1359"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Yizhi Huang",
+            "orcid": "0000-0002-6592-7769"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                },
+                {
+                    "name": "Google (United States)",
+                    "ror": "https://ror.org/00njsd438"
+                }
+            ],
+            "fullName": "Kevin Yeo",
+            "orcid": "0009-0009-4997-6307"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-22T05:10:22Z"
+        }
+    ],
+    "keywords": [
+        "fine-grained complexity",
+        "k-sum",
+        "one-way function"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/324.pdf",
+    "pid": "324",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fine-Grained Complexity in a World without Cryptography",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We show a black box barrier against constructing public key quantum money from obfuscation for evasive functions. As current post-quantum obfuscators based on standard assumptions are all evasive, this shows a fundamental barrier to achieving public key quantum money from standard tools. Our impossibility applies to black box schemes where (1) obfuscation queries made by the mint are classical, and (2) the verifier only makes (possibly quantum) evaluation queries, but no obfuscation queries. This class seems to capture any natural method of using obfuscation to build quantum money.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Mark Zhandry",
+            "orcid": "0000-0001-7071-6272"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-02-22T21:07:16Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/325.pdf",
+    "pid": "325",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On Quantum Money and Evasive Obfuscation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
