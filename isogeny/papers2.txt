@@ -13,7 +13,7 @@ the supersingular isogeny path and endomorphism ring problems: unconditional red
 the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;last_month;;;none
 experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_month;;;none
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_month;;;https://github.com/jtcc2/cycles-and-cuts
-efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;maria corte-real santos, craig costello, sam frengley;;;2025/147;;;last_month;;;https://github.com/mariascrs/SplitSearcher
+efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;maria corte-real santos, craig costello, sam frengley;;;2025/147;;;last_year;;;https://github.com/mariascrs/SplitSearcher
 isogeny-based cryptography using isomorphisms of superspecial abelian surfaces;;;pierrick gaudry, julien soumier, pierre-jean spaenlehauer;;;2025/136;;;last_year;;;https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments
 prism: simple and compact identification and signatures from large prime degree isogenies;;;andrea basso, giacomo borin, wouter castryck, maria corte-real santos, riccardo invernizzi, antonin leroux, luciano maino, frederik vercauteren, benjamin wesolowski;;;2025/135;;;last_year;;;https://github.com/KULeuven-COSIC/PRISM
 dctidh: fast & deterministic ctidh;;;fabio campos, andreas hellenbrand, michael meyer, krĳn reĳnders;;;2025/107;;;last_year;;;https://github.com/PaZeZeVaAt/dCTIDH/
@@ -83,8 +83,8 @@ introducing clapoti(s): evaluating the isogeny class group action in polynomial 
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;last_year;;;none
 isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_year;;;https://issikebrokenyet.github.io/
 aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krĳn reĳnders;;;2023/1559;;;last_year;;;https://github.com/TheSICQ/ApresSQI
-computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;last_year;;;https://github.com/Jonathke/Computing-Optimal-Embeddings
-improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;last_year;;;https://github.com/isogeny-finding/improved-isogeny-finding
+computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;other;;;https://github.com/Jonathke/Computing-Optimal-Embeddings
+improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;other;;;https://github.com/isogeny-finding/improved-isogeny-finding
 an efficient adaptive attack against festa;;;guoqing zhou, maozhi xu;;;2024/345;;;other;;;none
 is-cube: an isogeny-based compact kem using a boxed sidh diagram;;;tomoki moriya;;;2023/1506;;;other;;;none
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;other;;;none
