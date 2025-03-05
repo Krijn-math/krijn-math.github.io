@@ -1,5 +1,11 @@
+radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_week;;;https://github.com/GiacomoPope/ThetaCGL
+pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_week;;;https://github.com/pegasis4d
+blind signatures from cryptographic group actions;;;dung hoang duong, xuan thanh khuc, youming qiao, willy susilo, chuanqi zhang;;;2025/397;;;last_week;;;https://csrc.nist.gov/news/2023/additional-pqc-digital-signature-candidates
 constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_week;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
-π: a unified framework for computational verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_week;;;https://github.com/Baghery/VSS-Pi
+a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_week;;;none
+another look at the quantum security of the vectorization problem with shifted inputs;;;paul frixons, valerie gilchrist, péter kutas, simon-philipp merz, christophe petit;;;2025/376;;;last_week;;;none
+klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_month;;;https://github.com/KLPT2/KLPT2
+π: a unified framework for computational verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month;;;https://github.com/Baghery/VSS-Pi
 poké: a compact and efficient pke from higher-dimensional isogenies;;;andrea basso, luciano maino;;;2024/624;;;last_month;;;https://github.com/andreavico/POKE-PKE
 unconditional foundations for supersingular isogeny-based cryptography;;;arthur herlédan le merdy, benjamin wesolowski;;;2025/271;;;last_month;;;none
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_month;;;https://gitlab.inria.fr/nsarkis/half-diff-add
@@ -11,7 +17,6 @@ computing asymptotic bounds for small roots in coppersmith's method via sumset t
 computing quaternion embeddings and endomorphism rings of supersingular oriented elliptic curves;;;maher mamah;;;2025/186;;;last_month;;;none
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants, ii;;;dimitri koshelev, antonio sanso;;;2025/196;;;last_month;;;https://github.com/daira/pluto-eris
 the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_month;;;none
-the supersingular endomorphism ring problem given one endomorphism;;;arthur herlédan le merdy, benjamin wesolowski;;;2023/1448;;;last_month;;;none
 experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_month;;;none
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_year;;;https://github.com/jtcc2/cycles-and-cuts
 efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;maria corte-real santos, craig costello, sam frengley;;;2025/147;;;last_year;;;https://github.com/mariascrs/SplitSearcher
@@ -36,7 +41,6 @@ klapoti: an asymptotically efficient isogeny group action from 2-dimensional iso
 on the efficient representation of isogenies (a survey);;;damien robert;;;2024/1071;;;last_year;;;none
 an efficient collision attack on castryck-decru-smith’s hash function;;;ryo ohashi, hiroshi onuki;;;2024/1776;;;last_year;;;https://github.com/Ryo-Ohashi/CDScollision
 pearl-scallop: parameter extension applicable in real-life scallop;;;bill allombert, jean-françois biasse, jonathan komada eriksen, péter kutas, chris leonardi, aurel page, renate scheidler, márton tot bagi;;;2024/1744;;;last_year;;;https://www.github.com/biasse/SCALLOP-params
-radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_year;;;https://github.com/GiacomoPope/ThetaCGL
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_year;;;none
 the module action for isogeny based cryptography;;;damien robert;;;2024/1556;;;last_year;;;none
 optimized one-dimensional sqisign verification on intel and cortex-m4;;;marius a. aardal, gora adj, arwa alblooshi, diego f. aranha, isaac a. canales-martínez, jorge chavez-saab, décio luiz gazzoni filho, krĳn reĳnders, francisco rodríguez-henríquez;;;2024/1563;;;last_year;;;https://github.com/SQISign/the-sqisign
@@ -63,7 +67,6 @@ climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_year;
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_year;;;none
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;last_year;;;none
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_year;;;none
-qfesta: efficient algorithms and parameters for festa using quaternion algebras;;;kohei nakagawa, hiroshi onuki;;;2023/1468;;;last_year;;;https://github.com/FESTA-PKE/FESTA-SageMath
 universal composable password authenticated key exchange for the post-quantum world;;;you lyu, shengli liu, shuai han;;;2024/374;;;last_year;;;none
 radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_year;;;none
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;last_year;;;https://github.com/TheParallelSquarerootVeluTeam/Parallel-Squareroot-Velu
@@ -74,7 +77,6 @@ computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;202
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_year;;;none
 fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_year;;;none
 pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;last_year;;;https://github.com/LinKaizhan/Pairingoptimizations
-scallop-hd: group action from 2-dimensional isogenies;;;mingjie chen, antonin leroux, lorenz panny;;;2023/1488;;;last_year;;;https://github.com/isogeny-scallophd/scallophd
 supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_year;;;none
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;last_year;;;none
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;last_year;;;none
@@ -82,7 +84,7 @@ distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/50
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_year;;;none
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;last_year;;;none
 isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_year;;;https://issikebrokenyet.github.io/
-aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krĳn reĳnders;;;2023/1559;;;last_year;;;https://github.com/TheSICQ/ApresSQI
+aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krĳn reĳnders;;;2023/1559;;;other;;;https://github.com/TheSICQ/ApresSQI
 computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;other;;;https://github.com/Jonathke/Computing-Optimal-Embeddings
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;other;;;https://github.com/isogeny-finding/improved-isogeny-finding
 an efficient adaptive attack against festa;;;guoqing zhou, maozhi xu;;;2024/345;;;other;;;none
@@ -93,8 +95,6 @@ exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako bor
 csidh with level structure;;;steven d. galbraith, derek perrin, josé felipe voloch;;;2023/1726;;;other;;;none
 malleable commitments from group actions and zero-knowledge proofs for circuits based on isogenies;;;mingjie chen, yi-fu lai, abel laval, laurane marco, christophe petit;;;2023/1710;;;other;;;none
 defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;other;;;none
-the pre-shared key modes of hpke;;;joël alwen, jonas janneck, eike kiltz, benjamin lipp;;;2023/1480;;;other;;;none
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;other;;;none
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;other;;;none
 lower bound of costs of formulas to compute image curves of 3-isogenies in the framework of generalized montgomery coordinates;;;tomoki moriya, hiroshi onuki, yusuke aikawa, tsuyoshi takagi;;;2023/1511;;;other;;;none
-identity-based threshold signatures from isogenies;;;shahla atapoor;;;2023/1459;;;other;;;none
