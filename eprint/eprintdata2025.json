@@ -29716,4 +29716,1024 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Deimos Cipher is a symmetric encryption algorithm designed to achieve high entropy and strong diffusion while maintaining efficiency. \r\nIt employs advanced cryptographic transformations to ensure robust security against modern cryptanalysis techniques. \r\nEntropy tests demonstrate its ability to generate highly randomized ciphertext, surpassing industry standards. \r\nAvalanche effect analysis confirms optimal diffusion, achieving an average bit change of 50.18% in large datasets. \r\nKey sensitivity tests reveal a 50.54% ciphertext difference for minimal key variations, ensuring strong resistance to differential cryptanalysis. \r\nWith fast encryption and decryption speeds, Deimos Cipher offers a balanced approach between security and performance, making it suitable for secure communication and data protection. \r\nThis paper presents the algorithm's design, security analysis, and benchmarking against established cryptographic standards.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Gujarat Technological University",
+                    "ror": "https://ror.org/059x8vm09"
+                }
+            ],
+            "fullName": "Mohsin Belam",
+            "orcid": "0009-0006-2327-1235"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-04T17:02:47Z"
+        }
+    ],
+    "keywords": [
+        "Deimos Cipher",
+        "Symmetric Encryption",
+        "Cryptography",
+        "Entropy",
+        "Avalanche Effect",
+        "Key Sensitivity",
+        "Secure Communication"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/414.pdf",
+    "pid": "414",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Deimos Cipher: A High-Entropy, Secure Encryption Algorithm with Strong Diffusion and Key Sensitivity",
+    "year": 2025,
+    "repo": [
+        "https://github.com/MohsinCell/Deimos-Cipher"
+    ]
+}
+,
+{
+    "abstract": "We study recent algebraic attacks (Briaud-\u00d8ygarden EC'23) on the Regular Syndrome Decoding (RSD) problem and the assumptions underlying the correctness of their attacks' complexity estimates. By relating these assumptions to interesting algebraic-combinatorial problems, we prove that they do not hold in full generality. However, we show that they are (asymptotically) true for most parameter sets, supporting the soundness of algebraic attacks on RSD. Further, we prove\u2014without any heuristics or assumptions\u2014that RSD can be broken in polynomial time whenever the number of error blocks times the square of the size of error blocks is larger than 2 times the square of the dimension of the code.\r\n\r\nAdditionally, we use our methodology to attack a variant of the Learning With Errors problem where each error term lies in a fixed set of constant size. We prove that this problem can be broken in polynomial time, given a sufficient number of samples. This result improves on the seminal work by Arora and Ge (ICALP'11), as the attack's time complexity is independent of the LWE modulus.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ISTA, Klosterneuburg, Austria"
+                }
+            ],
+            "fullName": "Miguel Cueto Noval",
+            "orcid": "0000-0002-2505-4246"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich, Zurich, Switzerland"
+                }
+            ],
+            "fullName": "Simon-Philipp Merz",
+            "orcid": "0000-0002-2475-2966"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich, Zurich, Switzerland"
+                }
+            ],
+            "fullName": "Patrick St\u00e4hlin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ISTA, Klosterneuburg, Austria"
+                }
+            ],
+            "fullName": "Akin \u00dcnal",
+            "orcid": "0000-0002-8929-0221"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-04T18:29:50Z"
+        }
+    ],
+    "keywords": [
+        "Learning Parity with Noise",
+        "Regular Syndrom Decoding",
+        "Provable Algebraic cryptanalysis",
+        "Degree of Regularity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/415.pdf",
+    "pid": "415",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Soundness of Algebraic Attacks against Code-based Assumptions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Trapdoor hash functions (TDHs) are compressing hash functions, with an additional trapdoor functionality: Given a encoding key for a function $f$, a hash on $x$ together with a (small) input encoding allow one to recover $f(x)$. TDHs are a versatile tool and a useful building block for more complex cryptographic protocols.\r\n\r\nIn this work, we propose the first TDH construction assuming the (quasi-polynomial) hardness of the LPN problem with noise rate $\\epsilon = O(\\log^{1+\\beta} n / n)$ for $\\beta>0$, i.e., in the so-called low-noise regime. The construction achieves $2^{\\Theta(\\log^{1-\\beta} \\lambda)}$ compression factor. As an application, we obtain a private-information retrieval (PIR) with communication complexity $L / 2^{\\Theta(\\log^{1-\\beta} L)}$, for a database of size L. This is the first PIR scheme with non-trivial communication complexity (asymptotically smaller than $L$) from any code-based assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University",
+                    "ror": "https://ror.org/05crjpb27"
+                }
+            ],
+            "fullName": "Damiano Abram",
+            "orcid": "0009-0004-3916-7550"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University",
+                    "ror": "https://ror.org/05crjpb27"
+                }
+            ],
+            "fullName": "Giulio Malavolta",
+            "orcid": "0009-0009-9737-0094"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Lawrence Roy",
+            "orcid": "0009-0003-8436-0029"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-04T18:50:30Z"
+        }
+    ],
+    "keywords": [
+        "Private Information Retrieval",
+        "LPN",
+        "Trapdoor Hashing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/416.pdf",
+    "pid": "416",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Trapdoor Hash Functions and PIR from Low-Noise LPN",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The requirement for privacy-aware machine learning increases as we continue to use PII (Personally Identifiable Information) within machine training. To overcome these privacy issues, we can apply Fully Homomorphic Encryption (FHE) to encrypt data before it is fed into a machine learning model. This involves creating a homomorphic encryption key pair, and where the associated public key will be used to encrypt the input data, and the private key will decrypt the output. But, there is often a performance hit when we use homomorphic encryption, and so this paper evaluates the performance overhead of using the SVM machine learning technique with the OpenFHE homomorphic encryption library. This uses Python and the scikit-learn library for its implementation.  The experiments include a range of variables such as multiplication depth, scale size, first modulus size, security level, batch size, and ring dimension, along with two different SVM models, SVM-Poly and SVM-Linear. Overall, the results show that the two main parameters which affect performance are the ring dimension and the modulus size, and that SVM-Poly and SVM-Linear show similar performance levels.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "William J Buchanan",
+            "orcid": "0000-0003-0809-3523"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "Hisham Ali",
+            "orcid": "0000-0002-0333-4757"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-04T20:01:14Z"
+        }
+    ],
+    "keywords": [
+        "homomorphic encryption",
+        "Support Vector Machine",
+        "privacy-aware"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/417.pdf",
+    "pid": "417",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Evaluation of Privacy-aware Support Vector Machine (SVM) Learning using Homomorphic Encryption",
+    "year": 2025,
+    "repo": [
+        "https://github.com/openfheorg/openfhe-genomic-examples/blob/main/demo-chi2.cpp",
+        "https://github.com/openfheorg/openfhe-genomic-examples/blob/main/demo-logistic.cpp",
+        "https://github.com/openfheorg/python-svm-examples/blob/master/model_training.py",
+        "https://github.com/openfheorg/openfhe-development",
+        "https://github.com/openfheorg/openfhe-development",
+        "https://github.com/openfheorg/openfhe-development",
+        "https://github.com/openfheorg/openfhe-development",
+        "https://github.com/openfheorg/openfhe-development",
+        "https://github.com/openfheorg/openfhe-development"
+    ]
+}
+,
+{
+    "abstract": "Cryptographic proofs allow researchers to provide theoretical guarantees on the security that their constructions provide. A proof of security can completely eliminate a class of attacks by potential adversaries. Human fallibility, however, means that even a proof reviewed by experts may still hide flaws or outright errors. Proof assistants are software tools built for the purpose of formally verifying each step in a proof, and as such have the potential to prevent erroneous proofs from being published and insecure constructions from being implemented.\r\n\r\nUnfortunately, existing tooling for verifying cryptographic proofs has found limited adoption in the cryptographic community, in part due to concerns with ease of use. We present ProofFrog: a new tool for verifying cryptographic game-hopping proofs. ProofFrog is designed with the average cryptographer in mind, using an imperative syntax similar to C for specifying games and a syntax for proofs that closely models pen-and-paper arguments. As opposed to other proof assistant tools which largely operate by manipulating logical formulae, ProofFrog manipulates abstract syntax trees (ASTs) into a canonical form to establish indistinguishable or equivalent behaviour for pairs of games in a user-provided sequence. We also detail the domain-specific language developed for use with the ProofFrog proof engine, the exact transformations it applies to canonicalize ASTs, and case studies of verified proofs. A tool like ProofFrog that prioritizes ease of use can lower the barrier of entry to using computer-verified proofs and aid in catching insecure constructions before they are made public.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Ross Evans"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Queensland University of Technology",
+                    "ror": "https://ror.org/03pnv4752"
+                }
+            ],
+            "fullName": "Matthew McKague",
+            "orcid": "0000-0002-3598-7541"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Douglas Stebila",
+            "orcid": "0000-0001-9443-3170"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-04T20:16:34Z"
+        }
+    ],
+    "keywords": [
+        "cryptography",
+        "game-hopping",
+        "proof verification"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/418.pdf",
+    "pid": "418",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "ProofFrog: A Tool For Verifying Game-Hopping Proofs",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ProofFrog/ProofFrog",
+        "https://github.com/ProofFrog/ProofFrog",
+        "https://github.com/ProofFrog/examples",
+        "https://github.com/ProofFrog/examples",
+        "https://github.com/ProofFrog/ProofFrog/tree/main/proof_frog/antlr",
+        "https://github.com/ProofFrog/ProofFrog/tree/main/proof_frog/antlr"
+    ]
+}
+,
+{
+    "abstract": "We study linear-time prover SNARKs and make the following contributions:\r\n\r\nWe provide a framework for transforming a univariate polynomial commitment scheme into a multilinear polynomial commitment scheme. Our transformation is generic, can be instantiated with any univariate scheme and improves on prior transformations like Gemini (EUROCRYPT 2022) and Virgo (S&P 2020) in all relevant parameters: proof size, verification complexity, and prover complexity. Instantiating the above framework with the KZG univariate polynomial commitment scheme, we get SamaritanPCS \u2013 the first multilinear polynomial commitment scheme with constant proof size and linear-time prover. SamaritanPCS is a drop-in replacement for the popular PST scheme, and improves upon PST in all relevant parameters.\r\n\r\nWe construct LogSpartan \u2013 a new multilinear PIOP for R1CS based on recent techniques for lookup arguments. Compiling this PIOP using SamaritanPCS gives Samaritan \u2013 a SNARK in the universal and updatable SRS setting. Samaritan has linear-time prover, logarithmic verification and logarithmic proof size. Concretely, its proof size is one of the smallest among other known linear-time prover SNARKs without relying on concretely expensive proof recursion techniques. For an R1CS instance with 1 million constraints, Samaritan (over BLS12-381 curve) has a proof size of 6.7KB.\r\n\r\nWe compare Samaritan with other linear-time prover SNARKs in the updatable setting. We asymptotically improve on the $\\log^2 n$ proof size of Spartan. Unlike Libra (CRYPTO 2019), the argument size of Samaritan is independent of the circuit depth. Compared to Gemini (EUROCRYPT 2022), Samaritan achieves 3$\\times$ smaller argument size at 1 million constraints. We match the argument size of HyperPlonk, which is the smallest linear-time SNARK for the Plonkish constraint system, while achieving slightly better verification complexity.\r\n\r\nWe believe that our transformation and our techniques for applying lookups based on logarithmic derivatives to the multilinear setting are of wider interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Science Bangalore",
+                    "ror": "https://ror.org/04dese585"
+                }
+            ],
+            "fullName": "Chaya Ganesh",
+            "orcid": "0000-0002-2909-9177"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research India"
+                }
+            ],
+            "fullName": "Sikhar Patranabis",
+            "orcid": "0000-0002-2309-7939"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research India"
+                }
+            ],
+            "fullName": "Nitin Singh",
+            "orcid": "0009-0009-7824-042X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T03:15:15Z"
+        }
+    ],
+    "keywords": [
+        "Zero-knowledge Proofs",
+        "SNARKs",
+        "Multilinear Polynomial Commitments",
+        "Polynomial Interactive Oracle Proofs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/419.pdf",
+    "pid": "419",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Samaritan: Linear-time Prover SNARK from New Multilinear Polynomial Commitments",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Consider a weak analyst that wishes to outsource data collection and computation of aggregate statistics over a a potentially large population of (also weak) clients to a powerful server. For flexibility and efficiency, we consider public-key and non-interactive protocols, meaning the clients know the analyst's public key but do not share secrets, and each client sends at most one message. Furthermore, the final step should be silent, whereby the analyst simply downloads the (encrypted) result from the server when needed. To capture this setting, we define a new primitive  we call Non-Interactive Verifiable Aggregation (NIVA). \r\nWe require both privacy and robustness for a NIVA protocol to be deemed secure. Namely, our security notion for NIVA ensures that the clients' data remains private to both the server and the analyst, while also ensuring that  malicious clients cannot skew the results by providing faulty data.\r\nWe propose a secure NIVA protocol, which we call PEAR (for Private, Efficient, Accurate, Robust), which can validate inputs according to any NP validity rule.  PEAR is based on a novel combination of functional encryption for inner-products (Abdalla et al., PKC 2015) and fully-linear probabilistically-checkable proofs (Boneh et al., Crypto 2019). We emphasize that PEAR is non-interactive, public-key, and  makes black-box use of the underlying cryptographic primitives. Additionally, we devise substantial  optimizations of PEAR for practically-relevant validity rules. Finally, we implement PEAR to show feasibility for such validity rules,  conducting a thorough performance evaluation. In particular, we compare PEAR to two more straightforward or \"off-the-shelf\" NIVA protocols and show performance gains, demonstrating the merit of our new approach. The bottleneck in our protocol comes from the fact that we require the underlying IPFE scheme to be \"unrestricted\" over a large field. As more efficient such schemes are developed, they can be immediately be plugged into PEAR for further gains.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Massachusetts Amherst",
+                    "ror": "https://ror.org/0072zz521"
+                }
+            ],
+            "fullName": "Ojaswi Acharya",
+            "orcid": "0009-0006-9864-6548"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "George Washington University",
+                    "ror": "https://ror.org/00y4zzh67"
+                }
+            ],
+            "fullName": "Suvasree Biswas",
+            "orcid": "0009-0006-4641-5246"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Massachusetts Amherst",
+                    "ror": "https://ror.org/0072zz521"
+                }
+            ],
+            "fullName": "Weiqi Feng",
+            "orcid": "0009-0008-1898-2950"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Massachusetts Amherst",
+                    "ror": "https://ror.org/0072zz521"
+                }
+            ],
+            "fullName": "Adam O'Neill",
+            "orcid": "0009-0006-0233-6466"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "George Washington University",
+                    "ror": "https://ror.org/00y4zzh67"
+                }
+            ],
+            "fullName": "Arkady Yerukhimovich",
+            "orcid": "0000-0002-9045-748X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T04:03:31Z"
+        }
+    ],
+    "keywords": [
+        "Secure aggregation",
+        "Input validation",
+        "Inner-product functional encryption",
+        "Fully-linear PCPs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/420.pdf",
+    "pid": "420",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Non-Interactive Verifiable Aggregation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Microsoft/SEAL"
+    ]
+}
+,
+{
+    "abstract": "The evasive learning with errors (evasive LWE) assumption is a new assumption recently introduced by Wee (Eurocrypt 2022) and Tsabary (Crypto 2022) independently, as a significant strengthening of the standard LWE assumption.\r\nWhile the assumption is known to imply various strong primitives including witness encryption [Wee22,Tsabary22], the assumption in the most general case (i.e., the private coin variant) is considered quite implausible due to the obfuscation based attack mentioned in [Wee22]. This obfuscation based attack is then later formalized by Vaikuntanathan, Wee, and Wichs [VWW22].\r\nIn this note, we revisit their attack and show that the attack actually does not work by showing a concrete counterexample.  We then show that their attack can be made valid with some modifications. Along the way, we also improve the counterexample by making it provable. Specifically, our counterexample is valid assuming the (plain) LWE assumption and the existence of instance-hiding witness encryption, whereas their original counterexample was dependent on the heuristic assumption of the existence of an ideal obfuscation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Science, Academia Sinica",
+                    "ror": "https://ror.org/00z83z196"
+                }
+            ],
+            "fullName": "Tzu-Hsiang Huang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Science, Academia Sinica",
+                    "ror": "https://ror.org/00z83z196"
+                }
+            ],
+            "fullName": "Wei-Hsiang Hung"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Shota Yamada",
+            "orcid": "0000-0002-7338-686X"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T06:01:39Z"
+        }
+    ],
+    "keywords": [
+        "Evasive LWE",
+        "Lattices",
+        "Witness Encryption",
+        "Obfuscation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/421.pdf",
+    "pid": "421",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Note on Obfuscation-based Attacks on Private-coin Evasive LWE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "https://doi.org/10.56553/popets-2025-0031",
+    "abstract": "Private computation on common records refers to analyze data from two databases containing shared records without revealing personal information. As a basic requirement for private computation, the databases involved essentially need to be aligned by a common identification system. However, it is hard to expect such common identifiers in real world scenario. For this reason, multiple quasi-identifiers can be used to identify common records. As some quasi-identifiers might be missing or have typos, it is important to support fuzzy records setting. Identifying common records using quasi-identifiers requires manipulation of highly sensitive information, which could be privacy concerns.\r\n\r\nThis work studies the problem of enabling such data analysis on the fuzzy records of quasi-identifiers. To this end, we propose ordered threshold-one (OTO) matching which can be efficiently realized by circuit-based private set intersection (CPSI) protocols and some multiparty computation (MPC) techniques. Furthermore, we introduce some generic encoding techniques from traditional matching rules to the OTO matching. Finally, we achieve a secure efficient private computation protocol which supports various matching rules which have already been widely used.\r\n\r\nWe also demonstrate the superiority of our proposal with experimental validation. First, we empirically check that our encoding to OTO matching does not affect accuracy a lot for the benchmark datasets found in the fuzzy record matching literature. Second, we implement our protocol and achieve significantly faster performance at the cost of communication overhead compared to previous privacy-preserving record linkage (PPRL) protocols. In the case of 100K records for each dataset, our work shows 147.58MB communication cost, 10.71s setup time, and 1.97s online time, which is 7.78 times faster compared to the previous work (50.12 times faster when considering online time only).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung SDS"
+                }
+            ],
+            "fullName": "Kyoohyung Han",
+            "orcid": "0000-0002-8410-3386"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung SDS"
+                }
+            ],
+            "fullName": "Seongkwang Kim",
+            "orcid": "0000-0002-9091-4054"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sungshin Women's University"
+                }
+            ],
+            "fullName": "Yongha Son",
+            "orcid": "0000-0003-1394-234X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T09:07:21Z"
+        }
+    ],
+    "keywords": [
+        "secure multiparty computation",
+        "privacy-preserving record linkage",
+        "private set intersection"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/422.pdf",
+    "pid": "422",
+    "pubtype": {
+        "note": "PoPETs 2025(1)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Private Computation on Common Fuzzy Records",
+    "year": 2025,
+    "repo": [
+        "https://github.com/samsungsds-research-papers/FuzzyPC",
+        "https://github.com/facebookresearch/Private-ID",
+        "https://github.com/microsoft/Kuku"
+    ]
+}
+,
+{
+    "abstract": "This paper presents the concept of a multi-client functional encryption (MC-FE) scheme for attribute-based inner product functions (AB-IP), initially proposed by Abdalla et al. [ASIACRYPT\u201920], in an unbounded setting. In such a setting, the setup is independent of vector length constraints, allowing secret keys to support functions of arbitrary lengths, and clients can dynamically choose vector lengths during encryption. The functionality outputs the sum of inner products if vector lengths and indices meet a specific relation, and all clients\u2019 attributes satisfy the key\u2019s policy. We propose the following constructions based on the matrix decisional Diffie-Hellman assumption in a natural permissive setting\r\nof unboundedness:\r\n\r\n\u2013 the first multi-client attribute-based unbounded IPFE (MC-AB-UIPFE) scheme secure in the standard model, overcoming previous limitations where clients could only encrypt fixed-length data;\r\n\u2013 the first multi-input AB-UIPFE (MI-AB-UIPFE) in the public key setting; improving upon prior bounded constructions under the same assumption;\r\n\u2013 the first dynamic decentralized UIPFE (DD-UIPFE); enhancing the dynamism property of prior works.\r\n\r\nTechnically, we follow the blueprint of Agrawal et al. [CRYPTO\u201923] but begin with a new unbounded FE called extended slotted unbounded IPFE. We first construct a single-input AB-UIPFE in the standard model and then extend it to multi-input settings. In a nutshell, our work demonstrates the applicability of function-hiding security of IPFE in realizing variants of multi-input FE capable of encoding unbounded\r\nlength vectors both at the time of key generation and encryption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of St. Gallen",
+                    "ror": "https://ror.org/0561a3s31"
+                }
+            ],
+            "fullName": "Subhranil Dutta",
+            "orcid": "0000-0002-4013-6995"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of St. Gallen",
+                    "ror": "https://ror.org/0561a3s31"
+                }
+            ],
+            "fullName": "Aikaterini Mitrokotsa",
+            "orcid": "0000-0002-7073-0258"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "Tapas Pal",
+            "orcid": "0000-0001-6278-0418"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of St. Gallen",
+                    "ror": "https://ror.org/0561a3s31"
+                }
+            ],
+            "fullName": "Jenit Tomy",
+            "orcid": "0009-0006-5329-0138"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T10:45:09Z"
+        }
+    ],
+    "keywords": [
+        "Inner product functional encryption",
+        "Multi-client",
+        "Dynamic decentralized",
+        "Unbounded",
+        "Attribute-based"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/423.pdf",
+    "pid": "423",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multi-Client Attribute-Based Unbounded Inner Product Functional Encryption, and More",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure Two-Party Computation (2PC) enables secure inference with cryptographic guarantees that protect the privacy of the model owner and client. However, it adds significant performance overhead. In this work, we make 2PC-based secure inference efficient while considering important deployment scenarios.   \r\nWe observe that the hitherto unconsidered latency of fetching keys from storage significantly impacts performance, as does network speed. We design a Linear Secret Sharing (LSS)-based system $LSS^M$ and a Function Secret Sharing (FSS)-based system $FSS^M$ for secure inference, optimized for small key size and communication, respectively. Notably, our highly-optimized and hardware-aware CPU-based $LSS^M$ outperforms prior GPU-based LSS systems by up to $50\\times$. We then show that the best choice between $LSS^M$ and $FSS^M$ depends on the deployment scenario.\r\nIn fact, under certain deployments, a combination of $LSS^M$ and $FSS^M$ can leverage heterogeneous processing across CPU and GPU. Such protocol-system co-design lets us outperform state-of-the-art secure inference systems \r\nby up to $21\\times$ (geomean $3.25\\times$).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Science Bangalore",
+                    "ror": "https://ror.org/04dese585"
+                }
+            ],
+            "fullName": "Neha Jawalkar"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Microsoft Research (India)",
+                    "ror": "https://ror.org/02w7f3w92"
+                }
+            ],
+            "fullName": "Nishanth Chandran"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Microsoft Research (India)",
+                    "ror": "https://ror.org/02w7f3w92"
+                }
+            ],
+            "fullName": "Divya Gupta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Microsoft Research (India)",
+                    "ror": "https://ror.org/02w7f3w92"
+                }
+            ],
+            "fullName": "Rahul Sharma"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Science Bangalore",
+                    "ror": "https://ror.org/04dese585"
+                }
+            ],
+            "fullName": "Arkaprava Basu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T11:45:54Z"
+        }
+    ],
+    "keywords": [
+        "secure machine learning",
+        "secure multi-party computation",
+        "function secret sharing",
+        "linear secret sharing",
+        "GPU",
+        "CPU"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/424.pdf",
+    "pid": "424",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Matchmaker: Fast Secure Inference across Deployment Scenarios",
+    "year": 2025,
+    "repo": [
+        "https://github.com/encryptogroup/MOTION2NX",
+        "https://github.com/encryptogroup/MOTION2NX"
+    ]
+}
+,
+{
+    "abstract": "This note demonstrates that the blind signature scheme based on cryptographic group actions, as proposed in ePrint paper 2025/397, fails to ensure blindness. Specifically, we construct an adversary that achieves a $1/8$ advantage in the blindness experiment. The attack leverages selective abort techniques (also known as selective failure attacks), a well-known strategy in the MPC literature.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Lucjan Hanzlik",
+            "orcid": "0009-0006-1941-693X"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T14:30:55Z"
+        }
+    ],
+    "keywords": [
+        "blind signatures",
+        "eprint 2025/397",
+        "group actions",
+        "blindness"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/425.pdf",
+    "pid": "425",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Note on the Blindness of the Scheme from ePrint 2025/397",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Message Layer Security (MLS) protocol has recently been standardized by the IETF. MLS is a scalable secure group messaging protocol expected to run more efficiently compared to the Signal protocol at scale, while offering a similar level of strong security. Even though MLS has undergone extensive examination by researchers, the majority of the works have focused on confidentiality.\r\n\r\nIn this work, we focus on the authenticity of the application messages exchanged in MLS. Currently, MLS authenticates every application message with an EdDSA signature and while manageable, the overhead is greatly amplified in the post-quantum setting as the NIST-recommended Dilithium signature results in a 40x increase in size. We view this as an invitation to explore new authentication modes that can be used instead. We start by taking a systematic view on how application messages are authenticated in MLS and categorize authenticity into four different security notions. We then propose several authentication modes, offering a range of different efficiency and security profiles. For instance, in one of our modes, COSMOS++, we replace signatures with one-time tokens and a MAC tag, offering roughly a 75x savings in the post-quantum communication overhead. While this comes at the cost of weakening security compared to the authentication mode used by MLS, the lower communication overhead seems to make it a worthwhile trade-off with security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology (AIST)",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Keitaro Hashimoto",
+            "orcid": "0000-0002-2232-9443"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                },
+                {
+                    "name": "PQShield"
+                }
+            ],
+            "fullName": "Shuichi Katsumata",
+            "orcid": "0000-0002-8496-0476"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science and Technology Austria",
+                    "ror": "https://ror.org/03gnh5541"
+                }
+            ],
+            "fullName": "Guillermo Pascual-Perez",
+            "orcid": "0000-0001-8630-415X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T15:01:50Z"
+        }
+    ],
+    "keywords": [
+        "Secure group messaging",
+        "Messaging Layer Security (MLS)",
+        "Message authentication"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Extended version with full appendices.",
+    "pdffile": "2025/426.pdf",
+    "pid": "426",
+    "pubtype": {
+        "note": "Usenix Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Exploring How to Authenticate Application Messages in MLS: More Efficient, Post-Quantum, and Anonymous Blocklistable",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We explore advanced security notions for threshold signature schemes, focusing on Beyond UnForgeability Features (BUFF), introduced by Cremers et al. (S&P\u201921)  in the non-threshold setting. The BUFF properties protect against attacks based on maliciously chosen keys, e.g., expropriating a message-signature pair under a new public key (called exclusive ownership). We first formalize these notions in the threshold setting and examine their relationships. Notably, unlike regular signature schemes, the hierarchy of variants of exclusive ownership notions only holds for threshold schemes if they are also robust.\r\nWe then present a generic compiler that transforms any threshold signature scheme to satisfy exclusive ownership, and message-bound signature properties with minimal overhead. Furthermore, we modify the threshold BLS signature scheme to achieve these additional properties without increasing the signature size. Lastly, we identify specific structures in threshold signature schemes where BUFF properties can be naturally extended from the underlying standard signature scheme, and we analyze and prove the security properties in some of the existing threshold schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Marc Fischlin",
+            "orcid": "0000-0003-0597-8297"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of St. Gallen",
+                    "ror": "https://ror.org/0561a3s31"
+                }
+            ],
+            "fullName": "Aikaterini Mitrokotsa",
+            "orcid": "0000-0002-7073-0258"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of St. Gallen",
+                    "ror": "https://ror.org/0561a3s31"
+                }
+            ],
+            "fullName": "Jenit Tomy",
+            "orcid": "0009-0006-5329-0138"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T16:04:52Z"
+        }
+    ],
+    "keywords": [
+        "Threshold signatures",
+        "Beyond UnForgeability Features",
+        "exclude ownership",
+        "message-bound signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/427.pdf",
+    "pid": "427",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "BUFFing Threshold Signature Schemes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we analyze the subtle issues of complexity estimates related to state-of-the-art cryptanalytic efforts on ChaCha. In this regard, we demonstrate that the currently best-known cryptanalytic result on $7$-round ChaCha with time $2^{189.7}$ and data $2^{102.63}$ [Xu et al., ToSC 2024] can be estimated as $2^{178.12}$ for time and $2^{101.09}$ for data complexity. We improve the best-known result for the $7.25$ round by obtaining an improved set of Probabilistic Neutral Bits and considering our revised estimation. Our result with time complexity $2^{212.43}$ and data complexity $2^{100.56}$ improves the result of Xu et al., where they could achieve time and data complexity $2^{223.9}$ and $2^{100.80}$, respectively. For both the $7$ and $7.25$ rounds, we can show an improvement of the order of $2^{11}$ in the time complexity. For $7.5$-round, we improve the result of Dey [IEEE-IT 2024], which reports the time and data complexity of $2^{255.24}$ and $2^{32.64}$, respectively. By applying the formula of the same paper and incorporating additional PNBs, we obtain improved time and data complexity of $2^{253.23}$ and $2^{34.47}$, respectively. Thus, this paper describes the currently best-known cryptanalytic results against reduced round ChaCha. Our results do not affect the security claims of the complete algorithm with 20 rounds. Also, we provide a rebuttal of the Work by Wang et al. \\cite{wangeprint} and analyze their claim about the error in the ``Divide-and-Conquer'' Approach.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Birla Institute of Technology and Science Pilani, Hyderabad Campus"
+                }
+            ],
+            "fullName": "Nitin Kumar Sharma"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Birla Institute of Technology and Science Pilani, Hyderabad Campus"
+                }
+            ],
+            "fullName": "Sabyasachi Dey"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Madras",
+                    "ror": "https://ror.org/03v0r5n49"
+                }
+            ],
+            "fullName": "Santanu Sarkar"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute Kolkata"
+                }
+            ],
+            "fullName": "Subhamoy Maitra"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-05T16:09:10Z"
+        }
+    ],
+    "keywords": [
+        "Biases",
+        "ChaCha",
+        "Conditional Probability",
+        "Differential-Linear Cryptanalysis",
+        "Probabilistic Neutral Bits"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/428.pdf",
+    "pid": "428",
+    "pubtype": {
+        "note": "Indocrypt 2024",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On Improved Cryptanalytic Results against ChaCha for Reduced Rounds \u2265 7",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
