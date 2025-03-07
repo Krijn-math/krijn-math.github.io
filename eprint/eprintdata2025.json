@@ -30736,4 +30736,283 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Bootstrapping in approximate homomorphic encryption involves evaluating the modular reduction function. Traditional methods decompose the modular reduction function into three components: scaled cosine, double-angle formula, and inverse sine. While these approaches offer a strong trade-off between computational cost and level consumption, they lack flexibility in parameterization. \r\n\r\nIn this work, we propose a new method to decompose the modular reduction function with improved parameterization, generalizing prior trigonometric approaches. Numerical experiments demonstrate that our method achieves near-optimal approximation errors. Additionally, we introduce a technique that integrates the rescaling operation into matrix operations during bootstrapping, further reducing computational overhead.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Seonhong Min",
+            "orcid": "0000-0002-1151-2453"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Chung-Ang University",
+                    "ror": "https://ror.org/01r024a98"
+                }
+            ],
+            "fullName": "Joon-woo Lee",
+            "orcid": "0000-0002-4125-6331"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Yongsoo Song",
+            "orcid": "0000-0002-0496-9789"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-06T02:31:49Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic Encryption",
+        "Bootstrapping",
+        "CKKS (Cheon-Kim-Kim-Song)"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/429.pdf",
+    "pid": "429",
+    "pubtype": {
+        "note": "AsiaCCS '25",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Enhanced CKKS Bootstrapping with Generalized Polynomial Composites Approximation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Anonymous tokens with private metadata bit (ATPM) have received increased interest as a method for anonymous client authentication while also embedding trust signals that are only readable by the authority who holds the issuance secret key and nobody else. A drawback of all existing ATPM constructions is that they require client-issuer interaction during the issuance process. In this work, we build the first non-interactive anonymous tokens (NIAT) with private metadata bit, inspired by the recent work of Hanzlik (Eurocrypt '23) on non-interactive blind signatures.  We discuss how the non-interaction property during the issuance process allows for more efficient issuance protocols that avoid the need for online signing. We construct an efficient NIAT scheme based   on Structure-preserving Signatures on Equivalence Classes (SPS-EQ) and experimentally evaluate its performance. We also present an extension to our NIAT construction that allows the identification of clients who attempt to double-spend (i.e., present the same token twice).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "George Mason University",
+                    "ror": "https://ror.org/02jqj7156"
+                }
+            ],
+            "fullName": "Foteini Baldimtsi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Lucjan Hanzlik"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "George Mason University",
+                    "ror": "https://ror.org/02jqj7156"
+                }
+            ],
+            "fullName": "Quan Nguyen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "George Mason University",
+                    "ror": "https://ror.org/02jqj7156"
+                }
+            ],
+            "fullName": "Aayush Yadav"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-06T05:31:36Z"
+        }
+    ],
+    "keywords": [
+        "anonoymous tokens",
+        "double-spending",
+        "non-interactive schemes",
+        "signatures on equivalence classes"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/430.pdf",
+    "pid": "430",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Non-interactive Anonymous Tokens with Private Metadata Bit",
+    "year": 2025,
+    "repo": [
+        "https://github.com/herumi/mcl"
+    ]
+}
+,
+{
+    "abstract": "Recently, Jiang et al. (EUROCRYPT 2025) proposed a universal framework for constructing commitment schemes using group actions, and instantiated it with the Lattice Isomorphism Problem (LIP). This paper attempts to construct an instantiation based on module-LIP with this framework. More precisely, we first present a reduction from $\\mathcal{O}_{\\mathbb{L}}^2$-LIP to $\\mathcal{O}_{\\mathbb{L}}^2$-LAP. Then we develop a re-randomized algorithm based on the self-reduction framework of Module-LIP (Ducas et al. ASIACRYPT 2022), adapting it to the framework to construct commitment schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Mathematical Sciences,   Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Hengyi Luo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Advanced Study, BNRist, Tsinghua University, Beijing, China"
+                }
+            ],
+            "fullName": "Kaijie Jiang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Mathematical Sciences,   Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Yanbin Pan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Advanced Study, BNRist, Tsinghua University, Beijing, China"
+                }
+            ],
+            "fullName": "Anyu Wang"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-06T06:06:03Z"
+        }
+    ],
+    "keywords": [
+        "Lattice automorphism",
+        "module-LIP",
+        "Commitment"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/431.pdf",
+    "pid": "431",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Commitment Schemes Based on Module-LIP",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-68400-5_14",
+    "abstract": "Non-malleable zero-knowledge (NMZK), originally  introduced in the seminal work of Dolev, Dwork, and Naor (STOC 91), is a fundamental concept for modeling the security of proof systems against man-in-the-middle attacks. \r\n\r\nRecently, Kim, Liang, and Pandey (CRYPTO 2022) presented the first efficient constant-round NMZK argument system based solely on symmetric-key cryptography. Their construction relies on a non-black-box use of the involved cryptographic primitives and on multiple executions of Ligero (CCS 2017) that affect both the round complexity and the computational efficiency of their protocol. Their work left open the natural important challenge of achieving NMZK using the underlying primitives only in a black-box fashion (regardless of the number of rounds and  actual efficiency).\r\n\r\nIn this paper, we solve the aforementioned open problem by presenting the first NMZK argument system based on the black-box use of cryptographic primitives. Our work is optimal in the use of primitives since we only need one-way functions, and asymptotically optimal in the number of rounds since we only require a constant number of rounds. Our argument system is non-malleable with respect to the strong \"simulation-extractability\" flavor of non-malleability. \r\n\r\nFurthermore, we also show that our construction can be efficiently instantiated in Minicrypt, significantly improving upon the work of Kim et al., both in terms of round complexity and  computational efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sapienza University of Rome"
+                }
+            ],
+            "fullName": "Vincenzo Botta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Edinburgh"
+                }
+            ],
+            "fullName": "Michele Ciampi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Emmanuela Orsini"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Denmark"
+                }
+            ],
+            "fullName": "Luisa Siniscalchi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sapienza University of Rome"
+                }
+            ],
+            "fullName": "Ivan Visconti"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-06T11:36:01Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/432.pdf",
+    "pid": "432",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MINOR",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Black-Box (and Fast) Non-Malleable Zero Knowledge",
+    "year": 2025,
+    "repo": [
+        "https://nigelsmart.github.io/MPC-Circuits/"
+    ]
+}
 ]
