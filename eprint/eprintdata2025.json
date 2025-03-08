@@ -31015,4 +31015,308 @@
         "https://nigelsmart.github.io/MPC-Circuits/"
     ]
 }
+,
+{
+    "abstract": "Logic locking has surfaced as a notable safeguard\r\nagainst diverse hazards that pose a risk to the integrated circuit\r\n(IC) supply chain. Existing literature on logic locking largely\r\nencompasses the art of proposing new constructions, on the one\r\nhand, and unearthing weaknesses in such algorithms on the\r\nother. Somehow, in this race of make and break, the stress on\r\nautomation of adopting such techniques on real-life circuits has\r\nbeen rather limited. For the first time, we present a generic\r\nend-to-end combinational logic locking CAD framework, MIDAS.\r\nThis framework analyses circuit netlists and generates locked\r\nnetlists. Due to its generic circuit analysis, it bridges the gap,\r\nintegrates diverse logic locking techniques, and offers a scope of\r\nintegration of potential future ones. MIDAS framework\u2019s efficacy\r\nhas been verified through its application on ISCAS\u201985 and\r\nISCAS\u201999 benchmark circuits, locked using six different schemes\r\nsuch as EPIC, Anti-SAT, SFLL-HD, SFLL-fault, CAS-Lock, and\r\nLoPher. MIDAS minimizes the hardware overhead requirements\r\nof otherwise resource-intensive locking technique LoPher by\r\nextracting an influential portion of circuit to lock and utilizing\r\na simple fitness function. We also assess the overhead increase\r\nfor the aforementioned locking methods, thereby complicating\r\nthe identification of influential nodes within the locked netlists.\r\nFinally, we evaluate MIDAS by selectively locking parts of a\r\ncommercially-designed open-source RISC-V core.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Akashdeep Saha",
+            "orcid": "0000-0003-2060-2773"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Siddhartha Chowdhury"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Rajat Subhra Chakraborty",
+            "orcid": "0000-0003-3588-163X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Debdeep Mukhopadhyay",
+            "orcid": "0000-0002-6499-8346"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-06T13:34:57Z"
+        }
+    ],
+    "keywords": [
+        "Logic Locking",
+        "CAD",
+        "SFLL",
+        "LoPher"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/433.pdf",
+    "pid": "433",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "MIDAS: an End-to-end CAD Framework for Automating Combinational Logic Locking",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we propose a new type of non-interactive zero-knowledge (NIZK), called Fine-grained Verifier NIZK (FV-NIZK), which provides more flexible and more fine-grained verifiability of proofs than standard NIZK that supports public verifiability and  designated-verifier NIZK (DV-NIZK) that supports private verifiability. FV-NIZK has two statistically (or computationally) equivalent verification approaches: \r\n\r\n--- a master verification using the master secret key $msk$; \r\n\r\n--- a fine-grained verification using a derived secret key $sk_d$, which is derived from $msk$ w.r.t. $d$ (which may stand for user identity, email address, vector, etc.). \r\n\r\nWe require unbounded simulation soundness (USS) of FV-NIZK to hold, even if an adversary obtains derived secret keys $sk_d$ with $d$ of its choices, and  define proof pseudorandomness which stipulates the pseudorandomness of proofs for adversaries that are not given any secret key. \r\n\r\nWe present two instantiations of FV-NIZK for linear subspace languages, based on the matrix decisional Diffie-Hellman (MDDH) assumption. \r\nOne of the FV-NIZK instantiations is pairing-free and achieves almost tight USS and proof pseudorandomness. We also adapt the two instantiations to support unbounded fine-grained secret key delegations.\r\n\r\nWe illustrate the usefulness of FV-NIZK by showing two applications and obtain the following pairing-free schemes:\r\n\r\n--- the first almost tightly multi-challenge CCA (mCCA)-secure inner-product functional encryption (IPFE) scheme without pairings;\r\n\r\n--- the first public-key encryption (PKE) scheme that reconciles the inherent contradictions between public verifiability and anonymity. \r\nWe formalize such PKE as Fine-grained Verifiable PKE (FV-PKE), which derives a special key from the decryption secret key, such that for those who obtain the derived key, they can check the validity of ciphertexts but the anonymity is lost from their views (CCA-security still holds for them), while for others who do not get the derived key, they cannot do the validity check but the anonymity holds for them. \r\n\r\nOur FV-PKE scheme achieves almost tight mCCA-security for adversaries who obtain the derived keys, and achieves almost tight ciphertext pseudorandomness (thus anonymity) for others who do not get any derived key.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Shuai Han"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Shengli Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University, Georgia Institute of Technology",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Xiangyu Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Dawu Gu"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-06T17:57:38Z"
+        }
+    ],
+    "keywords": [
+        "Non-interactive zero-knowledge",
+        "Fine-grained verifiability",
+        "Inner-product functional en- cryption",
+        "Tight reduction."
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/434.pdf",
+    "pid": "434",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MAJOR",
+        "year": 2023
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fine-Grained Verifier NIZK and Its Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This note discusses the problem of writing cryptographic implementations in software, free of timing-based side-channels, and many ways in which that endeavour can fail in practice. It is a pessimist view: it highlights why such failures are expected to become more common, and how constant-time coding is, or will soon become, infeasible in all generality.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NCC Group"
+                }
+            ],
+            "fullName": "Thomas Pornin",
+            "orcid": "0009-0001-6231-3729"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-06T18:00:02Z"
+        }
+    ],
+    "keywords": [
+        "constant-time",
+        "compiler",
+        "JIT"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/435.pdf",
+    "pid": "435",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Constant-Time Code: The Pessimist Case",
+    "year": 2025,
+    "repo": [
+        "https://crocs-muni.github.io/ct-tools/",
+        "https://github.com/veorq/cryptocoding",
+        "https://travisdowns.github.io/blog/2020/05/18/icelake-zero-opt.html"
+    ]
+}
+,
+{
+    "abstract": "This paper introduces a new one-more computational problem for lattice-based cryptography, which we refer to as the Algebraic One-More MISIS problem, or AOM-MISIS for short. It is a modification of the AOM-MLWE problem recently introduced by Espitau et al. (CRYPTO \u201924) to prove security of new two-round threshold signatures.\r\n\r\nOur first main result establishes that the hardness of AOM-MISIS is implied by the hardness of MSIS and MLWE (with suitable parameters), both of which are standard assumptions for efficient lattice-based cryptography. We prove this result via a new generalization of a technique by Tessaro and Zhu (EUROCRYPT \u201923) used to prove hardness of a one-more problem for linear hash functions assuming their collision resistance, for which no clear lattice analogue was known. Since the hardness of AOM-MISIS implies the hardness of AOM-MLWE, our result resolves the main open question from the work of Espitau et al., who only provided a similar result for AOM-MLWE restricted to selective adversaries, a class which does not cover the use for threshold signatures.\r\n\r\nFurthermore, we show that our novel formulation of AOM-MISIS offers a better interface to develop tighter security bounds for state-of-the-art two-round threshold signatures. We exemplify this by providing new proofs of security, assuming the hardness of MLWE and MSIS, for two threshold signatures, the one proposed in the same work by Espitau et al., as well as a recent construction by Chairattana-Apirom et al. (ASIACRYPT 2024). For the former scheme, we also show that it satisfies the strongest security notion (TS-UF-4) in the security hierarchy of Bellare et al. (CRYPTO \u201922), as a result of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Chenzhi Zhu",
+            "orcid": "0000-0002-4276-2797"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Stefano Tessaro",
+            "orcid": "0000-0002-3751-8546"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-06T19:14:21Z"
+        }
+    ],
+    "keywords": [
+        "Threshold signatures",
+        "Lattice-based cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/436.pdf",
+    "pid": "436",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Algebraic One-More MISIS Problem and Applications to Threshold Signatures",
+    "year": 2025,
+    "repo": [
+        "https://github.com/malb/lattice-estimator"
+    ]
+}
+,
+{
+    "abstract": "ChaCha is a widely deployed stream cipher and one of the most important symmetric primitives. Due to this practical importance, many cryptanalysis have been proposed. Until now, Probabilistic Neutral Bits (PNBs) have been the most successful. Given differential-linear distinguishers, PNBs are the technique for key recovery relying on an experimental backward correlation obtained through blackbox analysis. A careful theoretical analysis exploiting the round function design may find a better attack and improve our understanding, but the complicated nature of the ARX structure makes such analysis difficult.  \r\n%\r\nWe propose a theoretical methodology inspired by bit puncturing, which was recently proposed at Eurocrypt 2024. Our method has a theoretical foundation and is thus fundamentally different from PNBs, to which it is the first effective alternative. As a result, we significantly improved the attack complexity for 6, 7, and 7.5-round ChaCha. The 7-round attack is about $2^{40}$ times faster than the previous best. Furthermore, we propose the first 7.5-round attack with a non-negligible advantage over an exhaustive search.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Antonio Fl\u00f3rez-Guti\u00e9rrez",
+            "orcid": "0000-0001-7749-8925"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Yosuke Todo",
+            "orcid": "0000-0002-6839-4777"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-07T02:17:48Z"
+        }
+    ],
+    "keywords": [
+        "ChaCha",
+        "Walsh spectrum puncturing",
+        "Differential-linear attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/437.pdf",
+    "pid": "437",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Cryptanalysis of ChaCha: Beating PNBs with Bit Puncturing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
