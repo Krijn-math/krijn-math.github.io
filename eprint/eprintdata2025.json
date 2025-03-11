@@ -31319,4 +31319,619 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Presenting a novel use of encryption, not for hiding a secret, but for marking letters.  Given a 2n letters plaintext, the transmitter encrypts the first n letters with  key K1 to generate corresponding n cipherletters, and encrypts the second n letters with key K2 to generate n corresponding cipherletters. The transmitter sends the 2n cipherletters along with the keys, K1 and K2  The recipient (and any interceptor) will readily decrypt the 2n cipherletters to the original plaintext.  This makes the above procedure equivalent to sending out the plaintext.  So why bother?  When decrypting the 2n cipherletters one will make a note of how the letters that were encrypted with K1 are mixed with the letters encrypted with K2 while keeping the original order of the letters encrypted with each key. There are 2^n possible mixings. Which means that the choice of mixing order can deliver a secret message, S,  comprising n bits. So while on the surface a given plaintext is sent out from transmitter to recipient, this plaintext hides a secret.  Imagine a text messaging platform that uses this protocol. An adversary will not know which plain innocent message harbors a secret message.  This allows residents of cyberspace to communicate secrets without exposing the fact that they communicated a secret. Expect a big impact on the level of cyberspace privacy.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Case Western Reserve University",
+                    "ror": "https://ror.org/051fd9666"
+                }
+            ],
+            "fullName": "Gideon Samid",
+            "orcid": "0000-0003-1326-3486"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-07T03:08:44Z"
+        }
+    ],
+    "keywords": [
+        "steganography",
+        "decoy-tolerant ciphers",
+        "randomness",
+        "message platfrom"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/438.pdf",
+    "pid": "438",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Transmitting Secrets by Transmitting only Plaintext",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we study preimage resistance of the SHA-3 standard. We propose a squeeze meet-in-the-middle attack as a new preimage attack method for the sponge functions. This attack combines the squeeze attack and meet-in-the-middle attack, and is implemented by internal differentials. We analyze the inverse operation of the SHA-3 round function, and develop a new target internal differential algorithm as well as a linearization technique for the Sbox in the backward phase. In addition, we propose the concept of a value-difference distribution table (VDDT) to optimize the attack complexity. These techniques lead to faster preimage attacks on five (out of six) SHA-3 functions reduced to 4 rounds, and also bring preimage attacks on 5 rounds of four SHA-3 instances. The attack techniques are verified by performing practical preimage attack on a small variant of 4-round Keccak.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Institute of Information  Engineering, Chinese Academy of Sciences"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences"
+                }
+            ],
+            "fullName": "Zhongyi Zhang",
+            "orcid": "0009-0008-0491-3006"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Institute of Information  Engineering, Chinese Academy of Sciences"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences"
+                }
+            ],
+            "fullName": "Chengan Hou",
+            "orcid": "0009-0009-5618-6979"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Institute of Information  Engineering, Chinese Academy of Sciences"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences"
+                }
+            ],
+            "fullName": "Meicheng Liu",
+            "orcid": "0000-0002-5259-1848"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-07T09:25:52Z"
+        }
+    ],
+    "keywords": [
+        "Hash Function",
+        "SHA-3",
+        "Preimage Attack",
+        "Internal Differentials",
+        "Linearization",
+        "Meet-in-the-Middle"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/439.pdf",
+    "pid": "439",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Preimage Attacks on up to 5 Rounds of SHA-3 Using Internal Differentials",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce the use of machine learning in the cryptanalysis of code-based cryptography. Our focus is on distinguishing problems related to the security of NIST round-4  McEliece-like cryptosystems, particularly for Goppa codes used in ClassicMcEliece and Quasi-Cyclic Moderate Density Parity-Check (QC-MDPC) codes used in BIKE. We present DeepDistinguisher, a new algorithm for distinguishing structured codes from random linear codes that uses a transformer. The results show that the new distinguisher achieves a high level of accuracy in distinguishing Goppa codes, suggesting that their structure may be more recognizable by AI models. Our approach outperforms traditional attacks in distinguishing Goppa codes in certain settings and does generalize to larger code lengths without further training using a puncturing technique. We also present the first distinguishing results dedicated to MDPC and QC-MDPC codes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Facebook (United States)",
+                    "ror": "https://ror.org/01zbnvs85"
+                },
+                {
+                    "name": "Sorbonne University",
+                    "ror": "https://ror.org/02en5vm52"
+                }
+            ],
+            "fullName": "Mohamed Malhou",
+            "orcid": "0009-0005-8412-4135"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graduate School of Computer Science and Advanced Technologies",
+                    "ror": "https://ror.org/04r5ddq29"
+                }
+            ],
+            "fullName": "Ludovic Perret"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Facebook (United States)",
+                    "ror": "https://ror.org/01zbnvs85"
+                }
+            ],
+            "fullName": "Kristin Lauter"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-07T15:03:54Z"
+        }
+    ],
+    "keywords": [
+        "Classic McEliece",
+        "Goppa Codes",
+        "QC-MDPC",
+        "Code Distinguishability",
+        "Deep Learning",
+        "Transformers"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/440.pdf",
+    "pid": "440",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "AI for Code-based Cryptography",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Every cryptographic implementation on embedded device is vulnerable to side-channel attacks. To prevent these attacks, the main countermeasure consists in splitting each sensitive variable in shares and processing them independently.\r\nWith the upcoming of new algorithms designed to resist quantum computers and the complexity of their operations, this protection represents a real challenge.\r\nIn this article, we present an attack on an earlier attempt to protect the decoder of BIKE cryptosystem against first-order attack.\r\nAdditionally, we introduce a new procedure for the high-order masking of the decoder, up-to-date with its latest improvement.\r\nWe also present the first fully masked implementation of the whole cryptosystem, including the key generation and the encapsulation.\r\nEventually, to assess the correctness of our countermeasures and initiate further comparison, we implemented our countermeasures in C and provide benchmarks of their performance.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Luxembourg",
+                    "ror": "https://ror.org/036x5ad56"
+                }
+            ],
+            "fullName": "Matthias Trannoy"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-07T16:44:12Z"
+        }
+    ],
+    "keywords": [
+        "BIKE",
+        "Post-Quantum Cryptography",
+        "Error-Correcting Codes",
+        "Key-Establishment Mechanism",
+        "High-Order Masking"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/441.pdf",
+    "pid": "441",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "High-Order Masking of BIKE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A major challenge in cryptography is the construction of succinct garbling schemes that have asymptotically smaller size than Yao\u2019s garbled circuit construction. We present a new framework for succinct garbling that replaces the heavy machinery of most previous constructions by lighter-weight homomorphic secret sharing techniques.\r\n\r\nConcretely, we achieve 1-bit-per-gate (amortized) garbling size for Boolean circuits under circular variants of standard assumptions in composite-order or prime-order groups, as well as a lattice-based instantiation. We further extend these ideas to layered circuits, improving the per-gate cost below 1 bit, and to arithmetic circuits, eliminating the typical \u03a9(\u03bb)-factor overhead for garbling mod-p computations. Our constructions also feature \u201cleveled\u201d variants that remove circular-security requirements at the cost of adding a depth-dependent term to the garbling size.\r\n\r\nOur framework significantly extends a recent technique of Liu, Wang, Yang, and Yu (Eurocrypt 2025) for lattice-based succinct garbling, and opens new avenues toward practical succinct garbling. For moderately large circuits with a few million gates, our garbled circuits can be two orders of magnitude smaller than Yao-style garbling. While our garbling and evaluation algorithms are much slower, they are still practically feasible, unlike previous fully succinct garbling schemes that rely on expensive tools such as iO or a non-black-box combination of FHE and ABE. This trade-off\r\ncan make our framework appealing when a garbled circuit is used as a functional ciphertext that is broadcast or stored in multiple locations (e.g., on a blockchain), in which case communication and storage may dominate computational cost.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                }
+            ],
+            "fullName": "Yuval Ishai",
+            "orcid": "0009-0009-4096-6305"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Hanjun Li",
+            "orcid": "0009-0007-4350-1314"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Huijia Lin",
+            "orcid": "0000-0003-2206-4817"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-07T17:14:00Z"
+        }
+    ],
+    "keywords": [
+        "garbled circuits",
+        "secure computation",
+        "homomorphic secret sharing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/442.pdf",
+    "pid": "442",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Unified Framework for Succinct Garbling from Homomorphic Secret Sharing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Practical signature-based witness encryption (SWE) schemes recently emerged as a viable alternative to instantiate timed-release cryptography in the honest majority setting. In particular, assuming threshold trust in a set of parties that release signatures at a specified time, one can ``encrypt to the future'' using an SWE scheme. Applications of SWE schemes include voting, auctions, distributed randomness beacons, and more. However, the lack of homomorphism in existing SWE schemes reduces efficiency and hinders deployment. In this work, we introduce the notion of homomorphic SWE (HSWE) to improve the practicality of timed-release encryption schemes. We show one can build HSWE using a pair of encryption and signature schemes where the uniqueness of the signature is required when the encryption scheme relies on injective one-way functions. We then build three HSWE schemes in various settings using BLS, RSA, and Rabin signatures and show how to achieve a privacy-preserving variant that only allows extracting the homomorphically aggregated result while keeping the individual plaintexts confidential",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University College London",
+                    "ror": "https://ror.org/02jx3x895"
+                }
+            ],
+            "fullName": "Alireza Kavousi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "E\u00f6tv\u00f6s Lor\u00e1nd University"
+                }
+            ],
+            "fullName": "Istv\u00e1n Andr\u00e1s Seres"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-07T17:27:02Z"
+        }
+    ],
+    "keywords": [
+        "homomorphic encryption",
+        "signature-based witness encryption",
+        "timed cryptography",
+        "identity-based encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/443.pdf",
+    "pid": "443",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Homomorphic Signature-based Witness Encryption and Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "State-of-the-art protocols that achieve constant-round secure multiparty computation currently present a trade-off: either consume an amount of communication that scales quadratically in the number of parties, or achieve better asymptotics at the cost of high constant factors (e.g. schemes based on LPN or DDH).\r\n \r\nWe construct a constant-round MPC protocol where communication scales linearly in the number of parties n. Our construction relies only on OT and RO, and it leverages packed secret sharing. Due to building on simple primitives, our protocol offers concrete improvement over asymptotically-efficient LPN-based schemes.  We consider security in the presence of a dishonest majority where the malicious (with abort) adversary corrupts an arbitrary constant fraction of parties. \r\n\r\nBy leveraging tri-state circuits (Heath et al. Crypto 2023), we extend our protocol to the RAM model of computation. For a RAM program that halts within $T$ steps, our maliciously-secure protocol communicates $O(n \\cdot T  \\log^3 T  \\log \\log T \\cdot \\kappa)$ total bits, where $\\kappa$ is a security parameter.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "David Heath"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Vladimir Kolesnikov"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Los Angeles",
+                    "ror": "https://ror.org/046rm7j60"
+                }
+            ],
+            "fullName": "Varun Narayanan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Los Angeles",
+                    "ror": "https://ror.org/046rm7j60"
+                }
+            ],
+            "fullName": "Rafail Ostrovsky"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Los Angeles",
+                    "ror": "https://ror.org/046rm7j60"
+                }
+            ],
+            "fullName": "Akash Shah"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-07T21:20:53Z"
+        }
+    ],
+    "keywords": [
+        "Garbling Scheme",
+        "Constant round",
+        "Multiparty Computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/444.pdf",
+    "pid": "444",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multiparty Garbling from OT with Linear Scaling and RAM Support",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "P  vs  NP  problem  is  the   most  important  unresolved  problem  in  the  field  of computational complexity. Its impact has penetrated into all aspects of algorithm design,  especially  in  the  field  of  cryptography.  The  security  of  cryptographic algorithms  based  on  short  keys  depends  on  whether  P  is  equal  to  NP.  In  fact, Shannon  strictly  proved  that  the  one-time-pad  system  meets  unconditional security, but because the one-time-pad system requires the length of key to be at least the length of plaintext, how to transfer the key is a troublesome problem that restricts the use of the one-time-pad system in practice. Cryptography algorithms used  in  practice  are  all  based  on  short  key,  and  the  security  of  the  short  key mechanism is ultimately based on one-way assumption. In fact, the existence of one-way function can directly lead to the important conclusion P\u2260NP.\r\nIn this paper, we originally constructed a short-key block cipher algorithm. The core feature of this algorithm is that for any block, when a plaintext-ciphertext pair is known, any key in the key space is valid, that is, for each block, the plaintext-ciphertext pair and the key are independence, and the independence between blocks is also easy to construct. This feature is completely different from all existing short-key cipher algorithms.\r\nBased on the above feature, we construct a problem and theoretically prove that the  problem  satisfies  the  properties  of  one-way  functions,  thereby  solving  the problem of the existence of one-way functions, that is, directly proving that P\u2260NP.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Gao Ming"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-08T18:06:39Z"
+        }
+    ],
+    "keywords": [
+        "linear attacks",
+        "differential attacks",
+        "one way function"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/445.pdf",
+    "pid": "445",
+    "pubtype": {
+        "note": "Future of Information and Communication Conference (FICC) 2023",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A proof of P\u2260NP (New symmetric encryption  algorithm against any linear attacks and  differential attacks)",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In verifiable secret sharing (VSS), a dealer shares a secret input among several parties, ensuring each share is verifiable. Motivated by its applications in the blockchain space, we focus on a VSS where parties holding shares are not allowed to reconstruct the dealer's secret (even partially) on their own terms, which we address as privacy-targeted collusion if attempted. \r\n\r\n    In this context, our work investigates mechanisms deterring such collusion in VSS among rational and malicious parties. For this problem, we make both algorithmic and combinatorial contributions:\r\n    1. We provide two collusion-deterrent mechanisms to discourage parties from colluding and recovering the dealer's secret. Notably, when it is desired to achieve fairness---where non-colluding parties are not at a loss---while allowing for the best achievable malicious fault tolerance, we define ``trackable access structures'' (TAS) and design a deterrence mechanism tailored for VSS on these structures. \r\n    2. We estimate the size of the optimal TAS, construct them from Steiner systems, provide highly robust TAS using partial Steiner systems, and present efficient secret sharing schemes for the latter close-to-optimal TAS for various parameter regimes.\r\n    3. We demonstrate that trackability in access structures is connected to combinatorial objects like (partial) Steiner systems, uniform subsets with restricted intersections, and appropriate binary codes. The robustness of access structures is equivalent to the minimum vertex cover of hypergraphs. \r\n\r\n    We believe these connections between cryptography, game theory, and discrete mathematics will be of broader interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Tiantian Gong",
+            "orcid": "0000-0001-9441-9037"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Aniket Kate",
+            "orcid": "0000-0003-2246-8416"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Hemanta K. Maji",
+            "orcid": "0000-0003-4244-8658"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Hai H. Nguyen"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-09T00:20:38Z"
+        }
+    ],
+    "keywords": [
+        "Collusion deterrence",
+        "verifiable secret sharing",
+        "trackable access structure",
+        "robust access structure"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/446.pdf",
+    "pid": "446",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Disincentivize Collusion in Verifiable Secret Sharing",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ZenGo-X/gotham-city/blob/master/white-paper/white-paper.pdf"
+    ]
+}
+,
+{
+    "abstract": "We consider the question of protecting a general computation device, modeled by a stateful Boolean circuit, against leakage of partial information about its internal wires. Goyal et al. (FOCS 2016) obtained a solution for the case of bounded-communication leakage, where the wires are partitioned into two parts and the leakage can be any function computed using $t$ bits of communication between the parts. However, this solution suffers from two major limitations: (1) it only applies to a one-shot (stateless) computation, mapping an encoded input to an encoded output, and (2) the leakage-resilient circuit consumes fresh random bits, whose number scales linearly with the circuit complexity of the computed function.\r\n\r\nIn this work, we eliminate the first limitation and make progress on the second. Concretely:\r\n- We present the first construction of stateful circuits that offer information-theoretic protection against continuous bounded-communication leakage. As an application, we extend a two-party ``malware-resilient'' protocol of Goyal et al. to the continuous-leakage case. \r\n- For simple types of bounded-communication leakage, which leak $t$ parities or $t$ disjunctions of circuit wires or their negations, we obtain a deterministic variant that does not require any fresh randomness beyond the randomness in the initial state. Here we get computational security based on a subexponentially secure one-way function. This is the first deterministic leakage-resilient circuit construction for any nontrivial class of global leakage.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                },
+                {
+                    "name": "Amazon Web Services, USA"
+                }
+            ],
+            "fullName": "Yuval Ishai",
+            "orcid": "0009-0009-4096-6305"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                },
+                {
+                    "name": "Shanghai Qi Zhi Institute"
+                }
+            ],
+            "fullName": "Yifan Song",
+            "orcid": "0009-0009-4169-3257"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-09T01:52:36Z"
+        }
+    ],
+    "keywords": [
+        "Leakage Resilience"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/447.pdf",
+    "pid": "447",
+    "pubtype": {
+        "note": "STOC 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Protecting Computations Against Continuous Bounded-Communication Leakage",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
