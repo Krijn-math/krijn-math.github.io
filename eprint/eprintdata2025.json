@@ -31934,4 +31934,322 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Matrix multiplication of two encrypted matrices (CC-MM) is a key challenge for privacy-preserving machine learning applications. As modern machine learning models focus on scalability, fast CC-MM on large datasets is increasingly in demand.\r\n\r\nIn this work, we present a CC-MM algorithm for large matrices. The algorithm consists of plaintext matrix multiplications (PP-MM) and ciphertext matrix transpose algorithms (C-MT). We propose a fast C-MT algorithm, which is computationally inexpensive compared to PP-MM. By leveraging high-performance BLAS libraries to optimize PP-MM, we implement large-scale CC-MM with substantial performance improvements. Furthermore, we propose lightweight algorithms, significantly reducing the key size from $1\\ 960$ MB to $1.57$ MB for CC-MM with comparable efficiency.\r\n\r\nIn a single-thread implementation, the C-MT algorithm takes $0.76$ seconds to transpose a $2\\ 048\\times 2\\ 048$ encrypted matrix. The CC-MM algorithm requires $85.2$ seconds to multiply two $4\\ 096\\times 4\\ 096$ encrypted matrices. For large matrices, our algorithm outperforms the state-of-the-art CC-MM method from Jiang-Kim-Lauter-Song [CCS'18] by a factor of over $800$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoLab Inc."
+                }
+            ],
+            "fullName": "Jai Hyun Park",
+            "orcid": "0000-0002-5401-8949"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-10T07:30:23Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic Encryption",
+        "Matrix Multiplication"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/448.pdf",
+    "pid": "448",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Ciphertext-Ciphertext Matrix Multiplication: Fast for Large Matrices",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Oblivious permutation (OP) enables two parties, a sender with a private data vector $x$ and a receiver with a private permutation \u03c0, to securely obtain the shares of \u03c0(x). OP has been used to construct many important MPC primitives and applications such as secret shuffle, oblivious sorting, private set operations, secure database analysis, and privacy-preserving machine learning. Due to its high complexity, OP has become a performance bottleneck in several practical applications, and many efforts have been devoted to enhancing its concrete efficiency. Chase et al. (Asiacrypt'20) proposed an offline-online OP paradigm leveraging a pre-computable resource termed Share Translation. While this paradigm significantly reduces online costs, the substantial offline cost of generating Share Translation remains an area for further investigation.\r\n\r\nIn this work, we redefine the pre-computable resource as a cryptographic primitive known as Correlated Oblivious Permutation (COP) and conduct in-depth analyses and optimizations of the two COP generation solutions: network-based solution and matrix-based solution. The optimizations for the network-based solution halve the communication/computation cost of constructing a switch (the basic unit of the permutation network) and reduce the number of switches in the permutation network. The optimizations for the matrix-based solution halve the communication cost of small-size COP generation and reduce the cost of large-size COP generation with in-outside permutation decomposition.\r\n\r\nWe implement our two COP generation protocols and conduct comprehensive evaluations. Taking commonly used 128-bit input data as an example, our network-based and matrix-based solutions are up to 1.7x and 1.6x faster than baseline protocols, respectively. \r\n We further facilitate the state-of-the-art (SOTA) PSU protocols with our optimized COP, achieving over 25% reduction in communication cost and 35% decrease in execution time. This shows that our COP optimizations bring significant improvements for real-world MPC primitives.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Feng Han",
+            "orcid": "0009-0004-0696-3008"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences",
+                    "ror": "https://ror.org/034t30j35"
+                }
+            ],
+            "fullName": "Xiao Lan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Weiran Liu",
+            "orcid": "0000-0002-1466-7418"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Lei Zhang",
+            "orcid": "0009-0000-8102-6568"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Hao Ren"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Lin Qu",
+            "orcid": "0009-0004-2028-0780"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Connecticut",
+                    "ror": "https://ror.org/02der9h97"
+                }
+            ],
+            "fullName": "Yuan Hong",
+            "orcid": "0000-0003-4095-4506"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-10T09:25:29Z"
+        }
+    ],
+    "keywords": [
+        "Oblivious permutation",
+        "secret shuffle"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/449.pdf",
+    "pid": "449",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Concretely Efficient Correlated Oblivious Permutation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/alibaba-edu/mpc4j",
+        "https://github.com/osu-crypto/PSI-analytics",
+        "https://github.com/osu-crypto/libOTe"
+    ]
+}
+,
+{
+    "abstract": "Cryptographic schemes often contain verification steps that are essential for security. Yet, faulty implementations missing these steps can easily go unnoticed, as the schemes might still function correctly. A prominent instance of such a verification step is the re-encryption check in the Fujisaki-Okamoto (FO) transform that plays a prominent role in the post-quantum key encapsulation mechanisms (KEMs) considered in NIST's PQC standardization process. In KEMs built from FO, decapsulation performs a re-encryption check that is essential for security, but not for functionality. In other words, it will go unnoticed if this essential step is omitted or wrongly implemented, opening the door for key recovery attacks. Notably, such an implementation flaw was present in HQC's reference implementation and was only noticed after 19 months.\r\n\r\nIn this work, we develop a modified FO transform that binds re-encryption to functionality, ensuring that a faulty implementation which skips re-encryption will be exposed through basic correctness tests. We do so by adapting the \"verifiable verification\" methodology of Fischlin and G\u00fcnther (CCS 2023) to the context of FO-based KEMs. More concretely, by exporting an unpredictable confirmation code from the public key encryption and embedding it into the key derivation function, we can confirm that (most of) the re-encryption step was indeed performed during decapsulation. We formalize this concept, establish modified FO transforms, and prove how unpredictable PKE confirmation codes turn into noticeable correctness errors for faulty implementations. We show how to apply this technique to ML-KEM and HQC, both with negligible overhead, by leveraging the entropy lost through ciphertext compression or truncation. We confirm that our approach works through mathematical proofs, as well as experimental data. Our experiments show that the implementation flaw in HQC's reference implementation indeed makes basic test cases when following our approach.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Lewis Glabush",
+            "orcid": "0009-0008-7165-6150"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research - Zurich",
+                    "ror": "https://ror.org/02js37d36"
+                }
+            ],
+            "fullName": "Felix G\u00fcnther",
+            "orcid": "0000-0002-8495-6610"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Kathrin H\u00f6velmanns",
+            "orcid": "0000-0002-5478-0140"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Douglas Stebila",
+            "orcid": "0000-0001-9443-3170"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-10T10:58:23Z"
+        }
+    ],
+    "keywords": [
+        "Key encapsulation mechanism",
+        "public-key encryption",
+        "Fujisaki-Okamoto transformation",
+        "NIST",
+        "ML-KEM",
+        "HQC",
+        "post-quantum"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/450.pdf",
+    "pid": "450",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Verifiable Decapsulation: Recognizing Faulty Implementations of Post-Quantum KEMs",
+    "year": 2025,
+    "repo": [
+        "https://github.com/open-quantum-safe/liboqs/security/advisories/GHSA-gpf4-vrrw-r8v7",
+        "https://github.com/open-quantum-safe/liboqs/security/advisories/GHSA-gpf4-vrrw-r8v7",
+        "https://github.com/pq-code-package/mlkem-native/"
+    ]
+}
+,
+{
+    "abstract": "We describe, formally model, and prove the security of Telegram's key exchange protocols for client-server communications. To achieve this, we develop a suitable multi-stage key exchange security model along with pseudocode descriptions of the Telegram protocols that are based on analysis of Telegram's specifications and client source code. We carefully document how our descriptions differ from reality and justify our modelling choices. Our security proofs reduce the security of the protocols to that of their cryptographic building blocks, but the subsequent analysis of those building blocks requires the introduction of a number of novel security assumptions, reflecting many design decisions made by Telegram that are suboptimal from the perspective of formal analysis. Along the way, we provide a proof of  IND-CCA security for the variant of RSA-OEAP+ used in Telegram and identify a hypothetical attack exploiting current Telegram server behaviour (which is not captured in our protocol descriptions). Finally, we reflect on the broader lessons about protocol design that can be taken from our work.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "King's College London"
+                }
+            ],
+            "fullName": "Martin R. Albrecht"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Lenka Marekov\u00e1",
+            "orcid": "0000-0001-8616-4150"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Kenneth G. Paterson",
+            "orcid": "0000-0002-5145-4489"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tel-Aviv University"
+                }
+            ],
+            "fullName": "Eyal Ronen",
+            "orcid": "0000-0002-6013-7426"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Amazon"
+                }
+            ],
+            "fullName": "Igors Stepanovs",
+            "orcid": "0009-0009-3963-5584"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-10T18:25:07Z"
+        }
+    ],
+    "keywords": [
+        "Telegram",
+        "provable security",
+        "secure messaging",
+        "key exchange",
+        "security analysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/451.pdf",
+    "pid": "451",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Analysis of the Telegram Key Exchange",
+    "year": 2025,
+    "repo": [
+        "https://github.com/DrKLO/Telegram/blob/e9a35cea54c06277c69d41b8e25d94b5d7ede065/TMessagesProj/jni/tgnet/Handshake.cpp#L604-L611",
+        "https://github.com/DrKLO/Telegram/blob/e9a35cea54c06277c69d41b8e25d94b5d7ede065/TMessagesProj/jni/tgnet/Handshake.cpp#L604-L611",
+        "https://github.com/DrKLO/Telegram/",
+        "https://github.com/telegramdesktop/tdesktop/"
+    ]
+}
 ]
