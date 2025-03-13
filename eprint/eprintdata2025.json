@@ -32252,4 +32252,953 @@
         "https://github.com/telegramdesktop/tdesktop/"
     ]
 }
+,
+{
+    "abstract": "Presenting a protocol that builds a cryptographic solution which shifts security responsibility from the cipher designer to the cipher user.  The Polar Lattice is a pattern-devoid cryptographic cipher. It is based on a geometric construct -- a polar lattice, on which the letters of a plaintext alphabet A, are presented as two points each letter, so that to transmit a letter the transmitter transmits a randomized pathway, a trail, (ciphertext) that begins at the first point of the transmitted letter and ends at the second point of the transmitted letter; the transmitted pathway is a set of steps on the lattice. Once a letter is transmitted the next bits on the ciphertext mark the beginning of the pathway that points to the next letter. The size and the geometric construction of the polar lattice are randomized and kept secret. The randomized pathways may be long or short, the attacker does not know how to parcel the ciphertext to individual trails pointing to distinct letters in the plaintext alphabet A. The polar lattice may be implemented algebraically, or geometrically; the lattice may be a physical nano-construct. The polar lattice is very power efficient, very fast. It claims all the attributes associated with pattern devoid cryptography: it allows for only brute force cryptanalysis, which in turn can be defeated through increased ciphertext size, unlimited key size and structure complexity.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Case Western Reserve University",
+                    "ror": "https://ror.org/051fd9666"
+                }
+            ],
+            "fullName": "Gideon Samid",
+            "orcid": "0000-0003-1326-3486"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-10T19:42:40Z"
+        }
+    ],
+    "keywords": [
+        "leveraged-randomness",
+        "pattern-devoid-cryptography",
+        "geometric ciphers"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/452.pdf",
+    "pid": "452",
+    "pubtype": {
+        "note": "US Patent 12229285 * USPTO Publication US-2525-0036787-A1",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Polar Lattice Cryptography",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Privacy-preserving distributed computation enables a resource-limited client to securely delegate computations on sensitive data to multiple servers by distributing shares of the data.  In such systems, verifiable secret sharing (VSS) is a fundamental component, ensuring secure data distribution and directly impacting the overall performance. The most practical approach to construct VSS is through polynomial commitment (PC), with two main research directions to improve the VSS efficiency. The first focuses on improving the dealer time by designing PC that supports batch evaluation, i.e., generating multiple evaluation$\\&$proof pairs in one shot. The second  aims to reduce the broadcast cost by designing PC that supports batch opening, i.e., producing a compact proof for multiple evaluations. \r\n\r\nRecently, Zhang et al. (Usenix Security 2022) proposed a transparent PC that supports batch evaluation and obtained a transparent VSS with optimal dealer time. However, their scheme does not support batch opening, leading to high broadcast costs in VSS. To the best of our knowledge, no transparent PC currently supports both batch evaluation and batch opening, thus limiting the performance of existing VSS schemes.\r\n\r\nIn this paper, we propose a transparent fully batchable polynomial commitment (TFB-PC), that simultaneously supports batch evaluation  and batch opening. Leveraging TFB-PC, we present a VSS scheme with optimal complexity: $O(n\\log n)$ dealer time, $O(n)$ participant time and $O(n)$ communication cost. Furthermore, we implement our VSS scheme and compare its performance with Zhang et al.\u2019s VSS\r\n(the naive approach). Results show that our scheme achieves $954\\text{-}27,595\\times$ reduction in communication cost and a $1,028\\text{-}1,155,106\\times$ speed up in participant time for $2^{11}$-$2^{21}$ parties.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Xiangyu Kong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Min Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Yu Chen"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T01:06:03Z"
+        }
+    ],
+    "keywords": [
+        "Verifiable secret sharing",
+        "polynomial commitment"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/453.pdf",
+    "pid": "453",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Verifiable Secret Sharing Based on Fully Batchable Polynomial Commitment for Privacy-Preserving Distributed Computation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/real-world-cryprography"
+    ]
+}
+,
+{
+    "abstract": "Advanced Encryption Standard (AES) is one of the most widely used and extensively studied encryption algorithms globally, which is renowned for its efficiency and robust resistance to attacks. In this paper, three quantum circuits are designed to implement the S-box, which is the sole nonlinear component in AES. By incorporating a linear key schedule, we achieve a quantum circuit for implementing AES with the minimum number of qubits used. As a consequence, only 264/328/398 qubits are needed to implement the quantum circuits for AES-128/192/256. Furthermore, through quantum circuits of the S-box and key schedule, the overall size of the quantum circuit required for Grover's algorithm to attack AES is significantly decreased. This enhancement improves both the security and resource efficiency of AES in a quantum computing environment.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "College of Computer and Cyber Security, Fujian Normal University, Fuzhou 350117, China"
+                }
+            ],
+            "fullName": "Huinan Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "College of Computer and Cyber Security, Fujian Normal University, Fuzhou 350117, China"
+                },
+                {
+                    "name": "Digital Fujian Internet-of-Things Laboratory of Environmental Monitoring, Fujian Normal University, Fuzhou 350117, China"
+                }
+            ],
+            "fullName": "Binbin Cai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, 100876, China"
+                }
+            ],
+            "fullName": "Fei Gao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "College of Computer and Cyber Security, Fujian Normal University, Fuzhou 350117, China"
+                }
+            ],
+            "fullName": "Song Lin"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T08:34:44Z"
+        }
+    ],
+    "keywords": [
+        "AES",
+        "S-box",
+        "quantum circuit",
+        "Grover algorithm",
+        "resource estimation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/454.pdf",
+    "pid": "454",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum circuit for implementing AES S-box with low costs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Fault attacks pose a significant threat to cryptographic implementations, motivating the development of countermeasures, primarily based on a combination of redundancy and masking techniques. Redundancy, in these countermeasures, is often implemented via duplication or linear codes. However, their inherent structure remains susceptible to strategic fault injections bypassing error checks. To address this, the CAPA countermeasure from CRYPTO 2018 leveraged information-theoretic MAC tags for protection against fault and combined attacks. However, a recent attack has shown that CAPA can only protect against either side-channel analysis or fault attacks, but not both simultaneously, and with significant hardware costs. Its successor, M&M, improves efficiency but lacks protection against ineffective faults.\r\n\r\nIn this paper, we propose StaMAC, a framework aimed at securely incorporating MAC tags against both side-channel and fault adversaries in a non-combined scenario. We extend the security notions outlined in StaTI from TCHES 2024, and propose the notion of MAC-stability, ensuring fault propagation in masked and MACed circuits, necessitating only a single error check at the end of the computation. Additionally, we show that the stability notion from StaTI is arbitrarily composable (whereas it was previously thought to be only serially composable), making it the first arbitrary composable fault security notion which does not require intermediate error checks or correction. Then, we establish the improved protection of masking combined with MAC tags compared to linear encoding techniques by showing bounds on the advantage considering several fault adversaries: a gate/register faulting adversary, an arbitrary register faulting adversary, and a random register faulting adversary. Then, we show how to transform any probing secure circuit to protect against fault attacks using the proposed MAC-stable gadgets implementing field operations. Finally, we demonstrate StaMAC on an AES implementation, evaluating its security and hardware costs compared to the countermeasures using MAC tags.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven, Leuven, Belgium"
+                }
+            ],
+            "fullName": "Siemen Dhooghe",
+            "orcid": "0000-0003-0591-7355"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven, Leuven, Belgium"
+                }
+            ],
+            "fullName": "Artemii Ovchinnikov",
+            "orcid": "0000-0002-9035-523X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven, Leuven, Belgium"
+                }
+            ],
+            "fullName": "Dilara Toprakhisar",
+            "orcid": "0000-0003-4551-6775"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T10:18:16Z"
+        }
+    ],
+    "keywords": [
+        "Fault attacks",
+        "SIFA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/455.pdf",
+    "pid": "455",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "StaMAC: Fault Protection via Stable-MAC Tags",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We propose a post-quantum certificateless encryption scheme based on a web of trust instead of a centralized Key Generation Center. Our scheme allows nodes to communicate securely. It is the nodes already present in the network that vote on the acceptance of new nodes, and agree on the shared key. The threshold required for the acceptance of a new node is configurable. Our protocol thus allows to completely operate without the Key Generation Center (or Key Distribution Center).\r\n\r\nOur scheme is based on Quasi-Cyclic Moderate Density Parity Check Code McEliece, which is resistant to quantum computer attacks. The voting system uses Shamir secret sharing, coupled with the Kabatianskii-Krouk-Smeets signature scheme, both are also resistant to quantum computer attacks.\r\n\r\nWe provide a security analysis of our protocol, as well as a formal verification and a proof of concept code.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 C\u00f4te d'Azur"
+                }
+            ],
+            "fullName": "Thomas Pr\u00e9vost",
+            "orcid": "0009-0000-2224-8574"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 C\u00f4te d'Azur"
+                }
+            ],
+            "fullName": "Bruno Martin",
+            "orcid": "0000-0002-0048-5197"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 C\u00f4te d'Azur"
+                }
+            ],
+            "fullName": "Olivier Alibart",
+            "orcid": "0000-0003-4404-4067"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T10:22:17Z"
+        }
+    ],
+    "keywords": [
+        "Certificateless encryption",
+        "QC-MDPC McEliece",
+        "Post-quantum encryption",
+        "Web of trust",
+        "Distributed Identity Management",
+        "KKS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/456.pdf",
+    "pid": "456",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Democratic Distributed Post-Quantum Certificateless Encryption Scheme",
+    "year": 2025,
+    "repo": [
+        "https://github.com/thomasarmel/binary_polynomial_mod_algebra",
+        "https://github.com/thomasarmel/binary_polynomial_mod_algebra",
+        "https://github.com/thomasarmel/democratic_pq_cle",
+        "https://github.com/thomasarmel/democratic_pq_cle",
+        "https://github.com/thomasarmel/democratic_pq_cle/blob/master/formal_verif/democratic_pq_cle.pv",
+        "https://github.com/thomasarmel/democratic_pq_cle/blob/master/formal_verif/democratic_pq_cle.pv",
+        "https://github.com/thomasarmel/democratic_pq_cle/blob/master/security_assessments/workfactors.py",
+        "https://github.com/thomasarmel/democratic_pq_cle/blob/master/security_assessments/workfactors.py",
+        "https://github.com/vvasseur/qcmdpc_markov",
+        "https://github.com/thomasarmel/democratic_pq_cle/blob/master/security_assessments/dfr.py",
+        "https://github.com/thomasarmel/democratic_pq_cle/blob/master/security_assessments/dfr.py"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we propose a new 10-bit S-box generated from a Feistel construction. The subpermutations are generated by a 5-cell cellular automaton based on a unique well-chosen rule and bijective affine transformations. In particular, the cellular automaton rule is chosen based on empirical tests of its ability to generate good pseudorandom output on a ring cellular automaton. Similarly, Feistel's network layout is based on empirical data regarding the quality of the output S-box.\r\n\r\nWe perform cryptanalysis of the generated 10-bit S-box: we test the properties of algebraic degree, algebraic complexity, nonlinearity, strict avalanche criterion, bit independence criterion, linear approximation probability, differential approximation probability, differential uniformity and boomerang uniformity of our S-box, and relate them to those of the AES S-box. We find security properties comparable to or sometimes even better than those of the standard AES S-box. We believe that our S-box could be used to replace the 5-bit substitution of ciphers like ASCON.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 C\u00f4te d'Azur"
+                }
+            ],
+            "fullName": "Thomas Pr\u00e9vost",
+            "orcid": "0009-0000-2224-8574"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 C\u00f4te d'Azur"
+                }
+            ],
+            "fullName": "Bruno Martin",
+            "orcid": "0000-0002-0048-5197"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T10:34:14Z"
+        }
+    ],
+    "keywords": [
+        "S-box",
+        "Block cipher",
+        "Cellular automata",
+        "Feistel permutation",
+        "Boolean functions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/457.pdf",
+    "pid": "457",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A 10-bit S-box generated by Feistel construction from cellular automata",
+    "year": 2025,
+    "repo": [
+        "https://github.com/thomasarmel/cellular_automata_prng",
+        "https://github.com/thomasarmel/cellular_automata_prng",
+        "https://github.com/thomasarmel/luby_rackoff_sbox_finder",
+        "https://github.com/thomasarmel/luby_rackoff_sbox_finder",
+        "https://github.com/PoustouFlan/SUnbox",
+        "https://github.com/abrari/block-cipher-testing/",
+        "https://github.com/abrari/block-cipher-testing/",
+        "https://github.com/abrari/block-cipher-testing/",
+        "https://github.com/abrari/block-cipher-testing/",
+        "https://github.com/thomasarmel/sponges/blob/sbox_10/ascon/src/lib.rs#L100",
+        "https://github.com/thomasarmel/sponges/blob/sbox_10/ascon/src/lib.rs#L100"
+    ]
+}
+,
+{
+    "abstract": "In this work we revisit the post-quantum security of KEM-based password-authenticated key exchange (PAKE), specifically that of (O)CAKE. So far, these schemes evaded a security proof considering quantum adversaries. We give a detailed analysis of why this is the case, determining the missing proof techniques. To this end, we first provide a proof of security in the post-quantum setting, up to a single gap. This proof already turns out to be technically involved, requiring advanced techniques to reason in the QROM, including the compressed oracle and the extractable QROM. To pave the way towards closing the gap, we then further identify an efficient simulator for the ideal cipher. This provides certain programming abilities as a necessary and sufficient condition to close the gap in the proof: we demonstrate that we can close the gap using the simulator, and give a meta-reduction based on KEM-anonymity that shows the impossibility of a non-programming reduction that covers a class of KEMs that includes Kyber / ML-KEM.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Kathrin H\u00f6velmanns",
+            "orcid": "0000-0002-5478-0140"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                },
+                {
+                    "name": "SandboxAQ, Paolo Alto, US"
+                }
+            ],
+            "fullName": "Andreas H\u00fclsing",
+            "orcid": "0000-0003-2215-4134"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Mikhail Kudinov"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Silvia Ritsch"
+        }
+    ],
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T14:29:28Z"
+        }
+    ],
+    "keywords": [
+        "Post-quantum cryptography",
+        "PAKE",
+        "CAKE",
+        "OCAKE",
+        "quantum ideal-cipher model",
+        "QIC",
+        "QROM",
+        "meta reduction"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/458.pdf",
+    "pid": "458",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "CAKE requires programming - On the provable post-quantum security of (O)CAKE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We revisit the privacy and security analyses of FIDO2, a widely deployed standard for passwordless authentication on the Web. \r\nWe discuss previous works \r\nand conclude that each of them has at least one of the following limitations:\r\n(i) impractical trusted setup assumptions, \r\n(ii) security models that are inadequate in light of state of the art of practical attacks,\r\n(iii) not analyzing FIDO2 as a whole, especially for its privacy guarantees.\r\nOur work addresses these gaps and proposes revised security models for privacy and authentication. Equipped with our new models, we analyze FIDO2 modularly and focus on its component protocols, WebAuthn and CTAP2, clarifying their exact security guarantees. \r\nIn particular, our results, for the first time, establish privacy guarantees for FIDO2 as a whole.\r\nFurthermore, we suggest minor modifications that can help FIDO2 provably meet stronger privacy and authentication definitions and withstand known and novel attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "INESC TEC",
+                    "ror": "https://ror.org/05fa8ka61"
+                },
+                {
+                    "name": "University of Porto (FCUP)",
+                    "ror": "https://ror.org/043pwc612"
+                },
+                {
+                    "name": "Max Planck Institute for Security and Privacy",
+                    "ror": "https://ror.org/00bj0r217"
+                }
+            ],
+            "fullName": "Manuel Barbosa",
+            "orcid": "0000-0002-6848-5564"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Alexandra Boldyreva",
+            "orcid": "0009-0000-7019-884X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Southern University of Science and Technology",
+                    "ror": "https://ror.org/049tv2d57"
+                }
+            ],
+            "fullName": "Shan Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Kaishuo Cheng",
+            "orcid": "0000-0003-4984-8195"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "INESC TEC",
+                    "ror": "https://ror.org/05fa8ka61"
+                },
+                {
+                    "name": "University of Porto (FCUP)",
+                    "ror": "https://ror.org/043pwc612"
+                }
+            ],
+            "fullName": "Lu\u00eds Esqu\u00edvel",
+            "orcid": "0009-0009-6387-9271"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T21:09:06Z"
+        }
+    ],
+    "keywords": [
+        "FIDO2",
+        "CTAP2",
+        "WebAuthn",
+        "Privacy",
+        "Authentication"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/459.pdf",
+    "pid": "459",
+    "pubtype": {
+        "note": "PoPETs 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Revisiting the Security and Privacy of FIDO2",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Nitrokey/fido-authenticator",
+        "https://github.com/mozilla/authenticator-rs"
+    ]
+}
+,
+{
+    "abstract": "Generative models have achieved remarkable success in a wide range of applications. Training such models using proprietary data from multiple parties has been studied in the realm of federated learning. Yet recent studies showed that reconstruction of authentic training data can be achieved in such settings. \r\nOn the other hand, multiparty computation (MPC) guarantees standard data privacy, yet scales poorly for training generative models. \r\nIn this paper, we focus on improving reconstruction hardness during Generative Adversarial Network (GAN) training while keeping the training cost tractable. To this end, we explore two training protocols that use a public generator and an MPC discriminator: Protocol 1 (P1) uses a fully private discriminator, while Protocol 2 (P2) privatizes the first three discriminator layers. We prove reconstruction hardness for P1 and P2 by showing that (1) a public generator does not allow recovery of authentic training data, as long as the first two layers of the discriminator are private; and through an existing approximation hardness result on ReLU networks, (2) a discriminator with at least three private layers does not allow authentic data reconstruction with algorithms polynomial in network depth and size. We show empirically that compared with fully MPC training, P1 reduces the training time by $2\\times$ and P2 further by $4-16\\times$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Truong Son Nguyen",
+            "orcid": "0000-0002-9637-7624"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Yi Ren",
+            "orcid": "0000-0003-2306-5993"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Guangyu Nie",
+            "orcid": "0009-0004-2905-929X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Ni Trieu",
+            "orcid": "0000-0001-6013-9512"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T22:39:40Z"
+        }
+    ],
+    "keywords": [
+        "secure machine learning",
+        "minimax training",
+        "multiparty computation",
+        "generative adversarial neural network"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/460.pdf",
+    "pid": "460",
+    "pubtype": {
+        "note": "The 25th Privacy Enhancing Technologies Symposium, PETS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Achieving Data Reconstruction Hardness and Efficient Computation in Multiparty Minimax Training",
+    "year": 2025,
+    "repo": [
+        "https://github.com/asu-crypto/ppgan",
+        "https://github.com/JonasGeiping/invertinggradients"
+    ]
+}
+,
+{
+    "abstract": "Shuffles are used in electronic voting in much the same way physical ballot boxes are used in paper systems: (encrypted) ballots are input into the shuffle and (encrypted) ballots are output in a random order, thereby breaking the link between voter identities and ballots. To guarantee that no ballots are added, omitted or altered, zero-knowledge proofs, called proofs of shuffle, are used to provide publicly verifiable transcripts that prove that the outputs are a re-encrypted permutation of the inputs. The most prominent proofs of shuffle, in practice, are those due to Terelius and\r\nWikstro\u0308m (TW), and Bayer and Groth (BG). TW is simpler whereas BG is more efficient, both in terms of bandwidth and computation. Security for the simpler (TW) proof of shuffle has already been machine-checked but several prominent vendors insist on using the more complicated BG proof of shuffle. Here, we machine-check the security of the Bayer-Groth proof of shuffle via the Coq proof-assistant. We then extract the verifier (software) required to check the transcripts produced by Bayer-Groth implementations and use it to check transcripts from the Swiss Post evoting\r\nsystem under development for national elections in Switzerland.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Australian National University",
+                    "ror": "https://ror.org/019wvm592"
+                }
+            ],
+            "fullName": "Thomas Haines"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Polish Academy of Sciences",
+                    "ror": "https://ror.org/01dr6c206"
+                }
+            ],
+            "fullName": "Rajeev Gor\u00e9"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Cambridge",
+                    "ror": "https://ror.org/013meh722"
+                }
+            ],
+            "fullName": "Mukesh Tiwari"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-11T23:16:59Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/461.pdf",
+    "pid": "461",
+    "pubtype": {
+        "note": "USENIX Security 2023",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Machine-checking Multi-Round Proofs of Shuffle: Terelius-Wikstrom and Bayer-Groth",
+    "year": 2025,
+    "repo": [
+        "https://github.com/gerlion/secure-e-voting-with-coq",
+        "https://github.com/gerlion/secure-e-voting-with-coq",
+        "https://github.com/republique-et-canton-de-geneve/chvote-protocol-poc",
+        "https://github.com/republique-et-canton-de-geneve/chvote-protocol-poc",
+        "https://github.com/verificatum/verificatum-vcr",
+        "https://github.com/verificatum/verificatum-vcr"
+    ]
+}
+,
+{
+    "abstract": "The key collision attack was proposed as an open problem in key-committing security in Authenticated Encryption (AE) schemes like $\\texttt{AES-GCM}$ and $\\texttt{ChaCha20Poly1305}$. In ASIACRYPT 2024, Taiyama et al. introduce a novel type of key collision\u2014target-plaintext key collision ($\\texttt{TPKC}$) for $\\texttt{AES}$. Depending on whether the plaintext is fixed, $\\texttt{TPKC}$ can be divided into $\\texttt{fixed-TPKC}$ and $\\texttt{free-TPKC}$, which can be directly converted into collision attacks and semi-free-start collision attacks on the Davies-Meyer ($\\texttt{DM}$) hashing mode. \r\n  In this paper, we propose a new rebound attack framework leveraging a time-memory tradeoff strategy, enabling practical key collision attacks with optimized complexity. We also present an improved automatic method for finding \\textit{rebound-friendly} differential characteristics by controlling the probabilities in the inbound and outbound phases, allowing the identified characteristics to be directly used in $\\textit{rebound-based}$ key collision attacks. Through our analysis, we demonstrate that the 2-round $\\texttt{AES-128}$ $\\texttt{fixed-TPKC}$ attack proposed by Taiyama et al. is a $\\texttt{free-TPKC}$ attack in fact, while $\\texttt{fixed-TPKC}$ attacks are considerably more challenging than $\\texttt{free-TPKC}$ attacks. By integrating our improved automatic method with a new rebound attack framework, we successfully identify a new differential characteristic for the 2-round $\\texttt{AES-128}$ $\\texttt{fixed-TPKC}$ attack and develope the first practical $\\texttt{fixed-TPKC}$ attack against 2-round $\\texttt{AES-128}$. Additionally, we present practical $\\texttt{fixed-TPKC}$ attacks against 5-round $\\texttt{AES-192}$ and 3-round $\\texttt{Kiasu-BC}$, along with a practical $\\texttt{free-TPKC}$ attack against 6-round $\\texttt{Kiasu-BC}$. Furthermore, we reduce time complexities for $\\texttt{free-TPKC}$ and $\\texttt{fixed-TPKC}$ attacks on other $\\texttt{AES}$ variants.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Key Laboratory of Trustworthy Computing, School of Cryptology, Software Engineering Institute, East China Normal University, Shanghai, China"
+                }
+            ],
+            "fullName": "Jianqiang Ni"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Key Laboratory of Trustworthy Computing, School of Cryptology, Software Engineering Institute, East China Normal University, Shanghai, China"
+                }
+            ],
+            "fullName": "Yingxin Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science Tokyo, Tokyo, Japan"
+                }
+            ],
+            "fullName": "Fukang Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Key Laboratory of Trustworthy Computing, School of Cryptology, Software Engineering Institute,East China Normal University, Shanghai, Chin"
+                }
+            ],
+            "fullName": "Gaoli Wang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-12T03:24:37Z"
+        }
+    ],
+    "keywords": [
+        "Key collision",
+        "Rebound-based attack",
+        "AES",
+        "SAT",
+        "DM hashing mode",
+        "Kiasu-BC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/462.pdf",
+    "pid": "462",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Practical Key Collision on AES and Kiasu-BC",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper examines the deployment of Multi-Party Computation (MPC) in corporate data processing environments, focusing on its legal and technical implications under the European Union\u2019s General Data Protection Regulation (GDPR). By combining expertise in cryptography and legal analysis, we address critical questions necessary for assessing the suitability of MPC for real-world applications. Our legal evaluation explores the conditions under which MPC qualifies as an anonymizing approach under GDPR, emphasizing the architectural requirements, such as the distribution of control among compute parties, to minimize re-identification risks effectively. The assertions put forth in the legal opinion are validated by two distinct assessments conducted independently.\r\n\r\nWe systematically answer key regulatory questions, demonstrating that a structured legal assessment is indispensable for organizations aiming to adopt MPC while ensuring compliance with privacy laws. In addition, we complement this analysis with a practical implementation of privacy-preserving analytics using Carbyne Stack, a cloud-native open-source platform for scalable MPC applications, which integrates the MP-SPDZ framework as its backend. We benchmark SQL queries under various security models to evaluate scalability and efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Robert Bosch GmbH, Germany"
+                }
+            ],
+            "fullName": "Sebastian Becker"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Robert Bosch GmbH, Germany"
+                }
+            ],
+            "fullName": "Christoph B\u00f6sch",
+            "orcid": "0000-0001-9312-8000"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Robert Bosch GmbH, Germany"
+                }
+            ],
+            "fullName": "Benjamin Hettwer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Information, Telecommunications and Media Law, M\u00fcnster, Germany"
+                }
+            ],
+            "fullName": "Thomas Hoeren"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Information, Telecommunications and Media Law, M\u00fcnster, Germany"
+                }
+            ],
+            "fullName": "Merlin Rombach"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Robert Bosch GmbH, Germany"
+                }
+            ],
+            "fullName": "Sven Trieflinger"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Robert Bosch GmbH, Germany"
+                }
+            ],
+            "fullName": "Hossein Yalame",
+            "orcid": "0000-0001-6438-534X"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-12T08:19:28Z"
+        }
+    ],
+    "keywords": [
+        "Multi-Party Computation",
+        "GDPR Compliance",
+        "Data Anonymization",
+        "Privacy-Preserving Analytics"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This paper presents the results of a publicly funded research project in which Bosch contributed the technical use case and Prof. Hoeren from ITM, M\u00fcnster contributed the legal assessment. Note that the presented technical solution is not implemented at Bosch and that the legal assessment is an independent academic study and shall not be construed as an official position or endorsement by Robert Bosch GmbH.",
+    "pdffile": "2025/463.pdf",
+    "pid": "463",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multi-Party Computation in Corporate Data Processing: Legal and Technical Insights",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1109/SP54263.2024.00132",
+    "abstract": "Poly1305 is a widely-deployed polynomial hash function. The rationale behind its design was laid out in a series of papers by Bernstein, the last of which dates back to 2005. As computer architectures evolved, some of its design features became less relevant, but implementers found new ways of exploiting these features to boost its performance. However, would we still converge to this same design if we started afresh with today's computer architectures and applications? To answer this question, we gather and systematize a body of knowledge concerning polynomial hash design and implementation that is spread across research papers, cryptographic libraries, and developers' blogs. We develop a framework to automate the validation and benchmarking of the ideas that we collect. This approach leads us to five new candidate designs for polynomial hash functions. Using our framework, we generate and evaluate different implementations and optimization strategies for each candidate. We obtain substantial improvements over Poly1305 in terms of security and performance. Besides laying out the rationale behind our new designs, our paper serves as a reference for efficiently implementing polynomial hash functions, including Poly1305.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Jean Paul Degabriele"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Jan Gilcher",
+            "orcid": "0000-0002-1111-8325"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "J\u00e9r\u00f4me Govinden",
+            "orcid": "0000-0003-2658-3251"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Kenneth G. Paterson",
+            "orcid": "0000-0002-5145-4489"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-12T08:33:06Z"
+        }
+    ],
+    "keywords": [
+        "SoK",
+        "universal hashing",
+        "polynomial hash function",
+        "performance"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/464.pdf",
+    "pid": "464",
+    "pubtype": {
+        "note": "45th IEEE Symposium on Security and Privacy, IEEE S&P 2024",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SoK: Efficient Design and Implementation of Polynomial Hash Functions over Prime Fields",
+    "year": 2025,
+    "repo": [
+        "https://github.com/jangilcher/polynomial_hashing_framework",
+        "https://github.com/jangilcher/polynomial_hashing_framework"
+    ]
+}
 ]
