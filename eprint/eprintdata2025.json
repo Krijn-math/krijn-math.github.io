@@ -34499,4 +34499,1342 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Hardware obfuscation is an active trustworthy design technique targeting threats in the IC supply chain, such as IP piracy and overproduction. Recent research on Intellectual Property (IP) protection technologies suggests that using embedded reconfigurable components (e.g., eFPGA redaction) could be a promising approach to hide the functional and structural information of security-critical designs. However, such techniques suffer from almost prohibitive overhead in terms of area, power, delay, and testability. This paper proposes an obfuscation technique called EvoLUTe+, which is a unique and more fine-grained redaction approach using smaller reconfigurable components (e.g., Look-Up Tables (LUTs)). EvoLUTe+ achieves fine-grained partitioning, sub-circuit coloring, and scoring of IP, and then encrypts the original IP through the substitution of some sub-circuits. Different attacks are used to test the robustness of EvoLUTe+, including structural and machine learning attacks, as well as Bounded Model Checking (BMC) attacks. The overhead of the obfuscation design is also analyzed. Experimental results demonstrate that EvoLUTe+ exhibits robustness with acceptable overhead while resisting such threat models.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Rui Guo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Central Florida",
+                    "ror": "https://ror.org/036nfer12"
+                }
+            ],
+            "fullName": "M Sazadur Rahman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Jingbo Zhou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Central Florida",
+                    "ror": "https://ror.org/036nfer12"
+                }
+            ],
+            "fullName": "Hadi M Kamali"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Fahim Rahman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Farimah Farahmandi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Mark Tehranipoor"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-14T02:39:47Z"
+        }
+    ],
+    "keywords": [
+        "Logic Locking",
+        "Re-configurability",
+        "eFPGA IP redaction",
+        "Universal Function",
+        "IP Protection"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Preprint.",
+    "pdffile": "2025/484.pdf",
+    "pid": "484",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "EvoLUTe+: Fine-Grained Look-Up-Table-based RTL IP Redaction",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "McEliece cryptosystems, based on code-based cryptography, is a candidate in Round 4 of NIST's post-quantum cryptography standardization process. The QC-MDPC (quasi-cyclic moderate-density parity-check) variant is particularly noteworthy due to its small key length. The Guo-Johansson-Stankovski (GJS) attack against the QC-MDPC McEliece cryptosystem was recently proposed and has intensively been studied. This attack reconstructs the secret key using information on decoding error rate (DER). However, in practice, obtaining complete DER information is presumed to be time-consuming. This paper proposes two algorithms to reconstruct the secret key under imperfection in the DER information and evaluates the relationship between the imperfection and efficiency of key reconstruction. This will help us to increase the efficacy of the GJS attack.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Japan Ground Self-Defense Force"
+                }
+            ],
+            "fullName": "Motonari Ohtsuka",
+            "orcid": "0000-0002-7618-8367"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Defense Academy of Japan",
+                    "ror": "https://ror.org/05xszy717"
+                }
+            ],
+            "fullName": "Takahiro Ishimaru",
+            "orcid": "0009-0002-2413-6626"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Defense Academy of Japan",
+                    "ror": "https://ror.org/05xszy717"
+                }
+            ],
+            "fullName": "Rei Iseki",
+            "orcid": "0009-0002-7323-3190"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Defense Academy of Japan",
+                    "ror": "https://ror.org/05xszy717"
+                }
+            ],
+            "fullName": "Shingo Kukita",
+            "orcid": "0000-0003-1526-4570"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Defense Academy of Japan",
+                    "ror": "https://ror.org/05xszy717"
+                }
+            ],
+            "fullName": "Kohtaro Watanabe",
+            "orcid": "0000-0001-9674-0924"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-14T06:09:22Z"
+        }
+    ],
+    "keywords": [
+        "McEliece cryptosystem",
+        "QC-MDPC codes",
+        "Reaction attacks",
+        "Distance spectrum",
+        "Key reconstruction"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/485.pdf",
+    "pid": "485",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Key reconstruction for QC-MDPC McEliece from imperfect distance spectrum",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "One-shot signatures (OSS) were defined by Amos, Georgiou, Kiayias, and Zhandry (STOC'20). These allow for signing exactly one message, after which the signing key self-destructs, preventing a second message from ever being signed. While such an object is impossible classically, Amos et al observe that OSS may be possible using quantum signing keys by leveraging the no-cloning principle. OSS has since become an important conceptual tool with many applications in decentralized settings and for quantum cryptography with classical communication. OSS are also closely related to separations between classical-binding and collapse-binding for post-quantum hashing and commitments. Unfortunately, the only known OSS construction due to Amos et al. was only justified in a classical oracle model, and moreover their justification was ultimately found to contain a fatal bug. Thus, the existence of OSS, even in a classical idealized model, has remained open. \r\n\r\nWe give the first standard-model OSS, with provable security assuming (sub-exponential) indistinguishability obfuscation (iO) and LWE. This also gives the first standard-model separation between classical and collapse-binding post-quantum commitments/hashing, solving a decade-old open problem. Along the way, we also give the first construction with unconditional security relative to a classical oracle. To achieve our standard-model construction, we develop a notion of permutable pseudorandom permutations (permutable PRPs), and show how they are useful for translating oracle proofs involving random permutations into obfuscation-based proofs. In particular, obfuscating permutable PRPs gives a trapdoor one-way permutation that is $\\textit{full-domain}$, solving another decade-old-problem of constructing this object from (sub-exponential) iO and one-way functions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Omri Shmueli"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Mark Zhandry"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-14T06:49:30Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Money",
+        "Quantum Lightning",
+        "One-Shot Signatures",
+        "Trapdoor Permutations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/486.pdf",
+    "pid": "486",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On One-Shot Signatures, Quantum vs Classical Binding, and Obfuscating Permutations",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Multi-party computation (MPC) has become increasingly practical in the last two decades, solving privacy and security issues in various domains, such as healthcare, finance, and machine learning. One big caveat is that MPC sometimes lacks usability since the knowledge barrier for regular users can be high. Users have to deal with, e.g., various CLI tools, private networks, and sometimes even must install many dependencies, which are often hardware-dependent.\r\n\r\nA solution to improve the usability of MPC is to build browser-based MPC engines where each party runs within a browser window. Two examples of such an MPC web engine are JIFF and the web variant of MPyC. Both support an honest majority with passive corruptions.\r\n\r\n$\\texttt{webSPDZ}$: Our work brings one of the most performant and versatile general-purpose MPC engines, MP-SPDZ, to the web. MP-SPDZ supports \u226540 MPC protocols with different security models, enabling many security models on the web. To port MP-SPDZ to the web, we use Emscripten to compile MP-SPDZ\u2019s C++ BackEnd to WebAssembly and upgrade the party communication for the browser (WebRTC or WebSockets). We call the new MPC web engine webSPDZ. As with the native versions of the mentioned MPC web engines, MPyC-Web and JIFF, webSPDZ outperforms them in our end-to-end experiments.\r\n\r\nWe believe that webSPDZ brings forth many interesting and practically relevant use cases. Thus, webSPDZ pushes the boundaries of practical MPC: making MPC more usable and enabling it for a broader community.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Thomas Buchsteiner"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                },
+                {
+                    "name": "Secure Information Technology Center Austria (A-SIT)"
+                }
+            ],
+            "fullName": "Karl W. Koch",
+            "orcid": "0000-0002-4828-7587"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Gateway"
+                }
+            ],
+            "fullName": "Dragos Rotaru",
+            "orcid": "0000-0002-1767-3725"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Christian Rechberger",
+            "orcid": "0000-0003-1280-6020"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-14T07:30:45Z"
+        }
+    ],
+    "keywords": [
+        "Privacy-Enhancing Technology",
+        "Private Computations",
+        "Multi-Party Computation",
+        "MP-SPDZ",
+        "MPC Web Engine",
+        "webSPDZ"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "webSPDZ source code @ GitHub: https://github.com/tbuchs/webSPDZ",
+    "pdffile": "2025/487.pdf",
+    "pid": "487",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "webSPDZ: Versatile MPC on the Web",
+    "year": 2025,
+    "repo": [
+        "https://github.com/tbuchs/webSPDZ",
+        "https://github.com/emscripten-ports",
+        "https://github.com/emscripten-core/emscripten/issues/20244",
+        "https://github.com/emscripten-core/emscripten/issues/20244",
+        "https://w3c.github.io/webrtc-pc/#interface-definition",
+        "https://gist.github.com/sagivo/3a4b2f2c7ac6e1b5267c2f1f59ac6c6b",
+        "https://github.com/tbuchs/webSPDZ",
+        "https://github.com/wasmerio/wasmer-java",
+        "https://github.com/konsoletyper/teavm",
+        "https://github.com/data61/MP-SPDZ",
+        "https://github.com/rdragos/awesome-mpc",
+        "https://github.com/rdragos/awesome-mpc",
+        "https://github.com/aicis/fresco",
+        "https://github.com/cryptobiu/MATRIX",
+        "https://github.com/sharemind-sdk",
+        "https://github.com/GaloisInc/swanky",
+        "https://github.com/GaloisInc/swanky",
+        "https://github.com/aicis/fresco",
+        "https://github.com/multiparty/jiff",
+        "https://github.com/mkskeller/mpc-benchmarks",
+        "https://github.com/MPC-SoK/frameworks",
+        "https://github.com/e-nikolov/mpyc-web",
+        "https://github.com/easy-smpc/easy-smpc",
+        "https://github.com/easy-smpc/easy-smpc",
+        "https://w3c.github.io/webrtc-pc#interface-definition",
+        "https://w3c.github.io/webrtc-pc#interface-definition"
+    ]
+}
+,
+{
+    "abstract": "In the realm of fully homomorphic encryption on the torus, we investigate the algebraic manipulations essential for handling polynomials within cyclotomic rings characterized by prime power indices. This includes operations such as modulo reduction, computation of the trace operator, extraction, and the blind rotation integral to the bootstrapping procedure, all of which we reformulate within this mathematical framework.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                }
+            ],
+            "fullName": "Philippe Chartier",
+            "orcid": "0000-0001-7317-6558"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ravel Technologies"
+                }
+            ],
+            "fullName": "Michel Koskas"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centre National de la Recherche Scientifique",
+                    "ror": "https://ror.org/00675rp98"
+                }
+            ],
+            "fullName": "Mohammed Lemou"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-14T15:42:29Z"
+        }
+    ],
+    "keywords": [
+        "fully homomorphic encryption",
+        "residue number system",
+        "trace operator",
+        "extraction",
+        "bootstrapping"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/488.pdf",
+    "pid": "488",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Exploring General Cyclotomic Rings in Torus-Based Fully Homomorphic Encryption: Part I - Prime Power Instances",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Black-box separations are a cornerstone of cryptography, indicating barriers to various goals. A recent line of work has explored black-box separations for quantum cryptographic primitives. Namely, a number of separations are known in the Common Haar Random State (CHRS) model, though this model is not considered a complete separation, but rather a starting point. A few very recent works have attempted to lift these separations to a unitary separation, which are considered complete separations. Unfortunately, we find significant errors in some of these lifting results.\r\n\r\nWe prove general conditions under which CHRS separations can be generically lifted, thereby giving simple, modular, and bug-free proofs of complete unitary separations between various quantum primitives. Our techniques allow for simpler proofs of existing separations as well as new separations that were previously only known in the CHRS model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Eli Goldin",
+            "orcid": "0000-0002-7975-8281"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT",
+                    "ror": "https://ror.org/004cn7092"
+                }
+            ],
+            "fullName": "Mark Zhandry",
+            "orcid": "0000-0001-7071-6272"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-14T17:45:28Z"
+        }
+    ],
+    "keywords": [
+        "quantum",
+        "owsg",
+        "one way puzzles",
+        "CHRS",
+        "swap",
+        "LOCC",
+        "black box separations",
+        "idealized models"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/489.pdf",
+    "pid": "489",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Translating Between the Common Haar Random State Model and the Unitary Model",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We revisit the problem of secure aggregation of high-dimensional vectors in a two-server system such as Prio. These systems are typically used to aggregate vectors such as gradients in private federated learning, where the aggregate itself is protected via noise addition to ensure differential privacy. Existing approaches require communication scaling with the dimensionality, and thus limit the dimensionality of vectors one can efficiently process in this setup.\r\n\r\nWe propose PREAMBLE: Private Efficient Aggregation Mechanism for  Block-sparse Euclidean Vectors. PREAMBLE is a novel extension of distributed point functions that enables communication- and computation-efficient aggregation of block-sparse vectors, which are sparse vectors where the non-zero entries occur in a small number of clusters of consecutive coordinates. We then show that PREAMBLE can be combined with random sampling and privacy amplification by sampling results, to allow asymptotically optimal privacy-utility trade-offs for vector aggregation, at a fraction of the communication cost. When coupled with recent advances in numerical privacy accounting, our approach incurs a negligible overhead in noise variance, compared to the Gaussian mechanism used with Prio.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Apple (United States)",
+                    "ror": "https://ror.org/059hsda18"
+                }
+            ],
+            "fullName": "Hilal Asi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Apple (United States)",
+                    "ror": "https://ror.org/059hsda18"
+                }
+            ],
+            "fullName": "Vitaly Feldman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Hannah Keller"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Apple (United States)",
+                    "ror": "https://ror.org/059hsda18"
+                }
+            ],
+            "fullName": "Guy N. Rothblum"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Apple (United States)",
+                    "ror": "https://ror.org/059hsda18"
+                }
+            ],
+            "fullName": "Kunal Talwar"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-14T22:02:42Z"
+        }
+    ],
+    "keywords": [
+        "Aggregation",
+        "Two-server model",
+        "Distributed Zero Knowledge",
+        "Differential Privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/490.pdf",
+    "pid": "490",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PREAMBLE: Private and Efficient Aggregation of Block Sparse Vectors and Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The emergence of video streams as a primary medium for communication and the demand for high-quality video sharing over the internet have given rise to several security and privacy issues, such as unauthorized access and data breaches. To address these limitations, various Selective Video Encryption (SVE) schemes have been proposed, which encrypt specific portions of a video while leaving others unencrypted. The SVE approach balances security and usability, granting unauthorized users access to certain parts while encrypting sensitive content. However, existing SVE schemes adopt an all-or-nothing coarse-grain encryption approach, where a user with a decryption key can access all the contents of a given video stream. This paper proposes and designs a fine-grained access control-based selective video encryption scheme, ABSVE, and a use-case protocol called \\protocol. Our scheme encrypts different identified Regions of Interest (ROI) with a unique symmetric key and applies a Ciphertext Policy Attribute Based Encryption (CP-ABE) scheme to tie these keys to specific access policies. This method provides multiple access levels for a single encrypted video stream. Crucially, we provide a formal syntax and security definitions for ABSVE, allowing for rigorous security analysis of this and similar schemes --  which is absent in prior works. Finally, we provide an implementation and evaluation of our protocol in the Kvazaar HEVC encoder. Overall, our constructions enhance security and privacy while allowing controlled access to video content and achieve comparable efficiency to compression without encryption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tampere University",
+                    "ror": "https://ror.org/033003e23"
+                }
+            ],
+            "fullName": "Eugene Frimpong",
+            "orcid": "0000-0002-4924-5258"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tampere University",
+                    "ror": "https://ror.org/033003e23"
+                },
+                {
+                    "name": "grchain.io"
+                }
+            ],
+            "fullName": "Bin Liu",
+            "orcid": "0000-0002-6591-3711"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tampere University",
+                    "ror": "https://ror.org/033003e23"
+                }
+            ],
+            "fullName": "Camille Nuoskala",
+            "orcid": "0009-0001-6741-887X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tampere University",
+                    "ror": "https://ror.org/033003e23"
+                },
+                {
+                    "name": "RISE Research Institutes of Sweden"
+                }
+            ],
+            "fullName": "Antonis Michalas",
+            "orcid": "0000-0002-0189-3520"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-15T13:13:35Z"
+        }
+    ],
+    "keywords": [
+        "Access Control",
+        "Attribute-Based Encryption",
+        "HEVC",
+        "Selective Video Encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/491.pdf",
+    "pid": "491",
+    "pubtype": {
+        "note": "The 15th ACM Conference on Data and Application Security and Privacy (CODASPY'25)",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Blind Brother: Attribute-Based Selective Video Encryption",
+    "year": 2025,
+    "repo": [
+        "https://github.com/davisking/dlib",
+        "https://github.com/zeutro/openabe",
+        "https://datareportal.com/reports/digital-2023-global-overview-report"
+    ]
+}
+,
+{
+    "abstract": "Hyperledger Fabric is a unique permissioned platform for implementing blockchain in a consortium. It has a distinct transaction flow of execute-order-validate. During the execution phase, a pre-determined set of endorsing peers execute a transaction and sign the transaction response. This process is termed endorsement. In the validation phase, peers validate the transaction with reference to an endorsement policy. The identity of the endorsing organizations is obtainable to all the nodes in the network through the endorser signature and endorsement policy. Knowing this has led to serious vulnerabilities in the blockchain network.\r\nIn this paper, we propose a privacy-preserving endorsement system which conceals both endorser signature and endorsement policy. Endorser is anonymized by replacing the signature scheme with a scoped-linkable threshold ring signature scheme. Endorsement policy is secured using Pedersen commitments and non-interactive proof of knowledge of integer vector. We also achieve efficiency in the computation by employing non-interactive proof of co-prime roots. We provide the necessary security analysis to prove that the proposed work guarantees anonymity and unlinkability properties. A comparative analysis of our work with an existing framework is provided which shows that the proposed scheme offers higher level of security and it is optimal in terms of efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Thiagarajar College of Engineering"
+                }
+            ],
+            "fullName": "Dharani J",
+            "orcid": "0000-0002-7105-2946"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Thiagarajar College of Engineering"
+                }
+            ],
+            "fullName": "Sundarakantham K",
+            "orcid": "0000-0003-1888-6754"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Technology, Tiruchirappalli"
+                }
+            ],
+            "fullName": "Kunwar Singh",
+            "orcid": "0000-0001-5889-0964"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Thiagarajar College of Engineering"
+                }
+            ],
+            "fullName": "Mercy Shalinie S",
+            "orcid": "0000-0003-3542-1879"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-15T13:18:58Z"
+        }
+    ],
+    "keywords": [
+        "Hyperledger Fabric",
+        "blockchain",
+        "linkable threshold ring signature",
+        "endorsement policy",
+        "non-interactive zero knowledge"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/492.pdf",
+    "pid": "492",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Endorser Peer Anonymization in Hyperledger Fabric for Consortium of Organizations",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Chou-Orlandi batch oblivious transfer (OT) protocol is a particularly attractive OT protocol that bridges the gap between practical efficiency and strong security guarantees and is especially notable due to its simplicity. The security analysis provided by Chou and Orlandi bases the security of their protocol on the hardness of the computational Diffie-Hellman ($\\mathsf{CDH}$) problem in prime-order groups. Concretely, in groups in which no better-than-generic algorithms are known for the $\\mathsf{CDH}$ problem, their security analysis yields that an attacker running in time $t$ and issuing $q$ random-oracle queries breaks the security of their protocol with probability at most $\\epsilon \\leq q^2 \\cdot t / 2^{\\kappa/2}$, where $\\kappa$ is the bit-length of the group's order. This concrete bound, however, is somewhat insufficient for 256-bit groups (e.g., for $\\kappa = 256$, it does not provide any guarantee already for $t = 2^{48}$ and $q = 2^{40}$). \r\n\r\nIn this work, we establish a tighter concrete security bound for the Chou-Orlandi protocol. First, we introduce the list square Diffie-Hellman ($\\ell\\text{-}\\mathsf{sqDH}$) problem and present a tight reduction from the security of the protocol to the hardness of solving $\\ell\\text{-}\\mathsf{sqDH}$. That is, we completely shift the task of analyzing the concrete security of the protocol to that of analyzing the concrete hardness of the $\\ell\\text{-}\\mathsf{sqDH}$ problem. Second, we reduce the hardness of the $\\ell\\text{-}\\mathsf{sqDH}$ problem to that of the decisional Diffie-Hellman ($\\mathsf{DDH}$) problem without incurring a multiplicative loss. Our key observation is that although $\\mathsf{CDH}$ and $\\mathsf{DDH}$ have the same assumed concrete hardness, relying on the hardness of $\\mathsf{DDH}$ enables our reduction to efficiently test the correctness of the solutions it produces. \r\n\r\nConcretely, in groups in which no better-than-generic algorithms are known for the $\\mathsf{DDH}$ problem, our analysis yields that an attacker running in time $t$ and issuing $q \\leq t$ random-oracle queries breaks the security of the Chou-Orlandi protocol with probability at most $\\epsilon \\leq t / 2^{\\kappa/2}$ (i.e., we eliminate the above multiplicative $q^2$ term). We prove our results within the standard real-vs-ideal framework considering static corruptions by malicious adversaries, and provide a concrete security treatment by accounting for the statistical distance between a real-model execution and an ideal-model execution.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Stellar Development Foundation"
+                },
+                {
+                    "name": "Tel-Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Iftach Haitner",
+            "orcid": "0000-0003-3167-3294"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hebrew University of Jerusalem",
+                    "ror": "https://ror.org/03qxff017"
+                },
+                {
+                    "name": "Coinbase"
+                }
+            ],
+            "fullName": "Gil Segev",
+            "orcid": "0000-0002-8073-579X"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-15T15:27:37Z"
+        }
+    ],
+    "keywords": [
+        "Oblivious Transfer",
+        "Concrete Security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/493.pdf",
+    "pid": "493",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tighter Concrete Security for the Simplest OT",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Side-channel vulnerabilities pose an increasing threat to cryptographically protected devices. Consequently, it is crucial to observe information leakages through physical parameters such as power consumption and electromagnetic (EM) radiation to reduce susceptibility during interactions with cryptographic functions. EM side-channel attacks are becoming more prevalent. PRESENT is a promising lightweight cryptographic algorithm expected to be incorporated into Internet-of-Things (IoT) devices in the future. This research investigates the EM side-channel robustness of PRESENT using a correlation attack model. This work extends our previous Correlation EM Analysis (CEMA) of PRESENT with improved results. The attack targets the Substitution box (S-box) and can retrieve 8 bytes of the 10-byte encryption key with a minimum of 256 EM waveforms. This paper presents the process of EM attack modelling, encompassing both simple and correlation attacks, followed by a critical analysis.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "Nilupulee A Gunathilake"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University"
+                }
+            ],
+            "fullName": "Owen Lo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University"
+                }
+            ],
+            "fullName": "William J Buchanan",
+            "orcid": "0000-0003-0809-3523"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "Ahmed Al-Dubai",
+            "orcid": "0000-0001-9758-5540"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-15T20:15:49Z"
+        }
+    ],
+    "keywords": [
+        "Electromagnetic side-channel analysis",
+        "SEMA",
+        "CEMA",
+        "PRESENT",
+        "cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/494.pdf",
+    "pid": "494",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Electromagnetic Side-Channel Analysis of PRESENT Lightweight Cipher",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We show that the aggregate signature scheme  [IEEE Syst. J.,  2023, 17(3), 3822-3833] is insecure against forgery attack. This flaw is due to that the ephemeral key or ephemeral value chosen in the signing phase is not indeed  bound to the final signature. An adversary can sign any message while the verifier cannot find the fraud. We also suggest a revising method to frustrate this attack.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-16T01:11:31Z"
+        }
+    ],
+    "keywords": [
+        "Certificateless public key",
+        "aggregate signature",
+        "forgery attack",
+        "vehicular ad-hoc network",
+        "ephemeral key."
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/495.pdf",
+    "pid": "495",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Security-Enhanced Pairing-Free Certificateless Aggregate Signature for  Vehicular Ad-Hoc Networks, Revisited",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.46586/tches.v2025.i2.385-419",
+    "abstract": "Recently, Differential Fault Attacks (DFAs) have proven highly effective against stream ciphers designed for Hybrid Homomorphic Encryption (HHE). In this work, we present a table-based DFA framework called the \\textit{shortcut attack}, which generalizes the attack proposed by Wang and Tang on the cipher \\textsf{Elisabeth}. \r\nThe framework applies to a broad sub-family of ciphers following the Group Filter Permutator (GFP) paradigm and enhances previous DFAs by improving both the fault identification and path generation steps. Notably, the shortcut attack circumvents the issue of function representation, allowing successful attacks even when the cipher's filter function cannot be represented over the ring it is defined on.\r\n\r\nAdditionally, we provide complexity estimates for the framework and apply the shortcut attack to \\textsf{Elisabeth-4} and its patches. As a result, we optimize the DFA on \\textsf{Elisabeth-4}, requiring fewer keystreams and running faster than previous methods. Specifically, we achieve a DFA that requires only $3000$ keystreams, which is one-fifth of the previous best result. We also successfully mount a practical DFA on \\textsf{Gabriel-4} and provide a theoretical DFA for \\textsf{Elisabeth-b4}.\r\n\r\nFor the latest patch, \\textsf{Margrethe-18-4}, which follows the more general Mixed Filter Permutator (MFP) paradigm, we present a DFA in a stronger model. To the best of our knowledge, these are the first DFA results on the patches of \\textsf{Elisabeth-4}. Finally, we derive security margins to prevent shortcut attacks on a broad sub-family of MFP ciphers, which can serve as parameter recommendations for designers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Weizhe Wang",
+            "orcid": "0009-0008-7220-229X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Luxembourg",
+                    "ror": "https://ror.org/036x5ad56"
+                }
+            ],
+            "fullName": "Pierrick M\u00e9aux",
+            "orcid": "0000-0001-5733-4341"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Deng Tang",
+            "orcid": "0000-0002-8373-9200"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-16T10:53:54Z"
+        }
+    ],
+    "keywords": [
+        "Differential Fault Attack",
+        "Hybrid Homomorphic Encryption",
+        "Elisabeth-4",
+        "Elisabeth-b4",
+        "Gabriel-4",
+        "Margrethe-18-"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/496.pdf",
+    "pid": "496",
+    "pubtype": {
+        "pubtype": "TCHES",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Shortcut2Secrets: A Table-based Differential Fault Attack Framework",
+    "year": 2025,
+    "repo": [
+        "https://github.com/SJTUwwz/DFA_Elisabeth_family",
+        "https://github.com/SJTUwwz/DFA_Elisabeth_family",
+        "https://github.com/SJTUwwz/DFA_Elisabeth_family"
+    ]
+}
+,
+{
+    "abstract": "Scloud+ is an unstructured LWE-based key encapsulation mechanism (KEM) with conservative quantum security, in which ternary secrets and lattice coding are incorporated for higher computational and communication efficiency. However, its efficiencies are still much inferior to those of the structured LWE-based KEM, like ML-KEM (standardized by NIST). In this paper, we present a configurable hardware architecture for Scloud+.KEM to improve the computational efficiency. Many algorithmic and architectural co-optimizations are proposed to reduce the complexity and increase the degree of parallelism. Specially, the matrix multiplications are computed by a block in serial and the block is calculated in one cycle, without using any multipliers. In addition, the random bits all are generated by an unfolded Keccak core, well matched with the data flow required by the block matrix multiplier. The proposed design is coded in Verilog and implemented under the SMIC 40nm LP CMOS technology. The synthesized results show that Scloud+.KEM-128 only costs 23.0 $us$, 24.3 $us$, and 24.6 $us$ in the KeyGen, Encaps, and Decaps stages, respectively, with an area consumption of 0.69 $mm^2$, significantly narrowing the gap with the state-of-the-art of Kyber hardware implementation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanjing University"
+                }
+            ],
+            "fullName": "Jing Tian"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanjing University"
+                }
+            ],
+            "fullName": "Yaodong Wei"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanjing University"
+                }
+            ],
+            "fullName": "Dejun Xu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanjing University"
+                }
+            ],
+            "fullName": "Kai Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                }
+            ],
+            "fullName": "Anyu Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong Institute of Blockchain"
+                }
+            ],
+            "fullName": "Zhiyuan Qiu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Huawei Technologies"
+                }
+            ],
+            "fullName": "Fu Yao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Huawei Technologies"
+                }
+            ],
+            "fullName": "Guang Zeng"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-16T14:20:17Z"
+        }
+    ],
+    "keywords": [
+        "post-quantum cryptography",
+        "learning with errors",
+        "lattice code",
+        "Hardware Implementation",
+        "ASIC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/497.pdf",
+    "pid": "497",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fast Scloud+: A Fast Hardware Implementation for the Unstructured LWE-based KEM - Scloud+",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper we provide new theoretical and empirical evidences that gradient-based deep learning profiling attacks (DL-SCA) suffer from masking schemes. This occurs through an initial stall of the learning process: the so-called plateau effect. To understand why, we derive an analytical expression of a DL-SCA model targeting simulated traces which enables us to study an analytical expression of the loss. By studying the loss landscape of this model, we show that not only do the magnitudes of the gradients decrease as the order of masking increases, but the loss landscape also exhibits a prominent saddle point interfering with the optimization process. From these observations, we (1) propose the usage of a second-order optimization algorithm mitigating the impact of low-gradient areas. In addition, we show how to leverage the intrinsic sparsity of valuable information in SCA traces to better pose the DL-SCA problem. To do so, we (2) propose to use the implicit regularization properties of the sparse mirror descent. These propositions are gathered in a new publicly available optimization algorithm, Scoop. Scoop combines second-order derivative of the loss function in the optimization process, with a sparse stochastic mirror descent. We experimentally show that Scoop pushes further the current limitations of DL-SCA against simulated traces, and outperforms the state-of-the-art on the ASCADv1 dataset in terms of number of traces required to retrieve the key, perceived information and plateau length. Scoop also performs the first non-worst-case attack on the ASCADv2 dataset. On simulated traces, we show that using Scoop reduces the DL-SCA time complexity by the equivalent of one masking order.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Thales (France)",
+                    "ror": "https://ror.org/04emwm605"
+                },
+                {
+                    "name": "LIRMM, Univ. Montpellier, CNRS",
+                    "ror": "https://ror.org/013yean28"
+                }
+            ],
+            "fullName": "Nathan Rousselot"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Thales (France)",
+                    "ror": "https://ror.org/04emwm605"
+                }
+            ],
+            "fullName": "Karine Heydemann",
+            "orcid": "0000-0003-2092-924X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LIRMM, Univ. Montpellier, CNRS",
+                    "ror": "https://ror.org/013yean28"
+                }
+            ],
+            "fullName": "Lo\u00efc Masure",
+            "orcid": "0000-0003-2978-4067"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Thales (France)",
+                    "ror": "https://ror.org/04emwm605"
+                }
+            ],
+            "fullName": "Vincent Migairou"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-16T17:32:36Z"
+        }
+    ],
+    "keywords": [
+        "Side-channel Analysis",
+        "Profiling Attacks",
+        "Deep learning",
+        "Masking",
+        "Optimization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is a preprint of an article and is currently being revised.",
+    "pdffile": "2025/498.pdf",
+    "pid": "498",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Scoop: An Optimizer for Profiling Attacks against Higher-Order Masking",
+    "year": 2025,
+    "repo": [
+        "https://github.com/nathan-rousselot/scoop",
+        "https://github.com/nathan-rousselot/scoop"
+    ]
+}
+,
+{
+    "abstract": "Side-channel analysis (SCA) is a growing field in\r\nhardware security where adversaries extract secret information\r\nfrom embedded devices by measuring physical observables like\r\npower consumption and electromagnetic emanation. SCA is a\r\nsecurity assessment method used by governmental labs, standardization\r\nbodies, and researchers, where testing is not just\r\nlimited to standardized cryptographic circuits, but it is expanded\r\nto AI accelerators, Post Quantum circuits, systems, etc. Despite\r\nits importance, SCA is performed on an ad hoc basis in the\r\nsense that its flow is not systematically optimized and unified\r\namong labs. As a result, the current solutions do not account\r\nfor fair comparisons between analyses. Furthermore, neglecting\r\nthe need for interoperability between datasets and SCA metric\r\ncomputation increases students\u2019 barriers to entry. To address\r\nthis, we introduce SCAPEgoat, a Python-based SCA library\r\nwith three key modules devoted to defining file format, capturing\r\ninterfaces, and metric calculation. The custom file framework\r\norganizes side-channel traces using JSON for metadata, offering\r\na hierarchical structure similar to HDF5 commonly applied in\r\nSCA, but more flexible and human-readable. The metadata can\r\nbe queried with regular expressions, a feature unavailable in\r\nHDF5. Secondly, we incorporate memory-efficient SCA metric\r\ncomputations, which allow using our functions on resource-restricted\r\nmachines. This is accomplished by partitioning datasets\r\nand leveraging statistics-based optimizations on the metrics. In\r\ndoing so, SCAPEgoat makes the SCA more accessible to newcomers\r\nso that they can learn techniques and conduct experiments\r\nfaster and with the possibility to expand on in the future.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Dev Mehta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Trey Marcantino"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Mohammad Hashemi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Sam Karkache"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Dillibabu Shanmugam"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Patrick Schaumont"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Fatemeh Ganji"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-16T17:43:10Z"
+        }
+    ],
+    "keywords": [
+        "Side-channel Analysis",
+        "DPA",
+        "TVLA",
+        "JSON"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/499.pdf",
+    "pid": "499",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SCAPEgoat: Side-channel Analysis Library",
+    "year": 2025,
+    "repo": [
+        "https://github.com/vernamlab/SCApeGoat",
+        "[Online] https://github.com/CEA-Leti/secbench",
+        "[Online] https://github.com/CEA-Leti/secbench",
+        "https://github.com/ermin-sakic/second-order-dpa/blob/master/second_order.m",
+        "https://github.com/ermin-sakic/second-order-dpa/blob/master/second_order.m",
+        "[Online] https://github.com/vernamlab/Bake-it-till-you-make-it",
+        "[Online] https://github.com/vernamlab/Bake-it-till-you-make-it",
+        "[Online] https://github.com/eshard/scared",
+        "[Online] https://github.com/Ledger-Donjon/lascar/tree/master",
+        "[Online] https://github.com/Ledger-Donjon/lascar/tree/master",
+        "[Online] https://github.com/google/sedpack/tree/main",
+        "[Online] https://github.com/google/sedpack/tree/main"
+    ]
+}
+,
+{
+    "abstract": "DNA edit distance (ED) measures the minimum number of single nucleotide insertions, substitutions, or deletions required to convert a DNA sequence into another. ED has broad applications in healthcare such as sequence alignment, genome assembly, functional annotation, and drug discovery. Privacy-preserving computation is essential in this context to protect sensitive genomic data. Nonetheless, the existing secure DNA edit distance solutions lack efficiency when handling large data sequences or resort to approximations and fail to accurately compute the metric.\r\n\r\nIn this work, we introduce secureED, a protocol that tackles these limitations, resulting in a significant performance enhancement of approximately $2-24\\times$ compared to existing methods. Our protocol computes a secure ED between two genomes, each comprising $1,000$ letters, in just a few seconds. The underlying technique of our protocol is a novel approach that transforms the established approximate matching technique (i.e., the Ukkonen algorithm) into exact matching, exploiting the inherent similarity in human DNA to achieve cost-effectiveness. Furthermore, we introduce various optimizations tailored for secure computation in scenarios with a limited input domain, such as DNA sequences composed solely of the four nucleotide letters.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Jiahui Gao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Yagaagowtham Palanikuma"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nillion"
+                }
+            ],
+            "fullName": "Dimitris Mouris",
+            "orcid": "0000-0002-2601-203X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Duong Tung Nguyen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Ni Trieu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-16T23:09:02Z"
+        }
+    ],
+    "keywords": [
+        "Applied Cryptography",
+        "Dynamic Programming",
+        "DNA Matching",
+        "Edit Distance",
+        "Genomics",
+        "Multiparty Computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/500.pdf",
+    "pid": "500",
+    "pubtype": {
+        "note": "PoPETs 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SecurED: Secure Multiparty Edit Distance for Genomic Sequences",
+    "year": 2025,
+    "repo": [
+        "https://github.com/asu-crypto/secureED",
+        "https://github.com/hdvanegasm/sec-edit-distance",
+        "https://github.com/emp-toolkit"
+    ]
+}
 ]
