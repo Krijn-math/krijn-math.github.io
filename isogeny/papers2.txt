@@ -84,7 +84,7 @@ lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki mori
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;last_year;;;none
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;last_year;;;none
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;last_year;;;none
-isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;last_year;;;https://issikebrokenyet.github.io/
+isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;other;;;https://issikebrokenyet.github.io/
 aprèssqi: extra fast verification for sqisign using extension-field signing;;;maria corte-real santos, jonathan komada eriksen, michael meyer, krĳn reĳnders;;;2023/1559;;;other;;;https://github.com/TheSICQ/ApresSQI
 computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;other;;;https://github.com/Jonathke/Computing-Optimal-Embeddings
 improved algorithms for finding fixed-degree isogenies between supersingular elliptic curves;;;benjamin benčina, péter kutas, simon-philipp merz, christophe petit, miha stopar, charlotte weitkämper;;;2023/1618;;;other;;;https://github.com/isogeny-finding/improved-isogeny-finding
