@@ -35837,4 +35837,369 @@
         "https://github.com/emp-toolkit"
     ]
 }
+,
+{
+    "abstract": "Due to their simple security assessments, permutation-based pseudo-random functions (PRFs) have become widely used in cryptography. It has been shown that PRFs using a single $n$-bit permutation achieve $n/2$ bits of security, while those using two permutation calls provide $2n/3$ bits of security in the classical setting. This paper studies the security of permutation-based PRFs within the Q1 model, where attackers are restricted to classical queries and offline quantum computations. We present improved quantum-time/classical-data tradeoffs compared with the previous attacks. Specifically, under the same assumptions/hardware as Grover's exhaustive search attack, i.e. the offline Simon algorithm, we can recover keys in quantum time $\\tilde{O}(2^{n/3})$, with $O(2^{n/3})$ classical queries and $O(n^2)$ qubits. Furthermore, we enhance previous superposition attacks by reducing the data complexity from exponential to polynomial, while maintaining the same time complexity. This implies that permutation-based PRFs become vulnerable when adversaries have access to quantum computing resources. It is pointed out that the above quantum attack can be used to quite a few cryptography, including PDMMAC and pEDM, as well as general instantiations like XopEM, EDMEM, EDMDEM, and others.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Heilongjiang University"
+                }
+            ],
+            "fullName": "Hong-Wei Sun"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing University of Posts and Telecommunications",
+                    "ror": "https://ror.org/04w9fbh59"
+                }
+            ],
+            "fullName": "Fei Gao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Heilongjiang University"
+                }
+            ],
+            "fullName": "Rong-Xue Xu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing University of Posts and Telecommunications",
+                    "ror": "https://ror.org/04w9fbh59"
+                }
+            ],
+            "fullName": "Dan-Dan Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology",
+                    "ror": "https://ror.org/02pn5rj08"
+                }
+            ],
+            "fullName": "Zhen-Qiang Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Heilongjiang University"
+                }
+            ],
+            "fullName": "Ke-Jia Zhang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-03-20T01:38:48Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-03-17T06:49:43Z"
+        }
+    ],
+    "keywords": [
+        "symmetric cryptography",
+        "pseudorandom function",
+        "quantum algorithm",
+        "quantum cryptanalysis",
+        "Q1 model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/501.pdf",
+    "pid": "501",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum Key-Recovery Attacks on Permutation-Based Pseudorandom Functions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Registration-based encryption (RBE) is a recently developed alternative to identity-based encryption, that mitigates the well-known key-escrow problem by letting each user sample its own key pair. In RBE, the key authority is substituted by a key curator, a completely transparent entity whose only job is to reliably aggregate users' keys. However, one limitation of all known RBE scheme is that they all rely on one-time trusted setup, that must be computed honestly. \r\n    \r\n    In this work, we ask whether this limitation is indeed inherent and we initiate the systematic study of RBE in the plain model, without any common reference string. We present the following main results:\r\n        - (Definitions) We show that the standard security definition of RBE is unachievable without a trusted setup and we propose a slight weakening, where one honest user is required to be registered in the system.\r\n        - (Constructions) We present constructions of RBE in the plain model, based on standard cryptographic assumptions. Along the way, we introduce the notions of non-interactive witness indistinguishable (NIWI) proofs secure against chosen statements attack and re-randomizable RBE, which may be of independent interest.\r\n        A major limitation of our constructions, is that users must be updated upon every new registration. \r\n        - (Lower Bounds) We show that this limitation is in some sense inherent. We prove that any RBE in the plain model that satisfies a certain structural requirement, which holds for all known RBE constructions, must update all but a vanishing fraction of the users, upon each new registration. This is in contrast with the standard RBE settings, where users receive a logarithmic amount of updates throughout the lifetime of the system.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Jesko Dujmovic",
+            "orcid": "0000-0003-1043-5094"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Giulio Malavolta",
+            "orcid": "0009-0009-9737-0094"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Wei Qi"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-17T13:18:14Z"
+        }
+    ],
+    "keywords": [
+        "RBE",
+        "Registration Based Encryption",
+        "Lower Bounds",
+        "CRS",
+        "NIWI",
+        "iO"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/502.pdf",
+    "pid": "502",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Registration-Based Encryption in the Plain Model",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This work introduce a new approach called Max bias analysis for the entropy computation of structures of Free Ring Oscillator-based Physical Random Number Generator. It employs the stochastic model based on the well-established Wiener process, specifically adapted to only capture thermal noise contributions while accounting for potential non-zero bias in the duty cycle.\r\nOur analysis is versatile, applicable to combinations of multiple sampled Ring Oscillator (RO) filtering by any function. The entropy computation takes as inputs the parameters of the thermal stochastic model and delivers directly a proven bound for both Shannon entropy and min-entropy to fulfill AIS31 and NIST SP 800-90 B. As an example, we apply the new methodology on an enhanced structure of TRNG combining several free-running Ring Oscillators filtered by a vectorial function built from a linear error correcting code that optimizes the functional performance in terms of [entropy rate/silicium area used] and that maintains the mathematical proof of the entropy lower bound as simple as possible.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Thales (France)",
+                    "ror": "https://ror.org/04emwm605"
+                }
+            ],
+            "fullName": "Nicolas David"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Thales (France)",
+                    "ror": "https://ror.org/04emwm605"
+                }
+            ],
+            "fullName": "Eric Garrido"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-17T14:01:29Z"
+        }
+    ],
+    "keywords": [
+        "Ring Oscillator",
+        "MO-TRNG \u00b7 Thermal Noise",
+        "Entropy",
+        "Bias",
+        "Hidden Wiener Process",
+        "Vectorial Conditioning"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/503.pdf",
+    "pid": "503",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Max Bias Analysis: A New Approach on Computing the Entropy of Free Ring-Oscillator",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A secret sharing scheme starts with a secret and then derives from it\r\ncertain shares (or shadows)  which are distributed to users.  \r\nThe secret may be recovered only by certain\r\npredetermined groups. In case of compartmented secret sharing, the \r\nset of users is partitioned into compartments and the secret \r\ncan be recovered only if the number of participants from \r\nany compartment is greater than or equal to a fixed compartment threshold\r\nand the total number of participants is greater than or equal to a global threshold.\r\n\r\nIn this paper we  use the Chinese Remainder Theorem for Polynomial Rings in order to construct an  ideal compartmented secret sharing scheme, inspired by the work from [20].",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Faculty of Computer Science, Alexandru Ioan Cuza University of Iasi,  Romania"
+                }
+            ],
+            "fullName": "Alexandru-Valentin Basaga"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Faculty of Computer Science, Alexandru Ioan Cuza University of Iasi,  Romania"
+                }
+            ],
+            "fullName": "Sorin Iftene"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-17T18:12:54Z"
+        }
+    ],
+    "keywords": [
+        "secret sharing",
+        "compartmented access structure",
+        "Chinese remainder theorem"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/504.pdf",
+    "pid": "504",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Ideal Compartmented Secret Sharing Scheme Based on the Chinese Remainder Theorem for Polynomial Rings",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We describe a strategy for a nation to acquire majority stake in Bitcoin with zero cost to the taxpayers of the nation. We propose a bitcoin fork sponsored by the the government of the nation, and backed by the full faith of treasury of the nation, such that the genesis block of this fork attributes fixed large amount of new kinds of tokens called strategic-reserve-bitcoin tokens (SRBTC) to the nation's treasury, which is some  multiple (greater than one) of the amount of all Bitcoin tokens (BTC) currently set in the Bitcoin protocol. The BTC tokens continue to be treated 1:1 as SRBTC tokens in the forked chain. The only capital that the nation puts up is its explicit guarantee that the SRBTC tokens of the fork will be accepted as legal tender, such as payment of tax to the treasury.\r\n\r\nWe suggest that this is a better approach than starting a new blockchain that mimics Bitcoin, as it will be  partially fair to the current holders of Bitcoin, which in turn would make it competitive in the space of other such possible forks by other powerful nations. Moreover, such a proof-of-work blockchain  retains its egalitarian and democratic nature, which competitively deters the said nation from any dilutions in the future. \r\n\r\nTo justify our proposal we setup three competitive games, and show strategies for different players that are in Nash equilibrium and which throw further light on these claims. In particular, \r\n\r\n1. The first game shows that if the only two alternatives for investors is to invest in BTC or SRBTC, then individuals who have a certain fraction $\\theta$ of their wealth already invested in BTC, will invest new money in the original chain, whereas the individuals whose current wealth invested in BTC is less than the $\\theta$ fraction will invest new money in SRBTC.\r\n2. The second game shows that if there is a third alternative for investment, which is cash that is losing value (inflation-adjusted) by a percentage $d$, then the investors who had less than $\\theta$ fraction of wealth in Bitcoin, will invest in SRBTC only if the dilution of SRBTC is large enough (as an increasing (linear) function of $1/d$). Here by dilution we mean the new SRBTC tokens that are allowed to be eventually mined in the fork.\r\n3.  The third game shows that investors would prefer a fork of Bitcoin over a replica of Bitcoin that doesn't value original BTC, when both are available and even if both are backed similarly by one or more nations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IBM T. J. Watson Research Center"
+                }
+            ],
+            "fullName": "Charanjit Singh Jutla"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Mysten Labs"
+                }
+            ],
+            "fullName": "Arnab Roy"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-17T19:12:17Z"
+        }
+    ],
+    "keywords": [
+        "BitCoin",
+        "Nash Equilibrium",
+        "Blockchain",
+        "Fork",
+        "game theory",
+        "price stability",
+        "hash difficulty"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/505.pdf",
+    "pid": "505",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Capitalized Bitcoin Fork for National Strategic Reserve",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Estonian i-voting experience is probably the richest to analyze; a country that is considered a pioneer in digitizing both the government and private sector since 2001, and hence digital voting in 2005, yet there are still some complaints submitted, critics and remarks to consider about the IVXV system. In this paper, we introduce a Systemization of Knowledge of the Estonian IVXV i-voting system and propose some added security enhancements. The presented SoK includes applications implemented by election observers in 2023 & 2024 elections, which, to our knowledge, has never been mentioned and/or analyzed in the academic literature before. The paper also updates the general knowledge about an extra right given to auditors \r\n(but not observers) in the June 2024 European election, recent complaints, and about newer solutions suggested by academia in 2024. Finally, we discuss the current system status in 2024 EP elections and propose our own suggestions to some problems stated in the OSCE-ODIHR 2023 report that are still there.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Shymaa M. Arafat",
+            "orcid": "0009-0009-7571-4060"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-17T19:16:27Z"
+        }
+    ],
+    "keywords": [
+        "IVXV",
+        "El-Gamal Encryption",
+        "range proofs",
+        "Verkle Trees",
+        "vote buying",
+        "counted as-casted",
+        "universal verifiability."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/506.pdf",
+    "pid": "506",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Estonian Internet Voting System, IVXV, SoK  and Suggestions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
