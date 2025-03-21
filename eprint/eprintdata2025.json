@@ -36202,4 +36202,1392 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Zero-knowledge (ZK) proofs have been recently explored for the integrity of machine learning (ML) inference. However, these protocols suffer from high computational overhead, with the primary bottleneck stemming from the evaluation of non-linear functions. In this paper, we propose the first systematic ZK proof framework for non-linear mathematical functions in ML using the perspective of table lookup. The key challenge is that table lookup cannot be directly applied to non-linear functions in ML since it would suffer from inefficiencies due to the intolerably large table. Therefore, we carefully design several important building blocks, including digital decomposition, comparison, and truncation, such that they can effectively utilize table lookup with a quite small table size while ensuring the soundness of proofs. Based on these blocks, we implement complex mathematical operations and further construct ZK proofs for current mainstream non-linear functions in ML such as ReLU, sigmoid, and normalization. The extensive experimental evaluation shows that our framework achieves 50 \u223c 179\u00d7 runtime improvement compared to the state-of-the-art work, while maintaining a similar level of communication efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electronic Science and Technology of China"
+                }
+            ],
+            "fullName": "Meng Hao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electronic Science and Technology of China"
+                }
+            ],
+            "fullName": "Hanxiao Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electronic Science and Technology of China"
+                }
+            ],
+            "fullName": "Hongwei Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northwestern University"
+                }
+            ],
+            "fullName": "Chenkai Weng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electronic Science and Technology of China"
+                }
+            ],
+            "fullName": "Yuan Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electronic Science and Technology of China"
+                }
+            ],
+            "fullName": "Haomiao Yang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University"
+                }
+            ],
+            "fullName": "Tianwei Zhang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-18T04:27:54Z"
+        }
+    ],
+    "keywords": [
+        "Zero-knowledge proofs",
+        "ZKML"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/507.pdf",
+    "pid": "507",
+    "pubtype": {
+        "note": "USENIX Security 2024",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Scalable Zero-knowledge Proofs for Non-linear Functions in Machine Learning",
+    "year": 2025,
+    "repo": [
+        "https://github.com/CryptMatrix/ZKMath",
+        "https://github.com/emp-toolkit"
+    ]
+}
+,
+{
+    "abstract": "In this work, we study the communication complexity of constant-round secure multiparty computation (MPC) against a fully malicious adversary and consider both the honest majority setting and the dishonest majority setting. In the (strong) honest majority setting (where $t=(1/2-\\epsilon)n$ for a constant $\\epsilon$), the best-known result without relying on FHE is given by Beck et al. (CCS 2023) based on the LPN assumption that achieves $O(|C|\\kappa)$ communication, where $\\kappa$ is the security parameter and the achieved communication complexity is independent of the number of participants. In the dishonest majority setting, the best-known result is achieved by Goyal et al. (ASIACRYPT 2024), which requires $O(|C|n\\kappa)$ bits of communication and is based on the DDH and LPN assumptions.\r\n\r\nIn this work, we achieve the following results: (1) For any constant $\\epsilon<1$, we give the first constant-round MPC in the dishonest majority setting for corruption threshold $t<(1-\\epsilon)n$ with $O(|C|\\kappa+D (n+\\kappa)^2\\kappa)$ communication assuming random oracles and oblivious transfers, where $D$ is the circuit depth. (2) We give the first constant-round MPC in the standard honest majority setting (where $t=(n-1)/2$) with $O(|C|\\kappa+D (n+\\kappa)^2\\kappa)$ communication only assuming random oracles. \r\n\r\nUnlike most of the previous constructions of constant-round MPCs that are based on multiparty garbling, we achieve our result by letting each party garble his local computation in a non-constant-round MPC that meets certain requirements. We first design a constant-round MPC that achieves $O(|C|\\kappa + Dn^2\\kappa)$ communication assuming random oracles in the strong honest majority setting of $t=n/4$. Then, we combine the party virtualization technique and the idea of MPC-in-the-head to boost the corruption threshold to $t<(1-\\epsilon)n$ for any constant $\\epsilon<1$ assuming oblivious transfers to achieve our first result. Finally, our second result is obtained by instantiating oblivious transfers using a general honest-majority MPC and the OT extension technique built on random oracles.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                },
+                {
+                    "name": "Carnegie Mellon University"
+                }
+            ],
+            "fullName": "Vipul Goyal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                }
+            ],
+            "fullName": "Junru Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Los Angeles"
+                }
+            ],
+            "fullName": "Rafail Ostrovsky"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                },
+                {
+                    "name": "Shanghai Qi Zhi Institute"
+                }
+            ],
+            "fullName": "Yifan Song"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-18T09:00:56Z"
+        }
+    ],
+    "keywords": [
+        "secure multiparty computation",
+        "communication complexity",
+        "round complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/508.pdf",
+    "pid": "508",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Towards Building Scalable Constant-Round MPC from Minimal Assumptions via Round Collapsing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We present almost-optimal lattice-based attribute-based encryption (ABE) and laconic function evaluation (LFE). For depth d circuits over $\\ell$-bit inputs, we obtain\r\n\r\n* key-policy (KP) and ciphertext-policy (CP) ABE schemes with ciphertext, secret key and public key size $O(1)$;\r\n\r\n* LFE with ciphertext size $\\ell + O(1)$ as well as CRS and digest size $O(1)$;\r\n\r\nwhere O(\u00b7) hides poly(d, \u03bb) factors. The parameter sizes are optimal, up to the poly(d) dependencies. The security of our schemes rely on succinct LWE (Wee, CRYPTO 2024). Our results constitute a substantial improvement over the state of the art; none of our results were known even under the stronger evasive LWE assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Hoeteck Wee"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-18T14:23:29Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/509.pdf",
+    "pid": "509",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Almost Optimal KP and CP-ABE for Circuits from Succinct LWE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Federated Learning (FL) has recently emerged as one of the leading paradigms for collaborative machine learning, serving as a tool for model computation without a need to expose one\u2019s privately stored data. However, despite its advantages, FL systems face severe challenges within its own security solutions that address both privacy and robustness of models. This paper focuses on vulnerabilities within the domain of FL security with emphasis on model-robustness. Identifying critical gaps in current defences, particularly against adaptive adversaries which modify their attack strategies after being disconnected and rejoin systems to continue attacks. To our knowledge, other surveys in this domain do not cover the concept of adaptive adversaries, this along with the significance of their impact serves as the main motivation for this work. Our contributions are fivefold: (1) we present a comprehensive overview of FL systems, presenting a complete summary of its fundamental building blocks, (2) an extensive overview of existing vulnerabilities that target FL systems in general, (3) highlight baseline attack vectors as well as state-of-the-art approaches to development of attack methods and defence mechanisms, (4) introduces a novel baseline method of attack leveraging reconnecting malicious clients, and (5) identifies future research directions to address and counter adaptive attacks. We demonstrate through experimental results that existing baseline secure aggregation rules used in other works for comparison such as Krum and Trimmed Mean are insufficient against those attacks. Further, works improving upon those algorithms do not address this concern either. Our findings serve as a basis for redefining FL security paradigms in the direction of adaptive adversaries.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Plymouth",
+                    "ror": "https://ror.org/008n7pv89"
+                }
+            ],
+            "fullName": "Jakub Kacper Szel\u0105g",
+            "orcid": "0009-0000-9635-0598"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Plymouth",
+                    "ror": "https://ror.org/008n7pv89"
+                }
+            ],
+            "fullName": "Ji-Jian Chin",
+            "orcid": "0000-0001-9809-6976"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Multimedia University",
+                    "ror": "https://ror.org/04zrbnc33"
+                }
+            ],
+            "fullName": "Sook-Chin Yip",
+            "orcid": "0000-0002-8575-4244"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-18T15:44:42Z"
+        }
+    ],
+    "keywords": [
+        "Machine Learning",
+        "Federated Learning",
+        "Secure Aggregation",
+        "Adaptive Adversaries",
+        "Byzantine-Robust Aggregation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/510.pdf",
+    "pid": "510",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Adaptive Adversaries in Byzantine-Robust Federated Learning: A survey.",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Single Sign-On (SSO) is a popular authentication mechanism enabling users to access multiple web services with a single set of credentials. Despite its convenience, SSO faces outstanding privacy challenges. The Identity Provider (IdP) represents a single point of failure and can track users across different Relying Parties (RPs). Multiple colluding RPs may track users through common identity attributes. In response, anonymous credential-based SSO solutions have emerged to offer privacy-preserving authentication without revealing unnecessary user information. However, these solutions face two key challenges: supporting RP authentication without compromising user unlinkability and maintaining compatibility with the predominant Authorization Code Flow (ACF).\r\n\r\nThis paper introduces VeriSSO, a novel SSO protocol based on verifiable credentials (VC) that supports RP authentication while preserving privacy and avoiding single points of failure. VeriSSO employs an independent authentication server committee to manage RP and user authentication, binding RP authentication with credential-based anonymous user authentication. This approach ensures user unlinkability while supporting RP authentication and allows RPs to continue using their existing verification routines with identity tokens as in the ACF workflow. VeriSSO's design also supports lawful de-anonymization, ensuring user accountability for misbehavior during anonymity. Experimental evaluations of VeriSSO demonstrate its efficiency and practicality, with authentication processes completed within 100 milliseconds.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Kentucky",
+                    "ror": "https://ror.org/02k3smh20"
+                }
+            ],
+            "fullName": "Ifteher Alom"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Kentucky"
+                }
+            ],
+            "fullName": "Sudip Bhujel"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Kentucky",
+                    "ror": "https://ror.org/02k3smh20"
+                }
+            ],
+            "fullName": "Yang Xiao"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T01:32:26Z"
+        }
+    ],
+    "keywords": [
+        "User Authentication",
+        "Privacy-Preserving SSO",
+        "Anonymization",
+        "Decentralization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/511.pdf",
+    "pid": "511",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "VeriSSO: A Privacy-Preserving Legacy-Compatible Single Sign-On Protocol Using Verifiable Credentials",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Advanced Encryption Standard (AES) in Galois/Counter Mode (GCM) delivers both confidentiality and integrity yet poses performance and security challenges on resource-limited microcontrollers. In this paper, we present an optimized AES-GCM implementation for the ARM Cortex-M4 that combines Fixslicing AES with the FACE (Fast AES-CTR Encryption) strategy, significantly reducing redundant computations in AES-CTR. We further examine two GHASH implementations\u2014a 4-bit Table-based approach and a Karatsuba-based constant-time variant\u2014to balance speed, memory usage, and resistance to timing attacks. Our evaluations on an STM32F4 microcontroller show that Fixslicing+FACE reduces AES-128 GCTR cycle counts by up to 19.41\\%, while the Table-based GHASH achieves nearly double the speed of its Karatsuba counterpart. These results confirm that, with the right mix of bitslicing optimizations, counter-mode caching, and lightweight polynomial multiplication, secure and efficient AES-GCM can be attained even on low-power embedded devices.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Hyunjun Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Hwajeong Seo"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T01:35:33Z"
+        }
+    ],
+    "keywords": [
+        "AES-GCM",
+        "ARM Cortex-M4",
+        "Optimized Implementation",
+        "Embedded Systems"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/512.pdf",
+    "pid": "512",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Optimizing AES-GCM on ARM Cortex-M4: A Fixslicing and FACE-Based Approach",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper formalizes the notion of server-aided anonymous credentials (SAACs), a new model for anonymous credentials (ACs) where, in the process of showing a credential, the holder is helped by additional auxiliary information generated in an earlier (anonymous) interaction with the issuer. This model enables lightweight instantiations of 'publicly verifiable and multi-use' ACs from pairing-free elliptic curves, which is important for compliance with existing national standards. A recent candidate for the EU Digital Identity Wallet, BBS#, roughly adheres to the SAAC model we have developed; however, it lacks formal security definitions and proofs.\r\n\r\nIn this paper, we provide rigorous definitions of security for SAACs, and show how to realize SAACs from the weaker notion of keyed-verification ACs (KVACs) and special types of oblivious issuance protocols for zero-knowledge proofs. We instantiate this paradigm to obtain two constructions: one achieves statistical anonymity with unforgeability under the Gap $q$-SDH assumption, and the other achieves computational anonymity and unforgeability under the DDH assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Rutchathon Chairattana-Apirom",
+            "orcid": "0009-0006-1990-1329"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Franklin Harding",
+            "orcid": "0009-0004-9811-1610"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Anna Lysyanskaya",
+            "orcid": "0000-0002-3567-3550"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Stefano Tessaro",
+            "orcid": "0000-0002-3751-8546"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T08:49:06Z"
+        }
+    ],
+    "keywords": [
+        "Anonymous Credentials",
+        "BBS Signatures",
+        "Pairing-free Groups"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/513.pdf",
+    "pid": "513",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Server-Aided Anonymous Credentials",
+    "year": 2025,
+    "repo": [
+        "https://github.com/user-attachments/files/15904122/cryptographers-feedback.pdf",
+        "https://github.com/user-attachments/files/15904122/cryptographers-feedback.pdf"
+    ]
+}
+,
+{
+    "abstract": "We present a unifying framework for proving the knowledge-soundness of KZG-like polynomial commitment schemes, encompassing both univariate and multivariate variants. By conceptualizing the proof technique of Lipmaa, Parisella, and Siim for the univariate KZG scheme (EUROCRYPT 2024), we present tools and falsifiable hardness assumptions that permit black-box extraction of the multivariate KZG scheme. Central to our approach is the notion of a canonical Proof-of-Knowledge of a Polynomial (PoKoP) of a polynomial commitment scheme, which we use to capture the extractability notion required in constructions of practical zk-SNARKs. We further present an explicit polynomial decomposition lemma for multivariate polynomials, enabling a more direct analysis of interpolating extractors and bridging the gap between univariate and multivariate commitments. Our results provide the first standard-model proofs of extractability for the multivariate KZG scheme and many of its variants under falsifiable assumptions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Czech Academy of Sciences, Institute of Mathematics",
+                    "ror": "https://ror.org/02tv1yf50"
+                },
+                {
+                    "name": "Charles University",
+                    "ror": "https://ror.org/024d6js02"
+                }
+            ],
+            "fullName": "Juraj Belohorec",
+            "orcid": "0009-0004-3677-0530"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Charles University",
+                    "ror": "https://ror.org/024d6js02"
+                }
+            ],
+            "fullName": "Pavel Dvo\u0159\u00e1k",
+            "orcid": "0000-0002-6838-1538"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science and Technology Austria",
+                    "ror": "https://ror.org/03gnh5541"
+                }
+            ],
+            "fullName": "Charlotte Hoffmann",
+            "orcid": "0000-0003-2027-5549"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Czech Academy of Sciences, Institute of Mathematics",
+                    "ror": "https://ror.org/02tv1yf50"
+                },
+                {
+                    "name": "Charles University",
+                    "ror": "https://ror.org/024d6js02"
+                }
+            ],
+            "fullName": "Pavel Hub\u00e1\u010dek",
+            "orcid": "0000-0002-6850-6222"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Czech Academy of Sciences, Institute of Mathematics",
+                    "ror": "https://ror.org/02tv1yf50"
+                },
+                {
+                    "name": "Charles University",
+                    "ror": "https://ror.org/024d6js02"
+                }
+            ],
+            "fullName": "Krist\u00fdna Ma\u0161kov\u00e1",
+            "orcid": "0009-0003-7982-0190"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Charles University",
+                    "ror": "https://ror.org/024d6js02"
+                }
+            ],
+            "fullName": "Martin Pasty\u0159\u00edk"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T10:09:53Z"
+        }
+    ],
+    "keywords": [
+        "KZG polynomial commitment",
+        "Extractability",
+        "Proof of Knowledge of a Polynomial",
+        "ARSDH",
+        "GARSDH"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/514.pdf",
+    "pid": "514",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On Extractability of the KZG Family of Polynomial Commitment Schemes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Sigma protocols ($\\Sigma$-protocols) provide a foundational paradigm for constructing secure algorithms in privacy-preserving applications. To enhance efficiency, several extended models [BG18], [BBB+18], [AC20] incorporating various optimization techniques have been proposed as ``replacements'' for the original $\\Sigma$-protocol. However, these models often lack the expressiveness needed to handle complex relations and hinder designers from applying appropriate instantiation and optimization strategies.\r\n\r\nIn this paper, we introduce a novel compressed $\\Sigma$-protocol model that effectively addresses these limitations by providing concrete constructions for relations involving non-linear constraints. Our approach is sufficiently expressive to encompass a wide range of relations. Central to our model is the definition of doubly folded commitments, which, along with a proposed Argument of Knowledge, generalizes the compression and amortization processes found in previous models. Despite the ability to express more relations, this innovation also provides a foundation to discuss a general aggregation technique, optimizing the proof size of instantiated schemes. \r\n\r\nTo demonstrate the above statements, we provide a brief review of several existing protocols that can be instantiated using our model to demonstrate the versatility of our construction. We also present use cases where our generalized model enhances applications traditionally considered ``less compact'', such as binary proofs [BCC+15] and $k$-out-of-$n$ proofs [ACF21]. In conclusion, our new model offers a more efficient and expressive alternative to the current use of $\\Sigma$-protocols, paving the way for broader applicability and optimization in cryptographic applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Yuxi Xue",
+            "orcid": "0009-0002-9092-9413"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Tianyu Zheng",
+            "orcid": "0000-0002-0759-8661"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Shang Gao",
+            "orcid": "0000-0003-2692-057X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Bin Xiao",
+            "orcid": "0000-0003-4223-8220"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Man Ho Au",
+            "orcid": "0000-0003-2068-9530"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T11:22:55Z"
+        }
+    ],
+    "keywords": [
+        "Sigma Protocols",
+        "Zero-Knowledge Proofs",
+        "Bulletproofs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/515.pdf",
+    "pid": "515",
+    "pubtype": {
+        "note": "ACISP 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Compressed Sigma Protocols: New Model and Aggregation Techniques",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Group actions have emerged as a powerful framework in post-quantum cryptography, serving as the foundation for various cryptographic primitives. The Lattice Isomorphism Problem (LIP) has recently gained attention as a promising hardness assumption for designing quantum-resistant protocols. Its formulation as a group action has opened the door to new cryptographic applications, including a commitment scheme and a linkable ring signatures.\r\nIn this work, we analyze the security properties of the LIP group action and present new findings. Specifically, we demonstrate that it fails to satisfy the weak unpredictability and weak pseudorandomness properties when the adversary has access to as few as three and two instances with the same secret, respectively. This significantly improves upon prior analysis by Budroni et al. (PQCrypto 2024).\r\nAs a direct consequence of our findings, we reveal a vulnerability in the linkable ring signature scheme proposed by Khuc et al. (SPACE 2024), demonstrating that the hardness assumption underlying the linkable anonymity property does not hold.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Alessandro Budroni",
+            "orcid": "0000-0002-3544-5128"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Jes\u00fas-Javier Chi-Dom\u00ednguez",
+            "orcid": "0000-0002-9753-7263"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Bergen",
+                    "ror": "https://ror.org/03zga2b32"
+                }
+            ],
+            "fullName": "Ermes Franch",
+            "orcid": "0009-0005-7372-1444"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T13:36:13Z"
+        }
+    ],
+    "keywords": [
+        "lattice isomorphism",
+        "group action",
+        "linkable ring signature",
+        "cryptanalysis",
+        "post-quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/516.pdf",
+    "pid": "516",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Don't Use It Twice: Reloaded! On the Lattice Isomorphism Group Action",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We revisit the question of minimizing the proof length of designated-verifier succinct non-interactive arguments (dv-SNARGs) in the generic group model. Barta et al. (Crypto 2020) constructed such dv-SNARGs with inverse-polynomial soundness in which the proof consists of only two group elements. For negligible soundness, all previous constructions required a super-constant number of group elements.\r\n\r\n    We show that one group element suffices for negligible soundness. Concretely, we obtain dv-SNARGs (in fact, dv-SNARKs) with $2^{-\\tau}$ soundness where proofs consist of one element of a generic group $\\mathbb G$ and $O(\\tau)$ additional bits. In particular, the proof length in group elements is constant even with $1/|\\mathbb G|$ soundness error. \r\n    \r\n    In more concrete terms, compared to the best known SNARGs using bilinear groups, we get dv-SNARGs with roughly $2$x shorter proofs (with $2^{-80}$ soundness at a $128$-bit security level). We are not aware of any practically feasible proof systems that achieve similar succinctness, even fully interactive or heuristic ones. \r\n\r\n    Our technical approach is based on a novel combination of techniques for trapdoor hash functions and group-based homomorphic secret sharing with linear multi-prover interactive proofs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Weizmann Institute of Science",
+                    "ror": "https://ror.org/0316ej306"
+                },
+                {
+                    "name": "Bar-Ilan University",
+                    "ror": "https://ror.org/03kgsv495"
+                }
+            ],
+            "fullName": "Gal Arnon",
+            "orcid": "0000-0001-7594-3896"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Saarland University",
+                    "ror": "https://ror.org/01jdpyv68"
+                }
+            ],
+            "fullName": "Jesko Dujmovic",
+            "orcid": "0000-0003-1043-5094"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                },
+                {
+                    "name": "Amazon Web Services"
+                }
+            ],
+            "fullName": "Yuval Ishai",
+            "orcid": "0009-0009-4096-6305"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T14:12:33Z"
+        }
+    ],
+    "keywords": [
+        "succinct arguments",
+        "SNARGs",
+        "generic group model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/517.pdf",
+    "pid": "517",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Designated-Verifier SNARGs with One Group Element",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A secret-sharing scheme is a method by which a dealer distributes shares to parties such that only authorized subsets of parties can reconstruct the secret. Secret-sharing schemes are an important tool in cryptography and they are used as a building block in many secure protocols, e.g., secure multiparty computation protocols for arbitrary functionalities, Byzantine agreement, threshold cryptography, access control, attribute-based encryption, and weighted cryptography (e.g., stake-based blockchains). The collection of authorized sets that should be able to reconstruct the secret is called an access structure. The main goal in secret sharing is to minimize the share size in a scheme realizing an access structure. In most of this monograph, we will consider secret-sharing schemes with information-theoretic security, i.e., schemes in which unauthorized sets cannot deduce any information on the secret even when the set has unbounded computational power. Although research on secret-sharing schemes has been conducted for nearly 40 years, we still do not know what the optimal share size required to realize an arbitrary \ud835\udc5b-party access structure is; there is an exponential gap between the best known upper bounds and the best known lower bounds on the share size.\r\n\r\nIn this monograph, we review the most important topics on secret sharing. We start by discussing threshold secret-sharing schemes in which the authorized sets are all sets whose size is at least some threshold \ud835\udc61; these are the most useful secret-sharing schemes. We then describe efficient constructions of secret-sharing schemes for general access structures; in particular, we describe constructions of linear secret-sharing schemes from monotone formulas and monotone span programs and provide a simple construction for arbitrary \ud835\udc5b-party access structures with share size 2\ud835\udc50\ud835\udc5b for some constant \ud835\udc50 < 1. To demonstrate the importance of secret-sharing schemes, we show how they are used to construct secure multi-party computation protocols for arbitrary functions. We next discuss the main problem with known secret-sharing schemes \u2013 the large share size, which is exponential in the number of parties. We present the known lower bounds on the share size. These lower bounds are fairly weak, and there is a big gap between the lower and upper bounds. For linear secret-sharing schemes, which are a class of schemes based on linear algebra that contains most known schemes, exponential lower bounds on the share size are known. We then turn to study ideal secret-sharing schemes in which the share size of each party is the same as the size of the secret; these schemes are the most efficient secret-sharing schemes. We describe a characterization of the access structures that have ideal schemes via matroids. Finally, we discuss computational secret-sharing schemes, i.e., secret-sharing schemes that are secure only against polynomial-time adversaries. We show computational schemes for monotone and non-monotone circuits; these constructions are more efficient than the best known schemes with information-theoretic security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ben Gurion University"
+                }
+            ],
+            "fullName": "Amos Beimel",
+            "orcid": "0000-0002-6572-4195"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T14:26:28Z"
+        }
+    ],
+    "keywords": [
+        "Secret Sharing",
+        "Perfect secret sharing",
+        "Computational secret sharing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/518.pdf",
+    "pid": "518",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Secret-Sharing Schemes for General Access Structures: An Introduction",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Efficiently protecting embedded software implementations of standard symmetric cryptographic primitives against side-channel attacks has been shown to be a considerable challenge in practice. This is, in part, due to the most natural countermeasure for such ciphers, namely Boolean masking, not amplifying security well in the absence of sufficient physical noise in the measurements. So-called prime-field masking has been demonstrated to provide improved theoretical guarantees in this context, and the Feistel for Prime Masking (FPM) family of Tweakable Block Ciphers (TBCs) has been recently introduced (Eurocrypt\u201924) to efficiently leverage these advantages. However, it was so far only instantiated for and empirically evaluated in a hardware implementation context, by using a small (7-bit) prime modulus. In this paper, we build on the theoretical incentive to increase the field size to obtain improved side-channel (Eurocrypt\u201924) and fault resistance (CHES\u201924), as well as on the practical incentive to instantiate an FPM instance with optimized performance on 32-bit software platforms. We introduce mid-pSquare for this purpose, a lightweight TBC operating over a 31-bit Mersenne prime field. We first provide an in-depth black box security analysis with a particular focus on algebraic attacks \u2013 which, contrary to the cryptanalysis of instances over smaller primes, are more powerful than statistical ones in our setting. We also design a strong tweak schedule to account for potential related-tweak algebraic attacks which, so far, are almost unknown in the literature. We then demonstrate that mid-pSquare implementations deliver very competitive performance results on the target platform compared to analogous binary TBCs regardless of masked or unmasked implementation (we use fix-sliced SKINNY for our comparisons). Finally, we experimentally establish the side-channel security improvements that masked mid-pSquare can lead to, reaching unmatched resistance to profiled horizontal attacks on lightweight 32-bit processors (ARM Cortex-M4).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "UCLouvain",
+                    "ror": "https://ror.org/02495e989"
+                }
+            ],
+            "fullName": "Brieuc Balon"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Lorenzo Grassi",
+            "orcid": "0000-0003-1140-0520"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Luxembourg University",
+                    "ror": "https://ror.org/036x5ad56"
+                }
+            ],
+            "fullName": "Pierrick M\u00e9aux",
+            "orcid": "0000-0001-5733-4341"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UCLouvain",
+                    "ror": "https://ror.org/02495e989"
+                }
+            ],
+            "fullName": "Thorben Moos",
+            "orcid": "0000-0003-3809-9803"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UCLouvain",
+                    "ror": "https://ror.org/02495e989"
+                }
+            ],
+            "fullName": "Fran\u00e7ois-Xavier Standaert",
+            "orcid": "0000-0001-7444-0285"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alpen-Adria-Universit\u00e4t Klagenfurt",
+                    "ror": "https://ror.org/05q9m0937"
+                }
+            ],
+            "fullName": "Matthias Johann Steiner",
+            "orcid": "0000-0001-5206-6579"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T15:10:40Z"
+        }
+    ],
+    "keywords": [
+        "Side-Channel Attacks",
+        "Prime Ciphers",
+        "Software Masking"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/519.pdf",
+    "pid": "519",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "mid-pSquare: Leveraging the Strong Side-Channel Security of Prime-Field Masking in Software",
+    "year": 2025,
+    "repo": [
+        "https://github.com/uclcrypto/mid-pSquare"
+    ]
+}
+,
+{
+    "abstract": "Side-channel attacks pose significant threats to cryptographic implementations, which require the inclusion of countermeasures to mitigate these attacks. In this work, we study the masking of state-of-the-art post-quantum signatures based on the MPC-in-the-head paradigm. More precisely, we focus on the recent threshold-computation-in-the-head (TCitH) framework that applies to some NIST candidates of the post-quantum standardization process. We first provide an analysis of side-channel attack paths in the signature algorithms based on the TCitH framework. We then explain how to apply standard  masking to achieve a $d$-probing secure implementation of such schemes, with performance scaling in $O(d^{2})$, for $d$ the masking order. \r\n\r\n    Our main contribution is to introduce different ways to tweak those signature schemes towards their masking friendliness. While the TCitH framework comes in two variants, the GGM variant and the Merkle tree variant, we introduce a specific tweak for each of these variants. These tweaks allow us to achieve complexities of $O(d)$ and $O(d \\log d)$ at the cost of non-constant signature size, caused by the inclusion of additional seeds in the signature. We also propose a third tweak that takes advantage of the threshold secret sharing used in TCitH. With the right choice of parameters, we show how, by design, some parts of the TCitH algorithms satisfy probing security without additional countermeasures. While this approach can substantially reduce the cost of masking in some part of the signature algorithm, it degrades the soundness of the core zero-knowledge proof, hence slightly increasing the size of the signature. \r\n\r\n    We analyze the complexity of the masked implementations of our tweaked TCitH signatures and provide benchmarks on a RISC-V platform with built-in hash accelerator. We use a modular benchmarking approach, allowing to estimate the performance of diverse signature instances with different tweaks and parameters. Our results illustrate how the different variants scale for an increasing masking order. For instance, for a masking order $d = 3$, we obtain signatures of around $14$ kB that run in $0.67$ second on a the target RISC-V CPU with a $250$MHz frequency. This is to be compared with the $4.7$ seconds required by the original signature scheme masked at the same order on the same platform. For a masking order $d=7$, we obtain a signature of $17.5$ kB running in $1.75$ second, to be compared with $16$ seconds for the stardard masked signature. \r\n\r\n    Finally, we discuss the extension of our techniques to signature schemes based on the VOLE-in-the-Head framework, which shares similarities with the GGM variant of TCitH. One key takeaway of our work is that the Merkle tree variant of TCitH is inherently more amenable to efficient masking than frameworks based on GGM trees, such as TCitH-GGM or VOLE-in-the-Head.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                }
+            ],
+            "fullName": "Thibauld Feneuil",
+            "orcid": "0000-0001-9342-2859"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                }
+            ],
+            "fullName": "Matthieu Rivain",
+            "orcid": "0000-0002-9855-4161"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                }
+            ],
+            "fullName": "Auguste Warm\u00e9-Janville",
+            "orcid": "0009-0001-9844-8414"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T15:42:39Z"
+        }
+    ],
+    "keywords": [
+        "Masking",
+        "Post-quantum signatures",
+        "MPC-in-the-head",
+        "Zero-knowledge proofs",
+        "Side-channel analysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/520.pdf",
+    "pid": "520",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Masking-Friendly Post-Quantum Signatures in the Threshold-Computation-in-the-Head Framework",
+    "year": 2025,
+    "repo": [
+        "https://github.com/CryptoExperts/tcith-sca-estimator",
+        "https://github.com/XKCP/XKCP",
+        "https://github.com/CryptoExperts/libmpcith/",
+        "https://github.com/coron/htable/"
+    ]
+}
+,
+{
+    "abstract": "Following work of Mazur-Tate and Satoh, we extend the definition of division polynomials to arbitrary isogenies of elliptic curves, including those whose kernels do not sum to the identity.  In analogy to the classical case of division polynomials for multiplication-by-n, we demonstrate recurrence relations, identities relating to classical elliptic functions, the chain rule describing relationships between division polynomials on source and target curve, and generalizations to higher dimension (i.e., elliptic nets).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Colorado Boulder"
+                }
+            ],
+            "fullName": "Katherine E. Stange",
+            "orcid": "0000-0003-2294-0397"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T16:53:58Z"
+        }
+    ],
+    "keywords": [
+        "isogeny-based cryptography",
+        "division polynomials",
+        "kernel polynomials",
+        "isogenies",
+        "elliptic curves"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/521.pdf",
+    "pid": "521",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Division polynomials for arbitrary isogenies",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Solitary output secure computation allows a set of mutually distrustful parties to compute a function of their inputs such that only a designated party obtains the output. Such computations should satisfy various security properties such as correctness, privacy, independence of inputs, and even guaranteed output delivery. We are interested in full security, which captures all of these properties. Solitary output secure computation has been the study of many papers in recent years, as it captures many real-world scenarios.\r\n\r\nA systematic study of fully secure solitary output computation was initiated by Halevi et al. [TCC 2019]. They showed several positive and negative results, however, they did not characterize what functions can be computed with full security. Alon et al. [EUROCRYPT 2024] considered the special, yet important case, of three parties with Boolean output, where the output-receiving party has no input. They completely characterized the set of such functionalities that can be computed with full security. Interestingly, they also showed a possible connection with the seemingly unrelated notion of fairness, where either all parties obtain the output or none of them do.\r\n\r\nWe continue this line of investigation and study the set of three-party solitary output Boolean functionalities where all parties hold private inputs. Our main contribution is defining and analyzing a family of ``special-round'' protocols, which generalizes the set of previously proposed protocols. Our techniques allow us to identify which special-round protocols securely compute a given functionality (if such exists). Interestingly, our analysis can also be applied in the two-party setting (where fairness is an issue). Thus, we believe that our techniques may prove useful in additional settings and deepen our understanding of the connections between the various settings.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Georgetown University",
+                    "ror": "https://ror.org/05vzafd60"
+                }
+            ],
+            "fullName": "Bar Alon",
+            "orcid": "0000-0002-8392-0245"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ariel University",
+                    "ror": "https://ror.org/03nz8qe97"
+                }
+            ],
+            "fullName": "Benjamin Saldman",
+            "orcid": "0009-0009-0357-8848"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ariel University",
+                    "ror": "https://ror.org/03nz8qe97"
+                }
+            ],
+            "fullName": "Eran Omri",
+            "orcid": "0000-0001-8928-0587"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T21:21:35Z"
+        }
+    ],
+    "keywords": [
+        "Solitary output",
+        "full security",
+        "impossibility results"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/522.pdf",
+    "pid": "522",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "New Techniques for Analyzing Fully Secure Protocols: A Case Study of Solitary Output Secure Computation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Since the introduction of TLS 1.3, which includes X25519 and X448 as key exchange algorithms, one could expect that high efficient implementations for these two algorithms become important as the need for power efficient and secure IoT devices increases. Assembly optimised X25519 implementations for low end processors such as Cortex-M4 have existed for some time but there has only been scarce progress on optimised X448 implementations for low end ARM processors such as Cortex-M4 and Cortex-M33. This work attempts to fill this gap by demonstrating how to design a constant time X448 implementation that runs in 2 273 479 cycles on Cortex-M4 and 2 170 710 cycles on Cortex-M33 with DSP. An X25519 implementation is also presented that runs in 441 116 cycles on Cortex-M4 and 411 061 cycles on Cortex-M33 with DSP.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Emil Lenngren"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-19T22:12:39Z"
+        }
+    ],
+    "keywords": [
+        "Curve25519",
+        "Curve448",
+        "X25519",
+        "X448",
+        "Cortex-M4",
+        "Cortex-M33",
+        "assembly",
+        "implementations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/523.pdf",
+    "pid": "523",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Assembly optimised Curve25519 and Curve448 implementations for ARM Cortex-M4 and Cortex-M33",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we present a ring referral scheme, by which a user can publicly prove her knowledge of a valid signature for a private message that is signed by one of an ad hoc set of authorized issuers, without revealing the signing issuer. Ring referral is a natural extension to traditional ring signature by allowing a prover to obtain a signature from a third-party signer. Our scheme is useful for diverse applications, such as certificate-hiding decentralized identity, privacy-enhancing federated authentication, anonymous endorsement and privacy -preserving referral marketing. In contrast with prior issuer-hiding credential schemes, our ring referral scheme supports more distinguishing features, such as (1) public verifiability over an ad hoc ring, (2) strong user anonymity against collusion among the issuers and verifier to track a user, (3) transparent setup,  (4) message hiding, (5) efficient multi-message logarithmic verifiability, (6) threshold scheme for requiring multiple co-signing issuers. Finally, we implemented our ring referral scheme with extensive empirical evaluation",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CSIRO Data61",
+                    "ror": "https://ror.org/03q397159"
+                }
+            ],
+            "fullName": "The-Anh Ta",
+            "orcid": "0000-0003-2615-7316"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Melbourne",
+                    "ror": "https://ror.org/01ej9dk98"
+                }
+            ],
+            "fullName": "Xiangyu Hui",
+            "orcid": "0009-0007-8054-1841"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CSIRO Data61",
+                    "ror": "https://ror.org/03q397159"
+                }
+            ],
+            "fullName": "Sid Chi-Kin Chau",
+            "orcid": "0000-0003-0362-2844"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-20T06:10:58Z"
+        }
+    ],
+    "keywords": [
+        "Decentralized Identity",
+        "Issuer Hiding",
+        "Strong User Anonymity",
+        "Logarithmic Verifiability",
+        "Ring Signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is an extended version of the conference paper appearing in IEEE S&P '25.",
+    "pdffile": "2025/524.pdf",
+    "pid": "524",
+    "pubtype": {
+        "note": "IEEE S&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Ring Referral: Efficient Publicly Verifiable Ad hoc Credential Scheme with Issuer and Strong User Anonymity for Decentralized Identity and More",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce deniable secret sharing (DSS), which, analogously to deniable encryption, enables shareholders to produce fake shares that are consistent with a target \u201cfake message\u201d, regardless of the original secret. In contrast to deniable encryption, in a DSS scheme an adversary sees multiple shares, some of which might be real, and some fake. This makes DSS a more difficult task, especially in situations where the fake shares need to be generated by individual shareholders, without coordination with other shareholders.\r\n\r\nWe define several desirable properties for DSS, and show both positive and negative results for each. The strongest property is fake hiding, which is a natural analogy of deniability for encryption: given a complete set of shares, an adversary cannot determine whether any shares are fake. We show a construction based on Shamir secret sharing that achieves fake hiding as long as (1) the fakers are qualified (number $t$ or more), and (2) the set of real shares which the adversary sees is unqualified. Next we show a construction based on indistinguishability obfuscation that relaxes condition (1) and achieves fake hiding even when the fakers are unqualified (as long as they comprise more than half of the shareholders). We also extend the first construction to provide the weaker property of faker anonymity for all thresholds. (Faker anonymity requires that given some real shares and some fake shares, an adversary should not be able to tell which are fake, even if it can tell that some fake shares are present.) All of these constructions require the fakers to coordinate in order to produce fake shares.\r\n\r\nOn the negative side, we first show that fake hiding is unachievable when the fakers are a minority, even if the fakers coordinate. Further, if the fakers do not coordinate, then even faker anonymity is unachievable as soon as $t < n$ (namely the reconstruction threshold is smaller than the number of parties).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Boston University",
+                    "ror": "https://ror.org/05qwgg493"
+                }
+            ],
+            "fullName": "Ran Canetti",
+            "orcid": "0000-0002-5479-7540"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Ivan Damg\u00e5rd",
+            "orcid": "0009-0003-6164-0896"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Sebastian Kolby",
+            "orcid": "0009-0005-3228-7194"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Amsterdam",
+                    "ror": "https://ror.org/04dkp9463"
+                }
+            ],
+            "fullName": "Divya Ravi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Sophia Yakoubov",
+            "orcid": "0000-0001-7958-8537"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-20T08:57:10Z"
+        }
+    ],
+    "keywords": [
+        "secret sharing",
+        "deniability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/525.pdf",
+    "pid": "525",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Deniable Secret Sharing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The integration of AI agents with Web3 ecosystems harnesses their complementary potential for autonomy and openness, yet also introduces underexplored security risks, as these agents dynamically interact with financial protocols and immutable smart contracts. This paper investigates the vulnerabilities of AI agents within blockchain-based financial ecosystems when exposed to adversarial threats in real-world scenarios. We introduce the concept of context manipulation -- a comprehensive attack vector that exploits unprotected context surfaces, including input channels, memory modules, and external data feeds. Through empirical analysis of ElizaOS, a decentralized AI agent framework for automated Web3 operations, we demonstrate how adversaries can manipulate context by injecting malicious instructions into prompts or historical interaction records, leading to unintended asset transfers and protocol violations which could be financially devastating.  Our findings indicate that prompt-based defenses are insufficient, as malicious inputs can corrupt an agent's stored context, creating cascading vulnerabilities across interactions and platforms. This research highlights the urgent need to develop AI agents that are both secure and fiduciarily responsible.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Princeton University",
+                    "ror": "https://ror.org/00hx57361"
+                }
+            ],
+            "fullName": "Atharv Singh Patlan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sentient"
+                }
+            ],
+            "fullName": "Peiyao Sheng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Princeton University",
+                    "ror": "https://ror.org/00hx57361"
+                }
+            ],
+            "fullName": "S. Ashwin Hebbar"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Princeton University",
+                    "ror": "https://ror.org/00hx57361"
+                }
+            ],
+            "fullName": "Prateek Mittal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Princeton University, Sentient"
+                }
+            ],
+            "fullName": "Pramod Viswanath"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-20T15:55:10Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/526.pdf",
+    "pid": "526",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "AI Agents in Cryptoland: Practical Attacks and No Silver Bullet",
+    "year": 2025,
+    "repo": [
+        "https://github.com/elizaOS/eliza",
+        "https://github.com/elizaOS/eliza"
+    ]
+}
 ]
