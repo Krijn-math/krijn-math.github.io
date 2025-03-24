@@ -37590,4 +37590,699 @@
         "https://github.com/elizaOS/eliza"
     ]
 }
+,
+{
+    "abstract": "Blockchain technology and smart contracts have revolutionized digital transactions by enabling trustless and decentralized exchanges of value. However, the inherent transparency and immutability of blockchains pose significant privacy challenges. On-chain data, while pseudonymous, is publicly visible and permanently recorded, potentially leading to the inadvertent disclosure of sensitive information. This issue is particularly pronounced in smart contract applications, where contract details are accessible to all network participants, risking the exposure of identities and transactional details.\r\n\r\nTo address these privacy concerns, there is a pressing need for privacy-preserving mechanisms in smart contracts. To showcase this need even further, in our paper we bring forward advanced use-cases in economics which only smart contracts equipped with privacy mechanisms can realize, and show how  fully-homomorphic encryption (FHE) as a privacy enhancing technology (PET) in smart contracts, operating on a public blockchain, can make possible the implementation of these use-cases. Furthermore, we perform a comprehensive systematization of FHE-based approaches in smart contracts, examining their potential to maintain the confidentiality of sensitive information while retaining the benefits of smart contracts, such as automation, decentralization, and security. After we evaluate these existing FHE solutions in the context of the use-cases we consider, we  identify open problems, and suggest future research directions to enhance privacy in blockchain smart contracts.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Daniel Aronoff"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Visa (United States)",
+                    "ror": "https://ror.org/05t1y0b59"
+                }
+            ],
+            "fullName": "Adithya Bhat"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Visa (United States)",
+                    "ror": "https://ror.org/05t1y0b59"
+                }
+            ],
+            "fullName": "Panagiotis Chatzigiannis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Visa (United States)",
+                    "ror": "https://ror.org/05t1y0b59"
+                }
+            ],
+            "fullName": "Mohsen Minaei"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Visa (United States)",
+                    "ror": "https://ror.org/05t1y0b59"
+                },
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Srinivasan Raghuraman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Robert M. Townsend"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Nicolas Xuan-Yi Zhang"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-21T01:27:39Z"
+        }
+    ],
+    "keywords": [
+        "smart contracts",
+        "fully homomorphic encryption",
+        "privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/527.pdf",
+    "pid": "527",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SoK: Fully-homomorphic encryption in smart contracts",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ethereum/EIPs/issues/1440",
+        "https://github.com/ethereum/EIPs/issues/1440",
+        "https://github.com/ethereum/EIPs/issues/2020",
+        "https://github.com/ethereum/EIPs/issues/2020",
+        "https://www.iberclear.es/docs/docsSubidos/Paper-Digital-Bond-20july.pdf",
+        "https://www.iberclear.es/docs/docsSubidos/Paper-Digital-Bond-20july.pdf",
+        "https://github.com/zama-ai/fhevm/blob/main/fhevm-whitepaper.pdf",
+        "https://github.com/zama-ai/fhevm/blob/main/fhevm-whitepaper.pdf",
+        "https://github.com/bheisler/criterion.rs",
+        "https://github.com/ethereum/EIPs/issues/1724",
+        "https://github.com/ethereum/EIPs/issues/1724",
+        "https://github.com/cardano-foundation/CIPs/issues/415",
+        "https://github.com/ethereum/EIPs/issues/1155",
+        "https://github.com/ethereum/EIPs/issues/1155",
+        "https://github.com/microsoft/SEAL",
+        "https://github.com/Sunscreen-tech/revm",
+        "https://github.com/Sunscreen-tech/revm",
+        "https://github.com/Sunscreen-tech/Sunscreen",
+        "https://github.com/Sunscreen-tech/Sunscreen",
+        "https://github.com/ethereum/EIPs/issues/20",
+        "https://github.com/ethereum/EIPs/issues/20",
+        "https://github.com/zama-ai/concrete-ml",
+        "https://github.com/zama-ai/concrete-ml",
+        "https://github.com/zama-ai/evmos",
+        "https://github.com/zama-ai/fhevm",
+        "https://github.com/zama-ai/tfhe-rs"
+    ]
+}
+,
+{
+    "abstract": "Zero-knowledge range arguments are a fundamental cryptographic primitive that allows a prover to convince a verifier of the knowledge of a secret value lying within a predefined range. They have been utilized in diverse applications, such as confidential transactions, proofs of solvency and anonymous credentials. Range arguments with a transparent setup dispense with any trusted setup to eliminate security backdoor and enhance transparency. They are increasingly deployed in diverse decentralized applications on blockchains. One of the major concerns of practical deployment of range arguments on blockchains is the incurred gas cost and high computational overhead associated with blockchain miners. Hence, it is crucial to optimize the verification efficiency in range arguments to alleviate the deployment cost on blockchains and other decentralized platforms. In this paper, we present VeRange with several new zero-knowledge range arguments in the discrete logarithm setting, requiring only $c \\sqrt{N/\\log N}$ group exponentiations for verification, where $N$ is the number of bits to represent a range and $c$ is a small constant, making them concretely efficient for blockchain deployment with a very low gas cost. Furthermore, VeRange is aggregable, allowing a prover to simultaneously prove $T$ range arguments in a single argument, requiring only $O(\\sqrt{TN/\\log (TN)}) + T$ group exponentiations for verification. We deployed {\\tt VeRange} on Ethereum and measured the empirical gas cost, achieving the fastest verification runtime and the lowest gas cost among the discrete-logarithm-based range arguments in practice.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Australian National University",
+                    "ror": "https://ror.org/019wvm592"
+                }
+            ],
+            "fullName": "Yue Zhou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CSIRO Data61",
+                    "ror": "https://ror.org/03q397159"
+                }
+            ],
+            "fullName": "Sid Chi-Kin Chau",
+            "orcid": "0000-0003-0362-2844"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-21T02:03:24Z"
+        }
+    ],
+    "keywords": [
+        "Zero-knowledge Range Argument",
+        "Transparent Setup",
+        "Blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is an extended version of the conference paper in AsiaCCS\u201825",
+    "pdffile": "2025/528.pdf",
+    "pid": "528",
+    "pubtype": {
+        "note": "ACM AsiaCCS '25",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "VeRange: Verification-efficient Zero-knowledge Range Arguments with Transparent Setup for Blockchain Applications and More",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We show that the anonymous authentication and key establishment scheme [IEEE TDSC, 20(4), 3535-3545, 2023] fails to keep user anonymity, not as claimed. We also suggest a method to fix it.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-21T06:50:46Z"
+        }
+    ],
+    "keywords": [
+        "Mutual authentication",
+        "Key agreement",
+        "Rabin cryptosystem",
+        "User anonymity"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/529.pdf",
+    "pid": "529",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Anonymity in \"A Practical Lightweight Anonymous Authentication and Key Establishment Scheme for Resource-Asymmetric Smart Environments\"",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This article presents an extension of the work performed by Liu, Baek and Susilo on extended withdrawable signatures to lattice-based constructions. We introduce a general construction, and provide security proofs for this proposal. As instantiations, we provide concrete construction for extended withdrawable signature schemes based on Dilithium and HAETAE.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Fairgate Labs"
+                }
+            ],
+            "fullName": "Ramses Fernandez",
+            "orcid": "0000-0002-8959-636X"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-21T11:01:57Z"
+        }
+    ],
+    "keywords": [
+        "Withdrawability",
+        "Digital signatures",
+        "Fiat-Shamir with aborts",
+        "MLWE",
+        "Post-quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/530.pdf",
+    "pid": "530",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lattice-based extended withdrawable signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Distinguishing Goppa codes or alternant codes from generic\r\nlinear codes [FGO+11] has been shown to be a first step before being\r\nable to attack McEliece cryptosystem based on those codes [BMT24].\r\nWhereas the distinguisher of [FGO+11] is only able to distinguish Goppa\r\ncodes or alternant codes of rate very close to 1, in [CMT23a] a much more\r\npowerful (and more general) distinguisher was proposed. It is based on\r\ncomputing the Hilbert series $\\{\\mathrm{HF}(d),~d\\in  \\mathbb{N}\\}$ of a Pfaffian modeling.\r\nThe distinguisher of [FGO+11] can be interpreted as computing $\\mathrm{HF}(1)$.\r\nComputing $\\mathrm{HF}(2)$ still gives a polynomial time distinguisher for alternant\r\nor Goppa codes and is apparently able to distinguish Goppa or alternant\r\ncodes in a much broader regime of rates as the one of [FGO+11]. However,\r\nthe scope of this distinguisher was unclear. We give here a formula for\r\n$\\mathrm{HF}(2)$ corresponding to generic alternant codes when the field size $q$\r\nsatisfies $q \\geq r$, where r is the degree of the alternant code. We also\r\nshow that this expression for$\\mathrm{HF}(2)$ provides a lower bound in general.\r\nThe value of $\\mathrm{HF}(2)$ corresponding to random linear codes is known and\r\nthis yields a precise description of the new regime of rates that can be\r\ndistinguished by this new method. This shows that the new distinguisher\r\nimproves significantly upon the one given in [FGO+11].",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                },
+                {
+                    "name": "Direction G\u00e9n\u00e9rale de l'Armement",
+                    "ror": "https://ror.org/04wsqd844"
+                }
+            ],
+            "fullName": "Axel Lemoine",
+            "orcid": "0009-0008-2440-8568"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Rocco Mora",
+            "orcid": "0000-0001-5165-5320"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                }
+            ],
+            "fullName": "Jean-Pierre Tillich",
+            "orcid": "0000-0002-1709-1792"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-21T11:40:15Z"
+        }
+    ],
+    "keywords": [
+        "McEliece cryptosystem",
+        "algebraic attacks",
+        "distinguishers"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/531.pdf",
+    "pid": "531",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Understanding the new distinguisher of alternant codes at degree 2",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Systems such as file backup services often use content-defined chunking (CDC) algorithms, especially those based on rolling hash techniques, to split files into chunks in a way that allows for data deduplication. These chunking algorithms often depend on per-user parameters in an attempt to avoid leaking information about the data being stored. We present attacks to extract these chunking parameters and discuss protocol-agnostic attacks and loss of security once the parameters are breached (including when these parameters are not setup at all, which is often available as an option). Our parameter-extraction attacks themselves are protocol-specific but their ideas are generalizable to many potential CDC schemes.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Boris Alexeev",
+            "orcid": "0009-0002-5290-1735"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tarsnap Backup Inc."
+                }
+            ],
+            "fullName": "Colin Percival"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "San Jose State University"
+                }
+            ],
+            "fullName": "Yan X Zhang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-21T16:52:52Z"
+        }
+    ],
+    "keywords": [
+        "Content-defined chunking",
+        "CDC",
+        "Rolling hash",
+        "Backup"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/532.pdf",
+    "pid": "532",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Chunking Attacks on File Backup Services using Content-De\ufb01ned Chunking",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Recent advances in Vector Oblivious Linear Evaluation (VOLE) protocols have enabled constant-round, fast, and scalable (designated-verifier) zero-knowledge proofs, significantly reducing prover computational cost. Existing protocols, such as QuickSilver [CCS\u201921] and LPZKv2 [CCS\u201922], achieve efficiency with prover costs of 4 multiplications in the extension field per AND gate for Boolean circuits, with one multiplication requiring a O(\u03ba log \u03ba)-bit operation where \u03ba = 128 is the security parameter and 3-4 field multiplications per multiplication gate for arithmetic circuits over a large field.\r\nWe introduce JesseQ, a suite of two VOLE-based protocols: JQv1 and JQv2, which advance state of the art. JQv1 requires only 2 scalar multiplications in an extension field per AND gate for Boolean circuits, with one scalar needing a O(\u03ba)- bit operation, and 2 field multiplications per multiplication gate for arithmetic circuits over a large field. In terms of communication costs, JQv1 needs just 1 field element per gate. JQv2 further reduces communication costs by half at the cost of doubling the prover\u2019s computation.\r\nExperiments show that, compared to the current state of the art, both JQv1 and JQv2 achieve at least 3.9\u00d7 improvement for Boolean circuits. For large field circuits, JQv1 has a similar performance, while JQv2 offers a 1.3\u00d7 improvement. Additionally, both JQv1 and JQv2 maintain the same communication cost as the current state of the art. Notably, on the cheapest AWS instances, JQv1 can prove 9.2 trillion AND gates (or 5.8 trillion multiplication gates over a 61-bit field) for just one US dollar. JesseQ excels in applications like inner products, matrix multiplication, and lattice problems, delivering 40%- 200% performance improvements compared to QuickSilver. Additionally, JesseQ integrates seamlessly with the sublinear Batchman framework [CCS\u201923], enabling further efficiency gains for batched disjunctive statements.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Mengling Liu",
+            "orcid": "0000-0002-5854-9085"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Yang Heng",
+            "orcid": "0009-0000-3429-624X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Xingye Lu",
+            "orcid": "0000-0002-3595-044X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Man Ho Au",
+            "orcid": "0000-0003-2068-9530"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-22T01:32:38Z"
+        }
+    ],
+    "keywords": [
+        "Zero-Knowledge Proofs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/533.pdf",
+    "pid": "533",
+    "pubtype": {
+        "note": "Minor revision. IEEE S&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "JesseQ: Efficient Zero-Knowledge Proofs for Circuits over Any Field",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Rank-1 Constraint Systems (R1CS) and Plonk constraint systems are two commonly used circuit formats for zero-knowledge succinct non-interactive arguments of knowledge (zkSNARKs). We present Plonkify, a tool that converts a circuit in an R1CS arithmetization to Plonk, with support for both vanilla gates and custom gates. Our tool is able to convert an R1CS circuit with 229,847 constraints to a vanilla Plonk circuit with 855,296 constraints, or a jellyfish turbo Plonk circuit with 429,166 constraints, representing a $2.59\\times$ and $1.9\\times$ reduction in the number of constraints over the respective na\u00efve conversions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Pengfei Zhu"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-22T06:41:31Z"
+        }
+    ],
+    "keywords": [
+        "zk-SNARKs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/534.pdf",
+    "pid": "534",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Plonkify: R1CS-to-Plonk transpiler",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zhaowenlan1779/plonkify",
+        "https://github.com/zhaowenlan1779/plonkify",
+        "https://github.com/hermeznetwork/circuits",
+        "https://github.com/hermeznetwork/circuits"
+    ]
+}
+,
+{
+    "abstract": "As artificial intelligence (AI) becomes increasingly embedded in high-stakes applications such as healthcare, finance, and autonomous systems, ensuring the verifiability of AI computations without compromising sensitive data or proprietary models is crucial. Zero-knowledge machine learning (ZKML) leverages zero-knowledge proofs (ZKPs) to enable the verification of AI model outputs while preserving confidentiality. However, existing ZKML approaches require specialized cryptographic expertise, making them inaccessible to traditional AI developers.\r\n\r\nIn this paper, we introduce ZKPyTorch, a compiler that seamlessly integrates ML frameworks like PyTorch with ZKP engines like Expander, simplifying the development of ZKML. ZKPyTorch automates the translation of ML operations into optimized ZKP circuits through three key components. First, a ZKP preprocessor converts models into structured computational graphs and injects necessary auxiliary information to facilitate proof generation. Second, a ZKP-friendly quantization module introduces an optimized quantization strategy that reduces computation bit-widths, enabling efficient ZKP execution within smaller finite fields such as M61. Third, a hierarchical ZKP circuit optimizer employs a multi-level optimization framework at model, operation, and circuit levels to improve proof generation efficiency.\r\n\r\nWe demonstrate ZKPyTorch effectiveness through end-to-end case studies, successfully converting VGG-16 and Llama-3 models from PyTorch, a leading ML framework, into ZKP-compatible circuits recognizable by Expander, a state-of-the-art ZKP engine. Using Expander, we generate zero-knowledge proofs for\r\nthese models, achieving proof generation for the VGG-16 model in 2.2 seconds per CIFAR-10 image for VGG-16 and 150 seconds per token for Llama-3 inference, improving the practical adoption of ZKML.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Polyhedra Network"
+                }
+            ],
+            "fullName": "Tiancheng Xie"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Polyhedra Network"
+                }
+            ],
+            "fullName": "Tao Lu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Polyhedra Network"
+                }
+            ],
+            "fullName": "Zhiyong Fang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Polyhedra Network"
+                }
+            ],
+            "fullName": "Siqi Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Polyhedra Network"
+                }
+            ],
+            "fullName": "Zhenfei Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Polyhedra Network"
+                }
+            ],
+            "fullName": "Yongzheng Jia"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Dawn Song"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                },
+                {
+                    "name": "Polyhedra Network"
+                }
+            ],
+            "fullName": "Jiaheng Zhang"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-22T09:48:38Z"
+        }
+    ],
+    "keywords": [
+        "zkml",
+        "zero-knowledge proofs",
+        "implementation",
+        "compiler"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/535.pdf",
+    "pid": "535",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "zkPyTorch: A Hierarchical Optimized Compiler for Zero-Knowledge Machine Learning",
+    "year": 2025,
+    "repo": [
+        "https://github.com/facebookarchive/caffe2",
+        "https://github.com/PolyhedraZK/Expander",
+        "https://github.com/PolyhedraZK/Expander",
+        "https://github.com/onnx/onnx",
+        "https://github.com/pytorch/pytorch",
+        "https://github.com/pytorch/pytorch",
+        "https://github.com/scikit-learn/scikit-learn",
+        "https://github.com/scikit-learn/scikit-learn",
+        "https://github.com/tensorflow/tensorflow"
+    ]
+}
+,
+{
+    "abstract": "The Fiat-Shamir transformation underlies numerous non-interactive arguments, with variants that differ in important ways. This paper addresses a gap between variants analyzed by theoreticians and variants implemented (and deployed) by practitioners. Specifically, theoretical analyses typically assume parties have access to random oracles with sufficiently large input and output size, while cryptographic hash functions in practice have fixed input and output sizes (pushing practitioners towards other variants).\r\n\r\nIn this paper we propose and analyze a variant of the Fiat-Shamir transformation that is based on an ideal permutation of fixed size. The transformation relies on the popular duplex sponge paradigm, and minimizes the number of calls to the permutation (given the amount of information to absorb and to squeeze). Our variant closely models deployed variants of the Fiat-Shamir transformation, and our analysis provides concrete security bounds that can be used to set security parameters in practice.\r\n\r\nWe additionally contribute spongefish, an open-source Rust library implementing our Fiat-Shamir transformation. The library is interoperable across multiple cryptographic frameworks, and works with any choice of permutation. The library comes equipped with Keccak and Poseidon permutations, as well as several \"codecs\" for re-mapping prover and verifier messages to the permutation's domain.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Alessandro Chiesa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                }
+            ],
+            "fullName": "Michele Orr\u00f9",
+            "orcid": "0000-0001-6518-2712"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-22T18:37:46Z"
+        }
+    ],
+    "keywords": [
+        "Fiat-Shamir",
+        "duplex sponge"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/536.pdf",
+    "pid": "536",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Fiat-Shamir Transformation From Duplex Sponges",
+    "year": 2025,
+    "repo": [
+        "https://github.com/arkworks-rs/spongefish",
+        "https://github.com/arkworks-rs/spongefish",
+        "https://github.com/arkworks-rs/spongefish",
+        "https://github.com/arkworks-rs/crypto-primitives",
+        "https://github.com/arkworks-rs/crypto-primitives",
+        "https://github.com/arkworks-rs",
+        "https://github.com/arkworks-rs",
+        "https://github.com/AztecProtocol/aztec-packages/",
+        "https://github.com/zcash/halo2",
+        "https://github.com/signalapp/libsignal/tree/main/rust/poksho/",
+        "https://github.com/signalapp/libsignal/tree/main/rust/poksho/",
+        "https://github.com/starkware-libs/cairo-lang/",
+        "https://github.com/dalek-cryptography/merlin",
+        "https://github.com/trailofbits/decree"
+    ]
+}
 ]
