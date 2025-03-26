@@ -1,4 +1,5 @@
-division polynomials for arbitrary isogenies;;;katherine e. stange;;;2025/521;;;last_week;;;none
+models of kummer lines and galois representations;;;razvan barbulescu, damien robert, nicolas sarkis;;;2025/543;;;last_week;;;none
+division polynomials for arbitrary isogenies;;;katherine e. stange;;;2025/521;;;last_month;;;none
 a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_month;;;none
 an efficient collision attack on castryck-decru-smith’s hash function;;;ryo ohashi, hiroshi onuki;;;2024/1776;;;last_month;;;https://github.com/Ryo-Ohashi/CDScollision
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants, ii;;;dimitri koshelev, antonio sanso;;;2025/196;;;last_month;;;https://github.com/daira/pluto-eris
@@ -12,7 +13,7 @@ a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de f
 another look at the quantum security of the vectorization problem with shifted inputs;;;paul frixons, valerie gilchrist, péter kutas, simon-philipp merz, christophe petit;;;2025/376;;;last_month;;;none
 klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_month;;;https://github.com/KLPT2/KLPT2
 π: a unified framework for computational verifiable secret sharing;;;karim baghery;;;2023/1669;;;last_month;;;https://github.com/Baghery/VSS-Pi
-poké: a compact and efficient pke from higher-dimensional isogenies;;;andrea basso, luciano maino;;;2024/624;;;last_month;;;https://github.com/andreavico/POKE-PKE
+poké: a compact and efficient pke from higher-dimensional isogenies;;;andrea basso, luciano maino;;;2024/624;;;last_year;;;https://github.com/andreavico/POKE-PKE
 unconditional foundations for supersingular isogeny-based cryptography;;;arthur herlédan le merdy, benjamin wesolowski;;;2025/271;;;last_year;;;none
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_year;;;https://gitlab.inria.fr/nsarkis/half-diff-add
 search and verify isogeny-based quantum money with rational points;;;hyeonhak kim, donghoe heo, seokhie hong;;;2025/201;;;last_year;;;none
@@ -95,6 +96,5 @@ zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef m
 exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;other;;;https://espitau.github.io/bin/random_lattice.pdf
 csidh with level structure;;;steven d. galbraith, derek perrin, josé felipe voloch;;;2023/1726;;;other;;;none
 malleable commitments from group actions and zero-knowledge proofs for circuits based on isogenies;;;mingjie chen, yi-fu lai, abel laval, laurane marco, christophe petit;;;2023/1710;;;other;;;none
-defend: towards verifiable delay functions from endomorphism rings;;;knud ahrens, jens zumbrägel;;;2023/1537;;;other;;;none
 breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;other;;;none
 m&m's: mix and match attacks on schnorr-type blind signatures with repetition;;;khue do, lucjan hanzlik, eugenio paracucchi;;;2023/1588;;;other;;;none
