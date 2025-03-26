@@ -38426,4 +38426,701 @@
         "https://github.com/zkp-application/circom-rsa-verify"
     ]
 }
+,
+{
+    "abstract": "Blockchain advancements, currency digitalization, and declining cash usage have fueled global interest in Central Bank Digital Currencies (CBDCs). The BIS states that the hybrid model, where central banks authorize intermediaries to manage distribution, is more suitable than the direct model. However, designing a CBDC for practical implementation requires careful consideration. First, the public blockchain raises privacy concerns due to transparency. While zk-SNARKs can be a solution, they can introduce significant proof generation overhead for large-scale transactions. Second, intermediaries that provide user-facing services on behalf of the central bank commonly performs Proof of Liabilities on customers' static liabilities. However, in real-world scenarios where user liabilities can arbitrarily increase or decrease, the static nature poses such as window attacks. \r\n\r\nIn this paper, we propose a new smart contract-based privacy-preserving CBDC framework based on zk-SNARKs, called $\\textbf{Aegis}$. our framework introduces a transaction batching technique to enhance scalability and  defines a new dynamic PoL which is near-real time. We formally define the security models for our system and provide rigorous security proofs to demonstrate its robustness. To evaluate the system\u2019s performance, we instantiate our proposed framework and measure its efficiency. The result indicates that, the end-to-end process, including proof generation for 512 transactions, takes approximately 2.8 seconds, with a gas consumption of 74,726 per user.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University"
+                }
+            ],
+            "fullName": "Gweonho Jeong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kookmin University"
+                }
+            ],
+            "fullName": "Jaewoong Lee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University"
+                }
+            ],
+            "fullName": "Minhae Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kookmin University"
+                }
+            ],
+            "fullName": "Byeongkyu Han"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kookmin University"
+                },
+                {
+                    "name": "Zkrypto Inc"
+                }
+            ],
+            "fullName": "Jihye Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang Unviersity"
+                },
+                {
+                    "name": "Zkrypto Inc"
+                }
+            ],
+            "fullName": "Hyunok Oh"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-24T04:37:41Z"
+        }
+    ],
+    "keywords": [
+        "CBDC",
+        "PoL",
+        "Blockchain",
+        "zero-knowledge proof",
+        "zk-SNARKs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/539.pdf",
+    "pid": "539",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Aegis: Scalable Privacy-preserving CBDC Framework with Dynamic   Proof of Liabilities",
+    "year": 2025,
+    "repo": [
+        "https://www.bankofengland.co.uk/-/media/boe/files/paper/2020/central-bank-digital-currency-opportunities-challenges-and-design.pdf",
+        "https://www.bankofengland.co.uk/-/media/boe/files/paper/2020/central-bank-digital-currency-opportunities-challenges-and-design.pdf",
+        "https://www.boj.or.jp/en/paym/digital/index.htm",
+        "https://github.com/binance/zkmerkle-proof-of-solvency",
+        "https://github.com/binance/zkmerkle-proof-of-solvency"
+    ]
+}
+,
+{
+    "abstract": "SNARKs are frequently used to prove encryption, yet the circuit size often becomes large due to the intricate operations inherent in encryption. It entails considerable computational overhead for a prover and can also lead to an increase in the size of the public parameters (e.g., evaluation key).\r\nWe propose an encryption-friendly SNARK framework, $\\textsf{Tangram}$, which allows anyone to construct a system by using their desired encryption and proof system.\r\nOur approach revises existing encryption schemes to produce Pedersen-like ciphertext, including identity-based, hierarchical identity-based, and attribute-based encryption.\r\nAfterward, to prove the knowledge of the encryption, we utilize a modular manner of commit-and-prove SNARKs, which uses commitment as a `bridge'.\r\nWith our framework, one can prove encryption significantly faster than proving the whole encryption within the circuit. \r\nWe implement various $\\textsf{Tangram}$ gadgets and evaluate their performance.\r\nOur results show 12x - 3500x times better performance than encryption-in-the-circuit.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University"
+                }
+            ],
+            "fullName": "Gweonho Jeong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University"
+                }
+            ],
+            "fullName": "Myeongkyun Moon"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University"
+                }
+            ],
+            "fullName": "Geonho Yoon"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University"
+                },
+                {
+                    "name": "Zkrypto Inc"
+                }
+            ],
+            "fullName": "Hyunok Oh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kookmin University"
+                },
+                {
+                    "name": "Zkrypto Inc"
+                }
+            ],
+            "fullName": "Jihye Kim"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-24T04:48:22Z"
+        }
+    ],
+    "keywords": [
+        "zk-SNARKs",
+        "Pedersen commitment",
+        "Encryption",
+        "CP-SNARK"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/540.pdf",
+    "pid": "540",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tangram: Encryption-friendly SNARK framework under Pedersen committed engines",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Power side-channel (PSC) vulnerabilities present formidable challenges to the security of ubiquitous microelectronic devices in mission-critical infrastructure. Existing side-channel assessment techniques mostly focus on post-silicon stages by analyzing power profiles of fabricated devices, suffering from low flexibility and prohibitively high cost while deploying security countermeasures. While pre-silicon PSC assessments offer flexibility and low cost, the true nature of the power signatures cannot be fully captured through RTL or gate-level design. Although physical design-level analysis provides precise power traces, collecting data is time and resource-consuming at the layout level. To address this challenge, we propose, for the first time, a fast and efficient physical design-level PSC assessment framework using a graph neural network (GNN). This framework predicts dynamic power traces for new layouts, using them to assess physical design security through metrics evaluation. Our experiments on AES-GF layout implementations achieve a tremendous 133 times speedup compared to conventional simulation-based flow without sacrificing substantial accuracy.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Dipayan Saha",
+            "orcid": "0000-0001-9785-7024"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Jingbo Zhou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Farimah Farahmandi"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-24T08:12:19Z"
+        }
+    ],
+    "keywords": [
+        "Side-Channel Analysis",
+        "Physical Design",
+        "EDA",
+        "Deep Learning",
+        "Graph Neural Network"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/541.pdf",
+    "pid": "541",
+    "pubtype": {
+        "note": "IEEE International Symposium on Circuits and Systems (IEEE ISCAS 2025)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Physical Design-Aware Power Side-Channel Leakage Assessment Framework using Deep Learning",
+    "year": 2025,
+    "repo": [
+        "https://github.com/sahadipayan/Physical-Design-Aware-Power-Dataset"
+    ]
+}
+,
+{
+    "abstract": "Over two decades since their introduction in 2005, all major verifiable pairing delegation protocols for public inputs have been designed to ensure information-theoretic security. However, we note that a delegation protocol involving only ephemeral secret keys in the public view can achieve everlasting security, provided the server is unable to produce a pairing forgery within the protocol\u2019s execution time. Thus, computationally bounding the adversary\u2019s capabilities during the protocol\u2019s execution, rather than across its entire lifespan, may be more reasonable, especially when the goal is to achieve significant efficiency gains for the delegating party. This consideration is particularly relevant given the continuously evolving computational costs associated with pairing computations and their ancillary blocks, which creates an ever-changing landscape for what constitutes efficiency in pairing delegation protocols. \r\nWith the goal of fulfilling both efficiency and everlasting security, we present AmorE, a protocol equipped with an adjustable security and efficiency parameter for sequential pairing delegation, which achieves state-of-the-art amortized efficiency in terms of the number of pairing computations. For example, delegating batches of 10 pairings on the BLS48-575 elliptic curve via our protocol costs to the client, on average, less than a single scalar multiplication in G2 per delegated pairing, while still ensuring at least 40 bits of statistical security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Chalmers University of Technology",
+                    "ror": "https://ror.org/040wg7k59"
+                },
+                {
+                    "name": "University of Gothenburg",
+                    "ror": "https://ror.org/01tm6cn81"
+                }
+            ],
+            "fullName": "Adrian Perez Keilty"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Diego F. Aranha"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Chalmers University of Technology",
+                    "ror": "https://ror.org/040wg7k59"
+                },
+                {
+                    "name": "University of Gothenburg",
+                    "ror": "https://ror.org/01tm6cn81"
+                }
+            ],
+            "fullName": "Elena Pagnin",
+            "orcid": "0000-0002-7804-6696"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                },
+                {
+                    "name": "Cinvestav"
+                }
+            ],
+            "fullName": "Francisco Rodr\u00edguez-Henr\u00edquez"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-24T08:16:00Z"
+        }
+    ],
+    "keywords": [
+        "efficiency",
+        "implementation",
+        "pairing delegation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/542.pdf",
+    "pid": "542",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "That\u2019s AmorE: Amortized E\ufb03ciency for Pairing Delegation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/relic-toolkit/relic/tree/amore",
+        "https://github.com/relic-toolkit/relic/tree/amore",
+        "https://github.com/relic-toolkit/relic/tree/amore",
+        "https://github.com/zcash/zips/blob/main/protocol/protocol.pdf",
+        "https://github.com/zcash/zips/blob/main/protocol/protocol.pdf"
+    ]
+}
+,
+{
+    "abstract": "In order to compute a multiple of a point on an elliptic curve in Weierstrass form one can use formulas in only one of the two coordinates of the points. These $x$-only formulas can be seen as an arithmetic on the Kummer line associated to the curve.\r\n\r\nIn this paper, we look at models of Kummer lines, and define an intrinsic notion of isomorphisms of Kummer lines. This allows us to give conversion formulas between Kummer models in a unified manner. When there is one rational point $T$ of $2$-torsion on the curve, we also use Mumford's theory of theta groups to show that there are two type of models: the \u201csymmetric\u201d ones with respect to $T$ and the \u201canti-symmetric\u201c ones. We show how this recovers the Montgomery model and various variants of the theta model.\r\n\r\nWe also classify when curves admit these different models via Galois representations and modular curves. When an elliptic curve is viewed inside a $2$-isogeny volcano, we give a criteria to say if it has a given Kummer model based solely on its position in the volcano.  We also give applications to the ECM factorization algorithm.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institut de Math\u00e9matiques de Bordeaux",
+                    "ror": "https://ror.org/05m3r1b84"
+                }
+            ],
+            "fullName": "Razvan Barbulescu",
+            "orcid": "0000-0002-1900-6520"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institut de Math\u00e9matiques de Bordeaux",
+                    "ror": "https://ror.org/05m3r1b84"
+                },
+                {
+                    "name": "Inria Bordeaux - Sud-Ouest Research Centre",
+                    "ror": "https://ror.org/03tjcj052"
+                }
+            ],
+            "fullName": "Damien Robert",
+            "orcid": "0000-0003-4378-4274"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institut de Math\u00e9matiques de Bordeaux",
+                    "ror": "https://ror.org/05m3r1b84"
+                }
+            ],
+            "fullName": "Nicolas Sarkis",
+            "orcid": "0009-0007-9513-6726"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-03-25T09:10:54Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-03-24T08:33:54Z"
+        }
+    ],
+    "keywords": [
+        "Elliptic curve cryptography",
+        "Kummer lines",
+        "theta functions",
+        "modular curves",
+        "Galois representation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Clarify the abstract",
+    "pdffile": "2025/543.pdf",
+    "pid": "543",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Models of Kummer lines and Galois representations",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The ETSI Technical Specification 104 015 proposes a framework to build Key Encapsulation Mechanisms (KEMs) with access policies and attributes, in the Ciphertext-Policy Attribute-Based Encryption (CP-ABE) vein. Several security guarantees and functionalities are claimed, such as pre-quantum and post-quantum hybridization to achieve security against Chosen-Ciphertext Attacks (CCA), anonymity, and traceability.\r\nIn this paper, we present a formal security analysis of a more generic construction, with application to the specific Covercrypt scheme, based on the pre-quantum ECDH and the post-quantum ML-KEM KEMs. We additionally provide an open-source library that implements the ETSI standard, in Rust, with high effiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Cosmian, Paris, France"
+                }
+            ],
+            "fullName": "Th\u00e9ophile Br\u00e9zot"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cosmian, Paris, France"
+                }
+            ],
+            "fullName": "Chlo\u00e9 H\u00e9bant",
+            "orcid": "0000-0001-9690-6250"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica (CWI), Nederland"
+                }
+            ],
+            "fullName": "Paola de Perthuis",
+            "orcid": "0000-0002-4222-522X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cosmian, Paris, France"
+                },
+                {
+                    "name": "DIENS, ENS, PSL University, CNRS, Inria, Paris, France"
+                }
+            ],
+            "fullName": "David Pointcheval",
+            "orcid": "0000-0002-6668-683X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-24T14:03:51Z"
+        }
+    ],
+    "keywords": [
+        "ABE",
+        "Post-Quantum",
+        "Hybrid",
+        "Implementation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/544.pdf",
+    "pid": "544",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Security Analysis of Covercrypt: A Quantum-Safe Hybrid Key Encapsulation Mechanism for Hidden Access Policies",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Cosmian/cover_crypt/releases/tag/v15.0.0",
+        "https://github.com/Cosmian/abe_gpsw"
+    ]
+}
+,
+{
+    "abstract": "CHide is one of the most prominent e-voting protocols, which, while combining security and efficiency, suffers from having very long encrypted credentials.\r\nIn this paper, starting from CHide, we propose a new protocol, based on multiparty Class Group Encryption (CGE) instead of discrete logarithm cryptography over known order groups, achieving a computational complexity of $O(nr)$, for $n$ votes and $r$ voters, and using a single MixNet. The homomorphic properties of CGE allow for more compact credentials while maintaining the same level of security at the cost of a small slowdown in efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Marche Polytechnic University, Ancona, Italy",
+                    "ror": "https://ror.org/00x69rs40"
+                }
+            ],
+            "fullName": "Michele Battagliola",
+            "orcid": "0000-0002-8269-2148"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Polytechnic of Turin, Turin, Italy",
+                    "ror": "https://ror.org/00bgk9508"
+                }
+            ],
+            "fullName": "Giuseppe D'Alconzo",
+            "orcid": "0000-0001-7377-6617"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Polytechnic of Turin, Turin, Italy",
+                    "ror": "https://ror.org/00bgk9508"
+                }
+            ],
+            "fullName": "Andrea Gangemi",
+            "orcid": "0000-0001-9689-8473"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Trento, Trento, Italy",
+                    "ror": "https://ror.org/05trd4x28"
+                }
+            ],
+            "fullName": "Chiara Spadafora",
+            "orcid": "0000-0003-3352-9210"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-24T15:50:43Z"
+        }
+    ],
+    "keywords": [
+        "Class Group Encryption",
+        "Threshold Encryption",
+        "Coercion Resistance",
+        "E-voting"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/545.pdf",
+    "pid": "545",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Enhancing E-Voting with Multiparty Class Group Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The current landscape of system-on-chips (SoCs) security verification faces challenges due to manual, labor-intensive, and inflexible methodologies. These issues limit the scalability and effectiveness of security protocols, making bug detection at the Register-Transfer Level (RTL) difficult. This paper proposes a new framework named BugWhisperer that utilizes a specialized, fine-tuned Large Language Model (LLM) to address these challenges. By enhancing the LLM's hardware security knowledge and leveraging its capabilities for text inference and knowledge transfer, this approach automates and improves the adaptability and reusability of the verification process. We introduce an open-source, fine-tuned LLM specifically designed for detecting security vulnerabilities in SoC designs. Our findings demonstrate that this tailored LLM effectively enhances the efficiency and flexibility of the security verification process. Additionally, we introduce a comprehensive hardware vulnerability database that supports this work and will further assist the research community in enhancing the security verification process.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Shams Tarek",
+            "orcid": "0000-0001-7671-6409"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Dipayan Saha",
+            "orcid": "0000-0001-9785-7024"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Sujan Kumar Saha"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Farimah Farahmandi"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-24T22:46:16Z"
+        }
+    ],
+    "keywords": [
+        "Large Language Model",
+        "Fine-tuning",
+        "Hardware Security",
+        "Security Verification",
+        "Hardware Vulnerability Database"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/546.pdf",
+    "pid": "546",
+    "pubtype": {
+        "note": "IEEE VLSI Test Symposium (VTS) 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "BugWhisperer: Fine-Tuning LLMs for SoC Hardware Vulnerability Detection",
+    "year": 2025,
+    "repo": [
+        "https://github.com/shamstarekargho/Hardware-Vulnerability-Dataset",
+        "https://github.com/shamstarekargho/Hardware-Vulnerability-Dataset"
+    ]
+}
+,
+{
+    "abstract": "This paper presents a security analysis of the South Korean Format-Preserving Encryption (FPE) standards FEA-1 and FEA-2. In 2023, Chauhan \\textit{et al.} presented the first third-party analysis of FEA-1 and FEA-2 against the square attack. The authors proposed new distinguishing attacks covering up to three rounds of FEA-1 and five rounds of FEA-2, with a data complexity of $2^8$ plaintexts. Additionally, using these distinguishers, they presented key recovery attacks for four rounds of FEA-1 and six rounds of FEA-2, for 192-bit and 256-bit key sizes. The complexities of both the four-round FEA-1 and six-round FEA-2 key recovery attacks are $2^{137.6}$. \\\\\r\n\r\nIn this work, we successfully extend the number of rounds attacked for both FEA-1 and FEA-2, using the square attack technique. Specifically, we present a four-round distinguishing attack against FEA-1 and six-round distinguishing attack against FEA-2. The data complexities of these distinguishers are $2^{64}$ plaintexts. Furthermore, we apply these distinguishers to perform key recovery attacks on five rounds of FEA-1 and seven rounds of FEA-2, targeting the 256-bit key size. The time complexities of the presented key recovery attacks are $2^{193.6}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ZF India Private Limited, India"
+                }
+            ],
+            "fullName": "Abhishek Kumar"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "QNu Labs Private Limited, Bengaluru, India"
+                }
+            ],
+            "fullName": "Amit Kumar Chauhan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of technology Jodhpur, Jodhpur, India"
+                }
+            ],
+            "fullName": "Somitra Kumar Sanadhya"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-25T05:33:27Z"
+        }
+    ],
+    "keywords": [
+        "Format Preserving Encryption",
+        "FEA-1",
+        "FEA-2",
+        "Square attack",
+        "Round Function"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/547.pdf",
+    "pid": "547",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Cryptanalysis of FEA-1 and FEA-2 using Square Attacks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
