@@ -39123,4 +39123,545 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "HuFu is an unstructured lattice-based signature scheme proposed during the NIST PQC standardization process. In this work, we present a side-channel analysis of HuFu's reference implementation.\r\n\r\nWe first exploit the multiplications involving its two main secret matrices, recovering approximately half of their entries through a non-profiled power analysis with a few hundred traces. Using these coefficients, we reduce the dimension of the underlying LWE problem, enabling full secret key recovery with calls to a small block-sized BKZ.\r\n\r\nTo mitigate this attack, we propose a countermeasure that replaces sensitive computations involving a secret matrix with equivalent operations derived solely from public elements, eliminating approximately half of the identified leakage and rendering the attack unfeasible.\r\n\r\nFinally, we perform a non-profiled power analysis targeting HuFu's Gaussian sampling procedure, recovering around 75\\% of the remaining secret matrix's entries in a few hundred traces. While full key recovery remains computationally intensive, we demonstrate that partial knowledge of the secret significantly improves the efficiency of signature forgery.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ANSSI (Paris, France)"
+                }
+            ],
+            "fullName": "Julien Devevey"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoNext Security (Paris, France)"
+                }
+            ],
+            "fullName": "Morgane Guerreau"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ANSSI (Paris, France)"
+                },
+                {
+                    "name": "Thales (France)",
+                    "ror": "https://ror.org/04emwm605"
+                },
+                {
+                    "name": "Laboratoire de Recherche en Informatique de Paris 6",
+                    "ror": "https://ror.org/05krcen59"
+                }
+            ],
+            "fullName": "Thomas Legavre"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ANSSI (Paris, France)"
+                }
+            ],
+            "fullName": "Ange Martinelli"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Thales (France)",
+                    "ror": "https://ror.org/04emwm605"
+                }
+            ],
+            "fullName": "Thomas Ricosset"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-25T10:48:40Z"
+        }
+    ],
+    "keywords": [
+        "SCA",
+        "post-quantum",
+        "signatures",
+        "lattices",
+        "leakage"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/548.pdf",
+    "pid": "548",
+    "pubtype": {
+        "note": "CASCADE 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Breaking HuFu with 0 Leakage: A Side-Channel Analysis",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mB64s53wFvP7637M/KF7ns9y5bf"
+    ]
+}
+,
+{
+    "abstract": "Digital identity wallets allow citizens to prove who they are and manage digital documents, called credentials, such as mobile driving licenses or passports. As with physical documents, secure and privacy-preserving management of the credential lifecycle is crucial: a credential can change its status from issued to valid, revoked or expired. In this paper, we focus on the analysis of cryptographic accumulators as a revocation scheme for digital identity wallet credentials. We describe the most well-established public key accumulators, and how zero-knowledge proofs can be used with accumulators for revocation of non-anonymous credentials. In addition, we assess the computational and communication costs analytically and experimentally. Our results show that they are comparable with existing schemes used in the context of certificate revocation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Trento"
+                },
+                {
+                    "name": "Polytechnic University of Turin"
+                }
+            ],
+            "fullName": "Andrea Flamini",
+            "orcid": "0000-0002-3872-7251"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Center for Cybersecurity, Fondazione Bruno Kessler"
+                }
+            ],
+            "fullName": "Silvio Ranise",
+            "orcid": "0000-0001-7269-9285"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Center for Cybersecurity, Fondazione Bruno Kessler"
+                }
+            ],
+            "fullName": "Giada Sciarretta",
+            "orcid": "0000-0001-7567-4526"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Center for Cybersecurity, Fondazione Bruno Kessler"
+                }
+            ],
+            "fullName": "Mario Scuro",
+            "orcid": "0000-0003-2410-3760"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Trento"
+                }
+            ],
+            "fullName": "Nicola Smaniotto",
+            "orcid": "0009-0003-0523-9926"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Center for Cybersecurity, Fondazione Bruno Kessler"
+                }
+            ],
+            "fullName": "Alessandro Tomasi",
+            "orcid": "0000-0002-3518-9400"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-25T11:20:04Z"
+        }
+    ],
+    "keywords": [
+        "Applied cryptography",
+        "Digital identity",
+        "Cryptographic accumulators",
+        "Credential revocation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/549.pdf",
+    "pid": "549",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Public Key Accumulators for Revocation of Non-Anonymous Credentials",
+    "year": 2025,
+    "repo": [
+        "https://github.com/sam-jaques/allosaurust/tree/master",
+        "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/issues/200",
+        "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/issues/200",
+        "https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/",
+        "https://innovazione.gov.it/notizie/comunicati-stampa/digitale-nuovi-massimi-storici-per-i-numeri-del-2022/",
+        "https://innovazione.gov.it/notizie/comunicati-stampa/digitale-nuovi-massimi-storici-per-i-numeri-del-2022/",
+        "https://github.com/hyperledger/anoncreds-v2-rs",
+        "https://github.com/hyperledger/ursa-docs/tree/main/specs/anoncreds1"
+    ]
+}
+,
+{
+    "DOI": "10.46586/tosc.v2025.i1.542-591",
+    "abstract": "This work presents an exact and compact formula for the probability of rotation-xor differentials (RX-differentials) through modular addition, for arbitrary rotation amounts, which has been a long-standing open problem. The formula comes with a rigorous proof and is also verified by extensive experiments.\r\n\r\nOur formula uncovers error in a recent work from 2022 proposing a formula for rotation amounts bigger than 1. Surprisingly, it also affects correctness of the more studied and used formula for the rotation amount equal to 1 (from TOSC 2016). Specifically, it uncovers rare cases where the assumptions of this formula do not hold. Correct formula for arbitrary rotations now opens up a larger search space where one can often find better trails.\r\n\r\nFor applications, we propose automated mixed integer linear programming (MILP) modeling techniques for searching optimal RX-trails based on our exact formula. They are consequently applied to several ARX designs, including Salsa, Alzette and a small-key variant of Speck, and yield many new RX-differential distinguishers, some of them based on provably optimal trails. In order to showcase the relevance of the RX-differential analysis, we also design Malzette, a 12-round Alzette-based permutation with maliciously chosen constants, which has a practical RX-differential distinguisher, while standard differential/linear security arguments suggest sufficient security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "DCS and SnT, University of Luxembourg",
+                    "ror": "https://ror.org/036x5ad56"
+                }
+            ],
+            "fullName": "Alex Biryukov",
+            "orcid": "0000-0003-1404-6686"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "SnT, University of Luxembourg",
+                    "ror": "https://ror.org/036x5ad56"
+                }
+            ],
+            "fullName": "Baptiste Lambin",
+            "orcid": "0000-0002-3040-4503"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "SnT, University of Luxembourg",
+                    "ror": "https://ror.org/036x5ad56"
+                }
+            ],
+            "fullName": "Aleksei Udovenko",
+            "orcid": "0000-0001-8318-6274"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-03-26T20:02:23Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-03-25T11:53:37Z"
+        }
+    ],
+    "keywords": [
+        "Differential cryptanalysis",
+        "Rotational cryptanalysis",
+        "RX-differentials"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/550.pdf",
+    "pid": "550",
+    "pubtype": {
+        "pubtype": "TOSC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Exact Formula for RX-Differential Probability through Modular Addition for All Rotations",
+    "year": 2025,
+    "repo": [
+        "https://github.com/cryptolu/RX-Differentials-Probability"
+    ]
+}
+,
+{
+    "abstract": "In a social key recovery scheme, users back up their secret keys (typically using Shamir's secret sharing) with their social connections, known as a set of guardians. This places a heavy burden on the guardians, as they must manage their shares both securely and reliably. Finding and managing such a set of guardians may not be easy, especially when the consequences of losing a key are significant. \r\n\r\nWe take an alternative approach of social recovery within a community, where each member already holds a secret key (with possibly an associated public key) and uses other community members as their guardians forming a mutual dependency among themselves. Potentially, each member acts as a guardian for upto $(n-1)$ other community members.  Therefore, in this setting, using standard Shamir's sharing leads to a linear ($O(n)$) blow-up in the internal secret storage of the guardian for each key recovery. Our solution avoids this linear blowup in internal secret storage by relying on a novel secret-sharing scheme, leveraging the fact that each member already manages a secret key. In fact, our scheme does not require guardians to store anything beyond their own secret keys. \r\n\r\nWe propose the first formal definition of a social key recovery scheme for general access structures in the community setting. We prove that our scheme is secure against any malicious and adaptive adversary that may corrupt up to $t$ parties. As a main technical tool, we use a new notion of secret sharing, that enables $(t+1)$ out of $n$ sharing of a secret even when the shares are generated independently -- we formalize this as bottom-up secret sharing (BUSS), which may be of independent interest. \r\n\r\nFinally, we provide an implementation benchmarking varying the number of guardians both in a regional, and geo-distributed setting. For instance, for 8 guardians, our backup protocol takes around 146-149 ms in a geo-distributed WAN setting, and 4.9-5.9 ms in the LAN setting; for recovery protocol, the timings are approximately the same for the WAN setting (as network latency dominates), and 1.2-1.4 ms for the LAN setting.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University / Supra Research"
+                }
+            ],
+            "fullName": "Aniket Kate"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Pratyay Mukherjee",
+            "orcid": "0000-0002-0995-9555"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Hamza Saleem",
+            "orcid": "0009-0000-4865-9283"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Pratik Sarkar",
+            "orcid": "0000-0001-6370-0977"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley"
+                }
+            ],
+            "fullName": "Bhaskar Roberts",
+            "orcid": "0000-0003-4057-5952"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-25T13:54:32Z"
+        }
+    ],
+    "keywords": [
+        "Key Recovery",
+        "Key Management",
+        "Secret Sharing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/551.pdf",
+    "pid": "551",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "ANARKey: A New Approach to (Socially) Recover Keys",
+    "year": 2025,
+    "repo": [
+        "https://github.com/RustCrypto/elliptic-curves",
+        "https://github.com/RustCrypto/elliptic-curves",
+        "https://www.coinbase.com/blog/digital-asset-management-with-mpc-whitepaper",
+        "https://www.coinbase.com/blog/digital-asset-management-with-mpc-whitepaper"
+    ]
+}
+,
+{
+    "abstract": "A (single server) private information retrieval (PIR) allows a client to read data from a public database held on a remote server, without revealing to the server which locations she is reading. In a doubly efficient PIR (DEPIR), the database is first preprocessed offline into a data structure, which then allows the server to answer any client query efficiently in sub-linear  online time. Constructing DEPIR is a notoriously difficult problem, and this difficulty even extends to a weaker notion secret-key DEPIR (SK-DEPIR), where the database is preprocessed using secret randomness and the client is given a secret key for making queries.  We currently only have constructions of SK-DEPIR from the Ring LWE assumption or from non-standard code-based assumptions. \r\n\r\n We show that the black-box use of essentially all generic cryptographic primitives (e.g., key agreement, oblivious transfer, indistinguishability obfuscation, etc.), including idealized primitives (e.g., random oracles, generic multilinear groups, virtual black-box obfuscation, etc.) is essentially useless for constructing SK-DEPIR. In particular, in any such SK-DEPIR construction, we can replace all black-box use of these primitives with just a black-box use of one-way functions. While we conjecture that SK-DEPIR cannot be constructed using black-box one-way functions alone, we are unable to show this in its full generality. However, we do show this for 2-round schemes with a passive server that simply outputs requested locations in the preprocessed data structure, which is the format of all known schemes. Overall, this shows that the black-box use of essentially all crypto primitives is insufficient for constructing 2-round passive-server SK-DEPIR, and does not provide any benefit beyond black-box one-way functions for constructing general SK-DEPIR.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Virginia",
+                    "ror": "https://ror.org/0153tk833"
+                }
+            ],
+            "fullName": "Wei-Kai Lin",
+            "orcid": "0000-0001-6012-7124"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/03awzbc87"
+                }
+            ],
+            "fullName": "Ethan Mook",
+            "orcid": "0009-0008-8268-7606"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/03awzbc87"
+                },
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Daniel Wichs",
+            "orcid": "0000-0002-4981-1643"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-25T17:57:20Z"
+        }
+    ],
+    "keywords": [
+        "depir"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/552.pdf",
+    "pid": "552",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Black Box Crypto is Useless for Doubly Efficient PIR",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Hardware IP blocks have been subjected to various forms of confidentiality and integrity attacks in recent years due to the globalization of the semiconductor industry. System-on-chip (SoC) designers are now considering a zero-trust model for security, where an IP can be attacked at any stage of the manufacturing process for piracy, cloning, overproduction, or malicious alterations. Hardware redaction has emerged as a promising countermeasure to thwart confidentiality and integrity attacks by untrusted entities in the globally distributed supply chain. However, existing redaction techniques provide this security at high overhead costs, making them unsuitable for real-world implementation. In this paper, we propose HIPR, a fine-grain redaction methodology that is robust, scalable, and incurs significantly lower overhead compared to existing redaction techniques. HIPR redacts security-critical Boolean and sequential logic from the hardware design, performs interconnect randomization, and employs multiple overhead optimization steps to reduce overhead costs. We evaluate HIPR on open-source benchmarks and reduce area overheads by 1 to 2 orders of magnitude compared to state-of-the-art redaction techniques without compromising security. We also demonstrate that the redaction performed by HIPR is resilient against conventional functional and structural attacks on hardware IPs. The redacted test IPs used to evaluate HIPR are available at: https://github.com/UF-Nelms-IoT-Git-Projects/HIPR.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida, Gainesville, FL 32611, USA"
+                }
+            ],
+            "fullName": "Aritra Dasgupta",
+            "orcid": "0000-0002-0786-9185"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida, Gainesville, FL 32611, USA"
+                }
+            ],
+            "fullName": "Sudipta Paria",
+            "orcid": "0009-0002-7726-8032"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida, Gainesville, FL 32611, USA"
+                }
+            ],
+            "fullName": "Swarup Bhunia",
+            "orcid": "0000-0001-6082-6961"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-25T21:15:20Z"
+        }
+    ],
+    "keywords": [
+        "Hardware IP Protection",
+        "Programmable Logic",
+        "Hardware Redaction",
+        "Reverse Engineering",
+        "IP Piracy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/553.pdf",
+    "pid": "553",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "HIPR: Hardware IP Protection through Low-Overhead Fine-Grain Redaction",
+    "year": 2025,
+    "repo": [
+        "https://github.com/UF-Nelms-IoT-Git-Projects/HIPR",
+        "https://github.com/mit-ll/CEP",
+        "https://github.com/mit-ll/CEP.git",
+        "https://github.com/DfX-NYUAD/PSAT",
+        "https://github.com/emsec/hal/wiki/Dataflow-Analysis",
+        "https://github.com/UF-Nelms-IoT-Git-Projects/HIPR",
+        "https://github.com/mit-ll/CEP.git",
+        "https://github.com/lsils/benchmarks"
+    ]
+}
+,
+{
+    "abstract": "We analyze the composition of symmetric encryption and digital signatures in secure group messaging protocols where group members share a symmetric encryption key. In particular, we analyze the chat encryption algorithms underlying MLS, Session, Signal, and Matrix using the formalism of symmetric signcryption introduced by Jaeger, Kumar, and Stepanovs (Eurocrypt 2024). We identify theoretical attacks against each of the constructions we analyze that result from the insufficient binding between the symmetric encryption scheme and the digital signature scheme. In the case of MLS and Session, these translate into practically exploitable replay and reordering attacks by a group-insider. For Signal this leads to a forgery attack by a group-outsider with access to a user\u2019s signing key, an attack previously discovered by Balb\u00e1s, Collins, and Gajland (Asiacrypt 2023). In Matrix there are mitigations in the broader ecosystem that prevent exploitation. We provide formal security theorems that each of the four constructions are secure up to these attacks. Additionally, in Session we identified two attacks outside the symmetric signcryption model. The first allows a group-outsider with access to an exposed signing key to forge arbitrary messages and the second allows outsiders to replay ciphertexts.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Joseph Jaeger",
+            "orcid": "0000-0002-4934-3405"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Akshaya Kumar",
+            "orcid": "0000-0003-4519-3718"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-25T21:28:17Z"
+        }
+    ],
+    "keywords": [
+        "Secure messaging",
+        "Provable security",
+        "Real-world systems"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/554.pdf",
+    "pid": "554",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Analyzing Group Chat Encryption in MLS, Session, Signal, and Matrix",
+    "year": 2025,
+    "repo": [
+        "https://gitlab.matrix.org/matrix-org/olm/-/raw/master/docs/megolm.md",
+        "https://gitlab.matrix.org/matrix-org/olm/-/raw/master/docs/megolm.md",
+        "https://github.com/oxen-io/session-desktop/blob/unstable/ts/session/crypto/MessageEncrypter.ts#L65",
+        "https://github.com/oxen-io/session-desktop/blob/unstable/ts/session/crypto/MessageEncrypter.ts#L65"
+    ]
+}
 ]
