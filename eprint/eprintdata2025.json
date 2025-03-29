@@ -39664,4 +39664,843 @@
         "https://github.com/oxen-io/session-desktop/blob/unstable/ts/session/crypto/MessageEncrypter.ts#L65"
     ]
 }
+,
+{
+    "abstract": "We initiate the study of strong federated authentication with password-based credential against identity server corruption (SaPBC). We provide a refined formal security model, which captures all the necessary security properties in registration, authentication, and session key establishment between a user and an application server. The new model with fine-grained information leakage separates the leakage of password-related files and long-term secrets (including passwords and credentials). Moreover, we present two SaPBC protocols constructed from efficient cryptographic primitives for these corruption scenarios. In addition to rigorous security proofs, we also conduct comprehensive performance evaluation of the two protocols.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computer Science and Engineering, University of Electronic Science and Technology of China"
+                },
+                {
+                    "name": "School of Computing and Information Systems, Singapore Management University"
+                }
+            ],
+            "fullName": "Changsong Jiang",
+            "orcid": "0000-0002-6510-3380"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computer Science and Engineering, University of Electronic Science and Technology of China"
+                },
+                {
+                    "name": "Yangtze Delta Region Institute (Huzhou), University of Electronic Science and Technology of China"
+                }
+            ],
+            "fullName": "Chunxiang Xu",
+            "orcid": "0000-0002-5411-7621"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computing and Information Systems, Singapore Management University"
+                }
+            ],
+            "fullName": "Guomin Yang",
+            "orcid": "0000-0002-4949-7738"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Paderborn University"
+                }
+            ],
+            "fullName": "Li Duan",
+            "orcid": "0009-0001-1663-2622"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Engineering, Huazhong University of Science and Technology"
+                }
+            ],
+            "fullName": "Jing Wang",
+            "orcid": "0000-0002-1309-8786"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-26T02:17:30Z"
+        }
+    ],
+    "keywords": [
+        "Federated identities",
+        "Strong authentication",
+        "Password-based credential",
+        "Server corruption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is the full version of our paper published in ACISP 2025.",
+    "pdffile": "2025/555.pdf",
+    "pid": "555",
+    "pubtype": {
+        "note": "30th Australasian Conference on Information Security and Privacy (ACISP 2025)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Strong Federated Authentication With Password-based Credential Against Identity Server Corruption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In order for a client to securely connect to a server on the web, the client must trust certificate authorities (CAs) only to issue certificates to the legitimate operator of the server. If a certificate is miss-issued, it is possible for an attacker to impersonate the server to the client. The goal of Certificate Transparency (CT) is to log every certificate issued in a manner that allows anyone to audit the logs for miss-issuance. A client can even audit a CT log itself, but this would leak sensitive browsing data to the log operator. As a result, client-side audits are rare in practice. \r\nIn this work, we revisit private CT auditing from a real-world perspective. Our study is motivated by recent changes to the CT ecosystem and advancements in Private Information Retrieval (PIR). First, we find that checking for inclusion of Signed Certificate Timestamps (SCTs) in a log \u2014 the audit performed by clients \u2014 is now possible with PIR in under a second and under 100kb of communication with minor adjustments to the protocol that have been proposed previously. Our results also show how to scale audits by using existing batching techniques and the algebraic structure of the PIR protocols, in particular to obtain certificate hashes by included in the log.\r\nSince PIR protocols are more performant with smaller databases, we also suggest a number of strategies to lower the size of the SCT database for audits. Our key observation is that the web will likely transition to a new model for certificate issuance. While this transition is primarily motivated by the need to adapt the PKI to larger, post-quantum signature schemes, it also removes the need for SCT audits in most cases. We present the first estimates of how this transition may impact SCT auditing, based on data gathered from public CT logs. We find that large scale deployment of the new issuance model may reduce the number of SCT audits needed by a factor of 1,000, making PIR-based auditing practical to deploy.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Lena Heimberger",
+            "orcid": "0009-0001-9404-7699"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cloudflare Research"
+                }
+            ],
+            "fullName": "Christopher Patton"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cloudflare Research"
+                }
+            ],
+            "fullName": "Bas Westerbaan",
+            "orcid": "0000-0002-3195-6238"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-26T08:03:56Z"
+        }
+    ],
+    "keywords": [
+        "SCT auditing",
+        "Signed Certificate Timestamps",
+        "Certificate Transparency",
+        "Private Information Retrieval",
+        "PIR",
+        "transparency"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/556.pdf",
+    "pid": "556",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Private SCT Auditing, Revisited",
+    "year": 2025,
+    "repo": [
+        "https://googlechrome.github.io/CertificateTransparency/log_list.html",
+        "https://googlechrome.github.io/CertificateTransparency/log_list.html",
+        "https://github.com/menonsamir/ypir",
+        "https://github.com/microsoft/SealPIR",
+        "https://github.com/google/hintless_pir",
+        "https://googlechrome.github.io/CertificateTransparency/ct_policy.html",
+        "https://googlechrome.github.io/CertificateTransparency/ct_policy.html",
+        "https://github.com/apple/live-caller-id-lookup-example/",
+        "https://github.com/apple/live-caller-id-lookup-example/",
+        "https://github.com/C2SP/C2SP/blob/main/static-ct-api.md",
+        "https://github.com/C2SP/C2SP/blob/main/static-ct-api.md",
+        "https://github.com/C2SP/C2SP/blob/main/tlog-tiles.md",
+        "https://github.com/C2SP/C2SP/blob/main/tlog-tiles.md",
+        "https://github.com/transparency-dev/trillian-tessera",
+        "https://github.com/transparency-dev/trillian-tessera",
+        "https://github.com/brave/brave-browser/issues/22482",
+        "https://github.com/Microsoft/SEAL",
+        "https://github.com/google/trillian",
+        "https://github.com/davidben/merkle-tree-certs/issues/41#issuecomment-2245218105",
+        "https://github.com/davidben/merkle-tree-certs/issues/41#issuecomment-2245218105"
+    ]
+}
+,
+{
+    "abstract": "Distributed SNARKs enable multiple provers to collaboratively generate proofs, enhancing the efficiency and scalability of large-scale computations. The state-of-the-art distributed SNARK for Plonk, Pianist (S\\&P '24), achieves constant proof size, constant amortized communication complexity, and constant verifier complexity. However, when proving the Rank-One Constraint System (R1CS), a widely used intermediate representation for SNARKs, Pianist must perform the transformation from R1CS into Plonk before proving, which can introduce a start-up cost of $10\\times$ due to the expansion of the statement size. Meanwhile, existing distributed SNARKs for R1CS, e.g., DIZK (USENIX Sec. '18) and Hekaton (CCS '24), fail to match the superior asymptotic complexities of Pianist.\r\n\r\nWe propose $\\textsf{Soloist}$, an optimized distributed SNARK for R1CS. $\\textsf{Soloist}$ achieves constant proof size, constant amortized communication complexity, and constant verifier complexity, relative to the R1CS size $n$. Utilized with $\\ell$ sub-provers, its prover complexity is $O(n/\\ell \\cdot \\log(n/\\ell))$. The concrete prover time is~$\\ell\\times$ as fast as the R1CS-targeted Marlin (Eurocrypt '20). For zkRollups, $\\textsf{Soloist}$ can prove more transactions, with $2.5 \\times$ smaller memory costs, $2.8\\times$ faster preprocessing, and $1.8\\times$ faster proving than Pianist.\r\n\r\n$\\textsf{Soloist}$ leverages an improved inner product argument and a new batch bivariate polynomial commitment variant of KZG (Asiacrypt '10). To achieve constant verification, we propose a new preprocessing method with a lookup argument for unprescribed tables, which are usually assumed pre-committed in prior works. Notably, all these schemes are equipped with scalable distributed mechanisms.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Weihan Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Beihang University"
+                }
+            ],
+            "fullName": "Zongyang Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Yun Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Pengfei Zhu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Cheng Hong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Beihang University"
+                }
+            ],
+            "fullName": "Jianwei Liu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-26T12:48:34Z"
+        }
+    ],
+    "keywords": [
+        "zero-knowledge proof",
+        "SNARK",
+        "distributed proof"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/557.pdf",
+    "pid": "557",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Soloist: Distributed SNARKs for Rank-One Constraint System",
+    "year": 2025,
+    "repo": [
+        "https://github.com/arkworks-rs",
+        "https://github.com/iden3/circom",
+        "https://github.com/0xPARC/circom-ecdsa",
+        "https://github.com/hermeznetwork/circuits",
+        "https://github.com/arkworks-rs/marlin",
+        "https://github.com/dreamATD/pianist-gnark",
+        "https://github.com/risc0/risc0"
+    ]
+}
+,
+{
+    "abstract": "Content-defined chunking (CDC) algorithms split streams of data into smaller blocks, called chunks, in a way that preserves chunk boundaries when the data is partially changed. CDC is ubiquitous in applications that deduplicate data such as backup solutions, software patching systems, and file hosting platforms. Much like compression, CDC can introduce leakage when combined with encryption: fingerprinting attacks can exploit chunk length patterns to infer information about the data.\r\nTo address these risks, many systems\u2014mainly in the cloud backup setting\u2014have developed bespoke mitigations by mixing a cryptographic key into the chunking process. We study these keyed CDC (KCDC) schemes \u201cin the wild\u201d, presenting efficient key recovery attacks against five different KCDC schemes, deployed in the backup solutions Borg, Bupstash, Duplicacy, Restic, and Tarsnap. Our attacks are in a realistic threat model that relies only on weak known or chosen-plaintext capabilities. This shows, in particular, that they fail to protect against fingerprinting attacks. To demonstrate practical exploitability, we also present \u201cend-to-end\u201d attacks on three complete encrypted backup applications, namely Borg, Restic and Tarsnap. These build on our attacks on the underlying KCDC schemes.\r\nIn an effort to tackle these problems, we introduce the first formal treatment for KCDC schemes and propose a provably secure construction that fulfills a strong notion of security. We benchmark our construction against existing (broken) approaches, showing that it has competitive performance. In doing so, we take a step towards making real-world systems that rely on KCDC more resilient to attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Kien Tuong Truong",
+            "orcid": "0009-0006-9370-9677"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Simon-Philipp Merz",
+            "orcid": "0000-0002-2475-2966"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Matteo Scarlata",
+            "orcid": "0009-0000-6285-6259"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research - Zurich",
+                    "ror": "https://ror.org/02js37d36"
+                }
+            ],
+            "fullName": "Felix G\u00fcnther",
+            "orcid": "0000-0002-8495-6610"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Kenneth G. Paterson",
+            "orcid": "0000-0002-5145-4489"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-26T13:42:35Z"
+        }
+    ],
+    "keywords": [
+        "backup systems",
+        "content-defined chunking",
+        "cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/558.pdf",
+    "pid": "558",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Breaking and Fixing Content-Defined Chunking",
+    "year": 2025,
+    "repo": [
+        "https://github.com/andrewchambers/bupstash",
+        "https://github.com/andrewchambers/bupstash",
+        "https://github.com/restic/chunker"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we present a side-channel attack on the hardware AES accelerator of a Bluetooth chip used in millions of devices worldwide, ranging from wearables and smart home products to industrial IoT. The attack leverages information about AES computations unintentionally transmitted by the chip together with RF signals to recover the encryption key. Unlike traditional side-channel attacks that rely on power or near-field electromagnetic emissions as sources of information, RF-based attacks leave no evidence of tampering, as they do not require package removal, chip decapsulation, or additional soldered components. However, side-channel emissions extracted from RF signals are considerably weaker and noisier, necessitating more traces for key recovery. The presented profiled machine learning-assisted attack can recover the full encryption key from 90,000 traces captured at a one-meter distance from the target device, with each trace being an average of 10,000 samples per encryption. This is a twofold improvement over the correlation analysis-based attack on the same AES accelerator.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Institute of Technology",
+                    "ror": "https://ror.org/026vcq606"
+                }
+            ],
+            "fullName": "Yanning Ji"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Institute of Technology",
+                    "ror": "https://ror.org/026vcq606"
+                }
+            ],
+            "fullName": "Elena Dubrova"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Institute of Technology",
+                    "ror": "https://ror.org/026vcq606"
+                }
+            ],
+            "fullName": "Ruize Wang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-26T14:15:02Z"
+        }
+    ],
+    "keywords": [
+        "Symmetric-key cryptography",
+        "AES",
+        "CCM",
+        "side-channel attack",
+        "CPA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/559.pdf",
+    "pid": "559",
+    "pubtype": {
+        "note": "the 55th International Symposium on Multiple-Valued Logic (ISMVL 2025)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Is Your Bluetooth Chip Leaking Secrets via RF Signals?",
+    "year": 2025,
+    "repo": [
+        "https://gits-15.sys.kth.se/yanning/SCA-HWAES",
+        "https://gits-15.sys.kth.se/yanning/SCA-HWAES"
+    ]
+}
+,
+{
+    "abstract": "Deep learning-based side-channel analysis has become a popular and powerful option for side-channel attacks in recent years. One of the main directions that the side-channel community explores is how to design efficient architectures that can break the targets with as little as possible attack traces, but also how to consistently build such architectures.\r\nIn this work, we explore the usage of the JumpReLU activation function, which was designed to improve the robustness of neural networks. Intuitively speaking, improving the robustness seems a natural requirement for side-channel analysis, as hiding countermeasures could be considered adversarial attacks. \r\nIn our experiments, we explore three strategies: 1) exchanging the activation functions with JumpReLU at the inference phase, training common side-channel architectures with JumpReLU, and 3) conducting hyperparameter search with JumpReLU as the activation function. While the first two options do not yield improvements in results (but also do not show worse performance), the third option brings advantages, especially considering the number of neural networks that break the target. As such, we conclude that using JumpReLU is a good option to improve the stability of attack results.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Abraham Basurto-Becerra"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Delft University of Technology",
+                    "ror": "https://ror.org/02e2c7k09"
+                }
+            ],
+            "fullName": "Azade Rezaeezade"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Stjepan Picek"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-26T19:37:38Z"
+        }
+    ],
+    "keywords": [
+        "Side-Channel Analysis",
+        "Deep Learning",
+        "JumpReLU"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/560.pdf",
+    "pid": "560",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Jump, It Is Easy: JumpReLU Activation Function in Deep Learning-based Side-channel Analysis",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/"
+    ]
+}
+,
+{
+    "abstract": "Current hardware security verification processes predominantly rely on manual threat modeling and test plan generation, which are labor-intensive, error-prone, and struggle to scale with increasing design complexity and evolving attack methodologies. To address these challenges, we propose ThreatLens, an LLM-driven multi-agent framework that automates security threat modeling and test plan generation for hardware security verification. ThreatLens integrates retrieval-augmented generation (RAG) to extract relevant security knowledge, LLM-powered reasoning for threat assessment, and interactive user feedback to ensure the generation of practical test plans. By automating these processes, the framework reduces the manual verification effort, enhances coverage, and ensures a structured, adaptable approach to security verification. We evaluated our framework on the NEORV32 SoC, demonstrating its capability to automate security verification through structured test plans and validating its effectiveness in real-world scenarios.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Dipayan Saha",
+            "orcid": "0000-0001-9785-7024"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Hasan Al Shaikh",
+            "orcid": "0000-0002-6142-7329"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Shams Tarek",
+            "orcid": "0000-0001-7671-6409"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Farimah Farahmandi"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-26T21:25:06Z"
+        }
+    ],
+    "keywords": [
+        "LLM",
+        "Security Threat Modeling",
+        "Security Test Plan Generation",
+        "Security Policy Generation",
+        "Hardware Security and Trust"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/561.pdf",
+    "pid": "561",
+    "pubtype": {
+        "note": "IEEE VLSI Test Symposium (VTS) 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "ThreatLens: LLM-guided Threat Modeling and Test Plan Generation for Hardware Security Verification",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We show that the certificateless authentication scheme [Mob. Networks Appl. 2022, 27, 346-356] fails to keep anonymity, not as claimed. The scheme neglects the basic requirement for bit-wise XOR, and tries to encrypt data by the operator.  The negligence results in some trivial equalities. The adversary can retrieve the user's identity from  one captured string via the open channel.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-27T02:31:53Z"
+        }
+    ],
+    "keywords": [
+        "Certificateless Authentication",
+        "Key Agreement",
+        "Anonymity",
+        "Wireless Body Area Network"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/562.pdf",
+    "pid": "562",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Analysis of One Certificateless Authentication and Key Agreement Scheme for  Wireless Body Area Network",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Since the selection of the National Institute of Standards and Technology (NIST) Post-Quantum Cryptography (PQC) standardization algorithms, research on integrating PQC into security protocols such as TLS/SSL, IPSec, and DNSSEC has been actively pursued. However, PQC migration for Internet of Things (IoT) communication protocols remains largely unexplored. Embedded devices in IoT environments have limited computational power and memory, making it crucial to optimize PQC algorithms for efficient computation and minimal memory usage when deploying them on low-spec IoT devices. In this paper, we introduce KEM-MQTT, a lightweight and efficient Key Encapsulation Mechanism (KEM) for the Message Queuing Telemetry Transport (MQTT) protocol, widely used in IoT environments. Our approach applies the NIST KEM algorithm Crystals-Kyber (Kyber) while leveraging MQTT\u2019s characteristics and sensor node constraints. To enhance efficiency, we address certificate verification issues and adopt KEMTLS to eliminate the need for Post-Quantum Digital Signatures Algorithm (PQC-DSA) in mutual authentication. As a result, KEM-MQTT retains its lightweight properties while maintaining the security guarantees of TLS 1.3. We identify inefficiencies in existing Kyber implementations on 8-bit AVR microcontrollers (MCUs), which are highly resource-constrained. To address this, we propose novel implementation techniques that optimize Kyber for AVR, focusing on high-speed execution, reduced memory consumption, and secure implementation, including Signed LookUp-Table (LUT) Reduction. Our optimized Kyber achieves performance gains of 81%,75%, and 85% in the KeyGen, Encaps, and DeCaps processes, respectively, compared to the reference implementation. With approximately 3 KB of stack usage, our Kyber implementation surpasses all state-of-the-art Elliptic Curve Diffie-Hellman (ECDH) implementations. Finally, in KEM-MQTT using Kyber-512, an 8-bit AVR device completes the handshake preparation process in 4.32 seconds, excluding the physical transmission and reception times.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Kookmin University",
+                    "ror": "https://ror.org/0049erg63"
+                }
+            ],
+            "fullName": "YoungBeom Kim",
+            "orcid": "0000-0003-4715-8393"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kookmin University",
+                    "ror": "https://ror.org/0049erg63"
+                }
+            ],
+            "fullName": "Seog Chung Seo",
+            "orcid": "0000-0001-8016-2808"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-27T03:06:23Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography",
+        "Crystals-Kyber",
+        "ML-KEM",
+        "MQTT",
+        "8-bit AVR",
+        "KEMTLS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/563.pdf",
+    "pid": "563",
+    "pubtype": {
+        "note": "Major Revision. Asia-CCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An Optimized Instantiation of Post-Quantum MQTT protocol on 8-bit AVR Sensor Nodes",
+    "year": 2025,
+    "repo": [
+        "https://github.com/whYBeKim/Crystals-Kyber-on-AVR",
+        "https://github.com/whYBeKim/Crystals-Kyber-on-AVR",
+        "https://github.com/pq-crystals/kyber/tree/main/ref/nistkat",
+        "https://github.com/veorq/cryptocoding",
+        "https://github.com/veorq/cryptocoding"
+    ]
+}
+,
+{
+    "abstract": "Both masking and shuffling are very common software countermeasures against side-channel attacks. However, exploring possible combinations of the two countermeasures to increase and fine-tune side-channel resilience is less investigated. With this work, we aim to bridge that gap by both concretising the security guarantees of several masking and shuffling combinations presented in earlier work and additionally investigating their randomness cost. We subsequently implement these approaches to also analyse their performance. In this context, we present five different protected implementations of the new standard for lightweight cryptography, Ascon, on a 32-bit RISC-V architecture: A 3rd-order masked, unshuffled implementation and three combined 3rd-order masked and shuffled implementations. Additionally, we present a levelled implementation where only the particularly vulnerable keyed initialisation and finalisation of the permutation are masked and shuffled, while the rest is only shuffled. To further improve the security and performance of our implementations we make use of the Probe Isolating Non-Interference (PINI) masked AND gadget, coupled with techniques like bit-slicing and bit-interleaving. Utilising benchmarking and an MI-shortcut security analysis, we pinpoint the best masking-shuffling combinations that maximize security at reasonable overheads.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Amsterdam",
+                    "ror": "https://ror.org/04dkp9463"
+                }
+            ],
+            "fullName": "Linus Mainka"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Amsterdam",
+                    "ror": "https://ror.org/04dkp9463"
+                }
+            ],
+            "fullName": "Kostas Papagiannopoulos"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-27T11:19:54Z"
+        }
+    ],
+    "keywords": [
+        "RISC-V",
+        "Masking",
+        "Shuffling",
+        "Ascon",
+        "Side-Channel Countermeasures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/564.pdf",
+    "pid": "564",
+    "pubtype": {
+        "note": "CASCADE 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Combined Masking and Shuffling for Side-Channel Secure Ascon on RISC-V",
+    "year": 2025,
+    "repo": [
+        "https://uva-hva.gitlab.host/l.mainka/side-channel-secure-ascon",
+        "https://uva-hva.gitlab.host/l.mainka/side-channel-secure-ascon"
+    ]
+}
+,
+{
+    "abstract": "We demonstrate an attack on the soundness of a widely\r\nknown optimization of the Gemini multilinear Polynomial Commitment\r\nScheme (PCS). The attack allows a malicious prover to falsely claim that\r\na multilinear polynomial takes a value of their choice, for any input point.\r\nWe stress that the original Gemini multilinear PCS and HyperKZG, an\r\nadaptation of Gemini, are not affected by the attack.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ernst and Young, UK"
+                }
+            ],
+            "fullName": "Lydia Garms"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ernst & Young, UK"
+                }
+            ],
+            "fullName": "Michael Livesey",
+            "orcid": "0000-0003-3431-9020"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-27T15:06:36Z"
+        }
+    ],
+    "keywords": [
+        "Polynomial Commitment Scheme",
+        "Multilinear",
+        "ZK-SNARKS"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/565.pdf",
+    "pid": "565",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Attacking soundness for an optimization of the Gemini Polynomial Commitment Scheme",
+    "year": 2025,
+    "repo": [
+        "https://github.com/han0110/plonkish",
+        "https://github.com/AztecProtocol/barretenberg/tree/c9c89fa6d3a925f5eef77abf44029dbf939c0ecd/cpp/src/barretenberg/commitment_schemes/gemini",
+        "https://github.com/AztecProtocol/barretenberg/tree/c9c89fa6d3a925f5eef77abf44029dbf939c0ecd/cpp/src/barretenberg/commitment_schemes/gemini",
+        "https://github.com/AztecProtocol/barretenberg/tree/c9c89fa6d3a925f5eef77abf44029dbf939c0ecd/cpp/src/barretenberg/commitment_schemes/gemini"
+    ]
+}
+,
+{
+    "abstract": "Fruit-F is a lightweight short-state stream cipher designed by Ghafari et al. The authors designed this version of the cipher, after earlier versions of the cipher viz. Fruit 80/v2 succumbed to correlation attacks. The primary motivation behind this design seemed to be preventing correlation attacks. Fruit-F has a Grain-like structure with two state registers of size 50 bits each. In addition, the cipher uses an 80-bit secret key and an 80-bit IV. The authors use a complex key-derivation function to update the non-linear register which prevents the same key-bit alignment across fixed-length window of keystream bits, which is essentially what stops the correlation attacks.  \r\nIn this paper, we first present two attacks against Fruit-F. The first attack stems from the fact that the key-derivation can be rewritten as the Boolean xor of two key-dependent terms one of which is the Boolean OR of two bits of the key. Using this we show that the cipher does not offer 80-bit security: the effective key space of Fruit-F is slightly less than $2^{80}$, i.e. a simple brute force attack costs around $2^{80}-2^{49}$ time. The second is a differential attack using the cipher's complex initialization process. We show that under some given conditions, it is possible to have two initial vectors $V_1$ and $V_2$ that produce identical keystream vectors with any given key. Using this as a distinguisher, it is possible to collect enough linear and quadratic equations of the secret key to find it in practical time with very few keystream bits.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universita della Svizzera Italiana, Lugano, Switzerland"
+                }
+            ],
+            "fullName": "Subhadeep Banik",
+            "orcid": "0000-0001-6310-0154"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptology, P. O. Box 5159, Beijing 100878, China"
+                }
+            ],
+            "fullName": "Hailun Yan",
+            "orcid": "0000-0002-0592-6772"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-28T06:19:15Z"
+        }
+    ],
+    "keywords": [
+        "Stream cipher",
+        "Fruit-F",
+        "Key-derivation weakness",
+        "Differential attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/566.pdf",
+    "pid": "566",
+    "pubtype": {
+        "note": "ACISP 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cryptanalysis of Fruit-F: Exploiting Key-Derivation Weaknesses and Initialization Vulnerabilities",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
