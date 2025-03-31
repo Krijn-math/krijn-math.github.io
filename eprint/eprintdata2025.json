@@ -40503,4 +40503,160 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Current DAG-based BFT protocols face a critical trade-off: certified DAGs provide strong security guarantees but require additional rounds of communication to progress the DAG construction, while uncertified DAGs achieve lower latency at the cost of either reduced resistance to adversarial behaviour or higher communication costs.\r\n\r\nThis paper presents Starfish, a partially synchronous DAG-based BFT protocol that achieves the security properties of certified DAGs, the efficiency of uncertified approaches and linear amortized communication complexity. The key innovation is Encoded Cordial Dissemination, a push-based dissemination strategy that combines Reed-Solomon erasure coding with Data Availability Certificates (DACs). Each of the $n=3f+1$ validators disseminates complete transaction data for its own blocks while distributing encoded shards for others' blocks, enabling efficient data reconstruction with just $f+1$ shards. Building on the previous uncertified DAG BFT commit rule, Starfish extends it to efficiently verify data availability through committed leader blocks serving as DACs.  For large enough transaction data, this design allows Starfish to achieve $O(n)$ amortized communication complexity per committed transaction byte. The average and worst-case end-to-end latencies for Starfish are rigorously proven to be bounded by $7.5\\delta$ and $11\\delta$ in the steady state, where $\\delta$ denotes the actual network delay.\r\n\r\nExperimental evaluation against state-of-the-art DAG BFT protocols demonstrates Starfish's robust performance under steady-state and Byzantine scenarios. \r\nOur results show that strong Byzantine fault tolerance, high performance, and low communication complexity can coexist in DAG BFT protocols, making Starfish particularly suitable for large-scale distributed ledger deployments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IOTA Foundation"
+                }
+            ],
+            "fullName": "Nikita Polyanskii",
+            "orcid": "0000-0003-3735-5705"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aix-Marseille University"
+                }
+            ],
+            "fullName": "Sebastian Mueller",
+            "orcid": "0000-0003-1250-118X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IOTA Foundation"
+                }
+            ],
+            "fullName": "Ilya Vorobyev",
+            "orcid": "0000-0002-9270-7040"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-28T11:23:46Z"
+        }
+    ],
+    "keywords": [
+        "DAG-based BFT",
+        "partial synchrony",
+        "SMR",
+        "communication complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/567.pdf",
+    "pid": "567",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Starfish: A high throughput BFT protocol on uncertified DAG with linear amortized communication complexity",
+    "year": 2025,
+    "repo": [
+        "https://github.com/iotaledger/starfish",
+        "https://github.com/MystenLabs/mysticeti",
+        "https://github.com/nibeshrestha/sailfish",
+        "https://github.com/MystenLabs/mysticeti",
+        "https://github.com/asonnino/mysticeti/tree/paper",
+        "https://github.com/MystenLabs/mysticeti",
+        "https://github.com/MystenLabs/sui/releases"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-54409-5_2",
+    "abstract": "The Nintendo DSi is a handheld gaming console released by Nintendo in 2008. In Nintendo's line-up the DSi served as a successor to the DS and was later succeeded by the 3DS. The security systems of both the DS and 3DS have been fully analysed and defeated. However, for over 14 years the security systems of the Nintendo DSi remained standing and had not been fully analysed. To that end this work builds on existing research and demonstrates the use of a second-order fault injection attack to extract the ROM bootloaders stored in the custom system-on-chip used by the DSi. We analyse the effect of the induced fault and compare it to theoretical fault models. Additionally, we present a security analysis of the extracted ROM bootloaders and develop a modchip using cheap off-the-shelf components. The modchip allows to jailbreak the console, but more importantly allows to resurrect consoles previously assumed irreparable.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "pcy Sluys",
+            "orcid": "0009-0000-7876-1190"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Lennert Wouters",
+            "orcid": "0000-0001-5740-5066"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Benedikt Gierlichs",
+            "orcid": "0000-0002-5866-1990"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Ingrid Verbauwhede",
+            "orcid": "0000-0002-0879-076X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-28T12:44:56Z"
+        }
+    ],
+    "keywords": [
+        "Nintendo DSi",
+        "boot ROM",
+        "fault injection",
+        "secure boot",
+        "modchip",
+        "embedded security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "note": "Recording of a presentation of more or less the same material to a more general audience available at https://media.ccc.de/v/37c3-11736-nintendo_hacking_2023_2008",
+    "pdffile": "2025/568.pdf",
+    "pid": "568",
+    "pubtype": {
+        "note": "CARDIS 2023",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An in-depth security evaluation of the Nintendo DSi gaming console",
+    "year": 2025,
+    "repo": [
+        "https://github.com/melonDS-emu/melonDS/pull/1583",
+        "https://gitlab.ulyssis.org/pcy/dsi-hacking-stuff",
+        "https://web.archive.org/web/20211105063611/https://sciresm.github.io/33-and-a-half-c3/",
+        "https://web.archive.org/web/20211105063611/https://sciresm.github.io/33-and-a-half-c3/",
+        "https://sciresm.github.io/33-and-a-half-c3/",
+        "https://sciresm.github.io/33-and-a-half-c3/"
+    ]
+}
 ]
