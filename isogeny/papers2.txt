@@ -83,7 +83,7 @@ pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin
 supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_year;;;none
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;last_year;;;none
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;last_year;;;none
-distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;last_year;;;none
+distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;other;;;none
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;other;;;none
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;other;;;none
 isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;other;;;https://issikebrokenyet.github.io/
