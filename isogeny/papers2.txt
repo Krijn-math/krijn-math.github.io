@@ -1,5 +1,5 @@
 computing isomorphisms between products of supersingular elliptic curves;;;pierrick gaudry, julien soumier, pierre-jean spaenlehauer;;;2025/136;;;last_week;;;https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments
-models of kummer lines and galois representations;;;razvan barbulescu, damien robert, nicolas sarkis;;;2025/543;;;last_week;;;none
+models of kummer lines and galois representations;;;razvan barbulescu, damien robert, nicolas sarkis;;;2025/543;;;last_month;;;none
 division polynomials for arbitrary isogenies;;;katherine e. stange;;;2025/521;;;last_month;;;none
 a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_month;;;none
 an efficient collision attack on castryck-decru-smith’s hash function;;;ryo ohashi, hiroshi onuki;;;2024/1776;;;last_month;;;https://github.com/Ryo-Ohashi/CDScollision
