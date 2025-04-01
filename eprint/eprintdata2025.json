@@ -40659,4 +40659,1125 @@
         "https://sciresm.github.io/33-and-a-half-c3/"
     ]
 }
+,
+{
+    "abstract": "Issuing tokens on Bitcoin remains a highly sought-after goal, driven by its market dominance and robust security. However, Bitcoin's limited on-chain storage and functionality pose significant challenges. Among the various approaches to token issuance on Bitcoin, client-side validation (CSV) has emerged as a prominent solution. CSV delegates data storage and functionalities beyond Bitcoin\u2019s native capabilities to off-chain clients, while leveraging the blockchain to validate tokens and prevent double-spending. Nevertheless, these protocols require participants to maintain token ownership and transactional data, rendering them vulnerable to data loss and malicious data withholding. In this paper, we propose UTxO binding, a novel framework that achieves both robust data availability and enhanced functionality compared to existing CSV designs. This approach securely binds a Bitcoin UTxO, which prevents double-spending, to a UTxO on an auxiliary blockchain, providing data storage and programmability. We formally prove its security and implement our design using Nervos CKB as the auxiliary blockchain.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Cryptape"
+                }
+            ],
+            "fullName": "Yunwen Liu",
+            "orcid": "0000-0002-6487-9785"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UTxO Stack"
+                }
+            ],
+            "fullName": "Bo Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryptape and Nervos"
+                }
+            ],
+            "fullName": "Ren Zhang",
+            "orcid": "0000-0003-2063-1769"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-28T13:05:29Z"
+        }
+    ],
+    "keywords": [
+        "blockchain",
+        "client-side validation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/569.pdf",
+    "pid": "569",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Solving Data Availability Limitations in Client-Side Validation with UTxO Binding",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Embedded devices can be exposed to a wide range of attacks. Some classes of attacks can be mitigated using security features or dedicated countermeasures. Examples include Trusted Execution Environments, and masking countermeasures against physical side-channel attacks. However, a system that incorporates such secure components is not automatically a secure system. Partial Key Overwrite attacks are one class of attacks that specifically target the interface between different components of the security system. These attacks may allow an adversary to extract otherwise protected cryptographic keys through careful manipulation of memory-mapped registers. So far this powerful class of attacks has received little attention in the academic literature. In this work, we provide an overview of known Partial Key Overwrite vulnerabilities and how they were used in real-world attacks. Additionally, we evaluated 31 common microcontrollers and embedded microprocessors from eleven distinct vendors and detail our findings. Based on a first high-level evaluation we selected 15 SoCs and performed an in-depth evaluation. This evaluation revealed that at least eight of these SoCs are vulnerable to partial key overwrite attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "pcy Sluys",
+            "orcid": "0009-0000-7876-1190"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Lennert Wouters",
+            "orcid": "0000-0001-5740-5066"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Benedikt Gierlichs",
+            "orcid": "0000-0002-5866-1990"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Ingrid Verbauwhede",
+            "orcid": "0000-0002-0879-076X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-28T13:29:46Z"
+        }
+    ],
+    "keywords": [
+        "key overwrite attack",
+        "safe error analysis",
+        "microcontrollers",
+        "embedded security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/570.pdf",
+    "pid": "570",
+    "pubtype": {
+        "note": "CASCADE 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Partial Key Overwrite Attacks in Microcontrollers: a Survey",
+    "year": 2025,
+    "repo": [
+        "https://marcjoye.github.io/papers/YJ00chkb.pdf",
+        "https://marcjoye.github.io/papers/YJ00chkb.pdf"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-71073-5_13",
+    "abstract": "Password-Authenticated Key Exchange (PAKE) establishes a secure channel between two parties who share a password. Asymmetric PAKE is a variant of PAKE, where one party stores a hash of the password to preserve security under the situation that the party is compromised. The security of PAKE and asymmetric PAKE is often analyzed in the framework of universal composability (UC). \r\nAbdalla et al. (CRYPTO '20) relaxed the UC security of PAKE and showed that the relaxed security still guarantees reasonable properties. This relaxation makes it possible to prove the security in the UC framework for several PAKE protocols.\r\nIn this paper, we propose a relaxed functionality of asymmetric PAKE by following the approach of Abdalla et al. We prove that the SPAKE2+ protocol UC-realizes this functionality. We also define a more relaxed functionality and prove that a variant of the AuCPace protocol UC-realizes it.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science Tokyo"
+                }
+            ],
+            "fullName": "Shuya Hanai",
+            "orcid": "0009-0002-0738-4679"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science Tokyo"
+                }
+            ],
+            "fullName": "Keisuke Tanaka",
+            "orcid": "0000-0003-1330-4495"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science Tokyo"
+                }
+            ],
+            "fullName": "Masayuki Tezuka",
+            "orcid": "0009-0003-5260-3372"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science Tokyo"
+                }
+            ],
+            "fullName": "Yusuke Yoshida",
+            "orcid": "0000-0003-0905-5641"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-29T04:37:39Z"
+        }
+    ],
+    "keywords": [
+        "aPAKE",
+        "Universal Composability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/571.pdf",
+    "pid": "571",
+    "pubtype": {
+        "note": "SCN2024",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Universally Composable Relaxed Asymmetric Password-Authenticated Key Exchange",
+    "year": 2025,
+    "repo": [
+        "https://github.com/BjoernMHaase/AuCPace/blob/master/aucpace_security_analysis_20200208.pdf",
+        "https://github.com/BjoernMHaase/AuCPace/blob/master/aucpace_security_analysis_20200208.pdf"
+    ]
+}
+,
+{
+    "abstract": "Zero-knowledge proofs (ZKPs) are cryptographic protocols that enable a prover to convince a verifier of a statement's truth without revealing any details beyond its validity. Typically, the statement is encoded as an arithmetic circuit, and allows the prover to demonstrate that the circuit evaluates to true without revealing its inputs. Despite their potential to enhance privacy and security, ZKPs are difficult to write and optimize, limiting their adoption in machine learning and data science. To address these challenges, we introduce Zinnia, a zero-knowledge programming framework with high utility, expressiveness and efficiency for tensor-oriented computation. Zinnia provides a high-level programming language that enables developers to easily write ZKP programs, and it employs a novel symbolic execution-inspired approach to extracting semantics from these programs to generate arithmetic circuits. Zinnia supports tensor-oriented computations and provides a rich set of programming constructs, optimizations, and a powerful static type system for expressing and optimizing complex logic. We evaluate Zinnia across 25 real-world programming tasks and a user study, comparing it to existing solutions, including DSLs and zkVMs (Halo2, SP1, and RISC0). Our results demonstrate that Zinnia outperforms these baselines in utility, expressiveness, and efficiency, with a statistically significant reduction in development time, $2-3\\times$ shorter code length, 19.3% smaller circuit size, and up to $245\\times$ faster proving time compared to zkVMs, paving the way for practical ZKP applications in various domains.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Zhantong Xue",
+            "orcid": "0009-0000-3419-9431"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                },
+                {
+                    "name": "CipherInsight Limited"
+                }
+            ],
+            "fullName": "Pingchuan Ma",
+            "orcid": "0000-0001-7680-2817"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Zhaoyu Wang",
+            "orcid": "0009-0009-6892-1264"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                },
+                {
+                    "name": "CipherInsight Limited"
+                }
+            ],
+            "fullName": "Shuai Wang",
+            "orcid": "0000-0002-0866-0308"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-29T12:06:05Z"
+        }
+    ],
+    "keywords": [
+        "Zero-Knowledge Proof",
+        "Compiler",
+        "Domain-specific Language"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/572.pdf",
+    "pid": "572",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Zinnia: An Expressive and Efficient Tensor-Oriented Zero-Knowledge Programming Framework",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zcash/halo2",
+        "https://github.com/succinctlabs/sp1",
+        "https://github.com/trailofbits/circomspect",
+        "https://github.com/scipr-lab/libsnark",
+        "https://github.com/starkware-libs/cairo",
+        "https://github.com/risc0/risc0"
+    ]
+}
+,
+{
+    "abstract": "Formal methods are becoming an important tool for ensuring correctness and security of cryptographic constructions. However, the support for certain advanced proof techniques, namely rewinding, is scarce among existing verification frameworks, which hinders their application to complex schemes such as multi-party signatures and zero-knowledge proofs.\r\n\r\nWe expand the support for rewinding in EasyCrypt by implementing a version of the general forking lemma by Bellare and Neven. We demonstrate its usability by proving EUF-CMA security of Schnorr signatures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tallinn University of Technology",
+                    "ror": "https://ror.org/0443cwa12"
+                },
+                {
+                    "name": "Input Output",
+                    "ror": "https://ror.org/04abwvq32"
+                }
+            ],
+            "fullName": "Denis Firsov",
+            "orcid": "0000-0003-1267-7898"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Masaryk University",
+                    "ror": "https://ror.org/02j46qs45"
+                }
+            ],
+            "fullName": "Jakub Jank\u016f",
+            "orcid": "0009-0007-3156-4967"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-29T12:44:33Z"
+        }
+    ],
+    "keywords": [
+        "computer-aided cryptography",
+        "formal verification",
+        "EasyCrypt",
+        "rewinding",
+        "forking",
+        "Schnorr"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/573.pdf",
+    "pid": "573",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Forking Lemma in EasyCrypt",
+    "year": 2025,
+    "repo": [
+        "https://github.com/jjanku/fsec",
+        "https://github.com/EasyCrypt/easycrypt/blob/r2025.03/theories/distributions/Distr.ec",
+        "https://github.com/EasyCrypt/easycrypt/blob/r2025.03/theories/distributions/Distr.ec",
+        "https://github.com/EasyCrypt/easycrypt/blob/r2025.03/theories/crypto/DigitalSignaturesROM.eca",
+        "https://github.com/EasyCrypt/easycrypt/blob/r2025.03/theories/crypto/DigitalSignaturesROM.eca",
+        "https://github.com/EasyCrypt/easycrypt/blob/r2025.03/theories/crypto/DLog.ec",
+        "https://github.com/EasyCrypt/easycrypt/blob/r2025.03/theories/crypto/DLog.ec",
+        "https://github.com/formosa-crypto/libjade",
+        "https://github.com/formosa-crypto/formosa-25519/pull/30"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3714393.3726498",
+    "abstract": "Federated Learning (FL) has become a crucial framework for collaboratively training Machine Learning (ML) models while ensuring data privacy. Traditional synchronous FL approaches, however, suffer from delays caused by slower clients (called stragglers), which hinder the overall training process.\r\n\r\nSpecifically, in a synchronous setting, model aggregation happens once all the intended clients have submitted their local updates to the server. To address these inefficiencies, Buffered Asynchronous FL (BAsyncFL) was introduced, allowing clients to update the global model as soon as they complete local training. In such a setting, the new global model is obtained once the buffer is full, thus removing synchronization bottlenecks. Despite these advantages, existing Secure Aggregation (SA) techniques\u2014designed to protect client updates from inference attacks\u2014rely on synchronized rounds, making them unsuitable for asynchronous settings.\r\n\r\nIn this paper, we present Buffalo, the first practical SA protocol tailored for BAsyncFL. Buffalo leverages lattice-based encryption to handle scalability challenges in large ML models and introduces a new role, the assistant, to support the server in securely aggregating client updates. To protect against an actively corrupted server, we enable clients to verify that their local updates have been correctly integrated into the global model. Our comprehensive evaluation\u2014incorporating theoretical analysis and real-world experiments on benchmark datasets\u2014demonstrates that Buffalo is an efficient and scalable privacy-preserving solution in BAsyncFL environments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CERN"
+                }
+            ],
+            "fullName": "Riccardo Taiello",
+            "orcid": "0000-0002-9890-9639"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "INSA Lyon"
+                }
+            ],
+            "fullName": "Cl\u00e9mentine Gritti",
+            "orcid": "0000-0002-0835-8678"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "EURECOM",
+                    "ror": "https://ror.org/00sse7z02"
+                }
+            ],
+            "fullName": "Melek \u00d6nen",
+            "orcid": "0000-0003-0269-9495"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Inria Sophia Antipolis"
+                },
+                {
+                    "name": "Universit\u00e9 C\u00f4te d\u2019Azur"
+                }
+            ],
+            "fullName": "Marco Lorenzi",
+            "orcid": "0000-0003-0521-2881"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-29T15:49:51Z"
+        }
+    ],
+    "keywords": [
+        "Secure Aggregation",
+        "Asynchronous Federated Learning"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/574.pdf",
+    "pid": "574",
+    "pubtype": {
+        "note": "CODASPY 25",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Buffalo: A Practical Secure Aggregation Protocol for Asynchronous Federated Learning",
+    "year": 2025,
+    "repo": [
+        "https://github.com/google/shell-encryption/tree/master",
+        "https://github.com/rtaiello/buffalo",
+        "https://github.com/facebookresearch/FLSim/tree/main"
+    ]
+}
+,
+{
+    "abstract": "At CRYPTO 2015, Kirchner and Fouque claimed that a carefully tuned variant of the Blum-Kalai-Wasserman (BKW) algorithm (JACM 2003) should solve the Learning with Errors problem (LWE) in slightly subexponential time for modulus $q=\\mathrm{poly}(n)$ and narrow error distribution, when given enough LWE samples. Taking a modular view, one may regard BKW as a combination of Wagner's algorithm (CRYPTO 2002), run over the corresponding dual problem, and the Aharonov-Regev distinguisher (JACM 2005). Hence the subexponential Wagner step alone should be of interest for solving this dual problem - namely, the Short Integer Solution problem (SIS) - but this appears to be undocumented so far.\r\n\r\nWe re-interpret this Wagner step as walking backward through a chain of projected lattices, zigzagging through some auxiliary superlattices. We further randomize the bucketing step using Gaussian randomized rounding to exploit the powerful discrete Gaussian machinery. This approach avoids sample amplification and turns Wagner's algorithm into an approximate discrete Gaussian sampler for $q$-ary lattices. \r\n    \r\nFor an SIS lattice with $n$ equations modulo $q$, this algorithm runs in subexponential time $\\exp(O(n/\\log \\log n))$ to reach a Gaussian width parameter $s = q/\\mathrm{polylog}(n)$ only requiring $m = n + \\omega(n/\\log \\log n)$ many SIS variables. This directly provides a provable algorithm for solving the Short Integer Solution problem in the infinity norm ($\\mathrm{SIS}^\\infty$) for norm bounds $\\beta = q/\\mathrm{polylog}(n)$. This variant of SIS underlies the security of the NIST post-quantum cryptography standard Dilithium. Despite its subexponential complexity, Wagner's algorithm does not appear to threaten Dilithium's concrete security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                },
+                {
+                    "name": "Leiden University",
+                    "ror": "https://ror.org/027bh9e22"
+                }
+            ],
+            "fullName": "L\u00e9o Ducas",
+            "orcid": "0000-0003-2510-4829"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                },
+                {
+                    "name": "QuSoft",
+                    "ror": "https://ror.org/00zq3ce72"
+                }
+            ],
+            "fullName": "Lynn Engelberts",
+            "orcid": "0000-0002-8069-5775"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                }
+            ],
+            "fullName": "Johanna Loyer"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-29T22:45:22Z"
+        }
+    ],
+    "keywords": [
+        "Wagner's algorithm",
+        "SIS",
+        "Discrete Gaussian sampling",
+        "Lattice-based cryptography",
+        "Cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/575.pdf",
+    "pid": "575",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Wagner's Algorithm Provably Runs in Subexponential Time for SIS$^\\infty$",
+    "year": 2025,
+    "repo": [
+        "https://github.com/lducas/Provable-Wagner-SIS",
+        "https://github.com/pq-crystals/security-estimates/blob/master/MSIS_security.py",
+        "https://github.com/pq-crystals/security-estimates/blob/master/MSIS_security.py"
+    ]
+}
+,
+{
+    "abstract": "Conventional Publicly Verifiable Secret Sharing (PVSS) protocols allow a dealer to share a secret among $n$ parties without interaction, ensuring that any $t + 1$ parties (where $t+1 \\le n$) can recover the secret, while anyone can publicly verify the validity of both the individual shares and the reconstructed secret. PVSS schemes are shown to be a key tool in a wide range of practical applications. In this paper, we introduce Pre-constructed PVSS (PPVSS), an extension of standard PVSS schemes, highlighting its enhanced utility and efficiency in various protocols. Unlike standard PVSS, PPVSS requires the dealer to publish a commitment or encryption of the main secret and incorporates a novel secret reconstruction method. We show that these refinements make PPVSS more practical and versatile than conventional PVSS schemes. \r\nTo build a PPVSS scheme, we first point out that the well-known PVSS scheme by Schoenmakers (CRYPTO'99) and its pairing-based variant presented by Heidarvand and Villar (SAC'08) can be seen as special cases of PPVSS, where the dealer also publishes a commitment to the main secret. However, these protocols are not practical for many applications due to efficiency limitations and are less flexible compared to a standard PPVSS scheme. To address this, we propose a general strategy for transforming a Shamir-based PVSS scheme into a PPVSS scheme. Using this strategy, we construct two practical PPVSS schemes in both the Random Oracle (RO) and plain models, grounded in state-of-the-art PVSS designs. Leveraging the new RO-based PPVSS scheme, we revisit some applications and present more efficient variants. Notably, we propose a new universally verifiable e-voting protocol that improves on the alternative scheme by Schoenmakers (CRYPTO'99), reducing the verification complexity with $m$ voters from $O(n^2m)$ to $O(nm)$ exponentiations--a previously unattainable goal with standard PVSS schemes. Our implementation results demonstrate that both our proposed PPVSS schemes and the new universally verifiable e-voting protocol significantly outperform existing alternatives in terms of efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Karim Baghery",
+            "orcid": "0000-0001-7213-8496"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Noah Knapen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Georgio Nicolas",
+            "orcid": "0000-0002-3240-9009"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Mahdi Rahimi",
+            "orcid": "0009-0003-0223-9082"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-30T14:21:58Z"
+        }
+    ],
+    "keywords": [
+        "Publicly Verifiable Secret Sharing",
+        "PVSS",
+        "Pre-Constructed PVSS",
+        "PPVSS",
+        "Universally Verifiable E-Voting",
+        "E-Voting"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is the full version of the ACNS 2025 paper.",
+    "pdffile": "2025/576.pdf",
+    "pid": "576",
+    "pubtype": {
+        "note": "ACNS 2025 - 23rd International Conference on Applied Cryptography and Network Security",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Pre-Constructed Publicly Verifiable Secret Sharing and Applications",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KULeuven-cosic/ppvss-evoting",
+        "https://github.com/KULeuven-cosic/ppvss-evoting"
+    ]
+}
+,
+{
+    "abstract": "The GCM authenticated encryption (AE) scheme is one of the most widely used AE schemes in the world, while it suffers from risk of nonce misuse, short message length per encryption and an insufficient level of security. The goal of this paper is to design new AE schemes achieving stronger provable security in the standard model and accepting longer nonces (or providing nonce misuse resistance), with the design rationale behind GCM. \r\n\r\nAs a result, we propose two enhanced variants of GCM and GCM-SIV, dubbed eGCM and eGCM-SIV, respectively. eGCM and eGCM-SIV are built on top of a new CENC-type encryption mode, dubbed eCTR: using 2n-bit counters, eCTR enjoys beyond-birthday-bound security without significant loss of efficiency. eCTR is combined with an almost uniform and almost universal hash function, yielding a variable input-length variable output-length pseudorandom function, dubbed HteC. GCM and GCM-SIV are constructed using eCTR and HteC as building blocks.\r\n\r\neGCM and eGCM-SIV accept nonces of arbitrary length, and provide almost the full security (namely, n-bit security when they are based on an n-bit block cipher) for a constant maximum input length, under the assumption that the underlying block cipher is a pseudorandom permutation (PRP). Their efficiency is also comparable to GCM in terms of the rate and the overall speed.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KAIST, Daejeon, Korea",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Woohyuk Chung",
+            "orcid": "0009-0002-3793-5291"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KAIST, Daejeon, Korea",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Seongha Hwang",
+            "orcid": "0000-0002-2166-6421"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung SDS, Seoul, Korea",
+                    "ror": "https://ror.org/0476bn305"
+                }
+            ],
+            "fullName": "Seongkwang Kim",
+            "orcid": "0000-0002-9091-4054"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung SDS, Seoul, Korea",
+                    "ror": "https://ror.org/0476bn305"
+                }
+            ],
+            "fullName": "Byeonghak Lee",
+            "orcid": "0000-0003-2736-6830"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KAIST, Daejeon, Korea",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Jooyoung Lee",
+            "orcid": "0000-0001-5471-9350"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-30T18:48:55Z"
+        }
+    ],
+    "keywords": [
+        "authenticated encryption",
+        "GCM",
+        "beyond-birthday-bound security",
+        "provable security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/577.pdf",
+    "pid": "577",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Making GCM Great Again: Toward Full Security and Longer Nonces",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Yao's garbled circuits have received huge attention in both theory and practice. While garbled circuits can be constructed using minimal assumption (i.e., the existence of pseudorandom functions or one-way functions), the state-of-the-art constructions (e.g., Rosulek-Roy, Crypto 2021) are based on stronger assumptions. In particular, the ``Free-XOR'' technique (Kolesnikov-Schneider, ICALP 2008) is essential in these state-of-the-art constructions, and their security can only be proven in the random oracle model, or rely on the ``circular-correlation robust hash'' assumption.  \r\n\r\nIn this paper, we aim to develop new techniques to construct efficient garbling schemes using minimal assumptions. Instead of generically replacing the Free-XOR technique, we focus on garbling schemes for specific functionalities. We successfully eliminated the need for Free-XOR in several state-of-the-art schemes, including the one-hot garbling (Heath and Kolesnikov, CCS 2021) and the garbled pseudorandom functions, and the garbled lookup tables (Heath, Kolesnikov and Ng, Eurocrypt 2024). Our schemes are based on minimal assumptions, i.e., standard pseudorandom functions (PRFs)---we resolved the need for circular security. The performance of our scheme is almost as efficient as the best results except for a small constant factor. Namely, for any lookup table $\\{0,1\\}^n \\to \\{0,1\\}^m$, our scheme takes $n + (5n+9)m\\lambda + 2^n \\cdot m$ bits of communication, where $\\lambda$ is the security parameter of PRF.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Virginia",
+                    "ror": "https://ror.org/0153tk833"
+                }
+            ],
+            "fullName": "Wei-Kai Lin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Zhenghao Lu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Virginia Commonwealth University",
+                    "ror": "https://ror.org/02nkdxk79"
+                }
+            ],
+            "fullName": "Hong-Sheng Zhou"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-30T20:40:18Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/578.pdf",
+    "pid": "578",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Garbled Pseudorandom Functions and Lookup Tables from Minimal Assumption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Know Your Customer (KYC) is a core component of the Anti-Money Laundering (AML) framework, designed to prevent illicit activities within financial systems. However, enforcing KYC and AML on blockchains remains challenging due to difficulties in establishing accountability and preserving user privacy. This study proposes REGKYC, a privacy-preserving Attribute-Based Access Control (ABAC) framework that balances user privacy with externally mandated KYC and AML requirements. REGKYC leverages a structured ABAC model to support the flexible verification of KYC attributes and the enforcement of compliance policies, providing benefits to multiple stakeholders. First, it enables legitimate users to meet compliance requirements while preserving the privacy of their on-chain activities. Second, it empowers Crypto-asset Service Providers (CASPs) to tailor compliance policies to operational needs, ensuring adaptability to evolving regulations. Finally, it enhances regulatory accountability by enabling authorized deanonymization of malicious actors. We hope this work inspires future research to harmonize user privacy and regulatory compliance in blockchain systems.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London"
+                }
+            ],
+            "fullName": "Xihan Xiong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technische Universit\u00e4t N\u00fcrnberg"
+                }
+            ],
+            "fullName": "Michael Huth"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London"
+                }
+            ],
+            "fullName": "William Knottenbelt"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-30T23:33:19Z"
+        }
+    ],
+    "keywords": [
+        "Blockchain",
+        "Compliance",
+        "Privacy",
+        "Know Your Customer (KYC)",
+        "Attribute-Based Access Control (ABAC)"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/579.pdf",
+    "pid": "579",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "REGKYC: Supporting Privacy and Compliance Enforcement for KYC in Blockchains",
+    "year": 2025,
+    "repo": [
+        "https://github.com/tornadocash/tornado-core"
+    ]
+}
+,
+{
+    "abstract": "The Middle-Product Learning with Errors (MPLWE) assumption is a variant of the Learning with Errors (LWE) assumption. The MPLWE assumption reduces the key size of corresponding LWE-based schemes by setting keys as sets of polynomials. Moreover, MPLWE has more robust security than other LWE variants such as Ring-LWE\r\nand Module-LWE. Lombardi et al. proposed an identity-based encryption (IBE) scheme (LVV-IBE) based on the MPLWE assumption in the random oracle model (ROM) by following Gentry et al.'s IBE scheme (GPV-IBE) based on LWE. Due to the benefit of MPLWE, LVV-IBE has a shorter master public key and a secret key than GPV-IBE without changing the size of a ciphertext. However, Lombardi et al.'s proof is not tight in the ROM, while Katsumata et al. proved that GPV-IBE achieves tight adaptive anonymity in the quantum ROM (QROM). Revocable IBE (RIBE) is a variant of IBE supporting a key revocation mechanism to remove malicious users from the system. Takayasu proposed the most efficient RIBE scheme (Takayasu-RIBE) based on LWE achieving tight adaptive anonymity in the QROM. Although a concrete RIBE scheme based on MPLWE has not been proposed, we can construct a scheme (LVV-based RIBE) by applying Ma and Lin's generic transformation to LVV-IBE. Due to the benefit of MPLWE, LVV-based RIBE has an asymptotically shorter master public key and a shorter secret key than Takayasu-RIBE although the former has a larger ciphertext than the latter. Moreover, the security proof is not tight and anonymous in the ROM due to security proofs of Ma-Lin and Lombardi et al. In this paper, we propose a concrete RIBE scheme based on MPLWE. Compared with the above RIBE schemes, the proposed RIBE scheme is the most asymptotically efficient since the sizes of a master public key and a secret key (resp. ciphertext) of the proposed scheme are the same as those of LVV-based RIBE scheme (resp. Takayasu-RIBE). Moreover, we prove the tight adaptive anonymity of the proposed RIBE scheme in the QROM. For this purpose, we also prove the tight adaptive anonymity of LVV-IBE in the QROM.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Tokyo",
+                    "ror": "https://ror.org/057zh3y96"
+                }
+            ],
+            "fullName": "Takumi Nishimura",
+            "orcid": "0009-0004-8399-7754"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Tokyo",
+                    "ror": "https://ror.org/057zh3y96"
+                }
+            ],
+            "fullName": "Atsushi Takayasu",
+            "orcid": "0000-0002-9310-6976"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-31T00:56:51Z"
+        }
+    ],
+    "keywords": [
+        "Identity-based Encryption",
+        "Revocable Identity-based Encryption",
+        "Middle-Product Learning with Errors"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/580.pdf",
+    "pid": "580",
+    "pubtype": {
+        "note": "ACISP 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Revocable Identity-Based Encryption from Middle-Product LWE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Homomorphic Encryption (HE) is a promising primitive for evaluating arbitrary circuits while keeping the user's privacy. We investigate how to use HE in the multi-party setting where data is encrypted with several distinct keys. One may use the Multi-Key Homomorphic Encryption (MKHE) in this setting, but it has space/computation overhead of $\\mathcal O(n)$ for the number of users $n$, which makes it impractical when $n$ grows large. On the contrary, Multi-Party Homomorphic Encryption (MPHE) is the other Homomorphic Encryption primitive in the multi-party setting, where the space/computation overhead is $\\mathcal O(1)$; however, is limited in terms of ciphertext reusability and dynamicity, that ciphertexts are encrypted just for a group of parties and cannot be reused for other purposes, and that additional parties cannot join the computation dynamically. \r\n\r\nContrary to MKHE, where the secret key owners engage only in the decryption phase, we consider a more relaxed situation where the secret key owners can communicate before the computation. In that case, we can reduce the size of a ciphertext and the evaluation complexity from $\\mathcal O(n)$ to $\\mathcal O(1)$ as in a single-key HE setting. We call this primitive as {\\em Reusable Dynamic Multi-Party Homomorphic Encryption}, which is more suitable in real-world scenarios.\r\n\r\nWe show that 1) the procedures before the computation can be done in a very few rounds of communications, 2) the evaluation/space complexities are independent of the number of users, and 3) the functionalities are as efficient as MKHE, with asymptotic analysis and with implementation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                },
+                {
+                    "name": "CryptoLab Inc."
+                }
+            ],
+            "fullName": "Jung Hee Cheon",
+            "orcid": "0000-0002-7085-2220"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoLab Inc."
+                }
+            ],
+            "fullName": "Hyeongmin Choe",
+            "orcid": "0000-0002-7835-4349"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung SDS"
+                }
+            ],
+            "fullName": "Seunghong Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Yongdong Yeo",
+            "orcid": "0009-0006-3826-4636"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-31T05:53:40Z"
+        }
+    ],
+    "keywords": [
+        "Multi-Party Homomorphic Encryption",
+        "Multi-Key Homomorphic Encryption",
+        "Data Lake",
+        "Cloud Computing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/581.pdf",
+    "pid": "581",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Reusable Dynamic Multi-Party Homomorphic Encryption",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Anonymous-rdmphe/rdMPHE.git",
+        "https://github.com/Anonymous-rdmphe/rdMPHE.git",
+        "https://github.com/SNUCP/snu-mghe.git",
+        "https://github.com/SNUCP/snu-mghe.git",
+        "https://github.com/ldsec/lattigo"
+    ]
+}
+,
+{
+    "abstract": "The Module-Lattice-Based Digital Signature Standard (ML-DSA), formerly known as CRYSTALS-Dilithium, is a lattice-based post-quantum cryptographic scheme. In August 2024, the National Institute of Standards and Technology (NIST) officially standardized ML-DSA under FIPS 204. Dilithium generates one valid signature and multiple rejected signatures during the signing process. Most Side-Channel Attacks targeting Dilithium have focused solely on the valid signature, while neglecting the hints contained in rejected signatures. In this paper, we propose a method for recovering the private key by simultaneously leveraging side-channel leakages from both valid signatures and rejected signatures. This approach minimizes the number of signing attempts required for full key recovery. We construct a factor graph incorporating all relevant side-channel leakages and apply the Belief Propagation (BP) algorithm for private key recovery.\r\n\r\nWe conducted a proof-of-concept experiment on a Cortex M4 core chip, where the results demonstrate that utilizing rejected signatures reduces the required number of traces by at least $42\\%$ for full key recovery. A minimum of a single trace can recover the private key with a success rate of $30\\%$. Our findings highlight that protecting rejected signatures is crucial, as their leakage provides valuable side-channel information. We strongly recommend implementing countermeasures for rejected signatures during the signing process to mitigate potential threats.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Zheng Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "An Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Congming Wei"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Yaoling Ding"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Jingqi Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Annyu Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Liehuang Zhu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-31T07:46:26Z"
+        }
+    ],
+    "keywords": [
+        "Dilithium",
+        "ML-DSA",
+        "Side-Channel Attacks",
+        "rejected signatures",
+        "Belief Propagation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/582.pdf",
+    "pid": "582",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Release the Power of Rejected Signatures: An Efficient Side-Channel Attack on Dilithium",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In 2012, the Tor project expressed the need to upgrade Tor's onion encryption scheme to protect against tagging attacks and thereby strengthen its end-to-end integrity protection. Tor proposal 261, where each encryption layer is processed by a strongly secure, yet relatively expensive tweakable wide-block cipher, is the only concrete candidate replacement to be backed by formal, yet partial, security proofs (Degabriele and Stam, EUROCRYPT 2018, and Rogaway and Zhang, PoPETS 2018).\r\n\r\nWe propose an alternative onion encryption scheme, called Counter Galois Onion (CGO), that follows a minimalistic, modular design and includes several improvements over proposal 261. CGO's underlying primitive is an updatable tweakable split-domain cipher accompanied with a new security notion, that augments the recently introduced rugged pseudorandom permutation (Degabriele and Karad\u017ei\u0107, CRYPTO 2022). Thus, we relax the security compared to a tweakable wide-block cipher, allowing for more efficient designs. We suggest a concrete instantiation for the updatable tweakable split-domain cipher and report on our experiments comparing the performance of CGO with Tor's existing onion encryption scheme.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Jean Paul Degabriele"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Simula Innovation (Norway)",
+                    "ror": "https://ror.org/04w4hwt37"
+                }
+            ],
+            "fullName": "Alessandro Melloni"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Jean-Pierre M\u00fcnch"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Simula Innovation (Norway)",
+                    "ror": "https://ror.org/04w4hwt37"
+                }
+            ],
+            "fullName": "Martijn Stam"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-31T10:48:22Z"
+        }
+    ],
+    "keywords": [
+        "Tor",
+        "Onion Encryption",
+        "Tagging Attacks",
+        "Forward Security",
+        "RPRP"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/583.pdf",
+    "pid": "583",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Counter Galois Onion (CGO) for Tor: Fast Non-Malleable Onion Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
