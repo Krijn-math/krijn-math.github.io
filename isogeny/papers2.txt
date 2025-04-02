@@ -8,8 +8,8 @@ blind signatures from cryptographic group actions;;;dung hoang duong, xuan thanh
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_month;;;https://github.com/levanin/cgl_rs
 new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_month;;;none
 radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_month;;;https://github.com/GiacomoPope/ThetaCGL
-pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_month;;;https://github.com/pegasis4d
-constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_month;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
+pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_year;;;https://github.com/pegasis4d
+constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_year;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
 a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_year;;;none
 another look at the quantum security of the vectorization problem with shifted inputs;;;paul frixons, valerie gilchrist, péter kutas, simon-philipp merz, christophe petit;;;2025/376;;;last_year;;;none
 klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_year;;;https://github.com/KLPT2/KLPT2
@@ -82,7 +82,7 @@ fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim,
 pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;last_year;;;https://github.com/LinKaizhan/Pairingoptimizations
 supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;last_year;;;none
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;last_year;;;none
-lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;last_year;;;none
+lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;other;;;none
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;other;;;none
 introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;other;;;none
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;other;;;none
