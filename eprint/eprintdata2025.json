@@ -41780,4 +41780,180 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Abstract\r\nThe Singularity Random Number Generator (SRNG) represents a groundbreaking advancement in the generation of random numbers by integrating two key properties - computational irreducibility and seed independence - into a deterministic algorithm. Unlike conventional pseudorandom number generators (PRNGs) whose randomness is intrinsically linked to seed quality or chaotic sensitivity, SRNG transforms even low-entropy seeds into complex, unpredictable outputs. SRNG demonstrates high-quality randomness can emerge independently of seed entropy or size. This paper explores how SRNG not only challenges classical paradigms of predictability in deterministic systems but also offers transformative applications in cryptography, artificial intelligence (AI), and interdisciplinary research. Furthermore, by drawing parallels with cognitive variability research - such as insights from the Forbes article \u201cWhy A \u2018Productively Distracted\u2019 Brain Is A Superpower\u201d - we discuss how the emergent unpredictability of SRNG may contribute to enhanced adaptive learning and decision-making processes in AI systems. Ultimately, SRNG is presented as a model that bridges the realms of science and mystery, inviting a new understanding of randomness and the limits of scientific inquiry, thereby expanding the frontiers of interdisciplinary research.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "S. P. Prahlad"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-31T16:21:14Z"
+        }
+    ],
+    "keywords": [
+        "Singularity Random Number Generator (SRNG)",
+        "Computational Irreducibility",
+        "Seed Independence",
+        "Deterministic Randomness",
+        "Unpredictability",
+        "Cryptography",
+        "AI",
+        "Interdisciplinary Researchh"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/584.pdf",
+    "pid": "584",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Singularity Random Number Generator: Bridging Determinism and Unpredictability to Redefine Randomness, Secure Systems, and Adaptive Intelligence",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Key-exfiltration attacks on cryptographic keys are a significant threat to computer security. One proposed defense against such attacks is big-key cryptography which seeks to make cryptographic secrets so large that it is infeasible for an adversary to exfiltrate the key (without being detected). However, this also introduces an inconvenience to the user who must now store the large key on all of their different devices. The work of D\u00f6ttling, Garg, Sekar and Wang (TCC 2022) introduces an elegant solution to this problem in the form of big-key identity-based encryption (IBE). Here, there is a large master secret key, but very short identity keys. The user can now store the large master secret key as her long-term key, and can provision each of her devices with short ephemeral identity keys (say, corresponding to the current date). In this way, the long-term secret key is protected by conventional big-key cryptography, while the user only needs to distribute short ephemeral keys to their different devices. D\u00f6ttling et al. introduce and construct big-key IBE from standard pairing-based assumptions. However, their scheme only satisfies selective security where the adversary has to declare its challenge set of identities at the beginning of the security game. The more natural notion of security is adaptive security where the user can adaptively choose which identities it wants to challenge after seeing the public parameters (and part of the master secret key).\r\n\r\nIn this work, we give the first adaptively-secure construction of big-key IBE from standard cryptographic assumptions. Our first construction relies on indistinguishability obfuscation (and one-way functions), while our second construction relies on witness encryption for NP together with standard pairing-based assumptions (i.e., the SXDH assumption). To prove adaptive security, we show how to implement the classic dual-system methodology with indistinguishability obfuscation as well as witness encryption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "Jeffrey Champion"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                },
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Brent Waters"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "David J. Wu"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-03-31T19:42:10Z"
+        }
+    ],
+    "keywords": [
+        "Big-key Cryptography",
+        "Leakage Resilience",
+        "Identity Based Encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/585.pdf",
+    "pid": "585",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Adaptively-Secure Big-Key Identity-Based Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In lattice-based cryptography, many attacks are performed by finding a short enough vector on a specific lattice. However, it is possible that length is not the only restriction on the vector to be found. A typical example is SVP with infinity norm: since most SVP solving algorithms only aim to find short vector under Euclidean norm, the infinity norm is in fact another restriction on the vector. In the literature, such problems are usually solved by performing exhaustive search on a list of short vectors generated from lattice sieving. However, the sieving list might either be too large or too small to pass the additional restriction, which makes the solving algorithm inefficient in some cases.\r\n\r\nOur contribution in this work is as follows: (1) We formally define a new lattice hard problem called restricted SVP, and show that it can be used to generalize many lattice hard problems, including SVP with non-Euclidean norm and Kannan's embedding on approximate CVP. (2) We extend the dimension for free technique and the enumerate-then-slice technique into approximate SVP where the goal is to output a list of short vectors with a certain size. (3) We give the heuristic algorithm for solving restricted SVP, and design a hardness estimator for this algorithm, which can be used to estimate the concrete hardness of signature forgery in Dilithium and other lattice-based signatures. Using this estimator, we present a concrete security analysis for Dilithium against signature forgery under the gate-count model for the first time. Our estimation matches well with the security estimation from core-SVP model in the document of Dilithium, and we also combine our estimator with the rescaling technique to generate a tighter estimation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Geng Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Wenwen Xia"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Dawu Gu"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-01T01:01:40Z"
+        }
+    ],
+    "keywords": [
+        "Lattice-based Cryptography",
+        "Shortest Vector Problem",
+        "Dilithium",
+        "Post-quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/586.pdf",
+    "pid": "586",
+    "pubtype": {
+        "note": "PQCrypto 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Heuristic Algorithm for Solving Restricted SVP and its Applications",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Summwer/inf-cvp-estimator"
+    ]
+}
 ]
