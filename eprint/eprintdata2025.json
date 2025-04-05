@@ -41956,4 +41956,1156 @@
         "https://github.com/Summwer/inf-cvp-estimator"
     ]
 }
+,
+{
+    "abstract": "The Titanic was the ship that \"could not sink,\" fortunately its designers installed lifeboats (not enough) despite having no logical grounding for this waste of space and material. It was out of respect for unforeseen surprises. NIST-Post Quantum Ciphers represent the best and the brightest in world crypto intelligence. They are certified as good for their purpose. And likely so, alas, not surely so. If we could find a crypto equivalent for the Titanic Lifeboats, should not we load them up for our journey? Indeed, pattern-devoid cryptography is the crypto equivalent of the lifeboats that mitigated the Titanic disaster. Pattern-Devoid cryptography (PDC) may be deemed inelegant, inconvenient, and bloated, but it will hold up against quantum computers more powerful than expected, and more importantly, it will hold up against adversarial mathematical talent greater than expected. Which is why we should put up with its negatives, and install it just in case the Titanic story repeats itself in cyberspace. This article elaborates on this proposition.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Case Western Reserve University",
+                    "ror": "https://ror.org/051fd9666"
+                }
+            ],
+            "fullName": "Gideon Samid",
+            "orcid": "0000-0003-1326-3486"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-01T05:26:16Z"
+        }
+    ],
+    "keywords": [
+        "pattern-devoid cryptography",
+        "randomness",
+        "post-quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "note": "Lifeboat-on-the-Titanic cryptography is an application of Pattern-Devoid Cryptography which has been peer-review published as a chapter in a new book: \r\nhttps://www.intechopen.com/online-first/pattern-devoid-cryptography",
+    "pdffile": "2025/587.pdf",
+    "pid": "587",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lifeboats on the Titanic Cryptography",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Ethereum Global Network (EGN) is the peer-to-peer (P2P) network underlying Ethereum and thousands of subsequent blockchain services. Deviating from traditional single-service P2P networks, EGN's multi-service architecture has gained widespread acceptance for supposedly improving node discovery efficiency and security. This paper challenges this belief by critically examining EGN's design and its purported benefits. Our analysis reveals significant shortcomings in EGN's node discovery process. EGN nodes struggle to connect with peers offering the desired service: over three-quarters of connection attempts reach nodes of other services. In an extreme case, one node spent an average of $45\\,908$ connection attempts to find each neighbor. Moreover, this blended architecture compromises EGN's security. The network demonstrates high susceptibility to DHT pollution and partition attacks. Even with only $300$ malicious nodes in EGN, an attacker can isolate thousands of nodes, significantly hindering recovery. In contrast, such a small number of malicious nodes has minimal impact on every single-service P2P network. We propose solutions to improve EGN's node discovery efficiency and strengthen its resilience against attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences"
+                }
+            ],
+            "fullName": "Chenyu Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryptape and Nervos"
+                }
+            ],
+            "fullName": "Ren Zhang",
+            "orcid": "0000-0003-2063-1769"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences"
+                }
+            ],
+            "fullName": "Xiaorui Gong"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-01T05:47:35Z"
+        }
+    ],
+    "keywords": [
+        "Ethereum",
+        "P2P network",
+        "node discovery"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/588.pdf",
+    "pid": "588",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Place for Everyone vs Everyone in its Place: Measuring and Attacking the Ethereum Global Network",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ethereum/wiki/wiki/White-Paper",
+        "https://github.com/ConsenSys/wittgenstein/issues/35",
+        "https://github.com/ConsenSys/wittgenstein/issues/35",
+        "https://github.com/dennis-tra/nebula",
+        "https://github.com/dennis-tra/nebula"
+    ]
+}
+,
+{
+    "abstract": "In this article, we present for the first time a cross-core Prime+Probe attack on ARM\r\nTrustZone, which bypasses the AutoLock mechanism. We introduce our simulation-\r\ndriven methodology based on gem5 for vulnerability analysis. We demonstrate its\r\nutility in reverse engineering a SoC platform in order to study its microarchitectural\r\nbehavior (caches, etc.), inside a simulator, in spite of hardware protection. We present\r\na novel vulnerability analysis technique, which takes into account the cache set\r\noccupancy for targeted victim executable. This proves to be essential in identifying\r\ninformation leakage in presence of AutoLock. The above tool also identifies the cache\r\nlines leaking a maximum amount of information. A cross-core Prime+Probe attack is\r\nthen mounted on these max-leakage cache lines both in simulation for fine-tuning,\r\nand in real hardware. We validate our analysis and attack method on OP-TEE, an\r\nopen-source trusted execution environment running on RockPi4 a board based on\r\nRK3399 SoC. More specifically we target the RSA subroutine in the MbedTLS library\r\nused inside OP-TEE. Despite the presence of AutoLock, multiplier obfuscation, and\r\nassuming a cross-core attack, we are able to retrieve 30% of the key bits, which can\r\nlater be used in Branch-and-Prune methods to recover the full key.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "T\u00e9l\u00e9com ParisTech",
+                    "ror": "https://ror.org/01naq7912"
+                }
+            ],
+            "fullName": "Quentin Forcioli",
+            "orcid": "0009-0009-6210-3922"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "T\u00e9l\u00e9com ParisTech",
+                    "ror": "https://ror.org/01naq7912"
+                }
+            ],
+            "fullName": "Sumanta Chaudhuri",
+            "orcid": "0000-0002-8337-079X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "T\u00e9l\u00e9com ParisTech",
+                    "ror": "https://ror.org/01naq7912"
+                }
+            ],
+            "fullName": "Jean-Luc Danger",
+            "orcid": "0000-0001-5063-7964"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-01T09:53:37Z"
+        }
+    ],
+    "keywords": [
+        "SoC",
+        "gem5",
+        "Security",
+        "Virtual Platform",
+        "Penetration Testing",
+        "TEE",
+        "Micro-Architectural Attacks",
+        "Reverse Engineering"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/589.pdf",
+    "pid": "589",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Defeating AutoLock: From Simulation to Real-World Cache-Timing Exploits against TrustZone",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure graph computation enables computing on graphs while hiding the graph topology as well as the associated node/edge data. This facilitates collaborative analysis among multiple data owners, who may only hold a private partial view of the global graph. Several works address this problem using the technique of secure multiparty computation (MPC) in the presence of 2 or 3 parties. However, when moving to the multiparty setting, as required for collaborative analysis among multiple data owners, these solutions are no longer scalable. This remains true with respect to the state-of-the-art framework of $\\mathsf{Graphiti}$ (Koti et al., CCS 2024) as well. Specifically, $\\mathsf{Graphiti}$ incurs a round complexity linear in the number of parties or data owners. This is due to its reliance on secure shuffle protocol, constituting a bottleneck in the multiparty setting. Additionally, $\\mathsf{Graphiti}$ has a prohibitively expensive initialisation phase due to its reliance on secure sort, with a round complexity dependent on both the graph size and the number of parties. \r\n\r\nWe propose $\\mathsf{emGraph}$, a generic framework for secure graph computation in the multiparty setting that eliminates the need of shuffle and instead, relies on a weaker primitive known as $\\mathsf{Permute+Share}$. Further $\\mathsf{emGraph}$ is designed to have a lightweight initialisation, that eliminates the need for sorting, making its round complexity independent of the graph size and number of parties. Unlike any of the prior works, achieving a round complexity independent of the number of parties is what makes $\\mathsf{emGraph}$ scalable.\r\n\r\nFinally, we implement and benchmark the performance of $\\mathsf{emGraph}$ for the application of PageRank computation and showcase its efficiency and scalability improvements over $\\mathsf{Graphiti}$. Concretely, we witness improvements of up to $80\\times$ in runtime in comparison to state-of-the-art framework $\\mathsf{Graphiti}$. Further, we observe that $\\mathsf{emGraph}$ takes under a minute to perform 10 iterations of PageRank computation on a graph of size $10^6$ that is distributed among $25$ parties/data owners, making it highly practical for secure graph computation in the multiparty setting.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Science Bangalore",
+                    "ror": "https://ror.org/04dese585"
+                }
+            ],
+            "fullName": "Siddharth Kapoor",
+            "orcid": "0009-0001-9688-3826"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aztec Labs"
+                }
+            ],
+            "fullName": "Nishat Koti",
+            "orcid": "0000-0003-4923-8215"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Tirupati"
+                }
+            ],
+            "fullName": "Varsha Bhat Kukkala",
+            "orcid": "0000-0001-9579-4963"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Science Bangalore",
+                    "ror": "https://ror.org/04dese585"
+                }
+            ],
+            "fullName": "Arpita Patra",
+            "orcid": "0000-0002-8036-4407"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Science Bangalore",
+                    "ror": "https://ror.org/04dese585"
+                }
+            ],
+            "fullName": "Bhavish Raj Gopal",
+            "orcid": "0000-0001-8642-7686"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-04T04:02:58Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-01T13:52:23Z"
+        }
+    ],
+    "keywords": [
+        "Secure Graph Analysis",
+        "Secure Computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/590.pdf",
+    "pid": "590",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "$\\mathsf{emGraph}$: Efficient Multiparty Secure Graph Computation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/emp-toolkit"
+    ]
+}
+,
+{
+    "abstract": "Bitcoin script cannot easily access and store state information onchain without an upgrade such as BIP-347 (OP_CAT); this makes performing general (stateful) computation on Bitcoin impossible to do directly. Despite this limitation, several approaches have been proposed to bypass it, with BitVM being by far the most production-ready of them. BitVM enables fraud-proof-based computation on Bitcoin, relying on a $1$-out-of-$n$ honesty assumption.\r\n\r\nThis left the question of whether it is possible to achieve computation under the same honesty assumption without requiring onlookers to ensure validity through fraud proofs.  In this note, we answer this question affirmatively by introducing ColliderVM, a new approach for performing computation on Bitcoin today. Crucially, this approach eliminates some capital inefficiency concerns stemming from reliance on fraud proofs.\r\n\r\nFor our construction, a key point is to replace the Lamport or Winternitz signature-based storage component in contemporary protocols with a hash collision-based commitment. With it, we estimate that the Bitcoin script length for STARK proof verification is drastically shorter than that for other pairing-based proof systems used today in applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "StarkWare"
+                }
+            ],
+            "fullName": "Victor I. Kolobov"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "StarkWare"
+                }
+            ],
+            "fullName": "Avihu M. Levy"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Weizmann Institute of Science",
+                    "ror": "https://ror.org/0316ej306"
+                }
+            ],
+            "fullName": "Moni Naor"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-01T13:52:29Z"
+        }
+    ],
+    "keywords": [
+        "Bitcoin",
+        "collisions",
+        "covenants",
+        "Merkle tree",
+        "BitVM"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/591.pdf",
+    "pid": "591",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "ColliderVM: Stateful Computation on Bitcoin",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Bitcoin-Wildlife-Sanctuary/",
+        "https://github.com/bitcoin/bips/blob/master/bip-0347.mediawiki",
+        "https://github.com/bitcoin/bips/pull/1500",
+        "https://github.com/bitcoin/bips/blob/master/bip-0119.mediawiki",
+        "https://github.com/bitcoin/bitcoin/commit/4bd188c4383d6e614e18f79dc337fbabe8464c82",
+        "https://github.com/taproot-wizards/purrfect_vault",
+        "https://github.com/taproot-wizards/purrfect_vault",
+        "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki"
+    ]
+}
+,
+{
+    "abstract": "The modern internet relies heavily on centralized trust systems controlled by corporations, governments, and intermediaries to manage authentication, identity, and value transfer. These models introduce fundamental vulnerabilities, including censorship, fraud, and systemic insecurity. The Decentralized State Machine (DSM) addresses these issues by introducing a mathematically enforced trust layer that eliminates the need for consensus mechanisms, third-party validators, and centralized infrastructure. DSM enables quantum-resistant, deterministic state transitions for digital identity and value exchange\u2014offering immediate finality, offline capability, and tamper-proof forward-only state progression.\r\n\r\nDSM replaces traditional blockchain execution models with deterministic, pre-committed state transitions, enabling secure, multi-path workflows without requiring Turing-completeness or global consensus. The protocol architecture is based on a straight hash chain with sparse indexing and Sparse Merkle Trees (SMTs), ensuring efficient verification, scalability, and privacy. A bilateral isolation model supports asynchronous, offline operation with built-in consistency guarantees. DSM introduces a sustainable, gas-free economic model based on cryptographic subscription commitments.\r\n\r\nThis paper outlines the architecture, cryptographic foundations, and security guarantees of DSM, and demonstrates how it achieves verifiable, trustless interaction between peers\u2014both online and offline. By decoupling security from consensus and enabling self-validating state transitions, DSM offers a practical and scalable alternative to conventional internet trust models.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Brandon Ramsay",
+            "orcid": "0009-0002-6275-322X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-01T18:03:39Z"
+        }
+    ],
+    "keywords": [
+        "deterministic state machine",
+        "decentralized identity",
+        "offline transactions",
+        "quantum-resistant",
+        "trustless"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/592.pdf",
+    "pid": "592",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "DSM: Decentralized State Machine - The Missing Trust Layer of the Internet",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "An oblivious RAM (ORAM) compiler is a cryptographic tool that transforms a program $P$ running in time $n$ into an equivalent program $\\tilde P$, with the property that the sequence of memory addresses read from/written to by $\\tilde P$ reveal nothing about $\\tilde P$'s data (Goldreich and Ostrovsky, JACM'96). An efficient ORAM compiler $C$ should achieve some combination of the following:\r\n\r\n- Low bandwidth blow-up: $\\tilde P$ should read/write a similar amount of data as does P.\r\n- Low latency: $\\tilde P$ should incur a similar number of roundtrips to the memory as does P.\r\n- Low space complexity: $\\tilde P$ should run in as few words of local memory as possible.\r\n\r\nIt is well known that for a generic compiler (i.e. one that works for any RAM program $P$), certain combinations of efficiencies are impossible. Any generic ORAM compiler must incur $\\Omega(\\log n)$ bandwidth blow-up, and any ORAM compiler with no latency blow-up must incur either $\\Omega(\\sqrt n)$ bandwidth blow-up and/or local space. Moreover, while a $O(\\log n)$ bandwidth blow-up compiler is known, it requires the assumption that one-way functions exist and incurs enormous constant factors.\r\n\r\nTo circumvent the above problems and improve efficiency of particular ORAM programs, we develop a compiler for a specific class of programs. Let $P$ be a program that interacts with an immutable memory. Namely, $P$ may write values to memory, then read them back, but it cannot change values that were already written. Using only information-theoretic techniques, we compile any such $P$ into an oblivious form $\\tilde P$ with a combination of efficiencies that no generic ORAM compiler can achieve:\r\n\r\n- $\\tilde P$ incurs $\\Theta(\\log n)$ amortized bandwidth blow-up.\r\n- $\\tilde P$ incurs $O(1)$ amortized latency blow-up.\r\n- $\\tilde P$ runs in $O(\\lambda)$ words of local space ($\\tilde P$ incurs an error with probability $2^{-\\Omega(\\lambda)}$).\r\n\r\nWe show that this, for instance, implies that any pure functional program can be compiled with the same asymptotics.\r\n\r\nOur work builds on and is compatible with prior work  (Appan et al., CCS'24) that showed similar results for pointer machine programs that manipulate objects with constant in-degree (i.e., the program may only maintain a constant number of pointers to any one memory cell; our immutable memory approach does not have this limitation). By combining techniques, we can consider programs that interact with a mixed memory that allows each memory cell to be updated until it is frozen, after which it becomes immutable, allowing further reads to be compiled with the above asymptotics, even when in-degree is high. Many useful algorithms/data structures can be naturally implemented as mixed memory programs, including suffix trees (powerful data structures used in computational biology) and deterministic finite automata (DFAs).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Ananya Appan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "David Heath"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-01T19:04:19Z"
+        }
+    ],
+    "keywords": [
+        "Oblivious RAM",
+        "Oblivious Data Structures and Algorithms"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/593.pdf",
+    "pid": "593",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Oblivious Immutable Memory",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we present efficient SNARKs for Boolean circuits, achieving significant improvements in the prover efficiency. The core of our technique is a novel tower sumcheck protocol and a tower zero-check protocol tailored for tower fields, which enable this efficiency boost. When instantiated with Wiedemann's binary tower fields with the base field of $GF(2)$ and the top-level field $GF(2^{2^\\ell})$, assuming the quadratic complexity of multiplications \\(O(2^{2\\ell})\\) in the top-level field with $2^\\ell$ bits, the prover time of our sumcheck protocol is \\(O(2^{1.5\\ell}N)\\). It is faster than the standard sumcheck protocol over the large field with the complexity of \\(O(2^{2\\ell}N)\\). To achieve a reasonable security level, $2^\\ell$ is usually set to $128$.\r\n\r\nLeveraging this advancement, we improve the efficiency of IOP protocols over the binary or small characteristic fields for Plonkish, CCS, and GKR-based constraint systems. Moreover, to further improve the prover efficiency of the SNARKs, we introduce a basis-switching mechanism that efficiently transforms polynomial evaluations on the base-field polynomial to evaluations on the tower-field polynomial. With the basis-switching, we are able to compile the binary-field IOPs to SNARKs using large-field polynomial commitment schemes (PCS) that batch the witness over the base field. The size of the large-field PCS is only $\\frac{1}{2^\\ell}$ of the size of the witness over the base field. Combining the IOP and the PCS, the overall prover time of our SNARKs for Boolean circuits significantly faster than the naive approach of encoding Boolean values in a large field.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Tianyi Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Yupeng Zhang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-04T04:02:45Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-04-04T04:01:28Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-02T01:54:02Z"
+        }
+    ],
+    "keywords": [
+        "SNARKS",
+        "Tower of fields",
+        "Sumcheck protocol optimization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/594.pdf",
+    "pid": "594",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient SNARKs for Boolean Circuits via Sumcheck over Tower Fields",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mir-protocol/plonky2",
+        "https://github.com/Plonky3/Plonky3",
+        "https://github.com/morgana-proofs/hashcaster"
+    ]
+}
+,
+{
+    "abstract": "In CRYPTO 2022, Esser et al. proposed a partial key exposure attack on several post-quantum cryptographic schemes including Rainbow which is a variant of UOV. The task of the attack is to recover a full secret key from its partial information such as a secret key with symmetric/asymmetric bit errors. One of the techniques Esser et al. developed is a partial enumeration that combines the standard algorithms to solve the MQ problem with enumeration. \r\n\r\nAlthough an efficient attack on Rainbow was proposed, UOV and its variants have still been paid much attention since UOV and its three variants, i.e., MAYO, QR-UOV and SNOVA, were selected as the Round 2 candidates of the additional call for digital signature schemes proposal by NIST. \r\n\r\nIn this paper, we analyze partial key exposure attacks on UOV, MAYO, and QR-UOV. Although our proposed attacks use the partial enumeration, we refine their enumeration strategy. We employ two enumeration strategies and analyze the complexity of the proposed attacks. Then, we find a structural difference between UOV and its variants to resist partial enumeration. Specifically, the partial enumeration is effective if the number of vinegar variables is smaller than the number of equations and the order of a finite field is small. \r\n\r\nAs a result, the proposed attack is the most effective on MAYO. While our attacks on UOV and QR-UOV are effective only when the symmetric error probabilities are 0.11 and 0.05, respectively, that on MAYO is effective even when the probability is close to 0.5.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Tokyo"
+                }
+            ],
+            "fullName": "Yuki Seto",
+            "orcid": "0009-0000-1708-6056"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Hiroki Furue"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Tokyo"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Atsushi Takayasu",
+            "orcid": "0000-0002-9310-6976"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T03:35:19Z"
+        }
+    ],
+    "keywords": [
+        "post-quantum cryptography",
+        "multivariate cryptography",
+        "UOV",
+        "partial key exposure attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/595.pdf",
+    "pid": "595",
+    "pubtype": {
+        "note": "ACISP 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Partial Key Exposure Attacks on UOV and Its Variants",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The matrix code equivalence problem consists, given two matrix spaces $\\mathcal{C},\\mathcal{D}\\subset \\mathbb{F}_q^{m\\times n}$ of dimension $k$, in finding invertible matrices $P\\in\\textrm{GL}_m(\\mathbb{F}_q)$ and $Q\\in\\textrm{GL}_n(\\mathbb{F}_q)$ such that $\\mathcal{D} =P\\mathcal{C} Q^{-1}$. Recent signature schemes such as MEDS and ALTEQ relate their security to the hardness of this problem. Naranayan et. al. recently published an algorithm solving this problem in the case $k = n =m$ in $\\widetilde{\\mathcal{O}}(q^{\\frac k 2})$ operations. We present a different algorithm which solves the problem in the general case. Our approach consists in reducing the problem to the matrix code conjugacy problem, i.e. the case $P=Q$. For the latter problem, similarly to the permutation code equivalence problem in Hamming metric, a natural invariant based on the \\emph{Hull} of the code can be used. Next, the equivalence of codes can be deduced using a usual list collision argument. For $k=m=n$, our algorithm achieves the same complexity as in the aforementioned reference. However, it extends to a much broader range of parameters.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                },
+                {
+                    "name": "Computer Science Laboratory of the \u00c9cole Polytechnique",
+                    "ror": "https://ror.org/04afed728"
+                }
+            ],
+            "fullName": "Alain Couvreur",
+            "orcid": "0000-0003-4554-6720"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                },
+                {
+                    "name": "Computer Science Laboratory of the \u00c9cole Polytechnique",
+                    "ror": "https://ror.org/04afed728"
+                }
+            ],
+            "fullName": "Christophe Levrat",
+            "orcid": "0009-0004-9768-5786"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T10:09:50Z"
+        }
+    ],
+    "keywords": [
+        "Matrix code equivalence",
+        "3-tensor isomorphism",
+        "cryptanalysis",
+        "post quantum signatures."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/596.pdf",
+    "pid": "596",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Highway to Hull: An Algorithm for Solving the General Matrix Code Equivalence Problem",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "More and more people take advantage of mobile apps to strike up relationships and casual contacts. This sometimes results in the sharing of self-generated nudes. While this opens a way for sexual exploration, it also raises concerns. In this paper, we review existing technology-assisted permissive proposals/features that provide security or privacy benefits when sharing nudes online. To do so, we performed a systematic literature review combing through 10,026 search results and cross-references, and we identified real-world solutions by surveying OS features and 52 dating, messaging and social network apps. We systematized knowledge by defining a sexting threat model, deriving a taxonomy of the proposals/features, discussing some of their shortcomings, organizing privacy-related concepts, and providing take-aways with some directions for future research and development. Our study found a very diverse ecosystem of academic proposals and app features, showing that safer sexting goes far beyond nude detection. None of the techniques represents the ultimate solution for all threats, but each contributes to safer sexting in a different way.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "LASIGE, Universidade de Lisboa"
+                }
+            ],
+            "fullName": "Joel Samper",
+            "orcid": "0000-0002-2250-8273"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LASIGE, Universidade de Lisboa"
+                }
+            ],
+            "fullName": "Bernardo Ferreira",
+            "orcid": "0000-0002-6956-0968"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-04T09:50:50Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-02T10:31:56Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Minor corrections",
+    "pdffile": "2025/597.pdf",
+    "pid": "597",
+    "pubtype": {
+        "note": "46th IEEE Symposium on Security and Privacy (IEEE S&P 2025)",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SoK: Self-Generated Nudes over Private Chats: How Can Technology Contribute to a Safer Sexting?",
+    "year": 2025,
+    "repo": [
+        "http://all.net/books/forensics/digitalphoto/www.kodak.com/global/en/digital/acrobat/software/Authentication_whitepaper.PDF",
+        "http://all.net/books/forensics/digitalphoto/www.kodak.com/global/en/digital/acrobat/software/Authentication_whitepaper.PDF",
+        "http://all.net/books/forensics/digitalphoto/www.kodak.com/global/en/digital/acrobat/software/Authentication_whitepaper.PDF",
+        "http://all.net/books/forensics/digitalphoto/www.kodak.com/global/en/digital/acrobat/software/Authentication_whitepaper.PDF",
+        "http://all.net/books/forensics/digitalphoto/www.kodak.com/global/en/digital/acrobat/software/Authentication_whitepaper.PDF"
+    ]
+}
+,
+{
+    "abstract": "State-separting proofs are a powerful tool to structure cryptographic arguments, so that they are amenable for mechanization, as has been shown through implementations, such as SSProve. However, the treatment of separation for heaps has never been satisfactorily addressed. In this work, we present the first comprehensive treatment of nominal state separation in state-separating proofs using nominal sets. We provide a Coq library, called Nominal-SSProve, that builds on nominal state separation supporting mechanized proofs that appear more concise and arguably more elegant.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IT University of Copenhagen",
+                    "ror": "https://ror.org/02309jg23"
+                }
+            ],
+            "fullName": "Markus Krabbe Larsen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IT University of Copenhagen",
+                    "ror": "https://ror.org/02309jg23"
+                }
+            ],
+            "fullName": "Carsten Sch\u00fcrmann"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T13:50:12Z"
+        }
+    ],
+    "keywords": [
+        "formal verification",
+        "modular cryptographic proofs",
+        "state-separating proofs",
+        "Coq",
+        "nominal sets"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "note": "Supplementary material available at: https://github.com/MarkusKL/nominal-ssprove",
+    "pdffile": "2025/598.pdf",
+    "pid": "598",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Nominal State-Separating Proofs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We show that the attribute-based signature scheme [Information Sciences, 654(2024), 119839] is insecure,  because an adversary can generate valid signatures for any message even though he cannot access the signer's secret key.  The four components of signature $\\{\\delta_1, \\delta_2, \\delta_3, \\delta_4\\}$ are not tightly bound to the target message $M$ and the signer's public key. The dependency between the signer's public key and secret key is not properly used to construct any intractable problem. The inherent flaw results in that the  adversary can find an efficient signing algorithm functionally equivalent to the valid signing algorithm.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T14:01:18Z"
+        }
+    ],
+    "keywords": [
+        "Attribute-based signature",
+        "forgery attack",
+        "signing algorithm",
+        "verification algorithm",
+        "anonymity"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/599.pdf",
+    "pid": "599",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Insecurity of One Decentralized Attribute-based Signature Scheme for Social Co-governance",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We give an IOPP (interactive oracle proof of proximity) for trivariate Reed-Muller codes that achieves  the best known query complexity in some range of security parameters. Specifically, for degree $d$ and security parameter $\\lambda\\leq \\frac{\\log^2 d}{\\log\\log d}$  , our IOPP has $2^{-\\lambda}$ round-by-round soundness, $O(\\lambda)$ queries, $O(\\log\\log d)$ rounds and $O(d)$ length. This improves upon the FRI [Ben-Sasson, Bentov, Horesh, Riabzev, ICALP 2018] and the STIR [Arnon, Chiesa, Fenzi, Yogev, Crypto 2024] IOPPs for Reed-Solomon codes, that have larger query and round complexity standing at $O(\\lambda \\log d)$ and  $O(\\log d+\\lambda\\log\\log d)$ respectively. We use our IOPP to give an IOP for the NP-complete language Rank-1-Constraint-Satisfaction with the same parameters.\r\n\r\n    Our construction is based on the line versus point test in the low-soundness regime. Compared to the axis parallel test (which is used in all prior works), the general affine lines test has improved soundness, which is the main source of our improved soundness.  \r\n    \r\n    Using this test involves several complications, most significantly that projection to affine lines does not preserve individual degrees, and we show how to overcome these difficulties. En route, we extend some existing machinery to more general settings. Specifically, we give proximity generators for Reed-Muller codes, show a more systematic way of handling \"side conditions\" in IOP constructions, and generalize the compiling procedure of [Arnon, Chiesa, Fenzi, Yogev, Crypto 2024] to general codes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Dor Minzer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Kai Zhe Zheng"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T15:58:13Z"
+        }
+    ],
+    "keywords": [
+        "IOP"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/600.pdf",
+    "pid": "600",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Round-by-round Soundness IOPs via  Reed-Muller Codes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The transition to quantum-safe public-key cryptography has begun: for key agreement, NIST has standardized ML-KEM and selected HQC for future standardization. The relative immaturity of these schemes encourages crypto-agile implementations, to facilitate easy transitions between them. Intelligent crypto-agility requires efficient sharing strategies to compute operations from different cryptosystems using the same resources. This is particularly challenging for cryptosystems with distinct mathematical foundations, like lattice-based ML-KEM and code-based HQC.\r\nWe introduce PHOENIX, the first crypto-agile hardware coprocessor for lattice- and code-based cryptosystems--specifically, ML-KEM and HQC, at all three NIST security levels--with an effective agile sharing strategy.\r\nPHOENIX accelerates polynomial multiplication, which is the main operation in both cryptosystems, and the current bottleneck of HQC. To maximise sharing, we replace HQC's Karatsuba-based polynomial multiplication with the Frobenius Additive FFT (FAFFT), which is similar on an abstract level to ML-KEM's Number Theoretic Transform (NTT). \r\nWe show that the FAFFT already brings substantial performance improvements in software. In hardware, our sharing strategy for the FAFFT and NTT is based on a new SuperButterfly unit that seamlessly switches between these two FFT variants over completely different rings. This is, to our knowledge, the first FAFFT hardware accelerator of any kind. We have integrated PHOENIX in a real System-on-Chip FPGA scenario, where our performance measurements show that efficient crypto-agility for lattice- and code-based KEMs can be achieved with low overhead.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CEA LETI",
+                    "ror": "https://ror.org/04mf0wv34"
+                }
+            ],
+            "fullName": "Antonio Ras",
+            "orcid": "0009-0009-9607-8673"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CEA LETI",
+                    "ror": "https://ror.org/04mf0wv34"
+                }
+            ],
+            "fullName": "Antoine Loiseau",
+            "orcid": "0000-0002-5127-8737"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CEA LETI",
+                    "ror": "https://ror.org/04mf0wv34"
+                }
+            ],
+            "fullName": "Mika\u00ebl Carmona",
+            "orcid": "0000-0003-3576-7036"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CEA LETI",
+                    "ror": "https://ror.org/04mf0wv34"
+                }
+            ],
+            "fullName": "Simon Ponti\u00e9",
+            "orcid": "0000-0002-7193-7576"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ANSSI, LIX, INRIA, CNRS, Ecole Polytechnique, Institut Polytechnique de Paris, France"
+                }
+            ],
+            "fullName": "Gu\u00e9na\u00ebl Renault",
+            "orcid": "0000-0002-7050-9975"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LIX, INRIA, CNRS, Ecole Polytechnique, Institut Polytechnique de Paris, France"
+                }
+            ],
+            "fullName": "Benjamin Smith",
+            "orcid": "0000-0002-6701-1420"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CEA LIST",
+                    "ror": "https://ror.org/000dbcc61"
+                }
+            ],
+            "fullName": "Emanuele Valea",
+            "orcid": "0000-0001-9804-7250"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T16:40:06Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography",
+        "Crypto-Agility",
+        "SW-HW FPGA codesign",
+        "Polynomial Multiplication sharing strategy",
+        "ML-KEM",
+        "NTT",
+        "HQC",
+        "FAFFT"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/601.pdf",
+    "pid": "601",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PHOENIX: Crypto-Agile Hardware Sharing for ML-KEM and HQC",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-86599-2_10",
+    "abstract": "Sanitizable Signature Schemes (SSS) enable a designated party, the sanitizer, to modify predefined parts of a signed message without invalidating the signature, making them useful for applications like pseudonymization and redaction. Since their introduction by Ateniese et al. (ESORICS'05), several classical SSS constructions have been proposed, but none have been instantiated from quantum-resistant assumptions. In this work, we develop the first quantum-secure sanitizable signature schemes based on lattice assumptions. Our primary focus is on SSS constructions that rely on chameleon hash functions (CHFs), a key component for enabling the controlled modification of messages. While lattice-based CHFs exist, they do not meet the required security guarantees for SSS, becoming insecure under adversarial access to an adapt oracle. To address this, we construct a novel lattice-based CHF that achieves collision resistance even in such settings, called full collision resistance. However, our CHF lacks the uniqueness property, a limitation we show to be inherent in lattice-based CHFs. As a result, our SSS constructions initially fall short of achieving the critical security property of accountability. To overcome this, we apply a transformation based on verifiable ring signatures (VRS), for which we present the first lattice-based instantiation. Additionally, we provide a comprehensive analysis of existing classical SSS constructions, explore their potential for post-quantum instantiations, and present new attacks on previously assumed secure SSS schemes. Our work closes the gap in constructing quantum-secure SSS and lays the groundwork for further research into advanced cryptographic primitives based on lattice assumptions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Sebastian Clermont",
+            "orcid": "0009-0005-9436-1417"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Regensburg",
+                    "ror": "https://ror.org/01eezs655"
+                }
+            ],
+            "fullName": "Samed D\u00fczl\u00fc",
+            "orcid": "0000-0001-5680-5834"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Christian Janson",
+            "orcid": "0000-0002-0682-9923"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Paderborn University",
+                    "ror": "https://ror.org/058kzsd48"
+                }
+            ],
+            "fullName": "Laurens Porzenheim",
+            "orcid": "0009-0000-7576-0088"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Konstanz",
+                    "ror": "https://ror.org/0546hnb39"
+                }
+            ],
+            "fullName": "Patrick Struck",
+            "orcid": "0000-0001-7738-2017"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T19:38:17Z"
+        }
+    ],
+    "keywords": [
+        "Sanitizable Signature",
+        "Lattice",
+        "Post-Quantum",
+        "Chameleon Hash",
+        "Verifiable Ring Signature"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/602.pdf",
+    "pid": "602",
+    "pubtype": {
+        "note": "PQCrypto 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lattice-Based Sanitizable Signature Schemes: Chameleon Hash Functions and More",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we address the Byzantine Agreement problem in synchronous systems where Byzantine agents can move from process to process, corrupting their host. \r\nWe focus on three representative models: \\emph{Garay's}, \\emph{Bonnet's} and \\emph{Buhrman's} models.\r\nIn \\emph{Garay's model} when a process has been left by the Byzantine, it is in the \\emph{cured} state and it is aware of its condition and thus can remain silent for a round to prevent the dissemination of wrong information.\r\nIn \\emph{Bonnet's model} a cured process may send messages (based on a state corrupted by the malicious agent), however it will behave correctly in the way it sends those messages: i.e., send messages according to the algorithm.\r\nIn \\emph{Buhrman's model} Byzantine agents move together with the message.  \r\nIt has been shown that in order to solve Byzantine Agreement in the \\emph{Garay's model} at least $4t+1$ processors are needed, for \\emph{Bonnet's model} at least $5t+1$ processors are needed, while for \\emph{Buhrman's model} at least $3t+1$ processors are needed.\r\nIn this paper we target to increase the tolerance to mobile Byzantines by integrating a trusted counter abstraction to the above models. This abstraction prevents nodes to equivocate. In the new models we prove that at least $3t+1$, respectively $4t+1$, and $2t+1$ processors are needed  to tolerate $t$ mobile Byzantine agents. Furthermore,  we propose novel Mobile Byzantine Agreement algorithms that  match these new lower bounds for \\emph{Garay's}, \\emph{Bonnet's} and \\emph{Buhrman's} models.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "LIP6, Sorbonne University"
+                }
+            ],
+            "fullName": "Bo Pan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LIP6, Sorbonne University"
+                }
+            ],
+            "fullName": "Maria Potop Butucaru"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T20:38:55Z"
+        }
+    ],
+    "keywords": [
+        "agreement",
+        "mobile byzantine",
+        "trusted objects"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/603.pdf",
+    "pid": "603",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Mobile Byzantine Agreement in a Trusted World",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Side-channel attacks following a classical differential power\r\nanalysis (DPA) style are well understood, along with the effect the mask-\r\ning countermeasure has on them. However, simple attacks (SPA) where\r\nthe target variable does not vary thanks to a known value, such as the\r\nplaintext, are less studied. In this paper, we investigate how the masking\r\ncountermeasure affects the success rate of simple attacks. To this end, we\r\nprovide theoretical, simulated, and practical experiments. Interestingly,\r\nwe will see that masking can allow us to asymptotically recover more\r\ninformation on the secret than in the case of an unprotected implemen-\r\ntation, depending on the masking type. We will see that this is true for\r\nmasking encodings that add non-linearity with respect to the leakages,\r\nsuch as arithmetic masking, while it is not for Boolean masking. We be-\r\nlieve this context provides interesting results, as the average information\r\nof arithmetic encoding is proven less informative than the Boolean one.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Univ Rennes, CNRS, Inria, IRISA Rennes"
+                }
+            ],
+            "fullName": "Aymeric Hiltenbrand"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Rambus Inc."
+                }
+            ],
+            "fullName": "Julien Eynard"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ANSSI"
+                }
+            ],
+            "fullName": "Romain Poussier"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-02T21:55:44Z"
+        }
+    ],
+    "keywords": [
+        "SPA",
+        "masking",
+        "success rate"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/604.pdf",
+    "pid": "604",
+    "pubtype": {
+        "note": "CASCADE 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the success rate of simple side-channel attacks against masking with unlimited attack traces",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
