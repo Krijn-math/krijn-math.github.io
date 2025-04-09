@@ -43108,4 +43108,520 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Laconic cryptography focuses on designing two-message protocols that allow secure computation on large datasets while minimizing communication costs. While laconic cryptography protocols achieve asymptotically optimal communication complexity for many tasks, their concrete efficiency is prohibitively expensive due to the heavy use of public-key techniques or the non-black-box of cryptographic primitives.\r\n\r\nIn this work, we initiate the study of \"laconic cryptography with preprocessing\", introducing a model that includes an offline phase to generate database-dependent correlations, which are then used in a lightweight online phase. These correlations are conceptually simple, relying on linear-algebraic techniques. This enables us to develop a protocol for private laconic vector oblivious linear evaluation (plvOLE). In such a protocol, the receiver holds a large database $\\mathsf{DB}$, and the sender has two messages $v$ and $w$, along with an index $i$. The receiver learns the value $v \\cdot \\mathsf{DB}_i + w$ without revealing other information.\r\n\r\nOur protocol, which draws from ideas developed in the context of private information retrieval with preprocessing, serves as the backbone for two applications of interest: laconic private set intersection (lPSI) for large universes and laconic function evaluation for RAM-programs (RAM-LFE). Based our plvOLE protocol, we provide efficient instantiations of these two primitives in the preprocessing model.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Rishabh Bhadauria",
+            "orcid": "0009-0003-7548-5911"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Nico D\u00f6ttling",
+            "orcid": "0000-0002-5914-7635"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University",
+                    "ror": "https://ror.org/03kgsv495"
+                }
+            ],
+            "fullName": "Carmit Hazay",
+            "orcid": "0000-0002-8951-5099"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Chuanwei Lin",
+            "orcid": "0000-0003-1152-649X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-03T11:35:02Z"
+        }
+    ],
+    "keywords": [
+        "Laconic Cryptography",
+        "Laconic VOLE",
+        "Laconic PSI"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This work replaces https://eprint.iacr.org/2024/1555. This is a repost, as the techniques in this work have substantially changed.",
+    "pdffile": "2025/605.pdf",
+    "pid": "605",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Laconic Cryptography with Preprocessing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The security of ML-DSA, like most signature schemes, is partially based on the fact that the nonce used to generate the signature is unknown to any attacker. In this work, we exhibit a lattice-based attack that is possible if the nonces share implicit or explicit information. From a collection of signatures whose nonces share certain coefficients, it is indeed possible to build a collection of non full-rank lattices. Intersecting them, we show how to create a low-rank lattice that contains one of the polynomials of the secret key, which in turn can be recovered using lattice reduction techniques. \r\n\r\nThere are several interpretations of this result: firstly, it can be seen as a generalization of a fault-based attack on BLISS presented at SAC'16 by Thomas Espitau et al. Alternatively, it can be understood as a side-channel attack on ML-DSA, in the case where an attacker is able to recover only one of the coefficients of the nonce used during the generation of the signature. For ML-DSA-II, we show that $4 \\times 160$ signatures and few hours of computation are sufficient to recover the secret key on a desktop computer. Lastly, our result shows that simple countermeasures, such as permuting the generation of the nonce coefficients, are not sufficient.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Thales DIS, France"
+                },
+                {
+                    "name": "Laboratoire de Math\u00e9matiques de Versailles, UVSQ, CNRS, Universit\u00e9 Paris-Saclay, 78035 Versailles, France"
+                }
+            ],
+            "fullName": "Paco Azevedo-Oliveira"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire de Math\u00e9matiques de Versailles, UVSQ, CNRS, Universit\u00e9 Paris-Saclay, 78035 Versailles, France"
+                }
+            ],
+            "fullName": "Jordan Beraud"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire de Math\u00e9matiques de Versailles, UVSQ, CNRS, Universit\u00e9 Paris-Saclay, 78035 Versailles, France"
+                }
+            ],
+            "fullName": "Louis Goubin"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-03T12:21:19Z"
+        }
+    ],
+    "keywords": [
+        "ML-DSA",
+        "side-channel attacks",
+        "lattice-based cryptanalysis."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/606.pdf",
+    "pid": "606",
+    "pubtype": {
+        "note": "SAC25",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An attack on ML-DSA using an implicit hint",
+    "year": 2025,
+    "repo": [
+        "https://github.com/AzevedoPaco/AttackML-DSA",
+        "https://github.com/AzevedoPaco/AttackML-DSA"
+    ]
+}
+,
+{
+    "abstract": "Physically Unclonable Constants (PUCs) are a special type of Physically Unclonable Constants and they can be used to embed secret bit-strings in chips. Most PUCs are an array of cells where each cell is a digital circuit that evolve spontaneously toward one of two states, the chosen state being function of random manufacturing process variations. In this paper we propose an Analog Physically Unclonable Constant (APUC) whose output is an analog value to be transformed in digital by a digitizer circuit. The ratio behind this proposal is that an APUC cell has the potential of providing more than one bit, reducing the required footprint. Preliminary theoretical analysis and simulation results are presented. The proposed APUC has interesting performances (e.g., it can provide up to 5 bits per cell) that grant for further investigation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Udine",
+                    "ror": "https://ror.org/05ht0mh31"
+                }
+            ],
+            "fullName": "Riccardo Bernardini",
+            "orcid": "0000-0001-5890-8263"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-03T13:09:32Z"
+        }
+    ],
+    "keywords": [
+        "physically unclonable functions",
+        "physically obfuscated keys",
+        "hardware"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "https://doi.org/10.36227/techrxiv.174320171.18547301/v1",
+    "pdffile": "2025/607.pdf",
+    "pid": "607",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Analytic and Simulation Results of a Gaussian Physically Unclonable Constant Based on Resistance Dispersion",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper presents new results that establish connections between isogeny graphs and nonlinear recurrences over finite fields. Specifically, we prove several theorems that link these two areas, offering deeper insights into the structure of isogeny graphs and their relationship with nonlinear recurrence sequences. We further provide two related conjectures which may be worth of further research. These findings contribute to a better understanding of the endomorphism ring of a curve, advancing progress toward the resolution of the Endomorphism Ring Problem, which aims to provide a computational characterization of the endomorphism ring of a supersingular elliptic curve.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "GMV"
+                }
+            ],
+            "fullName": "Juan Jes\u00fas  Le\u00f3n"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "vicente.munoz@ucm.es"
+                }
+            ],
+            "fullName": "Vicente Mu\u00f1oz",
+            "orcid": "0000-0001-6265-2934"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-03T16:52:00Z"
+        }
+    ],
+    "keywords": [
+        "Isogeny Graphs",
+        "invariants",
+        "recurrences",
+        "enomorphism ring of a curve"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/608.pdf",
+    "pid": "608",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On some non-linear recurrences over finite fields linked to isogeny graphs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A Random Oracle Combiner (ROC), introduced by Dodis et al. (CRYPTO \u201922), takes two hash functions $h_1, h_2$ from m bits to n bits and outputs a new hash function $C$ from $m$' to $n$' bits. This function C is guaranteed to be indifferentiable from a fresh random oracle as long as one of $h_1$ and $h_2$ (say, $h_1$) is a random oracle, while the other h2 can \u201carbitrarily depend\u201d on $h_1$.\r\n\r\nThe work of Dodis et al. also built the first length-preserving ROC, where $n$\u2032 = $n$. Unfortunately, despite this feasibility result, this construction has several deficiencies. From the practical perspective, it could not be directly applied to existing Merkle-Damg\u00e5rd-based hash\r\nfunctions, such as SHA2 or SHA3. From the theoretical perspective, it required $h_1$ and $h_2$ to have input length $m$ > 3\u03bb, where \u03bb is the security parameter.\r\n\r\nTo overcome these limitations, Dodis et al. conjectured \u2014 and left as the main open question \u2014 that the following (salted) construction is a length-preserving ROC:\r\n\r\n$C^{h1,h2}_{\\mathcal{Z}_1,\\mathcal{Z}_2} (M ) = h_1^*(M, \\mathcal{Z}_1) \\oplus h^*_2(M,\\mathcal{Z}_2),$\r\n\r\nwhere $\\mathcal{Z}_1, \\mathcal{Z}_2$ are random salts of appropriate length, and $f^*$ denotes the Merkle-Damg\u00e5rd-extension of a given compression function $f$. As our main result, we resolve this conjecture in the affirmative. For practical use, this makes the resulting combiner applicable to existing, Merkle-Damg\u00e5rd-based hash functions. On the theory side, it shows the existence of ROCs only requiring optimal input length $m$ = \u03bb+O(1).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Yevgeniy Dodis",
+            "orcid": "0000-0003-1013-6318"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Eli Goldin",
+            "orcid": "0000-0002-7975-8281"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Peter Hall",
+            "orcid": "0000-0002-8520-8390"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-03T17:00:36Z"
+        }
+    ],
+    "keywords": [
+        "hash functions",
+        "combiners",
+        "random oracle model",
+        "indifferentiability framework"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/609.pdf",
+    "pid": "609",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Random Oracle Combiners: Merkle-Damg\u00e5rd Style",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "CRLite is a low-bandwidth, low-latency, privacy-preserving mechanism for distributing certificate revocation data. A CRLite aggregator periodically encodes revocation data into a compact static hash set, or membership test, which can can be downloaded by clients and queried privately. We present a novel data-structure for membership tests, which we call a clubcard, and we evaluate the encoding efficiency of clubcards using data from Mozilla's CRLite infrastructure.\r\n\r\nAs of November 2024, the WebPKI contains over 900 million valid certificates and over 8 million revoked certificates. We describe an instantiation of CRLite that encodes the revocation status of these certificates in a 6.7 MB package. This is $54\\%$ smaller than the original instantiation of CRLite presented at the 2017 IEEE Symposium on Security and Privacy, and it is $21\\%$ smaller than the lower bound claimed in that work.\r\n\r\nA sequence of clubcards can encode a dynamic dataset like the WebPKI revocation set. Using data from late 2024 again, we find that clubcards encoding 6 hour delta updates to the WebPKI can be compressed to 26.8 kB on average---a size that makes CRLite truly practical.\r\n\r\nWe have extended Mozilla's CRLite infrastructure so that it can generate clubcards, and we have added client-side support for this system to Firefox. We report on some performance aspects of our implementation, which is currently the default revocation checking mechanism in Firefox Nightly, and we propose strategies for further reducing the bandwidth requirements of CRLite.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Mozilla Corporation"
+                }
+            ],
+            "fullName": "John M. Schanck",
+            "orcid": "0009-0007-3564-8236"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-03T17:24:30Z"
+        }
+    ],
+    "keywords": [
+        "certificate revocation",
+        "crlite",
+        "public key infrastructure",
+        "webpki"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/610.pdf",
+    "pid": "610",
+    "pubtype": {
+        "note": "IEEE S&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Clubcards for the WebPKI: smaller certificate revocation tests in theory and practice",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mozilla/clubcard",
+        "https://github.com/mozilla/clubcard-crlite",
+        "https://github.com/mozilla/crlite",
+        "https://github.com/mozilla/crlite",
+        "https://github.com/davidben/merkle-tree-certs/issues/41#issuecomment-2245218105",
+        "https://github.com/davidben/merkle-tree-certs/issues/41#issuecomment-2245218105",
+        "https://github.com/C2SP/C2SP/blob/main/static-ct-api.md",
+        "https://github.com/C2SP/C2SP/blob/main/static-ct-api.md",
+        "https://github.com/bwesterb/go-ncrlite",
+        "https://github.com/bwesterb/go-ncrlite"
+    ]
+}
+,
+{
+    "abstract": "zkVMs are SNARKs for verifying CPU execution. They allow an untrusted prover to show that it correctly ran a specified program on a witness, where the program is given as bytecode conforming to an instruction set architecture like RISC-V. Existing zkVMs still struggle with high prover resource costs, notably large runtime and memory usage. We show how to implement Jolt\u2014an advanced, sum-check- based zkVM\u2014with a significantly reduced memory footprint, without relying on SNARK recursion, and with only modest runtime overhead (potentially well below a factor of two). We discuss benefits of this approach compared to prevailing recursive techniques.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Arithmic"
+                }
+            ],
+            "fullName": "Vineet Nair"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgetown University"
+                },
+                {
+                    "name": "a16z crypto research"
+                }
+            ],
+            "fullName": "Justin Thaler"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "a16z crypto research"
+                }
+            ],
+            "fullName": "Michael Zhu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-03T20:46:36Z"
+        }
+    ],
+    "keywords": [
+        "zkVMs",
+        "SNARKs",
+        "prover memory",
+        "prover speed"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/611.pdf",
+    "pid": "611",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Proving CPU Executions in Small Space",
+    "year": 2025,
+    "repo": [
+        "https://github.com/a16z/jolt/issues/347",
+        "https://github.com/succinctlabs/sp1/blob/dev/book/static/SP1_Turbo_Memory_Argument.pdf",
+        "https://github.com/succinctlabs/sp1/blob/dev/book/static/SP1_Turbo_Memory_Argument.pdf"
+    ]
+}
+,
+{
+    "abstract": "Recently, $\\mathsf{NTRU}$+$\\mathsf{Sign}$ was proposed as a new compact signature scheme, following `Fiat-Shamir with Aborts' (FSwA) framework. Its compactness is mainly based on their novel NTRU-based key structure that fits well with bimodal distributions in the FSwA framework. However, despite its compactness, $\\mathsf{NTRU}$+$\\mathsf{Sign}$ fails to provide a diverse set of parameters that can meet some desired security levels. This limitation stems from its reliance on a ring $\\mathbb{Z}_q[x]/\\langle x^n+1 \\rangle$, where $n$ is restricted to powers of two, limiting the flexibility in selecting appropriate security levels. To overcome this limitation, we propose a revised version of $\\mathsf{NTRU}$+$\\mathsf{Sign}$ by adopting a ring $\\mathbb{Z}_q[x]/\\langle x^n-x^{n/2}+1\\rangle$ from cyclotomic trinomials, where $n=2^{i}3^{j}$ for some positive integers $i$ and $j$. Our parameterization offers three distinct security levels: approximately $120$, $190$, and $260$ bits, while preserving the compactness in $\\mathbb{Z}_q[x]/\\langle x^n+1 \\rangle$. We implement these re-parameterized $\\mathsf{NTRU}$+$\\mathsf{Sign}$ schemes, showing that the performance of $\\mathsf{NTRU}$+$\\mathsf{Sign}$ from cyclotomic trinomials is still comparable to previous lattice-based signature schemes such as $\\mathsf{Dilithium}$ and $\\mathsf{HAETAE}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Ga Hee Hong",
+            "orcid": "0009-0003-4618-2209"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Joo Woo",
+            "orcid": "0000-0002-9415-5200"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Jonghyun Kim",
+            "orcid": "0000-0003-0958-392X"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Minkyu Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Affiliated Institute of ETRI"
+                }
+            ],
+            "fullName": "Hochang Lee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sangmyung University",
+                    "ror": "https://ror.org/01x4whx42"
+                }
+            ],
+            "fullName": "Jong Hwan Park",
+            "orcid": "0000-0003-2742-6119"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-08T09:49:26Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-04T06:57:33Z"
+        }
+    ],
+    "keywords": [
+        "Post-quantum cryptography",
+        "Lattie-based signatures",
+        "NTRU+Sign"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Preprint.",
+    "pdffile": "2025/612.pdf",
+    "pid": "612",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "More NTRU+Sign Signatures from Cyclotomic Trinomials",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
