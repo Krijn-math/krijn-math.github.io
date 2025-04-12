@@ -43624,4 +43624,1887 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Semantic communication systems, which focus on transmitting the semantics of data rather than its exact reconstruction, redefine the design of communication networks for transformative efficiency in bandwidth-limited and latency-critical applications. Addressing these goals, we tackle the rate-distortion-perception (RDP) problem for image compression, a critical challenge in achieving perceptually realistic reconstructions under rate constraints. Formulated within the randomized distributed function computation (RDFC) framework, we establish an achievable non-asymptotic RDP region, providing finite blocklength trade-offs between rate, distortion, and perceptual quality, aligning with semantic communication objectives. We extend this region to also include a secrecy constraint, providing strong secrecy guarantees against eavesdroppers via physical-layer security methods, ensuring resilience against quantum attacks. Our contributions include (i) establishing achievable bounds for non-asymptotic RDP regions under realism and distortion constraints; (ii) extending these bounds to provide strong secrecy guarantees; (iii) characterizing the asymptotic secure RDP region under a perfect realism constraint; and (iv) illustrating significant reductions in rates and the effects of secrecy constraints and finite blocklengths. Our results provide actionable insights for designing low-latency, high-fidelity, and secure image compression systems with realistic outputs, advancing applications, e.g., in privacy-critical domains.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Link\u00f6ping University"
+                }
+            ],
+            "fullName": "Onur Gunlu",
+            "orcid": "0000-0002-0313-7788"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Czech Technical University in Prague"
+                }
+            ],
+            "fullName": "Maciej Skorski"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Princeton University"
+                }
+            ],
+            "fullName": "H. Vincent Poor"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-04T07:51:58Z"
+        }
+    ],
+    "keywords": [
+        "semantic communication",
+        "rate-distortion-perception",
+        "realism constraint",
+        "randomized distributed computation",
+        "RDFC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/613.pdf",
+    "pid": "613",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Low-Latency Rate-Distortion-Perception Trade-off: A Randomized Distributed Function Computation Application",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure two-party computation (2PC) enables two parties to jointly evaluate a function while maintaining input privacy. Despite recent significant progress, a notable efficiency gap remains between actively secure and passively secure protocols. In S\\&P'12, Huang, Katz, and Evans formalized the notion of \\emph{active security with one-bit leakage}, providing a promising approach to bridging this gap. Protocols derived from this notion have become foundational in designing highly efficient actively secure 2PC protocols. However, a critical challenge identified by Huang, Katz, and Evans remains unexplored: these protocols face significant weaknesses in ensuring fairness for honest parties when employed in standalone settings rather than as components within larger protocols. While the authors proposed two potential solutions to mitigate this issue, both approaches are prohibitively expensive and lack formalization of security guarantees.\r\n\r\nIn this paper, we first formally define an enhanced notion called \\emph{active security with one-bit-advantage bound}, in which the adversaries' advantages are strictly bounded to at most one bit beyond what honest parties obtain. This bound is enforced through a \\emph{progressive revelation} mechanism, where the evaluation result is disclosed incrementally bit by bit. In addition, we propose a novel approach leveraging label structures within garbled circuits to design a highly efficient constant-round 2PC protocol that achieves active security with one-bit advantage bound. Our protocol demonstrates \\emph{runtime performance nearly identical to that of passively secure garbled-circuit counterparts} in duplex networks (\\eg $1.033\\times$ for the {\\tt SHA256} circuit in LAN), with \\emph{low overhead} for output progressive revelation (only $80$ communicated bytes per bit release).\r\n\r\nWith its strengthened security guarantees and minimal overhead, our protocol is highly suitable for practical 2PC applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Jinan University",
+                    "ror": "https://ror.org/02xe5ns62"
+                }
+            ],
+            "fullName": "Yi Liu",
+            "orcid": "0000-0003-1722-6746"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Jinan University",
+                    "ror": "https://ror.org/02xe5ns62"
+                }
+            ],
+            "fullName": "Junzuo Lai",
+            "orcid": "0000-0001-5780-8463"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                }
+            ],
+            "fullName": "Peng Yang",
+            "orcid": "0009-0008-5233-2986"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Jinan University",
+                    "ror": "https://ror.org/02xe5ns62"
+                }
+            ],
+            "fullName": "Anjia Yang",
+            "orcid": "0000-0002-7958-6571"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Southern University of Science and Technology",
+                    "ror": "https://ror.org/049tv2d57"
+                }
+            ],
+            "fullName": "Qi Wang",
+            "orcid": "0000-0001-9780-5443"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                }
+            ],
+            "fullName": "Siu-Ming Yiu",
+            "orcid": "0000-0002-3975-8500"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Jinan University",
+                    "ror": "https://ror.org/02xe5ns62"
+                }
+            ],
+            "fullName": "Jian Weng",
+            "orcid": "0000-0003-4067-8230"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-04T12:54:09Z"
+        }
+    ],
+    "keywords": [
+        "Dual execution",
+        "Fairness",
+        "Garbled circuits",
+        "One-bit advantage bound",
+        "Secure two-party computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/614.pdf",
+    "pid": "614",
+    "pubtype": {
+        "note": "IEEE S&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KULeuven-COSIC/SCALE-MAMBA/",
+        "https://github.com/emp-toolkit",
+        "https://github.com/emp-toolkit"
+    ]
+}
+,
+{
+    "abstract": "Weightwise degree-$d$ functions are Boolean functions that, on each set of fixed Hamming weight, coincide with a function of degree at most $d$. They generalize both symmetric functions and the Hidden Weight Bit Function (HWBF), which has been studied in cryptography for its favorable properties. \r\nIn this work, we establish a general upper bound on the algebraic immunity of such functions, a key security parameter against algebraic attacks on stream ciphers like filtered Linear Feedback Shift Registers (LFSRs). We construct explicit low-degree annihilators for WWdd functions with small $d$, and show how to generalize these constructions. As an application, we prove that the algebraic immunity of the HWBF is upper bounded by $3\\sqrt{n}$ disproving a result from 2011 that claimed a lower bound of $n/3$. We then apply our technique to several generalizations of the HWBF proposed since 2021 for homomorphically friendly constructions and LFSR-based ciphers, refining or refuting results from six prior works.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Luxembourg",
+                    "ror": "https://ror.org/036x5ad56"
+                }
+            ],
+            "fullName": "Pierrick M\u00e9aux",
+            "orcid": "0000-0001-5733-4341"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-04T13:35:19Z"
+        }
+    ],
+    "keywords": [
+        "Boolean functions",
+        "algebraic immunity",
+        "symmetric functions",
+        "HWBF"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/615.pdf",
+    "pid": "615",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "From at Least $n/3$ to at Most $3\\sqrt{n}$: Correcting the Algebraic Immunity of the Hidden Weight Bit Function",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A set of unacquainted  parties, some of which may misbehave, communicate with each other over an unauthenticated and unreliable gossip network. They wish to jointly replicate a state machine $\\Pi$ so that each one of them has fair access to its operation. Specifically, assuming parties' computational power is measured as queries to an oracle machine $H(\\cdot)$, parties can issue symbols to the state machine in proportion to their queries to $H(\\cdot)$ at a given fixed rate. Moreover, if such access to the state machine is provided continuously in expected constant time installments we qualify it as fast fairness.\r\n\r\nA state machine replication (SMR) protocol in this permissionless setting is expected to offer consistency across parties and reliably process all symbols that honest parties wish to add to it in a timely manner despite  continuously fluctuating participation and in the presence of an adversary who commands less than half of the total queries to $H(\\cdot)$ per unit of time.\r\n\r\nA number of protocols strive to offer the above guarantee together with fast settlement  \u2014 notably, the Bitcoin blockchain offers a protocol that settles against Byzantine adversaries in polylogarithmic rounds, while fairness only holds in a fail-stop adversarial model (due to the fact that Byzantine behavior can bias access to the state machine in the adversary's favor). In this work, we put forth the first Byzantine-resilient protocol solving SMR in this setting with both expected-constant-time settlement and fast fairness. In addition, our protocol is self-sufficient in the sense of performing its own time keeping while tolerating an adaptively fluctuating set of parties.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Texas A&M University",
+                    "ror": "https://ror.org/01f5ytq51"
+                }
+            ],
+            "fullName": "Juan Garay"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Edinburgh",
+                    "ror": "https://ror.org/01nrxwf90"
+                },
+                {
+                    "name": "IOG"
+                }
+            ],
+            "fullName": "Aggelos Kiayias"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Edinburgh",
+                    "ror": "https://ror.org/01nrxwf90"
+                }
+            ],
+            "fullName": "Yu Shen",
+            "orcid": "0000-0002-4316-8116"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-04T15:50:40Z"
+        }
+    ],
+    "keywords": [
+        "state machine replication",
+        "clock synchronization",
+        "blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/616.pdf",
+    "pid": "616",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "State Machine Replication Without Borders",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Side-channel attacks consist of retrieving internal data from a victim system by analyzing its leakage, which usually requires proximity to the victim in the range of a few millimetres.\r\nScreaming channels are EM side channels transmitted at a distance of a few meters. \r\nThey appear on mixed-signal devices integrating an RF module on the same silicon die as the digital part.\r\nConsequently, the side channels are modulated by legitimate RF signal carriers and appear at the harmonics of the digital clock frequency.\r\nWhile initial works have only considered collecting leakage at these harmonics, late work has demonstrated that the leakage is also present at frequencies other than these harmonics.\r\nThis result significantly increases the number of available frequencies to perform a screaming-channel attack, which can be convenient in an environment where multiple harmonics are polluted.\r\nThis work studies how this diversity of frequencies carrying leakage can be used to improve attack performance.\r\nWe first study how to combine multiple frequencies.\r\nSecond, we demonstrate that frequency combination can improve attack performance and evaluate this improvement according to the performance of the combined frequencies.\r\nFinally, we demonstrate the interest of frequency combination in attacks at $15$ and, for the first time to the best of our knowledge, at $30$ meters. \r\nOne last important observation is that this frequency combination divides by $2$ the number of traces needed to reach a given attack performance.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 Bretagne Sud",
+                    "ror": "https://ror.org/04ed7fw48"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Lab-STICC",
+                    "ror": "https://ror.org/0266kfd37"
+                }
+            ],
+            "fullName": "Jeremy Guillaume",
+            "orcid": "0009-0005-3398-3423"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institut National des Sciences Appliqu\u00e9es de Rouen",
+                    "ror": "https://ror.org/020ws7586"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "IETR",
+                    "ror": "https://ror.org/013q33h79"
+                }
+            ],
+            "fullName": "Maxime Pelcat",
+            "orcid": "0000-0002-1158-0915"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CentraleSup\u00e9lec",
+                    "ror": "https://ror.org/019tcpt25"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "IETR",
+                    "ror": "https://ror.org/013q33h79"
+                }
+            ],
+            "fullName": "Amor Nafkha",
+            "orcid": "0000-0002-1164-7163"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CentraleSup\u00e9lec",
+                    "ror": "https://ror.org/019tcpt25"
+                },
+                {
+                    "name": "Inria Rennes - Bretagne Atlantique Research Centre",
+                    "ror": "https://ror.org/04040yw90"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Institut de Recherche en Informatique et Syst\u00e8mes Al\u00e9atoires",
+                    "ror": "https://ror.org/00myn0z94"
+                }
+            ],
+            "fullName": "Ruben Salvador",
+            "orcid": "0000-0002-0021-5808"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-04T15:53:09Z"
+        }
+    ],
+    "keywords": [
+        "side-channel attacks",
+        "EM side channels",
+        "screaming channel attacks",
+        "multi-channel attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Submitted to IEEE Transactions on Information Forensics and Security (IEEE TIFS)",
+    "pdffile": "2025/617.pdf",
+    "pid": "617",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multi-Screaming-Channel Attacks: Frequency Diversity for Enhanced Attacks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Modern life makes having a digital identity no longer optional, whether one needs to manage a bank account or subscribe to a newspaper. As the number of online services increases, it is fundamental to safeguard user privacy and equip service providers (SP) with mechanisms enforcing Sybil resistance, i.e., preventing a single entity from showing as many. \r\n  Current approaches, such as anonymous credentials and self-sovereign identities, typically rely on identity providers or identity registries trusted not to track users' activities. However, this assumption of trust is no longer appropriate in a world where user data is considered a valuable asset. \r\n  To address this challenge, we introduce a new cryptographic notion, Anonymous Self-Credentials (ASC) along with two implementations. This approach enables users to maintain their privacy within an anonymity set while allowing SPs to obtain Sybil resistance. Then, we present a User-issued Unlinkable Single Sign-On (U2SSO) implemented from ASC that solely relies on an identity registry to immutably store identities. A U2SSO solution allows users to generate unlinkable child credentials for each SP using only one set of master credentials.\r\n  We demonstrate the practicality and efficiency of our U2SSO solution by providing a complete proof-of-concept.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Bern",
+                    "ror": "https://ror.org/02k7v4d05"
+                }
+            ],
+            "fullName": "Jayamine Alupotha"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Bern"
+                }
+            ],
+            "fullName": "Mariarosaria Barbaraci"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University"
+                }
+            ],
+            "fullName": "Ioannis Kaklamanis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universitat Pompeu Fabra"
+                }
+            ],
+            "fullName": "Abhimanyu Rawat"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Bern",
+                    "ror": "https://ror.org/02k7v4d05"
+                }
+            ],
+            "fullName": "Christian Cachin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Fan Zhang"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-04T16:44:58Z"
+        }
+    ],
+    "keywords": [
+        "anonymity",
+        "unlinkability",
+        "Single Sign-On",
+        "digital identities",
+        "user-centric privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/618.pdf",
+    "pid": "618",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Anonymous Self-Credentials and their Application to Single-Sign-On",
+    "year": 2025,
+    "repo": [
+        "https://github.com/BoquilaID/U2SSO",
+        "https://github.com/bitcoin-core/secp256k1",
+        "https://ec.europa.eu/digital-building-blocks/sites/display/EBSI/What+is+ebsi",
+        "https://ec.europa.eu/digital-building-blocks/sites/display/EBSI/What+is+ebsi",
+        "https://github.com/semaphore-protocol/semaphore",
+        "https://github.com/semaphore-protocol/semaphore"
+    ]
+}
+,
+{
+    "abstract": "eIDAS 2.0 (electronic IDentification, Authentication and trust Services) is a very ambitious regulation aimed at equipping European citizens with a personal digital identity wallet (EU Digital Identity Wallet) on a mobile phone that not only needs to achieve a high level of security, but also needs to be available as soon as possible for a large number of citizens and respect their privacy (as per GDPR - General Data Protection Regulation).  \r\n\r\nIn this paper, we introduce the foundations of a digital identity wallet solution that could help move closer to this objective by leveraging the proven anonymous credentials system BBS (Eurocrypt 2023), also known as BBS+, but modifying it to avoid the limitations that have hindered its widespread adoption, especially in certified infrastructures requiring trusted hardware implementation.  \r\nIn particular, the solution we propose, which we call BBS#, does not rely, contrary to BBS/BBS +, on bilinear maps and pairing-friendly curves (which are not supported by existing hardware) and only depends on the hardware implementation of well-known digital signature schemes such as ECDSA (ISO/IEC 14888-3) or ECSDSA (also known as ECSchnorr, ISO/IEC 14888-3) using classical elliptic curves. More precisely, BBS# can be rolled out without requiring any change in existing hardware or the algorithms that hardware supports. \r\nBBS# , which is proven secure in the random oracle model, retains the well-known security property (unforgeability of the credentials under the (gap) q-SDH assumption) and anonymity properties (multi-show full unlinkability and statistical anonymity of presentation proofs) of BBS/BBS+. \r\n\r\nBy implementing BBS# on several smartphones using different secure execution environments, we show that it is possible to achieve eIDAS 2.0 transactions which are not only efficient (around 70 ms on Android StrongBox), secure and certifiable at the highest level but also provide strong (optimal) privacy protection for all European ID Wallet users.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Orange (France)",
+                    "ror": "https://ror.org/035j0tq82"
+                }
+            ],
+            "fullName": "Nicolas Desmoulins"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Orange (France)",
+                    "ror": "https://ror.org/035j0tq82"
+                }
+            ],
+            "fullName": "Antoine Dumanois"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Orange (France)",
+                    "ror": "https://ror.org/035j0tq82"
+                },
+                {
+                    "name": "Institut Polytechnique de Paris",
+                    "ror": "https://ror.org/042tfbd02"
+                }
+            ],
+            "fullName": "Seyni Kane"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Orange (France)",
+                    "ror": "https://ror.org/035j0tq82"
+                }
+            ],
+            "fullName": "Jacques Traor\u00e9"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-04T17:44:46Z"
+        }
+    ],
+    "keywords": [
+        "Anonymous Credentials",
+        "BBS Signatures",
+        "eIDAS 2.0",
+        "EU Digital Identity Wallet"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This paper provides a detailed description of the BBS# protocol, a recent candidate for the EU Digital Identity Wallet, that has been first presented at the NIST Workshop on Privacy-Enhancing Cryptography 2024 (WPEC 2024).\r\nThe authors of ePrint 2025/513 recently generalized, formalized and analyzed a specific mode of BBS# protocol, that they called 'Server-Aided Anonymous Credentials' (SAAC for short).",
+    "pdffile": "2025/619.pdf",
+    "pid": "619",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Making BBS Anonymous Credentials eIDAS 2.0 Compliant",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "(Preprint) Zero-Knowledge Proofs (ZKPs) are rapidly gaining importance in privacy-preserving and verifiable computing. ZKPs enable a proving party to prove the truth of a statement to a verifying party without revealing anything else. ZKPs have applications in blockchain technologies, verifiable machine learning, and electronic voting, but have yet to see widespread adoption due to the computational complexity of the proving process.Recent works have accelerated the key primitives of state-of-the-art ZKP protocols on GPU and ASIC. However, the protocols accelerated thus far face one of two challenges: they either require a trusted setup for each application, or they generate larger proof sizes with higher verification costs, limiting their applicability in scenarios with numerous verifiers or strict verification time constraints. This work presents an accelerator, zkSpeed, for HyperPlonk, a state-of-the-art ZKP protocol that supports both one-time, universal setup and small proof sizes for typical ZKP applications in publicly verifiable, consensus-based systems. We accelerate the entire protocol, including two major primitives: SumCheck and Multi-scalar Multiplications (MSMs). We develop a full-chip architecture using 366.46 mm$^2$ and 2 TB/s of bandwidth to accelerate the entire proof generation process, achieving geometric mean speedups of 801$\\times$ over CPU baselines.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Alhad Daftardar",
+            "orcid": "0000-0001-8523-6490"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Jianqiao Mo",
+            "orcid": "0000-0001-9533-8183"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Joey Ah-kiow",
+            "orcid": "0000-0003-1009-5499"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Benedikt B\u00fcnz",
+            "orcid": "0000-0003-2082-4480"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Ramesh Karri",
+            "orcid": "0000-0001-7989-5617"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Siddharth Garg"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Brandon Reagen",
+            "orcid": "0000-0002-1932-2750"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-04T23:56:21Z"
+        }
+    ],
+    "keywords": [
+        "HyperPlonk",
+        "Hardware Accelerators",
+        "ASIC",
+        "Privacy",
+        "Zero-Knowledge Proofs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Preprint - Accepted to ISCA 2025",
+    "pdffile": "2025/620.pdf",
+    "pid": "620",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Need for zkSpeed: Accelerating HyperPlonk for Zero-Knowledge Proofs",
+    "year": 2025,
+    "repo": [
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/poly_iop/sum_check/mod.rs#L154",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/poly_iop/sum_check/prover.rs#L123",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/pcs/multilinear_kzg/mod.rs#L254",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/poly_iop/prod_check/mod.rs#L198",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/hyperplonk/src/snark.rs#L186",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/hyperplonk/src/snark.rs#L279",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/poly_iop/zero_check/mod.rs#L69",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/poly_iop/prod_check/util.rs#L22",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/poly_iop/prod_check/util.rs#L122",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/pcs/multilinear_kzg/batching.rs#L95",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/pcs/multilinear_kzg/batching.rs#L128",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/poly_iop/perm_check/util.rs#L30",
+        "https://github.com/EspressoSystems/hyperplonk/blob/dc194f83ef5cae523b869f7256f314bdbeb2a42c/subroutines/src/poly_iop/prod_check/util.rs#L65",
+        "https://github.com/EspressoSystems/hyperplonk/blob/main/subroutines/src/poly_iop/sum_check/prover.rs#L91",
+        "https://github.com/scipr-lab/libsnark",
+        "https://github.com/scipr-lab/libsnark"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3728469",
+    "abstract": "This work presents SPHINCSLET, the first fully standard-compliant and area-efficient hardware implementation of the SLH-DSA algorithm, formerly known as SPHINCS+, a post-quantum digital signature scheme. SPHINCSLET is designed to be parameterizable across different security levels and hash functions, offering a balanced trade-off between area efficiency and performance. Existing hardware implementations either feature a large area footprint to achieve fast signing and verification or adopt a coprocessor-based approach that significantly slows down these operations. SPHINCSLET addresses this gap by delivering a 4.7$\\times$ reduction in area compared to high-speed designs while achieving a 2.5$\\times$ to 5$\\times$ improvement in signing time over the most efficient coprocessor-based designs for a SHAKE256-based SPHINCS+ implementation. The SHAKE256-based SPHINCS+ FPGA implementation targeting the AMD Artix-7 requires fewer than 10.8K LUTs for any security level of SLH-DSA. Furthermore, the SHA-2-based SPHINCS+ implementation achieves a 2$\\times$ to 4$\\times$ speedup in signature generation across various security levels compared to existing SLH-DSA hardware, all while maintaining a compact area footprint of 6K to 15K LUTs. This makes it the fastest SHA-2-based SLH-DSA implementation to date. With an optimized balance of area and performance, SPHINCSLET can assist resource-constrained devices in transitioning to post-quantum cryptography.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Sanjay Deshpande",
+            "orcid": "0009-0005-0938-9547"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Yongseok Lee",
+            "orcid": "0000-0002-9717-620X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                },
+                {
+                    "name": "Hasso Plattner Institute, University of Potsdam"
+                }
+            ],
+            "fullName": "Cansu Karakuzu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northwestern University",
+                    "ror": "https://ror.org/000e0be47"
+                },
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Jakub Szefer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Yunheung Paek"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-05T03:56:41Z"
+        }
+    ],
+    "keywords": [
+        "SLH-DSA",
+        "PQC",
+        "SPHINCS+",
+        "Hardware Implementation",
+        "Digital Signature Scheme"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/621.pdf",
+    "pid": "621",
+    "pubtype": {
+        "note": "ACM Transactions on Embedded Computing Systems",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SPHINCSLET: An Area-Efficient Accelerator for the Full SPHINCS+ Digital Signature Algorithm",
+    "year": 2025,
+    "repo": [
+        "https://github.com/caslab-code/pqc-hw-sphincslet",
+        "https://github.com/caslab-code/pqc-hw-sphincslet",
+        "https://github.com/secworks/sha512",
+        "https://github.com/secworks/sha256"
+    ]
+}
+,
+{
+    "abstract": "Byzantine  Reliable  Broadcast  is  one of the most popular communication  primitives in distributed systems.  Byzantine reliable broadcast ensures that  processes agree to deliver  a  message  from  an initiator, even if some processes (possibly including the initiator) are Byzantine. In asynchronous settings, it is known since the prominent work of Bracha \\cite{Bracha87} that Byzantine  reliable  broadcast can be implemented deterministically if the total number of processes, denoted by $n$, satisfies $n \\geq 3t+1$ where $t$ is an upper bound on the number of Byzantine processes. Here, we study Byzantine Reliable Broadcast when processes are equipped with \\emph{trusted components}, special software or hardware designed to prevent equivocation. Our contribution is threefold. First, we show that, despite common belief, when each process is equipped with a trusted component, Bracha's algorithm still needs $n \\geq 3t+1$. Second, we present a novel algorithm that uses a single trusted component (at the initiator) that implements Byzantine Reliable  Asynchronous Broadcast with $n \\geq 2t+1$. \r\n\\yag{Lastly, building on our broadcast algorithm, we present TenderTee, a transformation of the Tendermint consensus algorithm by using trusted component, giving better Byzantine resilience. Tendertee works with $n \\geq 2t+1$, where Tendermint needed $n=3t+1$.}",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 Paris-Panth\u00e9on-Assas, CRED"
+                }
+            ],
+            "fullName": "Yackolley Amoussou-Guenou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University, CNRS, LIP6"
+                }
+            ],
+            "fullName": "Lionel Beltrando"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University Computer Science Dept"
+                }
+            ],
+            "fullName": "Maurice Herlihy"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University, CNRS, LIP6"
+                }
+            ],
+            "fullName": "Maria Potop-Butucaru"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-05T06:29:07Z"
+        }
+    ],
+    "keywords": [
+        "reliable broadcast",
+        "consensus",
+        "Tendermint",
+        "trusted counters"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/622.pdf",
+    "pid": "622",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Byzantine Reliable Broadcast and  Tendermint Consensus with trusted components",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Set reconciliation is a fundamental task in distributed systems, particularly in blockchain networks, where it enables the synchronization of transaction pools among peers and facilitates block dissemination. Existing traditional set reconciliation schemes are either statistical, providing success probability as a function of the communication overhead and the size of the symmetric difference, or require parametrization and estimation of the size of the symmetric difference, which can be prone to error. In this paper, we present CertainSync, a novel reconciliation framework that, to the best of our knowledge, is the first to guarantee successful set reconciliation without any parametrization or estimators in use. The framework is rateless and adapts to the unknown symmetric difference size. The set reconciliation is guaranteed to be completed successfully whenever the communication overhead reaches a lower bound derived from the symmetric difference size and the universe size. Our framework is based on recent constructions of Invertible Bloom Lookup Tables (IBLTs) ensuring successful element listing as long as the number of elements is bounded. We provide a theoretical analysis to prove the certainty in the set reconciliation for multiple constructions. The approach is also validated by simulations, showing the ability to synchronize sets with efficient communication costs while maintaining reconciliation guarantees compared to other baseline schemes for set reconciliation. To further improve communication overhead for large universes as blockchain networks, CertainSync is extended with a universe reduction technique to minimize communication overhead. We compare and validate the extended framework UniverseReduceSync against the basic CertainSync framework through simulations using real blockchain transaction hash data from the Ethereum blockchain network. The results illustrate a trade-off between improved communication costs and maintaining reconciliation guarantees without relying on parametrization or estimators, offering a comprehensive solution for set reconciliation in diverse scenarios.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technion - Israel Institute of Technology"
+                }
+            ],
+            "fullName": "Tomer Keniagin",
+            "orcid": "0009-0004-2711-104X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion - Israel Institute of Technology"
+                }
+            ],
+            "fullName": "Eitan Yaakobi",
+            "orcid": "0000-0002-9851-5234"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion - Israel Institute of Technology"
+                }
+            ],
+            "fullName": "Ori Rottenstreich",
+            "orcid": "0000-0002-4064-1238"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-06T20:17:58Z"
+        }
+    ],
+    "keywords": [
+        "Set reconciliation",
+        "CertainSync",
+        "Invertible Bloom Lookup Tables (IBLTs)",
+        "Blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/623.pdf",
+    "pid": "623",
+    "pubtype": {
+        "note": "ACM Sigmetrics",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "CertainSync: Rateless Set Reconciliation with Certainty",
+    "year": 2025,
+    "repo": [
+        "https://github.com/toto9820/Rateless-Set-Reconciliation-with-Listing-Guarantees"
+    ]
+}
+,
+{
+    "abstract": "Weyman and Zelevinsky generalised Vandermonde matrices to higher dimensions, which we call Vandermonde-Weyman-Zelevinsky tensors. \r\nWe generalise Lagrange interpolation to higher dimensions by devising a nearly linear time algorithm that given a Vandermonde-Weyman-Zelevinsky tensor and a sparse target vector, finds a tuple of vectors that hit the target under tensor evaluation. Tensor evaluation to us means evaluating the usual multilinear form associated with the tensor in all but one chosen dimension. Yet, this interpolation problem phrased with respect to a random tensor appears to be a hard multilinear system. Leveraging this dichotomy, we propose preimage sampleable trapdoor one-way functions in the spirit of Gentry-Peikert-Vaikuntanathan (GPV) lattice trapdoors. We design and analyse ``Hash-and-Sign'' digital signatures from such trapdoor one-way functions, yielding short signatures whose lengths scale nearly linearly in the security parameter. We also describe an encryption scheme.\r\n\r\nOur trapdoor is a random Vandermonde-Weyman-Zelevinsky tensor over a finite field and a random basis change. We hide the Vandermonde-Weyman-Zelevinsky tensor under the basis change and publish the resulting pseudorandom tensor. The one way function is the tensor evaluation derived from the public tensor, restricted so as to only map to sparse vectors.  We then design the domain sampler and preimage sampler demanded by the GPV framework. The former samples inputs that map to uniform images under the one-way function. The latter samples preimages given supplementary knowledge of the trapdoor. Preimage sampling is a randomised version of interpolation and knowing the basis change allows efficient translation between interpolation corresponding to the public and trapdoor tensors. An adversary seeking a preimage must solve a pseudorandom multilinear system, which seems cryptographically hard.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "SandboxAQ"
+                }
+            ],
+            "fullName": "Anand Kumar Narayanan",
+            "orcid": "0000-0002-0106-030X"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T03:02:06Z"
+        }
+    ],
+    "keywords": [
+        "trapdoor",
+        "post-quantum cryptography",
+        "tensors",
+        "finite fields"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/624.pdf",
+    "pid": "624",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Trapdoor one-way functions from tensors",
+    "year": 2025,
+    "repo": [
+        "https://pqcalteq.github.io/ALTEQ_spec_2023.09.18.pdf"
+    ]
+}
+,
+{
+    "DOI": "10.1109/TIFS.2025.3558580",
+    "abstract": "We propose an encrypted controller framework for linear time-invariant systems with actuator non-linearity based on fully homomorphic encryption (FHE). While some existing works explore the use of partially homomorphic encryption (PHE) in implementing linear control systems, the impacts of the non-linear behaviors of the actuators on the systems are often left unconcerned. In particular, when the inputs to the controller become too small or too large, actuators may burn out due to unstable system state oscillations. To solve this dilemma, we design and implement FHECAP, an FHE-based controller framework that can homomorphically apply non-linear functions to the actuators to rectify the system inputs. In FHECAP, we first design a novel data encoding scheme tailored for efficient gain matrix evaluation. Then, we propose a high-precision homomorphic algorithm to apply non-arithmetic piecewise function to realize the actuator normalization. In the experiments, compared with the existing state-of-the-art encrypted controllers, FHECAP achieves $4\\times$--$1000\\times$ reduction in computational latency. We evaluate the effectiveness of FHECAP in the real-world application of encrypted control for spacecraft rendezvous. The simulation results show that the FHECAP achieves real-time spacecraft rendezvous with negligible accuracy loss.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Song Bian"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Yunhao Fu",
+            "orcid": "0009-0006-3279-8039"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Dong Zhao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Haowen Pan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Yuexiang Jin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/03awzbc87"
+                }
+            ],
+            "fullName": "Jiayue Sun"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Hui Qiao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Zhenyu Guan"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T05:56:53Z"
+        }
+    ],
+    "keywords": [
+        "Fully Homomorphic Encryption",
+        "Encrypted Control",
+        "Noise Analysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/625.pdf",
+    "pid": "625",
+    "pubtype": {
+        "note": "IEEE TIFS",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "FHECAP: An Encrypted Control System with Piecewise Continuous Actuation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Quantum computing is regarded as one of the most significant upcoming advancements in computer science. \r\nAlthough fully operational quantum computers have yet to be realized, they are expected to solve specific problems that are difficult to solve using classical computers. \r\nGiven the limitations of quantum computing resources, it is crucial to design compact quantum circuits for core operations, such as quantum arithmetic.\r\n\r\nIn this paper, we focus on optimizing the circuit depth of quantum multi-operand addition, which is a fundamental component in quantum implementations (as an example, SHA-2). \r\nBuilding on the foundational quantum carry-save approach by Phil Gossett, we introduce a tree-based quantum carry-save adder. \r\nOur design integrates the Wallace and Dadda trees to optimize carry handling during multi-operand additions. \r\nTo further reduce circuit depth, we utilize additional ancilla qubits for parallel operations and introduce an efficient technique for reusing these ancilla qubits.\r\n\r\nOur tree-based carry-save adder achieves the lowest circuit depth ($T$-depth) and provides an improvement of over 82% (up to 99%) in the qubit count\u2013circuit depth product for multi-operand addition. \r\nFurthermore, we apply our method to multiplication, achieving the lowest circuit depth and an improvement of up to 87% in the qubit count\u2013circuit depth product.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Hyunjun Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Sejin Lim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Kyungbae Jang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Siyi Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Anubhab Baksi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Anupam Chattopadhyay"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Hwajeong Seo"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T06:24:40Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Computing",
+        "Quantum Carry-Save Adder",
+        "Wallace Tree",
+        "Dadda Tree"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/626.pdf",
+    "pid": "626",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tree-based Quantum Carry-Save Adder",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Group signatures allow a user to sign anonymously on behalf of a group of users while allowing a tracing authority to trace the signer's identity in case of misuse. In Chaum and van Heyst's original model (EUROCRYPT'91), the group needs to stay fixed. Throughout various attempts, including partially dynamic group signatures and revocations, Bootle et al. (ACNS'16, J. Cryptol.) formalized the notion of fully dynamic group signatures (FDGS), enabling both enrolling and revoking users of the group. However, in their scheme, the verification process needs to take into account the latest system information, and a previously generated signature will be invalidated as soon as, for example, there is a change in the group. We therefore raise a research question: Is it possible to construct an FDGS under which the validity of a signature can survive future changes in the system information?\r\n\r\nIn this paper, we propose Everlasting Fully Dynamic Group Signatures (EFDGS) that allow signers to generate signatures that do not require verification with any specific epoch. Specifically, once the signatures are created, they are valid forever. It also guarantees that the signer can only output such a signature when she is a valid user of the system. We realize the above new model by constructing a plausibly post-quantum standard-lattice-based EFDGS.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Yimeng He",
+            "orcid": "0000-0002-1077-6262"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "San Ling",
+            "orcid": "0000-0002-1978-3557"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Khai Hanh Tang",
+            "orcid": "0009-0009-6790-4577"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Huaxiong Wang",
+            "orcid": "0000-0002-7669-8922"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T08:41:52Z"
+        }
+    ],
+    "keywords": [
+        "Group signatures",
+        "full dynamicity",
+        "privacy-preserving"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is the full version of an accepted manuscript at ACNS 2025. We will update the publication information when the paper is formally published in the proceedings.",
+    "pdffile": "2025/627.pdf",
+    "pid": "627",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Everlasting Fully Dynamic Group Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "FALCON is a post-quantum signature selected by the National Institute of Standards and Technology (NIST). Although its side-channel resilience has been studied and a masking countermeasure proposed, the division is a major performance bottleneck. This work proposes a different approach to the masked FALCON division. We use the Newton method and a convergent sequence to approximate this operation. The performance of the masked division is improved by a factor 6.7 for two shares and 6.98 for three shares. For the Gaussian sampler, the improvements are of a factor 1.45 for two shares and 1.43 for three shares. Formal security proofs using the MIMO-SNI criteria are also provided.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire Traitement et Communication de l\u2019Information",
+                    "ror": "https://ror.org/057er4c39"
+                },
+                {
+                    "name": "Hensoldt France SAS"
+                }
+            ],
+            "fullName": "Pierre-Augustin Berthet",
+            "orcid": "0009-0005-5065-2730"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire Hubert Curien",
+                    "ror": "https://ror.org/0028p8r67"
+                },
+                {
+                    "name": "Hensoldt France SAS"
+                }
+            ],
+            "fullName": "Justine Paillet",
+            "orcid": "0009-0009-6056-7766"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hensoldt France SAS"
+                }
+            ],
+            "fullName": "C\u00e9dric Tavernier",
+            "orcid": "0009-0007-5224-492X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire Hubert Curien",
+                    "ror": "https://ror.org/0028p8r67"
+                }
+            ],
+            "fullName": "Lilian Bossuet",
+            "orcid": "0000-0001-7964-3137"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire Hubert Curien",
+                    "ror": "https://ror.org/0028p8r67"
+                }
+            ],
+            "fullName": "Brice Colombier",
+            "orcid": "0000-0002-6028-3028"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T09:51:27Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography",
+        "FALCON",
+        "Side-Channel Analysis",
+        "Masking",
+        "MIMO-SNI"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/628.pdf",
+    "pid": "628",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improving the Masked Division for the FALCON Signature",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce audience injection attacks, a novel class of vulnerabilities that impact widely used Web-based authentication and authorization protocols, including OAuth 2.0, OpenID Connect, FAPI, CIBA, the Device Authorization Grant, and various well-established extensions, such as Pushed Authorization Requests, Token Revocation, Token Introspection, and their numerous combinations.\r\nThese protocols underpin services for billions of users across diverse ecosystems worldwide, spanning low-risk applications like social logins to high-risk domains such as open banking, insurance, and healthcare.\r\n\r\nAudience injection attacks exploit a critical weakness in a core security mechanism of these protocols - the handling of so-called audiences in signature-based client authentication mechanisms. This vulnerability allows attackers to compromise fundamental security objectives whenever these mechanisms are utilized across two or more server endpoints. They enable the attacker to impersonate users and gain unauthorized access to their resources, even in high-security protocol families specifically designed for sensitive applications.\r\n\r\nWe responsibly disclosed these vulnerabilities to the relevant standardization bodies, which recognized their severity.\r\nIn collaboration with these organizations, we developed fixes and supported a coordinated response, leading to an ongoing effort to update a dozen of standards, numerous major implementations, and far-reaching ecosystems.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Stuttgart, Germany",
+                    "ror": "https://ror.org/04vnq7t77"
+                }
+            ],
+            "fullName": "Pedram Hosseyni",
+            "orcid": "0000-0001-5618-5663"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Stuttgart, Germany",
+                    "ror": "https://ror.org/04vnq7t77"
+                }
+            ],
+            "fullName": "Ralf Kuesters",
+            "orcid": "0000-0002-9071-9312"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Stuttgart, Germany",
+                    "ror": "https://ror.org/04vnq7t77"
+                }
+            ],
+            "fullName": "Tim W\u00fcrtele",
+            "orcid": "0000-0002-4729-0629"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T13:21:52Z"
+        }
+    ],
+    "keywords": [
+        "authorization protocols",
+        "authentication protocols",
+        "formal security analysis",
+        "web security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/629.pdf",
+    "pid": "629",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Audience Injection Attacks: A New Class of Attacks on Web-Based Authorization and Authentication Standards",
+    "year": 2025,
+    "repo": [
+        "https://italia.github.io/eudi-wallet-it-docs/v0.9.3/en/trust.html",
+        "https://italia.github.io/eudi-wallet-it-docs/v0.9.3/en/trust.html",
+        "https://digital.nhs.uk/developer/api-catalogue/electronic-prescription-service-fhir",
+        "https://digital.nhs.uk/developer/api-catalogue/electronic-prescription-service-fhir",
+        "https://github.com/danielfett/annexlang"
+    ]
+}
+,
+{
+    "abstract": "The online realm has witnessed a surge in the buying and selling of data, prompting the emergence of dedicated data marketplaces. These platforms cater to servers (sellers), enabling them to set prices for access to their data, and clients (buyers), who can subsequently purchase these data, thereby streamlining and facilitating such transactions. However, the current data market is primarily confronted with the following issues. Firstly, they fail to protect client privacy, presupposing that clients submit their queries in plaintext. Secondly, these models are susceptible to being impacted by malicious client behavior, for example, enabling clients to potentially engage in arbitrage activities.\r\n\r\nTo address the aforementioned issues, we propose payable secure computation, a novel secure computation paradigm specifically designed for data pricing scenarios. It grants the server the ability to securely procure essential pricing information while protecting the privacy of client queries. Additionally, it fortifies the server's privacy against potential malicious client activities. As specific applications, we have devised customized payable protocols for two distinct secure computation scenarios: Keyword Private Information Retrieval (KPIR) and Private Set Intersection (PSI). \r\n\r\nWe implement our two payable protocols and compare them with the state-of-the-art related protocols that do not support pricing as a baseline. Since our payable protocols are more powerful in the data pricing setting, the experiment results show that they do not introduce much overhead over the baseline protocols. \r\nOur payable KPIR achieves the same online cost as baseline, while the setup is about $1.3-1.6\\times$ slower than it. Our payable PSI needs about $2\\times$ more communication cost than that of baseline protocol, while the runtime is $1.5-3.2\\times$ slower than it depending on the network setting.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Cong Zhang",
+            "orcid": "0009-0000-5403-2866"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Liqiang Peng",
+            "orcid": "0009-0008-4717-1604"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Weiran Liu",
+            "orcid": "0000-0002-1466-7418"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhongguancun Laboratory"
+                }
+            ],
+            "fullName": "Shuaishuai Li",
+            "orcid": "0000-0002-3982-4264"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Singapore Management University"
+                }
+            ],
+            "fullName": "Meng Hao",
+            "orcid": "0000-0002-1545-1926"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Lei Zhang",
+            "orcid": "0009-0000-8102-6568"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences"
+                }
+            ],
+            "fullName": "Dongdai Lin",
+            "orcid": "0000-0002-3951-7889"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T13:45:34Z"
+        }
+    ],
+    "keywords": [
+        "Payable Secure Computation",
+        "Keyword PIR",
+        "PSI"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is the full version of a paper published in TIFS 2025, where we have added a payable PSI construction based on [CGT12].",
+    "pdffile": "2025/630.pdf",
+    "pid": "630",
+    "pubtype": {
+        "note": "Transactions on Information Forensics & Security (TIFS)",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Charge Your Clients: Payable Secure Computation and Its Applications",
+    "year": 2025,
+    "repo": [
+        "https://https://github.com/alibaba-edu/mpc4j"
+    ]
+}
+,
+{
+    "abstract": "The works of Garg et al. [S&P'24] (aka hinTS) and Das et al. [CCS'23] introduced the notion of silent threshold signatures (STS) - where a set of signers silently perform local computation to generate a public verification key. To sign a message, any set of $t$ signers sign the message non-interactively and these are aggregated into a constant-sized signature. This paradigm avoids performing expensive Distributed Key Generation procedure for each set of signers while keeping the public verification key constant-sized. \r\n\r\nIn this work, we propose the notion of committee-based silent threshold signature (c-STS) scheme. In a c-STS scheme, a set of signers initially perform a one-time setup to generate the verification key, and then a subset of signers are randomly chosen for an epoch to perform the threshold signing while the other signers are not authorized to sign during that epoch. This captures existing systems like Ethereum Altair and Dfinity where only a specific committee is authorized to sign in a designated epoch. The existing STS schemes cannot be extended to the committee setting because the signature verification only attests to the number of signing parties, not which committee they belong to.\r\n\r\nSo, we upgrade hinTS to the committee setting by proposing Dyna-hinTS. It is the $first$ c-STS scheme and it requires a one-time silent setup and generates a one-time public verification key that does not vary with the committee. Assuming a set of 1024 signers (with corrupt 682 signers), hinTS generates an aggregated signature in 1.7s whereas Dyna-hinTS generates it in $0.35$s within a committee of $80$ signers. This yields a $4.9\\times$ improvement over hinTS for signature generation at the cost of increasing signature verification time by $4\\%$ over hinTS. Dyna-hinTS supports general access structure, weighted signatures and improves existing multiverse threshold signatures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                },
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Aniket Kate"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Pratyay Mukherjee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Bombay",
+                    "ror": "https://ror.org/02qyf5152"
+                }
+            ],
+            "fullName": "Samipa Samanta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Pratik Sarkar",
+            "orcid": "0000-0001-6370-0977"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T15:27:03Z"
+        }
+    ],
+    "keywords": [
+        "Threshold Signatures",
+        "Silent Setup",
+        "Weighted Threshold Signature",
+        "General Policy",
+        "Multiverse Threshold Signature"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/631.pdf",
+    "pid": "631",
+    "pubtype": {
+        "note": "Crypto Valley Conference 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Dyna-hinTS: Silent Threshold Signatures for Dynamic Committees",
+    "year": 2025,
+    "repo": [
+        "https://www.coinbase.com/blog/digital-asset-management-with-mpc-whitepaper",
+        "https://www.coinbase.com/blog/digital-asset-management-with-mpc-whitepaper",
+        "https://github.com/ethereum/annotated-spec/blob/master/altair/sync-protocol.md",
+        "https://github.com/ethereum/annotated-spec/blob/master/altair/sync-protocol.md",
+        "https://github.com/Chia-Network/bls-signatures",
+        "https://github.com/dfinity/go-dfinity-crypto",
+        "https://github.com/dfinity/go-dfinity-crypto"
+    ]
+}
+,
+{
+    "abstract": "In the McEliece public-key encryption scheme, a private key is almost always not determined uniquely by its associated public key. This paper gives a structural characterization of equivalent private keys, generalizing a result known for the more approachable special case $\\lvert L\\rvert=q$.\r\nThese equivalences reduce the cost estimate for a simple private-key search using the support-splitting algorithm (SSA) by a polynomial but practically very substantial factor.\r\nWe provide an optimized software implementation of the SSA for this kind of key search and demonstrate its capabilities in practice by solving a key-recovery challenge with a na\u00efve a\u2011priori cost estimate of $2^{83}$ bit operations in just ${\\approx}\\,1400$ core days, testing ${\\approx}\\,9400$ private-key candidates per core and second in the process.\r\nWe stress that the speedup from those equivalences is merely polynomial and does not indicate any weakness in realistic instantiations of the McEliece cryptosystem, whose parameter choices are primarily constrained by decoding attacks rather than ludicrously more expensive key-recovery attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technische Universit\u00e4t M\u00fcnchen, Germany",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Lorenz Panny"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T16:00:21Z"
+        }
+    ],
+    "keywords": [
+        "code-based cryptography",
+        "concrete cryptanalysis",
+        "Goppa codes"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/632.pdf",
+    "pid": "632",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On breaking McEliece keys using brute force",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ElenaKirshanova/tii_decoding_challenge/blob/main/public_keyRec/pk_McEliece_83.txt",
+        "https://github.com/ElenaKirshanova/tii_decoding_challenge/blob/main/public_keyRec/",
+        "https://github.com/ElenaKirshanova/tii_decoding_challenge/blob/main/public_keyRec/"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we present an improved framework for proving query bounds in the Quantum Random Oracle Model (QROM) for algorithms with both quantum and classical query interfaces, where the classical input is partially controlled by the adversary. By extending existing techniques, we develop a method to bound the progress an adversary can make with such partial-control classical queries. While this framework is applicable to different hash function properties, we decided to demonstrate the impact of the new techniques by giving an analysis of the multi-target extended target collision resistance property (m-eTCR). This new approach allows us to achieve an improved bound that significantly reduces the required function key size. Our proof is tight in terms of query complexity and has significant implications for cryptographic applications, especially for signature schemes in the hash & sign paradigm, enabling more efficient instantiations with reduced salt sizes and smaller signature lengths. For an example of multiple signatures aggregation, we achieve a signature size of 30 kB smaller.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology, Eindhoven, Netherlands",
+                    "ror": "https://ror.org/02c2kyt77"
+                },
+                {
+                    "name": "SandboxAQ, Paolo Alto, USA",
+                    "ror": "https://ror.org/028zdr819"
+                }
+            ],
+            "fullName": "Andreas H\u00fclsing",
+            "orcid": "0000-0003-2215-4134"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology, Eindhoven, Netherlands",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Mikhail Kudinov",
+            "orcid": "0000-0002-8555-4891"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Denmark, Kongens Lyngby, Denmark",
+                    "ror": "https://ror.org/04qtj9h94"
+                }
+            ],
+            "fullName": "Christian Majenz",
+            "orcid": "0000-0002-1877-8385"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T16:10:35Z"
+        }
+    ],
+    "keywords": [
+        "QROM",
+        "Hybrid QROM",
+        "TCR",
+        "Hash & Sign."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/633.pdf",
+    "pid": "633",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Hybrid-query bounds with partial input control - framework and application to tight M-eTCR",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce a novel symmetric key cryptographic scheme involving a light ray's interaction with a 2D cartesian coordinate setup, several smaller boxes within this setup, of either reflection or refraction type and $1^{st}$, $2^{nd}$ or $3^{rd}$ degree polynomial curves inside each of these smaller boxes. We also incorporate boolean logic gates of types XOR, NOT-Shift and Permutation which get applied to the light ray after each interaction with a reflecting or refracting polynomial curve. This alternating interaction between Optical gates (polynomial curves) and Non-optical gates creates a complex and secure cryptographic system. Furthermore, we design and launch customized attacks on our cryptographic system and discuss the robustness of it against these.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Freiburg"
+                }
+            ],
+            "fullName": "Sneha Mohanty",
+            "orcid": "0000-0001-7881-4563"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Freiburg"
+                }
+            ],
+            "fullName": "Christian Schindelhauer",
+            "orcid": "0000-0002-8320-8581"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-07T17:44:36Z"
+        }
+    ],
+    "keywords": [
+        "Cryptography",
+        "Polynomial objects",
+        "Plaintext",
+        "Ciphertext",
+        "Key"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Version 2 : Addition of some extra descriptions about the Key and Ciphertext, corresponding figures in the Appendix as well as some additional points about the precision of the system (although in short), that were missing in Version 1 of the Preprint (submitted earlier and published by Easychair in 2024).",
+    "pdffile": "2025/634.pdf",
+    "pid": "634",
+    "pubtype": {
+        "note": "Easychair Preprint web server (pending)",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cryptography based on 2D Ray Tracing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The YOSO (You Only Speak Once) model, introduced by Gentry et al. (CRYPTO 2021), helps to achieve strong security guarantees in cryptographic protocols for  distributed settings, like blockchains, with large number of parties. YOSO protocols typically employ smaller anonymous committees to execute individual rounds of the protocol instead of having all parties execute the entire protocol. After completing their tasks, parties encrypt protocol messages for the next anonymous committee and erase their internal state before publishing ciphertexts, thereby enhancing security in dynamically changing environments.\r\n\r\nIn this work, we consider the problem of secure multi-party computation (MPC), a fundamental problem in cryptography and distributed computing. We assume honest majority among the committee members, and work in the online-offline, i.e., preprocessing, setting.\r\n   In this context, we present the first YOSO MPC protocol where efficiency---measured as communication complexity---improves as the number of parties increases. Specifically, for $0<\\epsilon<1/2$ and an adversary corrupting $t<n(\\frac{1}{2}-\\epsilon)$ out of $n$ parties, our MPC protocol exhibits enhanced scalability as $n$ increases, where the online phase communication becomes independent of $n$.\r\n   Prior YOSO MPC protocols considered $t$ as large as $(n-1)/2$, but a significant hurdle persisted in obtaining YOSO MPC with communication that does not scale linearly with the number of committee members, a challenge that is exagerbated when the committee size was large per YOSO's requirements.\r\n   We show that, by considering a small ``gap'' of $\\epsilon>0$, the sizes of the committees are only marginally increased, while online communication is significantly reduced.\r\n\r\n\r\nFurthermore, we explicitly consider fail-stop adversaries, i.e., honest participants who may inadvertently fail due to reasons such as denial of service or software/hardware errors. In prior YOSO work, these adversaries were grouped with fully malicious parties. Adding explicit support for them allows us to achieve even better scalability.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "J.P. Morgan",
+                    "ror": "https://ror.org/01sxmq816"
+                }
+            ],
+            "fullName": "Daniel Escudero",
+            "orcid": "0000-0003-2375-0034"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Elisaweta Masserova"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "J.P. Morgan",
+                    "ror": "https://ror.org/01sxmq816"
+                }
+            ],
+            "fullName": "Antigoni Polychroniadou"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-08T05:25:39Z"
+        }
+    ],
+    "keywords": [
+        "YOSO",
+        "MPC",
+        "Committees"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/635.pdf",
+    "pid": "635",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Towards Scalable YOSO MPC via Packed Secret-Sharing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "SAND is an AND-RX-based lightweight block cipher proposed by Chen et al. There are two variants of SAND, namely SAND-64 and SAND-128, due to structural differences. In this paper, we search for impossible differential distinguishers of SAND-64 using the Constraint Programming (CP) and reveal 56 types of impossible differential distinguishers up to 11 rounds. Furthermore, we demonstrate a key recovery attack on 17-round SAND-64. The complexities for the attack require $2^{56}$ data, $2^{127}$ encryptions, and $2^{60}$ bytes of memory, respectively. Although this result currently achieves the best attack on round-reduced SAND-64, this attack does not threaten the security of SAND-64 against impossible differential attack.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hokkaido University of Science"
+                }
+            ],
+            "fullName": "Nobuyuki Sugio",
+            "orcid": "0000-0001-7313-1755"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-08T07:02:03Z"
+        }
+    ],
+    "keywords": [
+        "Impossible differential attack",
+        "lightweight cipher",
+        "SAND",
+        "Constraint Programming"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/636.pdf",
+    "pid": "636",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Impossible Differential Attack on SAND-64",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
