@@ -1,3 +1,4 @@
+sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_week;;;none
 optimized one-dimensional sqisign verification on intel and cortex-m4;;;marius a. aardal, gora adj, arwa alblooshi, diego f. aranha, isaac a. canales-martínez, jorge chavez-saab, décio luiz gazzoni filho, krĳn reĳnders, francisco rodríguez-henríquez;;;2024/1563;;;last_week;;;https://github.com/SQISign/the-sqisign
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_month;;;none
 on some non-linear recurrences over finite fields linked to isogeny graphs;;;juan jesús  león, vicente muñoz;;;2025/608;;;last_month;;;none
@@ -76,11 +77,10 @@ radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_year;;;none
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;last_year;;;https://github.com/TheParallelSquarerootVeluTeam/Parallel-Squareroot-Velu
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_year;;;none
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_year;;;https://github.com/theQRL/Whitepaper/blob/master/QRL_whitepaper.pdf
-sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_year;;;none
 computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;last_year;;;https://gitlab.inria.fr/nsarkis/poc-scalar-multiplication-kummer-lines
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;last_year;;;none
 fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;last_year;;;none
-pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;last_year;;;https://github.com/LinKaizhan/Pairingoptimizations
+pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;other;;;https://github.com/LinKaizhan/Pairingoptimizations
 supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;other;;;none
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;other;;;none
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;other;;;none
