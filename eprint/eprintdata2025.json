@@ -47715,4 +47715,665 @@
         "https://github.com/caulk-crypto/caulk"
     ]
 }
+,
+{
+    "abstract": "In this paper, we investigate the Extended Gabidulin (EG) codes and the Interleaved EG (IEG) codes, and enhance the Rank Quasi-Cyclic (RQC) encryption scheme. Our primary contribution is the development of a general decoding algorithm for (I)EG codes, for which we precisely provide the DFR, bound the decoding capacity, and estimate the decoding complexity. As the core tool, we demonstrate that the Linear Reconstruction (LR) problem derived from the decoding (I)EG codes problem can be probabilistically solved, enabling (I)EG codes to achieve arbitrarily small DFRs, decode up to the rank Gilbert-Varshamov bound (even close to the minimal distance), and decode by the Welch-Berlekamp like algorithm. An interesting and important byproduct is that we demonstrate that decoding interleaved Gabidulin codes can be achieved deterministically by solving the LR problem. We finally apply the EG codes to improve RQC (NIST PQC & Asiacrypt 2023). For 128-bit security, our optimized RQC reduces bandwidth by 69 % and 34 % compared to the original versions, respectively. The scheme also achieves at least 50% improvement in efficiency and mitigates MM algebraic attacks (as discussed in Eurocrypt 2020, Asiacrypt 2020 & 2023)  as EG codes facilitate schemes operating over smaller finite fields. Overall, our scheme outperforms code-based schemes of NIST PQC Round 4 submissions, such as HQC, BIKE, and Classic McEliece, in terms of bandwidth. A conservative parameters set still remains competitive bandwidths.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "College of Cyber Security, Jinan University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Yongcheng Song"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computer, National University of Defense Technology, Changsha, China"
+                }
+            ],
+            "fullName": "Rongmao Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computer Science and Engineering, Sun Yat-Sen University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Fangguo Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "College of Cyber Security, Jinan University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Xinyi Huang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "College of Cyber Security, Jinan University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Jian Weng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Physical and Mathematical Sciences, Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Huaxiong Wang"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-13T13:35:25Z"
+        }
+    ],
+    "keywords": [
+        "Extended Gabidulin Codes",
+        "Post-Quantum Cryptography",
+        "Code-Based Cryptography",
+        "NIST PQC",
+        "RQC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/668.pdf",
+    "pid": "668",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "(Interleaved) Extended Gabidulin Codes and Their Applications to RQC",
+    "year": 2025,
+    "repo": [
+        "https://github.com/RQCPKE/EGCodesRQC",
+        "https://github.com/RQCPKE/EGCodesRQC",
+        "https://github.com/RQCPKE/EGCodesRQC",
+        "https://github.com/RQCPKE/EGCodesRQC",
+        "https://github.com/RQCPKE/EGCodesRQC",
+        "https://github.com/RQCPKE/EGCodesRQC",
+        "https://github.com/RQCPKE/EGCodesRQC",
+        "https://github.com/RQCPKE/EGCodesRQC"
+    ]
+}
+,
+{
+    "abstract": "Fully Homomorphic Encryption (FHE) enables computation on encrypted data without decryption, demonstrating significant potential for privacy-preserving applications.\r\nHowever, FHE faces several challenges, one of which is the significant plaintext-to-ciphertext expansion ratio, resulting in high communication overhead between client and server. The transciphering technique can effectively address this problem by first encrypting data with a space-efficient symmetric cipher, then converting symmetric ciphertext to FHE ciphertext without decryption.\r\n\r\nNumerous FHE-friendly symmetric ciphers and transciphering methods have been developed by researchers, each with unique advantages and limitations. These often require extensive knowledge of both symmetric cryptography and FHE to fully grasp, making comparison and selection among these schemes challenging. To address this, we conduct a comprehensive survey of over 20 FHE-friendly symmetric ciphers and transciphering methods, evaluating them based on criteria such as security level, efficiency, and compatibility. We have designed and executed experiments to benchmark the performance of the feasible combinations of symmetric ciphers and transciphering methods across various application scenarios. Our findings offer insights into achieving efficient transciphering tailored to different task contexts. Additionally, we make our example code available open-source, leveraging state-of-the-art FHE implementations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Chao Niu",
+            "orcid": "0000-0002-6672-7515"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Benqiang Wei",
+            "orcid": "0009-0001-0653-2070"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Zhicong Huang",
+            "orcid": "0000-0003-1338-611X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Zhaomin Yang",
+            "orcid": "0009-0002-5907-1447"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Cheng Hong",
+            "orcid": "0009-0008-0477-0359"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Meiqin Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Tao Wei",
+            "orcid": "0000-0001-9537-7051"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-14T01:34:00Z"
+        }
+    ],
+    "keywords": [
+        "Transciphering",
+        "Fully homomorphic encryption",
+        "Symmetric cipher"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/669.pdf",
+    "pid": "669",
+    "pubtype": {
+        "pubtype": "TCHES",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SoK: FHE-Friendly Symmetric Ciphers and Transciphering",
+    "year": 2025,
+    "repo": [
+        "https://github.com/AntCPLab/awesome-transciphering",
+        "https://github.com/kokke/tiny-AES-c",
+        "https://tfhe.github.io/tfhe",
+        "https://tfhe.github.io/tfhe",
+        "https://github.com/tuneinsight/lattigo",
+        "https://github.com/Microsoft/SEAL",
+        "https://rasoulam.github.io/data/poster-aes-tfhe.pdf",
+        "https://github.com/zama-ai/concrete"
+    ]
+}
+,
+{
+    "abstract": "Bilinear pairings constitute a cornerstone of public-key cryptography, where advancements in Tate pairings and their efficient variants have emerged as a critical research domain within cryptographic science. Currently, the computation of pairings can be effectively implemented through three distinct algorithmic approaches: Miller\u2019s algorithm, the elliptic net algorithm (as developed by Stange), and cubical-based algorithms (as proposed by Damien Robert). Biextensions are the geometric object underlying the arithmetic of pairings, and all three approaches can be seen as a different way to represent biextension elements. In this paper, we revisit the biextension geometric point of view for pairing computation and investigate in more detail the cubical representation for pairing-based cryptography. Utilizing the twisting isomorphism, we derive explicit formulas and algorithmic frameworks for the ate pairing and optimal ate pairing computations. Additionally, we  present detailed  formulas and introduce an optimized  shared cubical ladder algorithm for super-optimal ate pairings. Through concrete computational analyses, we compare the performance of our cubical-based methods with the Miller's algorithm on various well-known families of pairing-friendly elliptic curves. Our results demonstrate that the cubical-based algorithm outperforms the Miller's algorithm by bits in certain specific situations, establishing its potential as an  alternative for  pairing computation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sun Yat-sen University",
+                    "ror": "https://ror.org/0064kty71"
+                }
+            ],
+            "fullName": "Jianming Lin",
+            "orcid": "0009-0007-9144-1432"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Univ. Bordeaux, CNRS, INRIA, Bordeaux INP, IMB, UMR 5251, INRIA CANARI team, Talence, France"
+                }
+            ],
+            "fullName": "Damien Robert",
+            "orcid": "0000-0003-4378-4274"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sun Yat-sen University",
+                    "ror": "https://ror.org/0064kty71"
+                }
+            ],
+            "fullName": "Chang-An Zhao",
+            "orcid": "0000-0002-1792-0589"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sun Yat-sen University",
+                    "ror": "https://ror.org/0064kty71"
+                }
+            ],
+            "fullName": "Yuhao Zheng",
+            "orcid": "0009-0002-1388-942X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-14T07:47:44Z"
+        }
+    ],
+    "keywords": [
+        "Pairing computation",
+        "Miller's algorithm",
+        "biextension",
+        "cubical arithmetic",
+        "super-optimal ate pairing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/670.pdf",
+    "pid": "670",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Biextensions in pairing-based cryptography",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Multisignature schemes are crucial for secure operations in digital wallets and escrow services within smart contract platforms, particularly in the emerging post-quantum era. Existing post-quantum multisignature constructions either do not address the stringent requirements of the Quantum Random Oracle Model (QROM) or fail to achieve practical efficiency due to suboptimal parameter choices. \r\n\r\nIn this paper, we present a novel Dilithium-based multisignature scheme designed to be secure in the QROM and optimized for practical use. Our scheme operates over the polynomial ring  $\\mathbb{Z}_q[X]/(x^n+1)$ with $q \\equiv 1 \\pmod{2n}$, enabling full splitting of the ring and allowing for efficient polynomial arithmetic via the Number Theoretic Transform (NTT). This structure not only ensures post-quantum security but also bridges the gap between theoretical constructs and real-world implementation needs.\r\n\r\nWe further propose a new hardness assumption, termed \r\n$\\nu$-SelfTargetMSIS, extending SelfTargetMSIS (Eurocrypt 2018) to accommodate multiple challenge targets. We prove its security in the QROM and leverage it to construct a secure and efficient multisignature scheme. Our approach avoids the limitations of previous techniques, reduces security loss in the reduction, and results in a more compact and practical scheme suitable for deployment in post-quantum cryptographic systems.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                }
+            ],
+            "fullName": "Shimin Pan",
+            "orcid": "0000-0001-6808-689X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Monash University",
+                    "ror": "https://ror.org/02bfwt286"
+                }
+            ],
+            "fullName": "Tsz Hon Yuen",
+            "orcid": "0000-0002-0629-6792"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                }
+            ],
+            "fullName": "Siu-Ming Yiu",
+            "orcid": "0000-0002-3975-8500"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-14T10:18:41Z"
+        }
+    ],
+    "keywords": [
+        "Multisignature",
+        "Dilithium",
+        "NTT",
+        "Quantum Random Oracle Model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/671.pdf",
+    "pid": "671",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Dilithium-like Multisignature in Fully Split Ring and Quantum Random Oracle Model",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We show that Montgomery ladders compute pairings as a by-product, and explain how a small adjustment to the ladder results in simple and efficient algorithms for the Weil and Tate pairing on elliptic curves using cubical arithmetic. We demonstrate the efficiency of the resulting cubical pairings in several applications from isogeny-based cryptography. Cubical pairings are simpler and more performant than pairings computed using Miller's algorithm: we get a speed-up of over 40%  for use-cases in SQIsign, and a speed-up of about 7% for use-cases in CSIDH. While these results arise from a deep connection to biextensions and cubical arithmetic, in this article we keep things as concrete (and digestible) as possible. We provide a concise and complete introduction to cubical arithmetic as an appendix.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NCC Group"
+                },
+                {
+                    "name": "University of Bristol",
+                    "ror": "https://ror.org/0524sp257"
+                }
+            ],
+            "fullName": "Giacomo Pope",
+            "orcid": "0009-0004-0394-3650"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Krijn Reijnders",
+            "orcid": "0009-0002-8015-399X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Inria Bordeaux - Sud-Ouest Research Centre",
+                    "ror": "https://ror.org/03tjcj052"
+                },
+                {
+                    "name": "Institut de Math\u00e9matiques de Bordeaux",
+                    "ror": "https://ror.org/05m3r1b84"
+                }
+            ],
+            "fullName": "Damien Robert",
+            "orcid": "0000-0003-4378-4274"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Alessandro Sferlazza",
+            "orcid": "0009-0003-7968-0570"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Inria Saclay - \u00cele-de-France Research Centre",
+                    "ror": "https://ror.org/0315e5x55"
+                },
+                {
+                    "name": "Computer Science Laboratory of the \u00c9cole Polytechnique",
+                    "ror": "https://ror.org/04afed728"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Institut Polytechnique de Paris",
+                    "ror": "https://ror.org/042tfbd02"
+                },
+                {
+                    "name": "\u00c9cole Polytechnique",
+                    "ror": "https://ror.org/05hy3tk52"
+                }
+            ],
+            "fullName": "Benjamin Smith",
+            "orcid": "0000-0002-6701-1420"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-14T16:39:00Z"
+        }
+    ],
+    "keywords": [
+        "pairings",
+        "elliptic curves",
+        "isogeny-based cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/672.pdf",
+    "pid": "672",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Simpler and Faster Pairings from the Montgomery Ladder",
+    "year": 2025,
+    "repo": [
+        "https://github.com/GiacomoPope/cubical-pairings",
+        "https://github.com/GiacomoPope/cubical-pairings",
+        "https://github.com/sferl/theta-pairings-dim2",
+        "https://github.com/sferl/theta-pairings-dim2"
+    ]
+}
+,
+{
+    "abstract": "As artificial intelligence plays an increasingly important role in decision-making within critical infrastructure, ensuring the authenticity and integrity of neural networks is crucial. This paper addresses the problem of detecting cloned neural networks. We present a method for identifying clones that employs a combination of metrics from both the information and physical domains: output predictions, probability score vectors, and power traces measured from the device running the neural network during inference. We compare the effectiveness of each metric individually, as well as in combination. Our results show that the effectiveness of both the information and the physical domain metrics is excellent for a clone that is a near replica of the target neural network. Furthermore, both the physical domain metric individually and the hybrid approach outperformed the information domain metrics at detecting clones whose weights were extracted with low accuracy. The presented method offers a practical solution for verifying neural network authenticity and integrity. It is particularly useful in scenarios where neural networks are at risk of model extraction attacks, such as in cloud-based machine learning services.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KTH Royal Institute of Technology"
+                }
+            ],
+            "fullName": "Can Aknesil"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KTH Royal Institute of Technology"
+                }
+            ],
+            "fullName": "Elena Dubrova"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ericsson AB"
+                }
+            ],
+            "fullName": "Niklas Lindskog"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ericsson AB"
+                }
+            ],
+            "fullName": "Jakob Sternby"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ericsson AB"
+                }
+            ],
+            "fullName": "H\u00e5kan Englund"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-14T16:48:07Z"
+        }
+    ],
+    "keywords": [
+        "fingerprinting",
+        "neural networks",
+        "intellectual property",
+        "model extraction",
+        "power side channels"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/673.pdf",
+    "pid": "673",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Hybrid Fingerprinting for Effective Detection of Cloned Neural Networks",
+    "year": 2025,
+    "repo": [
+        "https://github.com/canaknesil/hybrid-fingerprinting-ext",
+        "https://github.com/canaknesil/hybrid-fingerprinting-ext",
+        "https://github.com/tensorflow/tflite-micro",
+        "https://github.com/tensorflow/tflite-micro"
+    ]
+}
+,
+{
+    "abstract": "The paper analyzes the security of two recently proposed code-based cryptosystems that employ encryption of the form $y = m G_{\\text{pub}} + eE_{pub}$: the Krouk-Kabatiansky-Tavernier (KKT) cryptosystem and the Lau-Ivanov-Ariffin-Chin-Yap (LIACY) cryptosystem. We demonstrate that the KKT cryptosystem can be reduced to a variant of the McEliece scheme, where a small set of columns in the public generator matrix is replaced with random ones. This reduction implies that the KKT cryptosystem is vulnerable to existing attacks on Wieschebrink's encryption scheme, particularly when Generalized Reed-Solomon (GRS) codes are used. In addition, we present a full key-recovery attack on the LIACY cryptosystem by exploiting its linear-algebraic structure and leveraging distinguishers of subcodes of GRS codes. Our findings reveal critical vulnerabilities in both systems, effectively compromising their security despite their novel designs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Southern Federal University",
+                    "ror": "https://ror.org/01tv9ph92"
+                }
+            ],
+            "fullName": "Kirill Vedenev",
+            "orcid": "0000-0002-7893-655X"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-14T18:28:32Z"
+        }
+    ],
+    "keywords": [
+        "Code-based cryptography",
+        "Key-recovery attack",
+        "Reed-Solomon codes",
+        "Schur-Hadamard product"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/674.pdf",
+    "pid": "674",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Security of Two IKKR-type Code-Based Cryptosystems",
+    "year": 2025,
+    "repo": [
+        "https://github.com/kirill-vedenev/Breaking-KKT-and-LIACY",
+        "https://github.com/kirill-vedenev/Breaking-KKT-and-LIACY"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we present Trilithium: a protocol for distributed key generation and signing compliant with FIPS 204 (ML-DSA). Our protocol allows two parties, \"server\" and \"phone\" with assistance of correlated randomness provider (CRP) to produce a standard ML-DSA signature. We prove our protocol to be secure against a malicious server or phone in the universal composability (UC) model, introducing some novel techniques to argue the security of two-party secure computation protocols with active security against one party, but only active privacy against the other. We provide an implementation of our protocol in Rust and benchmark it, showing the practicality of the protocol.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Cybernetica (Estonia)",
+                    "ror": "https://ror.org/054gqc795"
+                }
+            ],
+            "fullName": "Anton\u00edn Dufka",
+            "orcid": "0009-0003-5058-2571"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cybernetica (Estonia)",
+                    "ror": "https://ror.org/054gqc795"
+                }
+            ],
+            "fullName": "Semjon Kravt\u0161enko",
+            "orcid": "0009-0007-8204-9519"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cybernetica (Estonia)",
+                    "ror": "https://ror.org/054gqc795"
+                }
+            ],
+            "fullName": "Peeter Laud",
+            "orcid": "0000-0002-9030-8142"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cybernetica (Estonia)",
+                    "ror": "https://ror.org/054gqc795"
+                },
+                {
+                    "name": "Tallinn University of Technology",
+                    "ror": "https://ror.org/0443cwa12"
+                }
+            ],
+            "fullName": "Nikita Snetkov",
+            "orcid": "0000-0002-1414-2080"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-14T20:36:41Z"
+        }
+    ],
+    "keywords": [
+        "ML-DSA",
+        "Crystals-Dilithium",
+        "distributed signing",
+        "MPC",
+        "Universal Composability",
+        "threshold signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/675.pdf",
+    "pid": "675",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Trilithium: Efficient and Universally Composable Distributed ML-DSA Signing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
