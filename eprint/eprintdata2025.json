@@ -48376,4 +48376,1475 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "This paper compares the relative strengths of prominent security notions for onion encryption within the Tor setting, specifically focusing on CircuitHiding (EUROCRYPT 2018, an anonymity flavor notion) and OnionAE (PETS 2018, a stateful authenticated encryption flavor notion). Although both are state-of-the-art, Tor-specific notions, they have exhibited different definitional choices, along with variations in complexity and usability. By employing an indirect approach, we compare them using a set of onion layer-centric notions: IND\\$-CPA, IPR/IPR$^+$, and INT-sfCTXT, to compare with the two, respectively. Since the same notion set that implies OnionAE does not imply CircuitHiding, and vice versa, this leads to the conclusion that OnionAE and CircuitHiding are mutually separable. Therefore, neither notion fully expresses satisfactory security on its own. Importantly, IND\\$-CPA, IPR$^+$ (a stronger variant of IPR), and INT-sfCTXT collectively and strictly imply OnionAE and CircuitHiding. Given their onion layer-centric and thus simpler nature, this provides a practical approach to simultaneously satisfying CircuitHiding and OnionAE. While the formal treatment of (general) public-key onion routing has been relatively well-studied, formal treatment tailored to Tor remains insufficient, and thus our work narrows this gap.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology"
+                }
+            ],
+            "fullName": "Daichong Chao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology"
+                }
+            ],
+            "fullName": "Liehuang Zhu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Dawei Xu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology Beijing"
+                }
+            ],
+            "fullName": "Tong Wu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology"
+                }
+            ],
+            "fullName": "Chuan Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Wollongong"
+                }
+            ],
+            "fullName": "Fuchun Guo"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-16T13:09:18Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-15T01:07:11Z"
+        }
+    ],
+    "keywords": [
+        "Onion encryption",
+        "Tor",
+        "Onion routing",
+        "Anonymity",
+        "Notion relationship"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Correction of Author Information",
+    "pdffile": "2025/676.pdf",
+    "pid": "676",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Onion Encryption Revisited: Relations Among Security Notions",
+    "year": 2025,
+    "repo": [
+        "https://gitweb.torproject.org/torspec.git/tree/proposals/295-relay-crypto-with-adl.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/proposals/295-relay-crypto-with-adl.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/proposals/308-counter-galois-onion.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/proposals/308-counter-galois-onion.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/tor-spec.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/tor-spec.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/proposals/202-improved-relay-crypto.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/proposals/202-improved-relay-crypto.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/proposals/261-aez-crypto.txt",
+        "https://gitweb.torproject.org/torspec.git/tree/proposals/261-aez-crypto.txt",
+        "https://gitlab.torproject.org/tpo/core/torspec/-/commit/c49b5ad4e27df87dc317e79636b3de90198bf719",
+        "https://gitlab.torproject.org/tpo/core/torspec/-/commit/c49b5ad4e27df87dc317e79636b3de90198bf719"
+    ]
+}
+,
+{
+    "abstract": "Impossible differential attack is one of the major cryptanalytical methods for symmetric-key block ciphers. In this paper, we evaluate the security of SAND-128 against impossible differential attack. SAND is an AND-RX-based lightweight block cipher proposed by Chen et al. in Designs, Codes and Cryptography 2022. There are two variants of SAND, namely SAND-64 and SAND-128, due to structural differences. In this paper, we search for impossible differential distinguishers of SAND-128 using the Constraint Programming (CP) and reveal 14-round impossible differential distinguishers. The number of 14-round distinguishers is $2^{14} \\times 7 = 114,688$. Furthermore, we demonstrate a key recovery attack on 21-round SAND-128. The complexities for the attack require $2^{124}$ data, $2^{127.2}$ encryptions, and $2^{122}$ bytes of memory, respectively. Although this result currently achieves the best attack on round-reduced SAND-128, this attack does not threaten the security of SAND-128 against impossible differential attack.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hokkaido University of Science"
+                }
+            ],
+            "fullName": "Nobuyuki Sugio",
+            "orcid": "0000-0001-7313-1755"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T02:06:24Z"
+        }
+    ],
+    "keywords": [
+        "Impossible differential attack",
+        "lightweight cipher",
+        "SAND",
+        "Constraint Programming"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/677.pdf",
+    "pid": "677",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Impossible Differential Attack on SAND-128",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "At ASIACRYPT\u201919, Bonnetain et al. demonstrated that an S-box can be distinguished from a permutation chosen uniformly at random by quantifying the distances between their behaviors. In this study, we extend this approach by proposing a deep learning-based method to quantify distances between two different S-boxes and evaluate similarities in their design structures. First, we introduce a deep learning-based framework that trains a neural network model to recover the design structure of a given S-box based on its cryptographic table. We then interpret the decision-making process of our trained model to analyze which coefficients in the table play significant roles in identifying S-box structures. Additionally, we investigate the inference results of our model across various scenarios to evaluate its generalization capabilities. Building upon these insights, we propose a novel approach to quantify distances between structurally different S-boxes. Our method effectively assesses structural similarities by embedding S-boxes using the deep learning model and measuring the distances between their embedding vectors. Furthermore, experimental results confirm that this approach is also applicable to structures that the model has never seen during training. Our findings demonstrate that deep learning can reveal the underlying structural similarities between S-boxes, highlighting its potential as a powerful tool for S-box reverse-engineering.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Donggeun Kwon"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Jeonbuk National University",
+                    "ror": "https://ror.org/05q92br09"
+                }
+            ],
+            "fullName": "Deukjo Hong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Seoul",
+                    "ror": "https://ror.org/05en5nh73"
+                }
+            ],
+            "fullName": "Jaechul Sung"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Seokhie Hong"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T05:57:52Z"
+        }
+    ],
+    "keywords": [
+        "S-box reverse-engineering",
+        "Design structure",
+        "Cryptographic tables",
+        "Quantifying distances",
+        "Deep learning"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/678.pdf",
+    "pid": "678",
+    "pubtype": {
+        "note": "ACNS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Recovering S-Box Design Structures and Quantifying Distances between S-Boxes using Deep Learning",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Simple power analysis (SPA) attacks and their extensions,\r\nprofiled and soft-analytical side-channel attacks (SASCA), represent a\r\nsignificant threat to the security of cryptographic devices and remain\r\namong the most powerful classes of passive side-channel attacks. In this\r\nwork, we analyze how numeric representations of secrets can affect the\r\namount of exploitable information leakage available to the adversary.\r\nWe present an analysis of how mutual information changes as a result\r\nof the integer ring size relative to the machine word-size. Furthermore,\r\nwe study the Redundant Number Representation (RNR) countermeasure\r\nand show that its application to ML-KEM can resist the most powerful\r\nSASCA attacks and provides a low-cost alternative to shuffling. We eval-\r\nuate the performance of RNR-ML-KEM with both simulated and prac-\r\ntical SASCA experiments on the ARM Cortex-M4 based on a worst-case\r\nattack methodology. We show that RNR-ML-KEM sufficiently renders\r\nthese attacks ineffective. Finally, we evaluate the performance of the\r\nRNR-ML-KEM NTT and INTT and show that SPA security can be\r\nachieved with a 62.8% overhead for the NTT and 0% overhead for the\r\nINTT relative to the ARM Cortex-M4 reference implementation used.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Rishub Nagpal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Intel (United States)",
+                    "ror": "https://ror.org/01ek73717"
+                }
+            ],
+            "fullName": "Vedad Had\u017ei\u0107"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Intel (United States)",
+                    "ror": "https://ror.org/01ek73717"
+                }
+            ],
+            "fullName": "Robert Primas"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Stefan Mangard"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T11:18:54Z"
+        }
+    ],
+    "keywords": [
+        "ML-KEM",
+        "SASCA",
+        "Power Analysis",
+        "Countermeasures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Accepted at SAC2025",
+    "pdffile": "2025/679.pdf",
+    "pid": "679",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient SPA Countermeasures using Redundant Number Representation with Application to ML-KEM",
+    "year": 2025,
+    "repo": [
+        "https://github.com/rishubn/rnr-kyber-spa"
+    ]
+}
+,
+{
+    "abstract": "Private information retrieval (PIR) allows a client to query a public database privately and serves as a key building block for privacy-enhancing applications. Minimizing query size is particularly important in many use cases, for example when clients operate on low-power or bandwidth-constrained devices. However, existing PIR protocols exhibit large query sizes: to query $2^{25}$ records, the smallest query size of 14.8KB is reported in Respire [Burton et al., CCS'24]. Respire is based on fully homomorphic encryption (FHE), where a common approach to lower the client-to-server communication cost is transciphering. When combining the state-of-the-art transciphering [Bon et al., CHES'24] with Respire, the resulting protocol (referred to as T-Respire) has a 336B query size, while incurring a 16.2x times higher server computation cost than Respire.\r\n\r\nOur work presents the Pirouette protocol, which achieves a query size of just 36B without transciphering. This represents a 9.3x reduction compared to T-Respire and a 420x reduction to Respire. For queries over $2^{25}$ records, the single-core server computation in Pirouette is only 2x slower than Respire and 8.1x faster than T-Respire, and the server computation is highly parallelizable. Furthermore, Pirouette requires no database-specific hint for clients and naturally extends to support queries over encrypted databases.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Jiayi Kang",
+            "orcid": "0000-0002-1093-7978"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Leonard Schild",
+            "orcid": "0009-0007-3336-1258"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T11:29:04Z"
+        }
+    ],
+    "keywords": [
+        "Private information retrieval",
+        "fully homomorphic encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/680.pdf",
+    "pid": "680",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Pirouette: Query Efficient Single-Server PIR",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "As one of the famous quantum algorithms, Simon's algorithm enables the efficient derivation of the period of periodic functions in polynomial time.  However, the complexity of constructing periodic functions has hindered the widespread application of Simon's algorithm in symmetric-key cryptanalysis. Currently, aside from the exhaustive search-based testing method introduced by Canale et al. at CRYPTO 2022, there is no unified model for effectively searching for periodic distinguishers. Although Xiang et al. established a link between periodic function and truncated differential theory at ToSC 2024, their approach lacks the ability to construct periods using unknown differentials and does not provide automated tools. This limitation underscores the inadequacy of existing methods in identifying periodic distinguishers for complex structures. In this paper, we address the challenge of advancing periodic distinguishers for symmetric-key ciphers. First, we propose a more generalized theory for constructing periodic distinguishers, addressing the limitations of Xiang et al.'s theory in handling unknown differences. We further extend our theory to probabilistic periodic distinguishers, thereby extending the separability property proposed by Hod\u017ei\u0107 et al. in 2020. As a result, our theory can cover a wider range of periodic distinguishers. Second, we introduce a novel symbolic representation to simplify the search of periodic distinguishers. Based upon this representation, we propose the first fully automated SMT-based search model, which efficiently addresses the challenges of manual searching in complex structures. Finally, we extend the model to SPN structures based on our new theory. Our model has broad applicability through significant advancements in analyzing generalized Feistel structures (GFSs) and SPN-based ciphers. As a general model, we have achieved new quantum distinguishers with the following round configurations: 10 rounds for GFS-4F, 10 rounds for LBlock, 10 rounds for TWINE, and 16 rounds for Skipjack-B, improving the previous best results by 2, 2, 2, and 3 rounds, respectively. In the domain of SPN-based ciphers, our model has enabled the identification of novel periodic distinguishers, including the first 9-round distinguisher for SKINNY and the first 12-round distinguisher for CRAFT. These achievements lay the foundation for quantum cryptanalysis of SPN-based ciphers using Simon\u2019s algorithm.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Qun Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Haoyang Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Jinliang Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Boyun Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Meiqin Wang"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T13:12:19Z"
+        }
+    ],
+    "keywords": [
+        "Quantum cryptanalysis",
+        "Automated search model",
+        "Simon's algorithm",
+        "Generalized Feistel structure",
+        "SPN structure"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/681.pdf",
+    "pid": "681",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum Periodic Distinguisher Construction: Symbolization Method and Automated Tool",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Since the standardization of the Secure Group Messaging protocol Messaging Layer Security (MLS) [4 ], whose core subprotocol is a Continuous Group Key Agreement (CGKA) mechanism named TreeKEM, CGKAs have become the norm for group key exchange protocols. However, in order to alleviate the security issue originating from the fact that all users in a CGKA are able to carry out sensitive operations on the member group, an augmented protocol called Administrated-CGKA (A-CGKA) has been recently created [2].\r\n\r\nAn A-CGKA includes in the cryptographic protocol the management of the administration rights that restrict the set of privileged users, giving strong security guarantees for the group administration. The protocol designed in [2] is a plugin added to a regular (black-box) CGKA, which consequently add some complexity to the underlying CGKA and curtail its performances. Yet, leaving the fully decentralized paradigm of a CGKA offers the perspective of new protocol designs, potentially more efficient.\r\n\r\nWe propose in this paper an A-CGKA called SUMAC, which offers strongly enhanced communication and storage performances compared to other A-CGKAs and even to TreeKEM. Our protocol is based on a novel design that modularly combines a regular CGKA used by the administrators of the group and a Tree-structured Multicast Key Agreement (TMKA) [9] \u2013 which is a centralized group key exchange mechanism administrated by a single group manager \u2013 between each administrator and all the standard users. That TMKA gives SUMAC an asymptotic communication cost logarithmic in the number of users, similarly to a CGKA. However, the concrete performances of our protocol are much better than the latter, especially in the post-quantum framework, due to the intensive use of secret-key cryptography that offers a lighter bandwidth than the public-key encryption schemes from a CGKA.\r\n\r\nIn practice, SUMAC improves the communication cost of TreeKEM by a factor 1.4 to 2.4 for admin operations and a factor 2 to 38 for user operations. Similarly, its storage cost divides that of TreeKEM by a factor 1.3 to 23 for an administrator and 3.9 to 1,070 for a standard user.\r\n\r\nOur analysis of SUMAC is provided along with a ready-to-use open-source rust implementation that confirms the feasibility and the performances of our protocol.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure - PSL",
+                    "ror": "https://ror.org/05a0dhs15"
+                },
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                }
+            ],
+            "fullName": "Nicolas Bon",
+            "orcid": "0009-0002-3777-3018"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure - PSL",
+                    "ror": "https://ror.org/05a0dhs15"
+                },
+                {
+                    "name": "Paris-Pantheon Assas University"
+                }
+            ],
+            "fullName": "C\u00e9line Chevalier",
+            "orcid": "0009-0006-4231-4958"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure - PSL",
+                    "ror": "https://ror.org/05a0dhs15"
+                },
+                {
+                    "name": "ANSSI"
+                }
+            ],
+            "fullName": "Guirec Lebrun",
+            "orcid": "0009-0004-7016-1421"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ANSSI"
+                }
+            ],
+            "fullName": "Ange Martinelli",
+            "orcid": "0009-0001-6004-3884"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T13:20:26Z"
+        }
+    ],
+    "keywords": [
+        "SGM",
+        "MLS",
+        "TreeKEM",
+        "CGKA",
+        "Administrated-CGKA",
+        "MKA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/682.pdf",
+    "pid": "682",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SUMAC: an Efficient Administrated-CGKA Using Multicast Key Agreement",
+    "year": 2025,
+    "repo": [
+        "https://github.com/openmls/openmls"
+    ]
+}
+,
+{
+    "abstract": "A multi-server private information retrieval (PIR) protocol allows a client to obtain an entry of its choice from a database, held by one or more servers, while hiding the identity of the entry from small enough coalitions of servers. In this paper, we study PIR protocols in which some of the servers are malicious and may not send messages according to the pre-described protocol. In previous papers, such protocols were defined by requiring that they are correct, private, and robust to malicious servers, i.e., by listing 3 properties that they should satisfy. However, 40 years of experience in studying secure multiparty protocols taught us that defining the security of protocols by a list of required properties is problematic. \r\n\r\nIn this paper, we rectify this situation and define the security of PIR protocols with malicious servers using the real vs. ideal paradigm. We study the relationship between the property-based definition of PIR protocols and the real vs. ideal definition, showing the following results:\r\n\r\n- We prove that if we require full security from PIR protocols, e.g., the client outputs the correct value of the database entry with high probability even if a minority of the servers are malicious, then the two definitions are equivalent. This implies that constructions of such protocols that were proven secure using the property-based definition are actually secure under the ``correct'' definition of security.  \r\n\r\n- We show that if we require security-with-abort from PIR protocols (called PIR protocols with error-detection in previous papers), i.e., protocols in which the user either outputs the correct value or an abort symbol, then there are protocols that are secure under the property-based definition; however, they do not satisfy the real vs. ideal definition, that is, they can be attacked allowing selective abort. This shows that the property-based definition of PIR protocols with security-with-abort is problematic. \r\n\r\n- We consider the compiler of  Eriguchi et al. (TCC 22) that starts with a PIR protocol that is secure against semi-honest servers and constructs a PIR protocol with security-with-abort; this compiler implies the best-known PIR protocols with security-with-abort. We show that applying this protocol does not result in PIR protocols that are secure according to the real vs. ideal definition. However, we prove that a simple modification of this compiler results in PIR protocols that are secure according to the real vs. ideal definition.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Georgetown University",
+                    "ror": "https://ror.org/05vzafd60"
+                }
+            ],
+            "fullName": "Bar Alon",
+            "orcid": "0000-0002-8392-0245"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ben-Gurion University of the Negev",
+                    "ror": "https://ror.org/05tkyf982"
+                }
+            ],
+            "fullName": "Amos Beimel",
+            "orcid": "0000-0002-6572-4195"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T16:28:37Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/683.pdf",
+    "pid": "683",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Definition of Malicious Private Information Retrieval",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Secure Shell (SSH) protocol is one of the first security protocols on the Internet to upgrade itself to resist attacks against future quantum computers, with the default adoption of the \"quantum (otherwise, classically)\" secure hybrid key exchange in OpenSSH from April 2022. However, there is a lack of a comprehensive security analysis of this quantum-resistant version of SSH in the literature: related works either focus on the hybrid key exchange in isolation and do not consider security of the overall protocol, or analyze the protocol in security models which are not appropriate for SSH, especially in the \"post-quantum\" setting.\r\n\r\nIn this paper, we remedy the state of affairs by providing a thorough post-quantum cryptographic analysis of SSH. We follow a \"top-down\" approach wherein we first prove security of SSH in a more appropriate model, namely, our post-quantum extension of the so-called authenticated and confidential channel establishment (ACCE) protocol security model; our extension which captures \"harvest now, decrypt later\" attacks could be of independent interest. Then we establish the cryptographic properties of SSH's underlying primitives, as concretely instantiated in practice, based on our protocol-level ACCE security analysis: for example, we prove relevant cryptographic properties of \"Streamlined NTRU Prime\", a key encapsulation mechanism (KEM) which is used in recent versions of OpenSSH and TinySSH, in the quantum random oracle model, and address open problems related to its analysis in the literature. Notably, our ACCE security analysis of post-quantum SSH relies on the weaker notion of IND-CPA security of the ephemeral KEMs used in the hybrid key exchange. This is in contrast to prior works which rely on the stronger assumption of IND-CCA secure ephemeral KEMs. Hence we conclude the paper with a discussion on potentially replacing IND-CCA secure KEMs in current post-quantum implementations of SSH with simpler and faster IND-CPA secure counterparts, and also provide the corresponding benchmarks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway University of London",
+                    "ror": "https://ror.org/04g2vpn86"
+                }
+            ],
+            "fullName": "Benjamin Ben\u010dina"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "King's College London"
+                }
+            ],
+            "fullName": "Benjamin Dowling"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "SandboxAQ"
+                }
+            ],
+            "fullName": "Varun Maram"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Keita Xagawa"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T18:13:58Z"
+        }
+    ],
+    "keywords": [
+        "Secure Shell (SSH)",
+        "post-quantum",
+        "hybrid key exchange",
+        "OpenSSH",
+        "ACCE protocol",
+        "Streamlined NTRU Prime",
+        "QROM",
+        "CPA v/s CCA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/684.pdf",
+    "pid": "684",
+    "pubtype": {
+        "note": "46th IEEE Symposium on Security and Privacy, S&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Post-quantum Cryptographic Analysis of SSH",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We revisit the longstanding open problem of implementing Nakamoto's proof-of-work (PoW) consensus based on a real-world computational task $T(x)$ (as opposed to artificial random hashing), in a truly  permissionless setting where the miner itself chooses the input $x$. The challenge in designing such a Proof-of-Useful-Work (PoUW) protocol, is using the native computation of $T(x)$ to produce a PoW certificate with prescribed hardness and with negligible computational overhead over the worst-case complexity of $T(\\cdot)$ -- This  ensures malicious miners cannot ``game the system\" by fooling the verifier to accept with higher probability compared to honest miners (while using similar computational resources). Indeed, obtaining a PoUW with $O(1)$-factor overhead is trivial for any task $T$, but also useless. \r\n\r\nOur main result is a PoUW for the task of Matrix Multiplication $\\mathsf{MatMul}(A,B)$ of arbitrary matrices with  $1+o(1)$ multiplicative overhead compared to na\\\"ive $\\mathsf{MatMul}$ (even in the presence of Fast Matrix Multiplication-style algorithms, which are currently impractical). We conjecture that our protocol has optimal security in the sense that a malicious prover cannot obtain any significant advantage over an honest prover. This conjecture is based on reducing hardness of our protocol to the task of solving a batch of low-rank random linear equations which is of independent interest.\r\n\r\nSince $\\mathsf{MatMul}$s are the bottleneck of AI compute as well as countless industry-scale applications, this primitive suggests a concrete design of a new L1 base-layer protocol, which nearly eliminates the energy-waste of Bitcoin mining -- allowing GPU consumers to reduce their AI training and inference costs by ``re-using\" it for blockchain consensus, in exchange for block rewards (2-for-1). This blockchain is currently under construction.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hebrew University of Jerusalem",
+                    "ror": "https://ror.org/03qxff017"
+                }
+            ],
+            "fullName": "ilan komargodski",
+            "orcid": "0000-0002-1647-2112"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Itamar Schen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hebrew University of Jerusalem",
+                    "ror": "https://ror.org/03qxff017"
+                }
+            ],
+            "fullName": "Omri Weinstein",
+            "orcid": "0000-0002-9357-2299"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T18:46:53Z"
+        }
+    ],
+    "keywords": [
+        "proof of useful work",
+        "matrix multiplication",
+        "worst case"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/685.pdf",
+    "pid": "685",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Proofs of Useful Work from Arbitrary Matrix Multiplication",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Most homomorphic encryption (FHE) schemes exploit a technique called single-instruction multiple-data (SIMD) to process several messages in parallel. However, they base their security in somehow strong assumptions, such as the hardness of approximate lattice problems with superpolynomial approximation factor. On the other extreme of the spectrum, there are lightweight FHE schemes that have much faster bootstrapping but no SIMD capabilities. On the positive side, the security of these schemes is based on lattice problems with (low-degree) polynomial approximation factor only, which is a much weaker security assumption. Aiming the best of those two options, Micciancio and Sorrell (ICALP'18) proposed a new amortized bootstrapping that can process many messages at once, yielding sublinear time complexity per message, and allowing one to construct FHE based on lattice problems with polynomial approximation factor.\r\nSome subsequent works on this line achieve near-optimal asymptotic performance, nevertheless, concrete efficiency remains mostly an open problem. The only existing implementation to date (GPV23, Asiacrypt 2023) requires keys of up to a hundred gigabytes while only providing gains for relatively large messages. In this paper, we introduce a new method for amortized bootstrapping where the number of homomorphic operations required per message is $O(h)$ and the noise overhead is $O(\\sqrt{h \\lambda} \\log \\lambda)$, where $h$ is the Hamming weight of the LWE secret key and $\\lambda$ is the security parameter. This allows us to use much smaller parameters and to obtain faster running time. Our method is based on a new efficient homomorphic evaluation of sparse polynomial multiplication. We bootstrap 2 to 8-bit messages in 1.1 ms to 26.5 ms, respectively. Compared to TFHE-rs, this represents a performance improvement of 3.9 to 41.5 times while requiring bootstrapping keys up to 50.4 times smaller.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute",
+                    "ror": "https://ror.org/04xvfkh51"
+                }
+            ],
+            "fullName": "Antonio Guimar\u00e3es",
+            "orcid": "0000-0001-5110-6639"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Computing, University of Campinas (UNICAMP)",
+                    "ror": "https://ror.org/04wffgt70"
+                }
+            ],
+            "fullName": "Hilder V. L. Pereira",
+            "orcid": "0000-0003-1303-3760"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-16T14:08:42Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-15T20:23:12Z"
+        }
+    ],
+    "keywords": [
+        "Fully homomorphic encryption",
+        "Bootstrapping",
+        "Amortized bootstrapping",
+        "Lattice-based Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/686.pdf",
+    "pid": "686",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fast amortized bootstrapping with small keys and polynomial noise overhead",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zama-ai/tfhe-rs"
+    ]
+}
+,
+{
+    "abstract": "As billions of people rely on end-to-end encrypted messaging, the exposure of metadata, such as communication timing and participant relationships, continues to deanonymize users. Asynchronous metadata-hiding solutions with strong cryptographic guarantees have historically been bottlenecked by quadratic $O(N^2)$ server computation in the number of users $N$ due to reliance on private information retrieval (PIR). We present Myco, a metadata-private messaging system that preserves strong cryptographic guarantees while achieving $O(N \\log^2 N)$ efficiency. To achieve this, we depart from PIR and instead introduce an oblivious data structure through which senders and receivers privately communicate. To unlink reads and writes, we instantiate Myco in an asymmetric two-server distributed-trust model where clients write messages to one server tasked with obliviously transmitting these messages to another server, from which clients read. Myco achieves throughput improvements of up to 302x over multi-server and 2,219x over single-server state-of-the-art systems based on PIR.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley"
+                }
+            ],
+            "fullName": "Darya Kaviani",
+            "orcid": "0000-0002-1458-0769"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley"
+                }
+            ],
+            "fullName": "Deevashwer Rathee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "California Institute of Technology",
+                    "ror": "https://ror.org/05dxps055"
+                }
+            ],
+            "fullName": "Bhargav Annem",
+            "orcid": "0009-0002-4150-6166"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Raluca Ada Popa",
+            "orcid": "0000-0001-8899-801X"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-15T23:37:03Z"
+        }
+    ],
+    "keywords": [
+        "Privacy",
+        "Anonymity",
+        "Messaging",
+        "Metadata",
+        "ORAM"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Full version",
+    "pdffile": "2025/687.pdf",
+    "pid": "687",
+    "pubtype": {
+        "note": "IEEE Symposium on Security and Privacy 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Myco: Unlocking Polylogarithmic Accesses in Metadata-Private Messaging",
+    "year": 2025,
+    "repo": [
+        "https://github.com/myco-org/myco/",
+        "https://github.com/RustCrypto",
+        "https://github.com/briansmith/ring",
+        "https://github.com/rust-random/rand/tree/master/rand_chacha",
+        "https://github.com/dalek-cryptography/curve25519-dalek",
+        "https://github.com/hyperium/tonic",
+        "https://github.com/google/distributed_point_functions",
+        "https://github.com/microsoft/SealPIR",
+        "https://github.com/sga001/sealpir-rust"
+    ]
+}
+,
+{
+    "abstract": "Side-channel analysis (SCA) has emerged as a critical field in securing\r\nhardware implementations against potential vulnerabilities. With the advent of artificial intelligence(AI), neural network-based approaches have proven to be among the most useful techniques for profiled SCA. Despite the success of NN-assisted SCA, a critical challenge remains, namely understanding predictive uncertainty. NNs are often uncertain in their predictions, leading to incorrect key guesses with high\r\nprobabilities, corresponding to a higher rank associated with the correct key. This uncertainty stems from multiple factors, including measurement errors, randomness in physical quantities, and variability in NN training. Understanding whether this uncertainty arises from inherent data characteristics or can be mitigated through better training is crucial. Additionally, if data uncertainty dominates, identifying\r\nspecific trace features responsible for misclassification becomes essential.\r\n\r\nWe propose a novel approach to estimating uncertainty in NN-based SCA by leveraging Renyi entropy, which offers a generalized framework for capturing various forms of uncertainty. This metric allows us to quantify uncertainty in NN predictions and explain its impact on key recovery. We decompose uncertainty into epistemic (model-related) and aleatoric (data-related) components. Given the challenge of estimating probability distributions in high-dimensional spaces, we use matrix-based Renyi \u03b1-entropy and \u03b1-divergence to better approximate leakage distributions, addressing the limitations of KL divergence in SCA. We also explore the sources of uncertainty, e.g., resynchronization, randomized keys, as well as hyperparameters related to NN training. To identify which time instances (features in traces) contribute most to uncertainty, we also integrate SHAP explanations with our framework, overcoming the limitations of conventional sensitivity analysis. Lastly, we show that predictive uncertainty strongly correlates with standard SCA metrics like rank, offering a complementary measure for evaluating attack complexity. Our theoretical findings are backed by extensive experiments on available datasets and NN models.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Seyedmohammad Nouraniboosjin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Fatemeh Ganji"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-16T03:26:19Z"
+        }
+    ],
+    "keywords": [
+        "Profiled SCA",
+        "Neural Networks",
+        "Uncertainty",
+        "Explainablity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/688.pdf",
+    "pid": "688",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Uncertainty Estimation in Neural Network-enabled Side-channel Analysis and Links to Explainability",
+    "year": 2025,
+    "repo": [
+        "[Online] https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_fixed_key",
+        "[Online] https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_fixed_key",
+        "[Online] https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_variable_key",
+        "[Online] https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_variable_key",
+        "[Online] https://github.com/KULeuven-COSIC/TCHES20V3_CNN_SCA",
+        "[Online] https://github.com/KULeuven-COSIC/TCHES20V3_CNN_SCA"
+    ]
+}
+,
+{
+    "abstract": "In this work, we explore neural network design options for discriminating Random Number Generators(RNG), as a complement to existing statistical test suites, being a continuation of  a recent paper of the aothors. Specifically, we consider variations in architecture and data preprocessing. We test their impact on the network's ability to discriminate sequences from a low-quality RNG versus a high-quality one\u2014that is, to discriminate between \"optimal\" sequence sets and those from the generator under test. When the network fails to distinguish them, the test is passed. For this test to be useful, the network must have real discrimination capabilities. We review several network design possibilities showing significant differences in the  obtained results. The best option presented here is convolutional networks working on 5120-byte sequences.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Cantabria",
+                    "ror": "https://ror.org/046ffzj20"
+                }
+            ],
+            "fullName": "Jos\u00e9 Luis Crespo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Cantabria"
+                }
+            ],
+            "fullName": "Jaime Gutierrez",
+            "orcid": "0000-0003-1892-3084"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Angel   Valle",
+            "orcid": "0000-0002-3307-5485"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-16T09:38:22Z"
+        }
+    ],
+    "keywords": [
+        "Neural networks",
+        "Quantum random number generators",
+        "Pytorch",
+        "Statistical test for random number"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/689.pdf",
+    "pid": "689",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Neural network design options for RNG's verification",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The securities of a large fraction of zero-knowledge arguments of knowledge schemes rely on the discrete logarithm (DL) assumption or the discrete logarithm relation assumption, such as Bulletproofs (S&P 18) and compressed $\\Sigma$-protocol (CRYPTO 20). At the heart of these protocols is an interactive proof of knowledge between a prover and a verifier showing that a Pedersen vector commitment $P=h^{\\rho}\\cdot\\textbf{g}^{\\textbf{x}}$  to a vector $\\textbf{x}$  satisfies multi-variate equations, where the DL relations among the vector of generators $\\textbf{g}$ are unknown. However, in some circumstances, the prover may know the DL relations among the generators, and the DL relation assumption no longer holds, such as ring signatures, ring confidential transactions (RingCT) and K-out-of-N proofs, which will make the soundness proof of these protocols infeasible.\r\nThis paper is concerned with a problem called knowledge of known discrete logarithms (KKDL) that appears but has not been clearly delineated in the literature.  Namely, it asks to prove a set of multi-exponent equalities, starting with the fact that the prover may know the DL relations among the generators of these equalities.  Our contributions are three-fold:  (1) We propose a special honest-verifier zero-knowledge protocol for the problem.  Using the Fiat-Shamir heuristic and the improved inner-product argument of Bulletproofs,  the proof size of our protocol is logarithmic to the dimension of the vector. (2) As applications, our protocol can be utilized to construct logarithmic-size RingCT securely which fixes the issues of Omniring (CCS 19), ring signatures (with signature size $2\\cdot \\lceil \\log_2(N) \\rceil+10$ for ring size $N$) and  $K$-out-of-$N$ proof of knowledge (with proof size $2\\cdot \\lceil \\log_2(N) \\rceil+14$) which achieves the most succinct proof size improving on previous results. Meanwhile, we propose the first account-based multi-receiver privacy scheme considering the sender's privacy with logarithmic proof size (to the best of our knowledge). (3) We describe an attack on RingCT-3.0 (FC 20) where an attacker can spend a coin of an arbitrary amount that never existed on the blockchain.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Li Lin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Sydney"
+                }
+            ],
+            "fullName": "Tian Qiu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Xin Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Hailong Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Changzheng Wei"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Ying Yan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Wei Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Wenbiao Zhao"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-16T09:51:57Z"
+        }
+    ],
+    "keywords": [
+        "Zero-Knowledge Proof",
+        "Bulletproofs",
+        "RingCT",
+        "Omniring",
+        "Anonymous Zether",
+        "Cryptanalysis on RingCT-3.0"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/690.pdf",
+    "pid": "690",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Zero-Knowledge Protocol for Knowledge of Known Discrete Logarithms: Applications to Ring Confidential Transactions and Anonymous Zether",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Constructing and implementing isogeny-based cryptographic primitives is an active research. In particular, performing length-$n$ isogenies walks over quadratic field extensions of $\\mathbb{F}_p$ plays an exciting role in some constructions, including\r\nHash functions, Verifiable Delay Functions, Key-Encapsulation Mechanisms, and generic proof systems for isogeny knowledge.\r\nRemarkably, many isogeny-based constructions, for efficiency, perform $2$-isogenies through square root calculations.\r\n\r\nThis work analyzes the idea of using $3$-isogenies instead of $2$-isogenies, which replaces the requirement of calculating square roots with cube roots. Performing length-$m$ $3$-isogenies allows shorter isogeny walks than when employing length-$n$ $2$-isogenies since a cube root calculation costs essentially the same as computing a square root, and we require $3^m \\approx 2^n$ to provide the same security level.\r\n\r\nWe propose an efficient mapping from arbitrary supersingular Montgomery curves defined over $\\mathbb{F}_{p^2}$ to the $3$-isogeny curve model from Castryck, Decru, and Vercauteren (Asiacrypt 2020); a deterministic algorithm to compute all order-$3$ points on arbitrary supersingular Montgomery curves, and an efficient algorithm to compute length-$m$ $3$-isogeny chains.\r\n\r\nWe improve the length-$m$ $3$-isogeny walks required by the KEM from Nakagawa and Onuki (CRYPTO 2024) by using our results and introducing more suitable parameter sets that are friendly with C-code implementations. In particular, our experiments illustrate an improvement of 26.41\\%--35.60\\% in savings when calculating length-$m$ $3$-isogeny chains and using our proposed parameters instead of those proposed by Nakagawa and Onuki (CRYPTO 2024).\r\n\r\nFinally, we enhance the key generation of $\\mathsf{CTIDH}$-2048 by including radical $3$-isogeny chains over the basefield $\\mathbb{F}_p$, reducing the overhead of finding a $3$-torsion basis as required in some instantiations of the $\\mathsf{CSIDH}$ protocol. Our experiments illustrate the advantage of radical $3$ isogenies in the key generation of $\\mathsf{CTIDH}$-2048, with an improvement close to 4x faster than the original $\\mathsf{dCTIDH}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Jes\u00fas-Javier Chi-Dom\u00ednguez",
+            "orcid": "0000-0002-9753-7263"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Eduardo Ochoa-Jimenez",
+            "orcid": "0000-0002-7349-8546"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Ricardo-Neftal\u00ed Pontaza-Rodas",
+            "orcid": "0000-0002-5858-8180"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-16T12:33:10Z"
+        }
+    ],
+    "keywords": [
+        "CGL-hash function",
+        "CTIDH",
+        "Isogeny-based cryptography",
+        "Post-quantum cryptography",
+        "QFESTA",
+        "Radical 3-isogenies"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/691.pdf",
+    "pid": "691",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Let us walk on the 3-isogeny graph: efficient, fast, and simple",
+    "year": 2025,
+    "repo": [
+        "https://github.com/hiroshi-onuki/QFESTA-SageMath"
+    ]
+}
+,
+{
+    "abstract": "An interactive aggregate signature scheme allows $n$ signers, each with their own secret/public key pair $(sk_i, pk_i)$ and message $m_i$, to jointly produce a short signature that simultaneously witnesses that $m_i$ has been signed under $pk_i$ for every $i \\in \\{1, \\dots, n\\}$. Despite the large potential for savings in terms of space and verification time, which constitute the two main bottlenecks for large blockchain systems such as Bitcoin, aggregate signatures have received much less attention than the other members of the multi-party signature family, namely multi-signatures such as $\\mathsf{MuSig2}$ and threshold signatures such as $\\mathsf{FROST}$.\r\n\r\nIn this paper, we propose $\\mathsf{DahLIAS}$, the first aggregate signature scheme with constant-size signatures\u2014a signature has the same shape as a standard Schnorr signature\u2014directly based on discrete logarithms in pairing-free groups. The signing protocol of $\\mathsf{DahLIAS}$ consists of two rounds, the first of which can be preprocessed without the message, and verification (for a signature created by $n$ signers) is dominated by one multi-exponentiation of size $n+1$, which is asymptotically twice as fast as batch verification of $n$ individual Schnorr signatures.\r\n\r\n$\\mathsf{DahLIAS}$ is designed with real-world applications in mind. Besides the aforementioned benefits of space savings and verification speedups, $\\mathsf{DahLIAS}$ offers key tweaking, a technique commonly used in Bitcoin to derive keys in hierarchical deterministic wallets and to save space as well as enhance privacy on the blockchain. We prove $\\mathsf{DahLIAS}$ secure in the concurrent setting with key tweaking under the (algebraic) one-more discrete logarithm assumption in the random oracle model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Blockstream Research"
+                }
+            ],
+            "fullName": "Jonas Nick"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Blockstream Research"
+                }
+            ],
+            "fullName": "Tim Ruffing",
+            "orcid": "0000-0001-6237-5228"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ledger"
+                }
+            ],
+            "fullName": "Yannick Seurin",
+            "orcid": "0000-0002-2948-9423"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-16T12:49:45Z"
+        }
+    ],
+    "keywords": [
+        "interactive aggregate signatures",
+        "Schnorr signatures",
+        "discrete logarithm problem",
+        "local forking lemma",
+        "Bitcoin"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/692.pdf",
+    "pid": "692",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "DahLIAS: Discrete Logarithm-Based Interactive Aggregate Signatures",
+    "year": 2025,
+    "repo": [
+        "https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/savings.org",
+        "https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/savings.org",
+        "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
+    ]
+}
+,
+{
+    "abstract": "Safety and liveness are the two classical security properties of consensus protocols. Recent works have strengthened safety with accountability: should any safety violation occur, a sizable fraction of adversary nodes can be proven to be protocol violators. This paper studies to what extent analogous accountability guarantees are achievable for liveness. To reveal the full complexity of this question, we introduce an interpolation between the classical synchronous and partially-synchronous models that we call the $x$-partially-synchronous network model in which, intuitively, at most an $x$ fraction of the time steps in any sufficiently long interval are asynchronous (and, as with a partially-synchronous network, all time steps are synchronous following the passage of an unknown \"global stablization time\"). We prove a precise characterization of the parameter regime in which accountable liveness is achievable: if and only if $x < 1/2$ and $f < n/2$, where $n$ denotes the number of nodes and $f$ the number of nodes controlled by an adversary. We further refine the problem statement and our analysis by parameterizing by the number of violating nodes identified following a liveness violation, and provide evidence that the guarantees achieved by our protocol are near-optimal (as a function of $x$ and $f$). Our results provide rigorous foundations for liveness-accountability heuristics such as the  \"inactivity leaks\" employed in Ethereum.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "London School of Economics"
+                }
+            ],
+            "fullName": "Andrew Lewis-Pye"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "a16z Crypto Research"
+                }
+            ],
+            "fullName": "Joachim Neu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University & a16z Crypto Research"
+                }
+            ],
+            "fullName": "Tim Roughgarden"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Luca Zanolini"
+        }
+    ],
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-16T15:04:09Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/693.pdf",
+    "pid": "693",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Accountable Liveness",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In an anonymous credential system, users collect credentials from issuers, and can use their credentials to generate privacy-preserving identity proofs that can be shown to third-party verifiers. Since the introduction of anonymous credentials by Chaum in 1985, there has been promising advances with respect to system design, security analysis and real-world implementations of anonymous credential systems.\r\n\r\nIn this paper, we examine Hyperledger AnonCreds, an anonymous credential system that was introduced in 2017 and is currently undergoing specification. Despite being implemented in deployment-ready identity system platforms, there is no formal security analysis of the Hyperledger AnonCreds protocol. We rectify this, presenting syntax and a security model for, and a first security analysis of, the Hyperledger AnonCreds protocol. In particular, we demonstrate that Hyperledger AnonCreds is correct, and satisfies notions of unforgeability and anonymity. We conclude with a discussion on the implications of our findings, highlighting the importance of rigorous specification efforts to support security evaluation of real-world cryptographic protocols.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Lancaster University"
+                }
+            ],
+            "fullName": "Ashley Fraser"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Surrey"
+                }
+            ],
+            "fullName": "Steve Schneider"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-16T16:16:57Z"
+        }
+    ],
+    "keywords": [
+        "anonymous credentials",
+        "game-based security",
+        "provable security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/694.pdf",
+    "pid": "694",
+    "pubtype": {
+        "note": "IEEE EuroS&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Formal Security Analysis of Hyperledger AnonCreds",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "PLONK is a prominent universal and updatable zk-SNARK for general circuit satisfiability, which allows a prover to produce a short certificate of the validity of a certain statement/computation. Its expressive model of computation and its highly efficient verifier complexity make PLONK a powerful tool for a wide range of blockchain applications.\r\n\r\nSupporting standard cryptographic primitives (such us ECDSA over SECP256k1) or advanced recursive predicates (e.g. incrementally verifiable computation) on a SNARK presents a significant challenge. It requires so-called foreign-field arithmetic (enforcing constraints over algebraic fields that differ from the SNARK native field) which was previously believed to incur an overhead of two or three orders of magnitude.\r\n\r\nWe build on the techniques by Lubarov and Baylina and observe that, by considering tight bounds on their encoding of foreign-field multiplication, the number of PLONK constraints can be significantly reduced. We show that these techniques also extend to elliptic curve emulation, with an overhead of just one order of magnitude (with respect to its native counterpart). We validate soundness and completeness of our main results in EasyCrypt. Finally, we implement an open-source library with support for foreign-field arithmetic. Our experimental results showcase the generality of our techniques and confirm their suitability for real-world applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Input Output Global"
+                }
+            ],
+            "fullName": "Miguel Ambrona",
+            "orcid": "0000-0001-5927-9235"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Input Output Global"
+                }
+            ],
+            "fullName": "Denis Firsov",
+            "orcid": "0000-0003-1267-7898"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Input Output Global"
+                }
+            ],
+            "fullName": "Inigo Querejeta-Azurmendi",
+            "orcid": "0000-0003-3679-2276"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-16T16:17:52Z"
+        }
+    ],
+    "keywords": [
+        "SNARKs",
+        "zero-knowledge",
+        "foreign-field arithmetic"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/695.pdf",
+    "pid": "695",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Foreign-Field Arithmetic in PLONK",
+    "year": 2025,
+    "repo": [
+        "https://github.com/input-output-hk/efficient-ffa/releases/tag/sound-and-complete-ffa",
+        "https://github.com/input-output-hk/efficient-ffa/releases/tag/sound-and-complete-ffa",
+        "https://raw.githubusercontent.com/daira/halographs",
+        "https://raw.githubusercontent.com/daira/halographs",
+        "https://github.com/zcash/halo2",
+        "https://github.com/daira/pluto-eris",
+        "https://o1-labs.github.io/proof-systems/kimchi/foreign_field_add.html",
+        "https://o1-labs.github.io/proof-systems/kimchi/foreign_field_add.html",
+        "https://github.com/AztecProtocol/AZTEC/blob/master/AZTEC.pdf",
+        "https://github.com/AztecProtocol/AZTEC/blob/master/AZTEC.pdf"
+    ]
+}
+,
+{
+    "abstract": "Amortized bootstrapping techniques have been proposed for FHEW/TFHE to efficiently refresh multiple ciphertexts simultaneously within a polynomial modulus. Although recent proposals have very efficient asymptotic complexity, reducing the amortized cost essentially to $\\tilde{O}(1)$ FHE multiplications, the practicality of such algorithms still suffers from substantial overhead and high decryption failure rates (DFR). In this study, we improve upon one of the state-of-the-art amortized bootstrapping algorithms (Guimar\u00e3es et al., ASIACRYPT 2023) for FHEW/TFHE-like schemes by introducing an alternative algorithmic strategy. Specifically, we combine Guimar\u00e3es et al.'s strategy based on a two-part NTT with an incomplete Number Theoretic Transform (NTT) algorithm. As a result, we demonstrate a 2.12$\\times$ speedup compared to the algorithm of Guimar\u00e3es et al. and a $1.12\\times$ improvement over the state-of-the-art (sequential) TFHE-rs while achieving a DFR close to $2^{-32}$ for 7-bit messages, although the DFR is higher for 8-bit messages. We also explore trade-offs between execution time and DFR, identifying parameter sets that improve execution time of Guimar\u00e3es et al. by $1.41\\times$, while simultaneously reducing the DFR by a factor of $2^{-22}$ for 8-bit messages.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Future Security Team, LG Electronics USA, Inc"
+                }
+            ],
+            "fullName": "Thales B. Paiva"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Future Security Team, LG Electronics USA, Inc"
+                }
+            ],
+            "fullName": "Gabrielle De Micheli"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Future Security Team, LG Electronics USA, Inc"
+                }
+            ],
+            "fullName": "Syed Mahbub Hafiz"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Future Security Team, LG Electronics USA, Inc"
+                },
+                {
+                    "name": "Universidade de S\u00e3o Paulo, S\u00e3o Paulo, Brazil"
+                }
+            ],
+            "fullName": "Marcos A. Simplicio Jr."
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Future Security Team, LG Electronics USA, Inc"
+                }
+            ],
+            "fullName": "Bahattin Yildiz"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-17T00:55:21Z"
+        }
+    ],
+    "keywords": [
+        "Fully Homomorphic Encryption",
+        "Amortized Bootstrapping",
+        "Lattice-based Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/696.pdf",
+    "pid": "696",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Faster amortized bootstrapping using the incomplete NTT for free",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zama-ai/tfhe-rs",
+        "https://github.com/zama-ai/tfhe-rs"
+    ]
+}
 ]
