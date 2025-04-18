@@ -49847,4 +49847,336 @@
         "https://github.com/zama-ai/tfhe-rs"
     ]
 }
+,
+{
+    "abstract": "At CRYPTO 2019, Gohr pioneered the integration of differential cryptanalysis with neural networks, demonstrating significant advantages over traditional distinguishers. Subsequently, at Inscrypt 2020, Su et al. proposed the concept of constructing polyhedral differential neural distinguishers by leveraging multiple effective input differences. More recently, at FSE 2024, Bellini et al. introduced a general-purpose tool for automating the training of single-key differential neural distinguishers for various block ciphers. Inspired by this body of work, we aim to extend automated search techniques to related-key differential neural distinguishers, enabling the discovery of effective input differences and key differences for such distinguishers. To achieve this, we employ a genetic optimization algorithm to identify effective differential combinations. To validate the efficacy of our method, we apply it to the Simeck and Simon cipher families, successfully identifying effective differential combinations for the three variants of Simeck and ten variants of Simon. Furthermore, inspired by the concept of polyhedral neural distinguishers, we adopt a novel data format that leverages multiple distinct input differences and key differences to construct positive and negative samples, providing the neural network with a richer set of features. Our approach not only identify high-quality distinguishers for previously unexplored cipher variants but also achieve higher accuracy for related-key differential neural distinguishers compared to the state-of-the-art.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Xue Yuan",
+            "orcid": "0009-0008-0409-3714"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Qichun Wang",
+            "orcid": "0000-0003-3474-4115"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-17T05:48:00Z"
+        }
+    ],
+    "keywords": [
+        "Related-key",
+        "Differential neural distinguisher",
+        "Genetic optimization algorithm",
+        "Simeck cipher",
+        "Simon cipher"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/697.pdf",
+    "pid": "697",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Multi-Differential Approach to Enhance Related-Key Neural Distinguishers",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Deep learning-based side-channel analysis is an extremely powerful option for profiling side-channel attacks. However, to perform well, one needs to select the neural network model and training time hyperparameters carefully. While many works investigated these aspects, random search could still be considered the current state-of-the-art. Unfortunately, random search has drawbacks, since the chances of finding a good architecture significantly drop when considering more complex targets.\r\nIn this paper, we propose a novel neural architecture search approach for SCA based on grammatical evolution - SCAGE. We define a custom SCA grammar that allows us to find well-performing and potentially unconventional architectures. We conduct experiments on four datasets, considering both synchronized and desynchronized versions, as well as using feature intervals or raw traces. Our results show SCAGE to perform extremely well in all settings, outperforming random search and related works in most of the considered scenarios.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Twente",
+                    "ror": "https://ror.org/006hf6230"
+                }
+            ],
+            "fullName": "Mattia Napoli"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Milano-Bicocca",
+                    "ror": "https://ror.org/01ynf4891"
+                }
+            ],
+            "fullName": "Alberto Leporati",
+            "orcid": "0000-0002-8105-4371"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Stjepan Picek",
+            "orcid": "0000-0001-7509-4337"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Twente",
+                    "ror": "https://ror.org/006hf6230"
+                }
+            ],
+            "fullName": "Luca Mariot",
+            "orcid": "0000-0003-3089-6517"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-17T09:52:09Z"
+        }
+    ],
+    "keywords": [
+        "side-channel analysis",
+        "deep learning",
+        "evolutionary algorithms",
+        "neuroevolution",
+        "grammatical evolution"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/698.pdf",
+    "pid": "698",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Mind the Grammar: Side-Channel Analysis driven by Grammatical Evolution",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_fixed_key",
+        "https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_fixed_key",
+        "https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_variable_key",
+        "https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_variable_key",
+        "https://gitlab.com/eshard/nucleo_sw_aes_masked_shuffled"
+    ]
+}
+,
+{
+    "abstract": "This document is a preliminary version of what is intended to be submitted to NIST by Zama as part of their threshold call. The document also serves as partial documentation of the protocols used in the Zama MPC system for threshold TFHE.\r\n\r\nHowever, note that the Zama software includes many optimizations built on top of the simple specifications given here. In particular the TFHE parameters given here are larger than those used by the Zama software. This is because the Zama TFHE library contains optimizations which are beyond the scope of this document. Thus the parameters given in this document are compatible with the description of TFHE given here, and take no account of the extra optimizations in the Zama software.\r\n\r\nAlso note that we describe more protocols than that provided in the Zama software. In particular this document describes BGV and BFV threshold implementations, MPC-in-the-Head based proofs of correct encryption.\r\n\r\nWe present mechanisms to perform robust threshold key generation and decryption for Fully Homomorphic Encryption schemes such as BGV, BFV and TFHE, in the case of super honest majority, t < n/3, or t < n/4, in the presence of malicious adversaries.\r\n\r\nThe main mechanism for threshold decryptions follow the noise flooding principle, which we argue is sufficient for BGV and BFV. For TFHE a more subtle technique is needed to apply noise flooding, since TFHE parameters are small. To deal with all three FHE scheme, and obtain a unified framework for all such schemes, we are led to consider secret sharing over Galois Rings and not just finite fields.\r\n\r\nWe consider two sets of threshold profiles, depending on whether binomial(n,t) is big or small. In the small case we obtain for all schemes an asynchronous protocol for robust threshold decryption, and we obtain a robust synchronous protocol for threshold key generation; both with t < n/3. For the large case we only support TFHE, and our protocols require an \u201coffline phase\u201d which requires synchronous networks and can \u201conly\u201d tolerate t < n/4.\r\n\r\nThe threshold key generation operation, and the above mentioned offline phase, require access to a generic offline MPC functionality over arbitrary Galois Rings. This functionality is fully specified here. Finally, we present Zero-Knowledge proof techniques for proving the valid encryption of an FHE ciphertext. These proofs are important in a number of application contexts.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Carl Bootland",
+            "orcid": "0000-0002-8390-3410"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Kelong Cong",
+            "orcid": "0000-0002-2636-4406"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Daniel Demmler",
+            "orcid": "0000-0001-6334-6277"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Tore Kasper Frederiksen",
+            "orcid": "0000-0002-0358-2638"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Benoit Libert"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Jean-Baptiste Orfila",
+            "orcid": "0009-0001-4526-0434"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Gateway"
+                }
+            ],
+            "fullName": "Dragos Rotaru",
+            "orcid": "0000-0002-1767-3725"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                },
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Nigel P. Smart",
+            "orcid": "0000-0003-3567-3304"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Titouan Tanguy",
+            "orcid": "0000-0002-7965-620X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Samuel Tap",
+            "orcid": "0009-0003-1778-5297"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zama",
+                    "ror": "https://ror.org/0036vvb62"
+                }
+            ],
+            "fullName": "Michael Walter",
+            "orcid": "0000-0003-3186-2482"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-17T10:27:36Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/699.pdf",
+    "pid": "699",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Threshold (Fully) Homomorphic Encryption",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zama-ai/tfhe-rs-handbook/blob/main/tfhe-rs-handbook.pdf",
+        "https://github.com/zama-ai/tfhe-rs-handbook/blob/main/tfhe-rs-handbook.pdf"
+    ]
+}
+,
+{
+    "abstract": "The major Fully Homomorphic Encryption (FHE) schemes guarantee the privacy of the encrypted message only in the honest-but-curious setting, when the server follows the protocol without deviating. However, various attacks in the literature show that an actively malicious server can recover sensitive information by executing incorrect functions, tampering with ciphertexts, or observing the client\u2019s reaction during decryption.\r\n\r\nExisting integrity solutions for FHE schemes either fail to guarantee circuit privacy, exposing the server's computations to the client, or introduce significant computational overhead on the prover by requiring proofs of FHE operations on ciphertexts.\r\n\r\nIn this work, we present Fherret, a novel scheme leveraging the MPC-in-the-Head (MPCitH) paradigm to provide a proof of correct-and-honest homomorphic evaluation while preserving circuit privacy. This proof guarantees that the client can safely decrypt the ciphertext obtained from the server without being susceptible to reaction-based attacks, such as verification and decryption oracle attacks. Additionally, this proof guarantees that the server\u2019s evaluation maintains correctness, thereby protecting the client from $\\mathsf{IND}\\text{-}\\mathsf{CPA}^{\\mathsf{D}}$-style attacks.\r\n\r\nOur solution achieves a prover overhead of $4\\lambda$ homomorphic evaluations of random functions from the function space $\\mathcal{F}$, while retaining a competitive verifier overhead of $2 \\lambda$ homomorphic evaluations and a communication size proportional to $\\sqrt{2\\lambda}$ times the size of a function from $\\mathcal{F}$. \r\n\r\nFurthermore, Fherret is inherently parallelizable, achieving a parallel computation overhead similar to a homomorphic evaluation of a random function from $\\mathcal{F}$ for both the prover and the verifier.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security, Saarland University"
+                }
+            ],
+            "fullName": "Janik Huth",
+            "orcid": "0009-0009-1052-0353"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security"
+                }
+            ],
+            "fullName": "Antoine Joux",
+            "orcid": "0000-0003-2682-6508"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security, Saarland University"
+                }
+            ],
+            "fullName": "Giacomo Santato",
+            "orcid": "0009-0006-8870-6949"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-17T12:15:18Z"
+        }
+    ],
+    "keywords": [
+        "Fully Homomorphic Encryption",
+        "Reaction-Based attacks",
+        "MPC-in-the-Head"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/700.pdf",
+    "pid": "700",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fherret: Proof of FHE Correct-and-Honest Evaluation with Circuit Privacy from MPCitH",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
