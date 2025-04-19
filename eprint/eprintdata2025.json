@@ -50179,4 +50179,333 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Searchable encryption (SE) enables privacy-preserving keyword search on encrypted data. Public-key SE (PKSE) supports multi-user searches but suffers from high search latency due to expensive public-key operations. Symmetric SE (SSE) offers a sublinear search but is mainly limited to single-user settings. Recently, hybrid SE (HSE) has combined SSE and PKSE to achieve the best of both worlds, including multi-writer encrypted search functionalities, forward privacy, and sublinear search with respect to database size. Despite its advantages, HSE inherits critical security limitations, such as susceptibility to dictionary attacks, and still incurs significant overhead for search access control verification, requiring costly public-key operation invocations (i.e., pairing) across all authorized keywords. Additionally, its search access control component must be rebuilt periodically for forward privacy, imposing substantial writer overhead.   \r\nIn this paper, we propose Hermes, a new HSE scheme that addresses the aforementioned security issues in prior HSE designs while maintaining minimal search complexity and user efficiency at the same time. Hermes enables multi-writer encrypted search functionalities and offers forward privacy along with resilience to dictionary attacks. To achieve this, we develop a new identity-based encryption scheme with hidden identity and key-aggregate properties, which could be of independent interest. We also design novel partitioning and epoch encoding techniques in Hermes to minimize search complexity and offer low user overhead in maintaining forward privacy. We conducted intensive experiments to assess and compare the performance of Hermes and its counterpart on commodity hardware. Experimental results showed that Hermes performs search one to two orders of magnitude faster than the state-of-the-art HSE while offering stronger security guarantees to prevent dictionary and injection attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Virginia Tech",
+                    "ror": "https://ror.org/02smfhw86"
+                }
+            ],
+            "fullName": "Tung Le",
+            "orcid": "0009-0004-6664-0016"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Virginia Tech",
+                    "ror": "https://ror.org/02smfhw86"
+                }
+            ],
+            "fullName": "Thang Hoang",
+            "orcid": "0000-0003-2229-3863"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-17T20:09:07Z"
+        }
+    ],
+    "keywords": [
+        "privacy-enhancing technologies",
+        "data privacy",
+        "encrypted search"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/701.pdf",
+    "pid": "701",
+    "pubtype": {
+        "note": "IEEE S&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Hermes: Efficient and Secure Multi-Writer Encrypted Database",
+    "year": 2025,
+    "repo": [
+        "https://github.com/vt-asaplab/Hermes",
+        "https://github.com/vt-asaplab/Hermes",
+        "https://github.com/vt-asaplab/Hermes",
+        "https://github.com/zeromq/libzmq",
+        "https://github.com/zeromq/libzmq",
+        "https://github.com/jonneff/Diabetes2/",
+        "https://github.com/jonneff/Diabetes2/",
+        "https://github.com/IoTsec/Room-Climate-Datasets/",
+        "https://github.com/IoTsec/Room-Climate-Datasets/"
+    ]
+}
+,
+{
+    "abstract": "We present concrete techniques for adapting the protocols of Mohassel et al (CCS 2020) and  Badrinarayanan et al (CCS 2022)\r\nfor compute SQL-like querying operations on secret shared database tables  to the two party setting. The afore mentioned protocols are presented in a generic setting with access to certain idealized functionalities, e.g. secret shared permutations. However, they only instantiate their protocols in the honest majority three party setting due to other settings being considered too inefficient. We show that this is no longer the case. In particular, the recent work of Peceny et al. (eprint 2024) gives a concretely efficient two party permutation protocol. Additionally, we give a new and highly efficient protocol for evaluating the strong PRF recently proposed by Alamati et al. (Crypto 2024). Building on these advancements, along with a variety of protocol improvements and significant cryptographic engineering, our open source implementation demonstrate concretely efficient two party SQL-like querying functionality on secret shared data.\r\n\r\nWe focus on the two party setting with secret shared input and output tables. The first protocol $\\Pi_\\textsf{Join-OO}$ is designed for the setting where the join keys are unique, similar to Private Set Intersection (PSI) except that the inputs and output are secret shared. This protocol is constant round and $O(n)$ running time. The secret protocol $\\Pi_\\textsf{Join-OM}$ allows one of the tables to contain repeating join keys. Our instantiations achieves $O(n\\log n)$ running time and $O(\\log n)$ rounds of interaction.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Srinivasan Raghuraman"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Peter Rindal"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Harshal Shah"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-18T01:09:09Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/702.pdf",
+    "pid": "702",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Two Party Secret Shared Joins",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Federated Learning (FL) allows clients to engage in learning without revealing their raw data. However, traditional FL focuses on developing a single global model for all clients, limiting their ability to have personalized models tailored to their specific needs. Personalized FL (PFL) enables clients to obtain their customized models, either with or without a central party.  Current PFL research includes mechanisms to detect poisoning attacks, in which a couple of malicious nodes try to manipulate training convergence by submitting misleading data. However, these detection approaches often overlook privacy concerns, as they require clients to share their models with all other clients.\r\nThis paper extends BALANCE, a personalized poisoning detection mechanism based on client models and their expectations. Our method enhances both security and privacy by ensuring clients are not required to share their model data with other clients. By leveraging server-assisted PFL and Fully Homomorphic Encryption (FHE), we enable a central party to identify unpoisoned clients from the perspective of individual clients and train personalized models securely. Additionally, we introduce an efficient personalized client selection algorithm that prevents redundant checks and ensures the inheritance of unpoisoned clients.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, Department of Electrical Engineering, KU Leuven, 3001 Leuven, Belgium"
+                }
+            ],
+            "fullName": "Alireza Aghabagherloo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, Department of Electrical Engineering, KU Leuven, 3001 Leuven, Belgium"
+                }
+            ],
+            "fullName": "Roozbeh Sarenche"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Barkhausen Institut, Dresden, Germany"
+                }
+            ],
+            "fullName": "Maryam Zarezadeh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, Department of Electrical Engineering, KU Leuven, 3001 Leuven, Belgium"
+                }
+            ],
+            "fullName": "Bart Preneel"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Barkhausen Institut, Dresden, Germany"
+                }
+            ],
+            "fullName": "Stefan K\u00f6psell"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-18T03:38:22Z"
+        }
+    ],
+    "keywords": [
+        "Personalized Federated Learning",
+        "Deep Learning",
+        "Homomorphic Encryption",
+        "Poisoning Attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/703.pdf",
+    "pid": "703",
+    "pubtype": {
+        "note": "This paper has been accepted to DLSP 2025 (IEEE S&P Workshop) as a non-archival paper, and the camera-ready version is forthcoming.",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Priv-PFL: A Privacy-Preserving and Efficient Personalized Federated Learning Approach",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Proxy re-encryption (PRE) schemes allow a delegator to designate a proxy to re-encrypt its ciphertext into a ciphertext that the delegatee can decrypt. In contrast, the proxy gains nothing helpful from this transformation. This decryption-power transfer is proper in applications of encrypted email forwarding, key escrow, and publish/subscribe systems.\r\n\r\nThe security notions for PRE are inherited from the standard public key encryption (PKE) schemes, i.e., indistinguishability under chosen-plaintext attacks (CPA) and security under chosen-ciphertext attacks (CCA). A recently popular notion, indistinguishability under honest re-encryption attacks (HRA), was proposed by Cohen in 2019, indicating that CPA security is insufficient for PRE because some CPA-secure PRE leaks the secret key of the delegator. Many post-quantum secure PRE schemes have recently been designed under the HRA security model.\r\n\r\nHowever, HRA security differs from traditional CCA security, and there is no known reduction between them. The existing results show they appear to be incompatible. This paper aims to bridge those two security notions via reductions. In addition, we found that many existing HRA-secure schemes are vulnerable to collusion. We provide a generic transformation from a CPA-secure PRE to a collusion-resistant and CPA-secure PRE. This transformation also applies to HRA-secure PREs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Advanced Technology, Xi'an Jiaotong-Liverpool University, Suzhou, 215123, China"
+                }
+            ],
+            "fullName": "Haotian Yin",
+            "orcid": "0000-0002-5088-6116"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Advanced Technology, Xi'an Jiaotong-Liverpool University, Suzhou, 215123, China"
+                }
+            ],
+            "fullName": "Jie Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Advanced Technology, Xi'an Jiaotong-Liverpool University, Suzhou, 215123, China"
+                }
+            ],
+            "fullName": "Wanxin Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Internet of Things, Xi'an Jiaotong-Liverpool University, Suzhou, 215400, China"
+                }
+            ],
+            "fullName": "Yuji Dong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Advanced Technology, Xi'an Jiaotong-Liverpool University, Suzhou, 215123, China"
+                }
+            ],
+            "fullName": "Eng Gee Lim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Computer Science, University of Liverpool, Liverpool, L69 3BX, UK"
+                }
+            ],
+            "fullName": "Dominik Wojtczak"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-18T07:15:17Z"
+        }
+    ],
+    "keywords": [
+        "Proxy re-encryption",
+        "Honest re-encryption attack",
+        "Collusion resistance"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/704.pdf",
+    "pid": "704",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Reducing Honest Re-Encryption Attack to Chosen Ciphertext Attack",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The security of the Elliptic Curve Digital Signature Algorithm (ECDSA) depends on the uniqueness and secrecy of the nonce, which is used in each signature. While it is well understood that nonce $k$ reuse across two distinct messages can leak the private key, we show that even if a distinct value is used for $k_2$, where an affine relationship exists in the form of: \\(k_m = a \\cdot k_n + b\\), we can also recover the private key. Our method requires only two signatures (even over the same message) and relies purely on algebra, with no need for lattice reduction or brute-force search(if the relationship, or offset, is known). To our knowledge, this is the first closed-form derivation of the ECDSA private key from only two signatures over the same message, under a known affine relationship between nonces.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "Jamie Gilchrist",
+            "orcid": "0009-0008-0649-4263"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "William J Buchanan",
+            "orcid": "0000-0003-0809-3523"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Keir Finlow-Bates",
+            "orcid": "0009-0004-8308-615X"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-18T15:02:16Z"
+        }
+    ],
+    "keywords": [
+        "ECDSA",
+        "nonce reuse",
+        "affinely related nonce"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/705.pdf",
+    "pid": "705",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Breaking ECDSA with Two Affinely Related Nonces",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
