@@ -50508,4 +50508,341 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "This paper examines how quantum computing enhances the encryption system. It studies the relationship between cryptography and quantum physics. The paper considers the historical progression of encryption techniques paying attention to the altering nature of security challenges. Moreover, it analyzes the basic principles of quantum computing, describing its theoretical concept and its advantages over classical systems in terms of potential performance. Also, it focuses on an in-depth analysis of Grovers\u2019 Algorithm showing its unique searching capability and its implications for encryption schemes. The paper also reviews the limitations of Grover\u2019s Algorithm that could make it vulnerable to attacks and how to make it safer. Also, the methods of quantum computing that create strong encryption are briefly outlined. Overall, in the quest for secure systems of communication in the era of quantum, the paper aims at the futuristic paradigm shift by considering the emergence of Quantum-Powered Encryption Systems. It answers key questions about this subject through both, qualitative and quantitative analysis. The provided scientific report supplements the existing body of knowledge about the relationship between quantum computers and encryption systems and sets the foundation for better and more secure encryption for the digital world.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University College of Engineering  Punjabi University"
+                }
+            ],
+            "fullName": "Aashika Khanal",
+            "orcid": "0009-0008-2777-1995"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Punjabi University"
+                }
+            ],
+            "fullName": "Navjot Kaur"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-18T15:54:26Z"
+        }
+    ],
+    "keywords": [
+        "Quantum safe transition",
+        "post quantum cryptography",
+        "quantum resistant",
+        "key distribution",
+        "information infrastructures",
+        "Grover's algorithm",
+        "Qiskit"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "note": "Main author: Aashika Khanal\r\nCo-author: Navjot Kaur",
+    "pdffile": "2025/706.pdf",
+    "pid": "706",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Role of Quantum Computing in Enhancing Encryption Security: A Review",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Qiskit/textbook/blob/main/notebooks/ch-algorithms/grover.ipynb",
+        "https://github.com/Qiskit/textbook/blob/main/notebooks/ch-algorithms/grover.ipynb"
+    ]
+}
+,
+{
+    "abstract": "Some of our current public key methods use a trap door to implement digital signature methods. This includes the RSA method, which uses Fermat's little theorem to support the creation and verification of a digital signature. The problem with a back-door is that the actual trap-door method could, in the end, be discovered. With the rise of PQC (Post Quantum Cryptography), we will see a range of methods that will not use trap doors and provide stronger proof of security. In this case, we use hash-based signatures (as used with SPHINCS+) and Fiat Shamir signatures using Zero Knowledge Proofs (as used with Dilithium).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "William J Buchanan",
+            "orcid": "0000-0003-0809-3523"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-18T18:13:07Z"
+        }
+    ],
+    "keywords": [
+        "SPHINCS+",
+        "Hash-based Signature",
+        "Zero Knowledge Proof",
+        "Fiat-Shamir",
+        "Schnorr Identity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/707.pdf",
+    "pid": "707",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Post Quantum Cryptography (PQC) Signatures Without Trapdoors",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Sampling a non degenerate (that is, invertible) square matrix over a finite field is easy, draw a random square matrix and discard if the determinant is zero. We address the problem in higher dimensions, and sample non degenerate boundary format tensors, which generalise square matrices. Testing degeneracy is conjectured to be hard in more than two dimensions, precluding the \"draw a random tensor and discard if degenerate'' recipe. The difficulty is in computing hyperdeterminants, higher dimensional analogues of determinants. Instead, we start with a structured random non degenerate tensor and scramble it by infusing more randomness while still preserving non degeneracy. We propose two kinds of scrambling. The first is  multiplication in each dimension by random invertible matrices, which preserves dimension and format. Assuming pseudo randomness of this action, which also underlies tensor isomorphism based cryptography, our samples are computationally indistinguishable from uniform non degenerate tensors. The second scrambling employs tensor convolution (that generalises multiplication by matrices) and can increase dimension. Inspired by hyperdeterminant multiplicativity, we devise a recursive sampler that uses tensor convolution to reduce the problem from arbitrary to three dimensions.\r\n\r\nOur sampling is a candidate solution for drawing public keys in tensor isomorphism based cryptography, since non degenerate tensors elude recent weak key attacks targeting public key tensors either containing geometric structures such as \"triangles\" or being deficient in tensor rank. To accommodate our sampling, tensor isomorphism based schemes need to be instantiated in boundary formats such as (2k+1) x (k+1) x (k+1), away from the more familiar k x k x k cubic formats. Our sampling (along with the recent tensor trapdoor one-way functions) makes an enticing case to transition tensor isomorphism cryptography to boundary formats tensors, which are true analogues of square matrices.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "SandboxAQ"
+                }
+            ],
+            "fullName": "Anand Kumar Narayanan",
+            "orcid": "0000-0002-0106-030X"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-18T20:19:05Z"
+        }
+    ],
+    "keywords": [
+        "post-quantum cryptography",
+        "tensors",
+        "finite fields"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/708.pdf",
+    "pid": "708",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Strong keys for tensor isomorphism cryptography",
+    "year": 2025,
+    "repo": [
+        "https://pqcalteq.github.io/ALTEQ_spec_2023.09.18.pdf"
+    ]
+}
+,
+{
+    "abstract": "We present Bitcoin Thunderbolt, a novel off-chain protocol for asynchronous, secure transfer of Bitcoin UTXOs between uncoordinated users. Unlike prior solutions such as payment channels or the Lightning Network, Bitcoin Thunderbolt requires no prior trust, direct interaction, or continuous connectivity between sender and receiver. At its core, Bitcoin Thunderbolt employs a Byzantine fault-tolerant committee to manage threshold Schnorr signatures, enabling secure ownership delegation and on-chain finalization.\r\n\r\nOur design supports recursive, off-chain UTXO transfers using tweakable, verifiable signature components. The protocol tolerates up to $f$ malicious nodes in a $3f+1$ committee and ensures correctness, consistency, and one-time spendability under asynchronous network conditions.\r\n\r\nWe formally verify Bitcoin Thunderbolt\u2019s key security properties, namely, unforgeability, ownership soundness, and liveness\u2014using the Tamarin prover. Our results demonstrate that Thunderbolt provides robust, scalable, and non-interactive off-chain Bitcoin transfers, significantly expanding the practical utility of Bitcoin for decentralized applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                },
+                {
+                    "name": "Nubit"
+                }
+            ],
+            "fullName": "Hongbo Wen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                },
+                {
+                    "name": "Nubit"
+                }
+            ],
+            "fullName": "Hanzhi Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                },
+                {
+                    "name": "Nubit"
+                }
+            ],
+            "fullName": "Jingyu Ke"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                },
+                {
+                    "name": "Nubit"
+                }
+            ],
+            "fullName": "Yanju Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                }
+            ],
+            "fullName": "Dahlia Malkhi",
+            "orcid": "0000-0002-7038-7250"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                },
+                {
+                    "name": "Nubit"
+                }
+            ],
+            "fullName": "Yu Feng"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-19T01:09:05Z"
+        }
+    ],
+    "keywords": [
+        "blockchain",
+        "Bitcoin",
+        "adaptor signatures",
+        "formal verification"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/709.pdf",
+    "pid": "709",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Thunderbolt: A Formally Verified Protocol for Off-Chain Bitcoin Transfers",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Dependence on online infrastructure is rapidly growing as services like online payments and insurance replace traditional options, while others, like social networks, offer new capabilities. \r\nThe centralized service operators wield unilateral authority over user conflicts, content moderation, and access to essential services.\r\nIn the context of payments, blockchains provide a decentralized alternative. \r\nThey also enable decentralized execution of stateful programs called smart contracts. \r\nBut those lack the contextual understanding and interpretative capabilities that would enable reasoning about complex scenarios.\r\nAdvancements in machine learning (ML) are raising interest in actually-smart contracts, but blockchain computation constraints prohibit direct ML inference execution.\r\nWhile many projects deploy computation delegation mechanisms, they lack Turing-completeness, prohibit parallel computation, or suffer from high overhead.\r\n\r\nWe present Arbigraph, a blockchain-based execution delegation protocol.\r\nLike previous optimistic solutions, the parties submit their computation results, allowing a smart contract to arbitrate in case of dispute.\r\nBut Arbigraph employs a novel dual-graph data structure and takes advantage of the nature of the dispute process to achieve Turing completeness, constant-time memory access, and parallel execution.\r\nWe formalize the problem and show that Arbigraph guarantees completeness, soundness, and progress. \r\nExperiments on LLM inference as well as matrix multiplication, which is at the core of ML inference, demonstrate that parallelization speedup grows linearly with matrix dimensions. \r\nWe demonstrate Arbigraph's practical cost with a deployment on the Avalanche blockchain. \r\nArbigraph thus enables decentralized, context-aware decision-making and unlocks unprecedented use cases for blockchains.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                }
+            ],
+            "fullName": "Michael Mirkin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Peking University",
+                    "ror": "https://ror.org/02v51f717"
+                }
+            ],
+            "fullName": "Hongyin Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                }
+            ],
+            "fullName": "Ohad Eitan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                }
+            ],
+            "fullName": "Gal Granot"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                }
+            ],
+            "fullName": "Ittay Eyal"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-19T10:30:39Z"
+        }
+    ],
+    "keywords": [
+        "Blockchain",
+        "Optimistic Rollups",
+        "LLMs",
+        "Large Language Models"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/710.pdf",
+    "pid": "710",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Arbigraph: Verifiable Turing-Complete Execution Delegation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/karpathy/llama2.c",
+        "https://github.com/karpathy/llama2.c"
+    ]
+}
 ]
