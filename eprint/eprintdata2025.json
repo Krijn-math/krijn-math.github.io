@@ -51429,4 +51429,730 @@
         "https://github.com/AztecProtocol/AZTEC"
     ]
 }
+,
+{
+    "abstract": "We show that concrete hardness assumptions about learning or cloning the output state of a random quantum circuit can be used as the foundation for secure quantum cryptography. In particular, under these assumptions we construct secure one-way state generators (OWSGs), digital signature schemes, quantum bit commitments, and private key encryption schemes. We also discuss evidence for these hardness assumptions by analyzing the best-known quantum learning algorithms, as well as proving black-box lower bounds for cloning and learning given state preparation oracles.\r\n\r\nOur random circuit-based constructions provide concrete instantiations of quantum cryptographic primitives whose security do not depend on the existence of one-way functions. The use of random circuits in our constructions also opens the door to NISQ-friendly quantum cryptography. We discuss noise tolerant versions of our OWSG and digital signature constructions which can potentially be implementable on noisy quantum computers connected by a quantum network. On the other hand, they are still secure against noiseless quantum adversaries, raising the intriguing possibility of a useful implementation of an end-to-end cryptographic protocol on near-term quantum computers. Finally, our explorations suggest that the rich interconnections between learning theory and cryptography in classical theoretical computer science also extend to the quantum setting.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Chicago",
+                    "ror": "https://ror.org/024mw5h28"
+                }
+            ],
+            "fullName": "Bill Fefferman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Chicago",
+                    "ror": "https://ror.org/024mw5h28"
+                }
+            ],
+            "fullName": "Soumik Ghosh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Makrand Sinha"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Henry Yuen"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-22T00:18:17Z"
+        }
+    ],
+    "keywords": [
+        "quantum cryptography",
+        "NISQ-friendly cryptography",
+        "cryptography from quantum advantage"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/718.pdf",
+    "pid": "718",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Hardness of Learning Quantum Circuits and its Cryptographic Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Verifiable computation over encrypted data is gaining increasing attention, and using SNARKs to provide proofs for FHE operations has emerged as a promising approach. However, the mismatch between FHE's typically small prime fields and SNARKs' larger field requirements creates verifiable FHE challenges. In this work, we construct a packed sumcheck algorithm specifically designed for small fields. This approach leverages folding and repetition techniques to maintain security without field expansion, with all operations performed on the base domain. For a domain $\\mathbb{F}_p$ requiring $k$-fold expansion, our sumcheck protocol operates with $(\\log k + l)$ variables, where each sumcheck statement consists of $d$ multiplied multilinear polynomial statements. The prover can complete the computation in $O(kd^2 + k^{1.807}d) \\cdot 2^l$ modular multiplications over $\\mathbb{F}_p$.\r\n\r\nBy exploiting the highly repetitive computational structure in bit-wise FHE bootstrapping operations, we decompose the process into a series of vector operations. Building upon the packed sumcheck technique along with the Brakedown (CRYPTO 2023) and Binius (EUROCRYPT 2025) commitment schemes, we construct an efficient proof system for these vector operations, ultimately yielding a proof system for bit-wise FHE. Our system achieves linear prover time while performing all computations on the base field, resulting in significant improvements in prover efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Information Security, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Yuanju Wei"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Kaixuan Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Information Security, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Binwu Xiang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Information Security, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Xinxuan Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Information Security, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Yi Deng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Hailong Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Information Security, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Xudong Zhu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-22T08:32:29Z"
+        }
+    ],
+    "keywords": [
+        "SNARKs",
+        "sumcheck",
+        "verifiable FHE."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/719.pdf",
+    "pid": "719",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Packed Sumcheck over Fields of Small Characteristic with Application to Verifiable FHE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The large key size for fully homomorphic encryption (FHE) requires substantial costs to generate and transmit the keys. This has been problematic for FHE clients who want to delegate the computation, as they often have limited power. A recent work, Lee-Lee-Kim-No [Asiacrypt 2023], partly solved this problem by suggesting a hierarchical key management system. However, the overall key size was still several gigabytes for real-world applications, and it is barely satisfactory for mobile phones and IoT devices. \r\n\r\nIn this work, we propose new key management systems, KG+ and BTS+, which reduce the client's cost for FHE on top of Lee-Lee-Kim-No. The KG+system significantly reduces the key size without any compromise in the efficiency of homomorphic computation compared to Lee-Lee-Kim-No. The BTS+ system further reduces the key size, while it compromises only the granularity of the homomorphic computation.\r\n\r\nIn our new systems, the client generates and sends ``transmission keys'' with size-optimal parameters, and the server generates ``evaluation keys'' with computation-optimal parameters. For this purpose, we introduce a new ring-switching technique for keys to bridge keys with different parameters. \r\nUsing the new ring-switching technique, a client can transmit the transmission keys in extension rings that can generate FHE keys in the computation-efficient subring. By decoupling the rings of FHE keys during transmission and computation, we significantly reduce the communication cost for transferring FHE keys. \r\n\r\nWe provide concrete CKKS FHE parameters that the client's keys are $325$--$609$ MB and $285$ MB, by using KG+ and BTS+, respectively. Note that all parameters generate keys for CKKS with ring degree $2^{16}$, which is a conventional choice for CKKS applications to privacy-preserving machine learning. These are $3.09$--$4.37$ and $3.51$--$9.30$ times lower than Lee-Lee-Kim-No, respectively. For real-world applications, the server requires more evaluation keys for faster homomorphic computation. For the secure ResNet-20 inference, the parameters for KG+ and BTS+ result in client key sizes of $325$--$609$ MB and $285$ MB, respectively. These are $3.95$--$5.73\\times$ and $4.53$--$12.25\\times$ smaller than Lee-Lee-Kim-No.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                },
+                {
+                    "name": "CryptoLab Inc."
+                }
+            ],
+            "fullName": "Jung Hee Cheon",
+            "orcid": "0000-0002-7085-2220"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Minsik Kang",
+            "orcid": "0009-0000-2125-5043"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoLab Inc."
+                }
+            ],
+            "fullName": "Jai Hyun Park",
+            "orcid": "0000-0002-5401-8949"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-22T10:17:24Z"
+        }
+    ],
+    "keywords": [
+        "CKKS",
+        "Homomorphic Encryption",
+        "Transmission Key Size",
+        "Hierarchical Rotation Key"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/720.pdf",
+    "pid": "720",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Towards Lightweight CKKS: On Client Cost Efficiency",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Scloud$^{+}$ is a next-generation post-quantum key encapsulation mechanism that combines unstructured-LWE and a ternary key encoding technique to achieve efficient lattice cryptographic operations while eliminating traditional ring structure constraints. Despite its rigorously formalized theoretical security, its practical deployment faces side-channel threats, notably Correlation Power Analysis (CPA) attacks. This paper systematically investigates the physical security of its core ciphertext-key matrix multiplication module by proposing a CPA framework that integrates instruction-level timing analysis. A SoST (Sum of Squared T-values) model, inspired by multi-group Welch's t-test, is used to analyze the Hamming weight leakage during ciphertext loading. At the same time, dynamic sampling windows, combined with processor pipeline modeling, are employed to pinpoint critical leakage intervals. Exploiting the characteristics of ternary keys, an iterative recovery strategy is devised: following a predefined scan order, the candidate set $\\{-1, 0, 1\\}$ and partial intermediate sums are used to construct a Hamming weight model for hypothesized leakage vectors. Pearson correlation analysis and trace-count stabilization are applied within each dynamic sampling window to determine the optimal estimate for each key element. Experiments targeting 4800 key elements, illustrated through a detailed analysis of the first 32 elements, demonstrate a 100% recovery accuracy with no more than 15 traces per element, indicating high efficiency and stability that can extend to the full key reconstruction. To thwart such CPA attacks, we have further designed and implemented a first\u2010order arithmetic masking countermeasure that splits the original ternary secret key into two subkeys, thereby expanding the attacker's key hypothesis space from $\\{-1, 0, 1\\}$ to $\\{0, \\ldots, 4095\\}^2$ and significantly enhancing side\u2010channel resilience. Our results demonstrate that Scloud$^{+}$ remains vulnerable to side\u2010channel exploits at the implementation level, highlighting the urgent need to integrate appropriate protections into its standardization process.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Hangyu Bai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Fan Huang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Xiaolin Duan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Honggang Hu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-23T09:56:38Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-22T16:24:37Z"
+        }
+    ],
+    "keywords": [
+        "side channel attack",
+        "correlation power analysis",
+        "post-quantum cryptography",
+        "Scloud\u207a"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/721.pdf",
+    "pid": "721",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Key Recovery via Correlation Power Analysis on Scloud\u207a",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Threshold zero-knowledge protocols have not been widely adopted,\r\npresumably due to the relevant network overhead,\r\ncomplicated certification processes\r\nand thus limited interoperability chances.\r\nIn this work, we propose $\\mathsf{OSST}$,\r\na Schnorr-based threshold identification scheme\r\nthat is both non-interactive and non-reliant on the public shares.\r\nGiven a $(n, t)$-shared secret $x$,\r\nthe proposed protocol allows\r\nany $t^* \\ge t$ (but no less) shareholders to collectively prove\r\nthat their secret keys combine to $x$ in the sense of interpolation\r\nwithout revealing any information beyond that.\r\nOn the one side, the provers do not need to engage in\r\nmulti-party computations,\r\nsending their packets to the verifier asynchronously.\r\nOn the other side, the verification operation\r\ninvolves the combined public key $y \\equiv g ^ x$ alone,\r\nmeaning that the verifier does not need to\r\nhave validated and registered the individual member identities.\r\nThe protocol\r\ncan be cheaply adopted in permissionless and dynamic environments,\r\nwhere no certification processes or infrastructure support\r\nare available, and be easily integrated\r\nwith existing verifiers by means of pure software extension.\r\nNo publicly trusted setup is required beyond\r\nthe assumption that $x$ has been\r\ndistributed by means of Shamir's secret sharing\r\n(or equivalent distribution scheme)\r\nand that the public counterpart has been advertised correctly;\r\nin particular, the protocol is intended to be\r\nsecure against impersonation attacks\r\nin the plain public-key model.\r\nWe provide evidence that this has good chances to\r\nhold true by giving a formal security proof\r\nin the random oracle model under the\r\none-more discrete-logarithm hardness\r\n($\\mathsf{OMDL}$) assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "GRNET",
+                    "ror": "https://ror.org/05tcasm11"
+                }
+            ],
+            "fullName": "Foteinos Mergoupis-Anagnou"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-22T21:06:18Z"
+        }
+    ],
+    "keywords": [
+        "threshold",
+        "Schnorr",
+        "identification",
+        "Shamir",
+        "public-key cryptography",
+        "discrete logarithm"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/722.pdf",
+    "pid": "722",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "One-Step Schnorr Threshold Identification",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Truncation of cryptographic outputs is a technique that was recently introduced  in Baldimtsi et al. [BCCK22]. The general idea is to try out many inputs to some cryptographic algorithm until the output (e.g. a public-key or some hash value) falls into some sparse set and thus can be compressed: by trying out an expected $2^k$ different inputs one will find an output that starts with $k$ zeros.\r\n\r\nUsing such truncation one can for example save substantial gas fees on Blockchains where storing values is very expensive. While [BCCK22] show that truncation preserves the security of the underlying primitive, they only consider a setting without preprocessing. In this work we show that lower bounds on the time-space tradeoff for inverting random functions and permutations also hold with truncation, except for parameters ranges where the bound fails to hold for ''trivial'' reasons.\r\n\r\nConcretely, it's known that any algorithm that inverts a random function or permutation with range $N$ making $T$ queries and using $S$ bits of auxiliary input must satisfy $S\\cdot T\\ge N\\log N$. \r\nThis lower bound no longer holds in the truncated setting where one must only invert a challenge from a range of size $N/2^k$, as now one can simply save the replies to all \r\n$N/2^k$ challenges, which requires $S=\\log N\\cdot N /2^k$ bits and allows to invert with $T=1$ query.\r\n\r\nWe show that with truncation, whenever $S$ is somewhat smaller than the $\\log N\\cdot N /2^k$ bits required to store the entire truncated function table, the known $S\\cdot T\\ge N\\log N$ lower bound applies.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science and Technology Austria",
+                    "ror": "https://ror.org/03gnh5541"
+                }
+            ],
+            "fullName": "Krzysztof Pietrzak"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Pengxiang Wang",
+            "orcid": "0009-0002-2700-8363"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-22T21:33:04Z"
+        }
+    ],
+    "keywords": [
+        "Information-theoretic cryptography",
+        "Proofs of Space",
+        "Time-Memory Trade-Offs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/723.pdf",
+    "pid": "723",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Time-Space Tradeoffs of Truncation with Preprocessing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Data markets play a pivotal role in modern industries by facilitating the exchange of data for predictive modeling, targeted marketing, and research. However, as data becomes a valuable commodity, privacy and security concerns have grown, particularly regarding the personal information of individuals. This tutorial explores privacy and security issues when integrating different data sources in data market platforms. As motivation for the importance of enforcing privacy requirements, we discuss attacks on data markets focusing on membership inference and reconstruction attacks. We also discuss security vulnerabilities in decentralized data marketplaces, including adversarial manipulations by buyers or sellers. We provide an overview of privacy and security mechanisms designed to mitigate these risks. In order to enforce the least amount of trust for buyers and sellers, we focus on distributed protocols. Finally, we conclude with opportunities for future research on understanding and mitigating privacy and security concerns in distributed data markets.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Daniel Alabi",
+            "orcid": "0000-0002-1613-6565"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cornell University",
+                    "ror": "https://ror.org/05bnh6r87"
+                }
+            ],
+            "fullName": "Sainyam Galhotra",
+            "orcid": "0000-0003-2529-4036"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Pennsylvania State University",
+                    "ror": "https://ror.org/04p491231"
+                }
+            ],
+            "fullName": "Shagufta Mehnaz",
+            "orcid": "0000-0001-5850-4568"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Pennsylvania State University",
+                    "ror": "https://ror.org/04p491231"
+                }
+            ],
+            "fullName": "Zeyu Song",
+            "orcid": "0009-0005-9760-3493"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Eugene Wu",
+            "orcid": "0000-0003-4254-6688"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-22T22:45:28Z"
+        }
+    ],
+    "keywords": [
+        "Privacy",
+        "Data Markets",
+        "Distributed Protocols"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/724.pdf",
+    "pid": "724",
+    "pubtype": {
+        "note": "SIGMOD 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Privacy and Security in Distributed Data Markets",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Side-channel analysis recovers a secret by exploiting the key-dependent characteristics of the leakages. Practical techniques, such as Distance-of-Means analysis (DoM), Kolmogorov-Smirnov analysis (KSA) and Cram\u00e9r-von Mises analysis (CvMA), provide valuable insights about the secret from the indirect perspectives of statistical moment and cumulative distribution function (CDF) respectively, circumventing the direct and costly estimation of leakage probability densities and therefore enabling wider applicability in practice. Though both the perspectives are informative, their relationships in the context of side-channel analysis remain unclear. In other words, the fundamental questions of \"which one is better?'' and ``why and under what circumstances?\" leave as open problems. In this paper, we introduce the probability-probability (PP) plot in statistics as a common framework for explaining the mathematical foundations of CDF-based techniques, which facilitates an intuitive understanding of different variant strategies. Then, inspired by the growth pattern of the PP curve, we propose a novel distinguisher based on the famous Mann-Kendall test, where measurements are managed with ordinality and nominality. This goodness-of-fit test checks whether a key-dependent binary sequence originates from a random binomial distribution, by efficiently searching potential label clusters. Finally, we explore the symmetry and dual counterpart of CDF in mathematics, introducing the quantile-quantile (QQ) plot and develop an interesting technique based on the inverse cumulative distribution function (ICDF). We present a general discussion of its bridging role, regarding detail capture as well as signal-to-noise ratio (SNR). On this basis, we establish the relationships among moment-based, ICDF-based, and CDF-based techniques, which additionally allows for bounding the security level of the CDF-based techniques using well-established metrics that are originally proposed for evaluating the traditional moment-based family. Experiments across various settings validate our theoretical findings and demonstrate the effectiveness of the two proposed distinguishers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Wuhan University",
+                    "ror": "https://ror.org/033vjfk17"
+                }
+            ],
+            "fullName": "Jiangshan Long",
+            "orcid": "0009-0007-2075-6939"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Wuhan University",
+                    "ror": "https://ror.org/033vjfk17"
+                }
+            ],
+            "fullName": "Changhai Ou",
+            "orcid": "0000-0002-2845-6232"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Wuhan University",
+                    "ror": "https://ror.org/033vjfk17"
+                }
+            ],
+            "fullName": "Yukun Cheng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Kexin Qiao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institut PolyteFan Zhangchnique de Paris",
+                    "ror": "https://ror.org/042tfbd02"
+                }
+            ],
+            "fullName": "Wei Cheng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Fan Zhang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-23T03:54:31Z"
+        }
+    ],
+    "keywords": [
+        "side-channel analysis",
+        "security evaluation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/725.pdf",
+    "pid": "725",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Side-Channel Analysis Revisited and Evaluated",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Quantum fire was recently formalized by Bostanci, Nehoran and Zhandry (STOC\u201925). This notion considers a distribution of quantum states that can be efficiently cloned, but cannot be converted into a classical string. Previously, work of Nehoran and Zhandry (ITCS\u201924) showed how to construct quantum fire relative to an inefficient unitary oracle. Later, the work of Bostanci, Nehoran, Zhandry gave a candidate construction based on group action assumptions, and proved the correctness of their scheme; however, even in the classical oracle model they only conjectured the security, and no security proof was given. \r\n\r\nIn this work, we give the first construction of public-key quantum fire relative to a classical oracle, and prove its security unconditionally. This gives the first classical oracle seperation between the two fundamental principles of quantum mechanics that are equivalent in the information-theoretic setting: no-cloning and no-telegraphing. \r\n\r\nGoing further, we introduce a stronger notion called quantum key-fire where the clonable fire states can be used to run a functionality (such as a signing or decryption key), and prove a secure construction relative to a classical oracle. As an application of this notion, we get the first public-key encryption scheme whose secret key is clonable but satisfies unbounded leakage-resilience (Cakan, Goyal, Liu-Zhang, Ribeiro [TCC\u201924]), relative to a classical oracle. Unbounded leakage-resilience is closely related to, and can be seen as a generalization of the notion of no-telegraphing. \r\n\r\nFor all of our constructions, the oracles can be made efficient (i.e. polynomial time), assuming the existence of post-quantum one-way functions",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Alper \u00c7akan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research & Carnegie Mellon University"
+                }
+            ],
+            "fullName": "Vipul Goyal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Omri Shmueli"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-23T04:03:01Z"
+        }
+    ],
+    "keywords": [
+        "quantum fire",
+        "quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/726.pdf",
+    "pid": "726",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Public-Key Quantum Fire and Key-Fire From Classical Oracles",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Confidential Computing-as-a-Service has gained significant attention in recent years, driven by rapid advances in Trusted Execution Environment (TEE) technology. Among various architectures, confidential serverless computing has emerged as a promising model. A common approach to designing confidential serverless computing involves decoupling the client workload from the initial enclave image and dynamically provisioning the workload at runtime. This enables both offloading the costly enclave bootstrapping and maintaining a fixed reference measurement for attestation. This decoupling necessitates nested attestation, where the client\u2019s workload is attested via a custom attestation module embedded in a platform-attested enclave established at boot time. The challenge in designing nested attestation, however, is to distinguish fresh enclaves from the used ones to prevent enclave reuse. Specifically, a previously used enclave may be compromised and its attestation module tampered with. If the enclave is reused for another workload, it could bypass runtime attestation, allowing unverified code to execute.\r\n\r\nIn this paper, we present a novel approach to securing nested attestation for confidential serverless computing on Intel Software Guard Extensions (Intel SGX). Unlike prior works, our approach does not rely on intra-enclave isolation techniques to sandbox the client\u2019s workload. Instead, we leverage the Key Separation and Sharing (KSS) feature of Intel SGX to track and prevent enclave reuse based on its immutable IDs. We develop a prototype system for confidential serverless computing for Python workloads, incorporating our nested attestation scheme, and present an empirical evaluation of its performance. \r\n\r\nWe believe our scheme unveils a unique yet previously overlooked role of KSS---post-compromise identification, with broader implications beyond serverless computing. As a concrete example, we demonstrate how KSS can be leveraged to implement an enclave-binding TPM on Intel SGX, which is of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Acompany Co., Ltd."
+                }
+            ],
+            "fullName": "Atsuki Momose"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Intel & Shanghai Jiao Tong University"
+                }
+            ],
+            "fullName": "Kailun Qin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Acompany Co., Ltd."
+                }
+            ],
+            "fullName": "Ao Sakurai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Intel Labs"
+                }
+            ],
+            "fullName": "Mona Vij"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-23T04:05:11Z"
+        }
+    ],
+    "keywords": [
+        "Confidential Computing",
+        "Attestation",
+        "Intel SGX"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/727.pdf",
+    "pid": "727",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Securing Nested Attestation of Confidential Serverless Computing without Intra-Enclave Isolation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
