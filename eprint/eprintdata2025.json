@@ -52155,4 +52155,380 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "SNAIL (Succinct, Non-interactive, Alon-compressed, Instant argument for Layered circuits) turns any depth-\\(d\\) arithmetic circuit into a non-interactive argument whose prover runs within  \r\n\\(1 + c(d,k,n)\\) of plain circuit execution, where  \r\n\\(c(d,k,n) = \\frac{3\\,(k+n+1)}{k\\,d + n + 1}\\).\r\nFor the representative choice \\(k = n = 4\\) and \\(24 \\le d \\le 32\\) this means only 21\u201328 % overhead.\r\n\r\nCore idea:  \r\nA constant-round zerocheck based on a difference-driven Alon decomposition compresses all \\(d\\) layers into one multivariate identity.  Fiat\u2013Shamir in the random-oracle model yields a transparent argument whose hot loop uses only field additions and multiplications (no MSMs, FFTs, or Merkle trees).\r\n\r\nCost summary: with \\(k = n = 4\\) and \\(24 \\le d \\le 32\\)\r\n\\[\r\n  T_{\\text{prov}}(S,d)=\\Bigl(1+\\frac{6.75}{d}\\Bigr)S,\\qquad\r\n  |\\pi|=(d^{2}+2d)(4d+1),\\qquad\r\n  \\varepsilon_{\\text{sound}}=\\frac{4nd}{|\\mathbb F|}.\r\n\\]\r\n\r\nA 2.6-billion-gate trace at \\(d = 32\\) is proven in \\(\\approx 40\\;\\text{ms}\\) on an RTX-4090 and verified on a smartphone in \\(< 1\\;\\text{ms}\\).\r\n\r\nWidth scalability:\r\nProof size depends only on depth, so widening to billions of parallel gates leaves the verifier unchanged\u2014ideal for ultra-wide workloads such as live-audited VM traces.\r\n\r\nSecurity:  \r\nThe six-round interactive core is statistically sound; the Fiat\u2013Shamir variant is computationally sound in the random-oracle model and needs no trusted setup.\r\n\r\nImplications: \r\nSNAIL shows that a prover can run near real-time on commodity GPUs while emitting proofs small enough for mobile light clients, enabling applications such as live-streamed provable gaming, pay-per-cycle cloud nodes, and always-on verifiable CPUs.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Ole Hylland Spjeldn\u00e6s"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-24T20:25:51Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-04-24T15:40:01Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-04-24T14:01:12Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-23T10:34:25Z"
+        }
+    ],
+    "keywords": [
+        "Zero-knowledge proofs",
+        "GKR",
+        "Interactive Proofs",
+        "verifiable computation",
+        "layered arithmetic circuits",
+        "SNARG",
+        "SNARK"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Remove unnecessary P",
+    "pdffile": "2025/728.pdf",
+    "pid": "728",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SNAIL: Verifiable Computation within 30% of Native Speed",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Private information retrieval (PIR) enables a client to retrieve data from a server while preserving the confidentiality of the client's query. When PIR is instantiated with fully homomorphic encryption (FHE), the protocol becomes non-interactive, requiring only a query-answer exchange, and it achieves asymptotically optimal communication and computation complexity. Although several FHE-based PIR protocols have been practically implemented with the desired properties, there has been little detailed comparison among them. As a result, it remains unclear which protocol is most efficient in practice with respect to various aspects such as performance and scalability.\r\n\r\n In this paper, we revisit existing protocols by categorizing them into two different structures in order to analyze the advantages and disadvantages of each class in detail, with a focus on practical implementations. Furthermore, we introduce and compare various homomorphic algorithms that can be utilized for query optimization, discussing the strengths and limitations of each. Finally, with the goal of identifying the most efficient protocol in terms of computational cost and memory usage, based on database size. Additionally, we address common misconceptions that may lead to inefficient choices in real-world deployment scenarios and offer the best solutions.\r\nConsequently, our analysis and experimental results demonstrate that the less-explored design achieves a 90% reduction in communication cost and an 8\u00d7 decrease in computational overhead compared to the other one, challenging the common misconception.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ewha Womans University",
+                    "ror": "https://ror.org/053fp5c05"
+                }
+            ],
+            "fullName": "Jaeseon Kim",
+            "orcid": "0009-0000-7357-525X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Norwegian University of Science and Technology",
+                    "ror": "https://ror.org/05xg72x27"
+                }
+            ],
+            "fullName": "Jeongeun Park",
+            "orcid": "0000-0002-0557-3540"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ewha Womans University",
+                    "ror": "https://ror.org/053fp5c05"
+                }
+            ],
+            "fullName": "Hyewon Sung",
+            "orcid": "0009-0004-2602-9431"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-23T10:54:12Z"
+        }
+    ],
+    "keywords": [
+        "Private Information Retrieval",
+        "PIR",
+        "Homomorphic Encryption",
+        "FHE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/729.pdf",
+    "pid": "729",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Private Information Retrieval based on Homomorphic Encryption, Revisited",
+    "year": 2025,
+    "repo": [
+        "https://github.com/HyewonSung/FHE-based-PIR-revisited.git",
+        "https://github.com/tfhe/experimental-tfhe/tree/master/circuit-bootstrapping"
+    ]
+}
+,
+{
+    "abstract": "Traceable ring signatures enhance ring signatures by adding an accountability layer. Specifically, if a party signs two different messages within the protocol, their identity is revealed.  Another desirable feature is $\\textit{extendability}$. In particular, $\\textit{extendable threshold}$ ring signatures (ETRS) allow to $\\textit{non-interactively}$ update already finalized signatures by enlarging the ring or the set of signers.\r\n\r\nCombining traceability and extendability in a single scheme is unexplored and would offer a new tool for privacy-preserving voting schemes in scenarios where the voters are not known in advance.\r\nIn this paper, we show how to reconcile both properties by introducing and constructing a new cryptographic primitive called Tetris.\r\nNotably, our Tetris construction simultaneously achieves strong anonymity and linear-size signatures, which is the main technical challenge in existing techniques.\r\nTo solve this challenge, we develop a new approach to traceability that leads to several conceptual and technical contributions. Among those, we introduce and construct, based on Groth-Sahai proofs, $\\textit{extendable}$ shuffle arguments that can be $\\textit{non-interactively}$ updated by several provers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute"
+                }
+            ],
+            "fullName": "Gennaro Avitabile"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sapienza University of Rome"
+                }
+            ],
+            "fullName": "Vincenzo Botta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute"
+                }
+            ],
+            "fullName": "Dario Fiore"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-23T13:04:46Z"
+        }
+    ],
+    "keywords": [
+        "Ring Signatures",
+        "Traceability",
+        "Malleable Proof Systems"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/730.pdf",
+    "pid": "730",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tetris! Traceable Extendable Threshold Ring Signatures and More",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The sponge is a cryptographic construction that turns a public permutation into a hash function. When instantiated with the Keccak permutation, the sponge forms the NIST SHA-3 standard. SHA-3 is a core component of most post-quantum public-key cryptography schemes slated for worldwide adoption.\r\n\r\nWhile one can consider many security properties for the sponge, the ultimate one is \\emph{indifferentiability from a random oracle}, or simply \\emph{indifferentiability}. The sponge was proved indifferentiable against classical adversaries by Bertoni et al. in 2008. Despite significant efforts in the years since, little is known about sponge security against quantum adversaries, even for simple properties like preimage or collision resistance beyond a single round. This is primarily due to the lack of a satisfactory quantum analog of the lazy sampling technique for permutations.\r\n\r\nIn this work, we develop a specialized technique that overcomes this barrier in the case of the sponge. We prove that the sponge is in fact indifferentiable from a random oracle against quantum adversaries. Our result establishes that the domain extension technique behind SHA-3 is secure in the post-quantum setting. Our indifferentiability bound for the sponge is a loose $O(\\mathsf{poly}(q) 2^{-\\min(r, c)/4})$, but we also give bounds on preimage and collision resistance that are tighter.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Maryland, College Park",
+                    "ror": "https://ror.org/047s2c258"
+                },
+                {
+                    "name": "National Institute of Standards and Technology",
+                    "ror": "https://ror.org/05xpvk416"
+                }
+            ],
+            "fullName": "Gorjan Alagic",
+            "orcid": "0000-0002-0107-6037"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Maryland, College Park",
+                    "ror": "https://ror.org/047s2c258"
+                }
+            ],
+            "fullName": "Joseph Carolan",
+            "orcid": "0000-0002-2891-9436"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Denmark",
+                    "ror": "https://ror.org/04qtj9h94"
+                }
+            ],
+            "fullName": "Christian Majenz",
+            "orcid": "0000-0002-1877-8385"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Denmark",
+                    "ror": "https://ror.org/04qtj9h94"
+                }
+            ],
+            "fullName": "Saliha Tokat",
+            "orcid": "0000-0002-0264-3945"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-23T17:16:26Z"
+        }
+    ],
+    "keywords": [
+        "Quantum",
+        "Sponge",
+        "Indifferentiability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/731.pdf",
+    "pid": "731",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Sponge is Quantum Indifferentiable",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "While one-way functions (OWFs) serve as the minimal assumption for computational cryptography in the classical setting, in quantum cryptography, we have even weaker cryptographic assumptions such as pseudo-random states, and EFI pairs, among others. Moreover, the minimal assumption for computational quantum cryptography remains an open question. Recently, it has been shown that pseudoentanglement is necessary for the existence of quantum cryptography (Goul\u00e3o and Elkouss 2024), but no cryptographic construction has been built from it.\r\n\r\n In this work, we study the cryptographic usefulness of quantum pseudoresources \u2014a pair of families of quantum states that exhibit a gap in their resource content yet remain computationally indistinguishable. We show that quantum pseudoresources imply a variant of EFI pairs, which we call EPFI pairs, and that these are equivalent to quantum commitments and thus EFI pairs. Our results suggest that, just as randomness is fundamental to classical cryptography, quantum resources may play a similarly crucial role in the quantum setting.\r\n\r\nFinally, we focus on the specific case of entanglement, analyzing different definitions of pseudoentanglement and their implications for constructing EPFI pairs. Moreover, we propose a new cryptographic functionality that is intrinsically dependent on entanglement as a resource.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne Universit\u00b4e, CNRS, LIP6, 4 Place Jussieu, Paris F-75005, France"
+                }
+            ],
+            "fullName": "Alex B. Grilo",
+            "orcid": "0000-0001-7374-7082"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne Universit\u00b4e, CNRS, LIP6, 4 Place Jussieu, Paris F-75005, France"
+                }
+            ],
+            "fullName": "\u00c1lvaro Y\u00e1ng\u00fcez",
+            "orcid": "0009-0004-7713-6560"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-24T07:33:17Z"
+        }
+    ],
+    "keywords": [
+        "Quantum cryptography",
+        "Pseudoentanglement",
+        "EFI",
+        "EPFI",
+        "Quantum commitment",
+        "Pseudoresources"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/732.pdf",
+    "pid": "732",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum pseudoresources imply cryptography",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Safeguarding cryptographic implementations against the increasing threat of Side-Channel Analysis (SCA) attacks is essential. Masking, a countermeasure that randomizes intermediate values, is a cornerstone of such defenses. In particular, SCA-secure implementation of AES, the most-widely used encryption standard, can employ Boolean masking as well as multiplicative masking due to its underlying Galois field operations. However, multiplicative masking is susceptible to vulnerabilities, including the zero-value problem, which has been identified right after theintroduction of multiplicative masking. At CHES 2018, De Meyer et al. proposed a hardware-based approach to manage these challenges and implemented multiplicative masking for AES, incorporating a Kronecker delta function and randomness optimization. \r\nIn this work, we evaluate their design using the PROLEAD evaluation tool under the glitch- and transition-extended probing model. Our findings reveal a critical vulnerability in their first- and second-order implementation of the Kronecker delta function, stemming from the employed randomness optimization. This leakage compromises the security of their presented masked AES Sbox. After pinpointing the source of such a leakage, we propose an alternative randomness optimization for the first-order design to address this issue, and demonstrate its effectiveness through rigorous evaluations by means of PROLEAD.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technische Universit\u00e4t Darmstadt"
+                }
+            ],
+            "fullName": "Hemin Rahimi",
+            "orcid": "0000-0003-2527-9784"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technische Universit\u00e4t Darmstadt"
+                }
+            ],
+            "fullName": "Amir Moradi",
+            "orcid": "0000-0002-4032-7433"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-24T08:30:58Z"
+        }
+    ],
+    "keywords": [
+        "Side Channel Analysis",
+        "Implementation Security",
+        "Multiplicative Masking",
+        "AES"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/733.pdf",
+    "pid": "733",
+    "pubtype": {
+        "note": "DATE 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "One More Motivation to Use Evaluation Tools, This Time for Hardware Multiplicative Masking of AES",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ChairImpSec/MultiplicativeMaskingAES",
+        "https://github.com/ChairImpSec/MultiplicativeMaskingAES",
+        "https://github.com/coron/checkmasks",
+        "https://github.com/coron/checkmasks"
+    ]
+}
 ]
