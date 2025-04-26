@@ -77,7 +77,7 @@ universal composable password authenticated key exchange for the post-quantum wo
 radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_year;;;none
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;last_year;;;https://github.com/TheParallelSquarerootVeluTeam/Parallel-Squareroot-Velu
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;last_year;;;none
-efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;last_year;;;https://github.com/theQRL/Whitepaper/blob/master/QRL_whitepaper.pdf
+efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;other;;;https://github.com/theQRL/Whitepaper/blob/master/QRL_whitepaper.pdf
 computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;other;;;https://gitlab.inria.fr/nsarkis/poc-scalar-multiplication-kummer-lines
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;other;;;none
 fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;other;;;none
