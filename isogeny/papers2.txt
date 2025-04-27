@@ -6,7 +6,7 @@ signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ah
 on some non-linear recurrences over finite fields linked to isogeny graphs;;;juan jesús  león, vicente muñoz;;;2025/608;;;last_month;;;none
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants, ii;;;dimitri koshelev, antonio sanso;;;2025/196;;;last_month;;;none
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants;;;dimitri koshelev, antonio sanso;;;2024/1985;;;last_month;;;https://github.com/daira/pluto-eris
-computing isomorphisms between products of supersingular elliptic curves;;;pierrick gaudry, julien soumier, pierre-jean spaenlehauer;;;2025/136;;;last_month;;;https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments
+computing isomorphisms between products of supersingular elliptic curves;;;pierrick gaudry, julien soumier, pierre-jean spaenlehauer;;;2025/136;;;last_year;;;https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments
 models of kummer lines and galois representations;;;razvan barbulescu, damien robert, nicolas sarkis;;;2025/543;;;last_year;;;none
 division polynomials for arbitrary isogenies;;;katherine e. stange;;;2025/521;;;last_year;;;none
 a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_year;;;none
