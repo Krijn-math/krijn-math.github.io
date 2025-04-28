@@ -52531,4 +52531,905 @@
         "https://github.com/coron/checkmasks"
     ]
 }
+,
+{
+    "abstract": "Delegation of quantum computation in a trustful way is one of the most fundamental challenges toward the realization of future quantum cloud computing. While considerable progress has been made, no known protocol provides a purely classical client with universal delegated quantum computation while simultaneously ensuring blindness (input privacy), verifiability (soundness), and robustness against quantum noise\u2014a feat that must be achieved under stringent cryptographic assumptions and with low overhead.\r\n\r\nIn this work, I introduce UVCQC, a new delegation framework that, for the first time, realizes a fully composable protocol for securely delegating quantum computations to an untrusted quantum server from a classical client. My scheme employs trap-based quantum authentication, post-quantum cryptographic commitments, and zero-knowledge proofs to provide full guarantees: the client remains purely classical; the server learns nothing about the computation; and any attempt to deviate from the specified circuit is detected with high probability.\r\n\r\nI rigorously prove completeness, soundness, and perfect blindness of the protocol and demonstrate its universal composability against unbounded quantum adversaries. Furthermore, I propose a thermodynamically inspired verification mechanism based on energy dissipation and entropy change, enabling physically testable verification independent of cryptographic assumptions.\r\n\r\nBeyond its core architecture, UVCQC is deeply intertwined with multidisciplinary frameworks: it admits a game-theoretic formulation where honesty is a Nash equilibrium, an information-theoretic treatment grounded in Holevo bounds, a categorical model via compact closed structures, and novel cryptographic enhancements based on isogeny-based primitives and topological invariants.\r\n\r\nThis research offers a scalable and unified solution to the blind and verifiable delegation problem, pushing forward the theoretical and practical frontiers of secure quantum computation\u2014and opening a tangible path toward trustable quantum cloud services for classical users.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Vicent Esteve Voltes",
+            "orcid": "0009-0003-1371-7561"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-24T12:22:46Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Delegation",
+        "Verifiability",
+        "Blind Computation",
+        "Classical Client",
+        "Post-Quantum Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This preprint was first made available via Zenodo (DOI: 10.5281/zenodo.15265412). This version is unchanged and submitted here to increase its visibility to the cryptography research community.",
+    "pdffile": "2025/734.pdf",
+    "pid": "734",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Universal Blind and Verifiable Delegated Quantum Computation with Classical Clients",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Threshold encryption schemes provide a common tool to secure a public-key encryption scheme against single point of failure attacks. Despite the success of lattices in building fully-homomorphic and presumably quantum-resistant encryption schemes, the task of thresholdizing those schemes remains challenging. The major bottleneck in the standard approach is the use of statistical noise flooding, leading to a significant efficiency loss and the need of stronger hardness assumptions. Recent works have replaced the heavy statistical noise flooding by a lighter one using the R\u00e9nyi divergence. The new R\u00e9nyi noise flooding both improves the efficiency and allows to use weaker hardness assumptions. However, arguing semantic security of lattice-based threshold schemes in the presence of R\u00e9nyi noise flooding showed to be challenging. Chowdhury et al. (IACR ePrint'22) argued in the fully-homomorphic case that the R\u00e9nyi divergence directly applies for semantic security by making use of an existing framework called public sampleability.\r\n\r\nIn this work, we argue that their public sampleability framework was neither sufficient nor correctly used. To address both issues, we strengthen the framework and thoroughly apply it to prove semantic security of generic lattice-based threshold encryption constructions. We distinguish between the plain public-key and the fully-homomorphic settings, as different security notions are achieved. As a byproduct, this shows that the proof detour via one-way security made by Boudgoust and Scholl (Asiacrypt'23) was superfluous, now leading to tighter proofs in the standard model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CNRS, Univ Montpellier, LIRMM, France"
+                }
+            ],
+            "fullName": "Katharina Boudgoust",
+            "orcid": "0000-0002-3971-9368"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTNU, Norway"
+                }
+            ],
+            "fullName": "Anamaria Costache",
+            "orcid": "0000-0001-8793-6116"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-24T13:39:51Z"
+        }
+    ],
+    "keywords": [
+        "Lattices",
+        "Threshold Encryption",
+        "R\u00e9nyi Divergence"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/735.pdf",
+    "pid": "735",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved R\u00e9nyi Arguments for Lattice-Based Threshold Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We study the structure of theta structure on products of elliptic curves, detailing their construction through the symmetries induced by $4$-torsion points. In particular, we show how these symmetries allow the computation of theta structures projectively, thus avoiding the use of modular inversions.\r\nFurthermore, we explore the self-similarity of the matrix representation of theta structures, arising from the action of the canonical $2$-torsion point in the Kummer line. Combined with the sparsity of some $4$-torsion points, this structure leads to new formulae for computing gluing $(2,2)$ isogenies that require significantly fewer precomputations and arithmetic operations.\r\nThese new equations also naturally support the evaluation of points on the quadratic twist at a negligible additional cost, without requiring operations in a field extension.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Max Duparc",
+            "orcid": "0009-0001-4179-9547"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-27T23:57:19Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-24T15:17:04Z"
+        }
+    ],
+    "keywords": [
+        "High-dimensional isogenies",
+        "Theta structures",
+        "Gluing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/736.pdf",
+    "pid": "736",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Superglue: Fast formulae for $(2,2)$ gluing isogenies",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Recent work on IOP-based succinct arguments has focused on developing IOPs that improve prover efficiency by relying on linear-time encodable codes. We present two new schemes for improving the efficiency of such succinct arguments:\r\n\r\n$\\quad \\bullet$ $\\mathsf{FICS}$, an IOP of proximity for multilinear polynomial evaluation that, like prior work Blaze [EUROCRYPT 2025] achieves linear prover time, but additionally reduces the verifier oracle query complexity to $O(\\lambda \\log \\log n + \\log n)$ for codewords of length $n$.\r\n$\\quad \\bullet$ $\\mathsf{FACS}$, an accumulation scheme for NP that achieves linear prover time and $O(\\lambda)$ oracle queries per step of the accumulation.\r\n\r\nBoth schemes support a large class of linear-time encodable codes, including systematic LDPC codes and tensor codes of linear-time encodable codes.\r\n\r\nWe obtain our results by extending and formalizing the framework of Interactive Oracle Reductions (IORs) introduced by Ben-Sasson et al. [TCC 2019]. In particular, we develop new IORs for \"codeswitching\" tensor codes (Ron-Zewi and Rothblum [JACM 2024]), and also develop a new notion of knowledge soundness for IORs that allows us to easily compose IORs and to prove the security of our schemes in the non-interactive setting, even if the underlying codes are not known to be decodable in polynomial time.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Anubhav Baweja",
+            "orcid": "0000-0001-5563-0630"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Pratyush Mishra",
+            "orcid": "0009-0000-6600-9719"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pennsylvania",
+                    "ror": "https://ror.org/00b30xv10"
+                }
+            ],
+            "fullName": "Tushar Mopuri",
+            "orcid": "0009-0009-8598-3643"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Matan Shtepel",
+            "orcid": "0000-0003-1296-0984"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-24T19:40:20Z"
+        }
+    ],
+    "keywords": [
+        "IOPP",
+        "accumulation schemes",
+        "succinct arguments"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/737.pdf",
+    "pid": "737",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "FICS and FACS: Fast IOPPs and Accumulation via Code-Switching",
+    "year": 2025,
+    "repo": [
+        "https://github.com/hash-based-snargs-book",
+        "https://github.com/hash-based-snargs-book",
+        "https://github.com/0xPolygonZero/plonky2/blob/main/plonky2/plonky2.pdf",
+        "https://github.com/0xPolygonZero/plonky2/blob/main/plonky2/plonky2.pdf"
+    ]
+}
+,
+{
+    "abstract": "In this work, we derive the first lifting theorems for establishing security in the quantum random permutation and ideal cipher models. These theorems relate the success probability of an arbitrary quantum adversary to that of a classical algorithm making only a small number of classical queries.\r\n\r\nBy applying these lifting theorems, we improve previous results and obtain new quantum query complexity bounds and post-quantum security results. Notably, we derive tight bounds for the quantum hardness of the double-sided zero search game and establish the post-quantum security for the preimage resistance, one-wayness, and multi-collision resistance of constant-round sponge, as well as the collision resistance of the Davies-Meyer construction.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Edinburgh",
+                    "ror": "https://ror.org/01nrxwf90"
+                }
+            ],
+            "fullName": "Alexandru Cojocaru"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "Minki Hhan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UC San Diego"
+                }
+            ],
+            "fullName": "Qipeng Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Takashi Yamakawa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ewha Womans University"
+                }
+            ],
+            "fullName": "Aaram Yun"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-25T03:29:06Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/738.pdf",
+    "pid": "738",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum Lifting for Invertible Permutations and Ideal Ciphers",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Multivariate public key cryptography (MPKC) is considered a promising candidate for post-quantum cryptography, with its security relying on the hardness of solving systems of multivariate quadratic equations.\r\n\r\nAmong MPKC schemes, the unbalanced oil and vinegar (UOV) and its variants have been actively studied. P\u00e9bereau and Luyten showed that the Kipnis\u2013Shamir attack and the singular point attack can be described within the same framework using the Jacobian matrix. \r\n\r\nIn this study, we demonstrate that the rectangular MinRank attack can also be described within this framework. Furthermore, by leveraging this framework, we extend the feasible target ranks of the rectangular MinRank attack and use this extended attack to analyze the security of UOV and its variants. In conclusion, we confirm that the currently proposed parameters for UOV, MAYO, QR-UOV, and SNOVA are resistant to this attack.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tokyo Metropolitan University",
+                    "ror": "https://ror.org/00ws30h19"
+                },
+                {
+                    "name": "National Institute of Information and Communications Technology",
+                    "ror": "https://ror.org/016bgq349"
+                }
+            ],
+            "fullName": "Toshihiro Suzuki"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Hiroki Furue"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Information and Communications Technology",
+                    "ror": "https://ror.org/016bgq349"
+                }
+            ],
+            "fullName": "Takuma Ito"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ibaraki University",
+                    "ror": "https://ror.org/00sjd5653"
+                }
+            ],
+            "fullName": "Shuhei Nakamura"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tokyo Metropolitan University",
+                    "ror": "https://ror.org/00ws30h19"
+                }
+            ],
+            "fullName": "Shigenori Uchiyama"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-25T05:41:17Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography",
+        "Multivariate Cryptography",
+        "UOV",
+        "Rectangular MinRank Attack",
+        "Singular Point"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/739.pdf",
+    "pid": "739",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An Extended Rectangular MinRank Attack against UOV and Its Variants",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Sharding is a generic approach to enhance the scalability of distributed systems. In recent years, many efforts have been made to scale the consensus mechanism of blockchains from sharding. A crucial research question is how to achieve the sweet spot of having a relatively small shard size (to achieve decent performance) while achieving an overwhelming probability of correctness (so the system is safe and live). Many recent works fall into the two-layer design that uses some coordinating shards to monitor the correctness of other shards (CCS 2022, NDSS 2024, INFOCOM 2023). All of them involve expensive communication costs between the shards, significantly degrading performance.\r\n\r\nWe present Otter, a scalable partially synchronous sharding-based Byzantine fault-tolerant atomic broadcast (ABC) protocol. We use coordinating shards in a completely new way. In particular, we randomly sample coordinating shards to directly participate in the consensus protocol. Such a random sampling mechanism makes it possible to analyze the correctness of the ABC protocol using a probabilistic model. In this way, we can significantly lower the shard size (informally, from over 1,200 in previous work to around 100) without lowering the probability of correctness. We also present a new notion called abortable fork detection (AFD) that might be of independent interest. Our evaluation results on Amazon EC2 using up to 1,000 replicas show that Otter achieves up to 4.38x the throughput of the state-of-the-art protocol.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                }
+            ],
+            "fullName": "Xin Wang",
+            "orcid": "0000-0002-1665-8398"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                }
+            ],
+            "fullName": "Xiao Sui",
+            "orcid": "0009-0003-2522-8394"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                }
+            ],
+            "fullName": "Sisi Duan",
+            "orcid": "0000-0002-1385-6807"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-25T08:00:54Z"
+        }
+    ],
+    "keywords": [
+        "atomic broadcast",
+        "sharding-based protocol",
+        "blockchains",
+        "Byzantine fault tolerance"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/740.pdf",
+    "pid": "740",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Otter: Scalable Sharding-Based Atomic Broadcast with Abortable Fork Detection",
+    "year": 2025,
+    "repo": [
+        "https://github.com/EtherCS/arete/tree/sota",
+        "https://github.com/tendermint/tendermint"
+    ]
+}
+,
+{
+    "abstract": "Differential meet-in-the-middle (MITM) cryptanalysis, introduced by Boura et al. at CRYPTO 2023, has been demonstrated to be an effective technique for analyzing the security of block ciphers. In this paper, we introduce an improved parallel partitioning technique, and incorporate it into a new framework with a flexible key recovery strategy. This framework is applicable to both SPN and Feistel ciphers. We apply the new framework to SIMON and Piccolo-128 for demonstration. In particular, we also develop an MILP-based tool for searching full attacks on Piccolo-128.  For SIMON48/96, we propose the best attack, reaching 26 rounds against 25 rounds previously. For other versions of SIMON, we extend the best previous differential attacks by one or two rounds. In the case of Piccolo-128, while no current differential attacks show promising results, our differential MITM attack reaches 15 rounds, matching the same number of rounds of the best impossible differential attack.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Weiqing Deng",
+            "orcid": "0009-0005-4197-5706"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Jianing Zhang",
+            "orcid": "0009-0001-5837-0747"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Haoyang Wang",
+            "orcid": "0009-0005-0090-8101"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-04-28T03:08:33Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-04-28T02:49:11Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-25T10:52:38Z"
+        }
+    ],
+    "keywords": [
+        "differential meet-in-the-middle attack",
+        "key recovery",
+        "parallel partitioning",
+        "SIMON",
+        "Piccolo-128"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/741.pdf",
+    "pid": "741",
+    "pubtype": {
+        "note": "ACISP 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Differential Meet-In-The-Middle Cryptanalysis on SIMON and Piccolo (Full Version)",
+    "year": 2025,
+    "repo": [
+        "https://github.com/d-mitm/Piccolo",
+        "https://github.com/d-mitm/Piccolo"
+    ]
+}
+,
+{
+    "abstract": "As quantum computing matures, its impact on traditional cryptographic protocols becomes increasingly critical, especially for data-at-rest scenarios where large data sets remain encrypted for extended periods of time.\r\nThis paper addresses the pressing need to transition away from pre-quantum algorithms by presenting an agile cryptosystem that securely and efficiently supports post-quantum Key Encapsulation Mechanisms (KEMs).\r\nThe proposed solution is based on combining a CCA-secure KEM with a robust Authenticated Encryption scheme, allowing only the dynamic component - the symmetric key encapsulation - to be updated when migrating to new cryptographic algorithms.\r\nThis approach eliminates the need to re-encrypt potentially massive data payloads, resulting in significant savings in computational overhead and bandwidth.\r\nWe formalize the concept of cryptoagility through an agile-CCA security model, which requires that neither the original ciphertext nor any updated version reveals meaningful information to an attacker.\r\nA game-based proof shows that the overall construction remains agile-CCA secure if the underlying KEM and AE are individually CCA secure under a random oracle assumption.\r\nThe result is a future-proof scheme that eases the transition to post-quantum standards, enabling enterprises and cloud storage providers to protect large amounts of data with minimal disruption while proactively mitigating emerging quantum threats.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Austrian Institute of Technology",
+                    "ror": "https://ror.org/04knbh022"
+                }
+            ],
+            "fullName": "Stephan Krenn",
+            "orcid": "0000-0003-2835-9093"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Austrian Institute of Technology",
+                    "ror": "https://ror.org/04knbh022"
+                }
+            ],
+            "fullName": "Thomas Lor\u00fcnser",
+            "orcid": "0000-0002-1829-4882"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Austrian Institute of Technology",
+                    "ror": "https://ror.org/04knbh022"
+                }
+            ],
+            "fullName": "Sebastian Ramacher",
+            "orcid": "0000-0003-1957-3725"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bundeswehr University Munich",
+                    "ror": "https://ror.org/05kkv3f82"
+                }
+            ],
+            "fullName": "Federico Valbusa",
+            "orcid": "0009-0006-2065-2673"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-25T14:39:14Z"
+        }
+    ],
+    "keywords": [
+        "Post Quantum Migration",
+        "Crypto Agility",
+        "Key Encapsulation Mechanism",
+        "Authenticated Encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/742.pdf",
+    "pid": "742",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Seamless Post-Quantum Transition: Agile and Efficient Encryption for Data-at-Rest",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Let us assume that one of two trusted parties  (administrator) manages the information system (IS) and another one (user) is going to use the resources of this IS during the certain time interval. So they need establish secure user\u2019s access password to the IS resources of this system via selected authenticated key exchange protocol. So they need  to communicate via insecure communication channel and secretly con-struct a cryptographically strong session key that can serve for the establishment of secure  passwords in the form of tuples in certain alphabet during the certain time interval. Nowadays selected protocol has to be postquantum secure. We propose the implementation of this scheme in terms of Symbolic Computa-tions. The key exchange protocol is one of the key exchange algorithms of Noncommutative Cryptography with the platform of multivariate transformation of the affine space over selected finite commutative ring. The session key is a multivariate map on the affine space.  Platforms and multivariate maps are construct-ed in terms of Algebraic Graph Theory.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway University of London",
+                    "ror": "https://ror.org/04g2vpn86"
+                }
+            ],
+            "fullName": "Vasyl Ustimenko",
+            "orcid": "0000-0002-2138-2357"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Tymoteusz Chojecki",
+            "orcid": "0000-0002-3294-2794"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-25T18:04:02Z"
+        }
+    ],
+    "keywords": [
+        "Key establishment protocols",
+        "Symbolic Computations",
+        "Nocommutative Cryptography",
+        "Multivariate public keys"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/743.pdf",
+    "pid": "743",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On graph based pseudo quadratic multivariate maps  of prescribed degree as instruments of key establishment.",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We were deeply impressed by the paper by Ateniese et al., published in Crypto 2019. In it, they presented a black-box construction of matchmaking encryption (ME) based on functional encryption. In our work, we propose an ME scheme based on standard assumptions in the standard model. This scheme has been proven to be secure under the learning with error (LWE) assumption. Our ME scheme is achieved through a novel framework of bilateral-policy attribute-based encryption (BP-ABE) and a new intermediate primitive termed a perturbed pseudorandom generator (PPRG), which facilitates the implementation of authentication functionality by replacing non-interactive zero-knowledge proof functionality.\r\n\r\nIn the scheme presented in this paper, the user's \"public key\" is generated using Hamming correlation robustness and user attributes. Note that the 'public key' is not public. In order to preserve the privacy of the two parties involved in matchmaking encryption, our BP-ABE scheme does not use the 'public key' directly to encrypt the plaintext. Instead, the message sender selects matching attributes and uses a Hamming correlation robustness and homomorphic pseudorandom function (HPRF) to generate temporary public keys and hide the public key and user attributes.\r\n\r\nWhen these temporary public keys satisfy the access policy, the receiver can decrypt the data using their private key. Regarding the authentication function of matchmaking encryption, this paper proposes a non-interactive privacy set intersection (PSI) scheme based on HPRF and PPRG. The message sender encrypts their 'public key' using the proposed PSI scheme as part of the ciphertext. The receiver also encrypts their 'public key' using the proposed PSI scheme and matches the attributes, thereby completing the message authentication function. We consider our approach to be a significant departure from existing constructions, despite its simplicity.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Mathematics and Statistics, Xidian University, Xi\u2019an 710126, China"
+                }
+            ],
+            "fullName": "Zhuang Shan",
+            "orcid": "0000-0003-4309-4505"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Mathematics and Statistics, Xidian University, Xi\u2019an 710126, China"
+                }
+            ],
+            "fullName": "Leyou Zhang",
+            "orcid": "0000-0003-4950-1140"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centre for Computer and Information Security Research, University of Wollongong, Wollongong, NSW 2522, Australia"
+                }
+            ],
+            "fullName": "Fuchun Guo",
+            "orcid": "0000-0001-6939-7710"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computer Science, Shaanxi Normal University, Xi'an 710121, China"
+                }
+            ],
+            "fullName": "Yong Yu"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-26T03:21:37Z"
+        }
+    ],
+    "keywords": [
+        "matchmaking encryption",
+        "attribute-based encryption",
+        "standard assumptions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/744.pdf",
+    "pid": "744",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Candidate Matchmaking Encryption from Attribute-Based Encryption Schemes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Liquid democracy is a transitive vote delegation mechanism over voting graphs.  It enables each voter to delegate their vote(s) to another better-informed voter, with the goal of collectively making a better decision.\r\nThe question of whether liquid democracy outperforms direct voting has been previously studied in the context of local delegation mechanisms (where voters can only delegate to someone in their neighbourhood) and binary decision problems.  It has previously been shown that it is impossible for local delegation mechanisms to outperform direct voting in general graphs.  This raises the question: for which classes of graphs do local delegation mechanisms yield good results?\r\n\r\nIn this work, we analyse (1) properties of specific graphs and (2) properties of local delegation mechanisms on these graphs, determining where local delegation actually outperforms direct voting.\r\nWe show that a critical graph property enabling liquid democracy is that the voting outcome of local delegation mechanisms preserves a sufficient amount of variance, thereby avoiding situations where delegation falls behind direct voting.\r\nThese insights allow us to prove our main results, namely that there exist local delegation mechanisms that perform no worse and in fact quantitatively better than direct voting in natural graph topologies like complete, random $d$-regular, and bounded degree graphs, lending a more nuanced perspective to previous impossibility results.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science and Technology Austria"
+                }
+            ],
+            "fullName": "Krishnendu Chatterjee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Seth Gilbert"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Berlin"
+                },
+                {
+                    "name": "Weizenbaum Institute"
+                }
+            ],
+            "fullName": "Stefan Schmid"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science and Technology Austria"
+                }
+            ],
+            "fullName": "Jakub Svoboda"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Michelle Yeo"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-26T10:13:51Z"
+        }
+    ],
+    "keywords": [
+        "voting",
+        "liquid democracy",
+        "graph topologies",
+        "blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/745.pdf",
+    "pid": "745",
+    "pubtype": {
+        "note": "PODC",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "When is liquid democracy possible? On the manipulation of variance.",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This work introduces Zemlyanika, a post-quantum IND-CCA secure key encapsulation mechanism based on the Module-LWE problem. The high-level design of Zemlyanika follows a well-known approach where a passively secure public-key encryption scheme is transformed into an actively secure key encapsulation mechanism using the Fujisaki-Okamoto transform. \r\n\r\n    Our scheme features three main elements: a power-of-two modulus, explicit rejection, and revised requirements for decapsulation error probability.\r\n\r\n    The choice of a power-of-two modulus is atypical for Module-LWE based schemes due to the unavailability of Number Theoretic Transform (NTT). However, we argue that this option offers advantages that are often underestimated. We employ explicit rejection because it is more efficient than implicit rejection. Recent works show that both types of rejection are equally secure, so we do not reduce the security by this choice. Finally, we present compelling arguments that the probability of decapsulation failure may be higher than commonly accepted. This allows us to increase performance and security against attacks on the Module-LWE.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "QApp, Russian Federation"
+                },
+                {
+                    "name": "Bauman Moscow State Technical University",
+                    "ror": "https://ror.org/00pb8h375"
+                }
+            ],
+            "fullName": "Alexey S. Zelenetsky",
+            "orcid": "0000-0002-6599-2026"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bauman Moscow State Technical University",
+                    "ror": "https://ror.org/00pb8h375"
+                }
+            ],
+            "fullName": "Peter G. Klyucharev"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-26T19:16:14Z"
+        }
+    ],
+    "keywords": [
+        "key encapsulation mechanism",
+        "M-LWE",
+        "explicit rejection",
+        "decapsulation failure"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is a a preprint submitted to Journal of Computer Virology and Hacking Techniques",
+    "pdffile": "2025/746.pdf",
+    "pid": "746",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Zemlyanika \u2014 Module-LWE based KEM with the power-of-two modulus, explicit rejection and revisited decapsulation failures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Bitcoin is based on the Blockchain, an open ledger containing information about each transaction in the Bitcoin network. Blockchain serves many purposes, but it allows anyone to track all transactions and\r\nactivities of each Bitcoin address. The privacy of the network is being threatened by some organizations that track transactions. Tracking and subsequent filtering of coins lead to the loss of exchangeability of Bitcoin.\r\n\r\nDespite Bitcoin\u2019s transparency, it is possible to increase user privacy using a variety of existing methods. One of these methods is called CoinJoin, was proposed by Bitcoin developer Greg Maxwell in 2013.\r\nThis technology involves combining several users transactions to create a single transaction with multiple inputs and outputs, which makes transaction analysis more complicated.\r\n\r\nThis work describes the CoinMaze, a privacy-focused CoinJoin protocol based on the keyed-verification\r\nanonymous credentials (KVAC).",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Dmitry Astakhin"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-26T20:28:37Z"
+        }
+    ],
+    "keywords": [
+        "Bitcoin",
+        "Privacy",
+        "CoinJoin"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/747.pdf",
+    "pid": "747",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "CoinMaze: Privacy-Focused CoinJoin Protocol for Bitcoin",
+    "year": 2025,
+    "repo": [
+        "https://gist.github.com/chris-belcher/18ea0e6acdb885a2bfbdee43dcd6b5af",
+        "https://gist.github.com/chris-belcher/9144bd57a91c194e332fb5ca371d0964"
+    ]
+}
 ]
