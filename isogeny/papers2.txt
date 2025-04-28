@@ -1,3 +1,5 @@
+superglue: fast formulae for (2,2) gluing isogenies;;;max duparc;;;2025/736;;;last_week;;;none
+universal blind and verifiable delegated quantum computation with classical clients;;;vicent esteve voltes;;;2025/734;;;last_week;;;none
 let us walk on the 3-isogeny graph: efficient, fast, and simple;;;jesús-javier chi-domínguez, eduardo ochoa-jimenez, ricardo-neftalí pontaza-rodas;;;2025/691;;;last_month;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
 simpler and faster pairings from the montgomery ladder;;;giacomo pope, krĳn reĳnders, damien robert, alessandro sferlazza, benjamin smith;;;2025/672;;;last_month;;;https://github.com/GiacomoPope/cubical-pairings
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_month;;;none
@@ -13,7 +15,6 @@ a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;la
 an efficient collision attack on castryck-decru-smith’s hash function;;;ryo ohashi, hiroshi onuki;;;2024/1776;;;last_year;;;https://github.com/Ryo-Ohashi/CDScollision
 blind signatures from cryptographic group actions;;;dung hoang duong, xuan thanh khuc, youming qiao, willy susilo, chuanqi zhang;;;2025/397;;;last_year;;;https://csrc.nist.gov/news/2023/additional-pqc-digital-signature-candidates
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_year;;;https://github.com/levanin/cgl_rs
-new proof systems and an oprf from csidh;;;cyprien delpech de saint guilhem, robi pedersen;;;2023/1614;;;last_year;;;none
 radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_year;;;https://github.com/GiacomoPope/ThetaCGL
 pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_year;;;https://github.com/pegasis4d
 constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_year;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
@@ -97,4 +98,3 @@ zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef m
 exploring sidh-based signature parameters;;;andrea basso, mingjie chen, tako boris fouotsa, péter kutas, abel laval, laurane marco, gustave tchoffo saah;;;2023/1906;;;other;;;https://espitau.github.io/bin/random_lattice.pdf
 csidh with level structure;;;steven d. galbraith, derek perrin, josé felipe voloch;;;2023/1726;;;other;;;none
 malleable commitments from group actions and zero-knowledge proofs for circuits based on isogenies;;;mingjie chen, yi-fu lai, abel laval, laurane marco, christophe petit;;;2023/1710;;;other;;;none
-breaking parallel ros:  implication for isogeny and lattice-based  blind signatures;;;shuichi katsumata, yi-fu lai, michael reichle;;;2023/1603;;;other;;;none
