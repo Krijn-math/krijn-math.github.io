@@ -1,5 +1,5 @@
 superglue: fast formulae for (2,2) gluing isogenies;;;max duparc;;;2025/736;;;last_week;;;none
-universal blind and verifiable delegated quantum computation with classical clients;;;vicent esteve voltes;;;2025/734;;;last_week;;;none
+universal blind and verifiable delegated quantum computation with classical clients;;;vicent esteve voltes;;;2025/734;;;last_month;;;none
 let us walk on the 3-isogeny graph: efficient, fast, and simple;;;jesús-javier chi-domínguez, eduardo ochoa-jimenez, ricardo-neftalí pontaza-rodas;;;2025/691;;;last_month;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
 simpler and faster pairings from the montgomery ladder;;;giacomo pope, krĳn reĳnders, damien robert, alessandro sferlazza, benjamin smith;;;2025/672;;;last_month;;;https://github.com/GiacomoPope/cubical-pairings
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_month;;;none
