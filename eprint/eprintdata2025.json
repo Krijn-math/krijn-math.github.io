@@ -55507,4 +55507,499 @@
         "https://nigelsmart.github.io/MPC-Circuits/"
     ]
 }
+,
+{
+    "abstract": "This whitepaper introduces Clementine, a secure, collateral-efficient, trust-minimized, and scalable Bitcoin bridge based on BitVM2 that enables withdrawals from rollups or other side systems to Bitcoin. Clementine proposes a new Bitcoin light client that remains secure against adversaries controlling less than 50% of Bitcoin\u2019s hash rate, assuming at least one honest Watchtower in a permissioned set. The protocol is collateral-efficient, reusing locked funds over time and reducing unnecessary dust outputs through the strategic use of 0-value outputs, and scalable, enabling a single challenge per Operator to slash multiple misbehaviors. This increases throughput and reduces on-chain load without compromising security. Clementine enables trust-minimized and efficient peg-outs from Citrea to Bitcoin, making zk-rollups on Bitcoin practical and unlocking new paths for native scalability and interoperability.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Citrea"
+                }
+            ],
+            "fullName": "Ekrem Bal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Common Prefix"
+                },
+                {
+                    "name": "University of Edinburgh",
+                    "ror": "https://ror.org/01nrxwf90"
+                }
+            ],
+            "fullName": "Lukas Aumayr",
+            "orcid": "0000-0001-8006-3172"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Citrea"
+                }
+            ],
+            "fullName": "Atacan \u0130yido\u011fan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Common Prefix"
+                },
+                {
+                    "name": "TU Wien",
+                    "ror": "https://ror.org/04d836q62"
+                }
+            ],
+            "fullName": "Giulia Scaffino",
+            "orcid": "0000-0001-5680-3003"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Citrea"
+                }
+            ],
+            "fullName": "Hakan Karaku\u015f"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Citrea"
+                }
+            ],
+            "fullName": "Cengiz Eray Aslan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Common Prefix"
+                },
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Orfeas Stefanos Thyfronitis Litos",
+            "orcid": "0000-0002-8229-297X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-05-02T15:09:26Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-04-30T14:48:10Z"
+        }
+    ],
+    "keywords": [
+        "Bitcoin",
+        "BitVM",
+        "Light Client",
+        "Bridge",
+        "Rollup",
+        "Blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/776.pdf",
+    "pid": "776",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Clementine: A Collateral-Efficient, Trust-Minimized, and Scalable Bitcoin Bridge",
+    "year": 2025,
+    "repo": [
+        "https://github.com/bitcoin/bips/blob/master/bip-0431.mediawiki#specification ",
+        "https://github.com/bitcoin/bips/blob/master/bip-0431.mediawiki#specification ",
+        "https://github.com/bitcoin/bitcoin/pull/30239 ",
+        "https://github.com/bitcoin/bitcoin/blob/master/doc/policy/mempool-limits.md#cpfp-carve-out ",
+        "https://github.com/bitcoin/bitcoin/blob/master/doc/policy/mempool-limits.md#cpfp-carve-out ",
+        "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/",
+        "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/"
+    ]
+}
+,
+{
+    "abstract": "Fully Homomorphic Encryption (FHE) enables arbitrary and unlimited computations directly on encrypted data. Notably, the TFHE scheme allows users to encrypt bits or small numbers (4-6 bits) and compute any univariate function using programmable bootstrapping (PBS), while simultaneously refreshing the ciphertext noise. Since both linear and non-linear functions can be evaluated using PBS, it is possible to compute arbitrary functions and circuits of unlimited depth without any accuracy loss. Nevertheless, a major limitation of TFHE, compared to other FHE schemes, is that it operates on a single ciphertext at a time, and the underlying message size remains small. For larger messages with longer bit sizes, the execution overhead of PBS grows exponentially with the number of message bits. A recent approach, called Without-padding PBS (WoPBS), enables computation of much larger lookup tables (10-28 bits), with the execution cost scaling linearly with the number of message bits. The significant encoding mismatch between the PBS and WoPBS, however, complicates the use of both approaches within the same circuit execution.\r\n\r\nIn this work, we introduce novel switching algorithms that enable ciphertexts to be converted back and forth between the PBS and WoPBS contexts without impacting the input noise. Moreover, we introduce a new method to bootstrap ciphertexts within the WoPBS context, allowing for unlimited XOR operations at negligible cost. To enhance runtime, we further introduce optimized parameters for both contexts. We validate our techniques through the homomorphic evaluation of AES encryption and decryption, demonstrating transciphering applications that outperform related works.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Delaware",
+                    "ror": "https://ror.org/01sbq1a82"
+                }
+            ],
+            "fullName": "Rostin Shokri",
+            "orcid": "0009-0007-8160-5667"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Delaware",
+                    "ror": "https://ror.org/01sbq1a82"
+                }
+            ],
+            "fullName": "Nektarios Georgios Tsoutsos",
+            "orcid": "0000-0002-5769-0124"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-30T15:53:10Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic encryption",
+        "Programmable Bootstrapping",
+        "TFHE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/777.pdf",
+    "pid": "777",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Seamless Switching Between PBS and WoPBS for Scalable TFHE",
+    "year": 2025,
+    "repo": [
+        "https://github.com/google/xls",
+        "https://github.com/google/xls",
+        "https://github.com/zama-ai/tfhe-rs",
+        "https://github.com/zama-ai/tfhe-rs"
+    ]
+}
+,
+{
+    "abstract": "One-way functions (OWFs) form the foundation of modern cryptography, yet their unconditional existence remains a major open question. In this work, we study this question by exploring its relation to lossy reductions, i.e., reductions $R$ for which it holds that $I(X;R(X)) \\ll n$ for all distributions $X$ over inputs of size $n$.\r\nOur main result is that either OWFs exist or any lossy reduction for any promise problem $\\Pi$ runs in time $2^{\\Omega(\\log\\tau_\\Pi / \\log\\log n)}$, where $\\tau_\\Pi(n)$ is the infimum of the runtime of all (worst-case) solvers of $\\Pi$ on instances of size $n$. More precisely, by having a reduction with a better runtime, for an arbitrary promise problem $\\Pi$, and by using a non-uniform advice, we construct (a family of) OWFs. In fact, our result requires a milder condition, that $R$ is lossy for sparse uniform distributions (which we call mild-lossiness). It also extends to $f$-reductions as long as $f$ is a non-constant permutation-invariant Boolean function, which includes $\\text{And-, Or-, Maj-, Parity-}$, $\\text{Mod}_k$-, and $\\text{Threshold}_k$-reductions.\r\n\r\nAdditionally, we show that worst-case to average-case Karp reductions and randomized encodings are special cases of mild-lossy reductions and improve the runtime above as $2^{\\Omega(\\log \\tau_\\Pi)}$ when these mappings are considered. Restricting to weak fine-grained OWFs, this runtime can be further improved as $\\Omega(\\tau_\\Pi)$. \r\nIntuitively, the latter asserts that if weak fine-grained OWFs do not exist then any instance randomization of any $\\Pi$ has the same runtime (up to a constant factor) as the best worst-case solver of $\\Pi$.\r\n\r\nTaking $\\Pi$ as $k\\text{Sat}$, our results provide sufficient conditions under which (fine-grained) OWFs exist assuming the Exponential Time Hypothesis (ETH). Conversely, if (fine-grained) OWFs do not exist, we obtain impossibilities on instance compressions (Harnik and Naor, FOCS 2006) and instance randomizations of $k\\text{Sat}$ under the ETH. \r\nMoreover, the analysis can be adapted to studying such properties of any $\\text{NP}$-complete problem.\r\n\r\nFinally, we partially extend these findings to the quantum setting; the existence of a pure quantum mildly-lossy reduction for $\\Pi$ within the runtime $2^{o(\\log\\tau_\\Pi / \\log\\log n)}$ implies the existence of one-way state generators, where $\\tau_\\Pi$ is defined with respect to quantum solvers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University",
+                    "ror": "https://ror.org/02en5vm52"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Laboratoire de Recherche en Informatique de Paris 6",
+                    "ror": "https://ror.org/05krcen59"
+                }
+            ],
+            "fullName": "Pouria Fallahpour"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University",
+                    "ror": "https://ror.org/02en5vm52"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Laboratoire de Recherche en Informatique de Paris 6",
+                    "ror": "https://ror.org/05krcen59"
+                }
+            ],
+            "fullName": "Alex B. Grilo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "QuSoft",
+                    "ror": "https://ror.org/00zq3ce72"
+                },
+                {
+                    "name": "University of Amsterdam",
+                    "ror": "https://ror.org/04dkp9463"
+                }
+            ],
+            "fullName": "Garazi Muguruza"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure - PSL",
+                    "ror": "https://ror.org/05a0dhs15"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "French Institute for Research in Computer Science and Automation",
+                    "ror": "https://ror.org/02kvxyf05"
+                }
+            ],
+            "fullName": "Mahshid Riahinia"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-04-30T16:08:33Z"
+        }
+    ],
+    "keywords": [
+        "owfs",
+        "owsgs",
+        "eth",
+        "lossy reductions",
+        "randomized encodings",
+        "wc-avg reductions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/778.pdf",
+    "pid": "778",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cryptography from Lossy Reductions: Towards OWFs from ETH, and Beyond",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "For very long messages, the reliable broadcast protocol  with the best communication complexity to date is the Minicast protocol of Locher & Shoup [2024].  To reliably broadcast a message $m$ to $n$ parties, Minicast has communication complexity $\\sim 1.5 |m| n$, when $|m|$ is large.  However, the round complexity of Minicast is 4, which is worse than the 3 rounds of the classical protocol of Bracha.  We give a new reliable broadcast protocol whose communication complexity is essentially the same as that of Minicast, but whose round complexity is just 3.  Like Minicast, our new protocol does not rely on any cryptography other than hash functions.  We also give a new 2-round protocol that relies on signatures.  For large $|m|$, its communication complexity is also $\\sim 1.5 |m| n$, unless the sender provably misbehaves, in which case its communication complexity may degrade to at most $\\sim 2 |m| n$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "DFINITY"
+                }
+            ],
+            "fullName": "Thomas Locher"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Offchain Labs"
+                }
+            ],
+            "fullName": "Victor Shoup",
+            "orcid": "0009-0003-6996-5660"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-01T03:01:47Z"
+        }
+    ],
+    "keywords": [
+        "reliable broadcast",
+        "asynchronous network",
+        "communication complexity",
+        "round complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/779.pdf",
+    "pid": "779",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improving the Round Complexity of MiniCast",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In the $k$-Orthogonal Vectors ($k$-OV) problem we are given $k$ sets, each containing $n$ binary vectors of dimension $d=n^{o(1)}$, and our goal is to pick one vector from each set so that at each coordinate at least one vector has a zero. It is a central problem in fine-grained complexity, conjectured to require $n^{k-o(1)}$ time in the worst case.\r\n\r\nWe propose a way to plant a solution among vectors with i.i.d. $p$-biased entries, for appropriately chosen $p$, so that the planted solution is the unique one. Our conjecture is that the resulting $k$-OV instances still require time $n^{k-o(1)}$ to solve, on average.\r\n\r\nOur planted distribution has the property that any subset of strictly less than $k$ vectors has the same marginal distribution as in the model distribution, consisting of i.i.d. $p$-biased random vectors. We use this property to give average-case search-to-decision reductions for $k$-OV.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Amsterdam",
+                    "ror": "https://ror.org/04dkp9463"
+                }
+            ],
+            "fullName": "David K\u00fchnemann"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University",
+                    "ror": "https://ror.org/05crjpb27"
+                }
+            ],
+            "fullName": "Adam Polak",
+            "orcid": "0000-0003-4925-774X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University",
+                    "ror": "https://ror.org/05crjpb27"
+                }
+            ],
+            "fullName": "Alon Rosen",
+            "orcid": "0000-0002-3021-7150"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-01T04:35:03Z"
+        }
+    ],
+    "keywords": [
+        "fine-grained complexity",
+        "planted problems",
+        "orthogonal vectors"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/780.pdf",
+    "pid": "780",
+    "pubtype": {
+        "note": "arXiv",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Planted Orthogonal Vectors Problem",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Augot-Finiasz system is a public-key encryption (PKE) scheme based on Reed-Solomon codes and was later followed by analogous versions in the rank metric. Although these schemes were eventually broken, their fundamental idea remains exciting. Notably, these schemes are significantly different from the McEliece system as there is no need to hide the code and, as such, promise much better parameters. Further, they admit a simple description where both the public key and ciphertext are just corrupted codewords of a public code. An interesting question is whether the general idea can be made to work, i.e., resist all known attacks, by using other code classes. This paper shows how to generalize the Augot-Finiasz system to other code families. We reduce the correctness and security of this framework to simple assertions about the code class with which it is instantiated. Specifically, its correctness is equivalent to the existence of an efficient error-erasure decoder, and its security reduces to an easily understood hardness assumption, called \"supercode decoding\", close to the syndrome decoding problem.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Anmoal Porwal",
+            "orcid": "0000-0002-2926-9797"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Anna Baumeister",
+            "orcid": "0000-0002-0584-0995"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Violetta Weger",
+            "orcid": "0000-0001-9186-2885"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Antonia Wachter-Zeh",
+            "orcid": "0000-0002-5174-1947"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Direction G\u00e9n\u00e9rale de l'Armement",
+                    "ror": "https://ror.org/04wsqd844"
+                },
+                {
+                    "name": "Universit\u00e9 de Rennes",
+                    "ror": "https://ror.org/015m7wh34"
+                },
+                {
+                    "name": "Centre National de la Recherche Scientifique",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Institut de recherche math\u00e9matique de Rennes",
+                    "ror": "https://ror.org/05y76vp22"
+                }
+            ],
+            "fullName": "Pierre Loidreau",
+            "orcid": "0000-0002-7663-4662"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-01T09:09:23Z"
+        }
+    ],
+    "keywords": [
+        "error-erasure decoding",
+        "code-based cryptography",
+        "public-key encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/781.pdf",
+    "pid": "781",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Generalizing the Augot-Finiasz PKE to Other Code Classes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
