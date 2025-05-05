@@ -1,3 +1,4 @@
+efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_week;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 superglue: fast formulae for (2,2) gluing isogenies;;;max duparc;;;2025/736;;;last_month;;;none
 universal blind and verifiable delegated quantum computation with classical clients;;;vicent esteve voltes;;;2025/734;;;last_month;;;none
 let us walk on the 3-isogeny graph: efficient, fast, and simple;;;jesús-javier chi-domínguez, eduardo ochoa-jimenez, ricardo-neftalí pontaza-rodas;;;2025/691;;;last_month;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
@@ -37,7 +38,6 @@ efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;m
 prism: simple and compact identification and signatures from large prime degree isogenies;;;andrea basso, giacomo borin, wouter castryck, maria corte-real santos, riccardo invernizzi, antonin leroux, luciano maino, frederik vercauteren, benjamin wesolowski;;;2025/135;;;last_year;;;https://github.com/KULeuven-COSIC/PRISM
 dctidh: fast & deterministic ctidh;;;fabio campos, andreas hellenbrand, michael meyer, krĳn reĳnders;;;2025/107;;;last_year;;;https://github.com/PaZeZeVaAt/dCTIDH/
 sqisign2d-west: the fast, the small, and the safer;;;andrea basso, luca de feo, pierrick dartois, antonin leroux, luciano maino, giacomo pope, damien robert, benjamin wesolowski;;;2024/760;;;last_year;;;https://github.com/SQISign/the-sqisign
-efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_year;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 a key-recovery attack on a leaky seasign variant;;;shai levin;;;2024/1261;;;last_year;;;https: //github.com/levanin/leakysea-public
 structural results for maximal quaternion orders and connecting ideals of prime power norm in b_{p,∞};;;james clements;;;2025/042;;;last_year;;;https://github.com/jtcc2/structural-results-for-quaternion-orders-and-ideals
 hash your keys before signing: buff security of the additional nist pqc signatures;;;thomas aulbach, samed düzlü, michael meyer, patrick struck, maximiliane weishäupl;;;2024/591;;;last_year;;;https://git.uni-regensburg.de/buff/wave_mbs
