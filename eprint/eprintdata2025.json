@@ -56002,4 +56002,1179 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "The dream of achieving data privacy during external computations has\r\nbecome increasingly concrete in recent years. Indeed, since the early days of Fully Homomorphic Encryption (FHE) more than a decade ago, new cryptosystems and techniques have constantly optimized the efficiency of computation on encrypted data.\r\nHowever, one of the main disadvantages of FHE, namely its significant ciphertext expansion factor, remains at the center of the efficiency bottleneck of FHE schemes. To tackle the issue of slow uplink FHE data transmission, we use transciphering. With transciphering, the client naturally encrypts its data under a symmetric scheme and sends them to the server with (once and for all) an FHE encryption of the symmetric scheme\u2019s key. With its larger computing power, the server then evaluates the symmetric scheme\u2019s decryption algorithm within the homomorphic domain to obtain homomorphic ciphertexts that allow it to perform the requested calculations.\r\nSince the first use of this method a bit more than ten years ago, papers on the homomorphic evaluation of AES have been numerous. And as the AES execution is the application chosen by NIST in the FHE part of its recent call for proposals on threshold encryption, the stakes of such work go up another level. But what about other standardized block ciphers? Is the AES the more efficient option? In this work, we leverage on two methods which have successfully been applied to the\r\nhomomorphic evaluation of AES to study several state-of-the-art symmetric block ciphers (namely CLEFIA, PRESENT, PRINCE, SIMON, SKINNY). That is to say, we implement a representative set of symmetric block ciphers using TFHE.\r\nThese implementations allow us to compare the efficiency of this set of symmetric schemes and to categorize them. We highlight the characteristics of block ciphers that are fast to execute in the homomorphic domain and those that are particularly costly.\r\nFinally, this classification of operation types enables us to sketch out what the ideal block cipher for transciphering homomorphic data in integer mode might look like.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CEA LIST, Universit\u00e9 Paris Saclay",
+                    "ror": "https://ror.org/000dbcc61"
+                }
+            ],
+            "fullName": "Daphn\u00e9 Trama"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CEA LIST, Universit\u00e9 Paris Saclay"
+                }
+            ],
+            "fullName": "Aymen Boudguiga"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CEA LIST, Universit\u00e9 Paris Saclay"
+                }
+            ],
+            "fullName": "Renaud Sirdey"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-01T14:01:55Z"
+        }
+    ],
+    "keywords": [
+        "Symmetric Block Cipher",
+        "FHE",
+        "Transciphering",
+        "TFHE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/782.pdf",
+    "pid": "782",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "AES Is Not Enough: the Block Ciphers Zoo Goes Homormorphic (over TFHE)",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The power of adaptivity in algorithms has been intensively studied in diverse areas of theoretical computer science. In this paper, we obtain a number of sharp lower bound results which show that adaptivity provides a significant extra power in cryptanalytic time-space tradeoffs with (possibly unlimited) preprocessing time.  \r\n\r\n    Most notably, we consider the discrete logarithm (DLOG) problem in a generic group of $N$ elements. The classical `baby-step giant-step' algorithm for the problem has time complexity $T=O(\\sqrt{N})$, uses $O(\\sqrt{N})$ bits of space (up to logarithmic factors in $N$) and achieves constant success probability.\r\n\r\n    We examine a generalized setting where an algorithm obtains an advice string of $S$ bits and is allowed to make $T$ arbitrary non-adaptive queries that depend on the advice string (but not on the challenge group element for which the DLOG needs to be computed). \r\n    \r\n    We show that in this setting, the $T=O(\\sqrt{N})$ online time complexity of the baby-step giant-step algorithm cannot be improved, unless the advice string is more than $\\Omega(\\sqrt{N})$ bits long. This lies in stark contrast with the classical adaptive Pollard's rho algorithm for DLOG, which can exploit preprocessing to obtain the tradeoff curve $ST^2=O(N)$. We obtain similar sharp lower bounds for the problem of breaking the Even-Mansour cryptosystem in symmetric-key cryptography and for several other problems. \r\n    \r\n    To obtain our results, we present a new model that allows analyzing non-adaptive preprocessing algorithms for a wide array of search and decision problems in a unified way. \r\n    \r\n    Since previous proof techniques inherently cannot distinguish between adaptive and non-adaptive algorithms for the problems in our model, they cannot be used to obtain our results. Consequently, we rely on information-theoretic tools for handling distributions and functions over the space $S_N$ of permutations of $N$ elements. Specifically, we use a variant of Shearer's lemma for this setting, due to Barthe, Cordero-Erausquin, Ledoux, and Maurey (2011), and a variant of the concentration inequality of Gavinsky, Lovett, Saks and Srinivasan (2015) for read-$k$ families of functions, that we derive from it. This seems to be the first time a variant of Shearer's lemma for permutations is used in an algorithmic context, and it is expected to be useful in other lower bound arguments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ben-Gurion University and Georgetown University"
+                }
+            ],
+            "fullName": "Itai Dinur"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University"
+                }
+            ],
+            "fullName": "Nathan Keller"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University"
+                }
+            ],
+            "fullName": "Avichai Marmor"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-01T21:41:49Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/783.pdf",
+    "pid": "783",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Non-Adaptive Cryptanalytic Time-Space Lower Bounds via a Shearer-like Inequality for Permutations",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The CKKS fully homomorphic encryption scheme enables\r\nefficient homomorphic operations in terms of throughput, but its bootstrapping\r\nalgorithm incurs a significant latency. In this work, we introduce\r\nSHIP, a novel bootstrapping algorithm for CKKS ciphertexts. SHIP\r\nenjoys a very shallow homomorphic multiplicative depth compared to\r\nstate-of-the-art CKKS bootstrapping algorithms. Bootstrapping depth\r\ndirectly impacts the required Ring-LWE modulus, and hence the Ring-\r\nLWE degree. The massive depth saving allows us to report the first bootstrapping\r\nof CKKS ciphertexts for full-dimensional cleartext vectors in\r\nring degree N=2^13, without resorting to an expensive scheme switching\r\nto DM/CGGI. SHIP also enjoys great parallelizability, with minimal\r\ncommunication between threads. The combined ring size reduction and\r\nhigh parallelizability lead to very low latency. In ring degree N=2^13,\r\nour experimental implementation runs in 215ms on a 32-core CPU for\r\nreal-valued cleartext vectors. This is 2.5x lower than the smallest latency\r\nwe could observe with the HEaaN library (using 48 cores). For binary\r\ncleartext vectors, the latency is lowered to 174ms, which is 2.2x lower\r\nthan Bae et al [Eurocrypt\u201924] (with 32 cores).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                },
+                {
+                    "name": "CryptoLab Inc."
+                }
+            ],
+            "fullName": "Jung Hee Cheon"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoLab Inc."
+                }
+            ],
+            "fullName": "Guillaume Hanrot"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Jongmin Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoLab Inc."
+                }
+            ],
+            "fullName": "Damien Stehl\u00e9"
+        }
+    ],
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-02T02:15:08Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/784.pdf",
+    "pid": "784",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SHIP: A Shallow and Highly Parallelizable CKKS Bootstrapping Algorithm",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Authenticated encryption with associated data (AEAD) schemes are responsible for securing increasingly critical digital infrastructures, worldwide. Unfortunately, current widely deployed schemes suffer from various limitations that make them difficult to use securely in practice. For example, schemes like AES-GCM limit the amount of data that can be encrypted with a single key,  therefore limiting its secure scaling to modern workloads. At the same time, practitioners may not be able to move away from the use of AES-GCM due to mature and widely deployed implementations, legacy constraints, and compliance. \r\n \r\nIn this paper, we provide approaches to improve the secure scaling of AEAD schemes via what we call derived-nonce, derived-key (DNDK) transforms. At a high level, such transforms use a root key to derive a nonce and key for use with an underlying scheme. The challenge is doing so in a way that introduces as little overhead as possible, and relying on a small number of assumptions on the used primitives. We provide some general results about secure scaling transforms and a concrete design for AES-GCM that is called DNDK-GCM. It requires as little as three additional AES calls to enable use of the same key to encrypt up to $2^{64}$ bytes of data, even when using random nonces. We also provide a detailed performance analysis. DNDK-GCM is now a draft IETF standard, and is already deployed at the cloud scale by companies including Meta.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Haifa and Meta"
+                }
+            ],
+            "fullName": "Shay Gueron"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cornell Tech"
+                }
+            ],
+            "fullName": "Thomas Ristenpart",
+            "orcid": "0000-0002-8642-9558"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-02T02:25:15Z"
+        }
+    ],
+    "keywords": [
+        "Authenticated encryption",
+        "AEAD",
+        "key-committing encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/785.pdf",
+    "pid": "785",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "DNDK: Combining Nonce and Key Derivation for Fast and Scalable AEAD",
+    "year": 2025,
+    "repo": [
+        "https://github.com/facebookincubator/haberdashery",
+        "https://github.com/C2SP/C2SP/blob/main/XAES-256-GCM.md",
+        "https://github.com/C2SP/C2SP/blob/main/XAES-256-GCM.md"
+    ]
+}
+,
+{
+    "abstract": "In this work, we present an efficient secure multi-party computation MPC protocol that provides strong security guarantees in settings with a dishonest majority of participants who may behave arbitrarily. Unlike the popular MPC implementation known as SPDZ [Crypto \u201912], which only ensures security with abort, our protocol achieves both complete identifiability and robustness. With complete identifiability, honest parties can detect and unanimously agree on the identity of any malicious party. Robustness allows the protocol to continue with the computation without requiring a restart, even when malicious behavior is detected. Additionally, our approach addresses the performance limitations observed in the protocol by Cunningham et al. [ICITS \u201917], which, while achieving complete identifiability, is hindered by the costly exponentiation operations required by the choice of commitment scheme.\r\n\r\nOur protocol is based on the approach by Rivinius et al. [S&P \u201922], utilizing lattice-based commitment for better efficiency. We achieves robustness with the help of a semi-honest trusted third party. We benchmark our robust protocol, showing the efficient recovery from parties\u2019 malicious behavior.\r\n\r\nFinally, we benchmark our protocol on a ML-as-a-service scenario, wherein clients off-load the desired computation to the servers, and verify the computation result. We benchmark on linear ML inference, running on various datasets. While our efficiency is slightly lower compared to SPDZ\u2019s, we offer stronger security properties that provide distinct advantages.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Texas A&M University",
+                    "ror": "https://ror.org/01f5ytq51"
+                }
+            ],
+            "fullName": "Tzu-Shen Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Texas A&M University",
+                    "ror": "https://ror.org/01f5ytq51"
+                }
+            ],
+            "fullName": "Jimmy Dani"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Texas A&M University",
+                    "ror": "https://ror.org/01f5ytq51"
+                }
+            ],
+            "fullName": "Juan Garay"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Air Force Research Laboratory"
+                }
+            ],
+            "fullName": "Soamar Homsi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Texas A&M University",
+                    "ror": "https://ror.org/01f5ytq51"
+                }
+            ],
+            "fullName": "Nitesh Saxena"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-02T15:10:56Z"
+        }
+    ],
+    "keywords": [
+        "Multi-Party Computation",
+        "Robustness",
+        "Machine Learning"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/786.pdf",
+    "pid": "786",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Robust and Verifiable MPC with Applications to Linear Machine Learning Inference",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1109/SP61157.2025.00041",
+    "abstract": "We put forth a new paradigm for practical secure multiparty computation (MPC) in the preprocessing model, where a feasible one-time setup can enable a lifetime of efficient online secure computations. \r\nOur protocols match the security guarantees and low costs of the cheapest category of MPC solutions, namely 3-party protocols (3PC) secure against a single malicious party, with the qualitative advantages that one party communicates data sublinear in the circuit size, and can go offline after its initial messages. This \"2+1\"-party structure can alternatively be instantiated between 2 parties with the aid of a (possibly untrusted) dealer. Within such existing protocols, we provide comparable online performance while improving the storage and offline dealer-to-party communication requirements by more than 3 orders of magnitude. \r\n\r\nAt the technical level, we build on a novel combination of the Fully Linear Interactive Oracle Proof (FLIOP)-based protocol design of Boyle et al. (CRYPTO 2021) and pseudorandom correlation generators. We provide an extensive assortment of algorithmic and implementation-level optimizations, design efficient distributed proofs of well-formedness of complex FLIOP correlations, and make them circuit-independent. We implement and benchmark our end-to-end system against the state of the art in the $(2+1)$ regime, a dealer-aided variant of SPDZ for Boolean circuits.\r\n\r\nWe additionally extend our techniques to the $(n+1)$ party setting, where a dealer aids general dishonest-majority MPC, and provide a variant of the protocol which further achieves security with identifiable abort.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                },
+                {
+                    "name": "Reichman University",
+                    "ror": "https://ror.org/01px5cv07"
+                }
+            ],
+            "fullName": "Elette Boyle",
+            "orcid": "0009-0002-0360-8129"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ben-Gurion University of the Negev",
+                    "ror": "https://ror.org/05tkyf982"
+                }
+            ],
+            "fullName": "Niv Gilboa",
+            "orcid": "0000-0001-7209-3494"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Reichman University",
+                    "ror": "https://ror.org/01px5cv07"
+                }
+            ],
+            "fullName": "Matan Hamilis",
+            "orcid": "0009-0008-0844-7348"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                }
+            ],
+            "fullName": "Yuval Ishai",
+            "orcid": "0009-0009-4096-6305"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University",
+                    "ror": "https://ror.org/03kgsv495"
+                }
+            ],
+            "fullName": "Ariel Nof",
+            "orcid": "0009-0007-4852-083X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-03T06:16:21Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/787.pdf",
+    "pid": "787",
+    "pubtype": {
+        "note": "2025 IEEE Symposium on Security and Privacy (S&P)",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Preprocessing for Life: Dishonest-Majority MPC with a Trusted or Untrusted Dealer",
+    "year": 2025,
+    "repo": [
+        "https://github.com/MatanHamilis/PreprocessingForLife"
+    ]
+}
+,
+{
+    "abstract": "An identity-based ring signature (IRS) is an attractive cryptographic primitive having numerous applications including e-cash and e-voting, that enables a user to authenticate sensitive documents on behalf of a ring of user identities chosen by the signer and provides anonymity and unforgeability. We introduce the first quantum-tokenized identity-based ring signature (QTIRS) scheme qtIRS and its variant D-qtIRS with signature delegation assuming the existence of obfuscated membership-checking circuits and a computationally sound non-interactive zero-knowledge (NIZK) proof system. We emphasize that our schemes are dynamic where a user can join or leave the system without disturbing others, allow unrestricted ring size with signature size independent of the ring size and provide security in the standard model. We enhance our security framework by minimizing restrictions for the adversary and allowing a broader domain to forge and introduce the notion of strong existential unforgeability against adaptive-chosen-message-and-identity attack (sEU-ACMI) and strong anonymity (sAnon). Our scheme qtIRS achieves sEU-ACMI and sAnon security while our scheme D-qtIRS attains strong existential unforgeability against adaptive-chosen-message-and-identity attack with signature delegation (sEU-ACMID) and sAnon. Most interestingly, our D-qtIRS features signature delegation and leased key revocation in the IRS setting, enabling a lessor to grant a limited signing authority to a lessee and revoke the delegated authority whenever needed. Additionally, we have shown the existence of obfuscated membership-checking circuits which is of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology of Kharagpur"
+                }
+            ],
+            "fullName": "Nabanita Chakraborty"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology of Kharagpur"
+                }
+            ],
+            "fullName": "Ratna Dutta"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-03T10:05:04Z"
+        }
+    ],
+    "keywords": [
+        "Quantum-token",
+        "Obfuscation",
+        "Key-leasing",
+        "Identity-based ring signature",
+        "Non-interactive zero-knowledge proof"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/788.pdf",
+    "pid": "788",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Identity-Based Ring Signature from Quantum Token",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1109/SP61157.2025.00176",
+    "abstract": "Secure multi-party computation (MPC) enables parties to compute a function over private inputs while maintaining confidentiality. Although MPC has advanced significantly and attracts a growing industry interest, open-source implementations are still at an early stage, with no production-ready code and a poor understanding of their actual security guarantees.\r\nIn this work, we study the real-world security of modern MPC implementations, focusing on the SPDZ protocol (Damg\u00e5rd et al., CRYPTO 2012, ESORICS 2013), which provides security against malicious adversaries when all-but-one of the participants may be corrupted. We identify a novel type of MAC key leakage in the MAC check protocol of SPDZ, which can be exploited in concurrent, multi-threaded settings, compromising output integrity and, in some cases, input privacy. In our analysis of three SPDZ implementations (MP-SPDZ, SCALE-MAMBA, and FRESCO), two are vulnerable to this attack, while we also uncover further issues and vulnerabilities with all implementations. We propose mitigation strategies and some recommendations for researchers, developers and users, which we hope can bring more awareness to these issues and avoid them reoccurring in future.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Alexander Kyster"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Frederik Huss Nielsen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Vrije Universiteit Amsterdam",
+                    "ror": "https://ror.org/008xxew50"
+                }
+            ],
+            "fullName": "Sabine Oechsner",
+            "orcid": "0000-0002-4612-2471"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Peter Scholl",
+            "orcid": "0000-0002-7937-8422"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-03T20:22:04Z"
+        }
+    ],
+    "keywords": [
+        "multiparty computation",
+        "concurrent implementation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/789.pdf",
+    "pid": "789",
+    "pubtype": {
+        "note": "IEEE Symposium on Security and Privacy (SP) 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Rushing at SPDZ: On the Practical Security of Malicious MPC Implementations",
+    "year": 2025,
+    "repo": [
+        "https://github.com/rot256/mpc-pitfalls",
+        "https://github.com/MPC-SoK/frameworks/wiki/",
+        "https://github.com/MPC-SoK/frameworks/wiki/",
+        "https://github.com/data61/MP-SPDZ",
+        "https://github.com/KULeuven-COSIC/SCALE-MAMBA",
+        "https://github.com/data61/MP-SPDZ/commit/6a424539c93f5489a6d09360f0092224552d94d8#diff-3c0ad6bb08c56f84bbe63791f959b1206c0659f56e68a48cbcd7808aeef68c3d",
+        "https://github.com/data61/MP-SPDZ/commit/b86f29b69515cfe0d925dfb07136b5b03e9a96d2",
+        "https://github.com/aicis/fresco"
+    ]
+}
+,
+{
+    "abstract": "Multi-party private set union (mPSU) allows multiple parties to compute the union of their private input sets without revealing any additional information. \r\nExisting efficient mPSU protocols can be categorized into symmetric key encryption (SKE)-based and public key encryption (PKE)-based approaches. However, neither type of mPSU protocol scales efficiently to a large number of parties, as they fail to fully utilize available computational resources, leaving participants idle during various stages of the protocol execution.\r\n\r\nThis work examines the limitation of existing protocols and proposes a unified framework for designing efficient mPSU protocols.  We then introduce an efficient Parallel mPSU for Large-Scale Entities (PULSE) that enables parallel computation, allowing all parties/entities to perform computations without idle time, leading to significant efficiency improvements, particularly as the number of parties increases.  Our protocol is based on PKE and secure even when up to $n-1$ semi-honest parties are corrupted. We implemented PULSE and compared it to state-of-the-art mPSU protocols under different settings, showing a speedup of $1.91$ to $3.57\\times$ for $n=8$ parties for various set sizes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Jiahui Gao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Son Nguyen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University at Buffalo",
+                    "ror": "https://ror.org/01y64my43"
+                }
+            ],
+            "fullName": "Marina Blanton"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Ni Trieu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-03T21:53:53Z"
+        }
+    ],
+    "keywords": [
+        "PSU"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/790.pdf",
+    "pid": "790",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PULSE: Parallel Private Set Union for Large-Scale Entities",
+    "year": 2025,
+    "repo": [
+        "https://github.com/osu-crypto/libOTe"
+    ]
+}
+,
+{
+    "abstract": "We show that the data classification scheme  [IEEE Trans. Sustain. Comput., 2023, 8(4), 652-669)]  failed to check  the compatibility of encoding algorithm and homomorphic encryption algorithm. Some calculations should be revised to ensure all operands are first encoded using the same scaling factors. The canonical embedding map depending on the natural projection  should be explicitly arranged so as to construct an efficient decoding algorithm.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-04T03:55:58Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic encryption",
+        "data classification",
+        "scaling factors",
+        "canonical embedding map",
+        "natural projection"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/791.pdf",
+    "pid": "791",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Analysis of One Privacy-Preserving Electricity Data Classification Scheme Based on CNN Model With Fully Homomorphism",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "AES has cemented its position as the primary symmetric-key primitive for a wide range of cryptographic applications, which motivates the analysis on the concrete security of AES's instantiations in practice, for instance, the collision resistance of AES-based hashing, the key commitment security of AES-based authenticated encryption schemes, and the one-wayness of AES-based one-way functions in ZK and MPC protocols. In this work, we introduce single-color initial structures into meet-in-the-middle (MITM) attacks, a systematic technique to identify attack trails that enable efficient neutral word generation and low-memory attacks. As a result, we have attained: (1) the first classical one-block collision attack on 7-round AES-MMO/MP, marking the first advancement in attack rounds for more than a decade and matching the attack rounds in the quantum setting; (2) the first one-block collision attack on 4-round AES-128-DM, which bridges the gap in Taiyama et al.'s claim at Asiacrypt 2024 from an MITM perspective; (3) the first improvement in single known plaintext key recovery attack on 5-round AES-128 in over a decade; (4) comprehensive results on the security margin of Rijndael-192 and Rijndael-256 in multiple instantiations. These breakthroughs deepen our understanding of AES-like structure, and contribute as a scrutiny of the security of AES-based instantiations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Shiyao Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Jian Guo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Eik List"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Chinese Academy of Sciences",
+                    "ror": "https://ror.org/034t30j35"
+                }
+            ],
+            "fullName": "Danping Shi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Tianyu Zhang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-04T09:01:08Z"
+        }
+    ],
+    "keywords": [
+        "Meet-in-the-Middle Attack",
+        "Collision",
+        "Key Collision",
+        "AES",
+        "Hash Function",
+        "One-Way Function",
+        "FAEST"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/792.pdf",
+    "pid": "792",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Scrutiny of the Security of AES-based Hashing and One-way Functions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "One approach to solving polynomial systems is to multiply each equation by monomials, which creates a larger system with the coefficient matrix known as the Macaulay matrix.\r\nThe eXtended Linearization (XL) method, introduced by Courtois, Klimov, Patarin, and Shamir in 2000, is one such approach and includes a sub-algorithm that performs Gaussian elimination on the Macaulay matrix.\r\nDue to the simplicity of the method, several improvements and variations have been proposed since its introduction, and it remains an active area of research.\r\nIn this paper, we focus on sub-algorithms based on Macaulay matrices that are used in the XL method and its variants and investigate the input parameters that produce the desired output, such as a Gr\\\"{o}bner basis.\r\nIn particular, by summarizing some known facts about the standard degree, we provide a foundation for extending the XL method to the multi-degree case.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ibaraki University",
+                    "ror": "https://ror.org/00sjd5653"
+                }
+            ],
+            "fullName": "Shuhei Nakamura"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-04T09:06:33Z"
+        }
+    ],
+    "keywords": [
+        "solving polynomial systems",
+        "Macaulay matrix",
+        "Groebner basis",
+        "XL algorithm",
+        "multi-degree"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/793.pdf",
+    "pid": "793",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Solving systems of polynomial equations via Macaulay matrices",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-91101-9_9",
+    "abstract": "WhatsApp provides end-to-end encrypted messaging to over two billion users. However, due to a lack of public documentation and source code, the specific security guarantees it provides are unclear. Seeking to rectify this situation, we combine the limited public documentation with information we gather through reverse-engineering its implementation to provide a formal description of the subset of WhatsApp that provides multi-device group messaging. We utilise this description to state and prove the security guarantees that this subset of WhatsApp provides. Our analysis is performed within a variant of the Device-Oriented Group Messaging model, which we extend to support device revocation. We discuss how to interpret these results, including the security WhatsApp provides as well as its limitations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "King\u2019s College London",
+                    "ror": "https://ror.org/0220mzb33"
+                }
+            ],
+            "fullName": "Martin R. Albrecht"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "King\u2019s College London",
+                    "ror": "https://ror.org/0220mzb33"
+                }
+            ],
+            "fullName": "Benjamin Dowling",
+            "orcid": "0000-0003-3234-6527"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway University of London",
+                    "ror": "https://ror.org/04g2vpn86"
+                }
+            ],
+            "fullName": "Daniel Jones",
+            "orcid": "0000-0002-7140-442X"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-04T12:12:57Z"
+        }
+    ],
+    "keywords": [
+        "Secure Messaging",
+        "Group Messaging",
+        "Post-Compromise Security",
+        "Device Management",
+        "WhatsApp",
+        "Sender Keys",
+        "Revocation"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/794.pdf",
+    "pid": "794",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Formal Analysis of Multi-Device Group Messaging in WhatsApp",
+    "year": 2025,
+    "repo": [
+        "https://github.com/signalapp/libsignal/blob/701895d541607b3eada37c9fdb5870fd1e7e6d01/rust/protocol/src/session_cipher.rs#L469-L505",
+        "https://github.com/zoom/zoom-e2e-whitepaper/",
+        "https://github.com/zoom/zoom-e2e-whitepaper/",
+        "https://github.com/zoom/zoom-e2e-whitepaper/",
+        "https://github.com/facebook/akd",
+        "https://web.archive.org/web/20250116130542/https://github.com/facebook/akd"
+    ]
+}
+,
+{
+    "abstract": "NTRU schemes have been extensively studied as post-quantum proposals within the category of lattice-based constructions.\r\nNumerous designs have been introduced with security assumptions based on the NTRU hard problem; some focused on security, and others were motivated by faster computations. Recently, some proposals for noncommutative NTRU have appeared in the literature, claiming more resistance to some algebraic attacks. While these proposals provide practical cryptosystems, they fail to perform similarly to the original NTRU over the ring of integers. This work introduces the first construction of noncommutative NTRU that matches the speed of NTRU over the ring of integers.\r\nAdditionally, we present another construction over the ring of Eisenstein integers, demonstrating that performance can be further enhanced. We comprehensively implement the Key Encapsulation Mechanisms (KEMs) based on our constructions and compare their efficiency and compactness to both commutative and noncommutative NTRU variants in the literature. Our findings indicate that the new designs provide competitive memory and time requirements while utilizing noncommutative algebra. For example, our noncommutative KEM based on the twisted dihedral group ring over the ring of integers achieves encapsulation and decapsulation speeds comparable to NTRU-HPS, with a key generation speed that is 2.5 times faster. Additionally, our construction based on the ring of Eisenstein integers is at least 1.6 times faster for key generation and 1.3 times faster for both encapsulation and decapsulation compared to NTRU-HPS.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indiain Insititute of Technology, Roorkee"
+                }
+            ],
+            "fullName": "Ali Raya",
+            "orcid": "0000-0001-5576-7039"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indiain Insititute of Technology, Roorkee"
+                }
+            ],
+            "fullName": "Vikas Kumar",
+            "orcid": "0000-0002-1981-1984"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indiain Insititute of Technology, Roorkee"
+                }
+            ],
+            "fullName": "Sugata Gangopadhyay"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "aditi.gangopadhyay[at]ma.iitr.ac.in"
+                }
+            ],
+            "fullName": "Aditi Kar Gangopadhyay"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-04T13:01:14Z"
+        }
+    ],
+    "keywords": [
+        "NTRU",
+        "Twisted group rings",
+        "Noncommutative",
+        "Dihedral group"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/795.pdf",
+    "pid": "795",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Noncommutative KEMs from Twisted Dihedral Group Ring",
+    "year": 2025,
+    "repo": [
+        "https://github.com/The-Isogeniest/KEMs_twisted_DiTRU",
+        "https://github.com/The-Isogeniest/KEMs_twisted_DiTRU",
+        "https://github.com/The-Isogeniest/KEMs_twisted_DiTRU/blob/main/Parameter-Selection.ipynb",
+        "https://github.com/The-Isogeniest/KEMs_twisted_DiTRU/blob/main/Parameter-Selection.ipynb",
+        "https://github.com/The-Isogeniest/KEMs_twisted_DiTRU/blob/main/Parameter-Selection.ipynb"
+    ]
+}
+,
+{
+    "abstract": "The Matrix Equivalence Digital Signature (MEDS) scheme a code-based candidate in the first round of NIST\u2019s Post-Quantum Cryptography (PQC) standardization process, offers competitively small signature sizes but incurs high computational costs for signing and verification. This work explores how a high-performance FPGA-based hardware implementation can enhance MEDS performance by leveraging the inherent parallelism of its computations, while examining the trade-offs between performance gains and resource costs. This work in particular proposes a unified hardware architecture capable of efficiently performing both signing and verification operations within a single combined design. The architecture jointly supports all security parameters, including the dynamic, run-time handling of different prime fields without the need to re-configure the FPGA. This work also evaluates the resource overhead of supporting different prime fields in a single design, which is relevant not only for MEDS but also for other cryptographic schemes requiring similar flexibility. This work demonstrates that custom hardware for PQC signature schemes can flexibly support different prime fields with limited resource overhead. For example, for NIST security Level I, our implementation achieves signing times of 4.5 ms to 65.2 ms and verification times of 4.2 ms to 64.5 ms utilizing 22k to 72k LUTs and 66 to 273 DSPs depending on design variant and optimization goal.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Sanjay Deshpande",
+            "orcid": "0009-0005-0938-9547"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Yongseok Lee",
+            "orcid": "0000-0002-1608-809X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Mamuri Nawan",
+            "orcid": "0009-0004-1573-8718"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Kashif Nawaz",
+            "orcid": "0000-0002-3887-7364"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Academia Sinica",
+                    "ror": "https://ror.org/05bxb3784"
+                },
+                {
+                    "name": "University of Southern Denmark",
+                    "ror": "https://ror.org/03yrrjy16"
+                }
+            ],
+            "fullName": "Ruben Niederhagen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Seoul National University",
+                    "ror": "https://ror.org/04h9pn542"
+                }
+            ],
+            "fullName": "Yunheung Paek",
+            "orcid": "0000-0002-6412-2926"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northwestern University",
+                    "ror": "https://ror.org/000e0be47"
+                }
+            ],
+            "fullName": "Jakub Szefer",
+            "orcid": "0000-0001-9721-3640"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-04T16:59:22Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography",
+        "Digital Signature Algorithm",
+        "Matrix Equivalence Digital Signature",
+        "MEDS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/796.pdf",
+    "pid": "796",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Unified MEDS Accelerator",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Ensuring code integrity in browser-based applications remains a longstanding challenge exacerbated by the complexity of modern web environments. We propose Web-based Code Assurance and Transparency, a novel code integrity verification and enforcement mechanism that prevents the execution of unverified code, unlike previous approaches premised on user-visible error indicators or permissive failure modes. WEBCAT remains compatible with modern web features, uses existing cryptographic components without reinventing primitives or requiring expensive infrastructure, and provides verifiable logs of all system components, even under degraded operational conditions. It follows a separation-of-concerns model in which hosting providers require no special trust or cryptographic keys to deploy developer-signed applications, reflecting real-world deployment scenarios in which trusted applications may be served by multiple less-trusted hosts.\r\n \r\nWe evaluate our approach by porting Jitsi, GlobaLeaks, Element, CryptPad, Standard Notes, and Bitwarden, demonstrating compatibility across a diverse set of applications. Benchmark results indicate an overhead of up to 2% for non-enrolled domains on cold starts and up to 20% for enrolled ones. Under warm start conditions, the overhead reaches 25% for enrolled domains and 5% for non-enrolled ones\u2014lower than previous methods while addressing a larger threat model and remaining compatible with existing applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "VU Amsterdam",
+                    "ror": "https://ror.org/008xxew50"
+                }
+            ],
+            "fullName": "Giulio Berra",
+            "orcid": "0009-0005-0543-4144"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-04T20:00:22Z"
+        }
+    ],
+    "keywords": [
+        "transparency",
+        "integrity",
+        "web application",
+        "browser",
+        "javascript",
+        "webassembly"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/797.pdf",
+    "pid": "797",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "WEBCAT: Web-based Code Assurance and Transparency",
+    "year": 2025,
+    "repo": [
+        "https://github.com/signalapp/Signal-Desktop/issues/4466",
+        "https://github.com/C2SP/C2SP/blob/tlog-checkpoint/v1.0.0-rc.1/tlog-witness.md",
+        "https://w3c.github.io/webcrypto/",
+        "https://wicg.github.io/webcrypto-secure-curves/",
+        "https://github.com/freedomofpress/webcat/issues/42",
+        "https://github.com/google/trillian",
+        "https://github.com/freedomofpress/webcat/issues/42",
+        "https://github.com/freedomofpress/webcat?tab=readme-ov-file#web-based-code-assurance-and-transparency-webcat",
+        "https://github.com/freedomofpress/webcat?tab=readme-ov-file#web-based-code-assurance-and-transparency-webcat",
+        "https://wicg.github.io/webcrypto-secure-curves/",
+        "https://github.com/w3c/ServiceWorker/issues/1680",
+        "https://github.com/twiss/source-code-transparency/blob/main/explainer.md",
+        "https://github.com/twiss/source-code-transparency/blob/main/explainer.md",
+        "https://github.com/WICG/isolated-web-apps/blob/main/README.md",
+        "https://github.com/lsd-cat/webcat",
+        "https://github.com/lsd-cat/webcat",
+        "https://github.com/lsd-cat/webcat-element",
+        "https://secartifacts.github.io/usenixsec2024/",
+        "https://secartifacts.github.io/usenixsec2024/"
+    ]
+}
+,
+{
+    "DOI": "https://doi.org/10.48550/arXiv.2503.03877",
+    "abstract": "Fault injection attacks represent a class of threats that can compromise embedded systems across multiple layers of abstraction, such as system software, instruction set architecture (ISA), microarchitecture, and physical implementation. Early detection of these vulnerabilities and understanding their root causes, along with their propagation from the physical layer to the system software, is critical in securing the cyberinfrastructure. \r\nThis work presents a comprehensive methodology for conducting controlled fault injection attacks at the pre-silicon level and an analysis of the underlying system for root-causing behavior. As the driving application, we use the clock glitch attacks in AI/ML applications for critical misclassification. Our study aims to characterize and diagnose the impact of faults within the RISC-V instruction set and pipeline stages, while tracing fault propagation from the circuit level to the AI/ML application software. This analysis resulted in discovering two new vulnerabilities through controlled clock glitch parameters. First, we reveal a novel method for causing instruction skips, thereby preventing the loading of critical values from memory. This can cause disruption and affect program continuity and correctness. Second, we demonstrate an attack that converts legal instructions into illegal ones, thereby diverting control flow in a manner exploitable by attackers. Our work underscores the complexity of fault injection attack exploits and emphasizes the importance of preemptive security analysis.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "North Carolina State University",
+                    "ror": "https://ror.org/04tj63d06"
+                }
+            ],
+            "fullName": "Arsalan Ali Malik",
+            "orcid": "0000-0002-7477-0898"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "North Carolina State University",
+                    "ror": "https://ror.org/04tj63d06"
+                }
+            ],
+            "fullName": "Harshvadan Mihir"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "North Carolina State University",
+                    "ror": "https://ror.org/04tj63d06"
+                }
+            ],
+            "fullName": "Aydin Aysu",
+            "orcid": "0000-0002-5530-8710"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-05T00:04:17Z"
+        }
+    ],
+    "keywords": [
+        "Fault injection attack",
+        "RISC-V",
+        "Instruction decode failure",
+        "Clock glitch",
+        "Pre-silicon"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/798.pdf",
+    "pid": "798",
+    "pubtype": {
+        "note": "arXiv.org",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "CRAFT: Characterizing and Root-Causing Fault Injection Threats at Pre-Silicon",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
