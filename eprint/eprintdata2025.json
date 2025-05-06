@@ -57177,4 +57177,514 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Masking is one of the most prevalent and investigated countermeasures against side-channel analysis. As an alternative to the simple (e.g., additive) encoding function of Boolean masking, a collection of more algebraically complex masking types has emerged. Recently, inner product masking and the more generic code-based masking have proven to enable higher theoretical security properties than Boolean masking. In CARDIS 2017, Poussier et al. connected this ``security order amplification'' effect to the bit-probing model, demonstrating that for the same shared size, sharings from more complex encoding functions exhibit greater resistance to higher-order attacks. Despite these advantages, masked gadgets designed for code-based implementations face significant overhead compared to Boolean masking. Furthermore, existing code-based masked gadgets are not designed for efficient bitslice representation, which is highly beneficial for software implementations. Thus, current code-based masked gadgets are constrained to operate over words (e.g., elements in $\\mathbb{F}_{2^k}$), limiting their applicability to ciphers where the S-box can be efficiently computed via power functions, such as AES. In this paper, we address the aforementioned limitations. We first introduce foundational masked linear and non-linear circuits that operate over bits of code-based sharings, ensuring composability and preserving bit-probing security, specifically achieving $t$-Probe Isolating Non-Interference ($t$-PINI). Utilizing these circuits, we construct masked ciphers that operate over bits, preserving the security order amplification effect during computation. Additionally, we present an optimized bitsliced masked assembly implementation of the SKINNY cipher, which outperforms Boolean masking in terms of randomness and gate count. The third-order security of this implementation is formally proven and validated through practical side-channel leakage evaluations on a Cortex-M4 core, confirming its robustness against leakages up to one million traces.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "John Gaspoz",
+            "orcid": "0000-0002-1626-6175"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Siemen Dhooghe",
+            "orcid": "0000-0003-0591-7355"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-05T02:57:26Z"
+        }
+    ],
+    "keywords": [
+        "Code-based Masking",
+        "Masking",
+        "Probe Isolating Non-Interference",
+        "Probing Security",
+        "Side-channel Analysis",
+        "Software"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Preprint.",
+    "pdffile": "2025/799.pdf",
+    "pid": "799",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Code-based Masking: From Fields to Bits Bitsliced Higher-Order Masked SKINNY",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The conditional disclosure of secrets (CDS) setting is among the most basic primitives studied in information-theoretic cryptography.  Motivated by a connection to non-local quantum computation and position-based cryptography, CDS with quantum resources has recently been considered. Here, we study the differences between quantum and classical CDS, with the aims of clarifying the power of quantum resources in information-theoretic cryptography. We establish the following results:\r\n\r\n1) For perfectly correct CDS, we give a separation for a promise version of the not-equals function, showing a quantum upper bound of $O(\\log n)$ and classical lower bound of $\\Omega(n)$. \r\n\r\n2) We prove a $\\Omega(\\log \\mathsf{R}_{0,A\\rightarrow B}(f)+\\log \\mathsf{R}_{0,B\\rightarrow A}(f))$ lower bound on quantum CDS where $\\mathsf{R}_{0,A\\rightarrow B}(f)$ is the classical one-way communication complexity with perfect correctness. \r\n\r\n3) We prove a lower bound on quantum CDS in terms of two round, public coin, two-prover interactive proofs.\r\n\r\n4) We give a logarithmic upper bound for quantum CDS on forrelation, while the best known classical algorithm is linear. We interpret this as preliminary evidence that classical and quantum CDS are separated even with correctness and security error allowed. \r\n\r\nWe also give a separation for classical and quantum private simultaneous message passing for a partial function, improving on an earlier relational separation. Our results use novel combinations of techniques from non-local quantum computation and communication complexity.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Uma Girish"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Perimeter Institute for Theoretical Physics",
+                    "ror": "https://ror.org/013m0ej23"
+                },
+                {
+                    "name": "Institute for Quantum Computing"
+                }
+            ],
+            "fullName": "Alex May",
+            "orcid": "0000-0002-4030-5410"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Leo Orshansky"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Perimeter Institute for Theoretical Physics",
+                    "ror": "https://ror.org/013m0ej23"
+                }
+            ],
+            "fullName": "Chris Waddell"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-05T03:54:26Z"
+        }
+    ],
+    "keywords": [
+        "quantum",
+        "information-theoretic cryptography",
+        "conditional disclosure of secrets",
+        "CDS",
+        "quantum-classical separations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/800.pdf",
+    "pid": "800",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Comparing classical and quantum conditional disclosure of secrets",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Many user-centric applications face a common privacy problem: the need to collect, store, and analyze sensitive user data. Examples include check-in/check-out based payment systems for public transportation, charging/discharging electric vehicle batteries in smart grids, coalition loyalty programs, behavior-based car insurance, and more. We propose and evaluate a generic solution to this problem. More specifically, we provide a formal framework integrating privacy-preserving data collection, storage, and analysis, which can be used for many different application scenarios, present an instantiation, and perform an experimental evaluation of its practicality.\r\n\r\nWe consider a setting where multiple operators (e.g., different mobility providers, different car manufacturers and insurance companies), who do not fully trust each other, intend to maintain and analyze data produced by the union of their user sets. The data is collected in an anonymous (wrt.\\ all operators) but authenticated way and stored in so-called user logbooks. In order for the operators to be able to perform analyses at any time without requiring user interaction, the logbooks are kept on the operator's side. Consequently, this potentially sensitive data must be protected from unauthorized access. To achieve this, we combine several selected cryptographic techniques, such as threshold signatures and oblivious RAM. The latter ensures that user anonymity is protected even against memory access pattern attacks.\r\n\r\nTo the best of our knowledge, we provide and evaluate the first generic framework that combines data collection, operator-side data storage, and data analysis in a privacy-preserving manner, while providing a formal security model, a UC-secure protocol, and a full implementation. With three operators, our implementation can handle over two million new logbook entries per day.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                },
+                {
+                    "name": "KASTEL Security Research Labs"
+                }
+            ],
+            "fullName": "Dennis Faut",
+            "orcid": "0009-0005-4682-7008"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                },
+                {
+                    "name": "KASTEL Security Research Labs"
+                }
+            ],
+            "fullName": "Valerie Fetzer",
+            "orcid": "0009-0001-8157-9768"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                },
+                {
+                    "name": "KASTEL Security Research Labs"
+                }
+            ],
+            "fullName": "J\u00f6rn M\u00fcller-Quade"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                },
+                {
+                    "name": "KASTEL Security Research Labs"
+                }
+            ],
+            "fullName": "Markus Raiber",
+            "orcid": "0000-0001-6449-9494"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Luxembourg",
+                    "ror": "https://ror.org/036x5ad56"
+                },
+                {
+                    "name": "KASTEL Security Research Labs"
+                }
+            ],
+            "fullName": "Andy Rupp",
+            "orcid": "0000-0003-0439-3633"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-05T10:46:44Z"
+        }
+    ],
+    "keywords": [
+        "Analytics",
+        "Bookkeeping",
+        "Building-Block",
+        "MPC",
+        "Protocols",
+        "Privacy",
+        "Provable Security",
+        "UC",
+        "Universal Composability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/801.pdf",
+    "pid": "801",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "POBA: Privacy-Preserving Operator-Side Bookkeeping and Analytics",
+    "year": 2025,
+    "repo": [
+        "https://github.com/relic-toolkit/relic",
+        "https://github.com/emp-toolkit"
+    ]
+}
+,
+{
+    "abstract": "Classic McEliece is one of the code-based Key Encapsulation Mechanism finalists in the ongoing NIST post-quantum cryptography standardization process. Several key-recovery side-channel attacks on the decapsulation algorithm have already been published. However none of them discusses the feasibility and/or efficiency of the attack in the case of noisy side-channel acquisitions. In this paper, we address this issue by proposing two improvements on the recent key-recovery attack published by Dr\u0103goi et al.. First, we introduce an error correction algorithm for the lists of Hamming weights obtained by side-channel measurements, based on the assumption, validated experimentally, that the error on a recovered Hamming weight is bounded to $\\pm1$. We then offer a comparison between two decoding efficiency metrics, the theoretical minimal error correction capability and an empirical average correction probability. We show that the minimal error correction capability, widely used for linear codes, is not suitable for the (non-linear) code formed by the lists of Hamming weights. Conversely, experimental results show that out of 1 million random erroneous lists of $2t=128$ Hamming weights, only 2 could not be corrected by the proposed algorithm. This shows that the probability of successfully decoding a list of erroneous Hamming weights is very high, regardless of the error weight. In addition to this algorithm, we describe how the secret Goppa polynomial $g$, recovered during the first step of the attack, can be exploited to reduce both the time and space complexity of recovering the secret permuted support $\\mathcal{L}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire Hubert Curien",
+                    "ror": "https://ror.org/0028p8r67"
+                }
+            ],
+            "fullName": "Nicolas Vallet"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire Hubert Curien",
+                    "ror": "https://ror.org/0028p8r67"
+                }
+            ],
+            "fullName": "Pierre-Louis Cayrel",
+            "orcid": "0000-0002-6708-868X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire Hubert Curien",
+                    "ror": "https://ror.org/0028p8r67"
+                }
+            ],
+            "fullName": "Brice Colombier",
+            "orcid": "0000-0002-6028-3028"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aurel Vlaicu University of Arad",
+                    "ror": "https://ror.org/05w5rsy15"
+                },
+                {
+                    "name": "LITIS, University of Rouen Normandie",
+                    "ror": "https://ror.org/01f1vfy95"
+                }
+            ],
+            "fullName": "Vlad-Florin Dragoi",
+            "orcid": "0000-0002-8673-9097"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire Hubert Curien",
+                    "ror": "https://ror.org/0028p8r67"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                }
+            ],
+            "fullName": "Vincent Grosso",
+            "orcid": "0000-0002-3874-7527"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-05T15:27:03Z"
+        }
+    ],
+    "keywords": [
+        "Post-quantum cryptography",
+        "Code-based cryptography",
+        "Classic McEliece",
+        "Side-channel attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/802.pdf",
+    "pid": "802",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Optimizing Key Recovery in Classic McEliece: Advanced Error Correction for Noisy Side-Channel Measurements",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Decentralized governance plays a critical role in blockchain communities, allowing stakeholders to shape the evolution of platforms such as Cardano, Gitcoin, Aragon, and MakerDAO through distributed voting on proposed projects in order to support the most beneficial of them. In this context, numerous voting protocols for decentralized decision-making have been developed, enabling secure and verifiable voting on individual projects (proposals). However, these protocols are not designed to support more advanced models such as quadratic voting (QV), where the voting power, defined as the square root of a voter\u2019s stake, must be distributed among the selected by voter projects. Simply executing multiple instances of a single-choice voting scheme in parallel is insufficient, as it can not enforce correct voting power splitting. To address this, we propose an efficient blockchain-based voting protocol that supports liquid democracy under the QV model, while ensuring voter privacy, fairness and verifiability of the voting results. In our scheme, voters can delegate their votes to trusted representatives (delegates), while having the ability to distribute their voting power across selected projects. We model our protocol in the Universal Composability framework and formally prove its UC-security under the Decisional Diffie\u2013Hellman (DDH) assumption. To evaluate the performance of our protocol, we developed a prototype implementation and conducted performance testing. The results show that the size and processing time of a delegate\u2019s ballot scale linearly with the number of projects, while a voter\u2019s ballot scales linearly with both the number of projects and the number of available delegation options. In a representative setting with 64 voters, 128 delegates and 128 projects, the overall traffic amounts to approximately 2.7 MB per voted project, confirming the practicality of our protocol for modern blockchain-based governance systems.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IOG",
+                    "ror": "https://ror.org/04abwvq32"
+                },
+                {
+                    "name": "Pukhov Institute for Modelling in Energy Engineering",
+                    "ror": "https://ror.org/00fhten74"
+                }
+            ],
+            "fullName": "Lyudmila Kovalchuk",
+            "orcid": "0000-0003-2874-7950"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IOG Research",
+                    "ror": "https://ror.org/04abwvq32"
+                },
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Bingsheng Zhang",
+            "orcid": "0000-0002-2320-9582"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IOG",
+                    "ror": "https://ror.org/04abwvq32"
+                },
+                {
+                    "name": "Kharkiv National University of Radio Electronics",
+                    "ror": "https://ror.org/01ctj1b90"
+                }
+            ],
+            "fullName": "Andrii Nastenko",
+            "orcid": "0000-0001-7780-5331"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Zeyuan Yin",
+            "orcid": "0000-0002-3722-9605"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IOG",
+                    "ror": "https://ror.org/04abwvq32"
+                },
+                {
+                    "name": "V.N.Karazin Kharkiv National University",
+                    "ror": "https://ror.org/01ctj1b90"
+                }
+            ],
+            "fullName": "Roman Oliynykov",
+            "orcid": "0000-0002-3494-0493"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IOG",
+                    "ror": "https://ror.org/04abwvq32"
+                },
+                {
+                    "name": "V.N.Karazin Kharkiv National University",
+                    "ror": "https://ror.org/01ctj1b90"
+                }
+            ],
+            "fullName": "Mariia Rodinko",
+            "orcid": "0000-0003-4692-9811"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-05T16:59:57Z"
+        }
+    ],
+    "keywords": [
+        "Quadratic Voting",
+        "Cryptographic Protocol",
+        "Decentralized Decision-making",
+        "Liquid Democracy",
+        "UC-security",
+        "Blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/803.pdf",
+    "pid": "803",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Universally Composable On-Chain Quadratic Voting for Liquid Democracy",
+    "year": 2025,
+    "repo": [
+        "https://github.com/input-output-hk/catalyst-core",
+        "https://github.com/input-output-hk/catalyst-core",
+        "https://github.com/dalek-cryptography/bulletproofs",
+        "https://github.com/dalek-cryptography/bulletproofs",
+        "https://github.com/input-output-hk/catalyst-split-stake-voting-prototype",
+        "https://github.com/input-output-hk/catalyst-split-stake-voting-prototype"
+    ]
+}
+,
+{
+    "abstract": "Distributed Hash Tables (DHTs) are peer-to-peer protocols that serve as building blocks for more advanced applications. Recent examples, motivated by blockchains, include decentralized storage networks (e.g., IPFS), data availability sampling, or Ethereum's peer discovery protocol.\r\n\r\nIn the blockchain context, DHTs are vulnerable to Sybil attacks, where an adversary compromises the network by joining with many malicious nodes. Mitigating such attacks requires restricting the adversary's ability to create a lot of Sybil nodes. Surprisingly, the above applications take no such measures. Seemingly, existing techniques are unsuitable for the proposed applications.\r\n\r\nFor example, a simple technique proposed in the literature uses proof of work (PoW), where nodes periodically challenge their peers to solve computational challenges. This, however, does not work well in practice. Since the above applications do not require honest nodes to have a lot of computational power, challenges cannot be too difficult. Thus, even moderately powerful hardware can sustain many Sybil nodes.\r\n\r\nIn this work, we investigate using Proof of Space (PoSp) to limit the number of Sybils DHTs. While PoW proves that a node wastes computation, PoSp proves that a node wastes disk space. This aligns better with the resource requirements of the above applications. Many of them are related to storage and ask honest nodes to contribute a substantial amount of disk space to ensure the application's functionality.\r\n\r\nWith this synergy in mind, we propose a mechanism to limit Sybils where honest nodes dedicate a fraction of their disk space to PoSp. This guarantees that the adversary cannot control a constant fraction of all DHT nodes unless it provides a constant fraction of whole the disk space contributed to the application in total. Since this is typically a significant amount, attacks become economically expensive.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science and Technology Austria"
+                }
+            ],
+            "fullName": "Christoph U. G\u00fcnther",
+            "orcid": "0009-0001-5790-695X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science and Technology Austria"
+                }
+            ],
+            "fullName": "Krzysztof Pietrzak"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-05T17:09:39Z"
+        }
+    ],
+    "keywords": [
+        "proofs of space",
+        "distributed hash tables",
+        "sybil resistance"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/804.pdf",
+    "pid": "804",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Putting Sybils on a Diet: Securing Distributed Hash Tables using Proofs of Space",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ethereum/devp2p"
+    ]
+}
 ]
