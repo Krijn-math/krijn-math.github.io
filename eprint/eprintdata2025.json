@@ -57687,4 +57687,72 @@
         "https://github.com/ethereum/devp2p"
     ]
 }
+,
+{
+    "abstract": "There is rising interest in combining Differential Privacy (DP) and Secure Multiparty Computation (MPC) techniques to protect distributed database query evaluations from both adversaries taking part in the computation and those observing the outputs. This requires implementing both the query evaluation and noise generation parts of a DP mechanism directly in MPC. While query evaluation can be done using existing highly optimized MPC techniques for secure function evaluation, efficiently generating the correct noise distribution is a more novel challenge. \r\n    Due to the inherent nonlinearity of sampling algorithms for common noise distributions, this challenge is quite non-trivial, as is evident from the substantial number of works proposing protocols for multiparty noise sampling. In this work, we propose a new approach for joint noise sampling that leverages recent advances in multiparty lookup table (LUT) evaluations. The construction we propose is largely agnostic to the target noise distribution and builds on obliviously evaluating the LUT at an index drawn from a distribution that can be very cheaply generated in MPC, thus translating this cheap distribution into the much more complicated target noise distribution. In our instantiation, the index is a concatenation of cheaply biased bits, and we approximate a discrete Laplace distribution to a negligible statistical distance. We demonstrate the concrete efficiency of the construction by implementing it using 3-party replicated secret sharing (RSS) in the honest-majority setting with both semi-honest and malicious security. In particular, we achieve sub-kilobyte communication complexity, being an improvement over the state-of-the-art by several orders of magnitude and a computation time of a few milliseconds. Samples of a discrete Laplace distribution are generated with (amortized over $1000$ samples) 362 bytes of communication and under a millisecond computation time per party in the semi-honest setting. Using recent results for batched multiplication checking, we have an overhead for malicious security that, per sample, amortizes to below a byte of communication and 10 ms of runtime.\r\n    Finally, our open-source implementation extends the online-to-total communication trade-off for MAESTRO-style lookup tables which might be of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Fredrik Meisingseth",
+            "orcid": "0009-0003-7316-9341"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Christian Rechberger",
+            "orcid": "0000-0003-1280-6020"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Fabian Schmid",
+            "orcid": "0009-0005-7783-0859"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-05T20:34:51Z"
+        }
+    ],
+    "keywords": [
+        "Differential Privacy",
+        "Multiparty Noise Sampling",
+        "Lookup Tables"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/805.pdf",
+    "pid": "805",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Accelerating Multiparty Noise Generation Using Lookups",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Fable95/lut_sampler",
+        "https://github.com/KULeuven-COSIC/maestro/",
+        "https://github.com/yuchengxj/Secure-sampling-benchmark",
+        "https://github.com/Fable95/laplace_sampler"
+    ]
+}
 ]
