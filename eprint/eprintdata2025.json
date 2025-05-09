@@ -57755,4 +57755,1222 @@
         "https://github.com/Fable95/laplace_sampler"
     ]
 }
+,
+{
+    "DOI": "tbd",
+    "abstract": "Delay- and Disruption-tolerant Networks (DTNs) enable communication in challenging environments like space and underwater. Despite the need for secure communication, key management remains an unresolved challenge in DTNs.\r\nBoth DTN security protocols, BSP and BPSec, explicitly exclude key management from their scope, and research in this area remains limited. Traditional Internet-based key management methods are largely unsuitable due to the unique constraints of DTNs. In this paper, we present BERMUDA, a BPSec-compatible key management framework for unicast messaging. Our approach combines established building blocks, including a hierarchical PKI and ECDH, with an adapted version of NOVOMODO for certificate revocation. To evaluate its applicability, we implement a DTN chat application as an example use case and analyze the system's scalability. While our findings demonstrate the feasibility of BERMUDA for DTNs, we also show limitations related to scalability and computational load in resource-constrained scenarios. By bridging the gap between conceptual designs and practical deployment, this work advances key management research in DTNs, contributing to secure communication in these demanding networks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "D3TN GmbH"
+                },
+                {
+                    "name": "Technische Universit\u00e4t Dresden",
+                    "ror": "https://ror.org/042aqky30"
+                }
+            ],
+            "fullName": "Fiona Fuchs"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "D3TN GmbH"
+                }
+            ],
+            "fullName": "Felix Walter",
+            "orcid": "0000-0002-4724-8092"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technische Universit\u00e4t Dresden",
+                    "ror": "https://ror.org/042aqky30"
+                }
+            ],
+            "fullName": "Florian Tschorsch"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-06T07:47:46Z"
+        }
+    ],
+    "keywords": [
+        "DTN",
+        "Key Management",
+        "BPSec"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "note": "This paper has been accepted for publication at the IFIP SEC International Workshop on Network and Distributed Systems Security (WNDSS 2025) and will be available at Springer. It will be revised with the DOI reference after publication.",
+    "pdffile": "2025/806.pdf",
+    "pid": "806",
+    "pubtype": {
+        "note": "IFIP SEC International Workshop on Network and Distributed Systems Security (WNDSS 2025)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "BERMUDA: A BPSec-Compatible Key Management Scheme for DTNs",
+    "year": 2025,
+    "repo": [
+        "https://gitlab.com/d3tn/ud3tn",
+        "https://github.com/raniya02/dtn_crypto_chat"
+    ]
+}
+,
+{
+    "abstract": "Attribute-based encryption (ABE) enables fine-grained access control but traditionally depends on a central authority to issue decryption keys. Key-policy registered ABE removes this trust assumption by letting users generate their own keys and register public keys with an untrusted curator, who aggregates them into a compact master public key for encryption.\r\n\r\nIn this paper, we propose a black-box construction of key-policy registered attribute-based encryption from lattice assumptions in the standard model. Technically, our starting point is the registration-based encryption scheme by D\u00f6ttling et al. (Eurocrypt, 2023). Building on this foundation, we incorporate the public-coin evasive learning with errors (LWE) assumption and the tensor LWE assumption introduced by Wee (Eurocrypt, 2022) to construct a registered ABE scheme that supports arbitrary bounded-depth circuit policies. Compared to prior private-coin approaches, our scheme is based on more intuitive and transparent security assumptions. Furthermore, the entire construction relies solely on standard lattice-based homomorphic evaluation techniques, without relying on other expensive cryptographic primitives. The scheme also enjoys scalability: the sizes of the master public key, helper decryption key and ciphertext grow polylogarithmically with the number of users. Each user's key pair remains succinct, with both the public and secret keys depending solely on the security parameter and the circuit depth.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Xinrui Yang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Wollongong",
+                    "ror": "https://ror.org/00jtmb277"
+                }
+            ],
+            "fullName": "Yijian Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University",
+                    "ror": "https://ror.org/00wk2mp56"
+                }
+            ],
+            "fullName": "Ying Gao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Wuhan University",
+                    "ror": "https://ror.org/033vjfk17"
+                }
+            ],
+            "fullName": "Jie Chen"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-06T09:23:35Z"
+        }
+    ],
+    "keywords": [
+        "Registered ABE",
+        "Attribute-based Encryption",
+        "Lattice",
+        "Evasive LWE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/807.pdf",
+    "pid": "807",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Registered ABE for Circuits from Evasive Lattice Assumptions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Attribute-based encryption can be considered a generalization of public key encryption, enabling fine-grained access control over\r\nencrypted data using predetermined access policies. In general, we distinguish between key-policy and ciphertext-policy attribute-based encryption schemes. Our new scheme is built upon the multi-authority\r\nattribute-based encryption with an honest-but-curious central authority\r\nscheme in a key-policy setting presented earlier by Bo\u017eovi\u0107 et al., and it\r\ncan be considered an extension of their scheme. In their paper, trust was\r\nshared between the central authority and the participating authorities,\r\nwho were responsible for issuing attribute-specific secret keys. The central authority was not capable of decrypting any message as long as there\r\nexists an honest attribute authority. In our new scheme, we maintain this\r\nfeature, and add another level of security by allowing users to participate\r\nin the key generation process and contribute to the final user-specific attribute secret keys. Users gain more control over their own secret keys,\r\nand they will be the only parties with access to the final user-specific\r\nsecret keys. Furthermore, no secure channels, only authenticated communication channels are needed between users and authorities. After the\r\nmodifications our scheme will be closer to the registered multi-authority\r\nattribute-based encryption. We refer to our scheme as a partially registered type of multi-authority attribute-based encryption scheme. We\r\nprove the security of our scheme in the Selective-ID model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ELTE"
+                }
+            ],
+            "fullName": "Vikt\u00f3ria I. Vill\u00e1nyi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Montengro"
+                }
+            ],
+            "fullName": "Vladimir Bo\u017eovi\u0107",
+            "orcid": "0000-0002-6341-7685"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-06T09:35:38Z"
+        }
+    ],
+    "keywords": [
+        "multi-authority",
+        "attribute-based encryption",
+        "registered attribute-based encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/808.pdf",
+    "pid": "808",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Partially Registered Type of Multi-authority Attribute-based Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Fully Homomorphic Encryption (FHE) allows computations on encrypted data without revealing any information about the data itself. However, FHE ciphertexts include noise for security reasons, which increases during operations and can lead to decryption errors. This paper addresses the noise introduced during bootstrapping in Torus Fully Homomorphic Encryption (TFHE), particularly focusing on approximation errors during modulus switching and gadget decomposition. We propose a mean compensation technique that removes the mean term from the noise equations, achieving up to a twofold reduction in noise variance. This method can be combined with bootstrap key unrolling for further noise reduction. Mean compensation can reduce the error probability of a standard parameter set from $2^{-64.30}$ to $2^{-100.47}$, or allows the selection of more efficient parameters leading to a speedup of bootstrapping up to a factor $2.14\\times$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Thomas de Ruijter",
+            "orcid": "0009-0007-7118-8337"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Jan-Pieter D'Anvers",
+            "orcid": "0000-0001-9675-7988"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Ingrid Verbauwhede",
+            "orcid": "0000-0002-0879-076X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-06T15:16:44Z"
+        }
+    ],
+    "keywords": [
+        "Fully homomorphic encryption",
+        "Noise analysis",
+        "Modulus switching",
+        "Gadget decomposition",
+        "Bootstrap key unrolling"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/809.pdf",
+    "pid": "809",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Don\u2019t be mean: Reducing Approximation Noise in TFHE through Mean Compensation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zama-ai/tfhe-rs",
+        "https://github.com/zama-ai/tfhe-rs"
+    ]
+}
+,
+{
+    "DOI": "Early accepted",
+    "abstract": "SPDZ-style and BMR-style protocols are widely known as practical MPC protocols that achieve active security in the dishonest majority setting.  However, to date, SPDZ-style protocols have not achieved constant rounds, and BMR-style protocols have struggled to achieve scalable communication or computation.  Additionally, there exists fully homomorphic encryption (FHE)-based MPC protocols that achieve both constant rounds and scalable communication, but they face challenges in achieving active security in the dishonest majority setting and are considered impractical due to computational inefficiencies.\r\n\r\nIn this work, we propose an MPC framework that constructs an efficient and scalable FHE-based MPC protocol by integrating a linear secret sharing scheme (LSSS)-based MPC and FHE. The resulting FHE-based MPC protocol achieves active security in the dishonest majority setting and constant complexity in online communication, computation per gate, rounds, and private input size. Notably, when instantiated with the SPDZ protocol and gate FHE for the framework, the resulting FHE-based MPC protocol efficiently achieves active security in the dishonest majority setting by using SPDZ-style MAC and ensures the computation per gate time within 3 ms. Moreover, its offline phase achieves scalable communication and computation, both of which grow linearly with the number of parties $n$. In other words, the proposed FHE-based MPC preserves the key advantages of existing FHE-based MPCs and simultaneously overcomes the weaknesses of them. As a result, the proposed FHE-based MPC is a highly practical and secure like SPDZ-style and BMR-style protocols.\r\n\r\nFor the first time, we introduce the concept of circuit-privacy, which ensures that external adversaries who eavesdrop on communications do not obtain information about the circuit. We rigorously prove that our construction inherently satisfy circuit- privacy, thereby establishing a novel security option for MPC.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University",
+                    "ror": "https://ror.org/046865y68"
+                }
+            ],
+            "fullName": "Seunghwan Lee",
+            "orcid": "0000-0003-0342-5381"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University",
+                    "ror": "https://ror.org/046865y68"
+                }
+            ],
+            "fullName": "Jaesang Noh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University",
+                    "ror": "https://ror.org/046865y68"
+                }
+            ],
+            "fullName": "Taejeong Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University",
+                    "ror": "https://ror.org/046865y68"
+                }
+            ],
+            "fullName": "Dohyuk Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hanyang University",
+                    "ror": "https://ror.org/046865y68"
+                }
+            ],
+            "fullName": "Dong-Joon Shin"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-06T16:28:27Z"
+        }
+    ],
+    "keywords": [
+        "Multiparty Computation",
+        "Fully Homomorphic Encryption",
+        "Dishonest Majority",
+        "Constant Complexity",
+        "Circuit Privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Accepted at Crypto 2025",
+    "pdffile": "2025/810.pdf",
+    "pid": "810",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Actively Secure MPC in the Dishonest Majority Setting: Achieving Constant Complexity in Online Communication, Computation Per Gate, Rounds, and Private Input Size",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We present a dataset of side-channel power measurements captured during pair-pointwise multiplication in the decapsulation procedure of the Kyber Key Encapsulation Mechanism (KEM). The dataset targets the pair-pointwise multiplication step in the NTT domain, a key computational component of Kyber. The dataset is collected using the reference implementation from the PQClean project. We hope the dataset helps in research in ``classical'' power analysis and deep learning-based side-channel attacks on post-quantum cryptography (PQC).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Delft University of Technology, The Netherlands"
+                },
+                {
+                    "name": "Radboud University, The Netherlands"
+                }
+            ],
+            "fullName": "Azade Rezaeezade"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Temasek Laboratories, Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Trevor Yap"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Temasek Laboratories, Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Dirmanto Jap"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Temasek Laboratories, Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Shivam Bhasin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University, The Netherlands"
+                }
+            ],
+            "fullName": "Stjepan Picek"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-06T20:17:06Z"
+        }
+    ],
+    "keywords": [
+        "Side-channel Attacks",
+        "Post-Quantum Cryptography",
+        "CRYSTAL-Kyber",
+        "Dataset"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/811.pdf",
+    "pid": "811",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Side-Channel Power Trace Dataset for Kyber Pair-Pointwise Multiplication on Cortex-M4",
+    "year": 2025,
+    "repo": [
+        "https://github.com/pq-crystals/kyber"
+    ]
+}
+,
+{
+    "abstract": "Passports, identity cards and travel visas are examples of machine readable travel documents (MRTDs) or eMRTDs for their electronic variants. The security of the data exchanged between these documents and a reader is secured with a standardized password authenticated key exchange (PAKE) protocol known as PACE.\r\n\r\nA new world-wide protocol migration is expected with the arrival of post-quantum cryptography (PQC) standards. In this paper, we focus on the impact of this migration on constrained embedded devices as used in eMRTDs. We present a feasibility study of a candidate post-quantum secure PAKE scheme as the replacement for PACE on existing widely deployed resource-constrained chips. In a wider context, we study the size, performance and security impact of adding post-quantum cryptography with a focus on chip storage and certificate chains for existing eMRTDs.\r\n\r\nWe show that if the required post-quantum certificates for the eMRTD fit in memory, the migration of existing eMRTD protocols to their post-quantum secure equivalent is already feasible but a performance penalty has to be paid. When using a resource constrained SmartMX3 P71D600 smart card, designed with classical cryptography in mind, then execution times of a post-quantum secure PAKE algorithm using the recommended post-quantum parameter of the new PQC standard ML-KEM can be done in under a second. This migration will be aided by future inclusion of dedicated hardware accelerators and increased memory to allow storage of larger keys and improve performance.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Darmstadt University of Applied Sciences",
+                    "ror": "https://ror.org/047wbd030"
+                },
+                {
+                    "name": "European University of Technology"
+                }
+            ],
+            "fullName": "Nouri Alnahawi",
+            "orcid": "0000-0002-4093-580X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NXP (Germany)",
+                    "ror": "https://ror.org/0268h4j55"
+                }
+            ],
+            "fullName": "Melissa Azouaoui",
+            "orcid": "0000-0003-2011-5633"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NXP (Belgium)",
+                    "ror": "https://ror.org/031v4g827"
+                }
+            ],
+            "fullName": "Joppe W. Bos",
+            "orcid": "0000-0003-1010-8157"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NXP (Belgium)",
+                    "ror": "https://ror.org/031v4g827"
+                }
+            ],
+            "fullName": "Gareth T. Davies",
+            "orcid": "0000-0002-5935-5725"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NXP (Belgium)",
+                    "ror": "https://ror.org/031v4g827"
+                }
+            ],
+            "fullName": "SeoJeong Moon"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NXP (Netherlands)",
+                    "ror": "https://ror.org/059be4e97"
+                }
+            ],
+            "fullName": "Christine van Vredendaal",
+            "orcid": "0009-0000-7142-0107"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Darmstadt University of Applied Sciences",
+                    "ror": "https://ror.org/047wbd030"
+                },
+                {
+                    "name": "European University of Technology"
+                }
+            ],
+            "fullName": "Alexander Wiesmaier",
+            "orcid": "0000-0002-1144-549X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-07T12:28:46Z"
+        }
+    ],
+    "keywords": [
+        "post-quantum cryptography",
+        "electronic travel documents",
+        "PAKE",
+        "cryptography implementations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/812.pdf",
+    "pid": "812",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Post-Quantum Cryptography in eMRTDs: Evaluating PAKE and PKI for Travel Documents",
+    "year": 2025,
+    "repo": [
+        "https://gareth-t-davies.github.io/"
+    ]
+}
+,
+{
+    "abstract": "In this work, we introduce HydraProofs, the first vector commitment (VC) scheme that achieves the following two properties. (i) The prover can produce all the opening proofs for different elements (or consecutive sub-arrays) for a vector of size N in optimal time O(N). (ii) It is directly compatible with a family of zkSNARKs that encode their input as a multi-linear polynomial, i.e., our VC can be directly used when running the zkSNARK on its pre-image, without the need to open'' the entire vector pre-image inside the zkSNARK. To the best of our knowledge, all prior VC schemes either achieve (i) but are not efficiently pluggable'' into zkSNARKs (e.g., a Merkle tree commitment that requires re-computing the entire hash tree inside the circuit), or achieve (ii) but take (NlogN) time. We then combine HydraProofs with the seminal GKR protocol and apply the resulting zkSNARK in a setting where multiple users participate in a computation executed by an untrusted server and each user wants to ensure the correctness of the result and that her data was included. Our experimental evaluation shows our approach outperforms prior ones by 4-16x for prover times on general circuits. Finally, we consider two concrete application use cases, verifiable secret sharing and verifiable robust aggregation. For the former, our construction achieves the first scheme for Shamir's secret sharing with linear time prover (lower than the time needed for the dealer computation). For the second we propose a scheme that works against misbehaving aggregators and our experiments show it can be reasonably deployed in existing schemes with minimal slow-downs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Christodoulos Pappas",
+            "orcid": "0009-0003-5949-3620"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Dimitris Papadopoulos",
+            "orcid": "0000-0003-2621-3015"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Charalampos Papamanthou",
+            "orcid": "0000-0002-1905-9403"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-07T14:01:56Z"
+        }
+    ],
+    "keywords": [
+        "Vector Commitments",
+        "zkSNARKs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/813.pdf",
+    "pid": "813",
+    "pubtype": {
+        "note": "IEEE Symposium on Security and Privacy 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "HydraProofs: Optimally Computing All Proofs in a Vector Commitment (with applications to efficient zkSNARKs over data from multiple users)",
+    "year": 2025,
+    "repo": [
+        "https://github.com/cpdpIEEEsp"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-91107-1_11",
+    "abstract": "Arithmetization-Oriented (AO) symmetric primitives play an important role in the efficiency and security of zero-knowledge (ZK) proof systems. The design and cryptanalysis of AO symmetric-key primitives is a new topic particularly focusing on algebraic aspects. An efficient AO hash function aims at lowering the multiplicative complexity in the arithmetic circuit of the hash function over a suitable finite field. The AO hash function Anemoi was proposed in CRYPTO 2023.   \r\n\r\nIn this work we present an in-depth Groebner basis (GB) cryptanalysis of Anemoi over GF(p). The main aim of any GB cryptanalysis is to obtain a well-structured set of polynomials representing the target primitive, and finally solve this system of polynomials using an efficient algorithm.\r\n\r\nWe propose a new polynomial modelling for Anemoi that we call ACICO. We show that using ACICO one can obtain a GB defined by a well-structured set of polynomials. Moreover, by utilising ACICO we can prove the exact complexity of the Groebner basis computation (w.r.t Buchberger's algorithm) in the cryptanalysis of Anemoi. The structured GB further allows us to prove the dimension of the quotient space which was conjectured in a recently published work. \r\nAfterwards, we provide the complexity analysis for computing the variety (or the solutions) of the GB polynomial system (corresponding to Anemoi) which is the final step in GB cryptanalysis, by using known approaches. In particular, we show that GB polynomial structure allows us to use the Wiedemann algorithm and improve the efficiency of cryptanalysis compared to previous works.\r\n\r\nOur GB cryptanalysis is applicable to more than two branches (a parameter in Anemoi), while the previously published results showed cryptanalysis only for two branches. Our complexity analysis implies that the security of Anemoi should not be relied upon the GB computation.\r\n\r\nWe also address an important mathematical question in GB cryptanalysis of Anemoi namely, does the Anemoi polynomial system has a Shape form?, positively. By proving this we guarantee that upon application of basis conversion method like FGLM one can obtain a convenient system of polynomials that is easy to solve.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e4t Innsbruck",
+                    "ror": "https://ror.org/054pv6659"
+                }
+            ],
+            "fullName": "Luca Campa",
+            "orcid": "0009-0004-6916-1918"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e4t Innsbruck",
+                    "ror": "https://ror.org/054pv6659"
+                }
+            ],
+            "fullName": "Arnab Roy",
+            "orcid": "0000-0002-3284-7076"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-07T14:16:08Z"
+        }
+    ],
+    "keywords": [
+        "Groebner basis",
+        "Algebraic hash",
+        "Anemoi",
+        "cryptanalysis",
+        "shape lemma"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/814.pdf",
+    "pid": "814",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Groebner Basis Cryptanalysis of Anemoi",
+    "year": 2025,
+    "repo": [
+        "https://alpsy-workshop.github.io"
+    ]
+}
+,
+{
+    "abstract": "Key derivation functions can be used to derive variable-length random strings that serve as cryptographic keys. They are integral to many widely-used communication protocols such as TLS, IPsec and Signal. NIST SP 800-108 specifies several key derivation functions based on pseudorandom functions such as \\mode{CMAC} and \\mode{HMAC}, that can be used to derive additional keys from an existing cryptographic key. This standard either explicitly or implicitly requests their KDFs to be variable output length pseudorandom function, collision resistant, and preimage resistant. Yet, since the publication of this standard dating back to the year of 2008, until now, there is no formal analysis to justify these security properties of KDFs. \r\n\r\nIn this work, we give the formal security analysis of key derivation functions in NIST SP 800-108. We show both positive and negative results regarding these key derivation functions. For KCTR-CMAC, KFB-CMAC, and KDPL-CMAC that are key derivation functions based on CMAC in counter mode, feedback mode, and double-pipeline mode respectively, we prove that all of them are secure variable output length pseudorandom functions and preimage resistance. We show that KFB-CMAC and KDPL-CMAC are collision resistance. While for KCTR-CMAC, we can mount collision attack against it that requires only six block cipher queries and can succeed with probability 1/4. For KCTR-HMAC, KFB-HMAC, and KDPL-HMAC that are key derivation functions based on HMAC in modes, we show that all of them behave like variable output length pseudorandom functions. When the key of these key derivation functions is of variable length, they suffer from collision attacks. For the case when the key of these key derivation function is of fixed length and less than $d-1$ bits where $d$ is the input block size of the underlying compression function, we can prove that they are collision resistant and preimage resistant.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Xiamen University, Xiamen, China"
+                }
+            ],
+            "fullName": "Yaobin Shen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University"
+                }
+            ],
+            "fullName": "Lei Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University"
+                }
+            ],
+            "fullName": "Dawu Gu"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-07T16:23:25Z"
+        }
+    ],
+    "keywords": [
+        "Key derivation functions",
+        "CMAC",
+        "HMAC",
+        "Pseudorandom function"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/815.pdf",
+    "pid": "815",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Security Analysis of NIST Key Derivation Using Pseudorandom Functions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Most practical synchronous Byzantine fault-tolerant (BFT) protocols, such as Sync HotStuff (S&P 2020), follow the convention of partially synchronous BFT and adopt a deterministic design. Indeed, while these protocols achieve O(n) time complexity, they exhibit impressive performance in failure-free scenarios. \r\n\r\nThis paper challenges this conventional wisdom, showing that a randomized paradigm terminating in expected O(1) time may well outperform prior ones even in the failure-free scenarios. Our framework reduces synchronous BFT to a new primitive called multi-valued Byzantine agreement with strong external validity (MBA-SEV). Inspired by the external validity property of multi-valued validated Byzantine agreement (MVBA), the additional validity properties allow us to build a BFT protocol where replicas agree on the hashes of the blocks. Our instantiation of the paradigm, Sonic, achieves O(n) amortized message complexity per block proposal, expected O(1) time, and enables a fast path of only two communication step. \r\n\r\nOur evaluation results using up to 91 instances on Amazon EC2 show that the peak throughput of Sonic and P-Sonic (a pipelining variant of Sonic) is 2.24x-14.52x and 3.08x-24.25x that of Sync HotStuff, respectively.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Xufeng Zhang",
+            "orcid": "0009-0007-6221-5970"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Technology",
+                    "ror": "https://ror.org/01skt4w74"
+                }
+            ],
+            "fullName": "Baohan Huang",
+            "orcid": "0009-0000-0622-1486"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Sisi Duan",
+            "orcid": "0000-0002-1385-6807"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Yangtze Delta Region Institute of Tsinghua University, Zhejiang"
+                }
+            ],
+            "fullName": "Haibin Zhang",
+            "orcid": "0000-0001-5865-3408"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-08T08:12:47Z"
+        }
+    ],
+    "keywords": [
+        "Byzantine fault-tolerant (BFT)",
+        "synchronous BFT",
+        "randomized BFT",
+        "Byzantine agreement"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/816.pdf",
+    "pid": "816",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Randomized vs. Deterministic? Practical Randomized Synchronous BFT in Expected Constant Time",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The literature on computational differential privacy (CDP) has focused almost exclusively on definitions that are computational analogs of `pure' $(\\epsilon,0)$-DP. We initiate the formal study of computational versions of approximate DP, i.e. $(\\epsilon, \\delta)$-DP with non-negligible $\\delta$. We focus on IND-CDP and SIM$_{\\forall\\exists}$-CDP and show that the hierarchy between them when $\\delta > 0$ potentially differs substantially from when $\\delta = 0$. In one direction, we show that for $\\delta < 1$, any mechanism which is $(\\epsilon,\\delta)$-SIM$_{\\forall\\exists}$-CDP also is $(\\epsilon,\\delta)$-IND-CDP, but only if $\\epsilon$ is logarithmic in the security parameter. As a special case, this proves that the existing implication from $(\\epsilon,0)$-SIM$_{\\forall\\exists}$-CDP to $(\\epsilon,0)$-IND-CDP does not hold for arbitrary $\\epsilon$, as previously claimed. Furthermore, we prove that when the parameters are the same in IND-CDP and SIM$_{\\forall\\exists}$-CDP and $\\epsilon$ is superlogarithmic, there exists a natural task that can be solved whilst satisfying SIM$_{\\forall\\exists}$-CDP but which no IND-CDP mechanism can solve. This is the first separation in the CDP literature which is not due to using a task contrived specifically in order to give rise to the separation. \r\n    In the other direction, we show that the techniques for establishing an implication from $(\\epsilon,0)$-IND-CDP to $(\\epsilon,0)$-SIM$_{\\forall\\exists}$-CDP extend only to that a mechanism being $(\\epsilon,\\delta)$-IND-CDP implies it is also $(\\epsilon,\\delta')$-SIM$_{\\forall\\exists}$-CDP with $\\delta' > \\delta$. Finally, we show that the Groce-Katz-Yerukhimovich barrier results against separations between CDP and statistical DP hold also in the setting of non-negligible $\\delta$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Fredrik Meisingseth",
+            "orcid": "0009-0003-7316-9341"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Christian Rechberger",
+            "orcid": "0000-0003-1280-6020"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-08T08:31:33Z"
+        }
+    ],
+    "keywords": [
+        "Computational Differential Privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/817.pdf",
+    "pid": "817",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Relating Definitions of Computational Differential Privacy in Wider Parameter Regimes",
+    "year": 2025,
+    "repo": [
+        "https://simons-institute.github.io/pseudorandomness/pdfs/GIK.pdf",
+        "https://simons-institute.github.io/pseudorandomness/pdfs/GIK.pdf"
+    ]
+}
+,
+{
+    "DOI": "10.1109/SP61157.2025.00169",
+    "abstract": "We present an attack on the Abstract Datagram\r\nNetwork Layer (ADNL) protocol used in The Open Network\r\n(TON), currently the 10th largest blockchain by market cap-\r\nitalization. In its TCP variant, ADNL secures communication\r\nbetween clients and specialized nodes called liteservers, which\r\nprovide access to blockchain data. We identify two crypto-\r\ngraphic design flaws in this protocol: a handshake that permits\r\nsession-key replay and a non-standard integrity mechanism\r\nwhose security critically depends on message confidentiality.\r\nWe transform these vulnerabilities into an efficient plaintext-\r\nrecovery attack by exploiting two ADNL communication pat-\r\nterns, allowing message reordering across replayed sessions.\r\nWe then develop a plaintext model for this scenario and con-\r\nstruct an efficient algorithm that recovers the keystream using\r\na fraction of known plaintexts and a handful of replays. We\r\nimplement our attack and show that an attacker intercepting\r\nthe communication between a TON liteserver and a widely de-\r\nployed ADNL client can recover the keystream used to encrypt\r\nserver responses by performing eight connection replays to the\r\nserver. This allows the decryption of sensitive data, such as\r\naccount balances and user activity patterns. Additionally, the\r\nattacker can modify server responses to manipulate blockchain\r\ninformation displayed to the client, including account balances\r\nand asset prices.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Fordefi"
+                }
+            ],
+            "fullName": "Aviv Frenkel"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fordefi"
+                }
+            ],
+            "fullName": "Dmitry Kogan"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-08T09:20:49Z"
+        }
+    ],
+    "keywords": [
+        "Secure channel",
+        "Two-time pad",
+        "Cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/818.pdf",
+    "pid": "818",
+    "pubtype": {
+        "note": "IEEE Symposium on Security and Privacy 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An Attack on TON\u2019s ADNL Secure Channel Protocol",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Distributed Key Generation (DKG) protocols are fundamental components of threshold cryptography, enabling key generation in a trustless manner for a range of cryptographic operations such as threshold encryption and signing. Of particular widespread use are DKG protocols for discrete-logarithm based cryptosystems. In this Systematization of Knowledge (SoK), we present a comprehensive analysis of existing DKG protocols in the discrete-logarithm setting, with the goal of identifying cryptographic techniques and design principles that facilitate the development of secure and resilient protocols. To offer a structured overview of the literature, we adopt a modular approach and classify DKG protocols based on their underlying network assumption and cryptographic tools. These two factors determine how DKG protocols manage secret sharing and reach consensus as their essential building blocks. We also highlight various insights and suggest future research directions that could drive further advancements in this area.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Saarland University",
+                    "ror": "https://ror.org/01jdpyv68"
+                }
+            ],
+            "fullName": "Renas Bacho",
+            "orcid": "0009-0007-7037-2458"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University College London",
+                    "ror": "https://ror.org/02jx3x895"
+                }
+            ],
+            "fullName": "Alireza Kavousi",
+            "orcid": "0000-0003-4945-5244"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-08T15:18:33Z"
+        }
+    ],
+    "keywords": [
+        "Distributed Key Generation",
+        "Threshold Cryptography",
+        "Distributed Computing",
+        "Systematization of Knowledge"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/819.pdf",
+    "pid": "819",
+    "pubtype": {
+        "note": "IEEE S&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SoK: Dlog-based Distributed Key Generation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-91820-9_10",
+    "abstract": "The Fiat-Shamir transform is one of the most widely applied methods for secure signature construction. Fiat-Shamir starts with an interactive zero-knowledge identification protocol and transforms this via a hash function into a non-interactive signature. The protocol's zero-knowledge property ensures that a signature does not leak information on its secret key $\\mathbf s$, which is achieved by blinding $\\mathbf s$ via proper randomness $\\mathbf y$.\r\nMost prominent Fiat-Shamir examples are DSA signatures and the new post-quantum standard Dilithium.\r\n\r\nIn practice, DSA signatures have experienced fatal attacks via leakage of a few bits of the randomness $\\mathbf y$ per signature.\r\nSimilar attacks now emerge for lattice-based signatures, such as Dilithium.\r\n\r\nWe build on, improve and generalize the pioneering leakage attack on Dilithium by Liu, Zhou, Sun, Wang, Zhang, and Ming.\r\nIn theory, their original attack can recover a 256-dimensional subkey of Dilithium-II (aka ML-DSA-44) from leakage in a single bit of $\\mathbf{y}$ per signature, in any bit position $j \\geq 6$.\r\nHowever, the memory requirement of their attack grows exponentially in the bit position $j$ of the leak.\r\nAs a consequence, if the bit leak is in a high-order position, then their attack is infeasible.\r\n\r\nIn our improved attack, we introduce a novel transformation, that allows us to get rid of the exponential memory requirement.\r\nThereby, we make the attack feasible for $all$ bit positions $j \\geq 6$.\r\nFurthermore, our novel transformation significantly reduces the number of required signatures in the attack.\r\n\r\nThe attack applies more generally to all Fiat-Shamir-type lattice-based signatures.\r\nFor a signature scheme based on module LWE over an $\\ell$-dimensional module, the attack uses a 1-bit leak per signature to efficiently recover a $\\frac{1}{\\ell}$-fraction of the secret key.\r\nIn the ring LWE setting, which can be seen as module LWE with $\\ell = 1$, the attack thus recovers the whole key. \r\nFor Dilithium-II, which uses $\\ell = 4$, knowledge of a $\\frac{1}{4}$-fraction of the 1024-dimensional secret key lets its security estimate drop significantly from $128$ to $84$ bits.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Simon Damm",
+            "orcid": "0000-0002-4584-1765"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Nicolai Kraus",
+            "orcid": "0009-0008-7037-4311"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Alexander May",
+            "orcid": "0000-0001-5965-5675"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Julian Nowakowski",
+            "orcid": "0000-0003-3066-0133"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Jonas Thietke",
+            "orcid": "0009-0001-9388-5324"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-08T16:23:08Z"
+        }
+    ],
+    "keywords": [
+        "ML-DSA",
+        "Dilithium",
+        "Randomness Leakage",
+        "Key Recovery",
+        "Side-Channel"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/820.pdf",
+    "pid": "820",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "One Bit to Rule Them All \u2013 Imperfect Randomness Harms Lattice Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-91832-2_2",
+    "abstract": "Multi-client Attribute-Based Encryption (ABE) is a generalization of key-policy ABE where attributes can be independently encrypted across several ciphertexts w.r.t. labels, and a joint decryption of these ciphertexts is possible if and only if (1) all ciphertexts share the same label, and (2) the combination of attributes satisfies the policy of the decryption key. All encryptors have their own secret key and security is preserved even if some of them are known to the adversary.\r\n\r\nVery recently, Pointcheval et al. (TCC 2024) presented a semi-generic construction of MC-ABE for restricted function classes, e.g., NC0 and constant-threshold policies. We identify an abstract criterion common to all their policy classes which suffices to present the construction in a fully black-box way and allows for a slight strengthening of the supported policy classes. The construction of Pointcheval et al. is based on pairings. We additionally provide a new lattice-based instantiation from (public-coin) evasive LWE.\r\n\r\nFurthermore, we revisit existing constructions for policies that can be viewed as a conjunction of local policies (one per encryptor). Existing constructions from MDDH (Agrawal et al., CRYPTO 2023) and LWE (Francati et al., EUROCRYPT 2023) do not support encryption w.r.t. different labels. We show how this feature can be included. Notably, the security model of Francati et al. additionally guarantees attribute-hiding but does not capture collusions. Our new construction is also attribute-hiding and provides resilience against any polynomially bounded number of collusions which must be fixed at the time of setup.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole normale sup\u00e9rieure, PSL University, CNRS, Inria, Paris, France"
+                }
+            ],
+            "fullName": "Robert Sch\u00e4dlich",
+            "orcid": "0000-0001-8643-9046"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-08T17:06:46Z"
+        }
+    ],
+    "keywords": [
+        "multi-client",
+        "attribute based encryption",
+        "predicate encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/821.pdf",
+    "pid": "821",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multi-Client Attribute-Based and Predicate Encryption, Revisited",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Nowadays, the notion of semi-regular sequences, originally proposed by Fr\u00f6berg, becomes very important not only in Mathematics, but also in Information Science, in particular Cryptology.  For example, it is highly expected that randomly generated polynomials form a semi-regular sequence, and based on this observation, secure cryptosystems based on polynomial systems can be devised. In this paper, we deal with a semi regular sequence and its variant, named a generalized cryptographic semi-regular sequence, and give precise analysis on the complexity of computing a Gr\u00f6bner basis of the ideal generated by such a sequence with help of several regularities of the ideal related to Lazard's bound on maximal Gr\u00f6bner basis degree and other bounds. We also study the genericness of the property that a sequence is semi-regular, and its variants related to Fr\u00f6berg's conjecture. Moreover, we discuss on the genericness of another important property that the initial ideal is weakly reverse lexicographic, related to Moreno-Soc\u00edas' conjecture, and show some criteria to examine whether both Fr\u00f6berg's conjecture and Moreno-Soc\u00edas' one hold at the same time.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Fukuoka Institute of Technology"
+                }
+            ],
+            "fullName": "Momonari Kudo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Rikkyo University",
+                    "ror": "https://ror.org/00x194q47"
+                }
+            ],
+            "fullName": "Kazuhiro Yokoyama"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-08T17:59:47Z"
+        }
+    ],
+    "keywords": [
+        "Gr\u00f6bner basis",
+        "Fr\u00f6berg's conjecture",
+        "Moreno-Soc\u00edas' conjecture",
+        "Semi-regular sequence",
+        "Genericness"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is a revised and extended version of arxiv:2410.23211 by the same authors.",
+    "pdffile": "2025/822.pdf",
+    "pid": "822",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Generalization of semi-regular sequences: Maximal Gr\u00f6bner basis degree, variants of genericness, and related conjectures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Sampling from non-uniform randomness according to an algorithm which keeps the internal randomness used by the sampler hidden is increasingly important for cryptographic applications, such as timing-attack-resistant lattice-based cryptography or certified differential privacy. In this paper we present a provably efficient sampler that maintains random sample privacy, or random sample hiding, and is applicable to arbitrary discrete random variables. Namely, we present a constant-time version of the classic Knuth-Yao algorithm that we name \"trimmed-tree\" Knuth-Yao. We establish distribution-tailored Boolean circuit complexity bounds for this algorithm, in contrast to the previous naive distribution-agnostic bounds. For a $\\sigma^2$-sub-Gaussian discrete distribution where $b_t$ is the number of bits for representing the domain, and $b_p$ is the bits for precision of the PDF values, we prove the Boolean circuit complexity of the trimmed-tree Knuth-Yao algorithm has upper bound $O(\\sigma b_p^{3/2} b_t)$, an exponential improvement over the naive bounds, and in certain parameter regimes establish the lower bound $\\widetilde{\\Omega}( ( \\sigma + b_p ) b_t )$. Moreover, by proving the subtrees in the trimmed-tree Knuth-Yao circuit are small, we prove it can computed by running $b_p$ circuits of size $O(\\sigma b_p^{1/2} b_t)$ in parallel and then running $O(b_p b_t )$ sequential operations on the output. We apply these circuits for trimmed-tree Knuth-Yao to constructing random variable commitment schemes for arbitrary discrete distributions, giving exponential improvements in the number of random bits and circuit complexity used for certified differentially private means and counting queries over large datasets and domains.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Zo\u00eb Ruha Bell",
+            "orcid": "0000-0002-4789-6786"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Toronto",
+                    "ror": "https://ror.org/03dbr7087"
+                }
+            ],
+            "fullName": "Anvith Thudi",
+            "orcid": "0009-0005-9062-7863"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-08T23:01:12Z"
+        }
+    ],
+    "keywords": [
+        "Discrete Samplers",
+        "Verifiable Computation",
+        "Differential Privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/823.pdf",
+    "pid": "823",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Sampling Arbitrary Discrete Distributions for RV Commitment Schemes Using the Trimmed-Tree Knuth-Yao Algorithm",
+    "year": 2025,
+    "repo": [
+        "https://dpcourse.github.io/2021-spring/lecnotes-web/lec-09-gaussian.pdf",
+        "https://dpcourse.github.io/2021-spring/lecnotes-web/lec-09-gaussian.pdf"
+    ]
+}
 ]
