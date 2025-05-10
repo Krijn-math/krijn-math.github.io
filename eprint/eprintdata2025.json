@@ -58973,4 +58973,310 @@
         "https://dpcourse.github.io/2021-spring/lecnotes-web/lec-09-gaussian.pdf"
     ]
 }
+,
+{
+    "abstract": "Recently, there has been a growing interest in anonymous credentials (ACs) as they can mitigate the risk of personal data being processed by untrusted actors without consent and beyond the user's control. Furthermore, due to the privacy-by-design paradigm of ACs, they can prove possession of personal attributes, such as an authenticated government document containing sensitive personal information, while preserving the privacy of the individual by not actually revealing the data. Typically, AC specifications consider the privacy of individuals during the presentation of an AC, but often neglect privacy-preserving approaches for enhanced security features such as AC non-duplication or AC revocation. To achieve more privacy-friendly enhanced security features of non-duplication and privacy-preserving revocation, an AC can be partially stored on secure, trusted hardware and linked to a status credential that reflects its revocation status.\r\nIn this paper, we specify an AC system that satisfies the requirements of minimality of information, unlinkability, non-duplication, and privacy-preserving revocation.\r\nThis is achieved by adapting the hardware binding method of the Direct Anonymous Attestation protocol with the BBS+ short group signatures of Camenisch et al. and combining it with status credentials.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Christoph Graebnitz"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fraunhofer Institute for Applied and Integrated Security",
+                    "ror": "https://ror.org/03w0bbr97"
+                }
+            ],
+            "fullName": "Nicolas Buchmann"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fraunhofer Institute for Applied and Integrated Security",
+                    "ror": "https://ror.org/03w0bbr97"
+                }
+            ],
+            "fullName": "Martin Seiffert"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fraunhofer Institute for Applied and Integrated Security",
+                    "ror": "https://ror.org/03w0bbr97"
+                }
+            ],
+            "fullName": "Marian Margraf"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T07:38:15Z"
+        }
+    ],
+    "keywords": [
+        "anonymous credentials",
+        "privacy-preserving revocation",
+        "device binding",
+        "bbs+ signature"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/824.pdf",
+    "pid": "824",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Specification of an Anonymous Credential System Using BBS+ Signatures with Privacy-Preserving Revocation and Device Binding",
+    "year": 2025,
+    "repo": [
+        "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/v1.4.1/docs/arf.md",
+        "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/v1.4.1/docs/arf.md",
+        "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/v1.4.1/docs/arf.md",
+        "https://github.com/hyperledger/aries",
+        "https://raw.githubusercontent.com/microsoft/uprove-node-reference/main/doc/U-Prove%20Technology%20Overview%20V1.1%20Revision%203.pdf",
+        "https://raw.githubusercontent.com/microsoft/uprove-node-reference/main/doc/U-Prove%20Technology%20Overview%20V1.1%20Revision%203.pdf",
+        "https://github.com/microsoft/uprove-node-reference/blob/main/doc/U-Prove%20Cryptographic%20Specification%20V1.1%20Revision%205.pdf",
+        "https://github.com/microsoft/uprove-node-reference/blob/main/doc/U-Prove%20Cryptographic%20Specification%20V1.1%20Revision%205.pdf",
+        "https://github.com/microsoft/uprove-node-reference/blob/main/doc/U-Prove%20Cryptographic%20Specification%20V1.1%20Revision%205.pdf"
+    ]
+}
+,
+{
+    "DOI": "10.1109/ISCTrkiye64784.2024.10779273",
+    "abstract": "The ASCON algorithm was chosen for its efficiency and suitability for resource-constrained environments such as IoT devices. In this paper, we present a high-performance FPGA implementation of ASCON-128 and ASCON-128a, optimized for the throughput-to-area ratio. By utilizing a 6-round permutation in one cycle for ASCON-128 and a 4-round permutation in one cycle for ASCON-128a, we have effectively maximized throughput while ensuring efficient resource utilization. Our implementation shows significant improvements over existing designs, achieving 34.16\\% better throughput-to-area efficiency on Artix-7 and 137.58\\% better throughput-to-area efficiency on Kintex-7 FPGAs. When comparing our results on the Spartan-7 FPGA with Spartan-6, we observed a 98.63\\% improvement in throughput-to-area efficiency. However, it is important to note that this improvement may also be influenced by the advanced capabilities of the Spartan-7 platform compared to the older Spartan-6, in addition to the design optimizations implemented in this work.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Aselsan (Turkey)",
+                    "ror": "https://ror.org/04knh8e66"
+                },
+                {
+                    "name": "Middle East Technical University",
+                    "ror": "https://ror.org/014weej12"
+                }
+            ],
+            "fullName": "Ahmet Malal",
+            "orcid": "0009-0009-4019-8617"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T07:45:10Z"
+        }
+    ],
+    "keywords": [
+        "ASCON",
+        "Lightweight Cryptography",
+        "Hardware Cryptography",
+        "FPGA Implementation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/825.pdf",
+    "pid": "825",
+    "pubtype": {
+        "note": "2024 17th International Conference on Information Security and Cryptology (ISCT\u00fcrkiye)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "High-Performance FPGA Implementations of Lightweight ASCON-128 and ASCON-128a with Enhanced Throughput-to-Area Efficiency",
+    "year": 2025,
+    "repo": [
+        "https://github.com/AhmetMALAL/ascon-vhdl"
+    ]
+}
+,
+{
+    "abstract": "Byzantine Agreement (BA) allows $n$ processes to propose input values to reach consensus on a common, valid $L_o$-bit value, even in the presence of up to $t < n$ faulty processes that can deviate arbitrarily from the protocol. Although strategies like randomization, adaptiveness, and batching have been extensively explored to mitigate the inherent limitations of one-shot agreement tasks, there has been limited progress on achieving good amortized performance for multi-shot agreement, despite its obvious relevance to long-lived functionalities such as state machine replication. \r\n\r\nObserving that a weak form of accountability suffices to identify and exclude malicious processes, we propose new efficient and deterministic multi-shot agreement protocols for multi-value validated Byzantine agreement (MVBA) with a strong unanimity validity property (SMVBA) and interactive consistency (IC). Specifically, let $\\kappa$ represent the size of the cryptographic objects needed to solve Byzantine agreement when $n<3t$. We achieve both IC and SMVBA with $O(1)$ amortized latency, with a bounded number of slower instances.  The SMVBA protocol has $O(nL_o +n\\kappa)$ amortized communication and the IC has  $O(nL_o + n^2\\kappa)$ amortized communication. For input values larger than $\\kappa$, our protocols are asymptotically optimal. These results mark a substantial improvement\u2014up to a linear factor, depending on $L_o$\u2014over prior results. To the best of our knowledge, the present paper is the first to achieve the long-term goal of implementing a state machine replication abstraction of a distributed service that is just as fast and efficient as its centralized version, but with greater robustness and availability.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Pierre Civit",
+            "orcid": "0000-0003-2394-1201"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Muhammad Ayaz Dzulfikar",
+            "orcid": "0009-0002-7962-0677"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Seth Gilbert",
+            "orcid": "0000-0003-3298-7412"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Rachid Guerraoui",
+            "orcid": "0000-0002-4794-8902"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Jovan Komatovic",
+            "orcid": "0009-0006-9714-4079"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Manuel Vidigueira",
+            "orcid": "0009-0008-5821-2571"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T10:08:33Z"
+        }
+    ],
+    "keywords": [
+        "Byzantine Agreement",
+        "Amortized Complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/826.pdf",
+    "pid": "826",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Repeated Agreement is Cheap! On Weak Accountability and Multishot Byzantine Agreement",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Private set union (PSU) allows two parties to compute the union of their sets without revealing anything else. It can be categorized into balanced and unbalanced scenarios depending on the size of the set on both sides. Recently, Jia et al. (USENIX Security 2024) highlight that existing scalable PSU solutions suffer from during-execution leakage and propose a PSU with enhanced security for the balanced setting. However, their protocol's complexity is superlinear with the size of the set. Thus, the problem of constructing a linear enhanced PSU remains open, and no unbalanced enhanced PSU exists. In this work, we address these two open problems: \r\n\r\n-Balanced case: We propose the first linear enhanced PSU. Compared to the state-of-the-art enhanced PSU (Jia et al., USENIX Security 2024), our protocol achieves a $2.2 - 8.8\\times$ reduction in communication cost and a $1.2 - 8.6\\times$ speedup in running time, depending on set sizes and network environments. \r\n\r\n-Unbalanced case: We present the first unbalanced enhanced PSU, which achieves sublinear communication complexity in the size of the large set. Experimental results demonstrate that the larger the difference between the two set sizes, the better our protocol performs. For unbalanced set sizes $(2^{10},2^{20})$ with single thread in $1$Mbps bandwidth, our protocol requires only $2.322$ MB of communication. Compared with the state-of-the-art enhanced PSU, there is $38.1\\times$ shrink in communication and roughly $17.6\\times$ speedup in the running time.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University"
+                }
+            ],
+            "fullName": "Binbin Tu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University"
+                }
+            ],
+            "fullName": "Yujie Bai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Advanced Study, BNRist, Tsinghua University"
+                }
+            ],
+            "fullName": "Cong Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University"
+                }
+            ],
+            "fullName": "Yang Cao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University"
+                }
+            ],
+            "fullName": "Yu Chen"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T14:07:52Z"
+        }
+    ],
+    "keywords": [
+        "Private set union",
+        "Enhanced security",
+        "Balanced/unbalanced scenarios",
+        "pnMCRG",
+        "pECRG"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/827.pdf",
+    "pid": "827",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fast Enhanced Private Set Union in the Balanced and Unbalanced Scenarios",
+    "year": 2025,
+    "repo": [
+        "https://github.com/microsoft/APSI",
+        "https://github.com/microsoft/SEAL",
+        "https://github.com/openssl/openssl",
+        "https://github.com/osu-crypto/libOTe",
+        "https://github.com/real-world-cryprography/APSU",
+        "https://github.com/Visa-Research/volepsi"
+    ]
+}
 ]
