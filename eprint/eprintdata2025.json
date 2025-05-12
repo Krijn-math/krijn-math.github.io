@@ -59279,4 +59279,792 @@
         "https://github.com/Visa-Research/volepsi"
     ]
 }
+,
+{
+    "abstract": "Threshold ECDSA schemes distribute the capability of issuing signatures to multiple parties. They have been used in practical MPC wallets holding cryptocurrencies. However, most prior protocols are not robust, wherein even one misbehaving or non-responsive party would mandate an abort. Robust schemes have been proposed (Wong et al., NDSS \u201923, \u201924), but they do not match state-of-the-art number of rounds which is only three (Doerner et al., S&P \u201924). In this work, we propose robust threshold ECDSA schemes RompSig-Q and RompSig-L that each take three rounds (two of which are broadcasts). Building on the works of Wong et al. and\r\nfurther optimized towards saving bandwidth, they respectively take each signer (1.0\ud835\udc61 + 1.6) KiB and 3.0 KiB outbound broadcast communication, and thus exhibit bandwidth efficiency that is competitive in practical scenarios where broadcasts are natively handled. RompSig-Q preprocesses multiplications and features fast online signing; RompSig-L leverages threshold CL encryption for scalability and dynamic participation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Yingjie Lyu",
+            "orcid": "0009-0006-7779-893X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Zengpeng Li",
+            "orcid": "0000-0003-0758-7230"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Virginia Commonwealth University",
+                    "ror": "https://ror.org/02nkdxk79"
+                }
+            ],
+            "fullName": "Hong-Sheng Zhou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Singapore Management University"
+                }
+            ],
+            "fullName": "Haiyang Xue"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Mei Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Shuchao Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Mengling Liu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T15:46:13Z"
+        }
+    ],
+    "keywords": [
+        "Threshold ECDSA Signature",
+        "Bandwidth-Efficient",
+        "Robustness."
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/828.pdf",
+    "pid": "828",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Bandwidth-Efficient Robust Threshold ECDSA in Three Rounds",
+    "year": 2025,
+    "repo": [
+        "https://github.com/LFDT-Lockness/cggmp21"
+    ]
+}
+,
+{
+    "abstract": "Recent advancements in maliciously secure garbling have significantly improved the efficiency of constant-round multi-party computation. Research in the field has primarily focused on reducing communication complexity through row reduction techniques and improvements to the preprocessing phase with the use of simpler correlations.\r\nIn this work, we present two contributions to reduce the communication complexity of state of the art multi-party garbling with an arbitrary number of corruptions. First, we show how to achieve full row reduction for $n$-party garbled circuits in HSS17-style protocols (Hazay et al., Asiacrypt'17 & JC'20) and authenticated garbling (Yang et al., CCS'20), reducing the size of the garbled circuit by 25% from $4n\\kappa$ to $3n\\kappa$ and from $(4n-6)\\kappa$ to $3(n-1)\\kappa$ bits per AND gate, respectively. Achieving row reduction in multi-party garbling has been an open problem which was partly addressed by the work of Yang et al. for authenticated garbling. In our work, we show a full row reduction for both garbling approaches, thus addressing this open problem completely.\r\nSecond, drawing inspiration from the work of Dittmer et al. (Crypto 2022), we propose a new preprocessing protocol to obtain the required materials for the garbling phase using large field triples that can be generated with sublinear communication. The new preprocessing significantly reduces the communication overhead of garbled circuits. Our optimizations result in up to a $6\\times$ reduction in communication compared to HSS17 and a $2.2\\times$ reduction over the state of the art authenticated garbling of Yang et al. for 3 parties in a circuit with 10 million AND gates.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Zama"
+                }
+            ],
+            "fullName": "Kelong Cong",
+            "orcid": "0000-0002-2636-4406"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Emmanuela Orsini",
+            "orcid": "0000-0002-1917-1833"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Erik Pohle",
+            "orcid": "0000-0001-8871-8532"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Oliver Zajonc",
+            "orcid": "0000-0001-9714-928X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T16:03:21Z"
+        }
+    ],
+    "keywords": [
+        "garbled circuits",
+        "secure multi-party computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/829.pdf",
+    "pid": "829",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Row Reduction Techniques for n-Party Garbling",
+    "year": 2025,
+    "repo": [
+        "https://github.com/kc1212/multiparty-gc",
+        "https://github.com/GaloisInc/swanky",
+        "https://github.com/GaloisInc/swanky"
+    ]
+}
+,
+{
+    "abstract": "The isogeny-based post-quantum digital signature algorithm SQIsign offers the most compact key and signature sizes among all candidates in the ongoing NIST call for additional post-quantum signature algorithms. To the best of our knowledge, we present the first Simple Power Analysis (SPA) side-channel attack on SQIsign, demonstrating its feasibility for key recovery.\r\nOur attack specifically targets secret-dependent computations within Cornacchia's algorithm, a fundamental component of SQIsign's quaternion module. At the core of this algorithm, a secret-derived yet ephemeral exponent is used in a modular exponentiation subroutine. By performing SPA on the modular exponentiation, we successfully recover this ephemeral exponent. We then develop a method to show how this leaked exponent can be exploited to ultimately reconstruct the secret signing key of SQIsign.\r\nOur findings emphasize the critical need for side-channel-resistant implementations of SQIsign, highlighting previously unexplored vulnerabilities in its design.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Anisha Mukherjee",
+            "orcid": "0009-0002-5565-5744"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Maciej Czuprynko",
+            "orcid": "0009-0007-2433-5285"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "David Jacquemin",
+            "orcid": "0009-0001-8386-006X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "E\u00f6tv\u00f6s Lor\u00e1nd University, Hungary, University of Birmingham, England"
+                }
+            ],
+            "fullName": "P\u00e9ter Kutas"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Sujoy Sinha Roy",
+            "orcid": "0000-0002-9805-5389"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T16:46:55Z"
+        }
+    ],
+    "keywords": [
+        "Isogeny",
+        "SQIsign",
+        "Side-Channel Analysis",
+        "PQC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Accepted in Africacrypt 2025",
+    "pdffile": "2025/830.pdf",
+    "pid": "830",
+    "pubtype": {
+        "note": "Africacrypt 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Simple Power Analysis Attack on SQIsign",
+    "year": 2025,
+    "repo": [
+        "git@github.com:anishamukh/Key-Recovery-of-SQIsign.git",
+        "https://github.com/SQISign/sqisign-ec23",
+        "https://github.com/LearningToSQI/SQISign-SageMath.git"
+    ]
+}
+,
+{
+    "abstract": "With the rise of in-vehicle and car-to-x communication systems, ensuring robust security in automotive networks is becoming increasingly vital. As the industry shifts toward Ethernet-based architectures, the IEEE 802.1AE MACsec standard is gaining prominence as a critical security solution for future in-vehicle networks (IVNs). MACsec utilizes the MACsec Key Agreement Protocol (MKA), defined in the IEEE 802.1X standard, to establish secure encryption keys for data transmission. However, when applied to 10BASE-T1S Ethernet networks with multidrop topologies, MKA encounters a significant challenge known as the real-time paradox. This paradox arises from the competing demands of prioritizing key agreement messages and real-time control data, which conflict with each other. Infineon addresses this challenge with its innovative In-Line Key Agreement (IKA) protocol. By embedding key agreement information directly within a standard data frame, IKA effectively resolves the real-time paradox and enhances network performance. This paper establishes a theoretical worst-case delay bound for key agreement in multidrop 10BASE-T1S IVNs with more than two nodes, using Network Calculus techniques. The analysis compares the MKA and IKA protocols in terms of performance. For a startup scenario involving a 16-node network with a 50 bytes MPDU size, the MKA protocol exhibits a worst-case delay that is 1080% higher than that of IKA. As the MPDU size increases to 1486 bytes, this performance gap narrows significantly, reducing the delay difference to just 6.6%.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Infineon Technologies (Germany)",
+                    "ror": "https://ror.org/005kw6t15"
+                }
+            ],
+            "fullName": "Teodora Ljubevska"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Infineon Technologies (Germany)",
+                    "ror": "https://ror.org/005kw6t15"
+                }
+            ],
+            "fullName": "Alexander Zeh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Infineon Technologies (Germany)",
+                    "ror": "https://ror.org/005kw6t15"
+                }
+            ],
+            "fullName": "Donjete Elshani Rama"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "JK Energy"
+                }
+            ],
+            "fullName": "Ken Tindell"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T17:41:19Z"
+        }
+    ],
+    "keywords": [
+        "Automotive Ethernet",
+        "Key Agreement Protocols",
+        "MKA",
+        "Real-Time",
+        "Worst-Case Time Analysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/831.pdf",
+    "pid": "831",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Worst-Case Time Analysis of Key Agreement Protocols in 10BASE-T1S Automotive Networks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "SQIsign, the only isogeny-based signature scheme submitted to NIST\u2019s additional signature standardization call, achieves the smallest public key and signature sizes among all post-quantum signature schemes. However, its existing implementation, particularly in its quaternion arithmetic operations, relies on GMP\u2019s big integer functions, which, while efficient,  are often not designed for constant-time execution.\r\nIn this work, we take a step toward side-channel-protected SQIsign by implementing constant-time techniques for SQIsign\u2019s big integer arithmetic, which forms the computational backbone of its quaternion module. For low-level fundamental functions including Euclidean division, exponentiation and the function that computes integer square root, we either extend or tailor existing solutions according to SQIsign's requirements such as handling signed integers or scaling them for integers up to $\\sim$12,000 bits. Further, we propose a novel constant-time modular reduction technique designed to handle dynamically changing moduli.Our implementation is written in C without reliance on high-level libraries such as GMP and we evaluate the constant-time properties of our implementation using Timecop with Valgrind that confirm the absence of timing-dependent execution paths. We provide experimental benchmarks across various SQIsign parameter sizes to demonstrate the performance of our constant-time implementation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "E\u00f6tv\u00f6s Lor\u00e1nd University",
+                    "ror": "https://ror.org/01jsq2704"
+                }
+            ],
+            "fullName": "Fatna Kouider",
+            "orcid": "0000-0002-8997-6100"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ISEC, Graz University of Technology, Austria",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Anisha Mukherjee",
+            "orcid": "0009-0002-5565-5744"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ISEC, Graz University of Technology, Austria",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "David Jacquemin",
+            "orcid": "0009-0001-8386-006X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "E\u00f6tv\u00f6s Lor\u00e1nd University",
+                    "ror": "https://ror.org/01jsq2704"
+                },
+                {
+                    "name": "University of Birmingham, United Kingdom",
+                    "ror": "https://ror.org/03angcq70"
+                }
+            ],
+            "fullName": "P\u00e9ter Kutas",
+            "orcid": "0000-0002-2043-9542"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T19:52:41Z"
+        }
+    ],
+    "keywords": [
+        "SQIsign",
+        "big integer arithmetic",
+        "constant-time implementation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Accepted at AFRICACRYPT\u00a02025",
+    "pdffile": "2025/832.pdf",
+    "pid": "832",
+    "pubtype": {
+        "note": "AFRICACRYPT 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Constant-time Integer Arithmetic for SQIsign",
+    "year": 2025,
+    "repo": [
+        "https://github.com/SQISign/sqisign-ec23",
+        "https://github.com/SQISign/sqisign-ec23"
+    ]
+}
+,
+{
+    "abstract": "We introduce a new class of addition chains and show the numbers for which these chains are optimal satisfy the Scholz conjecture, precisely the inequality $$\\iota(2^n-1)\\leq n-1+\\iota(n).$$",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 Laval",
+                    "ror": "https://ror.org/04sjchr03"
+                }
+            ],
+            "fullName": "Theophilus Agama",
+            "orcid": "0000-0001-7790-9368"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-09T21:16:35Z"
+        }
+    ],
+    "keywords": [
+        "Closed; complete"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/833.pdf",
+    "pid": "833",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A note on closed addition chains and complete numbers",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We show that the authentication method [Future Gener. Comput. Syst. 158: 516-529 (2024)] cannot be practically implemented, because the signature scheme is insecure against certificateless public key replacement forgery attack. The explicit dependency between   the certificateless public key  and secret key is not properly used to construct some intractable problems, such as Elliptic Curve Discrete Logarithm (ECDL).  An adversary can find an efficient signing algorithm functionally equivalent to the valid signing algorithm. We also correct some typos in the original presentation.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-10T00:20:42Z"
+        }
+    ],
+    "keywords": [
+        "Certificateless signature",
+        "signing algorithm",
+        "verification algorithm",
+        "forgery attack"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/834.pdf",
+    "pid": "834",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Note on ``CABC: A Cross-Domain Authentication Method Combining Blockchain with Certificateless Signature for IIoT''",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-91823-0_1",
+    "abstract": "Multi-signatures allow a given set of parties to cooperate in order to create a digital signature whose size is independent of the number of signers. At the same time, no other set of parties can create such a signature. While non-interactive multi-signatures are known (e.g. BLS from pairings), many popular multi-signature schemes such as MuSig2 (which are constructed from pairing-free discrete logarithm-style assumptions) require interaction. Such interactive multi-signatures have recently found practical applications e.g. in the cryptocurrency space.\r\n\r\nMotivated by classical and emerging use cases of such interactive multi-signatures, we introduce the first systematic treatment of interactive multi-signatures in the universal composability (UC) framework. Along the way, we revisit existing game-based security notions and prove that constructions secure in the game-based setting can easily be made UC secure and vice versa.\r\n    \r\nIn addition, we consider interactive multi-signatures where the signers must interact in a fixed pattern (so-called ordered multi-signatures). Here, we provide the first construction of ordered multi-signatures based on the one-more discrete logarithm assumption, whereas the only other previously known construction required pairings. Our scheme achieves a stronger notion of unforgeability, guaranteeing that the adversary cannot obtain a signature altering the relative order of honest signers. We also present the first formalization of ordered multi-signatures in the UC framework and again show that our stronger game-based definitions are equivalent to UC security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Denmark",
+                    "ror": "https://ror.org/04qtj9h94"
+                }
+            ],
+            "fullName": "Carsten Baum",
+            "orcid": "0000-0001-7905-0198"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IT University of Copenhagen",
+                    "ror": "https://ror.org/02309jg23"
+                }
+            ],
+            "fullName": "Bernardo David"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Chalmers University of Technology",
+                    "ror": "https://ror.org/040wg7k59"
+                }
+            ],
+            "fullName": "Elena Pagnin",
+            "orcid": "0000-0002-7804-6696"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "J.P.Morgan AI Research & AlgoCRYPT CoE",
+                    "ror": "https://ror.org/01sxmq816"
+                }
+            ],
+            "fullName": "Akira Takahashi",
+            "orcid": "0000-0001-8556-3053"
+        }
+    ],
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-10T03:07:43Z"
+        }
+    ],
+    "keywords": [
+        "multi-signatures",
+        "universal composability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/835.pdf",
+    "pid": "835",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Universally Composable Interactive and Ordered Multi-Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this work, we present Functional Encryption (FE) schemes for Attribute-Weighted Sums (AWS), introduced by Abdalla, Gong and Wee (Crypto 2020) in the registration-based setting (RFE). In such a setting, users sample their own public/private key pairs $(\\mathsf{pk}_i, \\mathsf{sk}_i)$; a key curator registers user public keys along with their functions $h_i$; encryption takes as input $N$ attribute-value pairs $\\{\\vec x_\\ell, \\vec z_\\ell\\}_{\\ell\\in[N]}$ where $\\vec x_\\ell$ is public and $\\vec z_\\ell$ is private; and decryption recovers the weighted sum $\\sum_{\\ell\\in[N]}h_i(\\vec x_\\ell)^\\mathsf{T}\\vec z_\\ell$ while leaking no additional information about $\\vec z_\\ell$. Recently, Agrawal, Tomida and Yadav (Crypto 2023) studied the attribute-based case of AWS (AB-AWS) providing fine-grained access control, where the function is described by a tuple $(g_i, h_i)$, the input is extended to $(\\vec y, \\{\\vec x_\\ell, \\vec z_\\ell\\}_{\\ell \\in [N]})$ and decryption recovers the weighted sum only if $g_i(\\vec y) = 0$. Our main results are the following:\r\n\r\n- We build the first RFE for (AB-)1AWS functionality, where $N=1$, that achieves adaptive indistinguishability-based security under the (bilateral) $k$-Lin assumption in prime-order pairing groups. Prior works achieve RFE for linear and quadratic functions without access control in the standard model, or for attribute-based linear functions in the generic group model.\r\n\r\n- We develop the first RFE for AB-AWS functionality, where $N$ is unbounded, that achieves very selective simulation-based security under the bilateral $k$-Lin assumption. Here, \u201cvery selective\u201d means that the adversary declares challenge attribute values, all registered functions and corrupted users upfront. Previously, SIM-secure RFEs were only constructed for linear and quadratic functions without access control in the same security model.   \r\n\r\nWe devise a novel nested encoding mechanism that facilitates achieving attribute-based access control and unbounded inputs in the registration-based setting for AWS functionalities, proven secure in the standard model. In terms of efficiency, our constructions feature short public parameters, secret keys independent of $N$, and compact ciphertexts unaffected by the length of public inputs. Moreover, as required by RFE properties, all objective sizes and algorithm costs scale poly-logarithmically with the total number of registered users in the system.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology, KASTEL Security Research Labs"
+                }
+            ],
+            "fullName": "Tapas Pal",
+            "orcid": "0000-0001-6278-0418"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, \u00c9cole normale sup\u00e9rieure, PSL University, CNRS, Inria"
+                }
+            ],
+            "fullName": "Robert Sch\u00e4dlich",
+            "orcid": "0000-0001-8643-9046"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-10T21:27:20Z"
+        }
+    ],
+    "keywords": [
+        "registered functional encryption",
+        "attribute-weighted sums",
+        "access control"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/836.pdf",
+    "pid": "836",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Registered Functional Encryption for Attribute-Weighted Sums with Access Control",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Lightweight block ciphers such as PIPO and FLY are designed to operate efficiently and securely in constrained environments. While the differential attack on PIPO-64-128 has already been studied by the designers, no concrete differential attack had been conducted for PIPO-64-256 and FLY. Motivated by this gap, we revisit the security of PIPO against differential attacks and generalize the analysis framework to make it applicable to structurally related ciphers. Based on this generalized framework, we search for key-recovery-attack-friendly distinguishers and apply clustering techniques to enhance their effectiveness in key-recovery attacks. As a result, we improve the previously proposed differential attack on PIPO-64-128, reducing the time complexity by a factor of $2^{31.7}$. Furthermore, we propose a 13-round differential attack on PIPO-64-256, which covers two more rounds than the previous result. We also apply the same methodology to FLY and present the first differential attack on 12-round FLY, reaching one round beyond the best-known distinguisher. We believe this work improves the understanding of the structures of FLY and PIPO, and provides a basis for future research on advanced key-recovery attacks for related cipher designs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University, Republic of Korea"
+                }
+            ],
+            "fullName": "Insung Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung Electronics, Republic of Korea"
+                }
+            ],
+            "fullName": "Seonggyeom Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University, Republic of Korea"
+                }
+            ],
+            "fullName": "Sunyeop Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University, Republic of Korea"
+                }
+            ],
+            "fullName": "Donggeun Kwon"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University, Republic of Korea"
+                }
+            ],
+            "fullName": "Hanbeom Shin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kangwon National University, Republic of Korea"
+                }
+            ],
+            "fullName": "Dongjae Lee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Jeonbuk National University, Republic of Korea"
+                }
+            ],
+            "fullName": "Deukjo Hong"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Seoul, Republic of Korea"
+                }
+            ],
+            "fullName": "Jaechul Sung"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University, Republic of Korea"
+                }
+            ],
+            "fullName": "Seokhie Hong"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-11T11:52:33Z"
+        }
+    ],
+    "keywords": [
+        "Block ciphers",
+        "Differential cryptanalysis",
+        "Key-recovery attack",
+        "PIPO",
+        "FLY"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/837.pdf",
+    "pid": "837",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Towards Optimal Differential Attacks on FLY and PIPO",
+    "year": 2025,
+    "repo": [
+        "https://github.com/kim-insung-wq/differential-attack",
+        "https://github.com/kim-insung-wq/differential-attack"
+    ]
+}
+,
+{
+    "abstract": "Bitcoin is based on the Blockchain, an open ledger containing information about each transaction in the Bitcoin network. Blockchain serves many purposes, but it allows anyone to track all transactions and activities of each Bitcoin address. The privacy of the network is being threatened by some organizations that track transactions. Tracking and subsequent filtering of coins lead to the loss of exchangeability of Bitcoin.\r\n\r\nDespite Bitcoin\u2019s transparency, it is possible to increase user privacy using a variety of existing methods. One of these methods is called CoinJoin, was proposed by Bitcoin developer Greg Maxwell in 2013. This technology involves combining several users transactions to create a single transaction with multiple inputs and outputs, which makes transaction analysis more complicated.\r\n\r\nThis work describes the KeyJoin, a privacy-focused CoinJoin protocol based on the keyed-verification anonymous credentials (KVAC).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Rostov-on-Don College of Communications and Informatics"
+                }
+            ],
+            "fullName": "Dmitry Astakhin",
+            "orcid": "0009-0002-7778-5910"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-11T17:52:06Z"
+        }
+    ],
+    "keywords": [
+        "Bitcoin",
+        "Privacy",
+        "CoinJoin"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/838.pdf",
+    "pid": "838",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "KeyJoin: Privacy-Focused CoinJoin Protocol for Bitcoin",
+    "year": 2025,
+    "repo": [
+        "https://gist.github.com/chris-belcher/18ea0e6acdb885a2bfbdee43dcd6b5af",
+        "https://gist.github.com/chris-belcher/9144bd57a91c194e332fb5ca371d0964"
+    ]
+}
 ]
