@@ -60067,4 +60067,73 @@
         "https://gist.github.com/chris-belcher/9144bd57a91c194e332fb5ca371d0964"
     ]
 }
+,
+{
+    "abstract": "This paper presents a side-channel attack targeting the LESS and CROSS post-quantum digital signature schemes, resulting in full key recovery for both. These schemes have advanced to the second round of NIST\u2019s call for additional signatures. By leveraging correlation power analysis and horizontal attacks, we are able to recover the secret key by observing the power consumption during the multiplication of an ephemeral secret vector with a public matrix. The attack path is enabled by the presence of a direct link between the secret key elements and the ephemeral secret, given correct responses. This attack targets version 1.2 of both schemes. In both settings we can recover the secret key in a single trace for the NIST\u2019s security level I parameter set.  Additionally, we propose improvements to the existing horizontal attack on CROSS, reducing the required rounds that need to be observed by an order of magnitude for the same parameter sets.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Maciej Czuprynko",
+            "orcid": "0009-0007-2433-5285"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Anisha Mukherjee",
+            "orcid": "0009-0002-5565-5744"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Sujoy Sinha Roy",
+            "orcid": "0000-0002-9805-5389"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-12T09:02:40Z"
+        }
+    ],
+    "keywords": [
+        "Side-channel attacks",
+        "Post-quantum cryptography",
+        "CROSS",
+        "LESS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "To appear in Africacrypt 2025.",
+    "pdffile": "2025/839.pdf",
+    "pid": "839",
+    "pubtype": {
+        "note": "Africacrypt 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Correlation power analysis of LESS and CROSS",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
