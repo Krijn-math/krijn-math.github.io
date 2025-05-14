@@ -60136,4 +60136,133 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Multi-signatures over pairing-free cyclic groups have seen significant advancements in recent years, including achieving two-round protocols and supporting key aggregation.\r\nKey aggregation enables the combination of multiple public keys into a single succinct aggregate key for verification and has essentially evolved from an optional feature to a requirement.\r\n\r\nTo enhance the concrete security of two-round schemes, Pan and Wagner (Eurocrypt 2023, 2024) introduced the first tightly secure constructions in this setting.\r\nHowever, their schemes do not support key aggregation, and their approach inherently precludes a single short aggregate public key.\r\nThis leaves the open problem of achieving tight security and key aggregation simultaneously.\r\n\r\nIn this work, we solve this open problem by presenting the first tightly secure two-round multi-signature scheme in pairing-free groups supporting key aggregation.\r\nAs for Pan and Wagner's schemes, our construction is based on the DDH assumption.\r\nIn contrast to theirs, it also has truly compact signatures, with signature size asymptotically independent of the number of signers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Saarland University",
+                    "ror": "https://ror.org/01jdpyv68"
+                }
+            ],
+            "fullName": "Renas Bacho",
+            "orcid": "0009-0007-7037-2458"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Benedikt Wagner",
+            "orcid": "0000-0002-4620-7264"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-12T09:16:25Z"
+        }
+    ],
+    "keywords": [
+        "Multi-Signatures",
+        "Tight Security",
+        "Key Aggregation",
+        "Pairing-Free Groups"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/840.pdf",
+    "pid": "840",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "T-Spoon: Tightly Secure Two-Round Multi-Signatures with Key Aggregation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Voter privacy and end-to-end (E2E) verifiability are critical features of electronic voting (e-voting) systems to safeguard elections. To achieve these properties commonly a perfect bulletin board (BB) is assumed that provides consistent, reliable, and tamper-proof storage and transmission of voting data. However, in practice, BBs operate in asynchronous and unreliable networks, and hence, are susceptible to vulnerabilities such as equivocation attacks and dropped votes, which can compromise both verifiability and privacy. Although prior research has weakened the perfect BB assumption, it still depends on trusting certain BB components.\r\n\r\nIn this work, we present and initiate a formal exploration of designing e-voting systems based on fully untrusted BBs. For this purpose, we leverage the notion of accountability and in particular use accountable BBs. Accountability ensures that if a security breach occurs, then cryptographic evidence can identify malicious parties. Fully untrusted BBs running in asynchronous networks bring new challenges. Among others, we identify several types of attacks that a malicious but accountable BB might be able to perform and propose a new E2E verifiability notion for this setting. Based on this notion and as a proof of concept, we construct the first e-voting system that is provably E2E verifiable and provides vote privacy  even when the underlying BB is fully malicious. This establishes an alternative to traditional e-voting architectures that rely on (threshold) trusted BB servers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Stuttgart",
+                    "ror": "https://ror.org/04vnq7t77"
+                }
+            ],
+            "fullName": "Daniel Rausch",
+            "orcid": "0000-0002-1901-3659"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Stuttgart",
+                    "ror": "https://ror.org/04vnq7t77"
+                }
+            ],
+            "fullName": "Nicolas Huber",
+            "orcid": "0000-0001-6905-3571"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Stuttgart",
+                    "ror": "https://ror.org/04vnq7t77"
+                }
+            ],
+            "fullName": "Ralf Kuesters",
+            "orcid": "0000-0002-9071-9312"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-12T12:55:52Z"
+        }
+    ],
+    "keywords": [
+        "E-Voting",
+        "Accountability",
+        "Bulletin Board"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This is the full version of the paper that has been accepted to appear at IEEE CSF 2025.",
+    "pdffile": "2025/841.pdf",
+    "pid": "841",
+    "pubtype": {
+        "note": "CSF 2025 - 38th IEEE Computer Security Foundations Symposium",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Verifiable E-Voting with a Trustless Bulletin Board",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
