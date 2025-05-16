@@ -60265,4 +60265,48 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "In this article, we present an improvement for QR UOV and a reparation of VOX.\r\n    Thanks to the use of the perturbation minus we are able to fully exploit the parameters in order to reduce the public key. It also helps us to repair the scheme VOX. With QR UOV- we are able to significantly reduce the size of the public key at the cost of a small increase of the signature size. While with VOX- we can obtain a public key as short as $6KB$. VOX- also maintains a very short signature size.\r\n    We also show that the use of minus perturbation is very useful with schemes that uses the QR (Quotient ring perturbation).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Thales (France)",
+                    "ror": "https://ror.org/04emwm605"
+                }
+            ],
+            "fullName": "Pierre Varjabedian"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-12T15:28:31Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum public key signature",
+        "Multivariate cryptography",
+        "UOV"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/842.pdf",
+    "pid": "842",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improvements on the schemes VOX and QR UOV When minus is a plus",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
