@@ -60711,4 +60711,1114 @@
         "https://github.com/GiacomoPope/KummerIsogeny"
     ]
 }
+,
+{
+    "DOI": "10.1007/978-3-031-91832-2_7",
+    "abstract": "In this work, we characterize graphs of  \\emph{(graph-labeling) incremental proofs of sequential work} (iPoSW). First, we define \\emph{incremental} graphs and prove they are necessary for iPoSWs. Relying on space pebbling complexity of incremental graphs, we show that the depth-robust graphs underling the PoSW of Mahmoody et al.\\ are not incremental, and hence, their PoSW cannot be transformed into an iPoSW. \r\n\r\nSecond, and  toward a generic iPoSW construction, we define graphs whose structure is compatible with the incremental sampling technique (D\u00f6ttling et al.). These are \\emph{dynamic} graphs.  We observe that the graphs underlying all PoSWs, standalone or incremental, are dynamic. We then generalize current iPoSW schemes  by giving a generic construction that transforms any PoSW whose underlying graph is incremental and dynamic into an iPoSW.  As a corollary,  we get a new iPoSW based on the modified Cohen-Pietrzak graph (Abusalah et al.). When used in constructing blockchain light-client bootstrapping protocols (Abusalah et al.) such an iPoSW, results in the most efficient bootstrappers/provers, in terms of both proof size and space complexity.\r\n\r\nAlong the way, we show that previous iPoSW definitions allow for trivial solutions. To overcome this, we provide a refined definition that captures the essence of iPoSWs and is satisfied by all known iPoSW constructions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software Institute"
+                }
+            ],
+            "fullName": "Hamza Abusalah",
+            "orcid": "0000-0002-7524-3133"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-13T11:58:04Z"
+        }
+    ],
+    "keywords": [
+        "Incremental Proofs of Sequential Work"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/848.pdf",
+    "pid": "848",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On Graphs of Incremental Proofs of Sequential Work",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "TRaccoon is an efficient 3-round lattice-based T-out-of-N threshold signature, recently introduced by del Pino et al. (Eurocrypt 2024). While the design resembles the classical threshold Schnorr signature, Sparkle (Crites et al., Crypto 2023), one shortfall is that it has no means to identify malicious behavior, a property highly desired in practice. This is because to resist lattice-specific attacks, TRaccoon relies on a technique called masking, informally blinding each partial signature with a one-time additive mask. del Pino et al. left it as an open problem to add a mechanism to identify malicious behaviors to TRaccoon.\r\n\r\nIn this work, we propose TRaccoon-IA, a TRaccoon with an efficient identifiable abort protocol, allowing to identify malicious signers when the signing protocol fails. The identifiable abort protocol is a simple add-on to TRaccoon, keeping the original design intact, and comes with an added communication cost of 60 + 6.4 |T| KB only when signing fails. Along the way, we provide the first formal security analysis of a variant of LaBRADOR (Beullens et al., Crypto 2023) with zero-knowledge, encountering several hurdles when formalizing it in detail. Moreover, we give a new game-based definition for interactive identifiable abort protocols, extending the popular game-based definition used to prove unforgeability of recent threshold signatures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                }
+            ],
+            "fullName": "Rafael del Pino",
+            "orcid": "0009-0001-8638-787X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Shuichi Katsumata",
+            "orcid": "0000-0002-8496-0476"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                },
+                {
+                    "name": "Univ Rennes, CNRS, IRISA"
+                }
+            ],
+            "fullName": "Guilhem Niot",
+            "orcid": "0000-0002-2497-8770"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Michael Reichle",
+            "orcid": "0000-0002-3498-5472"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Kaoru Takemure",
+            "orcid": "0000-0002-9288-1911"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-13T21:38:28Z"
+        }
+    ],
+    "keywords": [
+        "threshold",
+        "signature scheme",
+        "lattices",
+        "identifiable abort",
+        "labrador",
+        "zero-knowledge"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/849.pdf",
+    "pid": "849",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Unmasking TRaccoon: A Lattice-Based Threshold Signature with An Efficient Identifiable Abort Protocol",
+    "year": 2025,
+    "repo": [
+        "https://github.com/malb/lattice-estimator"
+    ]
+}
+,
+{
+    "abstract": "Secret sharing is a cornerstone of modern cryptography, underpinning the secure distribution and reconstruction of secrets among authorized participants. In these schemes, succinctness\u2014measured by the size of the distributed shares\u2014has long been an area of both great theoretical and practical interest, with large gaps between constructions and best known lower bounds. In this paper, we present a novel computational secret sharing scheme for monotone Boolean circuits that achieves substantially shorter share sizes than previously known constructions in the standard model. Our scheme attains a public share size of $n + \\mathsf{poly}(\\lambda, \\log |C|)$ and a user share size of $\\lambda$, where n denotes the number of users, $C$ is the monotone circuit and $\\lambda$ is the security parameter, thus effectively eliminating the dependence on the circuit size. This marks a significant improvement over earlier approaches, which exhibited share sizes that grew with the number of gates in the circuit. Our construction makes use of indistinguishability obfuscation and injective one-way functions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "George Lu",
+            "orcid": "0009-0000-6178-461X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "Shafik Nassar"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                },
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Brent Waters",
+            "orcid": "0009-0008-9718-8623"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-14T01:21:47Z"
+        }
+    ],
+    "keywords": [
+        "Secret Sharing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/850.pdf",
+    "pid": "850",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Succinct Computational Secret Sharing for Monotone Circuits",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Local differential privacy (LDP) enables individuals to report sensitive data while preserving privacy. Unfortunately, LDP mechanisms are vulnerable to poisoning attacks, where adversaries controlling a fraction of the reporting users can significantly distort the aggregate output--much more so than in a non-private solution where the inputs are reported directly. In this paper, we present two novel solutions that prevent poisoning attacks under LDP while preserving its privacy guarantees.  \r\nOur first solution, $\\textit{V}\\epsilon\\textit{rity-}{\\textit{Auth}}$, addresses scenarios where the users report inputs with a ground truth available to a third party. The second solution, $\\textit{V}\\epsilon\\textit{rity}$, tackles the more challenging case in which the users locally generate their input and there is no ground truth which can be used to bootstrap verifiable randomness generation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Google"
+                }
+            ],
+            "fullName": "James Bell-Clark",
+            "orcid": "0000-0003-4493-4297"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Google"
+                }
+            ],
+            "fullName": "Adri\u00e0 Gasc\u00f3n",
+            "orcid": "0000-0002-1807-8311"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Google"
+                }
+            ],
+            "fullName": "Baiyu Li",
+            "orcid": "0000-0003-1088-9328"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Google"
+                }
+            ],
+            "fullName": "Mariana Raykova",
+            "orcid": "0000-0002-1744-4025"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Michigan\u2013Ann Arbor",
+                    "ror": "https://ror.org/00jmfr291"
+                }
+            ],
+            "fullName": "Amrita Roy Chowdhury",
+            "orcid": "0000-0003-3808-4652"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-14T01:27:17Z"
+        }
+    ],
+    "keywords": [
+        "Local differential privacy",
+        "verifiable randomness generation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/851.pdf",
+    "pid": "851",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "V$\\epsilon$rity: Verifiable Local Differential Privacy",
+    "year": 2025,
+    "repo": [
+        "https://github.com/dalek-cryptography/bulletproofs"
+    ]
+}
+,
+{
+    "abstract": "The study by Gohr et.al at  CRYPTO 2019 and sunsequent related works have shown that neural networks can uncover previously unused features, offering novel insights into cryptanalysis. Motivated by these findings, we employ neural networks to learn features specifically related to integral properties and integrate the corresponding insights into optimized search frameworks. These findings validate the framework of using neural networks for feature exploration, providing researchers with novel insights that advance established cryptanalysis methods.\r\n\r\nNeural networks have inspired the development of more precise integral search models. By comparing the integral distinguishers obtained via neural networks with those identified by classical methods, we observe that existing automated search models often fail to find optimal distinguishers. To address this issue, we develop a meet-in-the-middle search framework that balances model accuracy and computational efficiency. As a result, we reduce the number of active plaintext bits required for an 11-round integral distinguisher on SKINNY-64-64, and further identify a 12-round key-dependent integral distinguisher\u2014achieving one additional round over the previous best-known result.\r\n\r\nThe integral distinguishers discovered by neural networks enable key-recovery attacks on more rounds. We identify a 7-round key-independent integral distinguisher from neural networks with even only one active plaintext cell, which is based on linear combinations of bits. This distinguisher enables a 15-round key-recovery attack on SKINNY-n-n through a strategy with 3 rounds of forward decryption and 5 rounds of backward encryption, improving upon the previous record by one round. The same distinguisher also enhances attacks on SKINNY-n-2n and SKINNY-n-3n. Additionally, we discover an 8-round key-dependent integral distinguisher using neural network that further reduces the time complexity of key-recovery attacks against SKINNY.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Liu Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Yiran Yao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Chinese Academy of Sciences",
+                    "ror": "https://ror.org/034t30j35"
+                }
+            ],
+            "fullName": "Danping Shi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Xidian University",
+                    "ror": "https://ror.org/05s92vm98"
+                }
+            ],
+            "fullName": "Dongchen Chai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Jian Guo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Xidian University",
+                    "ror": "https://ror.org/05s92vm98"
+                }
+            ],
+            "fullName": "Zilong Wang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-14T10:02:54Z"
+        }
+    ],
+    "keywords": [
+        "Neural Network",
+        "Limited Data",
+        "Integral Property",
+        "Feature Explorer",
+        "SKINNY"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/852.pdf",
+    "pid": "852",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Neural-Inspired Advances in Integral Cryptanalysis",
+    "year": 2025,
+    "repo": [
+        "https://github.com/classabbyamp/espresso-logic"
+    ]
+}
+,
+{
+    "abstract": "The Signal Protocol, underpinning secure messaging for billions, faces the challenge of migrating to a post-quantum world while preserving critical properties like asynchrony and deniability. While Signal\u2019s PQXDH key exchange protocol addresses post-quantum confidentiality, full migration of the X3DH protocol remains elusive. Relying on a split KEM (K-Waay, USENIX \u201924) offers a promising migration path, but it has so far suffered from size limitations compared to concurrent works leveraging\r\nring signatures. \r\n\r\nThis work introduces Sparrow-KEM and Sym-Sparrow-KEM, novel asymmetric and symmetric split KEMs respectively, i.e. for which keys can be used interchangeably for sending and receiving, or only in one direction. They are designed to optimize the K-Waay protocol for size efficiency. Leveraging the MLWE assumption, these constructions reduce by a factor 5.1\u00d7 the communication of prior post-quantum X3DH based on split KEMs, plus provides a 40\u00d7 speedup. Additionally, Sym-Sparrow-KEM is the first symmetric split-KEM to offer deniability, IND-1KCA, and IND-1BatchCCA security, capturing implicit authentication properties. We provide formal security proofs for both schemes, including deniability. Our results demonstrate the feasibility of a compact and deniable post-quantum X3DH protocol based on split KEMs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                },
+                {
+                    "name": "Univ Rennes, CNRS, IRISA"
+                }
+            ],
+            "fullName": "Guilhem Niot",
+            "orcid": "0000-0002-2497-8770"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-14T12:40:55Z"
+        }
+    ],
+    "keywords": [
+        "x3dh",
+        "split kem",
+        "key exchange"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/853.pdf",
+    "pid": "853",
+    "pubtype": {
+        "note": "ACM ASIACCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Practical Deniable Post-Quantum X3DH: A Lightweight Split-KEM for K-Waay",
+    "year": 2025,
+    "repo": [
+        "https://github.com/pq-crystals/security-estimates",
+        "https://github.com/GuilhemN/sparrow-kem/blob/main/security/correctness/eval_sparrow.py",
+        "https://github.com/GuilhemN/sparrow-kem/blob/main/security/correctness/eval_sparrow.py",
+        "https://github.com/malb/lattice-estimator",
+        "https://github.com/GuilhemN/sparrow-kem",
+        "https://github.com/zhenfeizhang/raptor/tree/37d78152bbca69b27b13a184347ceaec8ffbd69f",
+        "https://github.com/WardBeullens/Calamari-and-Falafl/tree/38a94bbfa39c211dbf10abc65b5aec7a0b9bc070"
+    ]
+}
+,
+{
+    "abstract": "Localized side-channel analysis makes it possible to evaluate only the relevant chip area by measuring near-field electromagnetic (EM) emanations. Compared to global power measurements, this can lead to more powerful attacks as the signal-to-noise ratio is higher and irrelevant circuit components are not included in the recorded measurements. Especially for profiled attacks and their reproduction, the probe position in a localized scenario is of utmost importance. Ideally a probe should be placed identically during the profiling and attack phases, as small variations can have a large impact on the success of the attack. In this work we present our methodology \u2013 ProbeNav \u2013 to accurately reposition an EM probe which is optimized for localized measurements, i.e., near-field measurements. We evaluate cross-correlation, Oriented Fast and rotated Brief (ORB) and particle filters to re-calibrate the coordinate system of our setup. As a result, our methodologies show that precise positioning on a STM32F303 microcontroller is possible for a profiled attack scenario with different EM probes. Furthermore, by requiring only a single trace per position, profiling is 3 times and repositioning 28 faster in terms of number of collected traces compared to the state of the art.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Matthias Probst",
+            "orcid": "0000-0001-5747-0730"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Alexander Wiesent"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fraunhofer Institute for Applied and Integrated Security",
+                    "ror": "https://ror.org/03w0bbr97"
+                }
+            ],
+            "fullName": "Michael Gruber",
+            "orcid": "0000-0003-0450-4372"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fraunhofer Institute for Applied and Integrated Security",
+                    "ror": "https://ror.org/03w0bbr97"
+                }
+            ],
+            "fullName": "Georg Sigl",
+            "orcid": "0000-0003-3152-941X"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-14T14:19:06Z"
+        }
+    ],
+    "keywords": [
+        "local EM-measurements",
+        "Probe Positioning",
+        "SCA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/854.pdf",
+    "pid": "854",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "ProbeNav - Fast, precise and repeatable positioning of electromagnetic probes for local Side-Channel Attacks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce posterior security of digital signatures, the additional security features after the original signature is generated. It is motivated by the scenario that some people store their secret keys in secure hardware and can only obtain a standard signature through a standardized interface. In this paper, we consider two different posterior security features: anonymity and message hiding.\r\n\r\nWe first introduce incognito signature, a new mechanism to anonymize a standard signature. Different from other ring or group signatures, the signer generates a standard (non-anonymous) signature first. The signature is then anonymized by a converter before sending to the verifier, by hiding the signer public key with a set of decoy public keys. We then introduce concealed signature which hides the message in a commitment. The standard signature is converted such that it can be verified with the commitment. The models of  posterior anonymity and  posterior message hiding capture the separation of the signer and the converter. Anonymity or message hiding is provided by the converter after the creation of a standard signature by the signer.\r\n\r\nWe give generic constructions of incognito signature and concealed signature. It can be applied to standard signatures like Schnorr. It gives the first practical anonymized ECDSA signature, and the signature size is logarithmic to the number of decoy public keys $n$. The existing ring signature scheme with ECDSA keys is at least 152 times longer than our scheme for $n \\le 4096$.\r\n\r\nThe incognito signature and concealed signature can be composed to provide posterior anonymity and message hiding. It is useful in applications like two-tier central bank digital currency, where users want to hide their addresses (public keys) and transaction amounts (messages) when the payment is settled in the interbank layer.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Monash University",
+                    "ror": "https://ror.org/02bfwt286"
+                }
+            ],
+            "fullName": "Tsz Hon Yuen",
+            "orcid": "0000-0002-0629-6792"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Monash University",
+                    "ror": "https://ror.org/02bfwt286"
+                }
+            ],
+            "fullName": "Ying-Teng Chen",
+            "orcid": "0009-0006-4824-8314"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                }
+            ],
+            "fullName": "Shimin Pan",
+            "orcid": "0000-0001-6808-689X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Sydney",
+                    "ror": "https://ror.org/0384j8v12"
+                }
+            ],
+            "fullName": "Jiangshan Yu",
+            "orcid": "0000-0001-8006-7392"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Monash University",
+                    "ror": "https://ror.org/02bfwt286"
+                }
+            ],
+            "fullName": "Joseph K. Liu",
+            "orcid": "0000-0001-6656-6240"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T06:05:09Z"
+        }
+    ],
+    "keywords": [
+        "Privacy",
+        "Signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Full version of the paper to be published in ACM CCS 2025.",
+    "pdffile": "2025/855.pdf",
+    "pid": "855",
+    "pubtype": {
+        "note": "CCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Posterior Security: Anonymity and Message Hiding of Standard Signatures",
+    "year": 2025,
+    "repo": [
+        "https://github.com/incognito-sig/incognito"
+    ]
+}
+,
+{
+    "abstract": "During an analysis of the NIST SP 800-22r1a document, which provides a test suite to validate random number generators and their reference implementation, various issues were identified, including imprecise probability constants, erroneous example calculations, and discrepancies within test descriptions.\r\nHere, we provide a technical analysis of the Statistical Test Suite, documenting inconsistencies and deficiencies in both the theoretical specification and the official C reference implementation. \r\nThe analysis also reveals concrete implementation bugs and structural limitations in the reference codebase. \r\nRather than revising any of the statistical tests, this work documents these flaws to support the ongoing revision process of the standard and to encourage more reliable and maintainable implementations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Applied Sciences Upper Austria",
+                    "ror": "https://ror.org/03jqp6d56"
+                }
+            ],
+            "fullName": "Elias Riesinger"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Applied Sciences Upper Austria",
+                    "ror": "https://ror.org/03jqp6d56"
+                }
+            ],
+            "fullName": "J\u00fcrgen Fu\u00df",
+            "orcid": "0009-0002-1432-1529"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T07:08:26Z"
+        }
+    ],
+    "keywords": [
+        "randomness",
+        "standard",
+        "corrections",
+        "RNG",
+        "tests"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/856.pdf",
+    "pid": "856",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Testing the Tests - Opportunities for Corrections and Improvements in NIST SP 800-22r1a and its Reference Code",
+    "year": 2025,
+    "repo": [
+        "https://github.com/riesinger-e/nist-sts"
+    ]
+}
+,
+{
+    "abstract": "Side-channel analysis remains a critical threat to public-key cryptographic implementations. Simple Power Analysis (SPA) techniques can extract secret keys from a single power trace, often using clustering-based classification methods. However, traces captured in real-world environments often suffer from misalignment and variable trace lengths due to unstable clocks and random delays. As a result, clustering methods are required to use alignment methods that may alter the original information of the traces. To address this problem, this work proposes Dynamic Time Classification (DTC) as an alternative approach to classify cryptographic operations in SPA based on Dynamic Time Warping. Unlike clustering methods, DTC inherently compares power traces without requiring fixed-length segments, which greatly improved the adaptability to unequal traces and thus allows us to classify different operations relatively stably. Experimental results on public-key cryptographic algorithms and post-quantum algorithm implementations show that DTC are no less accurate than clustering methods and are more robust to timing variations. This work also systematically divides the features of different operations and explores the effects of different SPA methods on different types of feature. This work also conducts experiments with and without random delays for different categories, compares the experimental accuracy of different alignment methods, and discusses the feasibility of DTW as a preprocessing method.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Yaoling Ding"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Haotong Xu"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Annyu Liu"
+        },
+        {
+            "affiliations": [],
+            "fullName": "An Wang"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Jingqi Zhang"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Jing Yu"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Liehuang Zhu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T07:23:07Z"
+        }
+    ],
+    "keywords": [
+        "Side-Channel Analysis",
+        "Simple Power Analysis",
+        "Public-key Algorithms",
+        "Dynamic Time Warping",
+        "Kyber"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/857.pdf",
+    "pid": "857",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Classify Directly: A Dynamic Time SPA Classification Method Based on DTW",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Motivated by applications to efficient secure computation, we consider the following problem of encrypted matrix\u2013vector product (EMVP).  Let $\\mathbb F$ be a finite field.  In an offline phase, a client uploads an encryption of a matrix $M \\in \\mathbb F^{m\\times \\ell}$ to a server, keeping only a short secret key.  The server stores the encrypted matrix \\(\\hat{M}\\).\r\n\r\nIn the online phase, the client may repeatedly send encryptions \\(\\hat{ q}_i\\) of query vectors \\(q_i \\in \\mathbb F^\\ell\\),  which enables the client and the server to locally compute compact shares of the matrix\u2013vector product \\(Mq_i\\).  The server learns nothing about \\(M\\) or \\(q_i\\).  \r\nThe shared output can either be revealed to the client or processed by another protocol.\r\n\r\nWe present efficient EMVP protocols based on variants of the learning parity with noise (LPN) assumption and the related learning subspace with noise (LSN) assumption.\r\n\r\nOur EMVP protocols are field-agnostic in the sense that the parties only perform arithmetic operations over \\(\\mathbb F\\), and are close to optimal with respect to both communication and computation.  In fact, for sufficiently large \\(\\ell\\) (typically a few hundreds), the online computation and communication costs of our LSN-based EMVP can be \\emph{less than twice} the costs of computing \\(Mq_i\\) in the clear.\r\n\r\nCombined with suitable secure post-processing protocols on the secret-shared output, our EMVP protocols are useful for a variety of secure computation tasks, including encrypted fuzzy search and secure ML.\r\n\r\nOur technical approach builds on recent techniques for private information retrieval in the secret-key setting.  The core idea is to encode the matrix \\(M\\) and the queries \\(q_i\\) using a pair of secret dual linear codes, while defeating algebraic attacks by adding noise.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "AWS"
+                }
+            ],
+            "fullName": "Fabrice Benhamouda"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Caicai Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "AWS"
+                }
+            ],
+            "fullName": "Shai Halevi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technion \u2013 Israel Institute of Technology",
+                    "ror": "https://ror.org/03qryx823"
+                },
+                {
+                    "name": "AWS"
+                }
+            ],
+            "fullName": "Yuval Ishai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "AWS"
+                }
+            ],
+            "fullName": "Hugo Krawczyk"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Tamer Mour"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "AWS"
+                }
+            ],
+            "fullName": "Tal Rabin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Alon Rosen"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T07:26:40Z"
+        }
+    ],
+    "keywords": [
+        "Computing on encrypted data",
+        "secure computation",
+        "homomorphic encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/858.pdf",
+    "pid": "858",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Encrypted Matrix-Vector Products from Secret Dual Codes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "As a theoretical cornerstone of post-quantum cryptography, the Learning With Errors (LWE) problem serves as the security foundation for standardized algorithms such as Kyber and Dilithium. Recently, a framework for provable dual attacks on LWE has been proposed by Pouly et al. in Eurocrypt 2024, addressing the limitations in effectiveness caused by existing methods' reliance on heuristic assumptions in LWE dual attacks. Their paper also poses an open problem on  how to formally integrate modulus switching into this framework to reduce attack costs. The main purpose of this paper is to give a solution of this open problem  by presenting an improved provable dual attack method that incorporates modulus switching and Chinese Remainder Theorem (CRT) techniques. First, we design a modulus switching mechanism that eliminates practical errors via the Poisson summation formula. By embedding the inherent noise from modulus switching into a rational lattice framework, our approach effectively preventing the risk of attack failure caused by the merging of such errors with LWE noise. Theoretical guarantees (Theorems 4 and 5) rigorously quantify the parameter ranges for successful attacks. Second, we introduce a CRT-based secret recovery method that aggregates partial secrets from independent sub-attacks. By leveraging the Chinese Remainder Theorem to reconstruct full secrets from congruence relations, our method adapts to arbitrary secret distributions.  Furthermore, by using a tighter variant of Banaszczyk's measure inequality,  we obtain a precise parameter range for the dual attack's efficacy through rigorous mathematical proof, and achieve the same complementary gap  with the contradictory regime (proposed by Ducas et al.) as in Pouly et al.'s work.   Experiments show 15-29 bit superior performance in attack estimation compared to the original framework.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Hongyuan Qu",
+            "orcid": "0000-0002-1684-0819"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Guangwu Xu",
+            "orcid": "0000-0001-6200-3264"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T08:45:05Z"
+        }
+    ],
+    "keywords": [
+        "LWE",
+        "Provable Dual Attack",
+        "Poisson Summation Formula",
+        "Modulus Switching",
+        "Chinese Remainder Theorem"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/859.pdf",
+    "pid": "859",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Provable Dual Attack for LWE by Modulus Switching",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Anonymous communication is one of the fundamental tools to achieve privacy for communication over the internet. Almost all existing design strategies (e.g., onion routing/Tor, mixnets) for anonymous communication rely on the existence of some honest server/router in the network infrastructure to provide anonymity. A recent seminal work by Shi and Wu (Eurocrypt 2021) proposes the first cryptographic design for a non-interactive anonymous router (NIAR) that can use a single untrusted server or router to permute a set of messages without revealing the permutation to the untrusted router. This work is a really important step towards showing the possibility of designing such protocol from standard cryptographic assumptions. However, their construction is only of theoretical nature and still leaves many open questions towards realizing such systems in practice:  (1) the cryptographic building blocks (multi-client functional encryption, correlated pseudorandom function) used in their design are really difficult to implement in practice. (2) Their setup phase takes the permutation as an input to generate the encryption/decryption keys; which means that the messages from the same sender in different rounds will be at the same position in the output vector, unless the setup phase is run before every round with a new permutation. (3) It is not known how to realize such a setup procedure, that initializes a random permutation obliviously, without any trusted entities in the system.\r\n\r\nIn this paper, we propose the first (somewhat) practical design, which we call sPAR, that solves the above problems using homomorphic encryption techniques. Our design also relies on a one-time setup phase, however the setup phase does not take any specific permutation as input. Instead, our design generates a fresh permutation for every round based on the random values locally generated by the clients. Already existing practical instantiations of fully homomorphic encryption (FHE) schemes make our design implementable and deployable in practice. Our design presents a new direction for designing anonymous communication systems. Unlike some existing systems like Tor, sPAR does not scale to millions of users, however, we demonstrate with a proof-of-concept implementation that sPAR could easily support around hundred users with a few seconds of latency for each message.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Lund University",
+                    "ror": "https://ror.org/012a77v79"
+                }
+            ],
+            "fullName": "Debajyoti Das",
+            "orcid": "0000-0002-6777-0566"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Norwegian University of Science and Technology",
+                    "ror": "https://ror.org/05xg72x27"
+                }
+            ],
+            "fullName": "Jeongeun Park",
+            "orcid": "0000-0002-0557-3540"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T09:00:24Z"
+        }
+    ],
+    "keywords": [
+        "anonymous communication",
+        "anonymous router",
+        "FHE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/860.pdf",
+    "pid": "860",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "sPAR: (Somewhat) Practical Anonymous Router",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3733102.3733150",
+    "abstract": "Mix networks (mixnets) safeguard client anonymity by forwarding traffic through multiple intermediary nodes (mixnodes), which reorder and delay messages to obscure communication patterns against a global passive adversary capable of monitoring all network transmissions.\r\n The anonymity provided by mixnets is usually assessed with a discrete-event simulator, gauging a target message's indistinguishability among output messages. While useful for comparative analysis, this approach only approximates the mixnet's anonymity potential. Hence, this paper sheds light on the necessity of considering the client (originator of messages) itself to gauge anonymity accurately. We further provide an algorithm (simulator) to simulate client anonymity for Loopix mixnets. We conduct experiments to optimize general Loopix mixnet parameters, considering both message and client anonymity. Our findings indicate that message anonymity often provides an upper bound and can yield misleading results for mixnet optimization, underscoring the importance of client anonymity. Additionally, we explore scenarios where client anonymity is significantly compromised due to an insufficient number of clients. To address these cases, we propose a multimixing strategy that enhances client anonymity by effectively merging varied traffic types with different mixing characteristics.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC (KU Leuven)"
+                }
+            ],
+            "fullName": "Mahdi Rahimi",
+            "orcid": "0009-0003-0223-9082"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T12:02:09Z"
+        }
+    ],
+    "keywords": [
+        "Anonymity",
+        "Anonymous systems",
+        "Mix networks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/861.pdf",
+    "pid": "861",
+    "pubtype": {
+        "note": "IHMMSec",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "MOCHA: Mixnet Optimization Considering Honest Client Anonymity",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The security of block ciphers such as AES-128, AES-192, and AES-256 relies on the assumption that their ciphertext outputs are computationally indistinguishable from random permutations. While distinguishers have been proposed for reduced-round variants or under non-standard models such as known-key or chosen-key settings, no effective distinguisher has been demonstrated for the full-round AES ciphers in the standard secret-key model.\r\n\r\nThis work introduces FESLA (Feature Enhanced Statistical Learning Attack), a hybrid statistical learning framework that integrates outputs from a suite of classical statistical tests with machine learning and deep learning classifiers to construct ciphertext-only distinguishers for AES-128, AES-192, and AES-256. In contrast to existing approaches based on handcrafted or bitwise features, FESLA aggregates intermediate statistical metrics as features, enabling the capture of persistent structural biases in ciphertext distributions.\r\n\r\nExperimental evaluation across multiple datasets demonstrates consistent 100% classification accuracy using Support Vector Machines, Random Forests, Multi-Layer Perceptron, Logistic Regression, and Na\u00efve Bayes classifiers. Generalization and robustness are confirmed through k-fold cross-validation, including on previously unseen ciphertext samples.\r\n\r\nThese results establish the first ciphertext-only distinguishers for full-round AES-128, AES-192, and AES-256 under the secret-key model, and underscore the potential of machine learning\u2013augmented cryptanalysis based on principled statistical feature engineering.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Gopal Singh",
+            "orcid": "0009-0003-8405-2392"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T18:23:14Z"
+        }
+    ],
+    "keywords": [
+        "AES-256",
+        "ciphertext-only",
+        "distinguisher",
+        "statistical feature engineering",
+        "cryptanalysis",
+        "secret- key mode"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This work introduces the Feature Enhanced Statistical Learning Attack (FESLA), a ciphertext-only distinguisher for full-round AES-128, AES-192, and AES-256 under the standard secret-key model. The work has not been submitted elsewhere and is being shared for community feedback. A journal version is under preparation.",
+    "pdffile": "2025/862.pdf",
+    "pid": "862",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Distinguishing Full-Round AES-256 in a Ciphertext-Only Setting via Hybrid Statistical Learning",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Cryptographic implementations are vulnerable to active physical attacks where adversaries inject faults to extract sensitive information. Existing fault models, such as the threshold and random fault models, assume limitations on the amount or probability of injecting faults. Such models, however, insufficiently address the case of practical fault injection methods capable of faulting a large proportion of the wires in a circuit with high probability. Prior works have shown that this insufficiency can lead to concrete key recovery attacks against implementations proven secure in these models. We address this blind spot by introducing the uniform random fault model, which relaxes assumptions on the amount/probability of faults and instead assumes a uniform probabilistic faulting of all wires in a circuit or region. We then show that security in this new model can be reduced to security in the random fault model by inserting canaries in the circuit to ensure secret-independent fault detection. We prove that combining canaries with a more classical fault countermeasure such as redundancy can lead to exponential fault security in the uniform random fault model at a polynomial cost in circuit size in the security parameter. Finally, we discuss the interactions between our work and the practical engineering challenges of fault security, shedding light on how the combination of state-of-the-art countermeasures may protect against injections of many high probability faults, while opening a path to methodologies that formally analyze the guarantees provided by such countermeasures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                },
+                {
+                    "name": "UCLouvain",
+                    "ror": "https://ror.org/02495e989"
+                }
+            ],
+            "fullName": "Ga\u00ebtan Cassiers",
+            "orcid": "0000-0001-5426-9345"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Siemen Dhooghe",
+            "orcid": "0000-0003-0591-7355"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UCLouvain",
+                    "ror": "https://ror.org/02495e989"
+                }
+            ],
+            "fullName": "Thorben Moos",
+            "orcid": "0000-0003-3809-9803"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Bombay",
+                    "ror": "https://ror.org/02qyf5152"
+                }
+            ],
+            "fullName": "Sayandeep Saha",
+            "orcid": "0000-0002-5535-1102"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UCLouvain",
+                    "ror": "https://ror.org/02495e989"
+                }
+            ],
+            "fullName": "Fran\u00e7ois-Xavier Standaert",
+            "orcid": "0000-0001-7444-0285"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-15T20:47:11Z"
+        }
+    ],
+    "keywords": [
+        "Fault attack",
+        "Uniform random fault model",
+        "Canary circuits"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/863.pdf",
+    "pid": "863",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fly Away: Lifting Fault Security through Canaries and the Uniform Random Fault Model",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
