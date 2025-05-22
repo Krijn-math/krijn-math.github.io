@@ -63947,4 +63947,926 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Blind signature schemes are essential for privacy-preserving applications such as electronic voting, digital currencies or anonymous credentials. In this paper, we revisit Fischlin's framework for round-optimal blind signature schemes and its recent efficient lattice-based instantiations. Our proposed framework compiles any post-quantum hash-and-sign signature scheme into a blind signature scheme. The resulting scheme ensures blindness by design and achieves one-more unforgeability, relying solely on the unforgeability of the underlying signature scheme and the random oracle model.\r\n\r\nTo achieve this we introduce the notion of commit-append-and-prove (CAP) systems, which generalizes traditional commit-and-prove system by making their commitments updatable before proving. This building block allows us to unlock the technical challenges encountered when generalizing previous variants of the Fischlin's framework to any hash-and-sign signature scheme. We provide efficient CAP system instantiations based on recent MPC-in-the-Head techniques.\r\n\r\nWe showcase our framework by constructing blind versions of UOV and Wave, thereby introducing the first practical blind signatures based on multivariate cryptography and code-based cryptography. Our blind UOV signatures range from 3.8 KB to 11 KB, significantly outperforming previous post-quantum blind signatures, such as the 22 KB lattice-based blind signatures, which were the most compact until now.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University",
+                    "ror": "https://ror.org/02en5vm52"
+                }
+            ],
+            "fullName": "Charles Bouillaguet",
+            "orcid": "0000-0001-9416-6244"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                }
+            ],
+            "fullName": "Thibauld Feneuil",
+            "orcid": "0000-0001-9342-2859"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure - PSL",
+                    "ror": "https://ror.org/05a0dhs15"
+                }
+            ],
+            "fullName": "Jules Maire",
+            "orcid": "0009-0007-8186-4327"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                }
+            ],
+            "fullName": "Matthieu Rivain",
+            "orcid": "0000-0002-9855-4161"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University",
+                    "ror": "https://ror.org/02en5vm52"
+                }
+            ],
+            "fullName": "Julia Sauvage",
+            "orcid": "0009-0004-0239-1241"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University",
+                    "ror": "https://ror.org/02en5vm52"
+                }
+            ],
+            "fullName": "Damien Vergnaud",
+            "orcid": "0000-0002-2113-3967"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-19T16:22:39Z"
+        }
+    ],
+    "keywords": [
+        "blind signatures",
+        "post-quantum",
+        "hash-and-sign",
+        "mpc-in-the-head"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/895.pdf",
+    "pid": "895",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Blinding Post-Quantum Hash-and-Sign Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Web3 applications, such as on-chain gaming, require unbiased and publicly verifiable randomness that can be obtained quickly and cost-effectively whenever needed. Existing services, such as those based on Verifiable Random Functions (VRF), incur network delays and high fees due to their highly interactive nature. FlexiRand [CCS 2023] addressed these problems by hiding the output of the VRF and using that as a seed to derive many randomnesses locally. These randomnesses are instantly available for usage. However, these randomnesses can not be verified independently (or instantly) without disclosing the seed, leaving scope for malicious actors to cheat.\r\n    \r\n    To solve this problem, we introduce a new notion, called instantly-verifiable VRF (iVRF), which enables the generation of many randomnesses from one VRF output seed, such that each of them is verifiable independently - this enables the $first$ solution to $cost-effectively$ generate randomnesses, such that they are $instantly$ $available$ and also $independently/instantly$ $verifiable$.\r\n\r\n    To instantiate we propose a generic construction called InstaRand - it combines any (possibly distributed) VRF at the server's end with another VRF at the client's end to construct an iVRF. Our specific instantiation uses the BLS-based GLOW-DVRF [Euro S&P 2021] at the server's end and the DDH-based VRF of Goldberg et al. [RFC 2023] at the client's end. We use the universal composability framework to analyze the security. Moreover, due to its generality, InstaRand can be instantiated with any post-quantum secure VRF to yield a post-quantum secure iVRF.\r\n\r\n    Our experiments demonstrate that our instantiation of InstaRand is $highly$ $practical$. The client incurs a $one-time$ cost to generate the seed (server's VRF output) by querying the GLOW-dVRF servers once. Once the seed is set up, the client locally generates the pseudorandom value on demand in $0.18~ms$, avoiding the client-server round-trip delay. Each value can be independently verified in $0.22~ms$. This yields a $400\\times$ improvement in terms of output generation and $20\\times$ improvement in verification cost over existing solutions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Jacob Gorman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security"
+                }
+            ],
+            "fullName": "Lucjan Hanzlik"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                },
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Aniket Kate"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Pratyay Mukherjee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Pratik Sarkar",
+            "orcid": "0000-0001-6370-0977"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sydney",
+                    "ror": "https://ror.org/0384j8v12"
+                }
+            ],
+            "fullName": "Sri AravindaKrishnan Thyagarajan"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-19T18:22:59Z"
+        }
+    ],
+    "keywords": [
+        "Randomness Services",
+        "VRF",
+        "Blockchain",
+        "Smart Contracts"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/896.pdf",
+    "pid": "896",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "InstaRand: Instantly Available and Instantly Verifiable On-chain Randomness",
+    "year": 2025,
+    "repo": [
+        "https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src/v0.8/vrf/VRF.sol",
+        "https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src/v0.8/vrf/VRF.sol",
+        "https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src/v0.8/vrf/VRF.sol",
+        "https://ethereumbuilders.gitbooks.io/guide/content/en/design_rationale.html ",
+        "https://ethereumbuilders.gitbooks.io/guide/content/en/design_rationale.html ",
+        "https://ethereumbuilders.gitbooks.io/guide/content/en/design_rationale.html "
+    ]
+}
+,
+{
+    "abstract": "Isogeny-based cryptography is cryptographic schemes whose security is based on the hardness of a mathematical problem called the isogeny problem, and is attracting attention as one of the candidates for post-quantum cryptography. A representative isogeny-based cryptography is the signature scheme called SQIsign, which was submitted to the NIST PQC standardization competition for additional signature. SQIsign has attracted much attention because of its very short signature and key size among candidates for the NIST PQC standardization. Recently, many new signature schemes using high-dimensional isogenies have been proposed, such as: SQIsignHD, SQIsign2D-West, SQIsgn2D-East, and SQIPrime. Last year, SQIsign advanced to Round 2 of the NIST competition and was updated to version 2.0 (we call it SQIsign-v2.0), which is based on SQIsign2D-West. SQIsign-v2.0 achieves smaller signature sizes and faster verification. However, the signing costs are relatively high. In this paper, we propose a new signature scheme `SQIsign2DPush', which has a smaller signing cost than SQIsign-v2.0 while the signature size and the verification cost are almost the same.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT (Japan)",
+                    "ror": "https://ror.org/00berct97"
+                }
+            ],
+            "fullName": "Kohei Nakagawa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Tokyo",
+                    "ror": "https://ror.org/057zh3y96"
+                }
+            ],
+            "fullName": "Hiroshi Onuki",
+            "orcid": "0000-0002-0202-8918"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-20T04:44:52Z"
+        }
+    ],
+    "keywords": [
+        "Isogeny",
+        "Post-quantum",
+        "Signature",
+        "SQIsign"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/897.pdf",
+    "pid": "897",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SQIsign2DPush: Faster Signature Scheme Using 2-Dimensional Isogenies",
+    "year": 2025,
+    "repo": [
+        "https://github.com/hiroshi-onuki/SQIsign2D-Push"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3717823.3718210",
+    "abstract": "We give new constructions of pseudorandom functions (PRFs) computable in $\\mathsf{NC}^1$ from (variants of the) Learning Parity with Noise (LPN) assumption. Prior to our work, the only $\\mathsf{NC}^1$-computable PRF from LPN-style assumptions was due to Boyle et al. (FOCS 2020) who constructed a weak PRF from a new heuristic variant of LPN called variable-density LPN. We give the following three results:\r\n    (1) A weak PRF computable in $\\mathsf{NC}^1$ from standard LPN. \r\n    (2) A (strong) encoded-input PRF (EI-PRF) computable in $\\mathsf{NC}^1$ from sparse LPN. An EI-PRF is a PRF whose input domain is restricted to an efficiently sampleable and recognizable set. The input encoding can be computed in $\\mathsf{NC}^{1+\\epsilon}$ for any constant $\\epsilon > 0$, implying a strong PRF computable in $\\mathsf{NC}^{1+\\epsilon}$.\r\n    (3) A (strong) PRF computable in $\\mathsf{NC}^1$ from a (new, heuristic) seeded LPN assumption. In our assumption, columns of the public LPN matrix are generated by an $n$-wise independent distribution. Supporting evidence for the security of the assumption is given by showing resilience to linear tests.\r\n    As a bonus, all of our PRF constructions are key-homomorphic, an algebraic property that is useful in many symmetric-cryptography applications. No previously-known LPN-based PRFs are key-homomorphic, even if we completely ignore depth-efficiency. In fact, our constructions support key homomorphism for linear functions (and not only additive), a property that no previously-known PRF satisfies, including ones from LWE.  \r\n    Additionally, all of our PRF constructions nicely fit into the substitution-permutation network (SPN) design framework used in modern block ciphers (e.g. AES). No prior PRF construction that has a reduction to a standard cryptographic assumptions (let alone LPN) has an SPN-like structure.\r\n    Technically, all of our constructions leverage a new recursive derandomization technique for LPN instances, which allows us to generate LPN error terms deterministically. This technique is inspired by a related idea from the LWE literature (Kim, EUROCRYPT 2020) for which devising an LPN analogue has been an outstanding open problem.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hebrew University of Jerusalem",
+                    "ror": "https://ror.org/03qxff017"
+                }
+            ],
+            "fullName": "Youlong Ding",
+            "orcid": "0000-0003-2398-4789"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Aayush Jain",
+            "orcid": "0009-0001-7138-2777"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hebrew University of Jerusalem",
+                    "ror": "https://ror.org/03qxff017"
+                },
+                {
+                    "name": "NTT Research",
+                    "ror": "https://ror.org/004cn7092"
+                }
+            ],
+            "fullName": "Ilan Komargodski",
+            "orcid": "0000-0002-1647-2112"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-20T10:31:42Z"
+        }
+    ],
+    "keywords": [
+        "Pseudorandom Functions",
+        "Learning Parity with Noise",
+        "Substitution-Permutation Network"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/898.pdf",
+    "pid": "898",
+    "pubtype": {
+        "note": "STOC",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A New Approach for LPN-based Pseudorandom Functions: Low-Depth and Key-Homomorphic",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Fully Homomorphic Encryption (FHE) enables computations on encrypted data without requiring decryption. However, each computation increases the noise level, which can eventually cause decryption failures once a certain threshold is reached. In particular, homomorphic multiplication significantly amplifies noise in the ciphertext. In this work, we revisit Ring-learning-With-Error (RLWE) based encryption proposed by Fan et al. and present an optimized noise growth approach by swapping the sample space for secret key and error distribution. Thereafter, we revisit BFV homomorphic multiplication proposed by Kim et al. (ASIACRYPT'21) and present an optimized noise bound. Later, we empirically check the hardness of proposed scheme using lattice estimator. Our analysis demonstrates that the proposed method achieves more than 128-bit security and achieves a lower noise bound than existing techniques.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IIIT Guwahati"
+                }
+            ],
+            "fullName": "Akshit Aggarwal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Deakin University"
+                }
+            ],
+            "fullName": "Yang Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IIIT Guwahati"
+                },
+                {
+                    "name": "University of Adelaide"
+                }
+            ],
+            "fullName": "Srinibas Swain"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-20T13:03:15Z"
+        }
+    ],
+    "keywords": [
+        "BFV",
+        "Fully Homomorphic Encryption (FHE)",
+        "Multiplication",
+        "Noise Bound",
+        "RLWE."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/899.pdf",
+    "pid": "899",
+    "pubtype": {
+        "note": "ACNS Workshops",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Noise Bound in BFV Homomorphic Encryption and Its Application to Multiplication",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Exclusive ownership (EO) security is a feature of signature schemes that prevents adversaries from \"stealing\" an honestly generated signature by finding a new public key which verifies said signature. It is one of the beyond unforgeability features (BUFF) which were declared to be desirable features by NIST. The BUFF transform allows to generically achieve exclusive ownership (and other properties) at the cost of an increased signature size. In this work, we study the EO security of (different variants of) Fiat-Shamir signatures. As our main result, we show that the commonly used variant of Fiat-Shamir signatures (where signatures consist of challenge-response tuples) with \u03bb-bit challenges, can achieve about \u03bb-bit EO security through its implicit usage of the BUFF transform\u2014this presents a significant improvement to existing results that only provide \u03bb/2-bit of EO security. This benefit of our result comes without an increase in signature size. For other variants of Fiat-Shamir signatures, we show worse bounds, which nevertheless improve upon existing results. Finally, we apply our results to several signature schemes: SQIsign and LESS (both round-2 NIST candidates); ML-DSA (NIST standard); CSI-FiSh; and Schnorr signatures. This shows that all these schemes achieve significantly better bounds regarding their EO security compared to existing results.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Regensburg",
+                    "ror": "https://ror.org/01eezs655"
+                }
+            ],
+            "fullName": "Michael Meyer",
+            "orcid": "0009-0000-2972-7324"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Konstanz"
+                }
+            ],
+            "fullName": "Patrick Struck",
+            "orcid": "0000-0001-7738-2017"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Regensburg",
+                    "ror": "https://ror.org/01eezs655"
+                }
+            ],
+            "fullName": "Maximiliane Weish\u00e4upl"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-20T13:41:35Z"
+        }
+    ],
+    "keywords": [
+        "Signature Schemes",
+        "Beyond Unforgeability",
+        "BUFF",
+        "Fiat-Shamir",
+        "ML-DSA",
+        "SQIsign",
+        "LESS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/900.pdf",
+    "pid": "900",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Exclusive Ownership of Fiat-Shamir Signatures: ML-DSA, SQIsign, LESS, and More",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Non-interactive publicly verifiable secret sharing (PVSS) schemes enable the decentralized (re-)sharing of secrets in adversarial environments, allowing anyone to verify the correctness of distributed shares. Such schemes are essential for large-scale decentralized applications, including committee-based systems that require both transparency and robustness. However, existing PVSS schemes rely on group-based cryptography, resulting them vulnerable to quantum attacks and limiting their suitability for post-quantum applications.\r\n\r\nIn this work, we propose the first practical, fully lattice-based, non-interactive PVSS scheme, grounded on standard lattice assumptions for post-quantum security. At the heart of our design is a generic framework that transforms vector commitments and linear encryption schemes into efficient PVSS protocols. We enhance vector commitments by incorporating functional hiding and proof of smallness, ensuring that encrypted shares are both verifiable and privacy-preserving. Our construction introduces two tailored lattice-based encryption schemes, each supporting efficient proofs of decryption correctness. This framework provides strong verifiability guarantees while maintaining low proof sizes and computational efficiency, making it suitable for systems with large numbers of participants.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sheffield",
+                    "ror": "https://ror.org/05krs5044"
+                }
+            ],
+            "fullName": "Behzad Abdolmaleki"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sharif University of Technology",
+                    "ror": "https://ror.org/024c2fq17"
+                }
+            ],
+            "fullName": "Mohammad Foroutani"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sharif University of Technology",
+                    "ror": "https://ror.org/024c2fq17"
+                }
+            ],
+            "fullName": "Shahram Khazaei"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sharif University of Technology",
+                    "ror": "https://ror.org/024c2fq17"
+                }
+            ],
+            "fullName": "Sajjad Nasirzadeh"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-20T16:24:57Z"
+        }
+    ],
+    "keywords": [
+        "Publicly Verifiable Secret Sharing",
+        "Vector Commitments",
+        "Standard Lattice Assumption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/901.pdf",
+    "pid": "901",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Generic Framework for Practical Lattice-Based Non-interactive Publicly Verifiable Secret Sharing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We study the security of a popular paradigm for constructing SNARGs, closing a key security gap left open by prior work. The paradigm consists of two steps: first, construct a public-coin succinct interactive argument by combining a functional interactive oracle proof (FIOP) and a functional commitment scheme (FC scheme); second, apply the Fiat\u2013Shamir transformation in the random oracle model. Prior work did not consider this generalized setting nor prove the security of this second step (even in special cases).\r\n\r\nWe prove that the succinct argument obtained in the first step satisfies state-restoration security, thereby ensuring that the second step does in fact yield a succinct non-interactive argument. This is provided the FIOP satisfies state-restoration security and the FC scheme satisfies a natural state-restoration variant of function binding (a generalization of position binding for vector commitment schemes).\r\n\r\nMoreover, we prove that notable FC schemes satisfy state-restoration function binding, allowing us to establish, via our main result, the security of several SNARGs of interest (in the random oracle model). This includes a security proof of Plonk, in the ROM, based on ARSDH (a falsifiable assumption).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Alessandro Chiesa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Ziyi Guan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Christian Knabenhans",
+            "orcid": "0000-0003-4645-7295"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Zihan Yu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-05-21T18:26:18Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-05-20T20:26:45Z"
+        }
+    ],
+    "keywords": [
+        "Fiat-Shamir security",
+        "succinct arguments",
+        "functional commitment schemes"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/902.pdf",
+    "pid": "902",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Fiat\u2013Shamir Security of Succinct Arguments from Functional Commitments",
+    "year": 2025,
+    "repo": [
+        "https://github.com/hash-based-snargs-book"
+    ]
+}
+,
+{
+    "abstract": "Side-channel analysis (SCA) has become a crucial area in ensuring the security of hardware implementations against potential vulnerabilities. With advancements in machine learning (ML) and artificial intelligence (AI), neural network(NN)-assisted techniques for SCA have demonstrated significant effectiveness. However, a fundamental question remains unanswered: are traces corresponding to different subkeys equally hard to attack? This paper addresses this issue by leveraging explainable AI techniques to analyze the hardness levels and, consequently, the root cause of hardness. To systematically investigate this problem, we reintroduce hardness metrics in SCA, which have been known to the ML community. Those metrics include query hardness (QH), log odds (LO), and matrix-based R\u00e9nyi entropy (MRE). The challenge in this regard is that (virtually all) hardness metrics in ML cannot be adopted as they are. This is because ML and SCA metrics have conflicting goals, namely boosting accuracy and rank. Through careful experimentation, we identify the shortcomings of QH and LO in SCA and recommend MRE as a suitable hardness metric for SCA.\r\nWe also study how hardness has been seen in SCA, where recent work has suggested the influence of class \u201clabels\u201d on the attack difficulty. Employing rigorous evaluation, our paper demonstrates that no statistically significant evidence can be found to support this claim. This leads us to the question of how much traces\u2019 time samples affect the inherent hardness in distinguishing key candidates. Our novel explainable AI (XAI) approach not only answers this, but also makes a link between hardness and rank as the common performance metric in SCA. Our findings indicate that hardness values are influenced mainly by time samples rather than specific key labels. Furthermore, we examine whether hardness captures intrinsic properties of the traces, specifically, their lack of separability in feature space due to their inherent similarities. To this end, we introduce, for the first time in the context of SCA, the use of maximum mean discrepancy (MMD) as a principled metric. MMD effectively links trace hardness with attack difficulty by quantifying distributional differences induced by traces\u2019 time samples. In addition to visualization techniques showing the root cause of hardness based on MMD, we employ XAI to explain the connection between MMD and attack hardness. Our proposed methodology enhances the understanding\r\nof attack difficulty in SCA and contributes to developing more robust evaluation metrics for profiling attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Seyedmohammad Nouraniboosjin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Fatemeh Ganji"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-05-21T19:04:20Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-05-21T18:23:28Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-05-20T21:07:33Z"
+        }
+    ],
+    "keywords": [
+        "Neural networks",
+        "Side-channel analysis",
+        "Metrics",
+        "Explainable AI (XAI)",
+        "Hardness",
+        "Maximum Mean Discrepancy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/903.pdf",
+    "pid": "903",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Rock and a Hard Place: Attack Hardness in Neural Network-assisted Side Channel Analysis",
+    "year": 2025,
+    "repo": [
+        "[Online] https://github.com/AISyLab/Triplet-attack",
+        "[Online] https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_fixed_key",
+        "[Online] https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_fixed_key",
+        "[Online] https://github.com/AISyLab/AutoSCA",
+        "[Online] https://github.com/AISyLab/AutoSCA"
+    ]
+}
+,
+{
+    "abstract": "Deterministic signatures are often used to mitigate the risks associated with poor-quality randomness, where the randomness in the signing process is generated by a pseudorandom function that takes a message as input. However, some studies have shown that such signatures are vulnerable to fault-injection attacks. To strike a balance, recent signature schemes often adopt \"hedged\" randomness generation, where the pseudorandom function takes both a message and a nonce as input. Aranha et al. (EUROCRYPT 2020) investigated the security of hedged Fiat-Shamir signatures against 1-bit faults and demonstrated security for certain types of bit-tampering faults. Grilo et al. (ASIACRYPT 2021) extended this proof to the quantum random oracle model.  Last year, NIST standardized the lattice-based signature scheme ML-DSA, which adopts the hedged Fiat-Shamir with aborts. However, existing security proofs against bit-tampering faults do not directly apply, as Aranha et al. left this as an open problem.  To address this gap, we analyze the security of ML-DSA against multi-bit fault-injection attacks. We provide a formal proof of security for a specific class of intermediate values, showing that faults at these points cannot be exploited. Furthermore, to highlight the infeasibility of stronger fault resilience, we present key-recovery attacks that exploit signatures generated under fault injection at the other intermediate values.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT (Japan)",
+                    "ror": "https://ror.org/00berct97"
+                }
+            ],
+            "fullName": "Haruhisa Kosuge"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Keita Xagawa",
+            "orcid": "0000-0002-6832-9940"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-20T23:59:37Z"
+        }
+    ],
+    "keywords": [
+        "Digital signature",
+        "Post-quantum cryptography",
+        "ML-DSA",
+        "Fault-injection attack",
+        "Provable security",
+        "Quantum random oracle model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/904.pdf",
+    "pid": "904",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Security of ML-DSA against Fault-Injection Attacks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A conventional Authenticated Key Exchange (AKE) protocol consumes fresh random coins from the local random source. However, recent studies of bad randomness expose the vulnerability of some AKE protocols under small subgroup attacks when the random coins are manipulated or being repeated. It is important to ensure the bad randomness of one random source will not affect the security of the AKE protocol as a whole. \r\n\r\nThus, we introduce the notion of remote randomness by introducing additional ephemeral keys generated by a fresh remote random source in the AKE protocol. In this paper, we argue that because of the thrive of cloud computing, it encourages high\r\nspeed internal data transfer within server clusters or virtual machines, including entropy pool data used in our remote randomness AKE protocols. We present a remote randomness modification to the HMQV protocol to demonstrate its resilience under the manipulation of local random sources. We then provide a new security model with the consideration of remote randomness and show thatthe modified AKE protocol is secure under our new model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "City University of Hong Kong",
+                    "ror": "https://ror.org/03q8dnn23"
+                }
+            ],
+            "fullName": "John C. W. Chan"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T00:39:50Z"
+        }
+    ],
+    "keywords": [
+        "Cryptography",
+        "Remote Randomness",
+        "Remote Randomness Model",
+        "Remote Randomness Protocol",
+        "RHMQV"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/905.pdf",
+    "pid": "905",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Authenticated Key Exchange Protocol with Remote Randomness",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure multiparty computation (MPC) allows data owners to train machine learning models on combined data while keeping the underlying training data private. The MPC threat model either considers an adversary who passively corrupts some parties without affecting their overall behavior, or an adversary who actively modifies the behavior of corrupt parties. It has been argued that in some settings, active security is not a major concern, partly because of the potential risk of reputation loss if a party is detected cheating.\r\n\r\nIn this work we show explicit, simple, and effective attacks that an active adversary can run on existing passively secure MPC training protocols, while keeping essentially zero risk of the attack being detected. The attacks we show can compromise both the integrity and privacy of the model, including attacks reconstructing exact training data.\r\nOur results challenge the belief that a threat model that does not include malicious behavior by the involved parties may be reasonable in the context of PPML, motivating the use of actively secure protocols for training.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Google DeepMind"
+                }
+            ],
+            "fullName": "Matthew Jagielski",
+            "orcid": "0000-0002-9749-0696"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Visa (United States)",
+                    "ror": "https://ror.org/05t1y0b59"
+                }
+            ],
+            "fullName": "Rahul Rachuri",
+            "orcid": "0000-0003-4541-3928"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "No affiliation"
+                }
+            ],
+            "fullName": "Daniel Escudero",
+            "orcid": "0000-0003-2375-0034"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Peter Scholl",
+            "orcid": "0000-0002-7937-8422"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T00:59:57Z"
+        }
+    ],
+    "keywords": [
+        "secure multiparty computation",
+        "privacy-preserving machine learning",
+        "adversarial attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/906.pdf",
+    "pid": "906",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Covert Attacks on Machine Learning Training in Passively Secure MPC",
+    "year": 2025,
+    "repo": [
+        "https://github.com/OpenMined/PySyft",
+        "https://github.com/lschoe/mpyc",
+        "https://github.com/lschoe/mpyc",
+        "http://github.com/google/jax"
+    ]
+}
+,
+{
+    "abstract": "Private set intersection (PSI) allows two parties to jointly compute the intersection of their private sets without revealing any additional information. Structure-aware PSI (sa-PSI), introduced by Garimella et al. (Crypto'22), is a variant where Alice's input set has a publicly known structure and Bob's input set remains unstructured, enabling new applications like fuzzy PSI. Their construction relies solely on lightweight cryptographic primitives such as symmetric-key primitives and oblivious transfer (OT) extension. Since then, there has been active research on sa-PSI based on lightweight cryptography. Notably, recent work by Garimella et al. (Crypto'24) achieves sa-PSI with both communication and computation costs only scaling with the description size of Alice's set, rather than its potentially large cardinality. However, this line of work remains largely theoretical, lacking efficient concrete implementations.\r\n\r\nIn this work, we close this gap by presenting a new framework for sa-PSI that achieves practical efficiency. We identify and eliminate a hidden multiplicative overhead proportional to the security parameter (e.g., 128) in prior symmetric-key-based sa-PSI constructions. A key building block of our new framework is a distributed Function Secret Sharing (dFSS) key generation protocol tailored to the structure of Alice's set, which may be of independent interest. To demonstrate the practicality of our framework, we extend our dFSS protocol to support incremental evaluation, introduce new techniques for spatial hashing, and develop several new optimization techniques, including reducing the exponential dependence on dimension and enabling load balancing between the two parties.\r\n\r\nWe instantiate our framework for structured sets defined by unions of $d$-dimensional $\\ell_\\infty$ balls, and implement our protocols using only lightweight symmetric-key primitives and OT extension. Our experiments show concrete performance improvements of up to $27\\times$ speedup in computation and $7.7\\times$ reduction in communication in low-dimensional, large-radius settings compared to existing public-key-based fuzzy PSI protocols by van Baarsen & Pu (Eurocrypt'24) and Gao et al. (Asiacrypt'24).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IRIF, Universit\u00e9 Paris Cit\u00e9"
+                }
+            ],
+            "fullName": "Dung Bui"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Gayathri Garimella"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Peihan Miao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Phuoc Van Long Pham"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T03:33:19Z"
+        }
+    ],
+    "keywords": [
+        "Private Set Intersection",
+        "Fuzzy Matching",
+        "Function Secret Sharing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/907.pdf",
+    "pid": "907",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "New Framework for Structure-Aware PSI From Distributed Function Secret Sharing",
+    "year": 2025,
+    "repo": [
+        "https://github.com/BLAKE3-team",
+        "https://github.com/emp-toolkit",
+        "https://github.com/sihangpu/fuzzy_PSI",
+        "https://github.com/sihangpu/fuzzy_PSI",
+        "https://github.com/ql70ql70/Fuzzy-Private-Set-Intersection-from-Fuzzy-Mapping/tree/main",
+        "https://github.com/ql70ql70/Fuzzy-Private-Set-Intersection-from-Fuzzy-Mapping/tree/main"
+    ]
+}
 ]
