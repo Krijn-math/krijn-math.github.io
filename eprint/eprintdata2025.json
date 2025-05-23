@@ -64869,4 +64869,1885 @@
         "https://github.com/ql70ql70/Fuzzy-Private-Set-Intersection-from-Fuzzy-Mapping/tree/main"
     ]
 }
+,
+{
+    "abstract": "We leverage recently proposed multilinear polynomial commitment schemes, with linear time prover and constant proof size to reduce the communication complexity of the classical sum-check protocol for multivariate polynomials. Specifically, for degree $d$ multivariate polynomial in $\\mu$ variables which can be decomposed into multilinear polynomials, we exhibit a sum-check protocol with $O((\\ell +d)n)$ prover cost and $O(\\ell + d\\log \\log n)$ communication for $n=2^\\mu$. This enables us to break the $O(\\log n)$ barrier for this ubiquitous primitive used in multilinear SNARKs and implies first construction of prover efficient (with $O_\\lambda(n)$ proving cost) SNARKs using multilinear polynomials with $O(\\log \\log n)$ proof-size. Currently, lower communication is only obtained by SNARKs based on univariate polynomials which incur $O(n\\log n)$ prover complexity due to inherent polynomial multiplication. \r\nConcretely, using compressed sum-check in HyperPlonk protocol allows us to reduce the proof size from about $5.5$ KB $-$ $6$ KB to only about $1.5$ KB, making it competitive with univariate SNARKs like PLONK.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research India"
+                }
+            ],
+            "fullName": "Nitin Singh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research India"
+                }
+            ],
+            "fullName": "Sikhar Patranabis"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T05:53:01Z"
+        }
+    ],
+    "keywords": [
+        "SNARK",
+        "Zero Knowledge Proofs",
+        "Polynomial Commitment",
+        "Multilinear SNARKs",
+        "Sum Check"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "note": "Minor edits.",
+    "pdffile": "2025/908.pdf",
+    "pid": "908",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SubLogarithmic Linear Time SNARKs from Compressed Sum-Check",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The emergence of quantum computing and Shor's algorithm necessitates an imminent shift from current public key cryptography techniques to post-quantum robust techniques.  NIST has responded by standardising Post-Quantum Cryptography (PQC) algorithms, with ML-KEM (FIPS-203) slated to replace ECDH (Elliptic Curve Diffie-Hellman) for key exchange.  A key practical concern for PQC adoption is energy consumption.  This paper introduces a new framework for measuring the PQC energy consumption on a Raspberry Pi when performing key generation. The framework uses both available traditional methods and the newly standardised ML-KEM algorithm via the commonly utilised OpenSSL library.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "J Cameron Patterson"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "William J Buchanan",
+            "orcid": "0000-0003-0809-3523"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "Callum Turino"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T07:16:58Z"
+        }
+    ],
+    "keywords": [
+        "PQC",
+        "Energy consumption",
+        "ML-KEM",
+        "OpenSSL"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/909.pdf",
+    "pid": "909",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Energy Consumption Framework and Analysis of Post-Quantum Key-Generation on Embedded Devices",
+    "year": 2025,
+    "repo": [
+        "https://digital-strategy.ec.europa.eu/en/library/recommendation-coordinated-implementation-roadmap-transition-post-quantum-cryptography",
+        "https://digital-strategy.ec.europa.eu/en/library/recommendation-coordinated-implementation-roadmap-transition-post-quantum-cryptography",
+        "https://digital-strategy.ec.europa.eu/en/library/recommendation-coordinated-implementation-roadmap-transition-post-quantum-cryptography",
+        "https://github.com/supplemango/PQCEnergyPi",
+        "https://github.com/supplemango/PQCEnergyPi",
+        "https://github.com/supplemango/PQCEnergyPi",
+        "https://github.com/TheHWcave",
+        "https://github.com/TheHWcave",
+        "https://github.com/TheHWcave/"
+    ]
+}
+,
+{
+    "DOI": "10.1109/SP61157.2025.00115",
+    "abstract": "Threshold signatures, especially ECDSA, enhance key protection by addressing the single-point-of-failure issue. Threshold signing can be divided into offline and online phases, based on whether the message is required. Schemes with low-cost online phases are referred to as ``online-friendly\". Another critical aspect of threshold ECDSA for real-world applications is robustness, which guarantees the successful completion of each signing execution whenever a threshold number $t$ of semi-honest participants is met, even in the presence of misbehaving signatories.\r\n\r\nThe state-of-the-art online-friendly threshold ECDSA without robustness was developed by Doerner et al. in S\\&P'24, requiring only three rounds. Recent work by Wong et al. in NDSS'23 (WMY\\(^+\\)23) and NDSS'24 (WMC24) achieves robustness but demands additional communication rounds (7 and 4, respectively) or incurs costly operations in the online phase, such as computations over a homomorphic encryption scheme.\r\n  \r\nThis paper presents the first three-round threshold ECDSA scheme with both robustness and an online-friendly design. The online phase of our scheme relies solely on several elliptic-curve group operations, which are 2 to 3 orders of magnitude less computationally intensive than those based on linearly homomorphic encryption schemes. We implement our protocol and conduct a comprehensive comparison with WMY$^+$23 and WMC24. Benchmark results show that the online phase of our scheme is $2.5\\times$ faster than that of WMY$^+$23 and hundreds of times faster than that of WMC24. Lastly, we demonstrate that our techniques can be extended to construct an online-friendly and robust three-round threshold BBS+ scheme.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Singapore Management University"
+                }
+            ],
+            "fullName": "Guofeng Tang",
+            "orcid": "0000-0002-0121-5471"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Singapore Management University"
+                }
+            ],
+            "fullName": "Haiyang Xue"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T08:52:13Z"
+        }
+    ],
+    "keywords": [
+        "Threshold ECDSA",
+        "Robustness",
+        "Two-Party MtA",
+        "Online Costs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/910.pdf",
+    "pid": "910",
+    "pubtype": {
+        "note": "IEEE S&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Robust Threshold ECDSA with Online-Friendly Design in Three Rounds",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Private set intersection (PSI) is a well-researched cryptographic primitive that allows two parties to compute the intersection of their input sets without revealing any information about items outside of the intersection. Fuzzy private set intersection is a relatively new variant of PSI, where items are not matched exactly but ``fuzzily''. Most commonly, items are points $\\mathbf{q},\\mathbf{w}$ in $d$-dimensional integer space $\\mathbb{Z}^d$ and a point is a fuzzy match to another if it lies within a ball of radius $\\delta$ centered at this point, with respect to some distance metric.\r\n\r\nPrevious works either only support infinity $(L_{\\infty}$) distance metric and standard PSI functionality, or support general Minkowski ($L_{\\mathsf{p}}$, $\\mathsf{p}\\in[1,\\infty]$) distance metrics and realize richer functionalities but rely on expensive homomorphic encryptions. Our work aims to bridge this gap by giving the first construction of a fuzzy PSI protocol for general Minkowski distance metrics relying on significantly cheaper operations during the online phase.\r\n\r\nOur main building block is a novel fuzzy matching protocol based on an oblivious pseudorandom function (OPRF), which can be realized very efficiently from vector oblivious linear evaluation (VOLE). Our protocol is able to preserve the asymptotic complexity as well as the simplicity of the fuzzy matching protocol from van Baarsen and Pu (Eurocrypt '24), while being much more concretely efficient. Additionally, we achieve several asymptotic improvements by representing intervals succinctly. Finally, we present the first fuzzy PSI protocol for infinity distance that places no assumptions on the sets of points, while maintaining asymptotic complexities comparable to the state-of-the-art fuzzy PSI protocol.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Aron van Baarsen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CNRS",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Research Institute on the Foundations of Computer Science (IRIF)",
+                    "ror": "https://ror.org/02krdtz55"
+                }
+            ],
+            "fullName": "Sihang Pu",
+            "orcid": "0009-0003-2056-6079"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T09:59:49Z"
+        }
+    ],
+    "keywords": [
+        "MPC",
+        "Private Set Intersection",
+        "Fuzzy PSI",
+        "Fuzzy Matching",
+        "OPRF",
+        "VOLE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/911.pdf",
+    "pid": "911",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fuzzy Private Set Intersection from VOLE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The challenge of enforcing constraints on Bitcoin transac-\r\ntions has recently gained a lot of attention. The current approach to\r\nsolve this problem falls short in certain aspects, such as privacy and\r\nprogrammability. We design a new solution that leverages zkSNARKs\r\nand allows enforcing arbitrary constraints on Bitcoin transactions while\r\nmaintaining some information private. Our approach also bypasses the\r\nnon-Turing completeness of Bitcoin Script, allowing the enforcement of\r\nunbounded constraints, namely constraints that repeat a certain opera-\r\ntion an unbounded number of times.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Teranode Group"
+                }
+            ],
+            "fullName": "Federico Barbacovi",
+            "orcid": "0000-0002-7015-2646"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Enrique Larraia"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T10:47:25Z"
+        }
+    ],
+    "keywords": [
+        "Bitcoin",
+        "Zero Knowledge",
+        "Smart Contract"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/912.pdf",
+    "pid": "912",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Enforcing arbitrary constraints on Bitcoin transactions",
+    "year": 2025,
+    "repo": [
+        "https://github.com/nchain-innovation/bitcoin_r1cs",
+        "https://github.com/nchain-innovation/bitcoin_r1cs",
+        "https://github.com/nchain-innovation/bitcoin_r1cs/blob/ark-3.0/src/bitcoin_predicates/proof_of_burn.rs",
+        "https://github.com/nchain-innovation/bitcoin_r1cs/blob/ark-3.0/src/bitcoin_predicates/proof_of_burn.rs",
+        "https://github.com/bitcoin-sv/bitcoin-sv",
+        "https://github.com/bitcoin-sv/bitcoin-sv/blob/master/doc/abc/replay-protected-sighash.md",
+        "https://github.com/bitcoin-sv/bitcoin-sv/blob/master/doc/abc/replay-protected-sighash.md"
+    ]
+}
+,
+{
+    "abstract": "Schnorr and (EC)DSA signatures famously become completely insecure once a few bits of the random nonce are revealed to an attacker. In this work, we investigate whether post-quantum signature schemes allow for similar attacks. Specifically, we consider three Fiat-Shamir based signature schemes: Dilithium (lattices), LESS (codes) and CSI-FiSh (isogenies). Analogous to the attacks on Schnorr and (EC)DSA, we assume knowledge of some bits of the commitment randomness used in the underlying ID protocol. Such attacks belong to the broader class of Hidden Number Problems.\r\nIn the case of LESS, we give an efficient attack that requires knowledge of a single bit of the randomness in roughly \\(20000\\) signatures to completely recover the secret key. Our attack is based on the observation that knowledge of a single bit in the randomness is enough to distinguish secret key entries from random ones. Since for proposed parameters there are at most \\(548\\) candidates for each entry, we can enumerate all candidates and use the distinguisher to recover the secret key one entry at a time.\r\nFor Dilithium we are able to recover the whole secret key using at most 1792 signatures when either 3 or 4 least significant bits of the randomness are known (depending on the parameter set). Here the attack is based on the simple observation that knowledge of the least significant bits of the randomness immediately yields a linear relation in the secret key.\r\nFor CSI-FiSh, on the other hand, we obtain only an inefficient attack that requires exponentially many signatures. However, we prove that this attack is essentially optimal. Thus, our results show that CSI-FiSh comes equipped with an inherent leakage resilience. The argument easily extends to a wider class of signature schemes, but notably does not apply to the predecessor SeaSign.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Yi-Fu Lai",
+            "orcid": "0000-0002-1346-9372"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Jonas Meers",
+            "orcid": "0000-0002-1755-8153"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Julian Nowakowski",
+            "orcid": "0000-0003-3066-0133"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T13:51:18Z"
+        }
+    ],
+    "keywords": [
+        "Hidden Number Problem",
+        "Fiat-Shamir",
+        "LESS",
+        "SeaSign",
+        "CSI-FiSh",
+        "Dilithium",
+        "Post-Quantum"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/913.pdf",
+    "pid": "913",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Hidden Number Problems in Fiat-Shamir based Post-Quantum Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Liskov, Rivest, and Wagner, in their seminal work, formulated tweakable blockciphers and proposed two blockcipher-based design paradigms, LRW1 and LRW2, where the basic design strategy is to xor the masked tweak to the input and output of a blockcipher. The 2-round cascaded LRW2 and 4-round cascaded LRW1 have been proven to be secure up to $O(2^{3n/4})$ queries, but $n$-bit optimal security still remains elusive for these designs. In their paper, Liskov also posed an open challenge of embedding the tweak directly in the blockcipher, and to address this, Goldenberg et al. introduced the tweakable Luby-Rackoff (LR) constructions. They showed that if the internal primitives are random functions, then for tweaks with $t$ blocks, the construction needs $t + 6$ rounds to be optimally $n$-bit CPA secure and $2t + 8$ rounds to be optimally $n$-bit CCA secure, where respectively $t$ and $2t$ rounds were required to process the tweaks. Since blockciphers can be designed much more efficiently than pseudorandom functions, in many practical applications the internal primitives of LR ciphers are instantiated as blockciphers, which however would lead to a birthday-bound factor, which is not ideal for say lightweight cryptography.     \r\n\r\nThis paper addresses the following two key questions affirmatively: (1) Can Goldenberg et al.'s results be extended to LR constructions with random permutations as internal primitives without compromising the optimal $n$-bit security? (2) Can the number of rounds required for handling long tweaks be reduced? \r\n\r\nWe formally define TLR-compatible functions, for processing the tweak, which when composed with 4-rounds and 5-rounds of LR construction with random permutations as internal primitives gives us respectively $n$-bit CPA and CCA secure tweakable permutations. For the security analysis, we proved general Mirror Theory result for three permutations. We also propose instantiating TLR-compatible functions with one round LR where a permutation (resp, two AXU hash functions) is used to mask single-block tweaks (resp., variable-length tweaks), thus proposing the $n$-bit CPA (resp., CCA) secure tweakable permutation candidates, $\\mathsf{TLRP5}$ and $\\mathsf{TLRP5+}$ (resp., $\\mathsf{TLRP7}$ and $\\mathsf{TLRP7+}$), using $5$ (resp., $7$) LR rounds, which is a significant reduction from the tweak-length-dependent results of Goldenberg et al. As a corollary, we also show $n$-bit CPA (resp., CCA) security of $5$-rounds (resp. $7$-rounds) permutation-based LR construction, which is quite an improvement over the existing $2n/3$-bit security proved by Guo et al.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Bishwajit Chakraborty",
+            "orcid": "0000-0001-8729-6163"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology, The Netherlands"
+                }
+            ],
+            "fullName": "Abishanka Saha"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T14:36:01Z"
+        }
+    ],
+    "keywords": [
+        "Variable-length Tweak",
+        "Tweakable block cipher",
+        "Permutation-based Feistel Construction",
+        "Optimal security."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/914.pdf",
+    "pid": "914",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tweakable Permutation-based Luby-Rackoff Constructions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "SPEEDY is a family of lightweight block ciphers designed by Leander et al. Several differential attacks have been reported on the SPEEDY variants. However, nearly all of these attacks are based on differential characteristics with probabilities that differ from their reported values. These discrepancies arise from incorrect calculations of the (key-averaged) probability, particularly in consecutive steps within one round without intermediate key addition. In this paper, we revisit all reported differential characteristics and accurately calculate their key-averaged probabilities using quasidifferential trails. We extend this to also estimate the fixed-key probability. Our analysis reveals several characteristics with zero or significantly altered probability, invalidating several proposed attacks. We further implement a search algorithm and find a 5.5-round differential distinguisher that can be used to mount a full-round key recovery attack with a data complexity of $2^{183}$ and a time complexity of $2^{185}$. The memory complexity varies: in the chosen-plaintext setting, it is $2^{156}$, whereas in the chosen-ciphertext setting, it is $2^{36}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Tim Beyne",
+            "orcid": "0000-0001-5638-9885"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                },
+                {
+                    "name": "Royal Military Academy",
+                    "ror": "https://ror.org/02vmnye06"
+                }
+            ],
+            "fullName": "Addie Neyt",
+            "orcid": "0009-0002-0308-9285"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T14:42:20Z"
+        }
+    ],
+    "keywords": [
+        "Differential Cryptanalysis",
+        "SPEEDY",
+        "Quasidifferential trails",
+        "Key Recovery"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/915.pdf",
+    "pid": "915",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved differential cryptanalysis of SPEEDY",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Circuit languages like Circom and Gnark have become essential tools for programmable zero-knowledge cryptography,  allowing developers to build privacy-preserving applications. These domain-specific languages (DSLs) encode both the computation to be verified (as a witness generator) and the corresponding arithmetic circuits, from which the prover and verifier can be automatically generated.   However, for these programs to be correct, the witness generator and the arithmetic circuit need to be mutually consistent in a certain technical sense, and inconsistencies can result in security vulnerabilities. This paper formalizes the consistency requirement for circuit DSLs and proposes the first automated technique for verifying it. We evaluate the method on hundreds of real-world circuits, demonstrating its utility for both automated verification and uncovering errors that existing tools are unable to detect.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                },
+                {
+                    "name": "Veridise Inc"
+                }
+            ],
+            "fullName": "Jon Stephens",
+            "orcid": "0009-0001-3866-2574"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Veridise Inc"
+                }
+            ],
+            "fullName": "Shankara Pailoor",
+            "orcid": "0000-0002-9253-9585"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                },
+                {
+                    "name": "Veridise Inc"
+                }
+            ],
+            "fullName": "Isil Dillig",
+            "orcid": "0000-0001-8006-1230"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T22:40:21Z"
+        }
+    ],
+    "keywords": [
+        "Zero Knowledge",
+        "Verification",
+        "Consistency",
+        "Automated Verification"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/916.pdf",
+    "pid": "916",
+    "pubtype": {
+        "note": "CAV'25",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Automated Verification of Consistency in Zero-Knowledge Proof Circuits",
+    "year": 2025,
+    "repo": [
+        "https://zcash.github.io/halo2/index.html",
+        "https://github.com/iden3/snarkjs",
+        "https://github.com/risc0/zirgen",
+        "https://github.com/risc0/zirgen",
+        "https://github.com/iden3/circom"
+    ]
+}
+,
+{
+    "abstract": "Modern SNARK constructions, almost ubiquitously, rely on a polynomial commitment scheme (PCS) --- a method by which a prover can commit to a large polynomial $P$ and later provide evaluation proofs of the form \"P(x)=y\" to the verifier. \r\n\r\nIn the context of zkVMs (i.e., proof-systems for general-purpose RAM computations), the common design is to represent the computation trace as a sequence of tables, one per CPU instruction, and commit to the these tables, or even their individual columns, as  separate polynomials. Committing separately to these polynomials has a large overhead in verification costs, especially in hash-based systems.\r\n\r\nIn this work we drastically reduce this cost via a new construction which we call the jagged PCS. This PCS enables the prover to commit to the entire computation trace as a single polynomial, but then allows for the verifier to emulate access to the individual table or column polynomials, so that the arithmetization can proceed in the usual manner. The jagged PCS may be thought of as a sparse PCS for a very particular form of sparsity - namely, a \"jagged\" matrix in which each column has a different height.\r\n\r\nOur construction of the jagged PCS is highly performant in practice. In contrast to existing sparse PCS constructions for general sparse polynomials, the jagged PCS does not require the prover to commit to any additional oracles and the prover cost is dominated by 5 finite field multiplications per element in the trace area. Furthermore, we implement the verifier as an arithmetic circuit that depends only on the total trace area - thereby significantly reducing the problem of \"combinatorial explosion\" often encountered in zkVM recursion.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Succinct"
+                }
+            ],
+            "fullName": "Tamir Hemo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Succinct"
+                }
+            ],
+            "fullName": "Kevin Jue"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Succinct"
+                }
+            ],
+            "fullName": "Eugene Rabinovich"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Succinct"
+                }
+            ],
+            "fullName": "Gyumin Roh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Succinct"
+                }
+            ],
+            "fullName": "Ron D. Rothblum",
+            "orcid": "0000-0001-5481-7276"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-21T22:58:58Z"
+        }
+    ],
+    "keywords": [
+        "PCS",
+        "Sparse PCS",
+        "Jagged PCS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/917.pdf",
+    "pid": "917",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Jagged Polynomial Commitments (or: How to Stack Multilinears)",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we show two simple variations of a data availability scheme which enable it to act as a multilinear polynomial commitment scheme over the data in a block. The first variation enables commitments over all of the block's data with zero prover overhead: the data availability construction simply serves both purposes. The second variation allows commitments over subsets of data with nonzero but still concretely small proving costs, since most work is already done during data encoding. This works especially well for blockchains with a high degree of data parallelism, as data-parallel computation is particularly amenable to efficient GKR proofs. Since, in GKR, opening the polynomial commitment contributes significantly to prover costs, our construction enables the prover to reuse work already done by the data availability scheme, reducing\u2014or wholly removing\u2014work associated with the polynomial commitment scheme.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bain Capital Crypto"
+                }
+            ],
+            "fullName": "Alex Evans"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bain Capital Crypto"
+                }
+            ],
+            "fullName": "Guillermo Angeris"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T00:46:09Z"
+        }
+    ],
+    "keywords": [
+        "polynomial commitment schemes",
+        "pcs",
+        "ligero",
+        "gkr",
+        "data availability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/918.pdf",
+    "pid": "918",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Accidental Computer: Polynomial Commitments from Data Availability",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Rep3 denotes the implementation of semi-honest three-party computation with an honest majority in MP-SPDZ (CCS'20). It uses replicated secret sharing with one message per multiplication and party as proposed by Araki et al. (CCS'16). This approach is rivaled by Astra (CCSW'19) and Trio (PETS'25), which use function-dependent preprocessing. The latter is more involved than, e.g., Beaver triples which can be used as a commodity.\r\n\r\nIn this work, we present a full implementation of Astra and Trio in MP-SPDZ, and we evaluate the costs of the different approaches. We show the equivalence of the schemes, which implies that a protocol in any of the schemes can be translated to one in another with the same overall communication cost. We also present an improvement to two important building blocks for privacy-preserving computation, namely secure comparison and probabilistic truncation used in fixed-point arithmetic. To evaluate our implementation, we have benchmarked machine learning training and inference in all three schemes, improving on Keller and Sun (ICML'22) by over 30%. Our implementation also highlights the large storage requirements of function-dependent preprocessing as it runs the two phases separately. To the best of our knowledge, this is the first implementation to do so.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CSIRO's Data61",
+                    "ror": "https://ror.org/03q397159"
+                }
+            ],
+            "fullName": "Marcel Keller",
+            "orcid": "0000-0003-2261-9376"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T03:02:09Z"
+        }
+    ],
+    "keywords": [
+        "Secure multiparty computation",
+        "replicated secret sharing",
+        "privacy-preserving machine learning"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/919.pdf",
+    "pid": "919",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Rep3 Reloaded: On the Cost of Function-Dependent Preprocessing in Semi-Honest 3PC with Honest Majority",
+    "year": 2025,
+    "repo": [
+        "https://github.com/data61/MP-SPDZ/blob/698b015064b00c80629ff97a3e7c15e6b4ecf270/Compiler/types.py#L3445",
+        "https://github.com/data61/MP-SPDZ/blob/698b015064b00c80629ff97a3e7c15e6b4ecf270/Compiler/types.py#L3445"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we propose SQIsign2D$^2$, a novel digital signature scheme within the SQIsign2D family. Unlike other SQIsign2D variants, SQIsign2D$^2$ employs the prime $p=CD-1$ as the field characteristic, where $D=2^{e_2}$, $C=3^{e_3}$ and $C\\approx D\\approx \\sqrt{p}$. By leveraging accessible $C$-isogenies, SQIsign2D$^2$ significantly reduces the degree requirements for two-dimensional isogeny computations, thereby lowering the overall computational overhead compared to other SQIsign2D variants.\r\n\r\n\r\nWe also provide a proof-of-concept implementation of SQIsign2D$^2$, and give an efficiency comparison between SQIsign2D$^2$ and other SQIsign2D variants. In particular, the experimental results demonstrate that the key generation and signing phases of SQIsign2D$^2$ are more than twice as fast as those of SQIsign2D-East at the NIST-I security level, respectively. Additionally, the verification performance in SQIsign2D$^2$ exhibits marginally improved efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hefei National Laboratory, University of Science and Technology of China, Hefei 230088, China"
+                }
+            ],
+            "fullName": "Zheng Xu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Mathematics, Sun Yat-sen University, Guangzhou, China"
+                }
+            ],
+            "fullName": "Kaizhan Lin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Mathematics, Sun Yat-sen University, Guangzhou, China; Guangdong Key Laboratory of Information Security, Guangzhou, China"
+                }
+            ],
+            "fullName": "Chang-An Zhao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hefei National Laboratory, University of Science and Technology of China, Hefei 230088, China; School of Mathematical Sciences, Wu Wen-Tsun Key Laboratory of Mathematics, University of Science and Technology of China, Hefei 230026, China"
+                }
+            ],
+            "fullName": "Yi Ouyang"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T03:08:45Z"
+        }
+    ],
+    "keywords": [
+        "SQIsign",
+        "Post-quantum cryptography",
+        "Isogeny",
+        "Signature"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/920.pdf",
+    "pid": "920",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SQIsign2D$^2$: New SQIsign2D Variant by Leveraging Power Smooth Isogenies in Dimension One",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Kaizhan-Lin/SQIsign2DSquare",
+        "https://github.com/hiroshi-onuki/SQIsign2D-East.jl"
+    ]
+}
+,
+{
+    "abstract": "Transaction details and participant identities on the blockchain are often publicly exposed. In this work, we posit that blockchain's transparency should not come at the cost of privacy. To that end, we introduce zero-knowledge authenticators (zkAt), a new cryptographic primitive for privacy-preserving authentication on public blockchains. zkAt utilizes zero-knowledge proofs to enable users to authenticate transactions, while keeping the underlying authentiction policies private. \r\n\r\nPrior solutions for such {policy-private authentication} required the use of threshold signatures, which can only hide the threshold access structure itself. In comparison, zkAt provides privacy for arbitrarily complex authentication policies, and offers a richer interface even within the threshold access structure by, for instance, allowing for the combination of signatures under distinct signature schemes.\r\n\r\nIn order to construct zkAt, we design a compiler that transforms the popular Groth16 non-interactive zero knowledge (NIZK) proof system into a NIZK with equivocable verification keys, a property that we define in this work. Then, for any zkAt constructed using proof systems with this new property, we show that all public information must be independent of the policy, thereby achieving policy-privacy.\r\n\r\nNext, we give an extension of zkAt, called zkAt+ wherein, assuming a trusted authority, policies can be updated obliviously in the sense that a third-party learns no new information when a policy is updated by the policy issuer. We also give a theoretical construction for zkAt+ using recursive NIZKs, and explore the integration of zkAt into modern blockchains. Finally, to evaluate their feasibility, we implement both our schemes for a specific threshold access structure. Our findings show that zkAt achieves comparable performance to traditional threshold signatures, while also attaining privacy for significantly more complex policies with very little overhead.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Kostas Kryptos Chalkias"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Mysten Labs"
+                }
+            ],
+            "fullName": "Deepak Maram"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Mysten Labs"
+                }
+            ],
+            "fullName": "Arnab Roy"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Mysten Labs"
+                }
+            ],
+            "fullName": "Joy Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "George Mason University",
+                    "ror": "https://ror.org/02jqj7156"
+                }
+            ],
+            "fullName": "Aayush Yadav"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T05:34:51Z"
+        }
+    ],
+    "keywords": [
+        "blockchain privacy",
+        "authentication schemes",
+        "threshold wallets",
+        "zero knowledge proofs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/921.pdf",
+    "pid": "921",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Zero-knowledge Authenticator for Blockchain: Policy-private and Obliviously Updateable",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Consensys/gnark",
+        "https://github.com/0xPARC/circom-ecdsa",
+        "https://github.com/0xPARC/circom-ecdsa",
+        "https://github.com/Electron-Labs/ed25519-circom",
+        "https://github.com/Electron-Labs/ed25519-circom",
+        "https://github.com/5afe/safe-core-protocol-specs/blob/main/whitepaper.pdf",
+        "https://github.com/5afe/safe-core-protocol-specs/blob/main/whitepaper.pdf"
+    ]
+}
+,
+{
+    "abstract": "This work introduces $\\mathsf{HyperWolf}$, a Hypercube-Wise Optimized polynomial commitment scheme based on Lattices over ring Fields.\r\nThe scheme achieves succinctness with $O(\\log N)$ proof size and verifier time, along with linear prover cost. It supports both univariate and multilinear polynomials under a unified framework.\r\nInspired by the two-dimensional tensor structure employed in \\cite{golovnev2021brakedown} to achieve sublinear efficiency, we generalize the idea to a $k$-dimensional tensor (hypercube) structure and design a $k$-round recursive proof protocol, where each round performs a dimensionality reduction,  which results in an overall efficiency of $O(kN^{1/k})$. By setting $k = \\log N$, our scheme achieves near-optimal asymptotic performance.\r\n\r\n$\\mathsf{HyperWolf}$ is fully transparent and relies only on the standard lattice assumption over rings. In terms of concrete efficiency, for polynomials with $N = 2^{25}$ coefficients, our scheme yields proof sizes that are $8\\times$ smaller than the lattice-based scheme of \\cite{cini2024polynomial} (Crypto24), and over $200\\times$ smaller than $\\mathsf{SLAP}$ \\cite{albrecht2024slap} (Eurocrypt24). Compared to $\\mathsf{Greyhound}$\\cite{nguyen2024greyhound} (Crypto24), our proof size is of similar magnitude, while achieving significantly lower verifier time.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University, Hong Kong, China"
+                }
+            ],
+            "fullName": "Lizhen Zhang",
+            "orcid": "0009-0003-7313-0551"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University, Hong Kong, China"
+                }
+            ],
+            "fullName": "Shang Gao",
+            "orcid": "0000-0003-2692-057X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University, Hong Kong, China"
+                }
+            ],
+            "fullName": "Bin Xiao",
+            "orcid": "0000-0003-4223-8220"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T05:42:51Z"
+        }
+    ],
+    "keywords": [
+        "Lattice-based cryptography",
+        "Polynomial Commitment Scheme"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/922.pdf",
+    "pid": "922",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "$\\mathsf{HyperWolf}$: Efficient Polynomial Commitment Schemes from Lattices",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The ongoing search for secure post-quantum cryptographic primitives has led to the development of numerous novel digital signature schemes. In this paper we introduce $\\mathsf{SPECK}$, a new signature protocol based on the similarities between the Permuted Kernel Problem ($\\mathsf{PKP}$) and the Permutation Code Equivalence Problem ($\\mathsf{PEP}$). At its core, $\\mathsf{SPECK}$ is built on the permutation version of LESS, but introduces a key modification to the commitment step. Indeed, instead of committing to an entire permuted code, the prover commits to a random relaxed $\\mathsf{PKP}$ (that we call $\\mathsf{PECK}$, Permutation Equivalence of Codes and Kernel) instance by randomly choosing a codeword from a random permutation of the initial code. In this sense, the secret key is used as a trapdoor to solve the committed $\\mathsf{PECK}$ instance. The new approach allows for a faster verification that does not involve gaussian elimination, while maintains roughly the same signature size as LESS. We present the $\\mathsf{Speck}$ protocol in detail and provide a deep analysis of the security of the new introduced assumptions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Marche Polytechnic University",
+                    "ror": "https://ror.org/00x69rs40"
+                }
+            ],
+            "fullName": "Marco Baldi",
+            "orcid": "0000-0002-8754-5526"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Marche Polytechnic University",
+                    "ror": "https://ror.org/00x69rs40"
+                }
+            ],
+            "fullName": "Michele Battagliola",
+            "orcid": "0000-0002-8269-2148"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Marche Polytechnic University",
+                    "ror": "https://ror.org/00x69rs40"
+                }
+            ],
+            "fullName": "Rahmi El Mechri",
+            "orcid": "0009-0007-3739-9106"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Marche Polytechnic University",
+                    "ror": "https://ror.org/00x69rs40"
+                }
+            ],
+            "fullName": "Paolo Santini",
+            "orcid": "0000-0003-0631-3668"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Marche Polytechnic University",
+                    "ror": "https://ror.org/00x69rs40"
+                }
+            ],
+            "fullName": "Riccardo Schiavoni",
+            "orcid": "0009-0009-8743-4867"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Marche Polytechnic University",
+                    "ror": "https://ror.org/00x69rs40"
+                },
+                {
+                    "name": "IMT School for Advanced Studies",
+                    "ror": "https://ror.org/035gh3a49"
+                }
+            ],
+            "fullName": "Davide De Zuane",
+            "orcid": "0009-0007-2344-0681"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T05:51:28Z"
+        }
+    ],
+    "keywords": [
+        "Permutation Equivalence Problem",
+        "Permuted Kernel Problem",
+        "Post-Quantum Cryptography",
+        "Fiat-Shamir"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/923.pdf",
+    "pid": "923",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SPECK: Signatures from Permutation Equivalence of Codes and Kernels",
+    "year": 2025,
+    "repo": [
+        "https://github.com/SPECK-Signature/SPECK",
+        "https://github.com/SPECK-Signature/SPECK"
+    ]
+}
+,
+{
+    "abstract": "Card-based cryptography is a research area for realizing cryptographic functionality, such as secure multiparty computation and zero-knowledge proofs, by using a deck of physical cards and/or other non-electrical tools.  Motivated by zero-knowledge proofs for solutions in pencil puzzles, there is a direction of recent studies on card-based protocols to verify connectivity of a set of cells or edges on lattice-shaped boards.  In this paper, we generalize the problem to counting connected components of subsets on any graph, and propose a card-based protocol for the problem.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Kyushu University",
+                    "ror": "https://ror.org/00p4k0j84"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Koji Nuida",
+            "orcid": "0000-0001-8259-9958"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T06:16:30Z"
+        }
+    ],
+    "keywords": [
+        "card-based cryptography",
+        "graphs",
+        "connected components"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/924.pdf",
+    "pid": "924",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Card-Based Protocol Counting Connected Components of Graphs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we introduce SCMAC, a general framework that transforms large-memory stream ciphers into AEAD schemes. It represents an intermediate design paradigm between Encrypt-then-MAC and dedicated single-pass AEAD, partially integrating encryption and authentication mechanisms while mitigating the risk of state leakage associated with immediate absorption and squeezing. Consequently, this approach harmonizes high performance with enhanced security. Additionally, we propose LOL2.0, an enhanced version of the blockwise stream cipher design framework LOL. This new framework improves security through modifications to the FSM update and output functions, and increases flexibility in constructing LFSR components. Based on SCMAC}$ and LOL2.0, we present two AEAD ciphers, LOL2.0-Mini and LOL2.0-Double, which support both stream cipher and AEAD modes. These ciphers are tailored to Beyond 5G/6G environments, offering 256-bit key length and resistance to known cryptanalysis methods, including differential, linear, and integral attacks. They also provide 128-bit security against forgery attacks in the nonce-respecting setting. Due to their compatibility with AES-NI and SIMD instructions, LOL2.0-Mini and LOL2.0-Double achieve software performance of 90 Gbps and 144 Gbps in stream cipher mode, respectively. In AEAD mode, they perform at 59 Gbps and 110 Gbps, significantly faster than their predecessor's Encrypt-then-MAC versions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, Beijing, China",
+                    "ror": "https://ror.org/02pn5rj08"
+                }
+            ],
+            "fullName": "Dengguo Feng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, Beijing, China",
+                    "ror": "https://ror.org/02pn5rj08"
+                }
+            ],
+            "fullName": "Lin Jiao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, Beijing China",
+                    "ror": "https://ror.org/02pn5rj08"
+                }
+            ],
+            "fullName": "Yonglin Hao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PLA Strategic Support Force Information Engineering University, Zhengzhou, China"
+                }
+            ],
+            "fullName": "Qunxiong Zheng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Software, Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Wenling Wu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PLA Strategic Support Force Information Engineering University, Zhengzhou, China"
+                }
+            ],
+            "fullName": "Wenfeng Qi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Software, Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Lei Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Westone Cryptologic Research Center, Beijing, China"
+                }
+            ],
+            "fullName": "Liting Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cryptology, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Siwei Sun"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PLA Strategic Support Force Information Engineering University, Zhengzhou, China"
+                }
+            ],
+            "fullName": "Tian Tian"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T06:51:02Z"
+        }
+    ],
+    "keywords": [
+        "Stream Cipher",
+        "AEAD",
+        "6G Mobile System",
+        "Fast Software Implementation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/925.pdf",
+    "pid": "925",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SCMAC and LOL2.0: An AEAD Design Framework  and A New Version of LOL  Stream Cipher Design Framework",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Conventional hash functions are often inefficient in zero-knowledge proof settings, leading to design of several ZK-friendly hash functions. On the other hand, lookup arguments have recently been incorporated into zero-knowledge protocols, allowing for more efficient handling of ``ZK-unfriendly'' operations, and hence ZK-friendly hash functions based on lookup tables.\r\n\r\nIn this paper, we propose a new ZK-friendly hash function, dubbed $\\mathsf{Polocolo}$, that employs an S-box constructed using power residues. Our approach reduces the numbers of gates required for table lookups, in particular, when combined with Plonk, allowing one to use such nonlinear layers over multiple rounds. We also propose a new MDS matrix for the linear layer of $\\mathsf{Polocolo}$. In this way, $\\mathsf{Polocolo}$ requires fewer Plonk gates compared to the state-of-the-art ZK-friendly hash functions. For example, when $t = 8$, $\\mathsf{Polocolo}$ requires $21\\%$ less Plonk gates compared to Anemoi, which is currently the most efficient ZK-friendly hash function, where $t$ denotes the size of the underlying permutation in blocks of $\\mathbb F_p$. For $t = 3$, $\\mathsf{Polocolo}$ requires $24\\%$ less Plonk gates than Reinforced Concrete, which is one of the recent lookup-based ZK-friendly hash functions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Jincheol Ha",
+            "orcid": "0000-0003-0496-1450"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Seongha Hwang",
+            "orcid": "0000-0002-2166-6421"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Jooyoung Lee",
+            "orcid": "0000-0001-5471-9350"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Seungmin Park",
+            "orcid": "0009-0005-5734-2727"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Mincheol Son",
+            "orcid": "0000-0002-3651-2425"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T07:21:00Z"
+        }
+    ],
+    "keywords": [
+        "Hash function",
+        "Zero-knowledge proof",
+        "Plonk",
+        "Lookup argument",
+        "ZK-friendly hash function",
+        "power residue",
+        "MDS matrix"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/926.pdf",
+    "pid": "926",
+    "pubtype": {
+        "pubtype": "EUROCRYPT",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Polocolo: A ZK-Friendly Hash Function Based on S-boxes Using Power Residues (Full Version)",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KAIST-CryptLab/Polocolo/blob/main/param_gen.sage",
+        "https://github.com/mwageringel/fgb_sage",
+        "https://extgit.iaik.tugraz.at/krypto/zkfriendlyhashzoo",
+        "https://github.com/anemoi-hash/anemoi-rust",
+        "https://github.com/sca-research/Arion"
+    ]
+}
+,
+{
+    "abstract": "Meme tokens represent a distinctive asset class within the cryptocurrency ecosystem, characterized by high community engagement, significant market volatility, and heightened vulnerability to market manipulation. This paper introduces an innovative approach to assessing liquidity risk in meme token markets using entity-linked address identification techniques. We propose a multi-dimensional method integrating fund flow analysis, behavioral similarity, and anomalous transaction detection to identify related addresses. We develop a comprehensive set of liquidity risk indicators tailored for meme tokens, covering token distribution, trading activity, and liquidity metrics. Empirical analysis of tokens like BabyBonk, NMT, and BonkFork validates our approach, revealing significant disparities between apparent and actual liquidity in meme token markets. The findings of this study provide significant empirical evidence for market participants and regulatory authorities, laying a theoretical foundation for building a more transparent and robust meme token ecosystem.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Risk Department Binance Dubai, United Arab Emirates"
+                }
+            ],
+            "fullName": "Qiangqiang Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Risk Department Binance Hong Kong, China"
+                }
+            ],
+            "fullName": "Qian Huang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Risk Department Binance Hong Kong, China"
+                }
+            ],
+            "fullName": "Frank Fan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "AI Department Zand Dubai, United Arab Emirates"
+                }
+            ],
+            "fullName": "Haishan Wu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Suzhou Artificial Intelligence Research Institute Shanghai Jiao Tong University Suzhou, Jiangsu, China"
+                }
+            ],
+            "fullName": "Xueyan Tang"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T08:12:22Z"
+        }
+    ],
+    "keywords": [
+        "meme tokens",
+        "liquidity risk",
+        "blockchain analysis",
+        "entity identification"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "IEEE International Conference on Blockchain and Cryptocurrency (Proc. IEEE ICBC 2025)",
+    "pdffile": "2025/927.pdf",
+    "pid": "927",
+    "pubtype": {
+        "note": "IEEE ICBC",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Enhancing Meme Token Market Transparency: A Multi-Dimensional Entity-Linked Address Analysis for Liquidity Risk Evaluation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The search rank-2 module Lattice Isomorphism Problem (smLIP), over a cyclotomic ring of degree a power of two, can be reduced to an instance of the Lattice Isomorphism Problem (LIP) of at most half the rank if an adversary knows a nontrivial automorphism of the underlying integer lattice. Knowledge of such a nontrivial automorphism speeds up the key recovery attack on HAWK at least quadratically, which would halve the number of security bits.\r\n\r\nLuo et al. (ASIACRYPT 2024) recently found an automorphism that breaks omSVP, the initial underlying hardness assumption of HAWK. The team of HAWK amended the definition of omSVP to include this so-called symplectic automorphism in their submission to the second round of NIST's standardization of additional signatures. This work provides confidence in the soundness of this updated definition, assuming smLIP is hard, since there are plausibly no more trivial automorphisms that allow winning the omSVP game easily.\r\n\r\nAlthough this work does not affect the security of HAWK, it opens up a new attack avenue involving the automorphism group that may be theoretically interesting on its own.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                }
+            ],
+            "fullName": "Dani\u00ebl M. H. van Gent",
+            "orcid": "0000-0001-9600-5954"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                }
+            ],
+            "fullName": "Ludo N. Pulles",
+            "orcid": "0000-0002-8014-9221"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T08:31:53Z"
+        }
+    ],
+    "keywords": [
+        "Automorphism",
+        "Cryptanalysis",
+        "Lattice Isomorphism Problem",
+        "HAWK"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/928.pdf",
+    "pid": "928",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "HAWK: Having Automorphisms Weakens Key",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Dispute resolution has been a significant challenge in verifiable election protocols since such protocols were first proposed more than forty years ago. This work explores the problem from a new perspective and offers strong dispute resolution for in-person voting by depending on observers.\r\n\r\nIt proposes a simple definition of dispute resolution as a property of a voting protocol---a definition that is independent of any other security goal. It also presents the DROP protocol, a verifiable, in-person voting protocol that runs in the presence of observers who will always reach a correct conclusion in the case of a dispute without ever being able to compromise privacy or facilitate coercion.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Microsoft Research"
+                }
+            ],
+            "fullName": "Josh Benaloh",
+            "orcid": "0009-0008-9044-8859"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Microsoft Research"
+                }
+            ],
+            "fullName": "Michael Naehrig",
+            "orcid": "0009-0001-7119-5242"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UCLouvain",
+                    "ror": "https://ror.org/02495e989"
+                }
+            ],
+            "fullName": "Olivier Pereira"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T09:01:01Z"
+        }
+    ],
+    "keywords": [
+        "Voting",
+        "Dispute resolution",
+        "Verifiable elections"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/929.pdf",
+    "pid": "929",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The DROP Protocol: Dispute Resolution via Observation in Public for Verifiable, In-Person Voting",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3708821.3736224",
+    "abstract": "Secure Multi-Party Computation (MPC) allows multiple parties to perform privacy-preserving computation on their secret data.  MPC protocols based on secret sharing have high throughput which makes them well-suited for batch processing, where multiple instances are evaluated in parallel. \r\nSo far, practical implementations of secret sharing-based MPC protocols mainly focus on runtime and communication efficiency, so the memory overhead of protocol implementations is often overlooked. Established techniques to reduce the memory overhead for constant-round garbled circuit protocols cannot be directly applied to secret sharing-based protocols because they would increase the round complexity. Additionally, state-of-the-art implementations of secret sharing-based MPC protocols are implemented in C/C++ and may exhibit memory unsafety and memory leaks, which could lead to undefined behavior.\r\n\r\nIn this paper, we present SEEC: SEEC Executes Enormous Circuits, a framework for secret sharing-based MPC \r\nwith a novel approach to address memory efficiency and safety without compromising on runtime and communication efficiency. We realize SEEC in Rust, a language known for memory-safety at close-to-native speed. To reduce the memory footprint, we develop an in-memory representation for sub-circuits. Thus, we never inline sub-circuit calls during circuit evaluation, a common issue that blows up memory usage in MPC implementations. \r\nWe compare SEEC with the state-of-the-art secret sharing-based MPC frameworks ABY (NDSS'15), MP-SPDZ (CCS'20), and MOTION (TOPS'22) w.r.t. runtime, memory, and communication efficiency. Our results show that our reliable and memory-safe implementation has competitive or even better performance.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Henri Dohmen",
+            "orcid": "0009-0000-1601-3314"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Robin Hundt",
+            "orcid": "0009-0000-5203-1341"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Nora Khayata",
+            "orcid": "0000-0003-3159-5898"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Thomas Schneider",
+            "orcid": "0000-0001-8090-1316"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T09:42:45Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/930.pdf",
+    "pid": "930",
+    "pubtype": {
+        "note": "ASIA CCS'25",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SEEC: Memory Safety Meets Efficiency in Secure Two-Party Computation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KDE/heaptrack",
+        "https://nigelsmart.github.io/MPC-Circuits/",
+        "https://nigelsmart.github.io/MPC-Circuits/",
+        "https://github.com/aicis/fresco",
+        "https://github.com/GaloisInc/swanky",
+        "https://github.com/google/flatbuffers",
+        "https://github.com/bristolcrypto/SPDZ-2",
+        "https://github.com/KULeuven-COSIC/SCALE-MAMBA",
+        "https://github.com/KULeuven-COSIC/SCALE-MAMBA",
+        "https://github.com/lschoe/mpyc",
+        "https://github.com/lschoe/mpyc"
+    ]
+}
+,
+{
+    "abstract": "A multi-valued broadcast protocol allows a sender $P_s$ to broadcast an $\\ell$-bit message $m$ to $n$ recipients. \r\nFor all relevant models, multi-valued broadcast protocols with asymptotically optimal communication complexity $\\mathcal{O}(\\ell n)+\\mathrm{Poly}(n)$ have been published.\r\n\r\nDespite their very low communication complexity, these protocols perform poorly in modern networks.\r\nEven if the network allows all $n$ parties to send messages at the same time, the execution time of the protocols is proportional to $\\ell n$ (instead of $\\ell$). \r\nEven if the network allows to use all bilateral channels at the same time, the execution time is still proportional to $\\ell$ (instead of $\\ell/n$).\r\n    \r\nWe ask the natural question whether multi-valued broadcast protocols exist which take time proportional to $\\ell$ if parties can simultaneously send messages, and even take time proportional to $\\ell/n$ if the bilateral channels can be used simultaneously. We provide a complete characterization of multi-valued broadcast with a two-fold answer:\r\n\r\nOn the negative side, we prove that for $t<n$, multi-valued broadcast requires time proportional to $\\ell n$, if parties can simultaneously send messages, respectively take time proportional to $\\ell$ if bilateral channels can be used simultaneously.\r\n\r\nOn the positive side, we prove that for $t < (1-\\epsilon)n$ (for any fixed $\\epsilon$), multi-valued broadcast in time proportional to $\\ell$ (when parties can send messages simultaneously), respectively proportional to $\\ell/n$ (if bilateral channels can be used simultaneously) is possible. We provide such protocols both with cryptographic security as well as with statistical security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Lucerne University of Applied Sciences and Arts"
+                }
+            ],
+            "fullName": "Gabriel Dettling"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Martin Hirt"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Lucerne University of Applied Sciences and Arts & Web3 Foundation"
+                }
+            ],
+            "fullName": "Chen-Da Liu-Zhang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T09:48:42Z"
+        }
+    ],
+    "keywords": [
+        "multi-valued broadcast",
+        "Dishonest Majority"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/931.pdf",
+    "pid": "931",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multivalued Broadcast with Optimal Length",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Integral and ultrametric integral cryptanalysis are generalized to finite rings of prime characteristic $p$ that are isomorphic to a product of fields. This extends, for instance, the complete state of the art in integral cryptanalysis from $\\mathbf{F}_2^n$ to $\\mathbf{F}_q^n$, for all prime powers $q$. A compact representation of transition matrices, based on convex polyhedra, is introduced to ensure that the proposed methods are computationally efficient even for large $p$.\r\nAutomated tools are developed and applied to a few generic and several concrete primitives. The analysis shows that previous degree estimates for Feistel-GMiMC, HadesMiMC, AES-Prime, small-pSquare and mid-pSquare are overly optimistic. Furthermore, except for AES-Prime, these primitives do not meet their design criteria unless their number of rounds is substantially increased.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Tim Beyne",
+            "orcid": "0000-0001-5638-9885"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Michiel Verbauwhede",
+            "orcid": "0000-0002-5982-1984"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T14:15:00Z"
+        }
+    ],
+    "keywords": [
+        "Geometric approach",
+        "Integral cryptanalysis",
+        "Ultrametric integral cryptanalysis",
+        "Arithmetization-oriented primitives"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/932.pdf",
+    "pid": "932",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Integral cryptanalysis in characteristic $p$",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KULeuven-COSIC/integral-cryptanalysis-characteristic-p",
+        "https://github.com/KULeuven-COSIC/integral-cryptanalysis-characteristic-p"
+    ]
+}
+,
+{
+    "abstract": "Proof systems of arbitrary computations have found many applications in recent years. However, the proving algorithm has a consequent complexity tied to the size of the computation being proved. Thus, proving large computations is quite ine\ufb03cient. One of these large computations is the scalar multiplication over an elliptic curve. In this work, we provide new techniques for reducing the time corresponding to proving a scalar multiplication, using integer lattice reduction or a (half) extended Euclidean algorithm in a ring of integers. We investigate optimizations in the case of small (complex multiplication) discriminant curves, and its generalization for multi scalar multiplications as used in signature verification. We provide an optimized Golang implementation for di\ufb00erent elliptic curves in di\ufb00erent proof systems settings. The speed-up in proving time is between 22% and 53% compared to the previous state-of-the-art.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Alpen Labs"
+                }
+            ],
+            "fullName": "Liam Eagen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Linea"
+                }
+            ],
+            "fullName": "Youssef El Housni"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ZKNox"
+                }
+            ],
+            "fullName": "Simon Masson"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Linea"
+                }
+            ],
+            "fullName": "Thomas Piellard"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T20:52:35Z"
+        }
+    ],
+    "keywords": [
+        "SNARK",
+        "STARK",
+        "proof systems",
+        "elliptic curves",
+        "scalar multiplication"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/933.pdf",
+    "pid": "933",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fast elliptic curve scalar multiplications in SN(T)ARK circuits",
+    "year": 2025,
+    "repo": [
+        "https://github.com/yelhousni/scalarmul-in-snark"
+    ]
+}
+,
+{
+    "abstract": "Introduced by Canetti in 2001, Universal Composability (UC) is a widely adopted security model that enables the specification and proof of security for a broad range of protocols, offering strong security guarantees. \r\nAt its core lies the universal composition theorem (UC theorem), which ensures that protocols proven secure within  the framework remain secure even when deployed in real-world environments with multiple instances of them.\r\n\r\nIn this work, we present two key contributions. First, we identify several problems with the UC framework, in particular the UC Theorem. They include counterexamples, limitations that make it unusable for important classes of protocols, and weaknesses in its proof. These problems reveal flaws in nearly all the fundamental concepts of UC.\r\n\r\nSecondly, we update the main concepts of UC to address these problems. Although these revisions are nontrivial, our updated definitions are intended to stay as closely aligned with the original model as possible, while providing greater simplicity overall. To ensure the validity of these updates, we present a proof of the updated UC theorem, which is more detailed and modular than the original.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CRED, Paris-Panth\u00e9on-Assas University"
+                },
+                {
+                    "name": "DIENS, \u00c9cole normale sup\u00e9rieure, CNRS, PSL University, Inria, Paris, France"
+                }
+            ],
+            "fullName": "C\u00e9line Chevalier",
+            "orcid": "0009-0006-4231-4958"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, \u00c9cole normale sup\u00e9rieure, CNRS, PSL University, Inria, Paris, France"
+                },
+                {
+                    "name": "Thales, Gennevilliers, France"
+                }
+            ],
+            "fullName": "\u00c9ric Sageloli",
+            "orcid": "0009-0004-1612-8209"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-22T21:51:49Z"
+        }
+    ],
+    "keywords": [
+        "Universal Composability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/934.pdf",
+    "pid": "934",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Diving Deep Into UC: Uncovering and Resolving Issues in Universal Composability",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Constant-time implementations are a cornerstone of secure\r\ncryptographic systems, particularly in the context of key exchange protocols and digital signature schemes. These implementations are designed to eliminate timing side-channel vulnerabilities by ensuring that the program\u2019s execution time is independent of secret data. A fundamental building block for achieving constant-time behavior is the conditional move operation. Unlike traditional branching constructs (such as if statements), which may introduce data-dependent timing variations, conditional moves allow developers to write logic that behaves identically at the hardware level regardless of input values. As a result, they are widely used in cryptographic libraries and standards to ensure both functional correctness and resistance to timing attacks. In this work, we describe our efforts to implement elliptic curve cryptography with some immunity against certain power leakage side-channel attacks, using standard C and Rust code.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "State University of Campinas",
+                    "ror": "https://ror.org/04wffgt70"
+                }
+            ],
+            "fullName": "David Santos"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Michael Scott"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T00:17:09Z"
+        }
+    ],
+    "keywords": [
+        "Side-Channel Analysis",
+        "Elliptic Curves",
+        "Countermeasures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/935.pdf",
+    "pid": "935",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Side-channel safe conditional moves and swaps",
+    "year": 2025,
+    "repo": [
+        "https://github.com/newaetech/chipwhisperer",
+        "https://github.com/dalek-cryptography/subtle/blob/main/src/lib.rs",
+        "https://github.com/dalek-cryptography/subtle/blob/main/src/lib.rs"
+    ]
+}
 ]
