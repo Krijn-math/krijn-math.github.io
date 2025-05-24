@@ -66750,4 +66750,595 @@
         "https://github.com/dalek-cryptography/subtle/blob/main/src/lib.rs"
     ]
 }
+,
+{
+    "abstract": "Recent progress on zero-knowledge proofs (ZKPs) based on vector oblivious linear evaluation (VOLE) offers a promising paradigm for scaling ZKPs over extremely large statements. In particular, VOLE-based ZK is currently the best choice in terms of end-to-end execution time. However, VOLE-based ZK incurs high communication overhead \u2014 it usually scales linearly with the circuit size.\r\n\r\nTo mitigate this, existing literature considers VOLE-based ZK over structured statements. In this work, we focus on the batched disjunctive statement \u2014 $\\mathcal{P}$ and $\\mathcal{V}$ agree on $B$ fan-in $2$ circuits $\\mathcal{C}_1, \\ldots, \\mathcal{C}_{B}$ over a field $\\mathbb{F}$;  each circuit is of size $C$ with $n_{\\mathit{in}}$ inputs. $\\mathcal{P}$'s goal is to demonstrate the knowledge of $R$ witnesses $(\\mathit{id}_j \\in [B]$, $\\boldsymbol{w}_j \\in \\mathbb{F}^{n_{\\mathit{in}}})$ for each $j \\in [R]$ s.t. $\\forall j \\in [R], \\mathcal{C}_{\\mathit{id}_j}(\\boldsymbol{w}_j) = 0$ where neither $\\boldsymbol{w}_j$ nor $\\mathit{id}_j$ is revealed. Batched disjunctive statements are effective, e.g., in emulating the CPU execution inside ZK. Note, the na\u00efve solution results in a circuit of size $\\mathcal{O}(RBC)$.\r\n\r\nTo prove such a statement using VOLE-based ZK, the prior state-of-the-art protocol $\\mathsf{Antman}$ (Weng et al., CCS'22) incurred $\\mathcal{O}(BC + R)$ communication by additionally relying on AHE, whereas $\\mathsf{Batchman}$ (Yang et al., CCS'23) achieved $\\mathcal{O}(RC + B)$ communication using only VOLE.\r\n\r\nIn this work, we combine these two protocols non-trivially and present a novel protocol $\\mathsf{Justvengers}$ \u2014 targeting the batched disjunctive statement \u2014 that incurs only $\\mathcal{O}(R + B + C)$ communication and $\\mathcal{O}(BC + (B + C)R\\log R)$ computation for prover, using AHE and VOLE.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Yibin Yang",
+            "orcid": "0000-0001-6062-3531"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T06:19:02Z"
+        }
+    ],
+    "keywords": [
+        "Zero-Knowledge",
+        "Batched Disjunctions",
+        "VOLE-Based ZK"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/936.pdf",
+    "pid": "936",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Justvengers: Batched VOLE ZK Disjunctions in $\\mathcal{O}(R{+}B{+}C)$ Communication",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper explores the algebraic structure of the Poseidon and Poseidon2 permutations\r\nover NTT-friendly finite fields, with a focus on preimage recovery via root-finding\r\ntechniques. We introduce an algorithm for efficiently identifying single roots of high-degree\r\nunivariate polynomials that emerge from these constructions, based on the Graeffe transform\r\nand the tangent Graeffe method. Our approach is evaluated on reduced-round bounty\r\ninstances of these permutations at various security levels, as proposed by the Ethereum\r\nFoundation, demonstrating practical effectiveness. These results yield new insights into the\r\nsecurity of permutation-based cryptographic primitives instantiated over NTT-friendly prime\r\nfields.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "Antonio Sanso"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zircuit"
+                }
+            ],
+            "fullName": "Giuseppe Vitto"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T07:24:02Z"
+        }
+    ],
+    "keywords": [
+        "Poseidon \u00b7 Poseidon2",
+        "Cryptanalysis",
+        "Root-finding",
+        "Graeffe",
+        "Interpolation",
+        "CICO",
+        "Zero-Knowledge",
+        "Hash Break"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/937.pdf",
+    "pid": "937",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Attacking Poseidon via Graeffe-Based Root-Finding over NTT-Friendly Fields",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Logic locking is an obfuscation technique designed to protect the intellectual property of hardware designs and has attracted considerable attention for over a decade. However, most logic locking schemes have been developed heuristically, leading the field into a cat-and-mouse game between attackers and defenders. Indeed, several proposed schemes have already been broken. While recent works have introduced provably secure logic locking, they often incur impractical overhead or fail to support the ASIC design paradigm while offering strong theoretical security guarantees.\r\n\r\nIn this work, we propose PSYLOCKE, a provably secure and practically efficient logic locking scheme that balances formal security guarantees with implementation feasibility. We introduce a new security paradigm that formalizes logic locking under predetermined allowable leakage, such as circuit topology, and we provide refined definitions of resilience against specific attacks. Our analysis bridges general security definitions and attack resilience, quantifying how leakage impacts the success of real-world attacks. PSYLOCKE is provably secure under topology leakage and achieves significant efficiency improvement compared to existing provably secure logic locking schemes. Alongside our theoretical analysis, we demonstrate through quantitative evaluations using widely-used benchmark circuits that PSYLOCKE strikes a favorable balance between practical performance and security. Concretely, PSYLOCKE reduced the Area-Power-Delay overhead by an order of magnitude while achieving the same security level, compared to the existing provably secure logic locking scheme.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electro-Communications",
+                    "ror": "https://ror.org/02x73b849"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Yohei Watanabe",
+            "orcid": "0000-0003-4028-8603"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electro-Communications",
+                    "ror": "https://ror.org/02x73b849"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Kyoichi Asano"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electro-Communications",
+                    "ror": "https://ror.org/02x73b849"
+                }
+            ],
+            "fullName": "Haruka Hirata"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electro-Communications",
+                    "ror": "https://ror.org/02x73b849"
+                }
+            ],
+            "fullName": "Tomoki Ono"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science Tokyo",
+                    "ror": "https://ror.org/05dqf9946"
+                }
+            ],
+            "fullName": "Mingyu Yang",
+            "orcid": "0000-0003-3722-7009"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electro-Communications",
+                    "ror": "https://ror.org/02x73b849"
+                }
+            ],
+            "fullName": "Mitsugu Iwamoto",
+            "orcid": "0000-0003-1092-8489"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electro-Communications",
+                    "ror": "https://ror.org/02x73b849"
+                }
+            ],
+            "fullName": "Yang Li",
+            "orcid": "0000-0003-0219-5289"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science Tokyo",
+                    "ror": "https://ror.org/05dqf9946"
+                }
+            ],
+            "fullName": "Yuko Hara",
+            "orcid": "0000-0001-9486-5272"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T11:56:08Z"
+        }
+    ],
+    "keywords": [
+        "logic locking",
+        "security definitions",
+        "hardware security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/938.pdf",
+    "pid": "938",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PSYLOCKE: Provably Secure Logic Locking with Practical Efficiency",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We show that the certificateless signature scheme [Veh. Commun. 47: 100763 (2024)] is insecure,  because an adversary can launch forgery attack for any message. The signer's certificateless public key is not tightly bound to the system public key. The inherent flaw results in that the  adversary can find an efficient signing algorithm functionally equivalent to the valid signing algorithm. The findings in this note could be helpful for newcomers who are not familiar with the designing techniques for certificateless signatures.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T12:26:47Z"
+        }
+    ],
+    "keywords": [
+        "Certificateless signature",
+        "forgery attack",
+        "signing algorithm",
+        "verification algorithm"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/939.pdf",
+    "pid": "939",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the security of one certificateless aggregate signature scheme with dynamic revocation in vehicular ad-hoc networks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In its decisional form, the module-Lattice Isomorphism Problem (decision module-LIP) has received first attention in a paper by Ling, Liu and Mendelsohn. The authors gave a polynomial-time algorithm to distinguish spinor genera within the genus of a quadratic binary $\\mathcal{O}_F$-lattice, assuming that $\\mathcal{O}_F$ is a principal ideal domain. However, this algorithm would not impact cryptographic schemes based on decision module-LIP for lattices such as those employed in HAWK, i.e., for binary $\\mathcal{O}_K$-lattices equipped with an Hermitian form (with $K$ a cyclotomic number field). Motivated by HAWK's framework, we investigate a concept that serves as an analogue of the spinor genus for Hermitian lattices, called special genus. This notion was studied by Shimura who provided a complete set of invariants for describing special genera. Building on this result, we propose an algorithm to determine whether two Hermitian lattices belong to the same special genus. Specifically for HAWK's lattice and sibblings, our algorithm runs in classical polynomial-time.  Nevertheless we provide numerical evidence suggesting that the ability to distinguish special genera does not, in practice, constitute a significative advantage for solving decision module-LIP.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institut de Math\u00e9matiques de Bordeaux",
+                    "ror": "https://ror.org/05m3r1b84"
+                },
+                {
+                    "name": "Inria Bordeaux - Sud-Ouest Research Centre",
+                    "ror": "https://ror.org/03tjcj052"
+                }
+            ],
+            "fullName": "Guilhem Mureau",
+            "orcid": "0009-0005-3057-6275"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T13:23:28Z"
+        }
+    ],
+    "keywords": [
+        "module-LIP",
+        "LIP",
+        "HAWK",
+        "module-lattice",
+        "cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/940.pdf",
+    "pid": "940",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Special Genera of Hermitian Lattices and Applications to HAWK",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Recent years have seen the widespread adoption of zkSNARKs constructed over small fields, including but not limited to, the Goldilocks field, small Mersenne prime fields, and tower of binary fields. Their appeal stems primarily from their efficacy in proving computations with small bit widths, which facilitates efficient proving of general computations and offers significant advantages, notably yielding remarkably fast proving efficiency for tasks such as proof of knowledge of hash preimages. Nevertheless, employing these SNARKs to prove algebraic statements (e.g., RSA, ECDSA signature verification) presents efficiency challenges. \r\n\r\nTo address this problem, we first define a new circuit model: arithmetic circuits with additional \\textit{exponentiation gates}. These gates serve as fundamental building blocks for establishing more intricate algebraic relations. Then we present a \\textit{Hash-committed Commit-and-Prove (HCP)} framework to construct Non-interactive Zero-knowledge (NIZK) proofs for the satisfiability of these circuits. Specifically, when proving knowledge of group exponentiations in discrete logarithm hard groups and RSA groups, compared to verifying complex group exponentiations within SNARK circuits, our approach requires proving only more lightweight computations within the SNARK, such as zk-friendly hash functions (e.g., Poseidon hash function). The number of these lightweight computations depends solely on the security parameter. This differentiation leads to substantial speedups for the prover relative to direct SNARK methods, while maintaining competitive proof size and verification cost.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China; School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Zhuo Wu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China; School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Shi Qi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China; School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Xinxuan Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China; School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Yi Deng"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Kun Lai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Technologies, Ant Group"
+                }
+            ],
+            "fullName": "Hailong Wang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T14:07:50Z"
+        }
+    ],
+    "keywords": [
+        "zkSNARK",
+        "Sigma Protocol",
+        "Algebraic Statement"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/941.pdf",
+    "pid": "941",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Proof of Exponentiation: Enhanced Prover Efficiency for Algebraic Statements",
+    "year": 2025,
+    "repo": [
+        "https://github.com/0xPolygonZero/plonky2/blob/main/plonky2/plonky2.pdf",
+        "https://github.com/0xPolygonZero/plonky2/blob/main/plonky2/plonky2.pdf",
+        "https://github.com/Plonky3/Plonky3/tree/main?tab=readme-ov-file#benchmarks",
+        "https://github.com/Plonky3/Plonky3/tree/main?tab=readme-ov-file#benchmarks"
+    ]
+}
+,
+{
+    "abstract": "The Nakamoto consensus protocol underlying the Bitcoin blockchain uses proof of work as a voting mechanism. Honest miners who contribute hashing power towards securing the chain try to extend the longest chain they are aware of. Despite its simplicity, Nakamoto consensus achieves meaningful security guarantees assuming that at any point in time, a majority of the hashing power is controlled by honest parties. This also holds under ``resource variability'', i.e., if the total hashing power varies greatly over time.\r\n\r\nProofs of space (PoSpace) have been suggested as a more sustainable replacement for proofs of work. Unfortunately, no construction of a ``longest-chain'' blockchain based on PoSpace, that is secure under dynamic availability, is known. In this work, we prove that without additional assumptions no such protocol exists. We exactly quantify this impossibility result by proving a bound on the length of the fork required for double spending as a function of the adversarial capabilities. This bound holds for any chain selection rule, and we also show a chain selection rule (albeit a very strange one) that almost matches this bound.  \r\n\r\nConcretely, we consider a security game in which the honest parties at any point control $\\phi>1$ times more space than the adversary. The adversary can change the honest space by a factor $1\\pm \\varepsilon$ with every block (dynamic availability), and ``replotting'' the space (which allows answering two challenges using the same space) takes as much time as $\\rho$ blocks.\r\n\r\nWe prove that no matter what chain selection rule is used, in this game the adversary can create a fork of length $\\phi^2\\cdot \\rho / \\varepsilon$ that will be picked as the winner by the chain selection rule.\r\n\r\nWe also provide an upper bound that matches the lower bound up to a factor $\\phi$. There exists a chain selection rule (albeit a very strange one) which in the above game requires forks of length at least $\\phi\\cdot \\rho / \\varepsilon$.\r\n\r\n\r\n\r\nOur results show the necessity of additional assumptions to create a secure PoSpace based longest-chain blockchain. The Chia network in addition to PoSpace uses a verifiable delay function. \r\nOur bounds show that an additional primitive like that is necessary.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ISTA, Austria"
+                }
+            ],
+            "fullName": "Mirza Ahad Baig"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ISTA, Austria"
+                }
+            ],
+            "fullName": "Krzysztof Pietrzak"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T14:58:30Z"
+        }
+    ],
+    "keywords": [
+        "Proof-of-Space",
+        "Blockchains",
+        "Impossibility"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Full version of the paper published at FC'25",
+    "pdffile": "2025/942.pdf",
+    "pid": "942",
+    "pubtype": {
+        "note": "Financial Cryptography and Data Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the (in)security of Proofs-of-Space based Longest-Chain Blockchains",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this work, we investigate the security assumptions required to prove the adaptive security of threshold signatures. Adaptive security is a strong notion of security that allows an adversary to corrupt parties at any point during the execution of the protocol, and is of practical interest due to recent standardization efforts for threshold schemes. Towards this end, we give two different impossibility results.\r\n\r\nWe begin by formalizing the notion of a key-unique threshold signature scheme, where public keys have a unique correspondence to secret keys and there is an efficient algorithm for checking that public keys are well-formed. Key-uniqueness occurs in many threshold schemes that are compatible with standard, single-party signatures used in practice, such as BLS, ECDSA, and Schnorr signatures.\r\n\r\nOur first impossibility result demonstrates that it is impossible to prove the adaptive security of any key-unique threshold signature scheme under any non-interactive computational assumption for a broad class of reductions, in the range $\u230at/2\u230b< t_c \u2264 t$, where $n$ is the total number of parties, $t_c$ is the number of corrupted parties, and $t+ 1$ is the threshold. We begin by ruling out full adaptive security (i.e., $t_c = t$ corruptions) for key-unique threshold signatures under non-interactive computational assumptions, including, but not limited to, the discrete logarithm (DL), computational Diffie-Hellman (CDH), and q-Strong Diffie-Hellman (q-SDH) assumptions. We then generalize this impossibility result for all $t_c$ such that $\u230at/2\u230b< t_c \u2264 t$.\r\n\r\nOur second impossibility result applies specifically to key-unique threshold Schnorr signatures, currently an active area of research. We demonstrate that, even under the interactive computational assumptions One-More Discrete Logarithm (OMDL) and Algebraic OMDL (AOMDL), it is impossible to prove adaptive security for $\u230at/2\u230b< t_c \u2264 t$ in the programmable ROM with rewinding.\r\n\r\nTaken together, our results underscore the difficulty of achieving adaptive security for key-unique threshold signatures. However, we believe this work can open a new line of research, by indicating assumptions and properties to aim for when constructing adaptively secure threshold schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Elizabeth Crites",
+            "orcid": "0000-0001-9992-1771"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo"
+                },
+                {
+                    "name": "NEAR One"
+                }
+            ],
+            "fullName": "Chelsea Komlo",
+            "orcid": "0000-0002-2294-2491"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                },
+                {
+                    "name": "PQShield"
+                }
+            ],
+            "fullName": "Mary Maller"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T18:08:27Z"
+        }
+    ],
+    "keywords": [
+        "adaptive security",
+        "threshold signatures",
+        "metareduction"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/943.pdf",
+    "pid": "943",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Adaptive Security of Key-Unique Threshold Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Witness encryption allows one to encrypt a message to an $\\mathsf{NP}$ relation $\\mathcal{R}$ and a statement $x$. The corresponding decryption key is any valid $\\mathsf{NP}$ witness $w$. In a succinct witness encryption scheme, we require that the size of the ciphertext be sublinear in the size of the $\\mathsf{NP}$ relation. Currently, all realizations of succinct witness encryption for $\\mathsf{NP}$ rely on strong assumptions such as pseudorandom obfuscation, extractable witness encryption, or differing-inputs obfuscation. Notably, none of these notions are known from standard assumptions.\r\n\r\nIn this work, we consider a relaxation of succinct witness encryption for $\\mathsf{NP}$ to the setting of batch $\\mathsf{NP}$. In this setting, one encrypts to an $\\mathsf{NP}$ relation $\\mathcal{R}$ together with $K$ statements $x_1, \\ldots, x_K$. In the basic version, one can decrypt if they have a witness $w_1, \\ldots, w_K$ for all $K$ statements. The succinctness requirement is that the size of the ciphertext should be sublinear in the number of instances $K$, but is allowed to grow with the size of the $\\mathsf{NP}$ relation (i.e., the size of a single instance). More generally, we can also impose a (monotone) policy $P \\colon \\{0,1\\}^K \\to \\{0,1\\}$ over the $K$ instances. In this case, decryption is possible only if there exists $w_1, \\ldots, w_K$ such that $P(\\mathcal{R}(x_1, w_1), \\ldots, \\mathcal{R}(x_K, w_K)) = 1$.\r\n\r\nIn this work, we initiate a systematic study of succinct witness encryption for batch languages. We start with two simple constructions that support CNF and DNF policies based on plain witness encryption in conjunction with a somewhere statistically sound batch argument for $\\mathsf{NP}$ or a function-binding hash function. Then, using indistinguishability obfuscation, we show how to support policies that can be computed by read-once bounded-space Turing machines. The latter construction is in fact a unique witness map for monotone-policy batch $\\mathsf{NP}$, and as such, also gives a SNARG for monotone-policy batch $\\mathsf{NP}$ where the size of the common reference string is sublinear in the number of instances.\r\n\r\nFinally, we demonstrate some immediate applications of succinct witness encryption for batch languages. We construct new succinct computational secret sharing schemes for CNFs, DNFs, and weighted threshold policies. We also show how to build distributed monotone-policy encryption, a notion that generalizes recent trustless primitives like distributed broadcast encryption and threshold encryption with silent setup.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Lalita Devadas"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                },
+                {
+                    "name": "Johns Hopkins University",
+                    "ror": "https://ror.org/00za53h95"
+                }
+            ],
+            "fullName": "Abhishek Jain"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                },
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Brent Waters"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "David J. Wu"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T18:42:07Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/944.pdf",
+    "pid": "944",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Succinct Witness Encryption for Batch Languages and Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
