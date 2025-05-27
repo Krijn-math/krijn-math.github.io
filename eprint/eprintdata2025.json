@@ -67341,4 +67341,895 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "In this work, we study the quantum security of key-alternating ciphers (KAC), a natural multi-round generalization of the Even\u2013Mansour (EM) cipher underlying many block cipher constructions, including AES. While the classical security of KAC and the quantum security of the $1$-round KAC (i.e. Even-Mansour) cipher are well understood, the quantum resistance of multi-round KAC remains largely unexplored. We focus on the $2$-round KAC construction, defined using public $n$-bit permutations $P_1$, $P_2$ and keys $k_0$, $k_1$, and $k_2$ as $E(x) = P_2(P_1(x \\oplus k_0) \\oplus k_1) \\oplus k_2.$ Our main contributions are as follows: \r\n\r\n1. Quantum Lower Bounds. We provide the first formal analysis showing that a $2$-round KAC is quantum-secure in both the $Q1$ and $Q2$ models. Specifically, in the $Q1$ model, a (non-adaptive) adversary must make at least $2^{2n/5}$ quantum queries to the public permutations and at least $2^{2n/5}$ classical queries to the cipher in order to distinguish it from a random permutation (in contrast to the classical lower bound of $2^{2n/3}$ queries). As a corollary, we show that in the $Q2$ model, a (non-adaptive) adversary requires $2^{n/4}$ quantum queries. To achieve such a result, we employ the quantum hybrid method along with recently proposed lifting theorems in the ideal cipher and random permutation oracle model. \r\n\r\n2. Quantum Key-Recovery Attack. We give the first nontrivial quantum key-recovery attack on multi-round KAC in the $Q1$ model where the adversary has quantum access to all of the public permutations. Our quantum attack applies to any $t$-round KAC and achieves quantum query complexity $O(2^{\\alpha n})$, where $\\alpha = \\frac{t(t+1)}{(t+1)^2 + 1}$, improving over the best known classical bound of $O(2^{\\alpha' n})$, where $\\alpha' = \\frac{t}{t+1}$, from Bogdanov et al. (EUROCRYPT 2012). The attack leverages a novel application of quantum walk algorithms specifically adapted to the KAC structure.\r\n\r\n3. The $Q1^*$ Model. To bridge the classical and $Q1$ settings, we introduce the $Q1^*$, in which the adversary has quantum superposition access to at most one permutation. This model is crucial for our $Q1$ lower bound and supports similar key-recovery attacks to Q1, using fewer quantum resources. We believe $Q1^*$ is of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Virginia Tech",
+                    "ror": "https://ror.org/02smfhw86"
+                }
+            ],
+            "fullName": "Chen Bai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Virginia Tech",
+                    "ror": "https://ror.org/02smfhw86"
+                }
+            ],
+            "fullName": "Mehdi Esmaili"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Virginia Tech",
+                    "ror": "https://ror.org/02smfhw86"
+                }
+            ],
+            "fullName": "Atul Mantri"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-23T19:40:38Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Cryptanalysis",
+        "Key-Alternating Ciphers",
+        "Even--Mansour",
+        "Post-Quantum Cryptography",
+        "Quantum Query Complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/945.pdf",
+    "pid": "945",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum Security Analysis of the Key-Alternating Ciphers",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Logup argument (in it's modern GKR version, as described in eprint:2023/1284 paper) is a logarithmic derivative-based unindexed lookup argument. An indexed lookup argument can be constructed from unindexed one using standard trick.\r\n    \r\n    In this short informal note, we explain a different way of obtaining indexed lookup from logup, which does not commit any additional arrays of the size of the indexing array. That makes it particularly amenable for lookups in small tables (giving, to our knowledge, a first argument with this property).\r\n\r\n    Additionally, this argument is not subject to numerator overflow issue that requires additional mitigation described in eprint:2024/2067.\r\n\r\n    Improvements to SPARK / Lasso protocols are also discussed.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "[[alloc]init]"
+                }
+            ],
+            "fullName": "Lev Soukhanov"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-24T03:53:44Z"
+        }
+    ],
+    "keywords": [
+        "lookup arguments",
+        "multilinear commitment scheme",
+        "SNARKs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/946.pdf",
+    "pid": "946",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Logup*: faster, cheaper logup argument for small-table indexed lookups",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We analyze the post-quantum security of succinct interactive arguments constructed from interactive oracle proofs (IOPs) and vector commitment schemes. Specifically, we prove that an interactive variant of the \\emph{BCS transformation} is secure in the standard model against quantum adversaries when the vector commitment scheme is collapse binding.\r\n\r\nPrior work established the post-quantum security of Kilian's succinct interactive argument, a special case of the BCS transformation for one-message IOPs (i.e., PCPs). That analysis is inherently limited to one message because the reduction, like all prior quantum rewinding reductions, aims to extract classical information (a PCP string) from the quantum argument adversary. Our reduction overcomes this limitation by instead extracting a \\emph{quantum algorithm} that implements an IOP adversary; representing such an adversary classically may in general require exponential complexity.\r\n\r\nAlong the way we define \\emph{collapse position binding}, which we propose as the \\DoQuote{correct} definition of collapse binding for vector commitment schemes, eliminating shortcomings of prior definitions.\r\n\r\nAs an application of our results, we obtain post-quantum secure succinct arguments, in the standard model (no oracles), with the \\emph{best asymptotic complexity known}.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Alessandro Chiesa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Princeton University",
+                    "ror": "https://ror.org/00hx57361"
+                }
+            ],
+            "fullName": "Marcel Dall'Agnol"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Zijing Di"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Ziyi Guan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cornell University",
+                    "ror": "https://ror.org/05bnh6r87"
+                }
+            ],
+            "fullName": "Nicholas Spooner"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-24T08:44:56Z"
+        }
+    ],
+    "keywords": [
+        "succinct arguments",
+        "post-quantum security",
+        "quantum rewinding"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/947.pdf",
+    "pid": "947",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum Rewinding for IOP-Based Succinct Arguments",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Threshold linearly homomorphic encryption (ThLHE) is a useful cryptographic tool for secure computation in multi-party settings, with applications in electronic voting, secure multiparty computation (MPC), and beyond. Although ThLHE offers significant advantages such as low communication overhead, its adoption in modern systems is hindered by a critical dilemma between efficiency and utility. Precisely, existing ThLHE schemes either suffer from high decryption complexity\u2014typically $\\mathcal{O}(N^2\\log N)$ or worse for $N$ parties\u2014or impose extra restrictions on the message space or participant set, limiting their practicality in large-scale and dynamic settings.\r\n\r\n\r\nIn this work, we resolve this efficiency-utility dilemma for ThLHE by introducing a novel primitive termed message-space adapter (MeSA). By developing a lattice-based MeSA for exponential ElGamal (Exp-ElGamal), we mitigate the small-message restriction of Exp-ElGamal while preserving its efficient threshold decryption. This leads to the design of the first ThLHE scheme that achieves quasi-linear decryption complexity without restrictions on the message space or participant set. We implement a prototype of this new ThLHE scheme and validate the quasi-linear growth of its running time with respect to $N$.\r\n\r\nBeyond resolving this dilemma, we further extend the applications of our new ThLHE scheme. Specifically, we apply it to construct the first multi-party fully homomorphic encryption scheme with quasi-linear computation complexity and constant communication complexity, while supporting arbitrary threshold and dynamic participant set. This demonstrates the extra benefits of our ThLHE scheme with broader applicability.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology (Guangzhou)",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Yijia Chang",
+            "orcid": "0009-0008-4999-7821"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Defense Technology",
+                    "ror": "https://ror.org/05d2yfz11"
+                }
+            ],
+            "fullName": "Rongmao Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fujian Normal University",
+                    "ror": "https://ror.org/020azk594"
+                }
+            ],
+            "fullName": "Chao Lin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Southeast University",
+                    "ror": "https://ror.org/00cf0ab87"
+                }
+            ],
+            "fullName": "Songze Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Jinan University",
+                    "ror": "https://ror.org/02xe5ns62"
+                }
+            ],
+            "fullName": "Xinyi Huang"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-24T13:18:52Z"
+        }
+    ],
+    "keywords": [
+        "Threshold linearly HE",
+        "Message-space adapter",
+        "Exponential ElGamal",
+        "Multi-party fully HE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "note": "This is an initial version used to obtain an eprint link, so that the camera-ready version can cite the link as the full version.",
+    "pdffile": "2025/948.pdf",
+    "pid": "948",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Resolving the Efficiency-Utility Dilemma of Threshold Linearly Homomorphic Encryption via Message-Space Adapter",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Public-coin protocols are cryptographic protocols in which all messages sent by a specific party (typically the receiver or verifier) consist solely of random bits. These protocols have been extensively studied $\\textit{in the classical setting}$ due to their advantageous properties in several scenarios, such as the parallel repetition of interactive arguments, and the design of secure multi-party computation with low round complexity, among others. Curiously, $\\textit{post-quantum}$ constructions of public-coin protocols remain limited, particularly when optimization is sought in additional factors like round complexity or hardness assumptions.\r\n\r\nWe introduce the concept of $\\textit{almost-total puzzles}$, a novel cryptographic primitive characterized by two key properties: (i) hardness against any efficient adversary, and (ii) an \"almost-total\" guarantee of the existence of solutions, even when the puzzle generator is malicious. We demonstrate that this primitive can be derived from one-way functions in public-coin, requiring only two rounds. By leveraging this primitive, we obtain a family of new $\\textit{public-coin}$ results in both the classical and post-quantum settings, based on the $\\textit{minimal assumption} $ of (post-quantum) one-way functions, including: \r\n\r\n- five-round post-quantum extractable commitments and witness-indistinguishable arguments of knowledge, where the (knowledge) extractors achieve the $\\textit{coherently expected quantum-polynomial-time}$\r\n($\\mathsf{EQPT}_c$) simulation proposed by Lombardi, Ma, and Spooner [FOCS'22];\r\n\r\n- five-round classical extractable commitments that $\\textit{do not suffer from over extraction}$;\r\n\r\n- five-round classical delayed-input strong witness-indistinguishable arguments of knowledge, and delayed-input witness-hiding arguments of knowledge;\r\n\r\n- the five-round post-quantum analogue of the last item, but with the difference that (1) the input can be delayed until the third round, and (2) post-quantum arguments of knowledge are again defined w.r.t.  $\\mathsf{EQPT}_c$-simulation;\r\n\r\n- $O(\\log^* \\lambda)$-round post-quantum non-malleable commitments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Chinese University of Hong Kong",
+                    "ror": "https://ror.org/00t33hh48"
+                }
+            ],
+            "fullName": "Xiao Liang",
+            "orcid": "0000-0003-0858-9289"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Stony Brook University",
+                    "ror": "https://ror.org/05qghxh33"
+                }
+            ],
+            "fullName": "Omkant Pandey"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Stony Brook University",
+                    "ror": "https://ror.org/05qghxh33"
+                }
+            ],
+            "fullName": "Yuhao Tang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Takashi Yamakawa"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-24T15:35:40Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum",
+        "Public-Coin",
+        "Extraction",
+        "Simulation",
+        "Round Complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/949.pdf",
+    "pid": "949",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Almost-Total Puzzles and Their Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Poseidon and Poseidon2 are cryptographic hash functions designed for efficient zero-knowledge proof protocols and have been widely adopted in Ethereum applications. To encourage security research, the Ethereum Foundation announced a bounty program in November 2024 for breaking the Poseidon challenges, i.e. solving the CICO (Constrained Input, Constrained Output) problems for round-reduced Poseidon constructions. In this paper, we explain how to apply the Graeffe transform to univariate polynomial solving, enabling efficient interpolation attacks against Poseidon. We will provide an open-source code and details our approach for solving several challenges valued at $20000 in total. Compared to existing attacks, we improves 2^{13} and 2^{4.5} times in wall time and memory usage, respectively. For all challenges we solved, the cost of memory access turns out to be an essential barrier, which makes the security margin much larger than expected. We actually prove that the memory access cost for FFT grows as the 4/3-power of the input size, up to a logarithmic factor. This indicates the commonly used pseudo linear estimate may be overly conservative. This is very different from multivariate equation solving whose main bottleneck is linear algebra over finite fields. Thus, it might be preferable to choose parameters such that the best known attack is interpolation, as it presents more inherent hardness.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Ziyu Zhao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Xi\u2019an Jiaotong-Liverpool University",
+                    "ror": "https://ror.org/03zmrmn05"
+                },
+                {
+                    "name": "Basque Center for Applied Mathematics",
+                    "ror": "https://ror.org/03b21sh32"
+                }
+            ],
+            "fullName": "Jintai Ding"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-25T03:08:44Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/950.pdf",
+    "pid": "950",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Breaking Poseidon Challenges with Graeffe  Transforms and Complexity Analysis by FFT  Lower Bounds",
+    "year": 2025,
+    "repo": [
+        "https://github.com/HorizenLabs/poseidon2",
+        "https://github.com/HorizenLabs/poseidon2"
+    ]
+}
+,
+{
+    "abstract": "We revisit the security analysis of the permutation-based deterministic random bit generator~(DRBG) discussed by Coretti et al. at CRYPTO 2019. Specifically, we prove that their construction, based on the sponge construction, and hence called Sponge-DRBG in this paper, is secure up to $O\\left(\\min \\left\\{2^{\\frac{c}{2}}, 2^{\\frac{\\lambda}{2}}\\right\\}\\right)$ queries in the seedless robustness model, where $\\lambda$ is the required min-entropy and $c$ is the sponge capacity. This significantly improves the provable security bound from the existing $O\\left(\\min \\left\\{2^{\\frac{c}{3}}, 2^{\\frac{\\lambda}{2}}\\right\\}\\right)$ to the birthday bound. We also show that our bound is tight by giving matching attacks.\r\n\r\nAs the Multi-Extraction game-based reduction proposed by Chung et al. at Asiacrypt 2024 is not applicable to Sponge-DRBG in a straightforward manner, we further refine and generalize the proof technique so that it can be applied to a broader class of DRBGs to improve their provable security.\r\n \r\nWe also propose a new permutation-based DRBG, dubbed POSDRBG, with almost the optimal output rate $1$, outperforming the output rate $\\frac{r}{n}$ of Sponge-DRBG, where $n$ is the output size of the underlying permutation and $r=n-c$. We prove that POSDRBG is tightly secure up to $O\\left(\\min \\left\\{2^{\\frac{c}{2}}, 2^{\\frac{\\lambda}{2}}\\right\\}\\right)$ queries. Thus, to the best of our knowledge, POSDRBG is the first permutation-based DRBG that achieves the optimal output rate of 1, while maintaining the same level of provable security as Sponge-DRBG in the seedless robustness model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Woohyuk Chung",
+            "orcid": "0009-0002-3793-5291"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Seongha Hwang",
+            "orcid": "0000-0002-2166-6421"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Norma Inc. Seoul, Korea"
+                }
+            ],
+            "fullName": "Hwigyeom Kim",
+            "orcid": "0000-0002-3010-5116"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Jooyoung Lee",
+            "orcid": "0000-0001-5471-9350"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-25T08:09:27Z"
+        }
+    ],
+    "keywords": [
+        "Deterministic random bit generator",
+        "Seedless robustness model",
+        "Cryptographic sponge",
+        "Permutation",
+        "Provable security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Full version of the paper.",
+    "pdffile": "2025/951.pdf",
+    "pid": "951",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Enhancing Provable Security and Efficiency of Permutation-based DRBGs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In 2022, Antonov showed that SHA-256 does not satisfy some secure property that SPHINCS$^+$ needs, and a fogery attack based on this observation reduces the concrete classical security by approximately 40 bits of security. This illustrates a more general concern: the provable security of some hash-based signature schemes can be compromised when implemented with certain real-world hash functions, and motivates the need to design new functions with rigorous, provable security guarantees. Besides, it has been shown that from W-OTS to W-OTS$^+$, the security requirement for the hash function's collision resistance can be relaxed to second-preimage resistance (SPR), which means that it is possible to use some functions with SPR property to instantiate the underlying function family  $\\mathcal{F}_n$ in W-OTS$^+$, and obtain a provably secure W-OTS$^+$.\r\nIn this paper, we use multivariate quadratic functions (MQ functions) to  instantiate  $\\mathcal{F}_n$ in W-OTS$^+$, which yields the first provably secure W-OTS$^+.$ To prove its security, we need to derive the SPR property of MQ functions. The key is to show the $\\mathbf{NP}$-hardness of finding second preimages.\r\nFurthermore, we prove the multi-function, multi-target one-wayness (MM-OW) and the multi-function, multi-target second-preimage resistance (MM-SPR) of MQ functions, which implies the provable security of MQ-based W-OTS$^+$ in the multi-user setting, on the condition that the number of users is $O(n^{1-\\epsilon})$  for some $\\epsilon\\in (0,1)$, where $n$ is the security parameter.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Zijun Zhuang",
+            "orcid": "0009-0007-7729-5790"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Institute of Mathematical Sciences and Applications"
+                }
+            ],
+            "fullName": "Yingjie Zhang",
+            "orcid": "0000-0001-9745-0558"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Xi'an Jiaotong Liverpool University"
+                }
+            ],
+            "fullName": "Jintai Ding",
+            "orcid": "0000-0003-1257-7598"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-25T12:19:16Z"
+        }
+    ],
+    "keywords": [
+        "MQ-based W-OTS+",
+        "Provable Security",
+        "MQ Problem",
+        "Second-Preimage Resistance",
+        "Quadratic Polynomials",
+        "Multi-User Security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/952.pdf",
+    "pid": "952",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Provably Secure W-OTS$^+$ based on MQ Problem",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "$\\textsf{GCM}$ and $\\textsf{CCM}$ are block cipher (BC) based authenticated encryption modes. In multi-user (mu) security, a total number of BC invocations by all users $\\sigma$ and the maximum number of BC invocations per user $\\sigma_\\mathsf{u}$ are crucial factors. For $\\textsf{GCM}$, the tight mu-security bound has been identified as $\\frac{\\sigma_\\mathsf{u} \\sigma}{2^n} + \\frac{u p + u^2}{2^k}$, where $k$ and $n$ are respectively the key and block sizes, $u$ is the number of users, $p$ is the number of offline queries.In contrast, the $\\mathsf{CCM}$'s mu-security bound is still unclear. Two bounds of $\\frac{u \\sigma_\\mathsf{u}^2}{2^n} + \\frac{u p + u^2}{2^k}$ and $\\frac{\\sigma^2}{2^n} + \\frac{u p + u \\sigma}{2^k}$ have been derived by Luykx~et~al.~(Asiacrypt~2017) and Zhang~et~al.~(CCS~2024), respectively, but both are not tight and worse than the $\\textsf{GCM}$'s bound.  Moreover, methods to enhance mu security without disruptive changes in the scheme have been considered for $\\textsf{GCM}$, namely nonce randomization ($\\textsf{NR}$) to improve offline security and nonce-based key derivation ($\\textsf{KD}$) to improve online security, but their applicability to $\\textsf{CCM}$ has never been discussed. In this paper, we prove an improved mu-security bound of $\\textsf{CCM}$, which is tight, and reaches the $\\textsf{GCM}$'s bound. We then prove that $\\textsf{NR}$ and $\\textsf{KD}$ applied to $\\textsf{CCM}$ result in the same bounds for the case to $\\textsf{GCM}$. An important takeaway is that $\\textsf{CCM}$ is now proved to be as secure as $\\textsf{GCM}$. Moreover, we argue that $\\textsf{NR}$ and $\\textsf{KD}$ can be insufficient for some applications with massive data, and propose a new enhancement method called nonce-based and tag-based key derivation ($\\textsf{NTKD}$) that is applied to $\\textsf{GCM}$ and $\\textsf{CCM}$. We prove that the resulting schemes meet such real-world needs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Mitsubishi Electric Corporation"
+                }
+            ],
+            "fullName": "Yusuke Naito"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories and Associate of National Institute of Standards and Technology"
+                }
+            ],
+            "fullName": "Yu Sasaki"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Electro-Communications"
+                }
+            ],
+            "fullName": "Takeshi Sugawara"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T03:42:36Z"
+        }
+    ],
+    "keywords": [
+        "CCM",
+        "GCM",
+        "Multi-User Security",
+        "Security Proof",
+        "Nonce Randomization",
+        "Nonce-Based and Tag-Based Key Derivation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/953.pdf",
+    "pid": "953",
+    "pubtype": {
+        "note": "Preprint",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tight Multi-User Security of CCM and Enhancement by Tag-Based Key Derivation Applied to GCM and CCM",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "At the current state of the art, algebraic attacks are the most efficient method for finding preimages and collisions for arithmetization-oriented hash functions, such as the closely related primitives Poseidon/Poseidon2 and Neptune. In this paper, we revisit Gr\u00f6bner basis (GB) attacks that exploit subspace trails to linearize some partial rounds, considering both sponge and compression modes.\r\n\r\nStarting from Poseidon's original security evaluation, we identified some inaccuracies in the model description that may lead to misestimated round requirements. Consequently, we reevaluate and improve the proposed attack strategy. We find that depending on the concrete instantiation, the original security analysis of Poseidon under- or overestimates the number of rounds needed for security. Moreover, we demonstrate that GB attacks leveraging subspace trails can outperform basic GB attacks for Poseidon/Poseidon2 and Neptune.\r\n\r\nWe propose a variant of the previous attack strategy that exploits a crucial difference between Poseidon/Poseidon2 and Neptune: while Poseidon's inverse round functions have a high degree, Neptune's inverse external rounds maintain the same degree as the forward rounds. Using this new model, we demonstrate that Neptune's security in compression mode cannot be reduced to its security against the Constrained-Input-Constrained-Output (CICO) problem. To the best of our knowledge, this is the first time a concrete example has been provided where finding preimages is easier than solving the corresponding CICO problem.\r\n\r\nOur results emphasize the importance of considering the mode of operation in security analysis while confirming the overall security of Poseidon/Poseidon2 and Neptune against the presented algebraic attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology, Eindhoven, the Netherlands",
+                    "ror": "https://ror.org/02c2kyt77"
+                },
+                {
+                    "name": "Ponos Technology, Zug, Switzerland"
+                }
+            ],
+            "fullName": "Lorenzo Grassi",
+            "orcid": "0000-0003-1140-0520"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology, Graz, Austria",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Katharina Koschatko",
+            "orcid": "0009-0003-3109-146X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology, Graz, Austria",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Christian Rechberger",
+            "orcid": "0000-0003-1280-6020"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T06:08:44Z"
+        }
+    ],
+    "keywords": [
+        "Poseidon/Poseidon2",
+        "Neptune",
+        "Gr\u00f6bner Basis",
+        "Subspace Trail",
+        "Mode of Operation",
+        "Sponge (CICO)",
+        "Compression"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/954.pdf",
+    "pid": "954",
+    "pubtype": {
+        "pubtype": "TOSC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Poseidon and Neptune: Gr\u00f6bner Basis Cryptanalysis Exploiting Subspace Trails",
+    "year": 2025,
+    "repo": [
+        "https://github.com/anoma/taiga/tree/main/taiga_halo2",
+        "https://github.com/anoma/taiga/tree/main/taiga_halo2",
+        "https://github.com/iden3/circomlib/blob/master/circuits/poseidon.circom",
+        "https://github.com/iden3/circomlib/blob/master/circuits/poseidon.circom",
+        "https://github.com/ingonyama-zk/poseidon-hash",
+        "https://github.com/ingonyama-zk/poseidon-hash",
+        "https://github.com/NethermindEth/juno",
+        "https://github.com/NethermindEth/juno",
+        "https://github.com/starkware-industries/poseidon",
+        "https://github.com/starkware-industries/poseidon",
+        "https://github.com/0xPolygonZero/plonky2",
+        "https://github.com/risc0/risc0/tree/main/risc0/zkp/src/core/hash",
+        "https://github.com/risc0/risc0/tree/main/risc0/zkp/src/core/hash"
+    ]
+}
+,
+{
+    "abstract": "Symmetric primitives used in multi-party computation, fully homomorphic encryption, and zero-knowledge proofs are often defined over Finite Field $\\mathbb{F}_{q}$ with $q=2^t$ or an odd prime $p$. Integral attack is one of the most effective methods against such primitives due to the common use of low-degree non-linear layers. This in turn highlights the importance of a deeper understanding of degree growth. For ciphers defined over $\\mathbb{F}_{2^t}$, numerous works have explored the growth of the algebraic degree. However, these methods cannot be directly applied to $\\mathbb{F}_{p}$. At CRYPTO 2020, Beyne et al. extended the integral cryptanalysis to $\\mathbb{F}_{p}$ by comparing degree with $s(p-1)$ when using $p^s$ data. However, given that the precise degree evaluation remains fundamentally challenging and often computationally infeasible, one may lose better integral distinguishers.\r\n\r\nIn this paper, we present the first automatic search model over $\\mathbb{F}_{p}$ based on the exact coefficient $\\mathcal{A}$ of the monomial $\\prod_{w=1}^{s}x_w^{p-1}$ contained in the algebraic representation. This model is constructed following the Computation-Traceback-Determine framework, where $\\mathcal{A}$ is represented by several sums of multinomial coefficients under specific conditions. The existence of integral properties is then transformed into a determination of whether these sums can consistently equal $0\\bmod{p}$. This determination is facilitated by four newly developed propositions based on Lucas Theorem. To demonstrate the effectiveness of our framework, we apply it to all variants of GMiMC. As a result, we achieve the best integral distinguishers for GMiMC-erf/-crf using large primes when they are used as block ciphers. For GMiMC-nyb/-mrf using 32/64-bit primes, our integral distinguishers cover more rounds than all other attacks. Meanwhile, all distinguishers we identified are no worse than those trivial ones predicted only considering the maximal degree. This shows the necessity of considering exact coefficients when searching for integral distinguishers over $\\mathbb{F}_p$. Our framework is further employed to assess the security of two HADES  designs: HadesMiMC and Poseidon2$^\\pi$. The results reveal that the full rounds at the beginning and end of HADES provide sufficient resistance against integral cryptanalysis.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptography and Digital Economy Security, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "Quan Cheng Shandong Laboratory, Jinan, China"
+                }
+            ],
+            "fullName": "Muzhou Li",
+            "orcid": "0009-0000-0260-9512"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptography and Digital Economy Security, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "Quan Cheng Shandong Laboratory, Jinan, China"
+                }
+            ],
+            "fullName": "Jiamin Cui"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptography and Digital Economy Security, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "Quan Cheng Shandong Laboratory, Jinan, China"
+                }
+            ],
+            "fullName": "Longzheng Cui"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptography and Digital Economy Security, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "Quan Cheng Shandong Laboratory, Jinan, China"
+                }
+            ],
+            "fullName": "Kai Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group, Beijing, China"
+                }
+            ],
+            "fullName": "Chao Niu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University, Qingdao, China"
+                },
+                {
+                    "name": "State Key Laboratory of Cryptography and Digital Economy Security, Shandong University, Qingdao, China"
+                }
+            ],
+            "fullName": "Meiqin Wang"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T06:24:19Z"
+        }
+    ],
+    "keywords": [
+        "Prime Field",
+        "Integral Attacks",
+        "GMiMC",
+        "Lucas Theorem"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/955.pdf",
+    "pid": "955",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Towards Better Integral Distinguishers over $\\mathbb{F}_{p}$ Based on Exact Coefficients of Monomials",
+    "year": 2025,
+    "repo": [
+        "https://stp.github.io/"
+    ]
+}
+,
+{
+    "abstract": "Fully homomorphic encryption (FHE) is an appealing and promising solution for privacy-preserving transformer inference to protect users' privacy. However, the huge computational overhead makes it unrealistic to apply FHE in real-world transformers for large language models (LLM). Current FHE-based approaches to secure transformer inference face significant performance challenges, with total latency exceeding 5 hours for 32-input batches.\r\nThe feedforward block, comprising a large-scale matrix multiplication followed by a GELU evaluation, is widely recognized as one of the most computationally intensive components in privacy-preserving transformer inference. In the state-of-the-art system NEXUS, evaluating the feedforward block incurs a total latency of 5,378 seconds, processing up to 32 inputs per batch. \r\nWe aim to reduce the latency and propose LEAF, a low-latency evaluation architecture for the feedforward block. LEAF introduces a novel combination of fast matrix multiplication and an asymptotically efficient algorithm for computing non-polynomial activations. When evaluated on the BERT-base model, LEAF reduces total latency to 53.4 seconds, offering a $100\\times$ speedup over the state-of-the-art method in the same environment. Our implementations are available.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Linru Zhang",
+            "orcid": "0009-0001-2645-4479"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Xiangning Wang",
+            "orcid": "0009-0000-5742-3678"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Chinese Academy of Sciences",
+                    "ror": "https://ror.org/034t30j35"
+                }
+            ],
+            "fullName": "Xianhui Lu",
+            "orcid": "0000-0001-7091-5810"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Huaxiong Wang",
+            "orcid": "0000-0002-7669-8922"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Kwok Yan Lam",
+            "orcid": "0000-0001-7479-7970"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T07:16:29Z"
+        }
+    ],
+    "keywords": [
+        "Fully homomorphic encryption",
+        "Large-language model",
+        "Privacy-preserving AI",
+        "Non-polynomial function"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/956.pdf",
+    "pid": "956",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "LEAF: A Low-Latency Evaluation Architecture for Feedforward Block in Privacy-Preserving Transformer Inference",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Microsoft/SEAL"
+    ]
+}
 ]
