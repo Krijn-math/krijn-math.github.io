@@ -68232,4 +68232,615 @@
         "https://github.com/Microsoft/SEAL"
     ]
 }
+,
+{
+    "abstract": "Following Gentry's seminal work (STOC 2009), Fully Homomorphic Encryption (FHE) has made significant advancements and can even evaluate functions in the bootstrapping process, called functional bootstrapping. Recently, Liu and Wang (ASIACRYPT 2023) proposed a new approach to functional bootstrapping, which bootstrapped ciphertexts in 7ms amortized time. Their methods packed the secret key of the TFHE cryptosystem into a ciphertext of the BFV cryptosystem, followed by performing functional bootstrapping of TFHE within BFV. However, while this yields high amortized efficiency, it faces high latency and computational complexity of $\\mathcal{O}(\\sqrt{t})$ ciphertext-ciphertext multiplications due to use of large BFV plaintext primes that serve as the TFHE ciphertext modulus, $t = 65537$, to maximize SIMD slots.\r\n\r\nIn this work, we adapt their techniques to achieve lower latency functional bootstrapping by relaxing the requirement for prime BFV plaintext modulus to prime powers, $t = p^r$. We first introduce an improved linear transformation stage, multiplying Laurent Polynomial packed secret key and ciphertexts, $a_{ij}$ and $sk_j$, evaluating a $\\mathbb{Z}_{p^r}$ linear map. With this, we reduce the number of operations needed to evaluate the linear phase of bootstrapping. Finally, we generalize their functional bootstrapping procedure from plaintext space $\\mathbb{Z}_t$ to $\\mathbb{Z}_{p^r}$ via leveraging the digit extraction algorithm, achieving a theoretical complexity of $\\mathcal{O}(r^2\\sqrt{p})$ ciphertext-ciphertext multiplications. Additionally, we enable a multi-valued bootstrapping scheme that permits the evaluation of multiple functions over a shared input. To the best of our knowledge, this is the first demonstration of such a method for TFHE ciphertexts that relies predominantly on BFV-based techniques.\r\n\r\nIn our experiments, we achieve overall runtimes as low as 49.873s, representing latency reductions of at least $26\\times$, while noting a $19\\times$ slowdown in amortized performance.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "San Ling",
+            "orcid": "0000-0002-1978-3557"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Infocomm Research",
+                    "ror": "https://ror.org/053rfa017"
+                }
+            ],
+            "fullName": "Benjamin Hong Meng Tan",
+            "orcid": "0000-0002-8629-9052"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Huaxiong Wang",
+            "orcid": "0000-0002-7669-8922"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                },
+                {
+                    "name": "Institute for Infocomm Research",
+                    "ror": "https://ror.org/053rfa017"
+                }
+            ],
+            "fullName": "Allen Siwei Yang",
+            "orcid": "0009-0002-5452-3440"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T07:41:26Z"
+        }
+    ],
+    "keywords": [
+        "Fully Homomorphic Encryption",
+        "Linear Transformation",
+        "Functional Bootstrapping"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/957.pdf",
+    "pid": "957",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Laurent Polynomial-Based Linear Transformations for Improved Functional Bootstrapping",
+    "year": 2025,
+    "repo": [
+        "https://github.com/homenc/HElib/"
+    ]
+}
+,
+{
+    "abstract": "In pairings-based cryptographic applications, final exponentiation with a large fixed exponent ensures distinct outputs for the Tate pairing and its derivatives. Despite notable advancements in optimizing elliptic curves with even embedding degrees, improvements for those with odd embedding degrees, particularly those divisible by \\(3\\), remain underexplored. This paper introduces three methods for applying cyclotomic cubing in final exponentiation and enhancing computational efficiency. The first allows for the execution of one cyclotomic cubing based on the final exponentiation structure. The second leverages some existing seeds structure to enable the use of cyclotomic cubing and extends this strategy to generate new seeds. The third allows generating sparse ternary representation seeds to apply cyclotomic cubing as an alternative to squaring. These optimizations improve performance by up to $19.3\\%$ when computing the final exponentiation for the optimal Ate pairing on $BLS15$ and $BLS27$, the target elliptic curves of this study.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Science and technology for defense lab LR19DN01,  Center for military research, military academy,  Tunis, Tunisia"
+                }
+            ],
+            "fullName": "Walid Haddaji"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ITK Engineering GmbH, Im Speyerer Tal 6  R\u00fclzheim76761, Germany"
+                }
+            ],
+            "fullName": "Loubna Ghammam",
+            "orcid": "0000-0003-3438-1860"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratory of Secure System and Architecture (SSA), Ecole des Mines de880 Rte de Mimet,  Campus Georges Charpak Provence, 13120, Gardanne, France"
+                }
+            ],
+            "fullName": "Nadia El Mrabet",
+            "orcid": "0000-0003-3840-584X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratory of Analysis, Probability and Fractals, Faculty of Sciences, Environment Avenue, Omrane, 5000"
+                }
+            ],
+            "fullName": "Leila Ben Abdelghani"
+        }
+    ],
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T10:17:33Z"
+        }
+    ],
+    "keywords": [
+        "Elliptic curves",
+        "pairings",
+        "final exponentiation",
+        "cyclotomic cubing",
+        "arithmetic"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/958.pdf",
+    "pid": "958",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Pairings Final Exponentiation Using Cyclotomic Cubing for Odd Embedding Degrees Curves",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper blends post-quantum cryptography (PQC) and zero trust\r\narchitecture (ZTA) to secure the access for AI models, formalized through\r\nthe abstract mathematical lens of category theory. In this work, latticebased\r\nPQC primitives are assigned ZTA components that include microsegmentation\r\nand context-aware authentication, leading to a visual compositional\r\nframework that describes cryptographic workflows as morphisms\r\nand trust policies as functors, showing how category theory allows for\r\nfine-grained policies and adaptive trust. This quantum-resistant algorithm\r\nviewing perspective offers an ease for protection against adversarial\r\nAI threats. The paper uses a concrete implementation to attest to the\r\neffectiveness of the theoretical contribution, rendering it a crypto-agile\r\ntransition using categorical proofs for AI security .",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Walton Institute"
+                }
+            ],
+            "fullName": "Ilias Cherkaoui",
+            "orcid": "0000-0002-7638-0615"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Walton Institute"
+                }
+            ],
+            "fullName": "Ciaran Clarke"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "South East Technological University"
+                }
+            ],
+            "fullName": "Jerry Horgan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Walton Institute"
+                }
+            ],
+            "fullName": "Indrakshi Dey"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T10:20:50Z"
+        }
+    ],
+    "keywords": [
+        "Category theory",
+        "Post-quantum cryptography",
+        "Zero-Trust",
+        "AI"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/959.pdf",
+    "pid": "959",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Zero-Trust Post-quantum Cryptography Implementation Using Category Theory",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The beyond unforgeability features formalize additional security properties for signature schemes. We develop a general framework of binding properties for signature schemes that encompasses existing beyond unforgeability features and reveals new notions. Furthermore, we give new results regarding various transforms: We show that the transform by Cremers et al. (SP'21) achieves all of our security notions and provide requirements such that this is also the case for the transform by Pornin and Stern (ACNS'05). Finally, we connect our framework to unforgeability notions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Konstanz"
+                }
+            ],
+            "fullName": "Patrick Struck",
+            "orcid": "0000-0001-7738-2017"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Regensburg",
+                    "ror": "https://ror.org/01eezs655"
+                }
+            ],
+            "fullName": "Maximiliane Weish\u00e4upl"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T13:46:27Z"
+        }
+    ],
+    "keywords": [
+        "Signature schemes",
+        "Beyond Unforgeability",
+        "BUFF"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/960.pdf",
+    "pid": "960",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Framework for Advanced Signature Notions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In ToSC 2025(1), Jia et al. proposed an SAT-aided automatic search tool for the S-box design. A part of the functionality of this tool is to search for implementations of an S-box with good area and gate-depth complexity. However, it is well-known that the gate depth complexity cannot precisely reflect the latency of an implementation. To overcome this problem, Rasoolzadeh introduced the concept of latency complexity, a more precise metric for the latency cost of implementing an S-box than the gate depth complexity in the real world.\r\nIn this addendum, we adapt Jia et al.'s tool to prioritize latency as the primary metric and area as the secondary metric to search for good implementations for existing S-boxes. The results show that the combination of Jia et al.'s tool and Rasoolzadeh's latency complexity can lead to lower-latency S-box implementations. For S-boxes used in LBlock, Piccolo, SKINNY-64, RECTANGLE, PRESENT and TWINE, which are popular targets in this research line, we find new implementations with lower latency. We conducted synthesis comparisons of the area and latency under multiple standard libraries, where our results consistently outperformed in terms of latency. For example, for LBlock-S0, our solution reduces latency by around 50.0% \u223c73.8% compared to previous implementations in TSMC 90nm library with the latency-optimized synthesis option.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Yu Sun"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Lixuan Wu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hangzhou Dianzi University",
+                    "ror": "https://ror.org/0576gt767"
+                }
+            ],
+            "fullName": "Chenhao Jia"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hangzhou Dianzi University",
+                    "ror": "https://ror.org/0576gt767"
+                }
+            ],
+            "fullName": "Tingting Cui"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Kai Hu",
+            "orcid": "0000-0003-3552-7200"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Meiqin Wang",
+            "orcid": "0000-0003-1580-6544"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T14:12:37Z"
+        }
+    ],
+    "keywords": [
+        "S-box",
+        "low-latency",
+        "automatic search",
+        "SAT"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/961.pdf",
+    "pid": "961",
+    "pubtype": {
+        "pubtype": "TOSC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Addendum to How Small Can S-boxes Be?",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we propose a new block cipher primitive, based on ring-LWE, which allows key rotation with a possible security update. This makes it possible to double the security of the ciphertext with each key rotation. Our scheme could therefore be used for long-term secret storage, allowing the security of the ciphertext to be adapted to the attacker's computing power, without the need for decryption.\r\n\r\nWe propose an implementation of our cryptographic scheme and prove its security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 C\u00f4te d'Azur"
+                }
+            ],
+            "fullName": "Thomas Pr\u00e9vost",
+            "orcid": "0009-0000-2224-8574"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 C\u00f4te d'Azur"
+                }
+            ],
+            "fullName": "Bruno Martin",
+            "orcid": "0000-0002-0048-5197"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 C\u00f4te d'Azur"
+                }
+            ],
+            "fullName": "Olivier Alibart",
+            "orcid": "0000-0003-4404-4067"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T14:26:59Z"
+        }
+    ],
+    "keywords": [
+        "Block cipher",
+        "Long-term secret storage",
+        "Key rotation",
+        "Security update",
+        "Ring-LWE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/962.pdf",
+    "pid": "962",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An almost key-homomorphic post-quantum block cipher with key rotation and security update for long-term secret storage",
+    "year": 2025,
+    "repo": [
+        "https://github.com/thomasarmel/block_cipher_updatable_security/blob/master/good_prime_generator.py",
+        "https://github.com/thomasarmel/block_cipher_updatable_security/blob/master/good_prime_generator.py",
+        "https://pkg.go.dev/github.com/cronokirby/saferith",
+        "https://github.com/thomasarmel/block_cipher_updatable_security/",
+        "https://github.com/thomasarmel/block_cipher_updatable_security/",
+        "https://github.com/thomasarmel/block_cipher_updatable_security/blob/master/iv_generator_good_mult_order.sage",
+        "https://github.com/thomasarmel/block_cipher_updatable_security/blob/master/iv_generator_good_mult_order.sage"
+    ]
+}
+,
+{
+    "abstract": "The sponge is a popular construction of hash function design. It operates with a $b$-bit permutation on a $b$-bit state, that is split into a $c$-bit inner part and an $r$-bit outer part. However, the security bounds of the sponge are most often dominated by the capacity $c$: If the length of the digest is $n$ bits, the construction achieves $\\min\\{n/2,c/2\\}$-bit collision resistance and $\\min\\{n,c/2\\}$-bit second preimage resistance (and a slightly more complex but similar bound for preimage resistance). In certain settings, these bounds are too restrictive. For example, the recently announced Chinese call for a new generation of cryptographic algorithms expects hash functions with 1024-bit digests and 1024-bit preimage and second preimage resistance, rendering the classical sponge design basically unusable, except with an excessively large permutation. We present the SPONGE-DM construction to salvage the sponge in these settings. This construction differs from the sponge by evaluating the permutation during absorption in a Davies-Meyer mode. We also present SPONGE-EDM, that evaluates potentially round-reduced permutations during absorption in Encrypted Davies-Meyer mode, and SPONGE-EDM$^c$, that optimizes the amount of feed-forward data in this construction. We prove that these constructions generically achieve $\\min\\{n/2,c/2\\}$-bit collision resistance as the sponge does, but they achieve $n$-bit preimage resistance and $\\min\\{n,c-\\log_2(\\alpha)\\}$-bit second preimage resistance, where $\\alpha$ is the maximum size of the first preimage in blocks. With such constructions, one could improve the security (resp., efficiency) without sacrificing the efficiency (resp., security) of hash-based signature schemes whose security relies solely on the (second) preimage resistance of the underlying hash functions. Also, one could use the $1600$-bit Keccak permutation with capacity $c=1088$ and rate $r=512$ to achieve $512$-bit collision resistance and $1024$-bit preimage and second preimage resistance, without making extra permutation calls. To encourage further cryptanalysis, we propose two concrete families of instances of SPONGE-EDM (expected to be weaker than SPONGE-DM), using SHA3 and Ascon. Moreover, we concretely demonstrate the security and performance advantages of these instances in the context of hashing and hash-based signing.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cryptology, University of Chinese Academy of Sciences, China"
+                }
+            ],
+            "fullName": "Siwei Sun"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cryptology, University of Chinese Academy of Sciences, China"
+                }
+            ],
+            "fullName": "Shun Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cryptology, University of Chinese Academy of Sciences, China"
+                }
+            ],
+            "fullName": "Zhiyu Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Security Group, Radboud University, Nijmegen, The Netherlands"
+                }
+            ],
+            "fullName": "Charlotte Lefevre"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Digital Security Group, Radboud University, Nijmegen, The Netherlands"
+                }
+            ],
+            "fullName": "Bart Mennink"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cryptology, University of Chinese Academy of Sciences, China"
+                }
+            ],
+            "fullName": "Zhen Qin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, China"
+                }
+            ],
+            "fullName": "Dengguo Feng"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-26T22:07:06Z"
+        }
+    ],
+    "keywords": [
+        "SHA3",
+        "Sponge",
+        "(Second) preimage resistance",
+        "Cryptographic permutations",
+        "Hash-based signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/963.pdf",
+    "pid": "963",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Permutation-Based Hashing with Stronger (Second) Preimage Resistance - Application to Hash-Based Signature Schemes",
+    "year": 2025,
+    "repo": [
+        "https://github.com/XKCP/XKCP",
+        "https://github.com/XKCP/XKCP"
+    ]
+}
+,
+{
+    "abstract": "The Transfer of Ownership Protocol (TOOP) enables a secure transfer of assets from Bitcoin to other blockchains and back. This is achieved through a committee-based validation protocol that requires only 1-out-of-nhonest security. The protocol operates in distinct phases: the lock phase, where the initial setup and individual assets are locked on Bitcoin, and the unlocking with ownership transfer phase, where the asset is transferred to a possibly different legitimate owner. This protocol solves a limitation of all existing BitVM-like protocols that restricts the unlocking transfers to only addresses known and preregistered during lock and setup. Accordingly, our protocol avoids the financially costly, regulatory problematic, and congestion-prone front-and-reimburse paradigm. TOOP has been implemented for the first time in Cardinal, a protocol for wrapping Bitcoin Unspent Transaction Outputs (UTxOs) onto the Cardano blockchain, with Bitcoin Ordinals represented as Cardano Non-Fungible Tokens (NFTs).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Fairgate Labs"
+                }
+            ],
+            "fullName": "Ariel Futoranski"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fairgate Labs"
+                },
+                {
+                    "name": "Sapienza University of Rome",
+                    "ror": "https://ror.org/02be6w209"
+                }
+            ],
+            "fullName": "Fadi Barbara"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fairgate Labs"
+                }
+            ],
+            "fullName": "Ramses Fernandez"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universidad de Buenos Aires"
+                },
+                {
+                    "name": "CONICET"
+                }
+            ],
+            "fullName": "Gabriel Larotonda"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Fairgate Labs"
+                }
+            ],
+            "fullName": "Sergio Lerner"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-27T02:40:40Z"
+        }
+    ],
+    "keywords": [
+        "Bitcoin",
+        "BitVMX",
+        "Interoperability"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/964.pdf",
+    "pid": "964",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "TOOP: A transfer of ownership protocol over Bitcoin",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
