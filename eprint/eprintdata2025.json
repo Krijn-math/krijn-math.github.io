@@ -68843,4 +68843,519 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Multiparty fully homomorphic encryption (MPFHE) is a generalization of (multi-key) fully homomorphic encryption ((MK)FHE) that lives on the cusp between multiparty computation (MPC) and FHE, enabling a computation over encrypted data using multiple keys. However, contrary to MKFHE it seeks to reduce the noise inflation based on the number of parties by allowing the parties to first compute shared data in MPC before executing the computation in FHE. Generally, MPFHE protocols have required ad-hoc constructions and adaptations to already existing protocols. In this work we present a new framework that standardizes the approach of MPFHE to allow the use of a broad spectrum of MPC and FHE protocols, while eliminating the noise inflation based on the participating number of parties. This presents the first ever multiparty FHE protocol which allows an arbitrary number of participants. We then show a case study of this using the FINAL scheme and show that we reduce the required key material by 40-99.9% compared to the MKFHE FINAL scheme, FINALLY, 8-71% compared to the AK\u00d6 scheme, and 65-70% compared to the Park-Rovira scheme. Moreover, we reduce the bootstrapping time for the AK\u00d6, Park-Rovira, and KMS schemes by 75-99.7%.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "3MI Labs"
+                }
+            ],
+            "fullName": "Robin Jadoul",
+            "orcid": "0000-0002-5997-9992"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Barry van Leeuwen",
+            "orcid": "0000-0002-3792-4042"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Oliver Zajonc",
+            "orcid": "0000-0001-9714-928X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-27T12:26:31Z"
+        }
+    ],
+    "keywords": [
+        "Multiparty Computation",
+        "Fully Homomorphic Encryption",
+        "Multiparty FHE",
+        "LWE",
+        "NTRU",
+        "Key Switching"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/965.pdf",
+    "pid": "965",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multiparty FHE Redefined: A Framework for Unlimited Participants",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KULeuven-COSIC/vinyl"
+    ]
+}
+,
+{
+    "abstract": "We give the first constructions of multiparty pseudorandom correlation generators, distributed point functions, and (negligible-error) homomorphic secret sharing for constant-degree polynomials for any number of parties without using LWE or iO. Our constructions are proven secure under the combination of LPN with dimension $n$, $2n$ samples, and noise rate $n^{\\varepsilon-1}$ for a small constant $\\varepsilon$, and MQ with $n$ variables and $n^{1+\\delta}$ equations.\r\n\r\nAs applications of our results, we obtain from the same assumptions secure multiparty computation protocols with sublinear communication and silent preprocessing, as well as private information retrieval for $M$ servers and size-$\\lambda^d$ databases with optimal download rate and client-to-server communication $M^d\\cdot \\lambda^3$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Universit\u00e9 Paris Cit\u00e9"
+                }
+            ],
+            "fullName": "Geoffroy Couteau",
+            "orcid": "0000-0002-6645-0106"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Oregon State University",
+                    "ror": "https://ror.org/00ysfqy60"
+                }
+            ],
+            "fullName": "Naman Kumar",
+            "orcid": "0009-0000-5316-6352"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Xiaxi Ye",
+            "orcid": "0009-0000-2912-4240"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-27T13:07:40Z"
+        }
+    ],
+    "keywords": [
+        "distributed point functions",
+        "pseudorandom correlation generators",
+        "homomorphic secret sharing",
+        "LPN",
+        "MQ"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/966.pdf",
+    "pid": "966",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multiparty Homomorphic Secret Sharing and More from LPN and MQ",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Registered functional encryption (RFE) is a generalization of public-key encryption that enables computation on encrypted data (like classical FE), but without needing a central trusted authority. Concretely, the users choose their own public keys and register their keys together with a function with an (untrusted) key curator. The key curator aggregates all of the individual public keys into a short master public key, which serves as the public key of the FE scheme.\r\n\r\nCurrently, we only know RFE constructions for restricted functionalities using standard assumptions, or for all circuits using powerful tools such as indistinguishability obfuscation, and only in the non-uniform model. In this work, we make progress on this front by providing the first lattice-based constructions of RFE for pseudorandom functionalities, where the model of computation is either non-uniform (unbounded depth circuits) or uniform (Turing machines). Intuitively, we call a functionality pseudorandom if the output of the circuit is indistinguishable from uniform for every input seen by the adversary. Security relies on LWE and a recently introduced primitive called pseudorandom FE (prFE), which currently can be instantiated from evasive LWE.\r\n\r\nWe illustrate the versatility of these new functionalities for RFE by leveraging them to achieve key-policy and ciphertext-policy registered attribute-based encryption and registered predicate encryption schemes (KP-RABE, CP-RABE and RPE) for both unbounded depth circuits and Turing machines. Existing RABE constructions support only bounded depth circuits, and prior to our work there neither existed RABE for uniform models of computation nor RPE. As an appealing feature, all our constructions enjoy asymptotic optimality in the sense that their parameters depend neither on the length of public attributes nor the size of policies.\r\n\r\nAlong the way, we can also improve on the state-of-the-art for classical attribute-based encryption (ABE) and predicate encryption (PE). Specifically, we obtain new constructions for KP-ABE, CP-ABE and PE for Turing machines with optimal asymptotic parameters. For KP-ABE, this is an in improvement in terms of efficiency, whereas for CP-ABE and PE we are not aware of any prior purely lattice-based construction supporting Turing machines.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology, KASTEL Security Research Labs"
+                }
+            ],
+            "fullName": "Tapas Pal",
+            "orcid": "0000-0001-6278-0418"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, \u00c9cole normale sup\u00e9rieure, PSL University, CNRS, Inria"
+                }
+            ],
+            "fullName": "Robert Sch\u00e4dlich",
+            "orcid": "0000-0001-8643-9046"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DIENS, \u00c9cole normale sup\u00e9rieure, PSL University, CNRS, Inria"
+                }
+            ],
+            "fullName": "Erkan Tairi",
+            "orcid": "0000-0002-2283-4829"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-27T14:52:55Z"
+        }
+    ],
+    "keywords": [
+        "registered functional encryption",
+        "unbounded depth circuits",
+        "Turing machines",
+        "lattice-based cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/967.pdf",
+    "pid": "967",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In TCC 2018, Boneh, Ishai, Passel\u00e8gue, Sahai, and Wu propose candidates of weak and strong PRFs by evaluating linear functions over coprime moduli alternatively. Such PRFs can be evaluated by low-depth circuits and are MPC-friendly. However, they have not been able to base the security of their PRFs on well-formed assumptions other than assuming that the PRF constructions themselves are secure.  \r\n\r\nIn this paper, we formalize a new assumption called Learning with Alternating Moduli (LAM). We show that over certain large moduli, the LAM assumption is as hard as the Learning with Errors (LWE) assumption. For LAM over constant moduli, we do not know how to base its hardness on the LWE assumption. Instead, we provide\r\n    (i) polynomial-time attacks on LAM with constant prime-power moduli and certain constant non-prime-power moduli, and\r\n    (ii) evidence of the sub-exponential hardness of LAM with other moduli by analyzing the effect of typical attacks.\r\n\r\nMore specifically, we put forward two new attacks. The first attack is a recursive algorithm that solves LWE with certain constant composite moduli and error distributions. The algorithm extends the Arora-Ge algorithm for LWE from prime moduli to composite moduli, and it also solves LAM for certain parameters. The second attack is a polynomial-time attack that rules out the existence of weak PRFs in $\\mathsf{NC}^0[p]$ for any prime $p$.\r\n\r\nBased on our studies, we propose candidate weak PRFs in $\\mathsf{NC}^0[p_1,p_2]$ for some distinct primes $p_1,p_2$ based on LAM over constant moduli, or the Learning with Rounding (LWR) assumption over constant moduli. Compared to the weak PRF candidates by Boneh et al., our weak PRF candidates live in the same complexity class while having the advantage of being based on well-formed assumptions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                },
+                {
+                    "name": "Shanghai Artificial Intelligence Laboratory",
+                    "ror": "https://ror.org/03wkvpx79"
+                },
+                {
+                    "name": "Shanghai Qi Zhi Institute"
+                }
+            ],
+            "fullName": "Yilei Chen",
+            "orcid": "0009-0000-1222-7235"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                },
+                {
+                    "name": "Shanghai Qi Zhi Institute"
+                }
+            ],
+            "fullName": "Liheng Ji"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                },
+                {
+                    "name": "Shanghai Qi Zhi Institute"
+                }
+            ],
+            "fullName": "Wenjie Li"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-27T14:58:36Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/968.pdf",
+    "pid": "968",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Learning with Alternating Moduli, Arora-Ge over Composite Moduli, and Weak PRFs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We initiate the study of a new abstraction \r\ncalled incremental decentralized data archival (${\\sf iDDA}$). \r\nSpecifically, imagine that there is an ever-growing, massive database such as a blockchain, a comprehensive  human knowledge base like Wikipedia,  or the Internet archive.  We want to build a decentralized archival of such datasets \r\nto ensure long-term robustness and sustainability.  \r\n\r\nWe identify several important properties\r\nthat an ${\\sf iDDA}$ scheme should satisfy. First, \r\nto promote heterogeneity and decentralization, \r\nwe want to encourage even weak nodes  with limited space (e.g., users' home computers) to contribute.  The minimum space requirement to contribute should be approximately independent of the data size.   Second, if a collection of nodes together receive rewards commensurate with contributing a total of $m$ blocks of space, then we want the following reassurances:  1) if $m$ is at least the database size, we should be able to reconstruct the entire dataset; and 2)  these nodes should actually be commiting roughly $m$ space in aggregate --- even when $m$ is much larger than the data size,  the nodes should be storing redundant copies of the database rather than storing just one copy, and yet impersonating arbitrarily many pseudonyms to get unbounded rewards.  \r\n\r\nWe propose new definitions  that mathematically formalize the aforementioned requirements of an ${\\sf iDDA}$ scheme. \r\nWe also devise an efficient construction in the random oracle model which satisfies the desired security requirements.   Our scheme incurs  only $\\widetilde{O}(1)$ audit cost, as well as  $\\widetilde{O}(1)$ update cost for both the publisher and each node, where $\\widetilde{O}(\\cdot)$ hides polylogarithmic factors. Further, the minimum space provisioning required to contribute is as small as polylogarithmic. \r\n\r\nOur construction exposes several interesting technical challenges. Specifically, we show that a straightforward application of the standard hierarchical data structure fails, since both our security definition and  the underlying cryptographic primitives we employ lack the desired compositional  guarantees. We devise novel techniques to overcome these compositional issues, resulting in a construction with provable security while still retaining efficiency. Finally, our new definitions also make a conceptual contribution, and lay the theoretical groundwork for the study of ${\\sf iDDA}$.   We raise several interesting open problems along this direction.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Elaine Shi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Rose Silver"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NUS and CMU"
+                }
+            ],
+            "fullName": "Changrui Mu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-27T17:06:25Z"
+        }
+    ],
+    "keywords": [
+        "data archival",
+        "composability",
+        "proof of retrievability",
+        "proof of replication",
+        "space-time tradoff"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/969.pdf",
+    "pid": "969",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Decentralized Data Archival: New Definitions and Constructions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A proof of quantumness (PoQ) allows a classical verifier to efficiently test if a quantum machine is performing a computation that is infeasible for any classical machine. In this work, we propose a new approach for constructing PoQ protocols where soundness holds unconditionally assuming a bound on the memory of the prover, but otherwise no restrictions on its runtime. In this model, we propose two protocols:\r\n    1. A simple protocol with a quadratic gap between the memory required by the honest parties and the memory bound of the adversary. The soundness of this protocol relies on Raz's (classical) memory lower bound for matrix inversion (Raz, FOCS 2016).\r\n    2. A protocol that achieves an exponential gap, building on techniques from the literature on the bounded storage model (Dodis et al., Eurocrypt 2023).\r\n\r\nBoth protocols are also efficiently verifiable. Despite having worse asymptotics, our first protocol is conceptually simple and relies only on arithmetic modulo 2, which can be implemented with one-qubit Hadamard and CNOT gates, plus a single one-qubit non-Clifford gate.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Giulio Malavolta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Tamer Mour"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-27T18:07:14Z"
+        }
+    ],
+    "keywords": [
+        "Proof of Quantumness",
+        "Bounded-Storage Model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/970.pdf",
+    "pid": "970",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "How to Verify that a Small Device is Quantum, Unconditionally",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Anonymous communication is vital for enabling individuals to participate in social discourse without fear of marginalization or persecution. An important but often overlooked part of anonymous communication is the bootstrapping of new communication channels, generally assumed to occur out-of-band. However, if the bootstrapping discloses metadata, communication partners are revealed even if the channel itself is fully anonymized. We propose Sabot, the first anonymous bootstrapping protocol that achieves both strong cryptographic privacy guarantees and bandwidth-efficient communication. In Sabot, clients cooperatively generate a private relationship matrix, which encodes who wants to contact whom. Clients communicate with k \u2265 2 servers to obtain \u201ctheir\u201d part of the matrix and augment the received information using Private Information Retrieval (PIR) to learn about their prospective communication partners. Compared to previous solutions, Sabot achieves stronger privacy guarantees and reduces the bandwidth overhead by an order of magnitude.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "Christoph Coijanovic",
+            "orcid": "0000-0002-5873-2859"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Laura Hetz",
+            "orcid": "0009-0000-3673-6421"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Kenneth G. Paterson",
+            "orcid": "0000-0002-5145-4489"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "Thorsten Strufe",
+            "orcid": "0000-0002-8723-9692"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-27T19:46:48Z"
+        }
+    ],
+    "keywords": [
+        "anonymous communication",
+        "bootstrapping",
+        "privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/971.pdf",
+    "pid": "971",
+    "pubtype": {
+        "note": "ACM CCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Sabot: Efficient and Strongly Anonymous Bootstrapping of Communication Channels",
+    "year": 2025,
+    "repo": [
+        "https://github.com/laurahetz/sabot",
+        "https://github.com/laurahetz/sabot",
+        "https://github.com/dedis/apir-code",
+        "https://github.com/dkales/dpf-go",
+        "https://github.com/dimakogan/checklist",
+        "https://github.com/FastFilter/xorfilter",
+        "https://github.com/ckocaogullar/pudding-protocol"
+    ]
+}
+,
+{
+    "abstract": "Some of the most valuable applications of homomorphic encryption, such as encrypted machine learning inference, require efficient large-scale plaintext-ciphertext and ciphertext-ciphertext matrix multiplications. Current state-of-the-art techniques for matrix multiplications all build on the ability to pack many ciphertexts into a ciphertext and compute on them in a Single Instruction, Multiple Data (SIMD) manner. However, to fit the operation of matrix multiplication into this computational model, a large number of additional costly operations need to be performed, such as the rotation of elements between the plaintext slots.\r\n\r\nIn this work, we propose an orthogonal approach to performing encrypted matrix operations with BGV-like encryption schemes, where the plaintext and ciphertext spaces are generalized to a matrix ring of arbitrary dimension. To deal with the inherent problem of noncommutativity in the case of matrix rings, we present a new superoperator technique to better represent linear and quadratic expressions in the secret key, which allows for the relinearization of ciphertexts after multiplication. The security of the modified encryption schemes is based on Module-LWE with module rank equal to the dimension of the matrices. With this construction, we demonstrate that Ring-LWE, Module-LWE, and LWE are potentially equally efficient for homomorphic encryption, both in terms of useful information density and noise growth, only for different sizes of matrices.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "E\u00f6tv\u00f6s Lor\u00e1nd University",
+                    "ror": "https://ror.org/01jsq2704"
+                }
+            ],
+            "fullName": "Bence Mali"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-05-28T06:15:44Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-05-27T20:45:51Z"
+        }
+    ],
+    "keywords": [
+        "homomorphic encryption",
+        "matrix multiplication"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/972.pdf",
+    "pid": "972",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Generalized BGV, BFV, and CKKS for Homomorphic Encryption over Matrix Rings",
+    "year": 2025,
+    "repo": [
+        "https://shaih.github.io/pubs/he-chapter.pdf",
+        "https://shaih.github.io/pubs/he-chapter.pdf"
+    ]
+}
 ]
