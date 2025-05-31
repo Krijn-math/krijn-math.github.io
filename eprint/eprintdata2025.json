@@ -69358,4 +69358,68 @@
         "https://shaih.github.io/pubs/he-chapter.pdf"
     ]
 }
+,
+{
+    "abstract": "Equivalence class signatures (EQS), introduced by Hanser\r\nand Slamanig (AC\u201914, J.Crypto\u201919), sign vectors of elements from a bi-\r\nlinear group. Their main feature is \u201cadaptivity\u201d: given a signature on a\r\nvector, anyone can transform it to a (uniformly random) signature on any\r\nmultiple of the vector. A signature thus authenticates equivalence classes\r\nand unforgeability is defined accordingly. EQS have been used to improve\r\nthe efficiency of many cryptographic applications, notably (delegatable)\r\nanonymous credentials, (round-optimal) blind signatures, group signa-\r\ntures and anonymous tokens. EQS security implies strong anonymity\r\n(or blindness) guarantees for these schemes which hold against malicious signers without trust assumptions.\r\n\r\nUnforgeability of the original EQS construction is proven directly in\r\nthe generic group model. While there are constructions from standard\r\nassumptions, these either achieve prohibitively weak security notions\r\n(PKC\u201918) or they require a common reference string (AC\u201919, PKC\u201922),\r\nwhich reintroduces trust assumptions avoided by EQS.\r\n\r\nIn this work we ask whether EQS schemes that satisfy the original secu-\r\nrity model can be proved secure under standard (or even non-interactive)\r\nassumptions with standard techniques. Our answer is negative: assum-\r\ning a reduction that, after running once an adversary breaking unforge-\r\nability, breaks a non-interactive computational assumption, we construct\r\nefficient meta-reductions that either break the assumption or break class-\r\nhiding, another security requirement for EQS.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Versailles Saint-Quentin-en-Yvelines University",
+                    "ror": "https://ror.org/03mkjjy25"
+                }
+            ],
+            "fullName": "Balthazar Bauer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Wien",
+                    "ror": "https://ror.org/04d836q62"
+                }
+            ],
+            "fullName": "Georg Fuchsbauer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Wien",
+                    "ror": "https://ror.org/04d836q62"
+                }
+            ],
+            "fullName": "Fabian Regen"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T07:47:44Z"
+        }
+    ],
+    "keywords": [
+        "Equivalence class signatures",
+        "impossibility",
+        "meta-reduction"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/973.pdf",
+    "pid": "973",
+    "pubtype": {
+        "pubtype": "PKC",
+        "revisiontype": "MINOR",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On Proving Equivalence Class Signatures Secure from Non-interactive Assumptions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
