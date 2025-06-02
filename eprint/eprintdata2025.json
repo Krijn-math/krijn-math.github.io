@@ -69422,4 +69422,2059 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "To prevent privacy-preserving digital assets from becoming instruments of despotism via unitary-executivist compliance regimes, we propose OptAttest, a hybrid zero-knowledge architecture. This system empowers users to optionally generate verifiable attestation history for the current (Hop 0) and immediately preceding (Hop 1) transactions involving their private commitments. For crucial 0-hop multi-list attestations, users employ Zero-Knowledge Proofs (ZKPs) of claims from selected Verifiable Credentials (VCs). Users achieve per-transaction efficiency with diverse VC types by pre-computing and caching proofs of their VC validity. This approach avoids mandated adherence to singular, fallible external standards. Opted-in lightweight updates create cryptographic accumulator summaries, verified by network infrastructure (e.g., Layer 2 scaling solutions using Zero-Knowledge Virtual Machines), and are paired with user-managed Intermediate Attestation Data Packets (IADPs) containing detailed evidence. For comprehensive verification, users can then generate full recursive proofs from these IADPs for their attestation-enabled funds, leveraging native zkVM recursion. The protocol facilitates optional attestation generation, not enforcement, allowing downstream policy application. Aiming to cultivate a permissionless ethos, we propose a user-centric balance between privacy and verifiable accountability, distinct from models compelling broader data access. Folding schemes are noted as potential future enhancements for recursive proof efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "iterabloom LLC"
+                }
+            ],
+            "fullName": "Joshua G. Stern",
+            "orcid": "0000-0003-0626-5467"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T08:42:32Z"
+        }
+    ],
+    "keywords": [
+        "Zero-Knowledge Proofs (ZKPs)",
+        "Privacy-Preserving Attestation",
+        "Verifiable Credentials (VCs)",
+        "zkVM",
+        "User Sovereignty"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "note": "Initial public version of this manuscript. Proposes a hybrid ZK architecture for optional attestations. Note: LLM assistance was used during drafting (see Acknowledgments).",
+    "pdffile": "2025/974.pdf",
+    "pid": "974",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "OptAttest: Verifying Multi-List Multi-Hop History via a Hybrid Zero-Knowledge Architecture",
+    "year": 2025,
+    "repo": [
+        "https://hyperledger.github.io/anoncreds-spec/",
+        "https://hyperledger.github.io/anoncreds-spec/",
+        "https://github.com/Plonky3/Plonky3",
+        "https://github.com/Plonky3/Plonky3"
+    ]
+}
+,
+{
+    "abstract": "Recently, the concept of incompressible encryption has emerged as a powerful enhancement to key-leakage resilience. In an incompressible encryption scheme, an adversary who intercepts ciphertexts is forced to dedicate a significant amount of memory to store them in full if they wish to extract any information about the plaintext later when the secret key becomes available. Given two messages, the security game involves two adversaries: the first adversary receives an encryption of one of the messages and produces a compressed state. Then, the second adversary, given both the secret key and the compressed state, attempts to determine which message was encrypted.\r\n\r\nSeveral positive results exist in incompressible cryptography. On the one hand, there are constructions based on minimal assumptions but with a poor rate (i.e., rate tends to 0). On the other hand, there are rate-1 constructions that achieve optimal efficiency but rely on strong cryptographic assumptions, such as obfuscation.\r\n\r\nA stronger security notion, known as everlasting security, has been proposed for incompressible encryption. In this formulation, the second adversary,  who receives the compressed state and the secret key, is allowed to be computationally unbounded. While this notion is conceptually appealing, no constructions of everlasting incompressible encryption are currently known, regardless of the underlying assumption or even in idealized models.\r\n\r\nIn this work, we give the first construction of everlasting incompressible encryption. In fact, we show that everlasting incompressible encryption is inherent in any sufficiently secure public-key encryption scheme. Specifically, we prove that any public-key encryption scheme with subexponential security (when instantiated with an appropriate security parameter) already satisfies the definition of everlasting incompressible encryption with subexponential security. Furthermore, our scheme achieves rate-1, improving upon existing results even for the weaker notion of standard incompressible encryption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University",
+                    "ror": "https://ror.org/03kgsv495"
+                }
+            ],
+            "fullName": "Eylon Yogev",
+            "orcid": "0000-0001-8599-2472"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University",
+                    "ror": "https://ror.org/03kgsv495"
+                }
+            ],
+            "fullName": "Shany Ben-David",
+            "orcid": "0000-0003-0479-9035"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T09:33:57Z"
+        }
+    ],
+    "keywords": [
+        "public-key encryption",
+        "incompressible encryption",
+        "everlasting security",
+        "forward security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/975.pdf",
+    "pid": "975",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Incompressible Encryption with Everlasting Security",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ccanonne/probabilitydistributiontoolbox/blob/master/learning.pdf",
+        "https://github.com/ccanonne/probabilitydistributiontoolbox/blob/master/learning.pdf"
+    ]
+}
+,
+{
+    "abstract": "We introduce the large block cipher Vistrutah, featuring 256- and 512-bit block sizes. Vistrutah is an iterated cipher where each \"step\" applies two AES rounds to each 128-bit block of the state, followed by a cell permutation across the entire state.\r\nBuilding upon established design principles from Simpira, Haraka, Pholkos, and ASURA, Vistrutah achieves high performance by leveraging AES instructions.\r\n\r\nFor each component of Vistrutah, we conducted a systematic evaluation of functions that can be efficiently implemented across different vector instruction set architectures.\r\nOur evaluation methodology combines latency estimation with security analysis, aiming to maximize the ratio of \"bits of security per unit of time.\"\r\nThis approach ensures we achieve the highest security or, equivalently, the best performance for this class of designs.\r\nImplementation results confirm the accuracy of our latency model.\r\n\r\nWe support our security claims with a comprehensive cryptanalysis.\r\n\r\nA core design principle is the use of an inline key schedule: all round keys are computed during each encryption or decryption operation without requiring memory storage.\r\nKey schedules like the AES's must precompute and store round keys in memory for acceptable performance. This creates security vulnerabilities: such implementations become more susceptible to memory read oracles and, as demonstrated by Kamal and Youssef, more vulnerable to cold boot attacks. We consider these designs unsuitable for modern software security requirements. Vistrutah's approach minimizes leakage to at most one value during context switches. Furthermore, expensive key schedules reduce key agility, limiting the design of modes of operation.\r\n\r\nVistrutah is particularly well-suited for Birthday-Bound modes of operation, including Synthetic IV modes and Accordion modes for 256-bit block ciphers. It also serves effectively as a building block for compression functions (such as Matyas-Meyer-Oseas) in wide Merkle\u2013Damg\\aa rd hash functions. Additionally, it can implement \"ZIP\" wide pseudo-random functions as recently proposed by Fl\u00f3rez-Guti\u00e9rrez et al. in 2024.\r\n\r\nOur cryptanalysis includes consideration of related-key security for two key reasons. First, strong related-key security demonstrates the robustness of both the key schedule and the cipher as a whole. Second, in counter-mode-based modes, Vistrutah's ability to change key with no overhead may allow the designer of a mode of operation to place counters (or values obtained from other update functions) in the key input rather than the plaintext input.\r\nThis approach makes it easier to achieve Beyond the Birthday Bound security.\r\n\r\nAs a by-product of this research, we identified design flaws in Ghidle that affect both its security and performance.\r\nOur security analysis accounts for these weaknesses.\r\nWe also developed Vistrutah-B, a variant of Vistrutah that addresses Ghidle's issues while maintaining comparable performance in most aspects. Nevertheless, Vistrutah retains superior diffusion properties.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Caesarea Rothschild Institute, University of Haifa"
+                }
+            ],
+            "fullName": "Roberto Avanzi",
+            "orcid": "0000-0003-2221-0757"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Bishwajit Chakraborty"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Independent Researcher"
+                }
+            ],
+            "fullName": "Eik List"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T10:06:22Z"
+        }
+    ],
+    "keywords": [
+        "Large Block Ciphers",
+        "AES Instructions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/976.pdf",
+    "pid": "976",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Large Block Cipher Family Vistrutah",
+    "year": 2025,
+    "repo": [
+        "https://dougallj.github.io/applecpu/firestorm.html",
+        "https://dougallj.github.io/applecpu/firestorm.html"
+    ]
+}
+,
+{
+    "abstract": "At Crypto 2009, Heninger and Shacham presented a branch-and-prune algorithm for reconstructing RSA private keys given a random fraction of its private components. This method is widely adopted in side-channel attacks, and its complexity is closely related to the specific leakage pattern encountered. In this work, we identified a novel leakage model in the Miller-Rabin primality test implemented in OpenSSL. Under certain side-channel attacks against fixed-window modular exponentiation (e.g., recovering the least significant $b$ bits from each window), the proposed model enables staggered recovery of bits in $p$ and $q$, reducing uncertainty in key reconstruction. In particular, this model includes previously undocumented scenarios where full key recovery is achievable without branching. To understand how the proposed leakage model could contribute to attacks on modular exponentiation, we investigated the global and local behavior of key reconstruction. Our evaluation demonstrates that the proposed scenarios enable more efficient key reconstruction and retain this advantage when additional erasure bits are introduced. Moreover, in specific cases, successful reconstruction remains achievable within practical time even if the bits obtained are less than 50%. Finally, we conducted a series of experiments to confirm the practicality of our assumption, successfully recovering the lower 4 bits from each 6-bit window.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Xiaolin Duan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Fan Huang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Yaqi Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Honggang Hu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T10:19:03Z"
+        }
+    ],
+    "keywords": [
+        "Partiakey exposure attacks",
+        "primality test",
+        "modular exponentiation",
+        "side-channel attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/977.pdf",
+    "pid": "977",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Novel Leakage Model in OpenSSL\u2019s Miller-Rabin Primality Test",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Distributed point functions (DPFs), introduced in 2014, are a widely used primitive in secure computation for a wide variety of applications. However, until now, constructions for DPFs with polylogarithmic-size keys have been known only for the two-party setting. We propose a scheme for a polylogarithmic-size DPF for an arbitrary number of parties. We use a technique where a secret-shared vector is mapped to collinear vectors by public matrices serves as an invariant for off-path leaves. We show, using a technique by Shamir, that when we work over Z_pq , these vectors are hard to compute if factoring is hard.\r\nWe also show that our scheme is a secure DPF, provided that two new assumptions hold, one of which is related to Generic Group Model and the other to MinRank. The output of our scheme is in the exponent in some group where Diffie-Hellman type problems are hard. Although this limits the usability of our scheme, we believe that our scheme is the first distributed point function for more than two parties with a key size that is polylogarithmic in the size of the domain and that does not use fully homomorphic encryption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Tartu",
+                    "ror": "https://ror.org/03z77qz90"
+                }
+            ],
+            "fullName": "Toomas Krips",
+            "orcid": "0000-0003-0981-3553"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cybernetica (Estonia)",
+                    "ror": "https://ror.org/054gqc795"
+                }
+            ],
+            "fullName": "Pille Pullonen-Raudvere",
+            "orcid": "0000-0002-3255-7001"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T10:28:38Z"
+        }
+    ],
+    "keywords": [
+        "secure multi-party computation",
+        "function secret sharing",
+        "secret sharing",
+        "distributed point functions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/978.pdf",
+    "pid": "978",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multi-Party Distributed Point Functions with Polylogarithmic Key Size from Invariants of  Matrices",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "RIPEMD-128 is an ISO/IEC standard hash function based on a double-branch Merkle-Damg\u00e5rd structure. Its compression function includes two branches with distinct Boolean functions and message expansion permutations. To perform a collision attack, differential characteristics must be constructed simultaneously for both branches under the same message word difference, and the message modification order must align with conditions in both branches. These factors make collision attacks on (reduced) RIPEMD-128 highly challenging.\r\nIn 2014, an attack on 40 steps of RIPEMD-128 was achieved by Wang with no state differences in round 3. In this work, we analyze message permutation properties and propose two new structures for creating message differences. These structures enable high-probability local collisions in both branches of round 3, extending the attack to more steps. Notably, the second structure can eliminate all state differences in round 3, allowing the attack to cover more than three whole rounds.\r\nTo ensure practical attacks, we limit the number of conditions based on our message modification strategy and use multi-step message modification techniques to control more conditions. As a result, we successfully generate colliding message pairs for 46-step and 54-step reduced RIPEMD-128, with time complexities of approximately $2^{42}$ and $2^{54}$, respectively.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Zhengrong Lu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                },
+                {
+                    "name": "Zhongguancun Laboratory"
+                }
+            ],
+            "fullName": "Hongbo Yu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Xiaoen Lin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Sitong Yuan"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T11:26:13Z"
+        }
+    ],
+    "keywords": [
+        "hash function",
+        "RIPEMD-128",
+        "collision attack",
+        "message difference",
+        "message modification"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/979.pdf",
+    "pid": "979",
+    "pubtype": {
+        "pubtype": "TOSC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Collision Attacks on Reduced RIPEMD-128",
+    "year": 2025,
+    "repo": [
+        "https://github.com/usernamelzr/ripemd128_attack",
+        "https://github.com/usernamelzr/cipher-auto-search-tool",
+        "https://github.com/usernamelzr/cipher-auto-search-tool"
+    ]
+}
+,
+{
+    "abstract": "We present an effective methodology for the formal verification of\r\n  practical cryptographic protocol implementations written in\r\n  Rust. Within a single proof framework, we show how to develop\r\n  machine-checked proofs of diverse properties like runtime safety,\r\n  parsing correctness, and cryptographic protocol security. All\r\n  analysis tasks are driven by the software developer who writes\r\n  annotations in the Rust source code and chooses a backend prover for\r\n  each task, ranging from a generic proof assistant like F$\\star$ to\r\n  dedicated crypto-oriented provers like ProVerif and SSProve Our\r\n  main contribution is a demonstration of this methodology on Bert13,\r\n  a portable, post-quantum implementation of TLS 1.3 written in Rust\r\n  and verified both for security and functional correctness.  To our\r\n  knowledge, this is the first security verification result for a\r\n  protocol implementation written in Rust, and the first verified\r\n  post-quantum TLS 1.3 library.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Cryspen"
+                }
+            ],
+            "fullName": "Karthikeyan Bhargavan",
+            "orcid": "0000-0002-3152-8997"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Lasse Letager Hansen",
+            "orcid": "0000-0003-3271-3593"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryspen"
+                }
+            ],
+            "fullName": "Franziskus Kiefer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryspen"
+                }
+            ],
+            "fullName": "Jonas Schneider-Bensch"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Bas Spitters",
+            "orcid": "0000-0002-2802-0973"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T11:54:39Z"
+        }
+    ],
+    "keywords": [
+        "post-quantum security",
+        "protocol security",
+        "formal analysis and verification",
+        "TLS 1.3",
+        "rocq",
+        "coq",
+        "ProVerif",
+        "F*"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "note": "Code and proofs https://github.com/cryspen/bertie",
+    "pdffile": "2025/980.pdf",
+    "pid": "980",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Formal Security and Functional Verification of Cryptographic Protocol Implementations in Rust",
+    "year": 2025,
+    "repo": [
+        "https://rust-lang.github.io/rust-project-goals/2025h1/std-contracts.html ",
+        "https://rust-lang.github.io/rust-project-goals/2025h1/std-contracts.html "
+    ]
+}
+,
+{
+    "abstract": "The LowMC-based post-quantum signature scheme Picnic was selected as a third-round candidate for NIST PQC, attracting wide attention to the design of efficient and secure post-quantum signature schemes using Symmetric Techniques for Advanced Protocols (STAP). Symmetric primitives designed for advanced protocols such as secure multi-party computation (MPC), fully homomorphic encryption (FHE), and zero-knowledge (ZK) proof systems, with the goal of reducing the number of multiplication operations, are  referred to as arithmetic-oriented (AO) primitives. These cryptographic primitives are typically constructed over large finite fields, which makes classical statistical analysis methods like differential and linear cryptanalysis inefficient. Due to their inherent algebraic properties, the mainstream security evaluation approaches are based on algebraic attacks. In this paper, we analyze the security of the MPC-friendly primitives \\textsc{Rain} (CCS 2022) and AIM (CCS 2023) used in the post-quantum signature schemes Rainier and AIMer. Existing algebraic attacks on \\textsc{Rain} and AIM were conducted over $\\mathbb{F}_2$. We propose a novel algebraic attack over $\\mathbb{F}_{2^n}$ that uses the polynomial decomposition to reduce degrees of equations. By further combining with the guess-and-determine technique, meet-in-the-middle modeling, and  resultant, we are able to attack \\textsc{Rain} and the full AIM.  Specifically, we successfully attacked 2-round \\textsc{Rain} with $2^{73.7}/2^{107.0}/2^{138.9}$ primitive calls, 3-round \\textsc{Rain} with $2^{160.6}/2^{236.0}/2^{311.1}$ primitive calls, for the $128/192/256$-bit key. For the full AIM, we successfully attacked it with $2^{114.0}/2^{163.2}/2^{228.3}$ primitive calls for the $128/192/256$-bit key. The attack complexities mainly lie in solving univariate polynomial equations and computing resultants, and hence the complexity evaluations are accurate.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University",
+                    "ror": "https://ror.org/00mm1qk40"
+                }
+            ],
+            "fullName": "Hong-Sen Yang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University",
+                    "ror": "https://ror.org/00mm1qk40"
+                }
+            ],
+            "fullName": "Qun-Xiong Zheng",
+            "orcid": "0000-0002-6929-1999"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University",
+                    "ror": "https://ror.org/00mm1qk40"
+                }
+            ],
+            "fullName": "Jing Yang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T12:15:19Z"
+        }
+    ],
+    "keywords": [
+        "Polynomial Decomposition",
+        "MITM",
+        "Rain",
+        "AIM",
+        "Guess-and-determine",
+        "Resultant"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/981.pdf",
+    "pid": "981",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Algebraic Cryptanalysis of AO Primitives Based on Polynomial Decomposition Applications to Rain and Full AIM-IIIIV",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Contrary to expectation, we show that simulation-based selective-opening security (SSO) does not imply indistinguishability-based selective opening security (ISO) in the CCA setting, making them incomparable in the presence of either encryption randomness leakage (sender opening) or secret key leakage (receiver opening). This contrasts the CPA case, where SSO-CPA is known to be strictly stronger than ISO-CPA in the presence of sender and/or receiver opening. Our separation result holds relative to all message distributions with sufficiently high min-entropy. On the other hand, restricting to message distributions with low enough min-entropy gives rise to an implication.\r\nOur separation result does not rely on the presence of selective openings. At a glance, this may seem to contradict known equivalence results between indistinguishability, semantic security, and selective opening security under trivial openings. We reconcile the apparent contradiction by showing that the selective-opening CCA landscape splits into a \u201chigh-entropy\u201d and a \u201clow-entropy\u201d world which must be considered separately.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Norwegian University of Science and Technology",
+                    "ror": "https://ror.org/05xg72x27"
+                }
+            ],
+            "fullName": "Hans Heum",
+            "orcid": "0000-0003-0527-2999"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T12:51:18Z"
+        }
+    ],
+    "keywords": [
+        "Public-Key Encryption",
+        "Selective Opening Attacks",
+        "CCA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/982.pdf",
+    "pid": "982",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Simulatability SOA Does Not Imply Indistinguishability SOA in the CCA Setting",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Symmetric-key authenticated key establishment (AKE) protocols are particularly well suited in resource constraint environments such as internet of things (IoT) devices. Moreover, they often rely on better understood assumptions than asymmetric ones. In this paper, we review the security model for symmetric-key AKE protocols. We show why several existing models allow trivial attacks while they do not protect against some non-trivial ones. We fix these issues with our new security definitions.\r\n\r\nWe show that the protocols $\\textrm{LP2}$ and $\\textrm{LP3}$ of Boyd et al. do not satisfy the claimed security properties. We propose a new 2-message protocol based on them, called $\\textrm{LP2+}$. This protocol is proved to satisfy correctness, weak synchronization robustness, entity authentication, key indistinguishability and, as a consequence, it admits perfect forward secrecy. An instantiation of $\\textrm{LP2+}$ is presented, whose security only relies on that of a pseudo-random function (PRF). Its total execution time in normal cases is dominated by only 14 evaluations of the PRF, making it a lightweight protocol that is particularly well suited for resource-constrained environments such as IoT devices.\r\n\r\nThe flaws found in the security models as well as in the security arguments could have been avoided with precise and detailed proofs. We thus take this paper as an opportunity to advocate for thorough security proofs. Therefore, we have made the choice of rigor over concision.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Military Academy",
+                    "ror": "https://ror.org/02vmnye06"
+                }
+            ],
+            "fullName": "Pierre-Alain Jacqmin",
+            "orcid": "0000-0001-9834-1433"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Military Academy",
+                    "ror": "https://ror.org/02vmnye06"
+                }
+            ],
+            "fullName": "Jean Li\u00e9nardy",
+            "orcid": "0009-0002-6377-0734"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T13:07:38Z"
+        }
+    ],
+    "keywords": [
+        "symmetric-key",
+        "authenticated key exchange",
+        "security proof",
+        "perfect forward secrecy",
+        "synchronization robustness",
+        "PRF"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/983.pdf",
+    "pid": "983",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "LP2+: a robust symmetric-key AKE protocol with perfect forward secrecy, and an advocacy for thorough security proofs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "After more than half a decade since its initiation, NIST declared Ascon as the winner of the LwC competition. In the first public draft of AsconAEAD128, NIST recognized that Ascon has limitations when used in multi-user applications. To mitigate this, NIST prescribed the use of a \\(256\\)-bit key in multi-user applications and produced an instantiation on how to process this extra key size in the current AsconAEAD128 API. While doing so, they identified a limitation of this new scheme (which we refer to as mu-Ascon in this document): mu-Ascon is vulnerable to committing attack and hence cannot be used in cases where committing security is required. On the other hand, the full key-binding property in Ascon, which separated it from other sponge-type constructions, has been used to show that Ascon is much stronger in the sense that it presents a key recovery resistance even in the case where some intermediate state is recovered. We remark that the current mu-Ascon has the limitation that only a partial key is bound during initialization and finalization. In this work, we propose some alternative instantiations of AsconAEAD128 API for multi-user applications. In comparison with the current mu-Ascon proposal, our first construction Ascon-256.v2 guarantees CMT-4 committing security up to 64 bits, and our second construction Ascon-256.v3 leads to both CMT-4 committing security and full 256-bit key binding. Structurally, our instantiations use only an extra-permutation call to provide these extra security features compared to mu-Ascon, which has a negligible overhead in terms of performance (given the lightweight nature of the Ascon permutation).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Bishwajit Chakraborty"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute, Kolkata, India"
+                }
+            ],
+            "fullName": "Mridul Nandi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute, Kolkata, India"
+                }
+            ],
+            "fullName": "Soumit Pal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Thomas Peyrin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University, Singapore"
+                }
+            ],
+            "fullName": "Quan Quan Tan"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T13:42:39Z"
+        }
+    ],
+    "keywords": [
+        "Ascon",
+        "Multi-user Security",
+        "256-bit Key",
+        "AEAD",
+        "Tight Security",
+        "Lightweight Cryptography"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/984.pdf",
+    "pid": "984",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "AsconAEAD128 Revisited in the Multi-user Setting",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We revisit the quantum security (in the QROM) of digital signature schemes that follow the Fiat-Shamir-with-aborts (FSwA) or the probabilistic hash-and-sign with retry/abort (HSwA) design paradigm. Important examples of such signature schemes are Dilithium, SeaSign, Falcon+ and UOV. In particular, we are interested in the UF-CMA-to-UF-NMA reduction for such schemes. We observe that previous such reductions have a reduction loss that is larger than what one would hope for, or require a more stringent notion of zero-knowledge than one would hope for.\r\n\r\nWe resolve this matter here by means of a novel UF-CMA-to-UF-NMA reduction that applies to FSwA and HSwA signature schemes simultaneously, and that offers an improved reduction loss (without making the zero-knowledge assumption more stringent).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University",
+                    "ror": "https://ror.org/02en5vm52"
+                },
+                {
+                    "name": "French National Centre for Scientific Research",
+                    "ror": "https://ror.org/02feahw73"
+                },
+                {
+                    "name": "Laboratoire de Recherche en Informatique de Paris 6",
+                    "ror": "https://ror.org/05krcen59"
+                }
+            ],
+            "fullName": "Pouria Fallahpour"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                },
+                {
+                    "name": "Leiden University",
+                    "ror": "https://ror.org/027bh9e22"
+                }
+            ],
+            "fullName": "Serge Fehr"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                }
+            ],
+            "fullName": "Yu-Hsuan Huang"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T13:43:50Z"
+        }
+    ],
+    "keywords": [
+        "Fiat-Shamir with aborts",
+        "post-quantum cryptography",
+        "random oracle model",
+        "QROM"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/985.pdf",
+    "pid": "985",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tighter Quantum Security for Fiat-Shamir-with-Aborts and Hash-and-Sign-with-Retry Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The smoothing parameter is a cornerstone concept in lattice-based cryptography. Traditionally defined using the \\( L^{\\infty} \\) distance, this standard formulation can be overly stringent compared to the \\( L^1 \\) (or statistical) distance more commonly employed in cryptographic contexts. Recent work has proposed relaxed definitions based on Kullback-Leibler (KL) divergence and \\( L^1 \\) distance, thereby loosening the constraints required for the distance to vanish. However, the additive nature of the \\( L^1 \\) distance can be limiting for cryptographic applications where probability preservation is essential. In this paper, we introduce the {R\u00e9nyi smoothing parameter} of a lattice, based on R\u00e9nyi divergence, to address this limitation. The advantages of R\u00e9nyi divergence in cryptographic settings are well known thanks to its multiplicative nature. The R\u00e9nyi smooting parameter provides a tunable framework that interpolates between the \\( L^1 \\) and \\( L^{\\infty} \\) distances, offering enhanced flexibility. We present two complementary methods to study the averaging behavior of the R\u00e9nyi flatness factor: one uses classical tools such as the Minkowski-Hlawka ensemble and Rogers\u2019 formula for computing lattice function moments; the other employs Construction A lattices derived from random codes. Finally, we illustrate how this new perspective yields improvements in lattice-based cryptographic constructions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Cong Ling"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CY Cergy Paris University",
+                    "ror": "https://ror.org/043htjv09"
+                }
+            ],
+            "fullName": "Laura Luzzi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Hao Yan"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T13:52:08Z"
+        }
+    ],
+    "keywords": [
+        "Lattice-based cryptography",
+        "Minkowski-Hlawka theorem",
+        "R\u00e9nyi divergence",
+        "Rogers' formula",
+        "smoothing parameter"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "preprint",
+    "pdffile": "2025/986.pdf",
+    "pid": "986",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The R\u00e9nyi Smoothing Parameter and Its Applications in Lattice-Based Cryptography",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secret sharing is a foundational cryptographic primitive for sharing secret keys in distributed systems. In a classical threshold setting, it involves a dealer who has a secret, a set of $n$ users to whom shares of the secret are sent, and a threshold $t$ which is the minimum number of shares required to recover the secret. These schemes offer an all-or-nothing security approach where less than $t$ shares reveal no information about the secret. But these guarantees are threatened by side-channel attacks which can leak partial information from each share. Initiated by Benhamouda et. al. (CRYPTO'18), the security of such schemes has been studied for precise and worst-case bounded leakage models. However, in practice, side-channel attacks are inherently noisy. In this work, we propose a noisy leakage model for secret sharing, where each share is independently leaked to an adversary corrupted by additive noise in the underlying field $\\mathbb{F}_q$. Under this model, we study the security of linear secret sharing schemes, and show bounds on the mutual information (MI) and statistical distance (SD) security metrics. We do this by using the MacWilliams' identity from the theory of error-correcting codes. For a given secret, it enables us to bound the the statistical deviation of the leaked shares from uniform as $\\delta^t$, where $\\delta$ is the Fourier bias of the added noise. Existing analyses for the security of linear $(n,t)$-threshold schemes only bound the SD metric, and show resilience for schemes with $t \\ge 0.668n$. In this work, we show that these constraints are artifacts of the bounded leakage model. In particular, we show that $(n,t)$-threshold schemes over $\\mathbb{F}_q$ with $t \\ge \\tau (n+1)$ leak $\\mathcal{O}(q^{-2t(\\gamma+1-1/\\tau)})$ bits about the secret, given the bias of added noise satisfies $\\delta \\le q^{-\\gamma}$. To the best of our knowledge, this is the first attempt towards understanding the side-channel security of linear secret sharing schemes for the MI metric.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/04t5xt781"
+                }
+            ],
+            "fullName": "Utkarsh Gupta",
+            "orcid": "0000-0001-8094-9416"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/04t5xt781"
+                }
+            ],
+            "fullName": "Hessam Mahdavifar",
+            "orcid": "0000-0001-9021-1992"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T16:58:23Z"
+        }
+    ],
+    "keywords": [
+        "Secret sharing",
+        "information theory",
+        "leakage resilience"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/987.pdf",
+    "pid": "987",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Security of Linear Secret Sharing Schemes with Noisy Side-Channel Leakage",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure multiparty computation allows multiple parties to jointly compute a function while maintaining security even in the presence of malicious adversaries. There are two types of adversaries in the literature: static adversaries, which choose the parties to corrupt before the protocol begins; and adaptive adversaries, which can corrupt parties during the execution of the protocol based on the messages exchanged by the parties. While adaptive security provides a more robust security guarantee, it may require too much in certain scenarios. Indeed, the adversary must allocate some of its resources to corrupt the parties; however, certain parties might be more susceptible to corruption, for instance, if they have not updated their operating system to the latest version.\r\n\r\nTo address this, we introduce a new security notion called \\emph{dynamic security}. Here, adversaries may corrupt new parties \\emph{during and after} the protocol's execution, but \\emph{cannot choose} targets based on the messages. A protocol is said to be $(t,h)$-dynamically secure if it is possible to simulate any adversary that can corrupt up to $t$ parties during the execution and $h$ thereafter. Dynamic security provides meaningful security for many real-world scenarios. Moreover, it circumvents known lower bounds on the communication complexity of adaptive security, allowing for more efficient protocols such as committee-based ones, which would be insecure against adaptive adversaries.\r\n\r\nWe further explore dynamic security and establish the following results.\r\n1. We show a surprising connection between dynamic security and the seemingly unrelated notion of security with friends and foes (FaF security), introduced by Alon et al. (CRYPTO 2020), which aims to protect honest parties not only from adversaries but also against other honest parties. The notion of $(t,h)$-\\emph{strong FaF security} strengthens this by requiring the simulatability of the joint view of any $t$ malicious parties alongside any $h$ honest parties to be indistinguishable from their real-world view. We show that $(t,h)$-dynamic security and $(t,h)$-strong FaF security are equivalent.\r\n\r\n2. We consider the feasibility of $(t,h)$-dynamic security and show that every $n$-party functionality can be computed with computational $(t,h)$-dynamic security (with guaranteed output delivery) if and only if $2t+h<n$. By our previous result, this also solves an open problem left by Alon et al. on the feasibility of strong FaF security.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Georgetown University",
+                    "ror": "https://ror.org/05vzafd60"
+                }
+            ],
+            "fullName": "Bar Alon",
+            "orcid": "0000-0002-8392-0245"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Ottawa",
+                    "ror": "https://ror.org/03c4mmv16"
+                }
+            ],
+            "fullName": "Naty Peter",
+            "orcid": "0000-0002-7378-0912"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T19:30:06Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/988.pdf",
+    "pid": "988",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Dynamic Security: A Realistic Approach to Adaptive Security With Applications to Strong FaF Security",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Multi-server Private Information Retrieval (PIR) is a cryptographic primitive that allows a client to retrieve an item of a database shared by multiple servers without revealing the index. This paper addresses the problem of error correction in multi-server PIR, enabling the client to obtain the item even when some servers provide incorrect responses. In a dishonest-majority setting where the majority of servers may introduce errors, it is known that the client can no longer uniquely determine the correct value. Previous approaches in this setting have typically settled for relaxed guarantees that the client can only reject incorrect values. However, these guarantees are substantially weak, as they only indicate the presence of errors without providing any information about the desired item. In this paper, we explore a more natural alternative called list-decodable PIR, which ensures that the client receives a small list of candidate values one of which is correct. We provide the first formal definition of list-decodable PIR and study its basic properties including a fundamental lower bound on the number of servers and the difficulty of simulation-based security definitions. We propose generic constructions of list-decodable PIR from any semi-honest PIR protocols, each offering different trade-offs. Our constructions improve upon the communication complexity of the only previously known protocol satisfying our definition. Furthermore, they achieve communication complexity comparable to that of the currently best known semi-honest PIR protocols.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Reo Eriguchi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Chuo University",
+                    "ror": "https://ror.org/03qvqb743"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                },
+                {
+                    "name": "ZenmuTech Inc."
+                }
+            ],
+            "fullName": "Kaoru Kurosawa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kyushu University",
+                    "ror": "https://ror.org/00p4k0j84"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Koji Nuida"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-28T23:33:53Z"
+        }
+    ],
+    "keywords": [
+        "private information retrieval",
+        "list decoding"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "A preliminary version of the paper has previously appeared in a preprint by the same authors (ePrint report 2023/210). The current version generalizes part of the techniques and presents more formal definitions and proofs.",
+    "pdffile": "2025/989.pdf",
+    "pid": "989",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "List Decoding in Private Information Retrieval: Formal Definition and Efficient Constructions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure multiparty computation (MPC) is a cryptographic primitive which enables multiple parties to jointly compute a function without revealing any extra information on their private inputs. Bottleneck complexity is an efficiency measure that captures the load-balancing aspect of MPC protocols, defined as the maximum amount of communication required by any party. In this work, we study the problem of establishing lower bounds on the bottleneck complexity of MPC protocols. While the previously known techniques for lower bounding total communication complexity can also be applied to bottleneck complexity, they do not provide nontrivial bounds in the correlated randomness model, which is commonly assumed by existing protocols achieving low bottleneck complexity, or they are applied only to functions of limited practical interest. We propose several novel techniques for lower bounding the bottleneck complexity of MPC protocols. Our methods derive nontrivial lower bounds even in the correlated randomness model and apply to practically relevant functions including the sum function and threshold functions. Furthermore, our lower bounds demonstrate the optimality of some existing MPC protocols in terms of bottleneck complexity or the amount of correlated randomness.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Reo Eriguchi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Keitaro Hiwatashi"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-29T00:51:57Z"
+        }
+    ],
+    "keywords": [
+        "secure multiparty computation",
+        "bottleneck complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/990.pdf",
+    "pid": "990",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lower Bounds on the Bottleneck Complexity of Secure Multiparty Computation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The advent of Large Language Models (LLM) has brought about a new wave productivity, revolutionizing business operations while keeping cost relatively low. The human-like interface of LLM enables it to be easily integrated with business functions, thereby freeing up precious human resources for more complex, valuable tasks. However, due to the intensive computation and memory requirements of LLM inference, it is preferable and cheaper to deploy LLMs with the Cloud Service Providers (CSP) that offer high performance computation resources and low-latency networking. Nevertheless, privacy concerns have been raised about the possibility of data leakage to the CSP. In this work, we seek to address such privacy concerns through the use of Fully Homomorphic Encryption (FHE). FHE enables the CSP to work on data in its encrypted form, thus ensuring that the data stay private and secure. We propose the implementation of LLM inference with FHE. While a series of prior work have demonstrated that it is possible to execute LLM inference in a private manner, it remains a challenge to design a solution that is practical.\r\nOur contributions are as follows: We provide the first end-to-end open-source implementation of a non-interactive transformer inference with FHE. We report an amortized time of 9.6 minutes of one input with 128 tokens when evaluating the BERT model on CPU. Our packing methods for encrypted matrices remove the need to repack ciphertext between encrypted matrix multiplication and activation layers. Additionally, we introduce interleaved batching to eliminate the internal rotations during ciphertext matrix multiplications. Our approach also avoids HE rotations in evaluations of the softmax and layerNorm, leading to a speedup of 4.22\u00d7 and 122\u00d7 than existing works respectively. Our implementation supports arbitrary token lengths, in contrast with existing solutions that requires a full token embedding. Our implementation can be found at GitHub.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Linru Zhang",
+            "orcid": "0009-0001-2645-4479"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Xiangning Wang",
+            "orcid": "0009-0000-5742-3678"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Jun Jie Sim",
+            "orcid": "0000-0002-3709-6929"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Zhicong Huang",
+            "orcid": "0000-0003-1338-611X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Jiahao Zhong"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Huaxiong Wang",
+            "orcid": "0000-0002-7669-8922"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ant Group"
+                }
+            ],
+            "fullName": "Pu Duan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Kwok Yan Lam",
+            "orcid": "0000-0001-7479-7970"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-29T05:30:53Z"
+        }
+    ],
+    "keywords": [
+        "Privacy inference",
+        "Fully homomorphic encryption",
+        "Transformer"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/991.pdf",
+    "pid": "991",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "MOAI: Module-Optimizing Architecture for Non-Interactive Secure Transformer Inference",
+    "year": 2025,
+    "repo": [
+        "https://github.com/huggingface/transformers/tree/main/examples/pytorch/text-classification",
+        "https://github.com/huggingface/transformers/tree/main/examples/pytorch/text-classification",
+        "https://github.com/Microsoft/SEAL"
+    ]
+}
+,
+{
+    "abstract": "Private Simultaneous Messages (PSM) is a kind of secure multiparty computation with minimal interaction pattern and minimal security requirement.  A PSM protocol is said to be with universal reconstruction for a given function family if the algorithm of the referee (the output party) is independent of a function to be computed and the referee cannot infer the function from a protocol execution.  In a recent work by Eriguchi and Shinagawa (EUROCRYPT 2025), they proposed a compiler to obtain a PSM protocol for symmetric functions from PSM protocols with universal reconstruction for symmetric functions with smaller domains.  They also constructed the latter PSM protocols with universal reconstruction, by which the former PSM protocol achieves communication complexity better than the previously known protocols.  In this paper, we construct the latter PSM protocols with universal reconstruction for symmetric functions more efficiently; the communication complexity is exponentially (in the input range) smaller than the protocols by Eriguchi and Shinagawa.  As a consequence, we also obtain a PSM protocol (and also an ad-hoc PSM protocol and a robust PSM protocol) for symmetric functions that is more efficient than their protocol.  Technically, a main ingredient of their protocols is a linear and injective encoding of histograms for the input elements, and our improvement is realized by finding a more efficient encoding of the histograms.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Kyushu University",
+                    "ror": "https://ror.org/00p4k0j84"
+                },
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Koji Nuida",
+            "orcid": "0000-0001-8259-9958"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-02T03:02:43Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-05-29T06:54:15Z"
+        }
+    ],
+    "keywords": [
+        "Private Simultaneous Messages",
+        "symmetric functions",
+        "universal reconstruction",
+        "encoding of histograms"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "(v2) Clarifying results on ad-hoc/robust PSM.",
+    "pdffile": "2025/992.pdf",
+    "pid": "992",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Private Simultaneous Messages Protocols for Symmetric Functions with Universal Reconstruction",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The lattice isomorphism problem (LIP) asks, given two lattices $\\Lambda_0$ and $\\Lambda_1$, to decide whether there exists an orthogonal linear map from $\\Lambda_0$ to $\\Lambda_1$. In this work, we show that the hardness of (a circular variant of) LIP implies the existence of a fully-homomorphic encryption scheme for all classical and quantum circuits. Prior to our work, LIP was only known to imply the existence of basic cryptographic primitives, such as public-key encryption or digital signatures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Pedro Branco"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bocconi University"
+                }
+            ],
+            "fullName": "Giulio Malavolta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Max Planck Institute for Software Systems"
+                }
+            ],
+            "fullName": "Zayd Maradni"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-29T12:02:38Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/993.pdf",
+    "pid": "993",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fully-Homomorphic Encryption from Lattice Isomorphism",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper proves the RLWE-PLWE equivalence for the maximal real subfields of the cyclotomic fields with conductor $n = 2^r p^s$, where $p$ is an odd prime, and $r \\geq 0$ and $s \\geq 1$ are integers. In particular, we show that the canonical embedding as a linear transform has a condition number bounded above by a polynomial in $n$. In addition, we describe a fast multiplication algorithm in the ring of integers of these real subfields. The multiplication algorithm uses the fast Discrete Cosine Transform (DCT) and has computational complexity $\\mathcal{O}(n \\log n)$. This work extends the results of Ahola et al., where the same claims are proved for a single prime $p = 3$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Fundaci\u00f3n Universitaria Konrad Lorenz",
+                    "ror": "https://ror.org/03ca7a577"
+                }
+            ],
+            "fullName": "Wilmar Bola\u00f1os",
+            "orcid": "0009-0008-8267-9972"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universidad de Alcal\u00e1",
+                    "ror": "https://ror.org/04pmn0e78"
+                }
+            ],
+            "fullName": "Antti Haavikko"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universidad Complutense de Madrid",
+                    "ror": "https://ror.org/02p0gd045"
+                },
+                {
+                    "name": "Indra Sistemas de Comunicaciones Seguras",
+                    "ror": "https://ror.org/00vpq6g39"
+                }
+            ],
+            "fullName": "Rodrigo M. S\u00e1nchez-Ledesma",
+            "orcid": "0009-0001-1845-2959"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-29T14:09:57Z"
+        }
+    ],
+    "keywords": [
+        "ring learning with errors",
+        "polynomial learning with errors",
+        "fast multiplication",
+        "discrete cosine transform"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/994.pdf",
+    "pid": "994",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Fast Multiplication Algorithm and RLWE-PLWE Equivalence for the Maximal Real Subfield of the $2^r p^s$-th Cyclotomic Field",
+    "year": 2025,
+    "repo": [
+        "https://github.com/RodriM11/PLWE-Maximal-Real-Computations",
+        "https://github.com/tuneinsight/lattigo",
+        "https://github.com/tuneinsight/lattigo"
+    ]
+}
+,
+{
+    "abstract": "Suppose that we are given a weak \\emph{Non-Interactive Zero-Knowledge} (NIZK) proof system for NP with non-negligible soundness and zero-knowledge errors, denoted by $\\alpha$ and $\\beta$, respectively. Is it possible to to reduce these errors to a negligible level? This problem, known as NIZK amplification, was introduced by Goyal, Jain, and Sahai (Crypto'19) and was further studied by Bitansky and Geier (Crypto'24).\r\nThe latter work provides amplification theorems for proofs and arguments, assuming the existence of one-way functions and public-key encryption, respectively. Unfortunately, their results only apply when the security level, $1 - (\\alpha + \\beta)$, is a constant bounded away from zero. Amplifying NIZK with an inverse polynomial security level remains an open problem and was stated as the main open question in both works.\r\n\r\nIn this work, we resolve the NIZK amplification problem and show how to amplify any non-trivial NIZK proof system that has a noticeable, inverse-polynomial level of security. As in previous works, we amplify proofs and arguments assuming the existence of one-way functions and public-key encryption, respectively. Furthermore, assuming the existence of collision-resistant hash functions, we preserve, for the first time, properties such as statistical zero-knowledge and proof succinctness.\r\n\r\nOur main technical contribution is a new \\emph{leakage-resilient secure multiparty} protocol that computes any public-output functionality with information-theoretic security against an adversary that corrupts an arbitrary subset of parties and obtains bounded leakage from each honest party. Our protocol operates in the pairwise correlated randomness model. Previous works relied on stronger setup assumptions in the form of $n$-wise correlations and either supported a smaller corruption threshold or suffered from an exponential dependency on the number of parties. To transform our protocol into a NIZK amplifier, we introduce a new intermediate notion of \\emph{leakage-resilient NP secret sharing}, that may be of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tel Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Benny Applebaum",
+            "orcid": "0000-0003-4792-369X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tel Aviv University",
+                    "ror": "https://ror.org/04mhzgx49"
+                }
+            ],
+            "fullName": "Eliran Kachlon",
+            "orcid": "0000-0001-5913-1636"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-29T16:30:05Z"
+        }
+    ],
+    "keywords": [
+        "NIZK",
+        "secure computation",
+        "amplification",
+        "leakage-resilient"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/995.pdf",
+    "pid": "995",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "NIZK Amplification via Leakage-Resilient Secure Computation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A two-party fuzzy private set intersection (PSI) protocol between Alice and Bob with input sets $A$ and $B$ allows Alice to learn nothing more than the points of Bob that are ``$\\delta$-close'' to its points in some metric space $\\texttt{dist}$. More formally, Alice learns only the set $\\{ b\\ |~\\texttt{dist}{(a,b)} \\leq \\delta , a \\in A,b\\in B\\}$ for a predefined threshold $\\delta$ and distance metric $\\texttt{dist}$, while Bob learns nothing about Alice's set.  Fuzzy PSI is a valuable privacy tool in scenarios where private set intersection needs to be computed over imprecise or measurement-based data, such as GPS coordinates or healthcare data. Previous approaches to fuzzy PSI rely on asymmetric cryptographic primitives, generic two-party computation (2PC) techniques like garbled circuits, or function secret sharing methods, all of which are computationally intensive and lead to poor concrete efficiency.\r\n\r\nThis work introduces a new modular framework for fuzzy PSI, {primarily built on efficient symmetric key primitives}. Our framework reduces the design of efficient fuzzy PSI to a novel variant of oblivious transfer (OT), which we term distance-aware random OT (da-ROT). This variant enables the sender to obtain two random strings $(r_0, r_1)$, while the receiver obtains one of these values $r_b$,  depending on whether the receiver\u2019s input keyword $a$ and the sender\u2019s input keyword $b$ are close in some metric space i.e., $\\texttt{dist}{(a,b)} \\leq \\delta$. The da-ROT can be viewed as a natural extension of traditional OT, where the condition (choice bit) is known to the receiver. We propose efficient constructions for da-ROT based on standard OT techniques tailored for small domains, supporting distance metrics such as the Chebyshev norm, the Euclidean norm, and the Manhattan norm. \r\n\r\nBy integrating these da-ROT constructions, our fuzzy PSI framework achieves up to a $14\\times$ reduction in communication cost and up to a $54\\times$ reduction in computation cost compared to previous state-of-the-art protocols, across input set sizes ranging from $2^8$ to $2^{16}$. Additionally, we extend our framework to compute fuzzy PSI cardinality and fuzzy join from traditional PSI-related functionalities. All proposed protocols are secure in the semi-honest model.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Lucas Piske"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Jaspal Singh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Ni Trieu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Vladimir Kolesnikov"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Vassilis Zikas"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-29T23:58:08Z"
+        }
+    ],
+    "keywords": [
+        "Fuzzy PSI",
+        "OT",
+        "OKVS"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/996.pdf",
+    "pid": "996",
+    "pubtype": {
+        "note": "CCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Distance-Aware OT with Application to Fuzzy PSI",
+    "year": 2025,
+    "repo": [
+        "https://github.com/asu-crypto/daOT-fuzzyPSI",
+        "https://github.com/emp-toolkit/emp-sh2pc.git",
+        "https://github.com/Visa-Research/volepsi/blob/main/volePSI/",
+        "https://github.com/Visa-Research/volepsi/blob/main/volePSI/",
+        "https://github.com/ladnir/cryptoTools",
+        "https://github.com/osu-crypto/libOTe",
+        "https://github.com/osu-crypto/libOTe"
+    ]
+}
+,
+{
+    "abstract": "While popular messaging apps already offer end-to-end confidentially, end-to-end metadata privacy is still far from being practical. Although several meta-data hiding systems have been developed and some like Tor have been popular, the proposed solutions lack in one or more aspects: the Tor network is prone to easy low-resourced attacks, and most others solely focus on anonymity for senders or receivers but do not both. Some recent solutions do consider end-to-end anonymity, however, they put significant restrictions on how users use the system. Particularly, the receivers must stay online or trust online servers that receive messages on behalf of receivers. This work presents a scalable end-to-end anonymity messaging system, $\\mathsf{ORAM}^{-}$, that overcomes the mentioned issues and restrictions. It stems from a key observation that combining the recently-emerged oblivious message retrieval (OMR) primitive with oblivious shuffling can offer the desired end-to-end anonymity without severely restricting the number of messages a sender may send or a receiver may receive. We build our solution using two non-colluding servers and recent OMR protocol HomeRun and a compatible oblivious shuffle protocol. We then extend our solution to allow larger messages by employing a novel two-server distributed oblivious RAM technique, called $\\mathsf{ORAM}^{-}$. Our performance analysis demonstrates that with the increase in the number and size of messages, the performance improvement brought by $\\mathsf{ORAM}^{-}$ becomes higher. Specifically, for $2^{20}$ messages of size 1KB, our scheme only needs $5.577$ s to transmit a message.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Yanxue Jia",
+            "orcid": "0000-0002-3425-2885"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Lund University",
+                    "ror": "https://ror.org/012a77v79"
+                }
+            ],
+            "fullName": "Debajyoti Das",
+            "orcid": "0000-0002-6777-0566"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northwestern University",
+                    "ror": "https://ror.org/000e0be47"
+                }
+            ],
+            "fullName": "Wenhao Zhang",
+            "orcid": "0000-0001-6031-8684"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                },
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Aniket Kate",
+            "orcid": "0000-0003-2246-8416"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-30T01:13:53Z"
+        }
+    ],
+    "keywords": [
+        "Metadata Privacy",
+        "Oblivious Message Retrieval",
+        "Oblivious RAM"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/997.pdf",
+    "pid": "997",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Kerblam \u2014 Anonymous Messaging System Protecting Both Senders and Recipients",
+    "year": 2025,
+    "repo": [
+        "https://www.openssl.org/source/gitrepo.html"
+    ]
+}
+,
+{
+    "abstract": "A Password-Authenticated Key Exchange (PAKE) protocol allows two parties to jointly establish a cryptographic key, where the only information shared in advance is a low-entropy password. The first efficient PAKE protocol whose security does not rely on the random oracle model is the one by Katz, Ostrovsky and Yung (KOY, EUROCRYPT 2001). Unfortunately, the KOY protocol has only been proven secure in the game-based setting, and it is unclear whether KOY is secure in the stronger Universal Composability (UC) framework, which is the current security standard for PAKE.\r\n\r\nIn this work, we present a thorough study of the UC-security of KOY. Our contributions are two-fold:\r\n\r\n    1. We formally prove that the KOY protocol is not UC-secure;\r\n    2. We then show that the UC-security of KOY holds in the Algebraic Group Model, under the Decisional Square Diffie-Hellman (DSDH) assumption.\r\n\r\nOverall, we characterize the exact conditions under which KOY is UC-secure. Interestingly, the DSDH assumption is stronger than DDH under which KOY can be proven game-based secure, which reveals some subtle gaps between the two PAKE security notions that have never been studied.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Oregon State University",
+                    "ror": "https://ror.org/00ysfqy60"
+                }
+            ],
+            "fullName": "Naman Kumar",
+            "orcid": "0009-0000-5316-6352"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Oregon State University",
+                    "ror": "https://ror.org/00ysfqy60"
+                }
+            ],
+            "fullName": "Jiayu Xu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-30T04:58:34Z"
+        }
+    ],
+    "keywords": [
+        "key exchange",
+        "PAKE",
+        "universal composability",
+        "algebraic group model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/998.pdf",
+    "pid": "998",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the UC-(In)Security of PAKE Protocols Without the Random Oracle Model",
+    "year": 2025,
+    "repo": [
+        "https://github.com/cfrg/pake-selection",
+        "https://github.com/cfrg/pake-selection"
+    ]
+}
+,
+{
+    "abstract": "We show that the Negi-Kumar certificateless ring signature scheme  [Wirel. Pers. Commun. 134(4): 1987-2011 (2024)] is insecure against forgery attack.  The signer's public key $PK_j$ and secret key $PSK_j$ are simply invoked to  compute the hash value $H_{2_j}=h_5(m_j\\|PSK_j\\|PK_j\\|t_j)$,  which cannot be retrieved by the verifier for checking their dependency.  The explicit dependency between  the public key  and secret key is not properly used to construct some intractable problems, such as   Elliptic Curve Discrete Logarithm (ECDL), Computational Diffie-Hellman (CDH), and Decisional Diffie-Hellman (DDH).  An adversary can find an efficient signing algorithm functionally equivalent to the valid signing algorithm. The findings in this note could be helpful for the newcomers who are not familiar with the designing techniques for certificateless ring signature.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-30T08:02:31Z"
+        }
+    ],
+    "keywords": [
+        "Ring signature",
+        "Certificateless signature",
+        "Forgery attack",
+        "Batch verification."
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/999.pdf",
+    "pid": "999",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Insecurity of One Ring Signature Scheme with  Batch Verification for Applications in VANETs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A multi-message multi-recipient Public Key Encryption (mmPKE) enables batch encryption of multiple messages  for multiple independent recipients in one go, significantly reducing costs, particularly bandwidth, compared to the trivial solution of encrypting each message individually.  This capability is especially critical in the post-quantum setting, where ciphertext length is typically significantly larger than the corresponding plaintext. \r\n\r\nIn this work, we first observe that the generic construction of mmPKE from reproducible PKE proposed by Bellare et al. (PKC \u201903) does not apply in the lattice-based setting because existing lattice-based PKE schemes do not fit the notion of reproducible PKE. To this end, we first extend their construction by proposing a new variant of PKE, named extended reproducible PKE (XR-PKE), which enables the reproduction of ciphertexts via additional hints. However, standard lattice-based PKE schemes, such as Kyber (EuroS&P '18), do not readily satisfy the XR PKE requirements. To construct XR-PKE from lattices, we introduce a novel technique for precisely estimating the impact of such hints on the ciphertext security while also establishing suitable parameters. This enables us to instantiate the first CPA-secure mmPKE and Multi-Key Encapsulation Mechanism (mmKEM) from the standard Module Learning with Errors (MLWE) lattice assumption, named mmCipher-PKE and mmCipher-KEM, respectively. We then extend our works to the identity-based setting and construct the first mmIBE and mmIB-KEM schemes. As a bonus contribution, we explore generic constructions of adaptively secure mmPKE, achieving security against adaptive corruption and chosen-ciphertext attacks.\r\n\r\nWe also provide an efficient implementation and thorough evaluation of the practical performance of our mmCipher. Our results show that mmCipher provides significant bandwidth and computational savings in practice, compared to the state-of-the-art. For example, for 1024 recipients, our mmCipher-KEM achieves a 23~45 times reduction in bandwidth overhead, reaching within 4~9% of the plaintext length (near optimal bandwidth), while also offering a 3~5 times reduction in computational cost.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                }
+            ],
+            "fullName": "Hongxiao Wang",
+            "orcid": "0009-0005-2983-7239"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Monash University",
+                    "ror": "https://ror.org/02bfwt286"
+                }
+            ],
+            "fullName": "Ron Steinfeld"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tampere University",
+                    "ror": "https://ror.org/033003e23"
+                }
+            ],
+            "fullName": "Markku-Juhani O. Saarinen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Monash University",
+                    "ror": "https://ror.org/02bfwt286"
+                }
+            ],
+            "fullName": "Muhammed F. Esgin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hong Kong",
+                    "ror": "https://ror.org/02zhqgq86"
+                }
+            ],
+            "fullName": "Siu-Ming Yiu"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-30T09:11:17Z"
+        }
+    ],
+    "keywords": [
+        "Public Key Encryption",
+        "mmPKE",
+        "Post-Quantum",
+        "Lattice"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1000.pdf",
+    "pid": "1000",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Post-Quantum Multi-Message Public Key Encryption from Extended Reproducible PKE",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ml-kem/mmcipher-artifact",
+        "https://github.com/ml-kem/mmcipher-artifact",
+        "https://github.com/pq-crystals/kyber"
+    ]
+}
+,
+{
+    "abstract": "The standard notion of security for threshold signature schemes is static security, where the set of corrupt parties is assumed to be fixed before protocol execution. In this model, the adversary may corrupt up to t\u22121 out of a threshold of t parties. A stronger notion of security for threshold signatures considers an adaptive adversary, who may corrupt parties dynamically based on its view of the protocol execution, learning the corrupted parties\u2019 secret keys as well as their states. Adaptive security of threshold signatures has become an active area of research recently due to ongoing standardization efforts. Of particular interest is full adaptive security, the analogue of static security, where the adversary\r\nmay adaptively corrupt a full t\u22121 parties.\r\n\r\nWe present a plausible attack on the full adaptive security of threshold Schnorr signature schemes with public key shares of the form $pk_i = g^{sk_i},$ where all secret keys $sk_i$ lie on a polynomial. We show that a wide range of threshold Schnorr signature schemes, including all variants of FROST, Sparkle, and Lindell\u201922, cannot be proven fully adaptively secure without modifications or assuming the hardness of a search problem that we define in this work. We then prove a generalization that extends below t\u22121 adaptive corruptions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Elizabeth Crites",
+            "orcid": "0000-0001-9992-1771"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Alistair Stewart",
+            "orcid": "0000-0003-4886-1056"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-30T09:35:56Z"
+        }
+    ],
+    "keywords": [
+        "threshold signatures",
+        "Schnorr signatures",
+        "adaptive security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This extends the CRYPTO 2025 proceedings version with the addition of Section 7 discussing the relationship between the hardness of the problem we consider and Reed-Solomon codes.",
+    "pdffile": "2025/1001.pdf",
+    "pid": "1001",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Plausible Attack on the Adaptive Security of Threshold Schnorr Signatures",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Recently [Wenger et al.~IEEE S\\&P 2025] claimed that the `Cool and Cruel' (C+C) approach to solving LWE with sparse secrets [Nolte et al.~AFRICACRYPT 2024] outperforms other approaches, in particular the well established primal attack.\r\nIn this work we show that \r\ni.~C+C is an instantiation of a known dual attack [Albrecht, EUROCRYPT 2017], ii.~experimental evidence that the primal attack can outperform C+C in similar regimes to those studied by Wenger et al. and \r\niii.~both theoretical justification and experimental evidence that C+C is a consequence of a basis profile called the Z-shape.\r\n\r\nTo prove i.~we introduce a framework for dimension reduction in bounded distance decoding problems that may be of independent interest.\r\nFor ii.~we provide an open source implementation of the primal attack that is properly parametrised for short, sparse ternary secret LWE and guesses portions of the secret, along with an error analysis for a rounded variant of LWE that proves useful for practical cryptanalysis.\r\nGiven iii.~we falsify a claim of Nolte et al.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Alexandr Karenin",
+            "orcid": "0009-0003-9408-948X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Elena Kirshanova",
+            "orcid": "0000-0001-8924-7605"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Julian Nowakowski",
+            "orcid": "0000-0003-3066-0133"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "King's College London",
+                    "ror": "https://ror.org/0220mzb33"
+                }
+            ],
+            "fullName": "Eamonn W. Postlethwaite",
+            "orcid": "0000-0003-2984-1332"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "King's College London",
+                    "ror": "https://ror.org/0220mzb33"
+                }
+            ],
+            "fullName": "Fernando Virdia",
+            "orcid": "0000-0002-0001-2955"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-30T10:55:17Z"
+        }
+    ],
+    "keywords": [
+        "LWE",
+        "BDD",
+        "dual attack",
+        "lattice reduction",
+        "machine learning"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1002.pdf",
+    "pid": "1002",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cool + Cruel = Dual",
+    "year": 2025,
+    "repo": [
+        "https://gitlab.com/fvirdia/cool-plus-cruel-equals-dual",
+        "https://gitlab.com/fvirdia/cool-plus-cruel-equals-dual",
+        "https://github.com/malb/lattice-estimator/",
+        "https://github.com/fplll/fplll",
+        "https://github.com/facebookresearch/LWE-benchmarking",
+        "https://github.com/facebookresearch/cruel_and_cool/blob/main/data.py"
+    ]
+}
+,
+{
+    "abstract": "This work addresses the problem of Byzantine Fault-Tolerant (BFT) Total-Order Broadcast (TOB) in a dynamically available setting, where parties can transition between online and offline states without knowing the number of active parties. Existing dynamically available protocols rely on a synchronous network assumption, which means their latency remains tied to the pessimistic network delay $\\Delta$, even when the actual network delay is $\\delta << \\Delta$. This raises the question of whether a dynamically available BFT TOB protocol can maintain safety and liveness under synchrony while committing blocks at a rate closer to the actual network delay. We answer this question affirmatively by designing the first dynamically available BFT TOB protocol that can commit blocks at the rate of $O(\\Delta_{ideal})$ where $\\Delta_{ideal} < 2\\delta$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Duke University",
+                    "ror": "https://ror.org/00py81415"
+                },
+                {
+                    "name": "Common Prefix"
+                }
+            ],
+            "fullName": "Sravya Yandamuri"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Nibesh Shrestha"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ethereum Foundation"
+                }
+            ],
+            "fullName": "LUCA ZANOLINI"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Duke University",
+                    "ror": "https://ror.org/00py81415"
+                }
+            ],
+            "fullName": "Kartik Nayak"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-30T14:28:39Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1003.pdf",
+    "pid": "1003",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Low-Latency Dynamically Available Total Order Broadcast",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We propose a deterministic algorithm based on Coppersmith's method that employs a rank-3 lattice to address factoring-related problems. An interesting aspect of our approach is that we utilize the second vector in the LLL-reduced basis to avoid trivial collisions in the Baby-step Giant-step method, rather than the shortest vector as is commonly used in the literature. Our results are as follows:  \r\n\r\n- Compared to the result by Harvey and Hittmeir (Math. Comp. 91 (2022), 1367\u20131379), who achieved a complexity of  $O\\left( \\frac{N^{1/5} \\log^{16/5} N}{(\\log \\log N)^{3/5}} \\right)$ for factoring a semiprime $N = pq$, we demonstrate that in the balanced $p$ and $q$ case, the complexity can be improved to  $O\\left( \\frac{N^{1/5} \\log^{13/5} N}{(\\log\\log N)^{3/5}} \\right).$\r\n\r\n- For factoring sums and differences of powers, i.e., numbers of the form $N = a^n \\pm b^n$, we improve Hittmeir's result (Math. Comp. 86 (2017), 2947\u20132954) from  $O(N^{1/4} \\log^{3/2} N)$ to  $O\\left( {N^{1/5} \\log^{13/5} N} \\right).$\r\n\r\n- For the problem of finding $r$-power divisors, i.e., finding all integers $p$ such that $p^r \\mid N$, Harvey and Hittmeir (Proceedings of ANTS XV, Res. Number Theory 8 (2022), no.4, Paper No. 94) recently directly applied Coppersmith's method and achieved a complexity of $O\\left(\\frac{N^{1/4r} \\log^{10+\\epsilon} N}{r^3}\\right)$. By using faster LLL-type algorithm and sieving on small primes, we improve their result to $O\\left(\\frac{N^{1/4r} \\log^{7+3\\epsilon} N}{(\\log\\log N-\\log 4r)r^{2+\\epsilon}}\\right)$. The worst case running time for their algorithm occurs when $N = p^r q$ with $q = \\Theta(N^{1/2})$. By focusing on this case and employing our rank-3 lattice approach, we achieve a complexity of  $O\\left(\\sqrt{r} N^{1/4r} \\log^{5/2} N \\right).$\r\n\r\nIn conclusion, we offer a new perspective on these problems, which we hope will provide further insights.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Yiming Gao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Academy of Mathematics and Systems Science",
+                    "ror": "https://ror.org/02jkmyk67"
+                }
+            ],
+            "fullName": "Yansong Feng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Honggang Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Academy of Mathematics and Systems Science",
+                    "ror": "https://ror.org/02jkmyk67"
+                }
+            ],
+            "fullName": "Yanbin Pan"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-30T16:18:52Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1004.pdf",
+    "pid": "1004",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On Factoring and Power Divisor Problems via Rank-3 Lattices and the Second Vector",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
