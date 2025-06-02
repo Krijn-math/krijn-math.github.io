@@ -78,7 +78,7 @@ a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, cha
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;last_year;;;none
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_year;;;none
 universal composable password authenticated key exchange for the post-quantum world;;;you lyu, shengli liu, shuai han;;;2024/374;;;last_year;;;none
-radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;last_year;;;none
+radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;other;;;none
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;other;;;https://github.com/TheParallelSquarerootVeluTeam/Parallel-Squareroot-Velu
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;other;;;none
 efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;other;;;https://github.com/theQRL/Whitepaper/blob/master/QRL_whitepaper.pdf
