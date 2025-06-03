@@ -71477,4 +71477,1426 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "We present a highly efficient authenticated group key exchange protocol, TEAKEX, using only symmetric key primitives. Our protocol provides proven strong security, including forward secrecy, post-compromise security, and post-quantum security. For online applications we claim that TEAKEX is much simpler and more efficient than currently available alternatives. As part of our construction we also give a new abstract security definition for delayed authentication and describe its instantiation with the TESLA protocol.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Griffith University, Brisbane, Australia",
+                    "ror": "https://ror.org/02sc3r913"
+                }
+            ],
+            "fullName": "Qinyi Li",
+            "orcid": "0000-0002-1064-2600"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTNU \u2013 Norwegian University of Science and Technology, Trondheim, Norway",
+                    "ror": "https://ror.org/05xg72x27"
+                }
+            ],
+            "fullName": "Lise Millerjord",
+            "orcid": "0000-0002-4839-0568"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTNU \u2013 Norwegian University of Science and Technology, Trondheim, Norway",
+                    "ror": "https://ror.org/05xg72x27"
+                }
+            ],
+            "fullName": "Colin Boyd"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-31T01:56:25Z"
+        }
+    ],
+    "keywords": [
+        "group key exchange",
+        "post-compromise security",
+        "symmetric-key protocols"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1005.pdf",
+    "pid": "1005",
+    "pubtype": {
+        "note": "ACISP 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "TEAKEX: TESLA-Authenticated Group Key Exchange",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Avoiding feeding forward seems to be a major goal of the sponge construction. We make a step back and investigate adding feeding forward back to sponge. The obtained sponge-with-feeding-forward construction has a number of benefits: (1) In the random permutation model, its preimage and second preimage security bounds are much better than the standard sponge with the same capacity, while collision and indifferentiability security bounds are comparable; (2) Its collision and (second) preimage security can be reduced to well-defined properties of the underlying permutation, i.e., correlation intractability w.r.t. certain family of evasive relations.\r\n\r\n\r\n\r\nWe further incorporate several somewhat new ideas to form detailed hash and XOF constructions SpongeFwd: (1) Feeding-forward is only applied to the capacity part, and the final output(s) is the capacity part (with the rate part discarded). In this way, when $c$ equals the primary hash output size $h$, a single permutation-call suffices for squeezing. This also simplifies the underlying evasive relations for the reduction security proof. (2) We replace the hash IV with the first message block to have the best possible efficiency. (3) We employ a parallel structure to define an XOF variant. (4) We use HAIFI-style counter inputs to achieve both length-independent second-preimage security and domain separation for XOF.\r\n\r\nThe better (second) preimage security enables constructing 512-bit output hash function from Keccak-p[800]: with 512-bit capacity, its collision and (second) preimage security bounds are the same as the standard SHA-3-512, while its hardware area is reduced by roughly 38% (according to our preliminary estimation).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University"
+                }
+            ],
+            "fullName": "Chun Guo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University"
+                }
+            ],
+            "fullName": "Kai Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University"
+                }
+            ],
+            "fullName": "Yanhong Fan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Qilu University of Technology"
+                }
+            ],
+            "fullName": "Yong Fu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University"
+                }
+            ],
+            "fullName": "Meiqin Wang"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-02T14:13:03Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-05-31T03:20:28Z"
+        }
+    ],
+    "keywords": [
+        "hash function",
+        "sponge construction"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/1006.pdf",
+    "pid": "1006",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Adding Feeding Forward Back to the Sponge Construction",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1007/978-3-031-68397-8_12",
+    "abstract": "A long line of work has investigated the design of scalable secure multiparty computation (MPC) protocols with computational and communication complexity independent of the number of parties (beyond any dependence on the circuit size). We present the first unconditionally-secure MPC protocols for arithmetic circuits over {\\em large fields} with total computation $\\mathcal{O}(|C|\\log|F|)$, where $|C|$ and $|F|$ denote the circuit and field size, respectively. \r\n\r\n     Prior work could either achieve similar complexity only in {\\em communication}, or required highly structured circuits, or expensive circuit transformations. To obtain our results, we depart from the prior approach of share packing in linear secret-sharing schemes; instead, we use an ``unpacking'' approach via {\\em non-linear} secret sharing.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Sanjam Garg"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research and Johns Hopkins University"
+                }
+            ],
+            "fullName": "Abhishek Jain"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Pratyay Mukherjee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley"
+                }
+            ],
+            "fullName": "Mingyuan Wang"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-31T03:22:01Z"
+        }
+    ],
+    "keywords": [
+        "Secure multiparty computation",
+        "Chinese remainder-based secret sharing",
+        "Scalable MPC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1007.pdf",
+    "pid": "1007",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MINOR",
+        "year": 2024
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Scalable Multiparty Computation from Non-linear Secret Sharing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secret-sharing schemes allow a dealer to split a secret into\r\nmultiple \u201cshares\u201d and distribute them individually among many parties\r\nwhile mandating certain constraints on its reconstruction. Such protocols\r\nare usually executed over a secure communication channel since an\r\neavesdropper, after intercepting all the shares, is expected to be able\r\nto reconstruct the secret. Leveraging the unique properties of quantum\r\nchannels, several quantum protocols have been designed for secret sharing.\r\nHowever, almost all of them detect the presence of an eavesdropper\r\nby statistical analysis of the outcome of multiple rounds, or simply require\r\na secure channel of communication.\r\nWe mathematically analyse the correctness and security properties of a\r\nquantum-search based secret-sharing framework proposed by Hsu (2003)\r\n(and attacked by Hao et al. (2010)) that was proposed as an alternative\r\nthat works over public channels and does not require multiple rounds.We\r\nshow how to improve the original protocol to be more resistant towards\r\neavesdropping and other attacks; however, we also prove that complete\r\nsecurity against an eavesdropper is not possible in this framework.\r\nOur tight characterization will be helpful towards the construction of\r\nmore quantum secret sharing schemes based on the same framework.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indraprastha Institute of Information Technology Delhi",
+                    "ror": "https://ror.org/03vfp4g33"
+                }
+            ],
+            "fullName": "Debajyoti Bera"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute",
+                    "ror": "https://ror.org/00q2w1j53"
+                }
+            ],
+            "fullName": "Santanu Majhi"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-31T10:25:04Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Secret Sharing",
+        "Grover's Algorithm"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/1008.pdf",
+    "pid": "1008",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Reviving a Grover based Quantum Secret Sharing Scheme",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Threshold signatures are one of the most important cryptographic primitives in distributed systems. Of particular interest is the threshold Schnorr signature, a pairing-free signature with efficient verification, compatible with standardized EdDSA (non-threshold) signature. However, most threshold Schnorr signatures have only been proven secure against a static adversary, which has to declare its corruptions before the protocol execution. Many existing adaptively secure constructions require either secure erasures or non-standard assumptions, such as the algebraic group model or hardness of the algebraic one-more discrete logarithm problem. The latest adaptively secure threshold Schnorr signature schemes under standard assumptions require five rounds of communication to create a single signature, limiting its practicality. \r\n\r\nIn this work, we present Gargos, a three-round, adaptively secure threshold Schnorr signature scheme based on the hardness of the decisional Diffie-Hellman (DDH) problem in the random oracle model (ROM). Our protocol supports full corruption threshold $t < n$, where $t$ is the signing threshold and $n$ is the total number of signers. We achieve our result with an enhanced proof technique that enables us to eliminate two rounds of communication from the recent Glacius scheme (Eurocrypt 2025). We believe our techniques are of independent interest to further research in improving the round complexity of multi-party signing protocols.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Saarland University",
+                    "ror": "https://ror.org/01jdpyv68"
+                }
+            ],
+            "fullName": "Renas Bacho",
+            "orcid": "0009-0007-7037-2458"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Sourav Das",
+            "orcid": "0000-0001-5298-621X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Julian Loss",
+            "orcid": "0000-0002-7979-3810"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Ling Ren",
+            "orcid": "0000-0003-3437-7570"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-31T12:05:41Z"
+        }
+    ],
+    "keywords": [
+        "Threshold Signatures",
+        "Schnorr Signatures",
+        "Adaptive Security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1009.pdf",
+    "pid": "1009",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Adaptively Secure Three-Round Threshold Schnorr Signatures from DDH",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Forward-secure public key encryption (FS-PKE) is a key-evolving public-key paradigm that ensures the confidentiality of past encryptions even if the secret key is compromised at some later point in time. However, existing FS-PKE schemes are considerably complex and less efficient compared to standard public-key encryption. Updatable public-key encryption (UPKE), introduced by Jost et al. (Eurocrypt 2019), was designed to achieve forward security in secure group messaging while maintaining efficiency. However, existing UPKE constructions either lack post-quantum security or do not support an unbounded number of updates. We focus on isogeny-based cryptosystems due to their suitability for handling an unbounded number of updates in long-term secure messaging. Existing isogeny-based UPKE schemes lack strong security guarantees and formal security proofs. They do not support asynchronous key updates and require sender-receiver coordination.\r\nIn this work, we present two isogeny-based UPKE schemes. The first scheme, UhPKE, extends Moriya et al.\u2019s hash-based public key encryption scheme hPKE to support key updates while the second scheme USimS is an updatable version of Fouotsa et al.\u2019s public key encryption scheme simplified sigamal (SimS). The scheme UhPKE relies on the commutative supersingular isogeny Diffie-Hellman(CSSIDH) assumption and achieves indistinguishability under chosen randomness and chosen plaintext attack (IND-CR-CPA). The scheme USimS derives its security under the hardness of the CSSIDH problem and the commutative supersingular isogeny knowledge of exponent (CSSIKoE) problem. It is the first isogeny-based UPKE scheme that exhibits indistinguishability under chosen randomness and chosen ciphertext attack (IND-CR-CCA). The security of UhPKE and USimS is established by proving that their underlying schemes, hPKE and SimS are circular secure and leakage resilient (CS + LR). We emphasized that our constructions support an unlimited number of key updates while retaining the efficiency of their underlying public key encryption schemes. Besides, proposed UPKEs enable asynchronous key updates, allowing senders to update the public key independently. More affirmatively, UhPKE and USimS offer improved storage, computation and communication efficiency compared to existing UPKE schemes. \r\nFurthermore, we extend and refine the security notion of the updatable key encapsulation mechanism (UKEM) introduced by Haidar et al. (Asiacrypt 2023)from the bounded number of updates to the unbounded number of updates. We present the first post-quantum secure UKEM that does not rely on zero-knowledge proofs. More precisely, we introduce two UKEM schemes which are the first of their kind in the isogeny setting. Our first scheme, UKEM1, is derived from our UhPKE and achieves IND-CR-CPA security. Our second construction, UKEM2, is based on our USimS scheme and achieves IND-CR-CCA security. We provide security for our UKEMs in our proposed enhanced security framework that supports an unbounded number of key updates. More positively, our UKEMs not only support unlimited key updates but also enable independent encapsulation and decapsulation key updates without requiring sender-receiver synchronization similar to our UPKEs. Both UKEM1 and UKEM2 exhibit compact storage and communication costs with minimal size ciphertexts while their computational efficiency differs in decapsulation and key updates where UKEM2 incurs an additional discrete logarithm computation in the decapsulation phase, but potentially offering stronger IND-CR-CCA security in contrast to UKEM1 which is IND-CR-CPA secure.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Mathematics, Indian Institute of Technology Kharagpur"
+                }
+            ],
+            "fullName": "Pratima Jana"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Mathematics, Indian Institute of Technology Kharagpur"
+                }
+            ],
+            "fullName": "Ratna Dutta"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-05-31T19:03:51Z"
+        }
+    ],
+    "keywords": [
+        "Updatable public key encryption",
+        "Updatable  key encapsulation mechanism",
+        "Isogeny",
+        "Forward Security"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/1010.pdf",
+    "pid": "1010",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "UPKE and UKEM Schemes from Supersingular Isogenies",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Adaptive trapdoor functions (ATDFs) and tag-based ATDFs (TB-ATDFs) are variants of trapdoor functions proposed by Kiltz, Mohassel, and O\u2019Neill (EUROCRYPT 2010). They are both sufficient for constructing chosen-ciphertext secure public-key encryption (CCA-secure PKE), and their definitions are closely related to CCA-secure PKE.\r\nHohenberger, Koppula, and Waters (CRYPTO 2020) showed that CCA-secure PKE can be constructed from injective TDFs; however, the relations among TDF, ATDF, and TB-ATDF remain unclear.\r\n    \r\nWe provide black-box constructions of ATDFs and TB-ATDFs from injective TDFs, answering the question posed by Kiltz, Mohassel, and O\u2019Neill (EUROCRYPT 2010).\r\nOur results indicate that ATDF, TB-ATDF, and TDF are equivalent under mild restrictions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Southern California",
+                    "ror": "https://ror.org/03taz7m60"
+                }
+            ],
+            "fullName": "Xinyu Mao",
+            "orcid": "0009-0006-3081-1252"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Hongxu Yi"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-01T07:18:53Z"
+        }
+    ],
+    "keywords": [
+        "trapdoor function",
+        "CCA security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1011.pdf",
+    "pid": "1011",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Adaptive TDFs from Injective TDFs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Parallel Byzantine broadcast (PBC) (also known as Interactive Consistency), is a fundamental problem in distributed computing and cryptography which asks that all parties reliably distribute a message to all other parties. We give the first communication-efficient protocol for PBC in the model with plain public keys (i.e., no trusted dealer) which achieves security against an adaptive adversary that can corrupt up to $t<n/2$ parties. \r\n\r\nOur protocol runs in total communication complexity $O(n^2\\ell\\log(n)+n\\kappa^2\\log^4(n))$ bits to succeed with probability $1-2^{-\\kappa}$, where $\\ell$ is the length of a message. All prior protocols either rely on a trusted setup or require at least $O(n^3)$ communication complexity. As a stepping stone, we present a binary consensus protocol with the same resilience and success probability that sends $O(n^2\\kappa\\log(n)+n\\kappa^2\\log^3(n))$ bits. \r\n\r\nWe achieve these results based on a highly efficient gossip procedure that implements echo operations at low cost, and might prove useful in deriving further efficient protocols relying on simple cryptographic tools.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bar-Ilan University",
+                    "ror": "https://ror.org/03kgsv495"
+                }
+            ],
+            "fullName": "Ran Gelles"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Christoph Lenzen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Julian Loss"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Duke University",
+                    "ror": "https://ror.org/00py81415"
+                },
+                {
+                    "name": "Common Prefix"
+                }
+            ],
+            "fullName": "Sravya Yandamuri"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-01T08:42:50Z"
+        }
+    ],
+    "keywords": [
+        "Byzantine Agreement",
+        "Graded Consensus",
+        "Multivalued Consensus",
+        "Multivalued Collective Broadcast",
+        "gossiping"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1012.pdf",
+    "pid": "1012",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Nearly Optimal Parallel Broadcast in the Plain Public Key Model",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure Multi-Party Computation is a privacy-enhancing technology that allows several parties to securely compute on distributed private data.  \r\nIn the line of the well established SPDZ protocol,  the by far most expensive task is the generation of Beaver triples in the so called  offline phase.\r\nSilentium is our implementation of an actively secure offline phase in the form of a Pseudorandom Correlation Generator for Beaver triples (Bt-PCG, Boyle et al. CRYPTO 2020), which, as any PCG, is designed to have low communication. Compared to previous offline phases, their Bt-PCG reduces the communication costs by three orders of magnitude. However, so far efficiency was only estimated. With Silentium, we  demonstrate that their Bt-PCG can achieve even better running times than state-of-the-art offline phase implementations in the  MP-SPDZ library. To actually achieve such a performance, Silentium  comprises a systematic   parallelization strategy and implementation-friendly decomposition scenarios of the Bt-PCG into structured modules. \r\nLooking forward for large-scale applications on the cloud,  Silentium is designed to be versatile to support hardware acceleration in future.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Stuttgart",
+                    "ror": "https://ror.org/04vnq7t77"
+                }
+            ],
+            "fullName": "Vincent Rieder",
+            "orcid": "0009-0007-8694-7260"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-01T12:18:18Z"
+        }
+    ],
+    "keywords": [
+        "Secure Multi-Party Computation",
+        "Beaver Triples",
+        "Pseudorandom Correatlion Generators"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1013.pdf",
+    "pid": "1013",
+    "pubtype": {
+        "note": "International Workshop on Foundations and Applications of Privacy-Enhancing Cryptography",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Silentium: Implementation of a Pseudorandom Correlation Generator for Beaver Triples",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secret sharing (SS) is a foundational cryptographic primitive with diverse applications, including secure multiparty computation and conditional disclosure of secrets. While traditional schemes have primarily emphasized information-theoretic security, recent advancements have increasingly leveraged computational assumptions to achieve more efficient constructions and support broader access policies. Despite these successes, most existing computational secret sharing (CSS) schemes are limited to a static security model, where adversaries must commit to their choice of corrupted participants at the outset. A critical challenge in CSS lies in achieving adaptive security, where adversaries can dynamically select participants to corrupt, better reflecting real-world threat models.\r\n\r\nIn this paper, we present a novel transformation that converts any statically secure CSS scheme into an adaptively secure one while preserving the original access policy and computational assumptions, providing a framework for bridging the gap between static and adaptive security. Our construction introduces a multiplicative share size overhead of $O(n^2)$ where $n$ is the number of parties. Additionally, we explore trade-offs in efficiency and security, offering more efficient adaptive CSS constructions for specific, restricted policy classes. This work addresses key limitations in the current landscape of CSS and paves the way for broader adoption of adaptively secure secret sharing in cryptographic applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "George Lu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                },
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Brent Waters"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T05:55:44Z"
+        }
+    ],
+    "keywords": [
+        "Secret Sharing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1014.pdf",
+    "pid": "1014",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "How to Make Any Computational Secret Sharing Scheme Adaptively Secure",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In recent work, Diamond and Posen ('24) introduce a polynomial commitment scheme for large binary fields, adapting BaseFold (CRYPTO '24). In this note, we devise a zero-knowledge variant of Diamond and Posen's scheme. Our construction reprises a few ideas from Aurora (EUROCRYPT '19). We carry through those ideas in characteristic 2, and moreover show that they're compatible with BaseFold.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Irreducible"
+                }
+            ],
+            "fullName": "Benjamin E. Diamond"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T07:39:10Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1015.pdf",
+    "pid": "1015",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Zero-Knowledge Polynomial Commitment in Binary Fields",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The leader election problem requires a set of $n$ parties, out of which up to $t$ can be Byzantine, to elect a leader uniformly at random such that no two parties disagree on the elected leader and an honest leader is elected with constant probability. The Scalable Leader Election protocol published in SODA'2006 is an important breakthrough in solving this problem efficiently for all but $o(1)$ of the parties. They achieve a protocol for $t < (\\frac{1}{3} - \\epsilon)n$ (for $\\epsilon = o(1)$) in the full-information setting such that every party only sends polylog \\(n\\) bits. \r\n    \r\n    In this paper, we revisit their work and show that there are subtleties in the protocol that are not dealt with in the analysis. In particular, two mechanisms related to ``silencing'' parties and dealing with ``bad nodes'' are at odds with each other, which is why the existing analysis is insufficient. We present these concerns in detail and subsequently present a modification to their protocol with a corresponding analysis to solve leader election with the desired metrics.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Riverside",
+                    "ror": "https://ror.org/03nawhv43"
+                }
+            ],
+            "fullName": "Amey Bhangale"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Lucerne University of Applied Sciences and Arts"
+                },
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Chen-Da Liu-Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Common Prefix"
+                }
+            ],
+            "fullName": "Julian Loss"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Duke University",
+                    "ror": "https://ror.org/00py81415"
+                }
+            ],
+            "fullName": "Kartik Nayak"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Duke University",
+                    "ror": "https://ror.org/00py81415"
+                },
+                {
+                    "name": "Common Prefix"
+                }
+            ],
+            "fullName": "Sravya Yandamuri"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T08:27:51Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1016.pdf",
+    "pid": "1016",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Leader Election with Poly-logarithmic Communication Per Party",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Given two linear codes, the Code Equivalence Problem asks to find (if it exists) an isometry between them. A special case is the Permutation Equivalence Problem (PEP), where the isometry is a permutation. The hardness of PEP is crucially dependent on the hull of a code, that is, the intersection between a code and its dual. For random codes, with large probability the hull is trivial, i.e., has dimension $h = 0$: this allows for efficient attacks. However, when the hull is large enough, all known attacks take exponential time and PEP is deemed hard.\r\n\r\nIn this paper we study how the so-called Schur product between linear codes can be employed to solve PEP. The main idea is to transform a given PEP instance by computing powers of the given codes. We show that, while squaring a pair of equivalent codes preserves the equivalence, the new pair of codes have trivial hull with high probability. This allows to identify many new weak instances of PEP, namely: whenever $h<\\sqrt{2n}$ With some technical caveats, our solver runs in average polynomial time.\r\n\r\nAs a concrete application, we consider the updatable encryption scheme proposed by Albrecht, Ben\u010dina and Lai at Eurocrypt 2025. All the recommended instances fall into the range of weak PEP instances we identify in this paper, hence are susceptible to our attack. We successfully recover the secret permutation for one of the instances claiming 128 bits of security. As a fix, instances with hull dimension $h>\\sqrt{2n}$ shall be employed.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e0 Politecnica delle Marche"
+                }
+            ],
+            "fullName": "Michele Battagliola",
+            "orcid": "0000-0002-8269-2148"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Rocco Mora",
+            "orcid": "0000-0001-5165-5320"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e0 Politecnica delle Marche"
+                }
+            ],
+            "fullName": "Paolo Santini",
+            "orcid": "0000-0003-0631-3668"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T10:04:58Z"
+        }
+    ],
+    "keywords": [
+        "Permutation code equivalence",
+        "Code-based cryptography",
+        "Schur product",
+        "Square code",
+        "Hull"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/1017.pdf",
+    "pid": "1017",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Using the Schur Product to Solve the Code Equivalence Problem",
+    "year": 2025,
+    "repo": [
+        "https://github.com/psantini1992/SquareCodeEquiv",
+        "https://github.com/psantini1992/SquareCodeEquiv"
+    ]
+}
+,
+{
+    "abstract": "As quantum technology advances, developing cryptographic solutions resistant to quantum attacks is crucial. Post-Quantum Cryptography (PQC) provides a practical approach by running on classical computers. They rely on hard mathematical problems, with lattice-based being one of the National Institute of Standards and Technology (NIST)-recognized schemes known for its small key sizes. Hardware implementation of these schemes faces challenges due to the computational intensity of operations like polynomial multiplication, especially for resource-constrained devices. This paper proposes a novel Modular Tiled Toeplitz Matrix-Vector Polynomial Multiplication (MT-TMVP) for lattice-based PQC algorithms and presents a resource-optimized Field Programmable Gate Array (FPGA) architecture. The proposed implementation significantly reduces resource utilization and Area-Delay Product (ADP) compared to state-of-the-art polynomial multipliers. It utilizes 99.68% and 84.22% fewer Look-Up Tables (LUTs) on Artix-7 and Zynq Ultrascale+ FPGAs, respectively, and achieves 99.94% and 80.02% ADP improvements on these FPGAs compared to the best results in the literature. By leveraging Block RAM (BRAM), the proposed architecture offers robustness against timing-based Side-Channel Attacks (SCAs), and the design is modular and scalable to any polynomial degree.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Barkhausen Institut",
+                    "ror": "https://ror.org/0260qqv98"
+                }
+            ],
+            "fullName": "Shekoufeh Neisarian",
+            "orcid": "0000-0002-5408-0494"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Barkhausen Institut",
+                    "ror": "https://ror.org/0260qqv98"
+                },
+                {
+                    "name": "TU Dresden",
+                    "ror": "https://ror.org/042aqky30"
+                }
+            ],
+            "fullName": "Elif Bilge Kavun",
+            "orcid": "0000-0003-3193-8440"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T11:09:44Z"
+        }
+    ],
+    "keywords": [
+        "Polynomial multiplication",
+        "TMVP",
+        "Tile",
+        "KEM",
+        "Lattice-based PQC",
+        "FPGA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1018.pdf",
+    "pid": "1018",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "MT-TMVP: Modular Tiled TMVP-based Polynomial Multiplication for Post-Quantum Cryptography on FPGAs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In a world where financial transactions are primarily performed or recorded online, protecting sensitive transaction details has become crucial. Roommates sharing housing costs or friends splitting travelling expenses may use applications such as Splitwise to easily track debts and minimize the number of individual repayments. However, these apps reveal potentially sensitive financial transaction activity to their operators. In this paper, we present Silent Splitter, a privacy-preserving payment splitting system which enables users to securely set up groups, perform transactions within those groups, and \"settle up\" without revealing group membership or any sensitive transaction details (such as the users involved or amount of money exchanged) to the system itself. Silent Splitter operates in the two server setting and uses Distributed Point Functions (DPFs) to securely record transactions. Of independent interest, we also present new protocols for proving knowledge of properties of DPFs as part of our system.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of North Carolina at Chapel Hill",
+                    "ror": "https://ror.org/0130frc33"
+                }
+            ],
+            "fullName": "Margaret Pierce",
+            "orcid": "0009-0005-7061-4651"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of North Carolina at Chapel Hill",
+                    "ror": "https://ror.org/0130frc33"
+                }
+            ],
+            "fullName": "Saba Eskandarian",
+            "orcid": "0009-0001-8316-219X"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T14:24:53Z"
+        }
+    ],
+    "keywords": [
+        "Distributed Point Functions",
+        "Payment Splitting"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1019.pdf",
+    "pid": "1019",
+    "pubtype": {
+        "note": "PETS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Silent Splitter: Privacy for Payment Splitting via New Protocols for Distributed Point Functions",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mapierce23/psa",
+        "https://github.com/mapierce23/psa",
+        "https://git-crysp.uwaterloo.ca/iang/cmz.git",
+        "https://github.com/google/exposure-notifications-android/blob/master/doc/enexpress-analytics-faq.md",
+        "https://github.com/google/exposure-notifications-android/blob/master/doc/enexpress-analytics-faq.md",
+        "https://github.com/google/exposure-notifications-android/blob/master/doc/enexpress-analytics-faq.md"
+    ]
+}
+,
+{
+    "abstract": "Pseudorandom codes (PRCs) are error-correcting codes with the distinguishing feature that their codewords are computationally indistinguishable from random strings. Introduced by Christ and Gunn (CRYPTO 2024), PRCs have found applications in areas such as AI watermarking, where both robustness and pseudorandomness are essential. All known constructions of PRCs rely on coding-theoretic hardness assumptions. In this work, we study how inherent the use of coding-theoretic hardness is in the construction of pseudorandom codes. \r\n\r\nWe show that there is no black-box construction of PRCs with binary alphabets capable of decoding from a constant fraction of Bernoulli noise from a class of oracles we call local oracles. The class of local oracles includes random oracles and trapdoor permutation oracles, and can be interpreted as a meaningful notion of oracles that are not resilient against noise. Our separation result is cast in the Impagliazzo-Rudich framework and crucially relies on the Bonami-Beckner hypercontractivity theorem on the Boolean hypercube.\r\n\r\nAs a complementary result, we show that PRCs with large alphabets that can tolerate high error rates can indeed be constructed in a black-box manner from one-way functions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Nico D\u00f6ttling"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                },
+                {
+                    "name": "Graduate School of Computer Science, Saarland University",
+                    "ror": "https://ror.org/01jdpyv68"
+                }
+            ],
+            "fullName": "Anne M\u00fcller",
+            "orcid": "0000-0002-4468-2651"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Mahesh Sreekumar Rajasree",
+            "orcid": "0000-0002-8219-8270"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T16:00:05Z"
+        }
+    ],
+    "keywords": [
+        "pseudorandom codes",
+        "black-box separation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1020.pdf",
+    "pid": "1020",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Separating Pseudorandom Codes from Local Oracles",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A pseudorandom code is a keyed error-correction scheme with the property that any polynomial number of encodings appear random to any computationally bounded adversary. We show that the pseudorandomness of any code tolerating a constant rate of random errors cannot be based on black-box reductions to almost any generic cryptographic primitive: for instance, anything that can be built from random oracles, generic multilinear groups, and virtual black-box obfuscation. Our result is optimal, as Ghentiyala and Guruswami (2024) observed that pseudorandom codes tolerating any sub-constant rate of random errors exist using a black-box reduction from one-way functions.\r\n\r\nThe key technical ingredient in our proof is the hypercontractivity theorem for Boolean functions, which we use to prove our impossibility in the random oracle model. It turns out that this easily extends to an impossibility in the presence of \"crypto oracles,\" a notion recently introduced---and shown to be capable of implementing all the primitives mentioned above---by Lin, Mook, and Wichs (EUROCRYPT 2025).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Sanjam Garg",
+            "orcid": "0000-0003-1330-0419"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Sam Gunn",
+            "orcid": "0000-0002-6173-4046"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NYU, Shanghai"
+                }
+            ],
+            "fullName": "Mingyuan Wang",
+            "orcid": "0009-0000-9057-1007"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T16:27:16Z"
+        }
+    ],
+    "keywords": [
+        "Error correction",
+        "pseudorandomness",
+        "black-box separations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1021.pdf",
+    "pid": "1021",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Black-Box Crypto is Useless for Pseudorandom Codes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure and trustworthy electronic voting requires more than correctness and censorship resistance, it must also ensure voter privacy, vote confidentiality, and protection against coercion. Prior work attempt to address these challenges using heavyweight cryptographic primitives such as homomorphic encryption, time-lock puzzles, or multi-party computation. These approaches often involve complex computations, depend on trusted parties, and typically do not scale well. We propose a lightweight, fully on-chain anonymous voting protocol based on a novel application of the proof-of-burn (PoB) mechanism. Voters anonymously commit to their votes by burning tokens to pseudorandom addresses and later submit zero-knowledge proofs attesting to their valid participation. Our design achieves vote integrity, coercion resistance, and unlinkability without relying on encrypted ballots, trusted third parties, or centralized tallying. The tallying process is public and operates on plaintext votes that are authenticated yet unlinkable to voters. This enables flexible voting models\u2014including token-weighted and quadratic voting\u2014with minimal on-chain overhead. We formally analyze the protocol\u2019s security guarantees and demonstrate support for a broad range of voting models. We implement the protocol as an open-source library fully compatible with the Ethereum Virtual Machine (EVM), and our experimental evaluation confirms its high scalability and improved efficiency compared to the state-of-the-art.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warsaw",
+                    "ror": "https://ror.org/039bjqg32"
+                }
+            ],
+            "fullName": "Stefan Dziembowski",
+            "orcid": "0000-0002-6914-6425"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zero Savvy"
+                }
+            ],
+            "fullName": "Shahriar Ebrahimi",
+            "orcid": "0000-0003-0344-921X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warsaw",
+                    "ror": "https://ror.org/039bjqg32"
+                }
+            ],
+            "fullName": "Haniyeh Habibi",
+            "orcid": "0009-0007-4911-5043"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IPPT PAN / Zero Savvy"
+                }
+            ],
+            "fullName": "Parisa Hassanizadeh",
+            "orcid": "0000-0001-6126-3953"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warsaw",
+                    "ror": "https://ror.org/039bjqg32"
+                }
+            ],
+            "fullName": "Pardis Toolabi",
+            "orcid": "0009-0008-9630-9454"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T16:28:20Z"
+        }
+    ],
+    "keywords": [
+        "electronic voting",
+        "zkSNARKs",
+        "proof-of-burn"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1022.pdf",
+    "pid": "1022",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Burn Your Vote: Decentralized and Publicly Verifiable Anonymous Voting at Scale",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Payment Channel Networks (PCNs) enhance blockchain scalability by enabling off-chain transactions. However, repeated unidirectional multi-hop payments often cause channel imbalance or depletion, limiting scalability and usability. Existing rebalancing protocols, such as Horcrux [NDSS\u201925] and Shaduf [NDSS\u201922], rely on on-chain operations, which hinders efficiency and broad applicability.\r\n  We propose Universal Channel Rebalancing (UCRb), a blockchain-agnostic, fully off-chain framework that ensures correct behavior among untrusted participants without on-chain interaction. \r\n  UCRb incorporates the following core innovations: \r\n  (1) a fair and reliable incentive-compatible mechanism that encourages voluntary user participation in off-chain channel rebalancing,  \r\n  (2) integration of Pedersen commitments to achieve atomic off-chain payments and rebalancing operations, while ensuring balance security, and  \r\n  (3) zero-knowledge proofs to enable privacy-preserving channel initialization and coin shifting, ensuring that user identities and fund allocations remain hidden throughout the process.\r\n\r\n  We evaluate UCRb using real-world Lightning Network dataset and compare its performance against state-of-the-art solutions including Horcrux, Shaduf, and Revive [CCS'17]. \r\n  UCRb exhibits a success ratio enhancement between 15% and 50%, while also reducing the required user deposits by 72%--92%. It maintains an almost negligible rate of channel depletion. Additionally, the long-term performance of UCRb is roughly 1.5 times that of its short-term performance, suggesting that continuous operation leads to improved efficiency. We implement a prototype for UCRb smart contracts and demonstrate its practicality through extensive evaluation. As \\texttt{CoinShift} operations require no on-chain interaction, the protocol incurs minimal gas costs. For instance, opening and closing channels with 10 neighbors costs only 130K-160K gas\u2014significantly lower than comparable solutions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warsaw",
+                    "ror": "https://ror.org/039bjqg32"
+                }
+            ],
+            "fullName": "Stefan Dziembowski",
+            "orcid": "0000-0002-6914-6425"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zero Savvy"
+                }
+            ],
+            "fullName": "Shahriar Ebrahimi",
+            "orcid": "0000-0003-0344-921X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung R&D Institute India - Bangalore"
+                }
+            ],
+            "fullName": "Omkar Gavhane"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warsaw",
+                    "ror": "https://ror.org/039bjqg32"
+                }
+            ],
+            "fullName": "Susil Kumar Mohanty",
+            "orcid": "0000-0002-8643-5501"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T16:37:20Z"
+        }
+    ],
+    "keywords": [
+        "blockchain",
+        "Payment Channel",
+        "Chnnel Rebalancing",
+        "zkSNARKs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1023.pdf",
+    "pid": "1023",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Universal Channel Rebalancing: Flexible Coin Shifting in Payment Channel Networks",
+    "year": 2025,
+    "repo": [
+        "https://github.com/UCRb/Universal-Channel-Rebalancing",
+        "https://github.com/noot/schnorr-verify",
+        "https://github.com/nixkitax/circom-schnorr-verify",
+        "https://github.com/nixkitax/circom-schnorr-verify"
+    ]
+}
+,
+{
+    "abstract": "As generative models continue to evolve, verifying the authenticity, provenance, and integrity of digital media has become increasingly critical\u2014particularly for domains like journalism, digital art, and scientific documentation.\r\nIn this work, we present a decentralized verifiable media ecosystem for managing, verifying, and transacting authentic digital media using zero-knowledge proofs (ZKPs).\r\nBuilding on VIMz (Dziembowski et al., PETS'25), we extend the framework in three key directions. First, we generalize the model to support arbitrary image regions to achieve selective transformations support such as redaction and regional blurring\u2014features commonly required in privacy-preserving applications. Second, we introduce performance optimizations that yield up to an 18% improvement in off-chain proof generation, and enhance the framework to support cost-efficient on-chain verification. Third, we design and implement a modular smart contract architecture to support a wide range of decentralized media applications.\r\nAs a flagship use case, we develop a decentralized media marketplace that enables permissionless licensing, ownership transfer, and verifiable attribution. In this setting, users can share transformed media\u2014such as cropped, blurred, or resized previews\u2014alongside ZKPs that prove derivation from a signed original, eliminating the need to trust the seller.\r\nUnlike prior fair exchange protocols, which rely on trusted descriptions or encrypted payload delivery, our system enables verifiable public previews and origin-bound proofs without revealing the full content. This approach unlocks new applications beyond marketplaces, including automated infringement dispute resolution and photography contests with verifiable criteria.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Aleph Zero Foundation / Jagiellonian University, Doctoral School of Exact and Natural Sciences"
+                }
+            ],
+            "fullName": "Piotr Miko\u0142ajczyk",
+            "orcid": "0009-0003-2354-3593"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IPPT PAN / Zero Savvy"
+                }
+            ],
+            "fullName": "Parisa Hassanizadeh",
+            "orcid": "0000-0001-6126-3953"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zero Savvy"
+                }
+            ],
+            "fullName": "Shahriar Ebrahimi",
+            "orcid": "0000-0003-0344-921X"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T16:42:37Z"
+        }
+    ],
+    "keywords": [
+        "zkSNARKs",
+        "Media Provenance",
+        "Fairswap Marketplace",
+        "Folding Schemes"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1024.pdf",
+    "pid": "1024",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Towards Trustless Provenance: A Privacy-Preserving Framework for On-chain Media Verification",
+    "year": 2025,
+    "repo": [
+        "https://github.com/privacy-scaling-explorations/sonobe",
+        "https://github.com/privacy-scaling-explorations/sonobe",
+        "https://github.com/nalinbhardwaj/Nova-Scotia",
+        "https://github.com/nalinbhardwaj/Nova-Scotia",
+        "https://github.com/iden3/circomlib/",
+        "https://github.com/microsoft/Nova",
+        "https://zksecurity.github.io/noname/",
+        "https://zksecurity.github.io/noname/"
+    ]
+}
+,
+{
+    "abstract": "Differentially private stochastic gradient descent (DP-SGD) trains machine learning (ML) models with formal privacy guarantees for the training set by adding random noise to gradient updates. In collaborative learning (CL), where multiple parties jointly train a model, noise addition occurs either (i) before or (ii) during secure gradient aggregation. The first option is deployed in distributed DP methods, which require greater amounts of total noise to achieve security, resulting in degraded model utility. The second approach preserves model utility but requires a secure multiparty computation (MPC) protocol. Existing methods for MPC noise generation require tens to hundreds of seconds of runtime per noise sample because of the number of parties involved. This makes them impractical for collaborative learning, which often requires thousands or more samples of noise in each training step.\r\n\r\nWe present a novel protocol for MPC noise sampling tailored to the collaborative learning setting. It works by constructing an approximation of the distribution of interest which can be efficiently sampled by a series of table lookups. Our method achieves significant runtime improvements and requires much less communication compared to previous work, especially at higher numbers of parties. It is also highly flexible \u2013 while previous MPC sampling methods tend to be optimized for specific distributions, we prove that our method can generically sample\r\nnoise from statistically close approximations of arbitrary discrete distributions. This makes it compatible with a wide variety of DP mechanisms. Our experiments demonstrate the efficiency and utility of our method applied to a discrete Gaussian mechanism for differentially private collaborative learning. For 16 parties, we achieve a runtime of 0.06 seconds and 11.59 MB total communication per sample, a 230\u00d7 runtime improvement and 3\u00d7 less communication compared to the prior state-of-the-art for sampling from discrete Gaussian distribution in MPC.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Vector Institute",
+                    "ror": "https://ror.org/03kqdja62"
+                },
+                {
+                    "name": "University of Toronto",
+                    "ror": "https://ror.org/03dbr7087"
+                }
+            ],
+            "fullName": "Olive Franzese",
+            "orcid": "0000-0001-9773-8017"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Vector Institute",
+                    "ror": "https://ror.org/03kqdja62"
+                },
+                {
+                    "name": "University of Toronto",
+                    "ror": "https://ror.org/03dbr7087"
+                }
+            ],
+            "fullName": "Congyu Fang"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Radhika Garg"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Wisconsin-Madison",
+                    "ror": "https://ror.org/01y2jtd41"
+                },
+                {
+                    "name": "Google (United States)",
+                    "ror": "https://ror.org/00njsd438"
+                }
+            ],
+            "fullName": "Somesh Jha"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Vector Institute",
+                    "ror": "https://ror.org/03kqdja62"
+                },
+                {
+                    "name": "University of Toronto",
+                    "ror": "https://ror.org/03dbr7087"
+                }
+            ],
+            "fullName": "Nicolas Papernot",
+            "orcid": "0000-0001-5078-7233"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northwestern University",
+                    "ror": "https://ror.org/000e0be47"
+                }
+            ],
+            "fullName": "Xiao Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Adam Dziedzic"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T19:30:57Z"
+        }
+    ],
+    "keywords": [
+        "privacy-preserving machine learning",
+        "differential privacy",
+        "collaborative learning",
+        "secure multiparty computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1025.pdf",
+    "pid": "1025",
+    "pubtype": {
+        "note": "ACM CCS",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Secure Noise Sampling for Differentially Private Collaborative Learning",
+    "year": 2025,
+    "repo": [
+        "https://github.com/cleverhans-lab/Secure_Noise_Sampling_DP_CL",
+        "https://github.com/cleverhans-lab/Secure_Noise_Sampling_DP_CL",
+        "https://github.com/emp-toolkit"
+    ]
+}
 ]
