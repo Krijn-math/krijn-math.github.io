@@ -1,3 +1,4 @@
+upke and ukem schemes from supersingular isogenies;;;pratima jana, ratna dutta;;;2025/1010;;;last_week;;;none
 sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimension one;;;zheng xu, kaizhan lin, chang-an zhao, yi ouyang;;;2025/920;;;last_month;;;https://github.com/Kaizhan-Lin/SQIsign2DSquare
 hidden number problems in fiat-shamir based post-quantum signatures;;;yi-fu lai, jonas meers, julian nowakowski;;;2025/913;;;last_month;;;none
 sqisign2dpush: faster signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2025/897;;;last_month;;;https://github.com/hiroshi-onuki/SQIsign2D-Push
@@ -90,7 +91,6 @@ supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;other;;;n
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;other;;;none
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;other;;;none
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;other;;;none
-introducing clapoti(s): evaluating the isogeny class group action in polynomial time;;;aurel page, damien robert;;;2023/1766;;;other;;;none
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;other;;;none
 isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;other;;;https://issikebrokenyet.github.io/
 computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;other;;;https://github.com/Jonathke/Computing-Optimal-Embeddings
