@@ -72899,4 +72899,383 @@
         "https://github.com/emp-toolkit"
     ]
 }
+,
+{
+    "abstract": "Collaborative zk-SNARKs (Ozdemir and Boneh, USENIX\u201922) are a multiparty variant of zk-SNARKs where multiple, mutually distrustful provers, each holding a private input, jointly compute a zk-SNARK using their combined inputs. A sequence of works has proposed efficient constructions of collaborative zk-SNARKs using a common template that involves designing secure multiparty computation (MPC) protocols to emulate a zk-SNARK prover without making non-black-box use of cryptography. To achieve security against malicious adversaries, these works adopt compilers from the MPC literature that transform semi-honest MPC into malicious-secure MPC.\r\n\r\nIn this work, we revisit this design template.\r\n\u2022 Pitfalls: We demonstrate two pitfalls in the template, which can lead to a loss of input privacy. We first show that it is possible to compute collaborative proofs on invalid witnesses, which in turn can leak the inputs of honest provers. Next, we show that using state-of-the-art malicious security compilers as-is for proof computation is insecure, in general. Finally, we discuss mitigation strategies.\r\n\u2022 Malicious Security Essentially for Free: As our main technical result, we show that in the honest-majority setting, one can forego malicious security checks performed by state-of-the-art malicious security compilers during collaborative proof generation of several widely used zk-SNARKs. In other words, we can avoid the overheads of malicious security compilers, enabling faster proof generation.\r\n\r\nTo the best of our knowledge, this is the first example of non-trivial computations where semi-honest MPC protocols achieve malicious security. The observations underlying our positive results are general and may have applications beyond collaborative zkSNARKs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Sanjam Garg",
+            "orcid": "0000-0003-1330-0419"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Aarushi Goel",
+            "orcid": "0000-0002-8903-6354"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                },
+                {
+                    "name": "Johns Hopkins University",
+                    "ror": "https://ror.org/00za53h95"
+                }
+            ],
+            "fullName": "Abhishek Jain",
+            "orcid": "0000-0002-3572-7643"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Bhaskar Roberts",
+            "orcid": "0000-0003-4057-5952"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Bombay",
+                    "ror": "https://ror.org/02qyf5152"
+                }
+            ],
+            "fullName": "Sruthi Sekar",
+            "orcid": "0000-0002-6681-1813"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T20:25:28Z"
+        }
+    ],
+    "keywords": [
+        "multiparty computation",
+        "zk-SNARKs",
+        "collaborative zk-SNARKs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1026.pdf",
+    "pid": "1026",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Malicious Security in Collaborative zk-SNARKs: More than Meets the Eye",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this work, we show that parallel repetition of public-coin interactive arguments reduces the soundness error at an exponential rate even in the post-quantum setting. Moreover, we generalize this result to hold for threshold verifiers, where the parallel repeated verifier accepts if and only if at least $t$ of the executions are accepted (for some threshold $t$). Prior to this work, these results were known only when the cheating prover was assumed to be classical.\r\n\r\nWe also prove a similar result for three-message private-coin arguments.  Previously, Bostanci, Qian, Spooner, and Yuen (STOC 2024) proved such a parallel repetition result in the more general setting of quantum protocols, where the verifier and communication may be quantum. We consider only protocols where the verifier is classical, but obtain a simplified analysis, and for the more general setting of threshold verifiers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Andrew Huang",
+            "orcid": "0009-0001-7847-5669"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Yael Tauman Kalai"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T21:17:10Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1027.pdf",
+    "pid": "1027",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Parallel Repetition for Post-Quantum Arguments",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "End-to-end encryption allows data to be outsourced and stored on an untrusted server, such as in the cloud, without compromising data privacy. In the setting when this data is shared between a group of users, members also all share access to the same static key material used for data encryption. When the group membership changes, access control is only enforced by the server: security breaches or compelled disclosure would allow even a removed member to decrypt the current shared data.\r\n\r\nWe propose to move away from static keys and instead use a group key progression (GKP) scheme, a novel primitive that enables a dynamic group of users to agree on a persistent sequence of keys while keeping a compact local state. GKP ensures that group members can only derive keys within a certain interval of the sequence, a notion that we call interval access control (IAC), and also provide post-compromise security. Our GKP construction, called Grappa, combines continuous group key agreement (CGKA, by Alwen et al., 2020) with a new abstraction called interval scheme. The latter is a symmetric-key primitive that can derive a sequence of keys from a compact state while preserving IAC. We explore different interval scheme constructions and simulate their storage and communication costs when used in group settings. The most efficient of them is a generalization of dual key regression (Shafagh et al., 2020), which we formalize and prove secure. Overall, our protocols offer a practical and robust solution to protect persistent data shared by a group.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Matilda Backendal",
+            "orcid": "0000-0002-8677-8301"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IMDEA Software",
+                    "ror": "https://ror.org/04xvfkh51"
+                },
+                {
+                    "name": "Universidad Polit\u00e9cnica de Madrid",
+                    "ror": "https://ror.org/03n6nwv02"
+                }
+            ],
+            "fullName": "David Balb\u00e1s",
+            "orcid": "0000-0003-4864-1125"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, San Diego",
+                    "ror": "https://ror.org/0168r3w48"
+                }
+            ],
+            "fullName": "Miro Haller",
+            "orcid": "0000-0001-8796-5064"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-02T22:53:02Z"
+        }
+    ],
+    "keywords": [
+        "key progression",
+        "secure file sharing",
+        "E2EE message backups",
+        "dual key regression",
+        "continuous group key agreement"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1028.pdf",
+    "pid": "1028",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Group Key Progression: Strong Security for Shared Persistent Data",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Miro-H/GrappaSimulator"
+    ]
+}
+,
+{
+    "abstract": "Ascon, a family of algorithms that support hashing and Authenticated Encryption with Associated Data (AEAD), is the final winner of the NIST Lightweight Cryptography Project.\r\nAs a research hotspot, Ascon has received substantial third-party security evaluation. Among all the results of Ascon-128 (the primary recommendation of AEAD), the key recovery attack can only be achieved by reducing the initialization phase to 7 rounds or fewer, regardless of whether it violates the security claims made by the designers (i.e., misuse of the nonce or exceeding data limits $2^{64}$). \r\nIn this paper, we, from two aspects (misuse-free setting and misused setting), improve the key recovery attack on Ascon-128 using the cube attack method.\r\nIn one part, we present a faster method to recover the superpolies for a 64-dimensional cube in the output bits of the 7-round initialization, enabling us to recover the secret key with a time complexity of $2^{95.96}$ and a data complexity of $2^{64}$.\r\nOur 7-round key recovery attack, based on the full key space, greatly improves the time complexity, making it the best result to date.\r\nAdditionally, we utilize several techniques to extend state recovery to key recovery, answering the open problem of transitioning from full state recovery in the encryption phase to key recovery for Ascon-128 (ToSc Vol 4, 2022). By combining encryption phase state recovery with initialization phase key recovery, we can achieve 8-round and 9-round initialization phase key recovery in the nonce misuse scenario, with time complexities of $2^{101}$ and $2^{123.92}$, respectively.\r\nThis represents an improvement of two rounds over previous results in the misused setting.\r\nOur first key recovery attack is also applicable to Ascon-128a, achieving \r\n the same result. In cases where the full state, prior to the encryption phase, can be recovered in other Ascon AEAD modes, our second key recovery attack will also be useful. It is worth noting that this work does not threaten the security of the full 12 rounds Ascon, but we expect that our results provide new insights\r\ninto the security of Ascon.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University"
+                },
+                {
+                    "name": "Quan Cheng Shandong Laboratory"
+                },
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University"
+                }
+            ],
+            "fullName": "Shuo Peng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University"
+                },
+                {
+                    "name": "Quan Cheng Shandong Laboratory"
+                },
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University"
+                }
+            ],
+            "fullName": "Kai Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University"
+                },
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University"
+                }
+            ],
+            "fullName": "Jiahui He"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Technology, Shandong University"
+                },
+                {
+                    "name": "Quan Cheng Shandong Laboratory"
+                },
+                {
+                    "name": "Key Laboratory of Cryptologic Technology and Information Security, Ministry of Education, Shandong University"
+                }
+            ],
+            "fullName": "Meiqin Wang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-03T01:46:09Z"
+        }
+    ],
+    "keywords": [
+        "Ascon-128",
+        "Cube attack",
+        "Superpoly recovery",
+        "Key recovery"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1029.pdf",
+    "pid": "1029",
+    "pubtype": {
+        "note": "CT-RSA 2025: The Cryptographers' Track at RSA Conference",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Key Recovery Attacks of Ascon",
+    "year": 2025,
+    "repo": [
+        "https://github.com/keyrecoveryofascon/keyrecoveryofascon",
+        "https://github.com/keyrecoveryofascon/keyrecoveryofascon",
+        "https://github.com/keyrecoveryofascon/keyrecoveryofascon/tree/main/forward_extension",
+        "https://github.com/keyrecoveryofascon/keyrecoveryofascon/tree/main/forward_extension",
+        "https://github.com/keyrecoveryofascon/keyrecoveryofascon"
+    ]
+}
+,
+{
+    "abstract": "Anonymous rate-limited tokens are a special type of credential that can be used to improve the efficiency of privacy-preserving authentication systems like Privacy Pass. In such a scheme, a user obtains a \"token dispenser\" by interacting with an issuer, and the dispenser allows the user to create up to a pre-determined number $k$ of unlinkable and publicly verifiable tokens. Unlinkable means that one should not be able to tell that two tokens originate from the same dispenser, but also they cannot be linked to the interaction that generated the dispenser. Furthermore, we can limit the rate at which these tokens are created by linking each token to a context (e.g., the service we are authenticating to), and imposing a limit $N \\leq k$ such that seeing more than $N$ tokens for the same context will reveal the identity of the user.\r\nConstructions of such tokens were first given by Camenisch, Hohenberger and Lysyanskaya (EUROCRYPT '05) and Camenisch, Hohenberger, Kohlweiss, Lysyanskaya, and Meyerovich (CCS '06). \r\n\r\nIn this work, we present the first construction of \\emph{everlasting} anonymous rate-limited tokens, for which unlinkability holds against computationally unbounded adversaries, whereas other security properties (e.g., unforgeability) remain computational. Our construction relies on pairings. While several parameters in our construction unavoidably grow with $k$, the key challenge we resolve is ensuring that the complexity of dispensing a token is independent of the parameter $k$. \r\n\r\nWe are motivated here by the goal of providing solutions that are robust to potential future quantum attacks against the anonymity of previously stored tokens. A construction based on post-quantum secure assumptions (e.g., based on lattices) would be rather inefficient---instead, we take a pragmatic approach dispensing with post-quantum security for properties not related to privacy.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Rutchathon Chairattana-Apirom",
+            "orcid": "0009-0006-1990-1329"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Nico D\u00f6ttling"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Anna Lysyanskaya",
+            "orcid": "0000-0002-3567-3550"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Stefano Tessaro",
+            "orcid": "0000-0002-3751-8546"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-03T06:20:26Z"
+        }
+    ],
+    "keywords": [
+        "Anonymous Tokens",
+        "Pairing-Based Construction",
+        "Unconditional Privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1030.pdf",
+    "pid": "1030",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Everlasting Anonymous Rate-Limited Tokens",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
