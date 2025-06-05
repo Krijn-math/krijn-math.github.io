@@ -78,7 +78,7 @@ climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_year;
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_year;;;none
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;last_year;;;none
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_year;;;none
-universal composable password authenticated key exchange for the post-quantum world;;;you lyu, shengli liu, shuai han;;;2024/374;;;last_year;;;none
+universal composable password authenticated key exchange for the post-quantum world;;;you lyu, shengli liu, shuai han;;;2024/374;;;other;;;none
 radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;other;;;none
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;other;;;https://github.com/TheParallelSquarerootVeluTeam/Parallel-Squareroot-Velu
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;other;;;none
