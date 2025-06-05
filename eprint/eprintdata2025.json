@@ -73278,4 +73278,136 @@
         "none"
     ]
 }
+,
+{
+    "DOI": "10.1007/978-3-031-88661-4_2",
+    "abstract": "\\gift, including \\gift-64 and \\gift-128, is a family of lightweight block ciphers with outstanding implementation performance and high security, which is a popular underlying primitive chosen by many AEADs such as \\sundae.  Currently, differential cryptanalysis is the best key-recovery attack on both ciphers, but they have stuck at 21 and 27 rounds for \\gift-64 and \\gift-128, respectively. Recently, Beyne and Rijmen proposed the quasidifferential transition matrix for differential cryptanalysis at CRYPTO 2022 and showed that the fixed-key probability of a differential (characteristic) can be expressed as the sum of correlations of all quasidifferential trails corresponding to this differential (characteristic). As pointed out by Beyne and Rijmen in their paper, the quasidifferential methodology is useful in identifying weak-key differential attacks.\r\n    In this paper, we apply Beyne and Rijmen's method to \\gift. Some differential characteristics with small (average) probabilities can have much larger probabilities when weak-key conditions hold. Improved weak-key differential attacks on \\gift-64 and \\gift-128 are thus obtained. For \\gift-64, the probability of a 13-round differential is improved from $2^{-62.06}$ to $2^{-57.82}$ with 4 bits of weak-key conditions, then an improved differential key-recovery attack on 21-round \\gift-64 is obtained with $2^{117.42}/2^{64}$ time/data complexities; the probability of a 13-round multiple differential (containing 33 characteristics) is improved from $2^{-58.96}$ to $2^{-55.67}$ with 4 bits of weak-key conditions, then an improved multiple differential key-recovery attack on 21-round \\gift-64 is obtained with $2^{123.27}/2^{64}$ time/data complexities. For \\gift-128, the probability of a 20-round differential is improved from $2^{-121.83}$ to $2^{-114.77}$ with 6 bits of weak-key conditions; the probability of a 21-round multiple differential (containing 2 differentials) is improved from $2^{-128.38}$ to $2^{-122.77}$ with 4 bits of weak-key conditions. Improved (multiple) differential weak-key key-recovery attacks are obtained for 27 and 28 rounds of \\gift-128 with $2^{115.77}$/$2^{115.77}$ and $2^{123.77}$/$2^{123.77}$ time/data complexities, respectively. As far as we know, this is the first time that a (weak-key)  key-recovery attack can reach 28 rounds of \\gift-128.\r\n    Additionally, as an independent interest, we perform the first differential attack on \\sundae. The differential used in this attack is checked with quasidifferential trails, thus the probability is reliable. Our attack is nonce-respecting and has significantly better complexities than the currently best attack.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University"
+                }
+            ],
+            "fullName": "Chengcheng Chang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University"
+                }
+            ],
+            "fullName": "Meiqin Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University"
+                }
+            ],
+            "fullName": "Wei Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University"
+                }
+            ],
+            "fullName": "Kai Hu"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-03T06:53:26Z"
+        }
+    ],
+    "keywords": [
+        "Quasidifferential",
+        "Differential",
+        "Weak-Key",
+        "GIFT"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1031.pdf",
+    "pid": "1031",
+    "pubtype": {
+        "note": "CT-RSA 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quasidifferential Saves Infeasible Differential: Improved Weak-Key Key-Recovery Attacks on Round-Reduced GIFT",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ccc53021/quasidifferential-gift",
+        "https://github.com/ccc53021/quasidifferential-gift"
+    ]
+}
+,
+{
+    "abstract": "In this work, we consider secure multiparty computation (MPC) in the asynchronous network setting. MPC allows $n$ parties to compute a public function on their private inputs against an adversary corrupting at most $t$ of them. We consider both communication complexity and round complexity of asynchronous MPC (AMPC) with the optimal resilience $n=3t+1$. \r\n\r\n    Without fully homomorphic encryptions, the best-known result in this setting is achieved by Coretti, Garay, Hirt, and Zikas (ASIACRYPT 2016), which requires $O(|C|n^3\\kappa)$ bits of communication assuming one-way functions, where $\\kappa$ is the security parameter. On the other hand, the best-known non-constant-round AMPC by Goyal, Liu, and Song (CRYPTO 2024) can achieve $O(|C|n)$ communication even in the information-theoretic setting. In this work, we give the first construction of a constant-round AMPC with $O(|C|n\\kappa)$ bits of communication that achieves malicious security with abort assuming random oracles. We provide new techniques for adapting the MPC-in-the-head framework in the asynchronous network to compute a constant-size garbled circuit.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Junru Li",
+            "orcid": "0009-0003-1687-2620"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                },
+                {
+                    "name": "Shanghai Qi Zhi Institute"
+                }
+            ],
+            "fullName": "Yifan Song",
+            "orcid": "0009-0009-4169-3257"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-03T08:21:53Z"
+        }
+    ],
+    "keywords": [
+        "Secure Multiparty Computation",
+        "Communication Complexity",
+        "Asynchronous Network"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1032.pdf",
+    "pid": "1032",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Constant-Round Asynchronous MPC with Optimal Resilience and Linear Communication",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
