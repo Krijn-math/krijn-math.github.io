@@ -1,3 +1,5 @@
+cryptanalysis of isogeny-based quantum money with rational points;;;hyeonhak kim, donghoe heo, seokhie hong;;;2025/201;;;last_week;;;none
+computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_week;;;https://github.com/fffmath/AsymptoticBounds
 orient express: using frobenius to express oriented isogenies;;;wouter castryck, riccardo invernizzi, gioella lorenzon, jonas meers, frederik vercauteren;;;2025/1047;;;last_week;;;none
 upke and ukem schemes from supersingular isogenies;;;pratima jana, ratna dutta;;;2025/1010;;;last_month;;;none
 sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimension one;;;zheng xu, kaizhan lin, chang-an zhao, yi ouyang;;;2025/920;;;last_month;;;https://github.com/Kaizhan-Lin/SQIsign2DSquare
@@ -34,9 +36,7 @@ klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryc
 poké: a compact and efficient pke from higher-dimensional isogenies;;;andrea basso, luciano maino;;;2024/624;;;last_year;;;https://github.com/andreavico/POKE-PKE
 unconditional foundations for supersingular isogeny-based cryptography;;;arthur herlédan le merdy, benjamin wesolowski;;;2025/271;;;last_year;;;none
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_year;;;https://gitlab.inria.fr/nsarkis/half-diff-add
-search and verify isogeny-based quantum money with rational points;;;hyeonhak kim, donghoe heo, seokhie hong;;;2025/201;;;last_year;;;none
 more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_year;;;https://github.com/QuSAC/IsogenyPoKviaCanonicalModPolys
-computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_year;;;https://github.com/fffmath/AsymptoticBounds
 computing quaternion embeddings and endomorphism rings of supersingular oriented elliptic curves;;;maher mamah;;;2025/186;;;last_year;;;none
 the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_year;;;none
 experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_year;;;none
