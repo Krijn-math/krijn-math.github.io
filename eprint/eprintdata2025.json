@@ -75148,4 +75148,783 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Oblivious RAMs (ORAMs) allow data outsourcing to servers so that the access pattern to the outsourced data is kept private. It is also a crucial building block to enable private RAM access within secure multi-party computation (MPC). In recent years, schemes that match the ORAM lower bound have been proposed in both the outsourcing setting and the RAM-model MPC setting, seemingly putting an epilogue in the theory of ORAM. In this paper, we initiate a study of mixed-mode ORAMs, where accesses to the ORAM are a mix of both public and private accesses. Although existing ORAMs can support public access by treating them as private ones, achieving better efficiency is highly non-trivial. \r\n\r\n- We present a mixed-mode ORAM algorithm, assuming the existence of private information retrieval (PIR). When the PIR scheme is communication-efficient, this ORAM achieves the best possible outcome: it has a bandwidth blowup of $O(\\log N)$ for private accesses and $O(1)$ for public accesses. This construction can be easily extended for the MPC setting achieving $O(B\\log N )$ circuit size for private accesses to $B$-sized blocks and $O(B)$ circuit size for public accesses to the same array.\r\n\r\n- We instantiate the above protocol in the three-party computation (3PC) setting with more concrete optimizations, yielding a protocol that performs almost as efficiently as state-of-the-art RAM-3PC protocols for private accesses while being $3\\times$ more efficient for public accesses in the LAN setting.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Northwestern University",
+                    "ror": "https://ror.org/000e0be47"
+                }
+            ],
+            "fullName": "Wenhao Zhang",
+            "orcid": "0000-0001-6031-8684"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northwestern University",
+                    "ror": "https://ror.org/000e0be47"
+                }
+            ],
+            "fullName": "Xiao Wang",
+            "orcid": "0000-0002-5991-7417"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Arizona State University",
+                    "ror": "https://ror.org/03efmqc40"
+                }
+            ],
+            "fullName": "Chenkai Weng",
+            "orcid": "0000-0003-2436-9366"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T03:22:34Z"
+        }
+    ],
+    "keywords": [
+        "Oblivious RAM",
+        "RAM-based 3PC",
+        "Mixed-Mode Protocols"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1057.pdf",
+    "pid": "1057",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Mixed-Mode Oblivious RAMs",
+    "year": 2025,
+    "repo": [
+        "https://github.com/emp-toolkit"
+    ]
+}
+,
+{
+    "abstract": "We present a generic construction of adaptive trapdoor function (TDF) from any public-key encryption (PKE) scheme that satisfies two properties: the randomness recoverability and the pseudorandom ciphertext property. As a direct corollary, we can obtain adaptive TDF from any trapdoor permutation (TDP) whose domain is both recognizable and sufficiently dense. In our construction, we can prove that the function's output is indistinguishable from uniform even when an adversary has access to the inversion oracle.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Fuyuki Kitagawa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Institute of Advanced Industrial Science and Technology (AIST)"
+                }
+            ],
+            "fullName": "Takahiro Matsuda"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T04:43:19Z"
+        }
+    ],
+    "keywords": [
+        "TDF",
+        "adaptive TDF",
+        "pseudorandom ciphertext PKE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1058.pdf",
+    "pid": "1058",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Adaptive TDF from PKE with Randomness Recoverability and Pseudorandom Ciphertext Property",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Sponge-based constructions have successfully been receiving widespread adoption, as represented by the standardization of SHA-3 and Ascon by NIST. Yet, their provable security against quantum adversaries has not been investigated much. This paper studies the post-quantum security of some keyed sponge-based constructions in the quantum ideal permutation model, focusing on the Ascon AEAD mode and KMAC as concrete instances. For the Ascon AEAD mode, we prove the post-quantum security in the single-user setting up to about $\\min(2^{c/3},2^{\\kappa/3})$ queries, where $c$ is the capacity and $\\kappa$ is the key length. Unlike the recent work by Lang et al.~(ePrint 2025/411), we do not need non-standard restrictions on nonce sets or the number of forgery attempts. In addition, our result guarantees even non-conventional security notions such as the nonce-misuse resilience confidentiality and authenticity under release of unverified plaintext. For KMAC, we show the security up to about $\\min(2^{c/3}, 2^{r/2},2^{(\\kappa-r)/2})$ queries, where $r$ is the rate, ignoring some small factors. In fact, we prove the security not only for KMAC but also for general modes such as the inner-, outer-, and full-keyed sponge functions.\r\nWe take a modular proof approach, adapting the ideas by several works in the classical ideal permutation model into the quantum setting: For the Ascon AEAD mode, we observe it can be regarded as an iterative application of a Tweakable Even-Mansour (TEM) cipher with a single low-entropy key, and gives the security bound as the sum of the post-quantum TPRP advantage of TEM and the classical security advantage of Ascon when TEM is replaced with a secret random object. The proof for keyed sponges is obtained analogously by regarding them as built on an Even-Mansour (EM) cipher with a single low-entropy key.\r\nThe post-quantum security of (T)EM has been proven by Alagic et al. (Eurocrypt 2022 and Eurocrypt 2024). However, they show the security only when the keys are uniformly random. In addition, the proof techniques, so-called the resampling lemmas, are inapplicable to our case with a low-entropy key. Thus, we introduce and prove a modified resampling lemma, thereby showing the security of (T)EM with a low-entropy key.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Akinori Hosoyamada"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T04:49:15Z"
+        }
+    ],
+    "keywords": [
+        "sponge",
+        "Ascon",
+        "KMAC",
+        "post-quantum  cryptography",
+        "Even-Mansour",
+        "tweakable Even-Mansour"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1059.pdf",
+    "pid": "1059",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We construct $t$-non-malleable extractors---which allow an attacker to tamper with a source $t$ times---for high min-entropy sources samplable by poly-time hierarchy circuits and for tampering classes corresponding to poly-time hierarchy functions from derandomization-type assumptions. \r\n\r\nWe then show an application of this new object to ruling out constructions of succinct, non-interactive, arguments (SNARGs) secure against \\emph{uniform} adversaries from \\emph{uniform} falsifiable assumptions via a class of black-box reductions that has not been previously considered in the literature. This class of black-box reductions allows the reduction to arbitrarily set the \\emph{coins}, as well as the input, of the uniform adversary it interacts with.\r\nThe class of reductions we consider is restricted in allowing only non-adaptive queries to the adversary.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Marshall Ball",
+            "orcid": "0000-0002-4236-3710"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Maryland, College Park",
+                    "ror": "https://ror.org/047s2c258"
+                }
+            ],
+            "fullName": "Dana Dachman-Soled",
+            "orcid": "0000-0001-6797-641X"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T05:12:05Z"
+        }
+    ],
+    "keywords": [
+        "non-malleable extractors",
+        "black-box separations",
+        "SNARGs",
+        "samplable distributions",
+        "samplable sources",
+        "derandomization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1060.pdf",
+    "pid": "1060",
+    "pubtype": {
+        "note": "CRYPTO 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Uniform Black-Box Separations via Non-Malleable Extractors",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "FROST and its variants are state-of-the-art protocols for threshold Schnorr signatures that are used in real-world applications. While static security of these protocols has been shown by several works, the security of these protocols under adaptive corruptions\u2014where an adversary can choose which parties to corrupt at any time based on information it learns during protocol executions\u2014has remained a notorious open problem that has received renewed attention due to recent standardization efforts for threshold schemes.\r\n\r\nWe show adaptive security (without erasures) of FROST and several variants under different corruption thresholds and computational assumptions. Let n be the total number of parties, t+1 the signing threshold, and t_c an upper bound on the number of corrupted parties.\r\n\r\n1. We prove adaptive security when t_c = t/2 in the random oracle model (ROM) based on the algebraic one-more discrete logarithm assumption (AOMDL)\u2014the same conditions under which FROST is proven statically secure.\r\n\r\n2. We introduce the low-dimensional vector representation (LDVR) problem, parameterized by t_c, t, and n, and prove adaptive security in the algebraic group model (AGM) and ROM based on the AOMDL assumption and the hardness of the LDVR problem for the corresponding parameters. In some regimes (including some t_c >t/2) we show the LDVR problem is unconditionally hard, while in other regimes (in particular, when t_c = t) we show that hardness of the LDVR problem is necessary for adaptive security to hold. In fact, we show that hardness of the LDVR problem is necessary for proving adaptive security of a broad class of threshold Schnorr signatures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Web3 Foundation"
+                }
+            ],
+            "fullName": "Elizabeth Crites",
+            "orcid": "0000-0001-9992-1771"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Google"
+                }
+            ],
+            "fullName": "Jonathan Katz",
+            "orcid": "0000-0001-6084-9303"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                },
+                {
+                    "name": "NEAR One"
+                }
+            ],
+            "fullName": "Chelsea Komlo",
+            "orcid": "0000-0002-2294-2491"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Stefano Tessaro",
+            "orcid": "0000-0002-3751-8546"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Chenzhi Zhu",
+            "orcid": "0000-0002-4276-2797"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T05:18:59Z"
+        }
+    ],
+    "keywords": [
+        "Threshold Signatures",
+        "Schnorr Signatures",
+        "Adaptive Security",
+        "Random-Oracle Model",
+        "Algebraic-Group Model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1061.pdf",
+    "pid": "1061",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Adaptive Security of FROST",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In the Social Internet of Vehicles (SIoV), effective data sharing is essential for applications including road safety, traffic management, and situational awareness. However, the decentralized and open nature of SIoV presents significant challenges in simultaneously ensuring data integrity, user privacy, and system accountability. This paper presents a protocol for secure and location-accurate traffic data sharing that fully preserves the anonymity and privacy of participating witnesses. The protocol leverages zero-knowledge proofs (ZKPs) to allow vehicles to broadcast redacted traffic information\u2014such as images\u2014tied to specific geographic locations, while withholding both the original content and the identity of the reporting vehicle. To ensure the authenticity of the redacted content and the legitimacy of the witness, an additional ZKP is used to privately validate both elements. Upon receiving a report, the verifying node checks the submitted proofs, aggregates validated inputs, and publishes the resulting metadata to both IPFS and a blockchain. This design ensures public verifiability, tamper resistance, and the reliability of the shared data, while maintaining strong privacy guarantees through cryptographic anonymity. To improve the efficiency of proof generation on resource-constrained devices, the protocol employs folding-based ZKP constructions. We conduct a formal security and soundness analysis of the protocol and implement a proof-of-concept, which is publicly available as open-source software. Experimental evaluations on commodity hardware demonstrate that the protocol is computationally efficient and introduces less than 1.5\\% communication overhead relative to the size of the shared traffic data, indicating its suitability for real-world deployment.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warsaw",
+                    "ror": "https://ror.org/039bjqg32"
+                }
+            ],
+            "fullName": "Stefan Dziembowski",
+            "orcid": "0000-0002-6914-6425"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zero Savvy"
+                }
+            ],
+            "fullName": "Shahriar Ebrahimi",
+            "orcid": "0000-0003-0344-921X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zero Savvy / IPPT PAN"
+                }
+            ],
+            "fullName": "Parisa Hassanizadeh",
+            "orcid": "0000-0001-6126-3953"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warsaw",
+                    "ror": "https://ror.org/039bjqg32"
+                }
+            ],
+            "fullName": "Susil Kumar Mohanty",
+            "orcid": "0000-0002-8643-5501"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T12:37:01Z"
+        }
+    ],
+    "keywords": [
+        "Data Authenticity",
+        "Proof of Location",
+        "Reliability",
+        "zkSNARKs",
+        "Social Internet of Vehicles"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1062.pdf",
+    "pid": "1062",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "TrafficProof: Privacy-Preserving Reliable Traffic Information Sharing in Social Internet of Vehicles",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Three-party secret sharing-based computation has emerged as a promising approach for secure deep learning, benefiting from its high throughput. However, it still faces persistent challenges in computing complex operations such as secure Sign-Bit Extraction, particularly in high-latency and low-bandwidth networks.  A recent work, Aegis (Lu et al., Cryptology ePrint'2023), made significant strides by proposing a constant-round DGK-style Sign-Bit Extraction protocol with GPU acceleration on Piranha (Watson et. al., USENIX Security'2022). However, Aegis exhibits two critical limitations: it \\romannumeral1) overlooks the use of \\textit{bit-wise prefix-sum}, and \\romannumeral2) inherits non-optimized modular arithmetic over prime fields and excessive memory overhead from the underlying GPU-based MPC framework. This results in suboptimal performance in terms of communication, computation, and GPU memory usage.\r\n\r\nDriven by the limitations of Aegis, we propose an optimized constant-round secure Sign-Bit Extraction protocol with communication and GPU-specific optimizations. Concretely, we construct a new masked randomized list by exploiting the upper bound of bit-wise prefix-sum to reduce online communication by up to $50\\%$, and integrate fast modular-reduction and kernel fusion techniques to enhance GPU utilization in MPC protocols. Besides, we propose specific optimizations for secure piecewise polynomial approximations and Maxpool computation in neural network evaluations. Finally, we instantiate these protocols as a framework MIZAR and report their improved performance over state-of-the-art GPU-based solutions: \\romannumeral1) For secure Sign-Bit Extraction, we achieve a speedup of $2$--$2.5\\times$ and reduce communication by $2$--$3.5\\times$. \\romannumeral2) Furthermore, we improve the performance of secure evaluation of nonlinear functions and neural networks by $1.5$--$3.5\\times$. \\romannumeral3) Lastly, our framework achieves $10\\%$--$50\\%$ GPU memory savings.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore, Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Ye Dong",
+            "orcid": "0000-0002-2105-8047"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, CAS"
+                }
+            ],
+            "fullName": "Xudong Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Xiangfu Song"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Singapore University of Technology and Design",
+                    "ror": "https://ror.org/05j6fvn87"
+                }
+            ],
+            "fullName": "Yaxi Yang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Tianwei Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Jin-Song Dong"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T12:41:36Z"
+        }
+    ],
+    "keywords": [
+        "Privacy",
+        "Secure 3-Party Computation",
+        "Sign-Bit Extraction",
+        "Deep Learning"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/1063.pdf",
+    "pid": "1063",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "MIZAR: Boosting Secure Three-Party Deep Learning with Co-Designed Sign-Bit Extraction and GPU Acceleration",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Goyal and Goyal demonstrated that extractable witness encryption, when combined with smart-contract equipped proof-of-stake blockchains, can yield powerful cryptographic primitives such as one-time programs and pay-to-use programs. However, no standard model construction for extractable witness encryption is known, and instantiations from alternatives like indistinguishability obfuscation are highly inefficient.\r\n\r\nThis paper circumvents the need for extractable witness encryption by combining signature-based witness encryption (D\u00f6ttling et al.) with witness encryption for KZG commitments (Fleischhacker et al.). Inspired by Goyal et al., we introduce $T+1$-Extractable Witness Encryption for Blockchains ($T+1$-eWEB), a novel primitive that encrypts a secret, making its decryption contingent upon the subsequent block's state. Leveraging $T+1$-eWEBs, we then build a conditional one-time memory, leading to a $T+1$ one-time program ($T+1$-OTP) also conditional on the next block state. Finally, using our $T+1$-OTP, we develop a conditional RAM obfuscation scheme where program execution can be contingent on the blockchain state, thereby enabling applications like pay-to-use programs.\r\n\r\nDespite its theoretical value, our construction is impractical due to a \"bit-by-bit\" signing requirement for the state root and an inefficient method for storing validator keys. We thus posit the construction of a practical $T+1$-OTP as a significant open problem. This work provides the first theoretical pathway for building such primitives without extractable witness encryption, representing a novel step for blockchain-secured cryptography",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Maryland, College Park",
+                    "ror": "https://ror.org/047s2c258"
+                }
+            ],
+            "fullName": "Lev Stambler",
+            "orcid": "0000-0002-0952-8528"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T14:36:43Z"
+        }
+    ],
+    "keywords": [
+        "blockchain",
+        "witness encryption",
+        "one-time programs",
+        "obfuscation",
+        "Ethereum"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1064.pdf",
+    "pid": "1064",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "From Signature-Based Witness Encryption to RAM Obfuscation: Achieving Blockchain-Secured Cryptographic Primitives",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The key encapsulation mechanism FrodoKEM is a post-quantum algorithm based on plain LWE. While it has not been selected by the NIST for standardization, FrodoKEM  shares a lot of similarities with the lattice-based standard ML-KEM and offers strong security assumptions by relying on the unstructured version of the LWE problem. This leads FrodoKEM  to be recommended by European agencies ANSSI and BSI as a possible choice to obtain post-quantum security. In this paper, we discuss the practical aspects of incorporating side-channel protections in FrodoKEM  by describing a fully masked version of the scheme based on several previous works on LWE-based KEMs. Furthermore, we propose an arbitrary order C implementation based on the reference code and a Cortex-M4 implementation with gadgets specialized at order 1 in low level assembly code that incorporates bespoke modifications to thwart (micro-)architectural leakages. Finally, we validate our order 1 gadgets by performing TVLA on a ChipWhisperer.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Luxembourg",
+                    "ror": "https://ror.org/036x5ad56"
+                }
+            ],
+            "fullName": "Fran\u00e7ois G\u00e9rard"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoNext Security"
+                }
+            ],
+            "fullName": "Morgane Guerreau"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T15:15:13Z"
+        }
+    ],
+    "keywords": [
+        "Frodo",
+        "SCA",
+        "KEM",
+        "Masking",
+        "Cortex-M4"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1065.pdf",
+    "pid": "1065",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "High-Order and Cortex-M4 First-Order Implementations of Masked FrodoKEM",
+    "year": 2025,
+    "repo": [
+        "https://github.com/fragerar/masked_Frodo"
+    ]
+}
+,
+{
+    "abstract": "Vehicle-to-grid (V2G) refers to the bidirectional communication and energy flows that allow renewable energy sources to supply supplementary electrical services between electric cars (EVs) and the power grid. Additionally, V2G lowers environmental pollution and energy issues while providing efficient charging services. A PUF-based, reliable, anonymous authentication and key establishment scheme for V2G networks was recently presented by Sungjin Yu et al. In this paper, we show that the Yu et al. protocol is vulnerable to tracking attacks and does not guarantee user anonymity. We also discovered that ephemeral secret leakage attacks can target their scheme. Additionally, we propose a new PUF-based authenticated key establishment scheme for V2G networks that is more effective than the most recent relevant scheme and is resistant to all known attacks. We prove that the presented scheme is semantically secure, and we also simulate our protocol using the Scyther tool.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Cyberspace Research Institute, Shahid Beheshti University, Iran"
+                }
+            ],
+            "fullName": "Milad Seddigh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cyberspace Research Institute, Shahid Beheshti University, Iran"
+                }
+            ],
+            "fullName": "Seyed Hamid Baghestani"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Electrical Engineering, Sharif University of Technology, Tehran, Iran"
+                }
+            ],
+            "fullName": "Mahdi Esfahani"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T16:23:08Z"
+        }
+    ],
+    "keywords": [
+        "Vehicle-to-grid",
+        "user anonymity",
+        "ephemeral",
+        "key agreement"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1066.pdf",
+    "pid": "1066",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A New PUF-Based Authenticated Key Establishment Protocol for V2G Networks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Onion routing is a popular practical approach to anonymous communication, and the subject of a growing body of foundational theoretical work aiming to design efficient schemes with provable anonymity, the strongest notion of which is full anonymity.\r\n\r\nUnfortunately, all previous schemes that achieve full anonymity assume the synchronous communication setting, which is unrealistic as real networks may experience message loss and timing attacks that render such schemes insecure. Recently, Ando, Lysyanskaya, and Upfal (TCC '24) took a first step towards addressing the asynchronous setting by constructing an efficient onion routing protocol with the strictly weaker guarantee of differential privacy. Their scheme relies on a new primitive called bruisable onion encryption. \r\n\r\nIn this paper, we construct the first efficient fully anonymous onion routing protocol in the asynchronous setting. To do so, we overcome two main technical challenges: First, we develop the first bruisable onion construction that does not leak information about the onion's position on the routing path. Second, we design an onion routing protocol that uses such bruisable onion encryption to achieve full anonymity (rather than just differential privacy). Along the way, we develop a new fully anonymous onion routing protocol in the synchronous setting, which improves on the state of the art in terms of communication complexity and round complexity.\r\n\r\nBoth our protocols are secure against an active adversary corrupting a constant fraction of the nodes (up to <1 for the synchronous protocol, and <1/2 for the asynchronous protocol) and rely on standard cryptographic assumptions (CCA-secure public key encryption and collision-resistant hash functions).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tufts University",
+                    "ror": "https://ror.org/05wvpxv85"
+                }
+            ],
+            "fullName": "Megumi Ando",
+            "orcid": "0000-0002-4639-9163"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Miranda Christ",
+            "orcid": "0009-0003-9914-6391"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Kashvi Gupta",
+            "orcid": "0009-0003-6464-3873"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Tal Malkin",
+            "orcid": "0000-0003-3533-6156"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Mitre (United States)",
+                    "ror": "https://ror.org/03ks2a131"
+                }
+            ],
+            "fullName": "Dane Smith",
+            "orcid": "0009-0002-0914-103X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T17:56:00Z"
+        }
+    ],
+    "keywords": [
+        "Anonymity",
+        "onion routing",
+        "asynchronous"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/1067.pdf",
+    "pid": "1067",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Full Anonymity in the Asynchronous Setting from Peony Onion Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Modular arithmetic is the computational backbone of many cryptographic and scientific algorithms.  \r\nIn particular, modular multiplication in a large prime field is computationally expensive and dictates the runtime of many algorithms. While it is relatively easy to utilize vectorization to accelerate batches of independent modular multiplications, our goal is to reduce the latency of a $\\textit{single}$ modular multiplication under a generic prime using vectorization, while maintaining constant-time execution.\r\n\r\nWe investigate the technique of Residue Number System (RNS) Montgomery modular multiplication. We first contribute a unified view of algorithmic optimizations in prior art. This view enables us to further reduce the number of elementwise multiplications in an algorithm with a simplified structure that we prove correct.\r\n\r\nWe explore AVX512 acceleration on CPUs, and show how to map our algorithm to vector instructions. We implement our algorithm in C++ and achieve $\\approx 4 \\times$ speedup, which is nearly maximal, for $1024+$-bit primes on a CPU with AVX512 over optimized library implementations of standard Montgomery modular multiplication algorithms. GPUs contain vector cores that each support tens of physical threads. We show how to intelligently map our algorithm to threads in a vector core, ``overparallelizing'' to minimize latency. We show substantial speedups over a commercial library implementation of standard modular multiplication algorithms across a wide range of prime sizes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Simon Langowski",
+            "orcid": "0000-0003-2408-8441"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Srini Devadas",
+            "orcid": "0000-0001-8253-7714"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-06T21:03:20Z"
+        }
+    ],
+    "keywords": [
+        "modular multiplication",
+        "residue number system",
+        "vector instructions",
+        "Montgomery multiplication"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1068.pdf",
+    "pid": "1068",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Modular Multiplication Using Vector Instructions on Commodity Hardware",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
