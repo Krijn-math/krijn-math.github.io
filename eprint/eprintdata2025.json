@@ -75927,4 +75927,372 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "The Internet of Things (IoT) has become integral to modern life, enabling smart cities, healthcare, and industrial automation. However, the increasing connectivity of IoT devices exposes them to various cyber threats, necessitating robust encryption methods. The PRESENT cipher, a lightweight block cipher, is well-suited for resource-constrained IoT environments, offering strong security with minimal computational overhead. This paper explores the application of deep learning (DL) techniques in cryptanalysis, specifically using an Aggregated Perceptron Group (APG) Model, which employs a Multi-Layer Perceptron (MLP) to predict input-output relations for each round of the PRESENT cipher\u2019s encryption, excluding the key. This approach focuses solely on emulating the cipher's Substitution Permutation Network (SPN), capturing its essential structure and revealing the structural flaws in the way data is transformed through rounds. The models are chained together to generate the final ciphertext for any 64-bit plaintext with high accuracy, reducing the probability form a random guess of $2^{64}$. The results demonstrate the potential of DL models in cryptanalysis, providing insights into the security of lightweight ciphers in IoT communications and highlighting the practicality of deep learning for cryptographic analysis on standard computing systems.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Gopal Singh",
+            "orcid": "0009-0003-8405-2392"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-07T09:40:36Z"
+        }
+    ],
+    "keywords": [
+        "PRESENT",
+        "Full round cryptanalysis",
+        "cipher emulation",
+        "structural flaw",
+        "pattern repetitions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1069.pdf",
+    "pid": "1069",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PRESENT Full Round Emulation : Structural Flaws and Predictable Outputs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Payment Channel Networks (PCNs) are the most scalable and trust-minimized solution to Bitcoin's scalability challenges. Within PCNs, connected payer and payee can make arbitrary off-chain transactions through multi-hop payments (MHPs) over payment channel paths, while intermediate relays charge relay fees by providing liquidity. \r\n  However, current MHP protocols face critical security threats including fee-stealing attacks and griefing attacks. In this paper, we identify new fee-stealing attacks targeting most existing MHP protocols. Second, we prove that eliminating griefing attacks in current MHP protocols is impossible by reducing the problem to fair secret exchange. Finally, we introduce Zeus, the first Bitcoin-compatible MHP protocol that is secure against fee-stealing attacks and offers bounded griefing protection against $k$-cost-sensitive adversaries\u2014those who only launch griefing attacks when the expected damage exceeds a $k$ fraction of their own cost. These guarantees are established through rigorous proofs in the Global Universal Composability (GUC) framework. Our comprehensive evaluation demonstrates that Zeus reduces worst-case griefing damage to 28\\% and 75\\% compared to MHP schemes such as AMHL~(NDSS'19) and Blitz~(USENIX SEC'21), respectively. Our results further show that, even under the most adverse configurations within the Lightning Network, Zeus imposes costs on adversaries that are at least ten times greater than their potential damage.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong University of Science and Technology (Guangzhou)"
+                }
+            ],
+            "fullName": "JIngyu Liu",
+            "orcid": "0000-0002-4465-4589"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Science and Technology of China",
+                    "ror": "https://ror.org/04c4dkn09"
+                }
+            ],
+            "fullName": "Yingjie Xue",
+            "orcid": "0000-0003-1421-5427"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Di Wu",
+            "orcid": "0009-0007-4785-706X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zhejiang University",
+                    "ror": "https://ror.org/00a2xv884"
+                }
+            ],
+            "fullName": "Jian Liu",
+            "orcid": "0000-0001-6796-6828"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong University of Science and Technology (Guangzhou)"
+                }
+            ],
+            "fullName": "Xuechao Wang",
+            "orcid": "0000-0001-6918-2699"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-07T12:20:29Z"
+        }
+    ],
+    "keywords": [
+        "blockchain",
+        "security",
+        "payment channel networks",
+        "Bitcoin",
+        "Lightning Network"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1070.pdf",
+    "pid": "1070",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Zeus: Defending against Fee Stealing and Griefing Attacks in Multi-Hop Payments",
+    "year": 2025,
+    "repo": [
+        "https://github.com/lightning/bolts/blob/master/02-peer-protocol.md",
+        "https://github.com/lightning/bolts/blob/master/02-peer-protocol.md",
+        "https://bitcoinjs.github.io/bitcoinjs-lib/",
+        "https://github.com/lightning/bolts/blob/master/03-transactions.md",
+        "https://github.com/lightning/bolts/blob/master/03-transactions.md",
+        "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki",
+        "https://github.com/lightning/bolts/pull/863",
+        "https://github.com/lightning/bolts/pull/863"
+    ]
+}
+,
+{
+    "abstract": "Private Set Intersection (PSI) enables two parties to compute the intersection of their private sets without revealing any additional information. While maliciously secure PSI protocols prevent many attacks, adversaries can still exploit them by using inconsistent inputs across multiple sessions. This limitation stems from the definition of malicious security in secure multiparty computation, but is particularly problematic in PSI because: (1) real-world applications---such as Apple\u2019s PSI protocol for CSAM detection and private contact discovery in messaging apps---often require multiple PSI executions over consistent inputs, and (2) the PSI functionality makes it relatively easy for adversaries to infer additional information.\r\n\r\nWe propose {\\em Private Intersection over Committed Sets (PICS)}, a new framework that enforces input consistency across multiple sessions via committed sets. Building on the state-of-the-art maliciously secure PSI framework (i.e., VOLE-PSI [EUROCRYPT 2021]), we present an efficient instantiation of PICS % in the random oracle model using lightweight cryptographic tools. We implement our protocol to demonstrate concrete efficiency. Compared to VOLE-PSI, for input sets of size $2^{24}$, our communication overhead is as low as $1.1\\%$. Our end-to-end performance overhead  is $130\\%$ in the LAN setting and decreases to $80\\%-10\\%$ in the WAN setting with bandwidths ranging from $200$ to $5$ Mbps.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Aarushi Goel",
+            "orcid": "0000-0002-8903-6354"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Peihan Miao",
+            "orcid": "0009-0001-8492-6470"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Phuoc Van Long Pham",
+            "orcid": "0009-0000-7840-293X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Satvinder Singh",
+            "orcid": "0009-0007-5327-950X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-07T15:17:08Z"
+        }
+    ],
+    "keywords": [
+        "PSI",
+        "Polynomial Commitments",
+        "VOLE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1071.pdf",
+    "pid": "1071",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PICS: Private Intersection over Committed (and reusable) Sets",
+    "year": 2025,
+    "repo": [
+        "https://github.com/lambdaclass/lambdaworks"
+    ]
+}
+,
+{
+    "abstract": "We make the case for modeling unitary oracles by allowing for controlled access to the oracle as well as its conjugate transpose (inverse), but also its conjugate and transpose. Controlling and conjugate transposes are common if even standard, but conjugates and transposes appear to be non-standard. In order to justify our modeling, we give several formal examples of what goes wrong or is missed when using a more restrictive modeling. We also argue that our model is the \"right\" level of granularity, and that other transformations likely do not correspond to efficient computation. We also discuss other modeling choices, such as ancillas and approximation error. \r\n\r\nThrough our exploration, we uncover interesting phenomena. Examples include an attack on the recent pseudorandom unitary construction of Ma and Huang (STOC'25) if used incorrectly as a publicly evaluatable unitary, and a quantum complexity-theoretic separation that follows from a purely classical separation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                }
+            ],
+            "fullName": "Mark Zhandry",
+            "orcid": "0000-0001-7071-6272"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-07T20:46:27Z"
+        }
+    ],
+    "keywords": [
+        "quantum",
+        "oracles"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1072.pdf",
+    "pid": "1072",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "How to Model Unitary Oracles",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Internet of Things (IoT) is composed of interconnected devices that exchange data over a network,\r\nenabling applications in healthcare, transportation, and smart environments. As IoT ecosystems expand,\r\nensuring security and privacy remains a critical challenge. Many IoT devices rely on wireless\r\nnetworks for data transmission, making them vulnerable to eavesdropping, tracking, and tampering.\r\nThis highlights the need for robust authentication mechanisms. To address these concerns, numerous\r\nauthentication protocols have been proposed. However, many fail to ensure adequate security against\r\nboth passive and active attacks. In this research, we introduce LAPWN, a lightweight protocol for\r\nuser\u2013server communication, specifically designed for constrained environments, ensuring a balance\r\nbetween security and efficiency. The proposed protocol is implemented as a fully functional Python\r\napplication, demonstrating its practical usability and evaluating its efficiency in real-world scenarios.\r\nTo validate its security, we performboth informal and formal analyses, utilizing Scyther, ProVerif, and\r\nthe Real-or-Random (RoR) model. The results confirm that LAPWN provides a secure, lightweight,\r\nand efficient authentication solution with low computational and communication overhead. Furthermore,\r\nperformance evaluations show that it surpasses existing authentication protocols, making it a\r\nhighly effective solution for secure user\u2013server interactions in constrained environments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Electrical Engineering, Yazd University, Yazd, Iran"
+                }
+            ],
+            "fullName": "Sajjad Alizadeh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Electrical Engineering, Shahid Sattari University of Aeronautical Science and Technology, Tehran, Iran"
+                }
+            ],
+            "fullName": "Reza Hooshmand"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-08T15:01:18Z"
+        }
+    ],
+    "keywords": [
+        "Lightweight",
+        "User\u2013Server Authentication",
+        "Wireless Networks",
+        "Resource-Constrained Environments",
+        "Formal Verification"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/1073.pdf",
+    "pid": "1073",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "LAPWN: A Lightweight User\u2013Server Authentication Protocol for Wireless Networks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We present the first construction of multiparty distributed point functions based on one-way functions, where the share sizes remain sublinear in the domain size and grow {\\em only polynomially} with the number of parties. In contrast, existing multiparty distributed point function constructions in Minicrypt have share sizes that grow {\\em exponentially} with the number of parties.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University West Lafayette",
+                    "ror": "https://ror.org/02dqehb95"
+                }
+            ],
+            "fullName": "Aarushi Goel",
+            "orcid": "0000-0002-8903-6354"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "New York University Shanghai"
+                }
+            ],
+            "fullName": "Mingyuan Wang",
+            "orcid": "0009-0000-9057-1007"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Zhiheng Wang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T02:38:57Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1074.pdf",
+    "pid": "1074",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Multiparty Distributed Point Functions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
