@@ -76295,4 +76295,827 @@
         "none"
     ]
 }
+,
+{
+    "DOI": "ISBN 978-989-758-760-3",
+    "abstract": "The stake delegation technique is what turns the general Proof of Stake (PoS) into a practical protocol for a large number of participants, ensuring the security of the distributed system, in what is known as Delegated PoS (DPoS). Karakostas et al. (SCN \u201920) formalized the delegation method paving the way for a whole industry of stake pools by proposing a formal definition for wallet as a universal composable (UC) functionality and introducing a corresponding protocol. On the other hand, a widely used technique named hot/cold wallet was formally studied by Das et al. (CCS \u201919 and \u201921), and Groth and Shoup (Eurocrypt \u201922) for different key derivation methods in the Proof of Work (PoW) setting, but not PoS. Briefly, while hot wallets are exposed to the risks of the network, the cold wallet is kept offline, thus more secure. However this may impair some capabilities given that the cold wallet is kept indefinitely offline. It is straightforward to observe that this \u201cdouble wallet\u201d design is not naturally portable to the setting where delegation is paramount, i.e., DPoS. This work identifies challenges for PoS Hot/Cold Wallet and proposes a secure and practical protocol.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Science Tokyo",
+                    "ror": "https://ror.org/05dqf9946"
+                },
+                {
+                    "name": "Input Output Global (IOG)",
+                    "ror": "https://ror.org/04abwvq32"
+                }
+            ],
+            "fullName": "Mario Larangeira",
+            "orcid": "0000-0001-7168-898X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T05:09:19Z"
+        }
+    ],
+    "keywords": [
+        "Delegated Proof of Stake",
+        "Stake Delegation",
+        "Hardware Wallet",
+        "Hot Wallet",
+        "Cold Wallet"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1075.pdf",
+    "pid": "1075",
+    "pubtype": {
+        "note": "SECRYPT'25",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Secure and Practical Cold (and Hot) Staking",
+    "year": 2025,
+    "repo": [
+        "https://github.com/input-output-hk/cardano-docs/blob/master/docs/cardano/addresses.md",
+        "https://github.com/input-output-hk/cardano-docs/blob/master/docs/cardano/addresses.md"
+    ]
+}
+,
+{
+    "abstract": "We study the problem of minimizing the total weight of (potentially many) participants of a distributed protocol, a necessary step when the original values are large but the scheme to be deployed scales poorly with the weights. We assume that $\\alpha$ fraction of the original weights can be corrupted and we must output new weights with at most $\\beta$ adversarial fraction, for $\\alpha < \\beta$. This problem can be viewed from the prism of electing a small committee that does the heavy work, a powerful tool for making distributed protocols scalable. We solve the variant that requires giving parties potentially multiple seats in the committee and counting each seat towards the cost of the solution. Moreover, we focus on the ``deterministic'' version of the problem where the computed committee must be secure for any subset of parties that can be corrupted by the adversary; such a committee can be smaller than a randomly sampled one in some cases and is useful when security against adaptive corruptions is desired but parties in the sub-protocol speak multiple times.\r\n\r\nPresented are new algorithms for the problem as well as analysis of prior work. We give two variants of the algorithm Swiper (PODC 2024), one that significantly improves the running time without sacrificing the quality of the output and the other improving the output for a reasonable increase in the running time. We prove, however, that all known algorithms, including our two variants of Swiper, have worst case approximation ratio $\\Omega(n)$. To counter that, we give the first polynomial time algorithm with approximation factor $n / \\log^2 n$ and also the first sub-exponential time exact algorithm, practical for some real-world inputs. Of theoretical interest is another polytime algorithm that we present, based on linear programming, whose output is no worse than an optimal solution to the problem with slightly different parameters.\r\n\r\nWe implemented and tested previous and new algorithms, comparing them on the stake distributions of popular proof-of-stake blockchains, and found that our second variant of Swiper computes solutions extremely close to the optimal, confirmed by our exact algorithm.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Boston University",
+                    "ror": "https://ror.org/05qwgg493"
+                }
+            ],
+            "fullName": "Anatoliy Zinovyev"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T06:53:22Z"
+        }
+    ],
+    "keywords": [
+        "weight reduction",
+        "distributed protocols",
+        "weighted cryptography",
+        "consensus",
+        "committee selection",
+        "adaptive corruptions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1076.pdf",
+    "pid": "1076",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Weight reduction in distributed protocols: new algorithms and analysis",
+    "year": 2025,
+    "repo": [
+        "https://github.com/DCL-TelecomParis/swiper",
+        "https://github.com/tolikzinovyev/weight-reduction"
+    ]
+}
+,
+{
+    "abstract": "The VOLE-in-the-Head (VOLEitH) paradigm transforms VOLE-based zero-knowledge proofs into post-quantum signature schemes by allowing public verification. We introduce reduced VOLE-in-the-Head (rVOLEitH), which incorporates the Vector Semi-Commitment (VSC) technique. VSC, originally developed for MPC-in-the-Head (MPCitH) schemes, reduces commitment size while maintaining security by relaxing the binding property. We adapt the ideal cipher version of VSC (IC-VSC) into the VOLEitH framework, leading to a reduction in signature size. Our security analysis proves that rVOLEitH achieves existential unforgeability under chosen-message attacks (EUF-CMA) in the ideal cipher model. Compared to existing VOLEitH-based signatures, our approach reduces signature size by up to 6.0\\% while improving computational efficiency.\r\n\r\nFurthermore, we analyze the impact of eliminating individual seed commitments and demonstrate a practical attack against a recently proposed VOLEitH variant that lacks such commitments. Our results establish rVOLEitH as an optimized and secure alternative for post-quantum signatures, improving both efficiency and security in the VOLEitH paradigm.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung SDS"
+                }
+            ],
+            "fullName": "Seongkwang Kim",
+            "orcid": "0000-0002-9091-4054"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Samsung SDS"
+                }
+            ],
+            "fullName": "Byeonghak Lee",
+            "orcid": "0000-0003-2736-6830"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Mincheol Son",
+            "orcid": "0009-0000-8655-8387"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-11T00:48:37Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-09T08:24:03Z"
+        }
+    ],
+    "keywords": [
+        "VOLE-in-the-Head",
+        "Vector Semi-Commitment",
+        "Ideal Cipher Model",
+        "Zero-Knowledge Proofs",
+        "Post-Quantum Signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1077.pdf",
+    "pid": "1077",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Shorter VOLE-in-the-Head-based Signatures from Vector Semi-Commitment",
+    "year": 2025,
+    "repo": [
+        "https://github.com/faest-sign/faest-one-tree"
+    ]
+}
+,
+{
+    "abstract": "As Internet of Things (IoT) systems become increasingly complex, verifying communication protocols is essential to guarantee their security and correctness. This paper introduces a brief introduction to the theoretical concepts of how to use formal techniques, LTL and rewriting logic within the Maude system to verify the security and proper behavior of the protocols. While rewriting logic explains how various events occur over time, LTL explains how a property can be formulated. This theoretical perspective is intended to inform future applications and research.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Alexandru Ioan Cuza University, Ia\u0219i"
+                }
+            ],
+            "fullName": "Delia-Iustina Grigori\u021b\u0103",
+            "orcid": "0009-0003-2485-3809"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T13:28:07Z"
+        }
+    ],
+    "keywords": [
+        "Model Checking",
+        "Maude",
+        "Rewriting Logic",
+        "IoT Protocols",
+        "Temporal Logic",
+        "Security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1078.pdf",
+    "pid": "1078",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Theoretical Perspective on the Formal Verification of IoT Protocols Using LTL and Rewriting Logic in Maude",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A reduction showing that the hardness of the discrete logarithm ($\\mathsf{DL}$) assumption implies the hardness of the computational Diffie-Hellman     ($\\mathsf{CDH}$) assumption in groups of order $p$, where $p - 1$ is smooth, was first presented by den Boer [Crypto, 88].}\r\n We also consider groups \r\nof prime order $p$, where $p - 1$ is somewhat smooth (say, every prime $q$ that divides $p - 1$ is less than $2^{100}$).\r\nSeveral practically relevant groups satisfy this condition.\r\n 1.     We present a concretely efficient version of the reduction for such groups.\r\n In particular, among practically relevant groups, we obtain the most efficient and tightest reduction in the literature for BLS12-381, showing that $\\mathsf{DL}$ = $\\mathsf{CDH}$.\r\n2.      By generalizing the reduction, we show that in these groups the $n$-Power $\\mathsf{DL}$ ($n$-$\\mathsf{PDL}$) assumption implies $n$-Diffie-Hellman Exponent ($n$-$\\mathsf{DHE}$) assumption, where $n$ is polynomial in the security parameter.\r\nOn the negative side, we show there is no generic reduction, which could demonstrate that $n$-$\\mathsf{PDL}$ implies the $n$-Generalized Diffie-Hellman Exponent ($n$-$\\mathsf{GDHE}$) assumption.\r\nThis is in stark contrast with the algebraic group model, where this implication holds.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Tartu",
+                    "ror": "https://ror.org/03z77qz90"
+                }
+            ],
+            "fullName": "Maiara F. Bollauf"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Simula UiB"
+                }
+            ],
+            "fullName": "Roberto Parisella"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Tartu",
+                    "ror": "https://ror.org/03z77qz90"
+                }
+            ],
+            "fullName": "Janno Siim"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T14:36:34Z"
+        }
+    ],
+    "keywords": [
+        "Discrete logarithm",
+        "Computational Diffie-Hellman",
+        "den Boer's reduction",
+        "Diffie-Hellman exponent",
+        "Generic group model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1079.pdf",
+    "pid": "1079",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Revisiting Discrete Logarithm Reductions",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Consensys/gnark-crypto",
+        "https://github.com/ethereum/consensus-specs/blob/v1.0.0/specs/phase0/beacon-chain.md#bls-signatures",
+        "https://github.com/ethereum/consensus-specs/blob/v1.0.0/specs/phase0/beacon-chain.md#bls-signatures",
+        "https://github.com/Chia-Network/bls-signatures",
+        "https://github.com/Chia-Network/bls-signatures"
+    ]
+}
+,
+{
+    "abstract": "In this work, we propose a novel systematic approach for obtaining leftover hash lemmas (LHLs) over cyclotomic rings. Such LHLs build a fundamental tool in lattice-based cryptography, both in theoretical reductions as well as in the design of cryptographic primitives. The scattered set of prior works makes it difficult to navigate the landscape and requires a substantial effort to understand the mathematical constraints under which the LHL holds over cyclotomic rings. This is especially painful if one\u2019s given setting does not fit exactly into prior studies. \r\n\r\nWe argue that all prior approaches boil down to two different proof strategies, resulting in two main theorems. From there on, we are able to recover all previous flavours of seemingly independent LHLs as corollaries. Moreover, we showcase the power of our interpretation by providing new statements, covering mathematical settings not considered before. Our work further proves LHLs in the presence of leakage for both approaches and provides novel bounds for wide families of leakage functions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CNRS, Univ Montpellier, LIRMM, France"
+                }
+            ],
+            "fullName": "Katharina Boudgoust"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway, University of London, UK"
+                }
+            ],
+            "fullName": "Oleksandra Lapiha"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T14:41:30Z"
+        }
+    ],
+    "keywords": [
+        "Lattice-Based Cryptography",
+        "Leftover Hash Lemma",
+        "Cyclotomic Rings",
+        "Leakage"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1080.pdf",
+    "pid": "1080",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Leftover Hash Lemma(s) Over Cyclotomic Rings",
+    "year": 2025,
+    "repo": [
+        "https://cjeudy.github.io/assets/pub/manuscript.pdf",
+        "https://cjeudy.github.io/assets/pub/manuscript.pdf"
+    ]
+}
+,
+{
+    "abstract": "Abstract\r\nSecure two-party computation (2PC) is a cryptographic technique that enables two mutually distrusting parties to jointly evaluate a function over their private inputs. We consider a 2PC primitive called confidential lookup table (LUT) evaluation, which is useful in privacy-preserving ML inference and data analytics. In this setting, a server holds a confidential LUT and evaluates it over an input secret-shared between a client and the server, producing a secret-shared output. Existing approaches for 2PC LUT evaluation suffer from high asymptotic complexity and practical inefficiency, with some designs lacking confidentiality guarantees for the LUT. Recognizing that many applications involving confidential LUT evaluation require processing multiple inputs with the same LUT, we propose FABLE, a system designed to efficiently evaluate a LUT on a large batch of queries simultaneously. Compared to the state-of-the-art confidential LUT evaluation methods, FABLE achieves up to 28.46-101.47$\\times$ speedup in LAN environments and up to 50.10-392.93$\\times$ speedup in WAN environments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Zhengyuan Su",
+            "orcid": "0009-0003-0121-2128"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Qi Pang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Simon Beyzerov",
+            "orcid": "0009-0005-3021-5998"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Wenting Zheng"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-10T15:26:48Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-09T15:54:39Z"
+        }
+    ],
+    "keywords": [
+        "Confidential LUT Evaluation",
+        "Private information retrieval",
+        "multi-party computation",
+        "2PC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Major Revision.",
+    "pdffile": "2025/1081.pdf",
+    "pid": "1081",
+    "pubtype": {
+        "note": "USENIX Security '25",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "FABLE: Batched Evaluation on Confidential Lookup Tables in 2PC",
+    "year": 2025,
+    "repo": [
+        "https://github.com/osu-crypto/libOTe",
+        "https://github.com/osu-crypto/libOTe",
+        "https://github.com/Microsoft/SEAL",
+        "https://github.com/Microsoft/SEAL"
+    ]
+}
+,
+{
+    "abstract": "We present Treebeard - the first scalable and fault tolerant Oblivious RAM (ORAM) based datastore designed to protect applications from access pattern attacks. Current ORAM systems face challenges in practical adoption due to their limited ability to handle concurrent workloads, scale effectively, and ensure fault tolerance. We address all three limitations in Treebeard by utilizing a multi-layer architecture that scales horizontally, handling thousands of requests in parallel, while replicating the data to prevent data loss upon failures. Experimental evaluation demonstrates Treebeard's ability to scale linearly, achieving a throughput of 160K ops/sec with 16 machines; this behavior is similar to the enclave-based state-of-the-art, Snoopy. Being fault-tolerant, Treebeard recovers from failures with close to zero downtime and achieves 13.8x the throughput of QuORAM, the latest fault tolerant ORAM system, even without scaling.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Amin Setayesh",
+            "orcid": "0000-0001-5485-3429"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Cheran Mahalingam",
+            "orcid": "0009-0002-9912-0813"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Emily Chen",
+            "orcid": "0009-0003-9276-8753"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Sujaya Maiyya",
+            "orcid": "0009-0003-1341-0252"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T17:13:10Z"
+        }
+    ],
+    "keywords": [
+        "Oblivious RAM (ORAM)",
+        "Scalable Datastore",
+        "Fault Tolerance",
+        "Access Patterns",
+        "Privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1082.pdf",
+    "pid": "1082",
+    "pubtype": {
+        "note": "USENIX SECURITY",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Treebeard: A Scalable and Fault Tolerant ORAM Datastore",
+    "year": 2025,
+    "repo": [
+        "https://github.com/dsg-uwaterloo/treebeard",
+        "https://github.com/dsg-uwaterloo/treebeard",
+        "https://github.com/dsg-uwaterloo/treebeard",
+        "https://github.com/dsg-uwaterloo/treebeard",
+        "https://github.com/hashicorp/raft",
+        "https://github.com/hashicorp/raft"
+    ]
+}
+,
+{
+    "abstract": "In this note, we provide proven estimates for the complexity of the SupportMinors Modeling, mostly confirming the heuristic complexity estimates contained in the original article.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Neuch\u00e2tel"
+                }
+            ],
+            "fullName": "Giulia Gaggero",
+            "orcid": "0009-0005-3746-4778"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Neuch\u00e2tel"
+                }
+            ],
+            "fullName": "Elisa Gorla",
+            "orcid": "0000-0002-6418-4887"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universidad Nacional de Colombia",
+                    "ror": "https://ror.org/059yx9a68"
+                }
+            ],
+            "fullName": "Daniel Cabarcas",
+            "orcid": "0000-0001-7849-407X"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T18:20:02Z"
+        }
+    ],
+    "keywords": [
+        "Multivariate cryptography",
+        "MinRank problem",
+        "SupportMinors",
+        "Post-quantum"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1083.pdf",
+    "pid": "1083",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The complexity of the SupportMinors Modeling for the MinRank Problem",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "An oblivious pseudorandom function (OPRF) is a cryptographic tool that enables fast and secure authentication and key derivation from passwords. In the past few years, the adoption of OPRFs has flourished and today they are at the core of the PIN-protected backup methods of WhatsApp and Signal, and of privacy-enhancing browser technologies. All vendors deploy the so-called 2Hash-Diffie-Hellman (2HashDH) OPRF, which relies on discrete-logarithm-type assumptions that are standard yet known to be prone to quantum attacks.\r\n\r\nRecent advancements in cryptographic research (e.g., Dodgson et al., Eurocrypt 2025) have brought up post-quantum OPRFs that are fast enough to deploy them in the setting of, e.g., WhatsApp or Signal. Yet none of these constructions %that achieves the required level of security e.g., for WhatsApps backup protocol are based on standard assumptions.\r\n\r\nIn this work, we investigate combiners for OPRFs, namely a ``best-of-both'' combination of a classical and a post-quantum OPRF that is secure as long as one of them is. First, we give formal evidence that so-called black-box combiners do not exist, indicating that combining OPRFs is subtle and bears similarities with other powerful yet hard-to-combine cryptographic primitives like oblivious transfer (OT).\r\n\r\nWe then give a (non-black-box) combiner for OPRFs and show that it can be instantiated with 2HashDH and the currently most efficient post-quantum OPRFs based on Legendre symbols. In particular, the reliance on the less standard Legendre-based hardness assumption does not harm the security of 2HashDH. This gives vendors a viable path to lift the security of their OPRF deployments to a post-quantum level.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research - Zurich",
+                    "ror": "https://ror.org/02js37d36"
+                },
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Sebastian Faller",
+            "orcid": "0009-0005-4126-3098"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research - Zurich",
+                    "ror": "https://ror.org/02js37d36"
+                }
+            ],
+            "fullName": "Julia Hesse",
+            "orcid": "0000-0002-2875-6198"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T20:12:40Z"
+        }
+    ],
+    "keywords": [
+        "Oblivious Pseudo-Random Function",
+        "Robust Combiner"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1084.pdf",
+    "pid": "1084",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "How to (not) combine Oblivious Pseudorandom Functions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Zero-knowledge proofs (ZKPs) are a fundamental building block in cryptography, enabling powerful privacy-preserving and verifiable computations. In the post-quantum era, hash-based ZKPs have emerged as a promising direction due to their conjectured resistance to quantum attacks, along with their simplicity and efficiency.\r\n\r\nIn this work, we introduce SmallWood, a hash-based polynomial commitment scheme (PCS) and zero-knowledge argument system optimized for relatively small instances. Building on the recent degree-enforcing commitment scheme (DECS) from the Threshold-Computation-in-the-Head (TCitH) framework, we refine its formalization and combine it with techniques from Brakedown. This results in a new hash-based PCS that is particularly efficient for polynomials of relatively small degree \u2014typically up to $2^{16}$\u2014 outperforming existing approaches in this range.\r\n\r\nLeveraging this new PCS, we design a hash-based zero-knowledge argument system that outperforms the state-of-the-art in terms of proof sizes for witness size ranging from $2^6$ to $2^{16}$. Additionally, we present exact zero-knowledge arguments for lattice-based problems using SmallWood, demonstrating highly competitive performance: our scheme yields proof sizes under 25 KB across a wide range of lattice parameters, including Kyber and Dilithium instances.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                }
+            ],
+            "fullName": "Thibauld Feneuil",
+            "orcid": "0000-0001-9342-2859"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CryptoExperts (France)",
+                    "ror": "https://ror.org/0030xrh72"
+                }
+            ],
+            "fullName": "Matthieu Rivain",
+            "orcid": "0000-0002-9855-4161"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T21:39:46Z"
+        }
+    ],
+    "keywords": [
+        "Zero-knowledge arguments",
+        "Polynomial commitment schemes",
+        "Hash-based proof systems",
+        "Post-quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "An earlier version of this work appeared in https://eprint.iacr.org/2025/061. We have since extracted and expanded it into a standalone paper.",
+    "pdffile": "2025/1085.pdf",
+    "pid": "1085",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SmallWood: Hash-Based Polynomial Commitments and Zero-Knowledge Arguments for Relatively Small Instances",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Atomic swaps enable asset exchanges across blockchains without relying on trusted intermediaries, and are a key component of decentralized finance (DeFi) ecosystems. Recently, Chung, Masserova, Shi, and Thyagarajan introduced Rapidash (Financial Cryptography 2025), an atomic swap protocol that remains incentive compatible under user-miner collusion, by ensuring that the honest strategy forms a coalition-resistant Nash equilibrium. However, their model assumes a closed system where players act solely based on internal protocol incentives. In practice, participants may be influenced by external incentives such as off-chain rewards or adversarial bribes, which can undermine such equilibrium guarantees.\r\n\r\nIn this work, we introduce a new game-theoretic notion, bounded maximin fairness, which ensures that honest participants remain protected against rational adversaries with arbitrary but bounded external incentives. We construct an atomic swap protocol that satisfies this notion, while preserving the equilibrium properties of prior work in the absence of external influence.\r\n\r\nAs we show, our protocol is easy to implement and can be instantiated even in Bitcoin\u2019s limited scripting language.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Hao Chung",
+            "orcid": "0009-0000-4154-0001"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Elisaweta Masserova",
+            "orcid": "0009-0002-8970-9624"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                },
+                {
+                    "name": "Oblivious Labs Inc"
+                },
+                {
+                    "name": "0xPARC"
+                }
+            ],
+            "fullName": "Elaine Shi",
+            "orcid": "0000-0002-5605-1048"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sydney",
+                    "ror": "https://ror.org/0384j8v12"
+                }
+            ],
+            "fullName": "Sri AravindaKrishnan Thyagarajan",
+            "orcid": "0000-0003-0114-7672"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T22:01:27Z"
+        }
+    ],
+    "keywords": [
+        "fair exchange",
+        "atomic swap",
+        "blockchain",
+        "incentive compatibility",
+        "external incentives"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1086.pdf",
+    "pid": "1086",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Fairness in the Wild: Secure Atomic Swap with External Incentives",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We study several problems in the intersection of cryptography and complexity theory based on the following high-level thesis. \r\n    \r\n1) Obfuscation can serve as a general-purpose worst-case to average-case reduction, reducing the existence of various forms of cryptography to corresponding worst-case assumptions.\r\n2) We can therefore hope to overcome barriers in cryptography and average-case complexity by (i) making worst-case hardness assumptions beyond $\\mathsf{P}\\neq \\mathsf{NP}$, and (ii) leveraging worst-case hardness reductions, either proved by traditional complexity-theoretic methods or facilitated further by cryptography. \r\n\r\nConcretely, our results include:\r\n    - Optimal hardness. Assuming sub-exponential indistinguishability obfuscation, we give fine-grained worst-case to average case reductions for circuit-SAT. In particular, if finding an $\\mathsf{NP}$-witness requires nearly brute-force time in the worst case, then the same is true for some efficiently sampleable distribution. In fact, we show that under these assumptions, there exist families of one-way functions with optimal time-probability security tradeoffs. \r\n\r\n   Under an additional, stronger assumption -- the optimal non-deterministic hardness of refuting circuit-SAT -- we construct additional cryptographic primitives such as PRGs and public-key encryption that have such optimal time-advantage security tradeoffs.\r\n\r\n- Direct Product Hardness. Again assuming $i\\mathcal O$ and optimal non-deterministic hardness of SAT refutation, we show that the ``(search) $k$-fold SAT problem'' -- the computational task of finding satisfying assignments to $k$ circuit-SAT instances simultaneously -- has (optimal) hardness roughly $(T/2^n)^k$ for time $T$ algorithms. In fact, we build ``optimally secure one-way product functions'' (Holmgren-Lombardi, FOCS '18), demonstrating that optimal direct product theorems hold for some choice of one-way function family. \r\n\r\n- Single-Input Correlation Intractability. Assuming either $i\\mathcal O$ or $\\mathsf{LWE}$, we show a worst-case to average-case reduction for strong forms of single-input correlation intractability. That is, powerful forms of correlation-intractable hash functions exist provided that a collection of \\emph{worst-case} ``correlation-finding'' problems are hard.\r\n   \r\n- Non-interactive Proof of Quantumness. Assuming sub-exponential $i\\mathcal O$ and OWFs, we give a non-interactive proof of quantumness based on the worst-case hardness of the white-box Simon problem. In particular, this proof of quantumness result does not explicitly assume quantum advantage for an average-case task.\r\n\r\nTo help prove our first two results, we show along the way how to improve the Goldwasser-Sipser ``set lower bound'' protocol to have communication complexity quadratically smaller in the multiplicative approximation error $\\epsilon$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Rahul Ilango",
+            "orcid": "0000-0002-0658-7813"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Princeton University",
+                    "ror": "https://ror.org/00hx57361"
+                }
+            ],
+            "fullName": "Alex Lombardi",
+            "orcid": "0009-0007-0471-5379"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-09T23:36:21Z"
+        }
+    ],
+    "keywords": [
+        "Obfuscation",
+        "worst-case assumptions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/1087.pdf",
+    "pid": "1087",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cryptography meets worst-case complexity: Optimal security and more from iO and worst-case assumptions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
