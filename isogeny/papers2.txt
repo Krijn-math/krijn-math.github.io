@@ -1,3 +1,5 @@
+isogeny-based key exchange from orientations of large discriminant;;;marc houben;;;2025/1098;;;last_week;;;https://github.com/friends-of-quaternions/deuring
+key updatable identity-based-signature schemes;;;tobias guggemos, farzin renan;;;2025/1094;;;last_week;;;https://github.com/relic-toolkit/relic
 another look at the quantum security of the vectorization problem with shifted inputs;;;paul frixons, valerie gilchrist, péter kutas, simon-philipp merz, christophe petit;;;2025/376;;;last_week;;;none
 more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_week;;;https://github.com/QuSAC/IsogenyPoKviaCanonicalModPolys
 cryptanalysis of isogeny-based quantum money with rational points;;;hyeonhak kim, donghoe heo, seokhie hong;;;2025/201;;;last_week;;;none
@@ -83,8 +85,6 @@ universal composable password authenticated key exchange for the post-quantum wo
 radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;other;;;none
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;other;;;https://github.com/TheParallelSquarerootVeluTeam/Parallel-Squareroot-Velu
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;other;;;none
-efficient post-quantum secure deterministic threshold wallets from isogenies;;;poulami das, andreas erwig, michael meyer, patrick struck;;;2023/1915;;;other;;;https://github.com/theQRL/Whitepaper/blob/master/QRL_whitepaper.pdf
-computing 2-isogenies between kummer lines;;;damien robert, nicolas sarkis;;;2024/037;;;other;;;https://gitlab.inria.fr/nsarkis/poc-scalar-multiplication-kummer-lines
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;other;;;none
 fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;other;;;none
 pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;other;;;https://github.com/LinKaizhan/Pairingoptimizations
