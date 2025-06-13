@@ -77118,4 +77118,756 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "We present a novel homomorphic trace evaluation algorithm $\\mathsf{RevHomTrace}$, which mitigates the phase amplification problem that comes with the definition of the field trace. Our $\\mathsf{RevHomTrace}$ overcomes the phase amplification with only a negligible computational overhead, thereby improving the usability of the homomorphic field trace algorithm. Moreover, our tweak also improves the noise propagation of the $\\mathsf{HomTrace}$ and breaks the traditional $O(N^{3})$ variance bound in previous works into $O(N \\log N)$. \r\n\r\nOur experimental results obtained by integrating $\\mathsf{RevHomTrace}$ into state-of-the-art homomorphic encryption algorithms further demonstrate the usefulness of our algorithm. Specifically, $\\mathsf{RevHomTrace}$ improves the noise accumulation of the (high precision) circuit bootstrapping, which also achieves maximal $1.40\\times$ speedup by replacing the costly high precision trace evaluation. Also, based on our idea of $\\mathsf{RevHomTrace}$, we present low latency, high precision LWE-to-GLWE packing algorithm $\\mathtt{MS}$-$\\mathtt{PackLWEs}$. We also show that our $\\mathtt{MS}$-$\\mathtt{PackLWEs}$ significantly reduces the packing error without severe degradation of performance.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Kang Hoon Lee",
+            "orcid": "0000-0001-9125-4433"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea University",
+                    "ror": "https://ror.org/05m1gnk07"
+                }
+            ],
+            "fullName": "Ji Won Yoon"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-10T05:20:37Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic Encryption",
+        "Field Trace",
+        "FHEW",
+        "TFHE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1088.pdf",
+    "pid": "1088",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Homomorphic Field Trace Revisited : Breaking the Cubic Noise Barrier",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KAIST-CryptLab/refined-tfhe-lhe",
+        "https://github.com/zama-ai/tfhe-rs",
+        "https://github.com/zama-ai/tfhe-rs",
+        "https://github.com/zama-ai/tfhe-rs-handbook",
+        "https://github.com/zama-ai/tfhe-rs-handbook"
+    ]
+}
+,
+{
+    "abstract": "A rugged pseudorandom permutation (RPRP) is a security notion for variable-length tweakable ciphers that is strictly weaker than the traditional notion of a strong pseudorandom permutation. Being a weaker security notion it admits more efficient constructions. Yet the notion is strong enough so that any such construction can lend itself to a number of practical applications. It can be used to construct onion encryption, misuse-resistant AEAD, and AEAD secure under the release of unverified plaintext. Two recent works have introduced the notion, explored some of its applications, and studied a number of constructions that meet this notion. However, no constructions are known to achieve this notion with beyond-birthday-bound security. Current cloud applications are processing amounts of data that go well beyond the traditional $2^{32}$ barrier, and $2^{64}$ is becoming the new target. As such, the need for encryption with beyond-birthday-bound security has become a very practical concern. In this work, we present the first constructions for variable-length tweakable ciphers that satisfy RPRP security beyond the birthday bound. From these constructions, we readily obtain efficient AEAD schemes that are optimally secure against once misuse and the release of unverified plaintext.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Advancing Intelligence (IAI) TCG CREST, Kolkata, India",
+                    "ror": "https://ror.org/05h2r8y34"
+                },
+                {
+                    "name": "Academy of Scientific and Innovative Research (AcSIR)",
+                    "ror": "https://ror.org/053rcsq61"
+                }
+            ],
+            "fullName": "Nilanjan Datta",
+            "orcid": "0009-0002-9761-1192"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technology Innovation Institute, Abu Dhabi, UAE",
+                    "ror": "https://ror.org/001kv2y39"
+                }
+            ],
+            "fullName": "Jean Paul Degabriele"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Advancing Intelligence (IAI) TCG CREST, Kolkata, India",
+                    "ror": "https://ror.org/05h2r8y34"
+                },
+                {
+                    "name": "Academy of Scientific and Innovative Research (AcSIR)",
+                    "ror": "https://ror.org/053rcsq61"
+                }
+            ],
+            "fullName": "Avijit Dutta",
+            "orcid": "0000-0003-2672-7331"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Darmstadt, Germany",
+                    "ror": "https://ror.org/05n911h24"
+                }
+            ],
+            "fullName": "Vuka\u0161in Karad\u017ei\u0107"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Advancing Intelligence (IAI) TCG CREST, Kolkata, India",
+                    "ror": "https://ror.org/05h2r8y34"
+                },
+                {
+                    "name": "Ramakrishna Mission Vivekananda Educational and Research Institute, India",
+                    "ror": "https://ror.org/03kp2qt98"
+                }
+            ],
+            "fullName": "Hrithik Nandi",
+            "orcid": "0009-0003-8395-4925"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-10T10:23:42Z"
+        }
+    ],
+    "keywords": [
+        "Beyond Birthday Bound",
+        "Rugged Pseudorandom Permutations",
+        "AEAD",
+        "Misuse Resistance",
+        "Release of Unverified Plaintext"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1089.pdf",
+    "pid": "1089",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Rugged Pseudorandom Permutations with Beyond-Birthday-Bound Security",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The Signal protocol relies on a handshake protocol, formerly X3DH and now PQXDH, to set up secure conversations. One of its privacy properties, of value to Signal, is deniability, allowing users to deny participation in communications. Prior analyses of deniability for these protocols, including post-quantum variants, use models highly tailored to the individual protocols and generally make ad-hoc adaptations to ``standard'' AKE definitions, obscuring the concrete deniability guarantees and complicating comparisons across protocols. Building on Hashimoto et al.\u2019s abstraction for Signal handshake protocols (USENIX\u201925)'s abstraction for Signal handshake protocols (USENIX'25), we address this gap by presenting a unified framework for analyzing their deniability. We analyze Signal's classically secure X3DH and harvest-now-decrypt-later-secure PQXDH, and show that PQXDH is deniable against harvest-now-judge-later attacks, where a quantum judge retrospectively assesses the participation of classical users. We further analyze post-quantum alternatives like RingXKEM, whose deniability relies on ring signatures (RS).\r\nBy introducing a novel metric inspired by differential privacy, we provide relaxed, pragmatic guarantees for deniability. We also use this metric to define deniability for RS, a relaxation of anonymity, allowing us to build an efficient RS from NIST-standardized Falcon (and MAYO), which is not anonymous, but is provably deniable.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                },
+                {
+                    "name": "AIST",
+                    "ror": "https://ror.org/01703db54"
+                }
+            ],
+            "fullName": "Shuichi Katsumata",
+            "orcid": "0000-0002-8496-0476"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                },
+                {
+                    "name": "Univ Rennes, CNRS, IRISA",
+                    "ror": "https://ror.org/015m7wh34"
+                }
+            ],
+            "fullName": "Guilhem Niot",
+            "orcid": "0000-0002-2497-8770"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                }
+            ],
+            "fullName": "Ida Tucker",
+            "orcid": "0000-0003-4895-5896"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                }
+            ],
+            "fullName": "Thom Wiggers",
+            "orcid": "0000-0001-8967-8456"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-10T12:20:27Z"
+        }
+    ],
+    "keywords": [
+        "Signal Handshake Protocol",
+        "Secure Messaging",
+        "Deniability",
+        "Ring Signatures",
+        "Post Quantum"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1090.pdf",
+    "pid": "1090",
+    "pubtype": {
+        "note": "USENIX Security '25",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Concrete Treatment of Signal Handshake\u2019s Deniability: Efficient Post-Quantum Deniable Ring Signature",
+    "year": 2025,
+    "repo": [
+        "https://github.com/thyuen/dualring.git",
+        "https://github.com/zhenfeizhang/raptor/tree/37d78152bbca69b27b13a184347ceaec8ffbd69f"
+    ]
+}
+,
+{
+    "abstract": "Quantum computing is often introduced through the lens of linear algebra with notation that is inherited from quantum mechanics. In this paper, we take an operational view of quantum computing that is easy to demonstrate programmatically. The hope is that this viewpoint will (1) demystify quantum computing and make it more accessible to a wider audience, particularly computer science students and software engineers, and (2) possibly serve as the basis of a formal foundation for automatically reasoning about quantum programs.\r\nWe treat the state of a quantum computer as a set and present the operations of a quantum computer\u2014quantum gates and measurements\u2014using familiar functional set transformations (think map, filter, fold, etc.). By the end of the paper, we will have implemented a simple quantum circuit simulator that can be used to simulate small quantum circuits. The code is available at https://github.com/qqq-wisc/qwla.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Wisconsin-Madison"
+                }
+            ],
+            "fullName": "Aws Albarghouthi",
+            "orcid": "0000-0003-4577-175X"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-13T00:37:19Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-06-13T00:14:36Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-06-12T19:30:25Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-06-12T19:13:17Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-10T14:51:31Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "pdffile": "2025/1091.pdf",
+    "pid": "1091",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum Computing without the Linear Algebra",
+    "year": 2025,
+    "repo": [
+        "https://github.com/qqq-wisc/qwla"
+    ]
+}
+,
+{
+    "abstract": "Cryptographic security protocols, such as TLS or WireGuard, form the foundation of a secure Internet; hence, a long line of research has shown how to formally verify their high-level designs. Unfortunately, these formal guarantees have not yet reached real-world implementations of these protocols, which still rely on testing and ad-hoc manual audits for security and correctness. This gap may be explained, in part, by the substantial performance and/or development overhead imposed by prior efforts to verify implementations.\r\n\r\nTo make it more practical to deploy verified implementations of security protocols, we present OwlC, the first fully automated, security-preserving compiler for verified, high-performance implementations of security protocols. From a high-level protocol specification proven computationally secure in the Owl language, OwlC emits an efficient, interoperable, side-channel resistant Rust library that is automatically formally verified to be correct.\r\n\r\nWe produce verified libraries for all previously written Owl protocols, and we also evaluate OwlC on two new verified case studies: WireGuard and Hybrid Public-Key Encryption (HPKE). Our verified implementations interoperate with existing implementations, and their performance matches unverified industrial baselines on end-to-end benchmarks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Pratap Singh",
+            "orcid": "0000-0002-7139-2334"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Northeastern University",
+                    "ror": "https://ror.org/04t5xt781"
+                }
+            ],
+            "fullName": "Joshua Gancher",
+            "orcid": "0000-0003-2257-7073"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Bryan Parno",
+            "orcid": "0000-0002-9113-1684"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-11T01:36:20Z"
+        }
+    ],
+    "keywords": [
+        "Security protocols",
+        "formal verification"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1092.pdf",
+    "pid": "1092",
+    "pubtype": {
+        "note": "USENIX Security Symposium, 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "OwlC: Compiling Security Protocols to Verified, Secure, High-Performance Libraries",
+    "year": 2025,
+    "repo": [
+        "https://github.com/cryspen/libcrux",
+        "https://github.com/cryspen/libcrux",
+        "https://git.zx2c4.com/wireguard-go",
+        "https://git.zx2c4.com/wireguard-go",
+        "https://git.zx2c4.com/wireguard-linux",
+        "https://git.zx2c4.com/wireguard-linux",
+        "https://git.zx2c4.com/wireguard-rs",
+        "https://git.zx2c4.com/wireguard-rs",
+        "https://github.com/secure-foundations/owl",
+        "https://github.com/secure-foundations/owl",
+        "https://github.com/rozbb/rust-hpke",
+        "https://github.com/rozbb/rust-hpke"
+    ]
+}
+,
+{
+    "abstract": "BBS/BBS+ signatures are the most promising solution to instantiate practical and lightweight anonymous credentials. They underlie standardization efforts by the W3C and the IRTF. Due to their potential for large scale deployment, it is paramount to understand their concrete security, but a number of questions have been left open by prior works. To this end, the security proofs by Au et al. (SCN '06), Camenisch et al. (TRUST '16), and Tessaro and Zhu (EUROCRYPT '23) show reductions from $q$-SDH in groups of prime order $p$, where $q$ is the number of issued signatures. \r\n    \r\n    However, these prior works left the possibility open that BBS/BBS+ is \"even more secure\" than what can be guaranteed by such proofs. Indeed, while the $q$-SDH assumption is subject to an attack that uses $O(\\sqrt{p/q})$ group exponentiations (Cheon, EUROCRYPT '06) for several choices of $q$, no attack with a similar complexity appears to affect either of BBS+ and \"deterministic\" BBS, for which the best known attacks amount to recovering the secret key by breaking the discrete logarithm problem. The assumption that this attack is best possible also seemingly justifies the choice of parameters in practice.\r\n\r\n    Our result shows that this expectation is not true. We show new attacks against BBS+ and deterministic BBS which, after seeing $q$ signatures, allow us to recover the secret key with the same complexity as solving the $\\Theta(q)$-Discrete Logarithm problem, which in turn is proportional to $O(\\sqrt{p/q})$ for many choices of $q$. Further, we also extend the attack to a reduction showing that the security of BBS+ and deterministic BBS implies the $\\Theta(q)$-SDH assumption.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Rutchathon Chairattana-Apirom",
+            "orcid": "0009-0006-1990-1329"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Washington",
+                    "ror": "https://ror.org/00cvxb145"
+                }
+            ],
+            "fullName": "Stefano Tessaro",
+            "orcid": "0000-0002-3751-8546"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-11T04:27:47Z"
+        }
+    ],
+    "keywords": [
+        "Cryptanalysis",
+        "BBS Signatures",
+        "Pairing-based Signatures",
+        "Anonymous Credentials"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1093.pdf",
+    "pid": "1093",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Concrete Security of BBS/BBS+ Signatures",
+    "year": 2025,
+    "repo": [
+        "https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/1.4.0/arf/",
+        "https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/1.4.0/arf/",
+        "https://gitlab.opencode.de/bmi/eudi-wallet/eidas-2.0-architekturkonzept/-/blob/main/architecture-proposal/01-architecture-proposal.md",
+        "https://gitlab.opencode.de/bmi/eudi-wallet/eidas-2.0-architekturkonzept/-/blob/main/architecture-proposal/01-architecture-proposal.md",
+        "https://github.com/mattrglobal/bbs-signatures",
+        "https://github.com/mattrglobal/bbs-signatures",
+        "https://github.com/microsoft/bbs-node-reference",
+        "https://github.com/microsoft/bbs-node-reference"
+    ]
+}
+,
+{
+    "abstract": "Identity-based signature ($\\textsf{IBS}$) schemes eliminate the need for certificate management, reducing both signature size and verification time. However, the challenge of updating stolen identity-based signature keys (or revoking and re-issueing them) has received limited attention. Existing generic solutions, such as managing revocation lists or periodically renewing user keys, are inefficient and introduce significant networking overhead in dynamic environments.\r\nIn this work, we address this gap by introducing a symmetric element that enables key updates in $\\textsf{IBS}$ schemes via a single multicast message. The network overhead of our solutions scales logarithmic with the number of system users, while computation and memory overhead are constant. Furthermore, we generalize our method by proposing a framework to transform any $\\textsf{IBS}$ scheme into a key-updatable signature scheme ($\\textsf{KUSS}$), and we define the token security (unforgeability), forward security, and post-compromise security requirements for such transformations. We demonstrate the versatility of our framework by providing five instantiations of $\\textsf{KUSS}$ based on Schnorr-type $\\textsf{IBS}$, pairing-based $\\textsf{IBS}$, and isogeny-based $\\textsf{IBS}$. Finally, we analyze the security of these instantiations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen",
+                    "ror": "https://ror.org/05591te55"
+                }
+            ],
+            "fullName": "Tobias Guggemos"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Middle East Technical University",
+                    "ror": "https://ror.org/014weej12"
+                }
+            ],
+            "fullName": "Farzin Renan"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-11T10:13:13Z"
+        }
+    ],
+    "keywords": [
+        "Identity-Based Signatures",
+        "Key Revocation",
+        "Key-Updatable Signatures",
+        "ECC",
+        "Pairing-based",
+        "Isogeny-based Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1094.pdf",
+    "pid": "1094",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Key Updatable Identity-Based-Signature Schemes",
+    "year": 2025,
+    "repo": [
+        "https://github.com/relic-toolkit/relic"
+    ]
+}
+,
+{
+    "abstract": "The module-Lattice Isomorphism Problem (module-LIP) was introduced by Ducas et al. (ASIACRYPT 22) in~\\cite{HAWK:cryptoeprint:2022/1155}, and used within the signature scheme and NIST candidate HAWK. In~\\cite{modLIPtotallyreal}, by Mureau et al (Eurocrypt24), it was pointed out that over certain number fields $F$, the problem can be reduced to enumerating solutions of $x^2 + y^2 = q$ (where $q \\in \\O_F$ is given and $x,y \\in \\O_F$ are the unknowns). Moreover one can always reduce to a similar equation which has only \\textit{few} solutions. This key insight led to a heuristic polynomial-time algorithm for solving module-LIP on those specific instances. Yet this result doesn't threaten HAWK for which the problem can be reduced to enumerating solutions of $x^2 + y^2 + z^2 + t^2 = q$ (where $q \\in \\O_F$ is given and $x,y,z,t \\in \\O_F$ are the unknowns). We show that, in all likelihood, solving this equation requires the enumeration of a \\textit{too large} set to be feasible, thereby making irrelevant a straightforward adaptation of the approach in~\\cite{modLIPtotallyreal}.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Univ Rennes, Inria, CNRS, Irisa, UMR 6074, France"
+                }
+            ],
+            "fullName": "Cl\u00e9mence Chevignard"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Univ Bordeaux, CNRS, Inria, Bordeaux INP, IMB, UMR 5251, Talence, France"
+                }
+            ],
+            "fullName": "Guilhem Mureau",
+            "orcid": "0009-0005-3057-6275"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-12T15:41:40Z"
+        },
+        {
+            "action": "revised",
+            "when": "2025-06-12T14:01:36Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-11T11:47:32Z"
+        }
+    ],
+    "keywords": [
+        "module-LIP",
+        "HAWK",
+        "module-lattices",
+        "cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1095.pdf",
+    "pid": "1095",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Ideally HAWKward: How Not to Break Module-LIP",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Privacy-preserving neural network inference using Fully Homomorphic Encryption (FHE) faces significant challenges in efficiently evaluating non-polynomial functions, such as activation functions, which are critical for introducing non-linearity in neural networks. Full-Domain Functional Bootstrap (FDFB) algorithms provide a promising solution by enabling the evaluation of arbitrary functions while simultaneously refreshing ciphertexts to manage noise accumulation. Despite their theoretical advantages, the practicality of FDFB algorithms has been limited by excessive computational overhead, often exceeding 1000 ms per ciphertext, which restricts their scalability for large neural networks.\r\n\r\nTo overcome the computational bottlenecks of FDFB, we have re-engineered the algorithms for massively parallel execution on GPUs. Our primary contribution is a hierarchical parallelization strategy that exploits concurrency at the thread, stream, and device levels. A key optimization involves the use of CUDA streams to create a data pipeline that effectively mitigates the overhead of memory transfers between the host and device. This optimized architecture achieves a significant speedup of up to 524$\\times$ compared to CPU-based implementations. Our implementation maintains full precision for evaluating various activation functions, confirming its viability for large-scale, privacy-preserving machine learning tasks and paving the way for practical FHE-based deep learning.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "City University of Hong Kong",
+                    "ror": "https://ror.org/03q8dnn23"
+                }
+            ],
+            "fullName": "Shutong Jin",
+            "orcid": "0000-0001-5491-5634"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "City University of Hong Kong"
+                }
+            ],
+            "fullName": "Shiyu Shen",
+            "orcid": "0000-0001-7287-4223"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "City University of Hong Kong",
+                    "ror": "https://ror.org/03q8dnn23"
+                }
+            ],
+            "fullName": "Hao Yang",
+            "orcid": "0000-0002-9735-255X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Normal-Hong Kong Baptist University",
+                    "ror": "https://ror.org/0064kty71"
+                }
+            ],
+            "fullName": "Donglong Chen",
+            "orcid": "0000-0001-5357-7442"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sun Yat-sen University"
+                }
+            ],
+            "fullName": "Wangchen Dai",
+            "orcid": "0000-0002-5192-1649"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Ray C. C. Cheung",
+            "orcid": "0000-0002-6764-0729"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-11T15:47:28Z"
+        }
+    ],
+    "keywords": [
+        "Fully Homomorphic Encryption",
+        "Privacy-Preserving Machine Learning",
+        "TFHE",
+        "GPU Acceleration"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1096.pdf",
+    "pid": "1096",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "CuFDFB: Fast and Private Computation on Non-Linear Functions Using FHE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The multistep solving strategy consists in a divide-and-conquer approach: when a multivariate polynomial system is computationally infeasible to solve directly, one variable is assigned over the elements of the base finite field, and the procedure is recursively applied to the resulting simplified systems. In a previous work by the same authors (among others), this approach proved effective in the algebraic cryptanalysis of the Trivium cipher.\r\n\r\nIn this paper, we present a new implementation of the corresponding algorithm based on a Depth-First Search strategy, along with a novel complexity analysis leveraging tree structures. We further introduce the notion of an ``oracle function'' as a general predictive tool for deciding whether the evaluation of a new variable is necessary to simplify the current polynomial system. This notion allows us to unify all previously proposed variants of the multistep strategy, including the classical hybrid approach, by appropriately selecting the oracle function.\r\n\r\nFinally, we apply the multistep solving strategy to the cryptanalysis of the low-latency block cipher Aradi, recently introduced by the NSA. We present the first full-round algebraic attack, raising concerns about the cipher\u2019s actual security with respect to its key length.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Mathematics, University of Bari"
+                }
+            ],
+            "fullName": "Roberto La Scala"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cryptography Research Centre, Technology Innovation Institute"
+                }
+            ],
+            "fullName": "Sharwan K. Tiwari"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-11T16:08:09Z"
+        }
+    ],
+    "keywords": [
+        "Polynomial system solving",
+        "Finite fields",
+        "Cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "note": "19 pages",
+    "pdffile": "2025/1097.pdf",
+    "pid": "1097",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Oracle-Based Multistep Strategy for Solving Polynomial Systems Over Finite Fields and Algebraic Cryptanalysis of the Aradi Cipher",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We describe an algorithm to efficiently evaluate class group actions on supersingular elliptic curves that are oriented by an imaginary quadratic order of arbitrarily large discriminant. Contrary to CSIDH, this allows to increase the post-quantum security of the group action without increasing the size of the base field. In particular, we describe instances where Kuperberg's algorithm loses to generic supersingular isogeny path finding. Our algorithm is fully deterministic, strictly constant time, dummy free, and can be implemented without conditional branches. We show that the (restricted effective) group action can be employed in a non-interactive key exchange protocol, that we argue is asymptotically more efficient than CSIDH.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Inria Bordeaux - Sud-Ouest Research Centre",
+                    "ror": "https://ror.org/03tjcj052"
+                },
+                {
+                    "name": "Institut de Math\u00e9matiques de Bordeaux",
+                    "ror": "https://ror.org/05m3r1b84"
+                }
+            ],
+            "fullName": "Marc Houben",
+            "orcid": "0000-0003-2158-1353"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-11T19:18:06Z"
+        }
+    ],
+    "keywords": [
+        "Isogeny-based cryptography",
+        "Orientations",
+        "CSIDH",
+        "Class group actions",
+        "Non-interactive key exchange"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1098.pdf",
+    "pid": "1098",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Isogeny-based key exchange from orientations of large discriminant",
+    "year": 2025,
+    "repo": [
+        "https://github.com/friends-of-quaternions/deuring",
+        "https://github.com/houbenmr/LargeDiscriminantOrientations",
+        "https://github.com/houbenmr/LargeDiscriminantOrientations",
+        "https://github.com/GiacomoPope/KummerIsogeny",
+        "https://github.com/GiacomoPope/KummerIsogeny"
+    ]
+}
 ]
