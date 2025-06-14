@@ -77870,4 +77870,926 @@
         "https://github.com/GiacomoPope/KummerIsogeny"
     ]
 }
+,
+{
+    "abstract": "An accumulator is a cryptographic system for compactly representing a set of elements such that every element in the set has a short membership witness. A dynamic accumulator, furthermore, allows elements to be added to and deleted from the accumulator.  Camenisch and Lysyanskaya (CRYPTO'02) constructed the first dynamic accumulator under the strong-RSA assumption and showed how it can be used to enable revocation of anonymous credentials.  In this paper, we give a lattice-based dynamic accumulator tailor-made for enabling revocation of post-quantum anonymous credential systems. As a concrete example, we instantiate our dynamic accumulator on top of the anonymous credential system implemented in the LaZer library (ACM CCS 2024).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Victor Youdom Kemmoe",
+            "orcid": "0000-0003-1887-6396"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Anna Lysyanskaya",
+            "orcid": "0000-0002-3567-3550"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "King's College London",
+                    "ror": "https://ror.org/0220mzb33"
+                }
+            ],
+            "fullName": "Ngoc Khanh Nguyen",
+            "orcid": "0000-0001-8240-6167"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-11T20:34:27Z"
+        }
+    ],
+    "keywords": [
+        "Cryptographic Accumulator",
+        "Anonymous Credential",
+        "Lattice-based zero-knowledge"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1099.pdf",
+    "pid": "1099",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lattice-Based Accumulator and Application to Anonymous Credential Revocation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/user-attachments/files/15904122/cryptographers-feedback.pdf",
+        "https://github.com/user-attachments/files/15904122/cryptographers-feedback.pdf"
+    ]
+}
+,
+{
+    "abstract": "Blind signatures are fundamental cryptographic primitives enabling privacy-preserving authentication and have seen renewed interest in the post-quantum literature. \r\nExisting efficient constructions predominantly rely on Fischlin\u2019s generic paradigm instantiated over lattice assumptions, while blinding techniques for sigma-protocol-based blind signatures remain sparse beyond lattices. Moreover, achieving provable concurrent security under polynomially many sessions has been a longstanding open challenge for this approach in the post-quantum literature as evidenced by the recent attacks in EC\u201924 and PKC\u201924. \r\n\r\n\r\nThis work broadens the landscape of post-quantum blind signatures by introducing novel techniques and proposing four frameworks based on general cryptographic group actions, without requiring commutativity. Our constructions admit instantiations under diverse post-quantum assumptions, including CSIDH (isogeny-based), LESS (code-based, NIST round-two), and more. These frameworks offer flexible trade-offs in assumptions (from interactive one-more to the standard inversion problem) and key/signature sizes, and culminate in a construction that achieves security under polynomially many concurrent sessions. This enables the first efficient blind signatures from isogenies and codes with provable concurrent security with 3.9 and 56 KB respectively. We also outline several directions for optimization and further instantiations for future work.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Lucjan Hanzlik",
+            "orcid": "0009-0006-1941-693X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr-Universit\u00e4t Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Yi-Fu Lai",
+            "orcid": "0000-0002-1346-9372"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e4t der Bundeswehr M\u00fcnchen",
+                    "ror": "https://ror.org/05kkv3f82"
+                }
+            ],
+            "fullName": "Marzio Mula",
+            "orcid": "0000-0002-5953-8724"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Eugenio Paracucchi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e4t der Bundeswehr M\u00fcnchen",
+                    "ror": "https://ror.org/05kkv3f82"
+                }
+            ],
+            "fullName": "Daniel Slamanig",
+            "orcid": "0000-0002-4181-2561"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Birmingham",
+                    "ror": "https://ror.org/03angcq70"
+                }
+            ],
+            "fullName": "Gang Tang",
+            "orcid": "0000-0002-1135-466X"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-11T21:02:16Z"
+        }
+    ],
+    "keywords": [
+        "blind signature",
+        "post-quantum",
+        "group action",
+        "isogeny",
+        "code",
+        "lattice"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1100.pdf",
+    "pid": "1100",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tanuki: New Frameworks for (Concurrently Secure) Blind Signatures from Post-Quantum Groups Actions",
+    "year": 2025,
+    "repo": [
+        "https://pqcalteq.github.io/"
+    ]
+}
+,
+{
+    "abstract": "We show that the key agreement scheme  [IEEE TNSE, 1454--1468, 2004] is insecure against ephemeral secret leakage attack and smart card loss attack, not as claimed. This failure results from its simple encryption, in which only bitwise XOR operations are used to encrypt the messages.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Zhengjun Cao"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lihua Liu"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T00:10:37Z"
+        }
+    ],
+    "keywords": [
+        "Vehicular ad hoc networks",
+        "Key management",
+        "Ephemeral secret leakage attack",
+        "Smart card loss attack"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/1101.pdf",
+    "pid": "1101",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Note on One Authentication and Key Agreement Scheme for UAV-Assisted VANETs for Emergency Rescue",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Ensuring privacy of online messaging remains a challenge.  While the contents or data of online communications are often protected by end-to-end encryption, the metadata of communications are not.  Metadata such as who is communicating with whom, how much, and how often, are leaked by popular messaging systems today.\r\n\r\nIn the last four decades we have witnessed a rich literature of designs towards metadata-protecting communications systems (MPCS).  While recent MPCS works often target metadata-protected messaging systems, no existing construction simultaneously attains four desirable properties for messaging systems, namely (i) low latency, (ii) high throughput, (iii) horizontal scalability, and (iv) asynchronicity.  Existing designs often capture disjoint subsets of these properties.  For example, PIR-based approaches achieve low latency and asynchronicity but have low throughput and lack horizontal scalability, mixnet-based approaches achieve high throughput and horizontal scalability but lack asynchronicity, and approaches based on trusted execution environments (TEEs) achieve high throughput and asynchronicity but lack horizontal scalability.\r\n\r\nIn this work, we present TEEMS, the first MPCS designed for metadata-protected messaging that simultaneously achieves all four desirable properties. Our distributed TEE-based system uses an oblivious mailbox design to provide metadata-protected messaging.  TEEMS presents novel oblivious routing protocols that adapt prior work on oblivious distributed sorting.  Moreover, we introduce the notion of ID and token channels to circumvent shortcomings of prior designs.  We empirically demonstrate TEEMS' ability to support $2^{20}$ clients engaged in metadata-protected conversations in under 1 s, with 205 cores, achieving an 18\u00d7 improvement over prior work for latency and throughput, while supporting significantly better scalability and asynchronicity properties.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "CISPA Helmholtz Center for Information Security"
+                }
+            ],
+            "fullName": "Sajin Sasy",
+            "orcid": "0000-0003-3447-1006"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "U.S. Naval Research Laboratory"
+                }
+            ],
+            "fullName": "Aaron Johnson",
+            "orcid": "0000-0002-2057-1690"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Waterloo",
+                    "ror": "https://ror.org/01aff2v68"
+                }
+            ],
+            "fullName": "Ian Goldberg",
+            "orcid": "0000-0002-1176-2882"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T11:45:28Z"
+        }
+    ],
+    "keywords": [
+        "anonymous communications",
+        "metadata-protecting communication",
+        "oblivious algorithms"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1102.pdf",
+    "pid": "1102",
+    "pubtype": {
+        "note": "Proceedings on Privacy Enhancing Technologies 2025(4)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "TEEMS: A Trusted Execution Environment based Metadata-protected Messaging System",
+    "year": 2025,
+    "repo": [
+        "https://git-crysp.uwaterloo.ca/iang/teems",
+        "https://git-crysp.uwaterloo.ca/iang/teems",
+        "https://github.com/ucsc-anonymity/sparta-experiments"
+    ]
+}
+,
+{
+    "abstract": "We develop a toolbox for modular construction and analysis of succinct, non-interactive commitments and vector commitments in the random oracle model, while guaranteeing universally composable security. To demonstrate its power, we use the toolbox to construct and analyze a modular variant of the Kilian-Micali ZK-SNARK. Along the way we also propose a new UC formulation of a global random oracle, that avoids a weakness in existing formulations and also enables expressing more nuanced, session-specific abstractions. We hope that this toolbox will be useful for building secure applications in settings where both succinctness and non-interactivity are key.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Boston University",
+                    "ror": "https://ror.org/05qwgg493"
+                }
+            ],
+            "fullName": "Ran Canetti",
+            "orcid": "0000-0002-5479-7540"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Boston University",
+                    "ror": "https://ror.org/05qwgg493"
+                }
+            ],
+            "fullName": "Megan Chen"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T11:53:15Z"
+        }
+    ],
+    "keywords": [
+        "universal composability",
+        "vector commitment",
+        "commitment",
+        "random oracle model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1103.pdf",
+    "pid": "1103",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Universally Composable Succinct Vector Commitments and Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We propose a new iterative method to convert a ciphertext from the Generalized BFV (GBFV) to the regular BFV scheme. In particular, our conversion starts from an encrypted plaintext that lives in a large cyclotomic ring modulo a small-norm polynomial $t(x)$, and gradually changes the encoding to a smaller cyclotomic ring modulo a larger integer $p$. Previously, only a trivial conversion method was known, which did not change the underlying cyclotomic ring.\r\n\r\nUsing our improved conversion algorithm, we can bootstrap the GBFV scheme almost natively, in the sense that only a very small fraction of the operations is computed inside regular BFV. Specifically, we evaluate (an adapted version of) the slot-to-coefficient transformation entirely in the GBFV scheme, whereas the previous best method used the BFV scheme for that transformation. This insight allows us to bootstrap either with less noise growth, or much faster than the state-of-the-art.\r\n\r\nWe implement our new bootstrapping in Microsoft SEAL. Our experiments show that, for the same remaining noise budget, our bootstrapping runs in only 800 ms when working with ciphertexts containing 1024 slots over $\\mathbb{F}_{p}$ with $p = 2^{16}+1$. This is $1.6\\times$ faster than the state-of-the-art.\r\n\r\nFinally, we use our improved GBFV bootstrapping in an application that computes an encrypted edit distance. Compared to the recent TFHE-based Leuvenshtein algorithm, our GBFV version is almost two orders of magnitude faster in the amortized sense.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Robin Geelen",
+            "orcid": "0000-0003-4684-3532"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "KU Leuven",
+                    "ror": "https://ror.org/05f950310"
+                }
+            ],
+            "fullName": "Frederik Vercauteren",
+            "orcid": "0000-0002-7208-9599"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T12:57:28Z"
+        }
+    ],
+    "keywords": [
+        "Fully homomorphic encryption",
+        "GBFV",
+        "Bootstrapping",
+        "Edit distance"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1104.pdf",
+    "pid": "1104",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Better GBFV Bootstrapping and Faster Encrypted Edit Distance Computation",
+    "year": 2025,
+    "repo": [
+        "https://github.com/KULeuven-COSIC/Bootstrapping_BGV_BFV/tree/traces",
+        "https://github.com/Microsoft/SEAL"
+    ]
+}
+,
+{
+    "abstract": "This paper presents a novel approach to zero-trust anonymous reputation update in crowd sensing IoT applications. We use a suite of cryptographic functions to achieve anonymity, including unlinkability of sensing reports to the principals that submit them and to one another, while enabling the infrastructure to reliably quantify the degree of trust expressed as a reputation level. The protocol is low-cost for the anonymous participant due to the use of cheap standard algorithms: low-exponent modular exponentia- tion and cryptographic hashing, which makes it quite suitable for IoT.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Hertfordshire"
+                }
+            ],
+            "fullName": "Alex Shafarenko",
+            "orcid": "0000-0001-8796-6542"
+        }
+    ],
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T14:20:45Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1105.pdf",
+    "pid": "1105",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Low-cost anonymous reputation update for IoT applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure Multi-Party Computation (MPC) is becoming more and more usable in practice. The practicality origins primarily from well-established general-purpose MPC frameworks, such as MP-SPDZ. However, to evaluate the practicality of an MPC program in the envisioned environments, still many benchmarks need to be done. We identified three challenges in the context of performance evaluations within the MPC domain: first, the cumbersome process to holistically benchmark MPC programs; second, the difficulty to find the best-possible MPC setting for a given task and envisioned environment; and third, to have consistent evaluations of the same task or problem area across projects and papers. In this work, we address the gap of tedious and complex benchmarking of MPC. Related works so far mostly provide a comparison for certain programs with different engines.\r\n\r\nTo the best of our knowledge, for the first time the whole benchmarking pipeline is automated; provided by our open-sourced framework Holistic Benchmarking for MPC (b4M). b4M is easy to configure using TOML files, outputs ready-to-use graphs, and provides even the MPC engine itself as own benchmark dimension. Furthermore it takes three relatively easy steps to add further engines: first, integrate engine-specific commands into b4M\u2019s runner class; second, output performance metrics in b4M\u2019s format; third, provide a Docker container for the engine\u2019s parties.\r\n\r\nTo showcase b4M, we provide an exemplary evaluation for the computation of the dot product and logistic regression using a real-world dataset. With this work, we move towards fully-automated evaluations of MPC programs, protocols, and engines, which smoothens the setup process and viewing various trade-offs. Hence, b4M advances MPC development by improving the benchmarking usability aspect of it.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Karl W. Koch",
+            "orcid": "0000-0002-4828-7587"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Circle Internet Financial, New York, USA"
+                }
+            ],
+            "fullName": "Dragos Rotaru",
+            "orcid": "0000-0002-1767-3725"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Christian Rechberger",
+            "orcid": "0000-0003-1280-6020"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T15:15:45Z"
+        }
+    ],
+    "keywords": [
+        "Multi-Party Computation",
+        "MP-SPDZ",
+        "webSPDZ",
+        "Benchmarking",
+        "b4M"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1106.pdf",
+    "pid": "1106",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "b4M: Holistic Benchmarking for MPC",
+    "year": 2025,
+    "repo": [
+        "https://github.com/kaydoubleu/b4M",
+        "https://github.com/cryptobiu/MATRIX",
+        "https://github.com/data61/MP-SPDZ",
+        "https://github.com/rdragos/awesome-mpc",
+        "https://github. com/lschoe/mpyc",
+        "https://github. com/lschoe/mpyc"
+    ]
+}
+,
+{
+    "abstract": "Minimizing both the round and communication complexity of Byzantine agreement (BA) is fundamental question in distributed computing. A long line of works has focused on early-stopping deterministic protocols that can terminate within a number of synchronous rounds that is proportional to $f$, where $f$ is the \\emph{actual number} of corruptions in an execution, as opposed to an upper bound $t$. This can lead to major benefits when $f\\ll t$. A very different style of randomized protocol has focused on \\emph{player replaceable} BA protocols with communication complexity linear in the number of parties $n$ and adaptive security, which rely on only a small and rotating subcommittee of parties to ever speak in the protocol. One downside of existing player-replaceable protocols is that they require $O(r)$ rounds to terminate with overwhelming probability $1-2^r$.\r\n    For applications demanding high security guarantees, this can easily become the bottleneck of a player replaceable protocol. Motivated by this gap in the literature, we give the first protocol that is simultaneously player-replaceable \\emph{and} early stopping (with overwhelming probability). Let $1>\\alpha>0$ and $1>\\epsilon>0$ be constants and let $\\lambda$ and $\\kappa$ denote suitable security parameters. Our protocol is secure against up to $t<(1-\\alpha)\\cdot n/2$ adaptive Byzantine corruptions and terminates in $(1+\\epsilon)\\cdot f$ many rounds with probability $1-2^\\lambda$, given $f\\leq t$ corruptions. Moreover, our protocol has constant expected round complexity and communication bounded by $O(n\\cdot \\lambda^3 \\cdot \\kappa ).$",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Yale University",
+                    "ror": "https://ror.org/03v76x132"
+                }
+            ],
+            "fullName": "Fatima Elsheimy"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Simon Holmgaard Kamp"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Julian Loss"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T18:54:25Z"
+        }
+    ],
+    "keywords": [
+        "Byzantine Agreement",
+        "Early Stopping",
+        "Round Complexity",
+        "Communication Complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1107.pdf",
+    "pid": "1107",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Early Stopping is Cheap",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A common issue with using secure computation in practice is that its security does not place any restrictions on what an adversary can use as input in the protocol. In this work, we focus on the practically-motivated setting of (two-message, labeled) private set intersection (PSI), and advocate for a clean and versatile solution to this problem: PSI on authenticated inputs.\r\n\r\nOur central contributions are summarized as follows.\r\n- We formulate a novel definition of PSI on authenticated inputs that has the potential for use in several applications, from content moderation in end-to-end encrypted systems to watchlists in anonymous e-cash systems.\r\n- We design a concretely-efficient and laconic (i.e., the size of the receiver's message is independent of its set size) protocol for PSI on authenticated inputs.\r\n- We build on our PSI protocol to obtain the first laconic set pre-constrained group signature scheme, improving on that of Bartusek et al. (Eurocrypt 23).\r\n\r\nWe also explore various optimizations to our basic protocol, including reducing the receiver's concrete run time, and a tradeoff between crs size and message size.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "James Bartusek"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Sanjam Garg"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Johns Hopkins University",
+                    "ror": "https://ror.org/00za53h95"
+                },
+                {
+                    "name": "NTT Basic Research Laboratories",
+                    "ror": "https://ror.org/01m2pas06"
+                }
+            ],
+            "fullName": "Abhishek Jain"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Guru-Vamsi Policharla"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T20:13:21Z"
+        }
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/1108.pdf",
+    "pid": "1108",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Laconic PSI on Authenticated Inputs and Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Regardless of the choice of parameters, knowledge of a single signed message, i.e., a pair message/signature, produced by Kahrobaei-Koupparis digital signature scheme is sufficient to forge a valid signature for any other message.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Stevens Institute of Technology",
+                    "ror": "https://ror.org/02z43xh36"
+                }
+            ],
+            "fullName": "Alexander Ushakov",
+            "orcid": "0000-0001-9042-7857"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T20:22:03Z"
+        }
+    ],
+    "keywords": [
+        "Group-based cryptography",
+        "digital signature."
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1109.pdf",
+    "pid": "1109",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Kahrobaei--Koupparis DSS: universal forgery",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this work, we develop a framework for compiling languages into efficient Interactive Oracle Proofs (IOPs, or \u2018circuits\u2019), motivated by applications in verifiable Virtual Machine (zkVM) design. We provide a set of sufficient conditions on a language under which it can be compiled into an efficient IOP, alongside corresponding performance costs. We identify a subclass of languages, which we denote as traversable, and demonstrate how traversable languages can be efficiently compiled as circuits using established techniques.\r\n\r\nTo demonstrate the efficacy of our compilation framework, we develop a zkVM for the Nock programming language by (1) formalizing the existing Nock specification, and (2) applying our techniques to design an efficient IOP representation for the Nock VM. The resulting circuit is small, on par with existing state-of-the-art zkVM designs and can be generated for any traversable language in a generic way.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Assimakis A. Kattis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zorp Corp"
+                }
+            ],
+            "fullName": "Brian Klatt"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zorp Corp"
+                }
+            ],
+            "fullName": "Philip Quirk"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Zorp Corp"
+                }
+            ],
+            "fullName": "Logan Allen"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-12T20:44:34Z"
+        }
+    ],
+    "keywords": [
+        "zkvm",
+        "zero-knowledge proofs",
+        "nock",
+        "programming languages"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1110.pdf",
+    "pid": "1110",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Framework for Compiling Custom Languages as Efficiently  Verifiable Virtual Machines",
+    "year": 2025,
+    "repo": [
+        "https://lita.gitbook.io/lita-documentation/quick-start/valida-zk-vm",
+        "https://lita.gitbook.io/lita-documentation/quick-start/valida-zk-vm",
+        "https://github.com/succinctlabs/sp1"
+    ]
+}
+,
+{
+    "abstract": "Secure evaluation of non-linear functions is one of the most expensive operations in secure two-party computation, particularly for activation functions in privacy preserving machine learning (PPML). This work introduces SEAF, a novel framework for efficient Secure Evaluation on Activation Functions. SEAF is based on the linear approximation approach, but enhances it by introducing two key innovations: Trun-Eq based interval test protocols and linear approximation with dynamic precision, which have the potential for broader applicability. Furthermore, we classify common activation functions into several categories, and present specialized methods to evaluate them using our enhanced techniques. Our implementation of SEAF demonstrates $3.5 \\times$ to $5.9 \\times$ speedup on activation functions $\\mathsf{Tanh}$ and $\\mathsf{Sigmoid}$ compared to SirNN (S\\&P'21). When applied on $\\mathsf{GELU}$, SEAF outperforms Iron (NeurIPS'22) by more than $10 \\times$ and Bolt (S\\&P'24) by up to $3.4 \\times$. For end-to-end secure inference on BERT, the original $\\mathsf{GELU}$ accounts for $31.3 \\%$ and $22.5 \\%$ of the total runtime in Iron and Bolt, respectively. In contrast, our optimized $\\mathsf{GELU}$ reduces these proportions to  $4.3 \\%$ and $9.8 \\%$, eliminating $\\mathsf{GELU}$ as a bottleneck in secure inference.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The Chinese University of Hong Kong\uff0cShenzhen"
+                }
+            ],
+            "fullName": "Hao Guo",
+            "orcid": "0000-0002-2934-9068"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Chinese University of Hong Kong\uff0cShenzhen"
+                }
+            ],
+            "fullName": "Zhaoqian Liu",
+            "orcid": "0009-0005-8019-4080"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Harbin Institute of Technology, Shenzhen; Pengcheng Laboratory; Key Laboratory of Cyberspace and Data Security, Ministry of Emergency Management"
+                }
+            ],
+            "fullName": "Ximing Fu",
+            "orcid": "0000-0001-7058-2091"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hangzhou Innovation Institute of Beihang University"
+                }
+            ],
+            "fullName": "Zhusen Liu",
+            "orcid": "0000-0001-7441-2954"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-13T02:32:35Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1111.pdf",
+    "pid": "1111",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SEAF: Secure Evaluation on Activation Functions with Dynamic Precision for Secure Two-Party Inference",
+    "year": 2025,
+    "repo": [
+        "https://github.com/geralt-tian/SEAF",
+        "https://github.com/geralt-tian/SEAF-VOLE-AF",
+        "https://github.com/geralt-tian/SEAF-VOLE-AF",
+        "https://github.com/mpc-msri/EzPC/tree/master/SCI",
+        "https://github.com/mpc-msri/EzPC/tree/master/SCI"
+    ]
+}
+,
+{
+    "abstract": "We present Hydrangea, a partially synchronous Byzantine fault-tolerant state machine replication protocol that achieves a latency of two rounds optimistically while maintaining high adversarial resilience. In particular, for a system of $n = 3f + 3p + 1$ parties, if up to $p$ parties are faulty, then the protocol can obtain a latency of two rounds. Otherwise, the protocol can obtain a latency of three rounds while tolerating $f$ Byzantine faults and $p$ crash faults {\\em simultaneously}.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Nibesh Shrestha"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                },
+                {
+                    "name": "Purdue University"
+                }
+            ],
+            "fullName": "Aniket Kate"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Duke University",
+                    "ror": "https://ror.org/00py81415"
+                }
+            ],
+            "fullName": "Kartik Nayak"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-13T03:04:29Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1112.pdf",
+    "pid": "1112",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Hydrangea: Optimistic Two-Round Partial Synchrony with One-Third Fault Resilience",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Recent advancements in machine learning accuracy and utility have been driven by the effective combination of sophisticated models with high-performance computational scaling. As the development of large-scale models shifts away from commodity hardware to outsourced computation, it becomes paramount to ensure that the training process is executed with integrity and transparency. This encompasses verifying that adequate computational resources were expended and that the resulting model is accurate, rather than the product of skipped steps or resource-saving shortcuts by the external provider. Building on our previous efforts, which demonstrated the computational feasibility of using this system to argue correctness for differentially-private linear regression, we extend those results to achieve fully provable back-propagation\u2014a cornerstone operation in modern machine learning training. Our system achieves complete zero-knowledge, revealing nothing about the input data during training, and ensures quantum security by relying on no weak cryptographic primitives. Efficiency is substantially increased through the use of a fixed-point decimal representation, reducing the computational overhead typically associated with floating-point arithmetic. Notably, our solution is doubly efficient, achieving a logarithmic-time verifier and a linear-time prover. Implemented entirely in Rust without reliance on external machine learning libraries, and executed within a cryptographically secure virtual machine, this work represents a significant advancement toward verifiable, secure, and efficient outsourced machine learning computations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "ror": "https://ror.org/00hj54h04"
+                }
+            ],
+            "fullName": "Dustin Ray"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Caroline El Jazmi",
+            "orcid": "0009-0000-8625-1115"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-13T04:43:45Z"
+        }
+    ],
+    "keywords": [
+        "Differential Privacy",
+        "Machine Learning",
+        "Back-Propagation",
+        "Zero-Knowledge",
+        "Probabilistic Checkable Proofs",
+        "ZK-STARK"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1113.pdf",
+    "pid": "1113",
+    "pubtype": {
+        "note": "FTC 2025 - Future Technologies Conference 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Computational Attestations of Polynomial Integrity Towards Verifiable Back-Propagation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
