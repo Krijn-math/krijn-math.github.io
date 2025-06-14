@@ -1,3 +1,4 @@
+tanuki: new frameworks for (concurrently secure) blind signatures from post-quantum groups actions;;;lucjan hanzlik, yi-fu lai, marzio mula, eugenio paracucchi, daniel slamanig, gang tang;;;2025/1100;;;last_week;;;https://pqcalteq.github.io/
 isogeny-based key exchange from orientations of large discriminant;;;marc houben;;;2025/1098;;;last_week;;;https://github.com/friends-of-quaternions/deuring
 key updatable identity-based-signature schemes;;;tobias guggemos, farzin renan;;;2025/1094;;;last_week;;;https://github.com/relic-toolkit/relic
 another look at the quantum security of the vectorization problem with shifted inputs;;;paul frixons, valerie gilchrist, péter kutas, simon-philipp merz, christophe petit;;;2025/376;;;last_week;;;none
@@ -97,4 +98,3 @@ isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz 
 computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;other;;;https://github.com/Jonathke/Computing-Optimal-Embeddings
 an efficient adaptive attack against festa;;;guoqing zhou, maozhi xu;;;2024/345;;;other;;;none
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;other;;;none
-zero-knowledge proofs for sidh variants with masked degree or torsion;;;youcef mokrani, david jao;;;2024/056;;;other;;;none
