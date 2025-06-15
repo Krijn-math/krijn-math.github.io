@@ -1,16 +1,17 @@
+experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_week;;;none
 tanuki: new frameworks for (concurrently secure) blind signatures from post-quantum groups actions;;;lucjan hanzlik, yi-fu lai, marzio mula, eugenio paracucchi, daniel slamanig, gang tang;;;2025/1100;;;last_week;;;https://pqcalteq.github.io/
 isogeny-based key exchange from orientations of large discriminant;;;marc houben;;;2025/1098;;;last_week;;;https://github.com/friends-of-quaternions/deuring
 key updatable identity-based-signature schemes;;;tobias guggemos, farzin renan;;;2025/1094;;;last_week;;;https://github.com/relic-toolkit/relic
 another look at the quantum security of the vectorization problem with shifted inputs;;;paul frixons, valerie gilchrist, péter kutas, simon-philipp merz, christophe petit;;;2025/376;;;last_week;;;none
 more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_week;;;https://github.com/QuSAC/IsogenyPoKviaCanonicalModPolys
 cryptanalysis of isogeny-based quantum money with rational points;;;hyeonhak kim, donghoe heo, seokhie hong;;;2025/201;;;last_week;;;none
-computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_week;;;https://github.com/fffmath/AsymptoticBounds
+computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_month;;;https://github.com/fffmath/AsymptoticBounds
 orient express: using frobenius to express oriented isogenies;;;wouter castryck, riccardo invernizzi, gioella lorenzon, jonas meers, frederik vercauteren;;;2025/1047;;;last_month;;;none
 upke and ukem schemes from supersingular isogenies;;;pratima jana, ratna dutta;;;2025/1010;;;last_month;;;none
 sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimension one;;;zheng xu, kaizhan lin, chang-an zhao, yi ouyang;;;2025/920;;;last_month;;;https://github.com/Kaizhan-Lin/SQIsign2DSquare
 hidden number problems in fiat-shamir based post-quantum signatures;;;yi-fu lai, jonas meers, julian nowakowski;;;2025/913;;;last_month;;;none
 sqisign2dpush: faster signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2025/897;;;last_month;;;https://github.com/hiroshi-onuki/SQIsign2D-Push
-improved subfield curve search for specific field characteristics;;;jesús-javier chi-domínguez;;;2025/226;;;last_month;;;none
+improved subfield curve search for specific field characteristics;;;jesús-javier chi-domínguez;;;2025/226;;;last_year;;;none
 deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_year;;;https://github.com/houbenmr/DeterministicClassGroupActions
 constant-time integer arithmetic for sqisign;;;fatna kouider, anisha mukherjee, david jacquemin, péter kutas;;;2025/832;;;last_year;;;https://github.com/SQISign/sqisign-ec23
 simple power analysis attack on sqisign;;;anisha mukherjee, maciej czuprynko, david jacquemin, péter kutas, sujoy sinha roy;;;2025/830;;;last_year;;;git@github.com:anishamukh/Key-Recovery-of-SQIsign.git
@@ -42,7 +43,6 @@ unconditional foundations for supersingular isogeny-based cryptography;;;arthur 
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_year;;;https://gitlab.inria.fr/nsarkis/half-diff-add
 computing quaternion embeddings and endomorphism rings of supersingular oriented elliptic curves;;;maher mamah;;;2025/186;;;last_year;;;none
 the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_year;;;none
-experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_year;;;none
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_year;;;https://github.com/jtcc2/cycles-and-cuts
 efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;maria corte-real santos, craig costello, sam frengley;;;2025/147;;;last_year;;;https://github.com/mariascrs/SplitSearcher
 prism: simple and compact identification and signatures from large prime degree isogenies;;;andrea basso, giacomo borin, wouter castryck, maria corte-real santos, riccardo invernizzi, antonin leroux, luciano maino, frederik vercauteren, benjamin wesolowski;;;2025/135;;;last_year;;;https://github.com/KULeuven-COSIC/PRISM
