@@ -4,7 +4,7 @@ isogeny-based key exchange from orientations of large discriminant;;;marc houben
 key updatable identity-based-signature schemes;;;tobias guggemos, farzin renan;;;2025/1094;;;last_week;;;https://github.com/relic-toolkit/relic
 another look at the quantum security of the vectorization problem with shifted inputs;;;paul frixons, valerie gilchrist, péter kutas, simon-philipp merz, christophe petit;;;2025/376;;;last_week;;;none
 more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_week;;;https://github.com/QuSAC/IsogenyPoKviaCanonicalModPolys
-cryptanalysis of isogeny-based quantum money with rational points;;;hyeonhak kim, donghoe heo, seokhie hong;;;2025/201;;;last_week;;;none
+cryptanalysis of isogeny-based quantum money with rational points;;;hyeonhak kim, donghoe heo, seokhie hong;;;2025/201;;;last_month;;;none
 computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_month;;;https://github.com/fffmath/AsymptoticBounds
 orient express: using frobenius to express oriented isogenies;;;wouter castryck, riccardo invernizzi, gioella lorenzon, jonas meers, frederik vercauteren;;;2025/1047;;;last_month;;;none
 upke and ukem schemes from supersingular isogenies;;;pratima jana, ratna dutta;;;2025/1010;;;last_month;;;none
@@ -79,7 +79,7 @@ erebor and durian: full anonymous ring signatures from quaternions and isogenies
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_year;;;https://github.com/Breaking-SIDH/direct-attack
 a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_year;;;https://github.com/defeo/ss-isogeny-software
 climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_year;;;none
-a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;last_year;;;none
+a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;other;;;none
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;other;;;none
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;other;;;none
 universal composable password authenticated key exchange for the post-quantum world;;;you lyu, shengli liu, shuai han;;;2024/374;;;other;;;none
