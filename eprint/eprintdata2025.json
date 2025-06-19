@@ -80625,4 +80625,434 @@
         "https://github.com/ethereum/consensus-specs"
     ]
 }
+,
+{
+    "abstract": "One-Time Pad (OTP), introduced by Shannon, is well-known as an unconditionally secure encryption algorithm and has become the cornerstone of modern cryptography. However, the unconditional security of OTP applies solely to confidentiality and does not extend to integrity. Hash functions such as SHA2, SHA3 or SM3 applies only to integrity but not to confidentiality and also can not obtain unconditional security. Encryption and digital signatures based on asymmetric cryptography can provide confidentiality, integrity and authentication, but they can only achieve computational security. Leveraging the fundamental principles of quantum mechanics\uff0cQuantum key distribution\uff08QKD\uff09can achieve unconditional security in theory. However, due to limitations in eavesdropping detection, the use of classical channels and imperfections in quantum devices, it cannot reach unconditional security in practical applications. In this paper, based on  polynomial rings and the theory of probability, we propose an unconditionally secure encryption algorithm with unified confidentiality and integrity. The main calculation of the  encryption algorithm is  Cyclic Redundancy Check(CRC).  Theoretical analysis proves that the encryption algorithm not only meets the unconditional security of confidentiality, but also guarantees the unconditional security of integrity, especially suitable for high-security communications such as finance, military, government and other fields.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing University of Technology"
+                }
+            ],
+            "fullName": "Zhen-Hu Ning"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-17T04:06:51Z"
+        }
+    ],
+    "keywords": [
+        "encryption algorithm",
+        "unconditionally secure",
+        "unified confidentiality and integrity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1140.pdf",
+    "pid": "1140",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Unconditionally secure encryption algorithm with unified confidentiality and integrity",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3719027.3744812",
+    "abstract": "In many fields, the need to securely collect and aggregate data from distributed systems is growing. However, designs that rely solely on encrypted data transmission make it difficult to trace malicious users. To address this challenge, we have enhanced the secure aggregation (SA) protocol proposed by Bell et al. (CCS 2020) by introducing verification features that ensure compliance with user inputs and encryption processes while preserving data privacy. We present LZKSA, a quantum-safe secure aggregation system with input verification. LZKSA employs seven zero-knowledge proof (ZKP) protocols based on the Ring Learning with Errors problem, specifically designed for secure aggregation. These protocols verify whether users have correctly used SA keys and their $L_{\\infty}$, $L_2$ norms and cosine similarity of data, meet specified constraints, to exclude malicious users from current and future aggregation processes. The specialized ZKPs we propose significantly enhance proof efficiency. In practical federated learning scenarios, our experimental evaluations demonstrate that the proof generation time for $L_{\\infty}$ and $L_2$ constraints is reduced to about $10^{-3}$ of that required by the current state-of-the-art method, RoFL (S\\&P 2023), and ACORN (USENIX 2023). For example, the proof generation/verification time of RoFL, ACORN and LZKSA for $L_{\\infty}$ is 94s/29.9s, 78.7s/33.9s, and 0.02s/0.0062s for CIFAR10, respectively.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Huazhong University of Science and Technology"
+                }
+            ],
+            "fullName": "Zhi Lu",
+            "orcid": "0000-0002-5411-9854"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Huazhong University of Science and Technology"
+                }
+            ],
+            "fullName": "Songfeng Lu",
+            "orcid": "0000-0003-4489-2488"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-17T04:11:00Z"
+        }
+    ],
+    "keywords": [
+        "Zero-Knowledge proof",
+        "Secure Aggregation",
+        "Input Validation",
+        "Federated Learning"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "note": "This is an expanded version of the paper published at the CCS conference. The main addition is the content of the security proof presented in the appendix.",
+    "pdffile": "2025/1141.pdf",
+    "pid": "1141",
+    "pubtype": {
+        "note": "2025 ACM SIGSAC Conference on Computer and Communications Security",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "LZKSA: Lattice-Based Special Zero-Knowledge Proofs for Secure Aggregation's Input Verification",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper presents OnionPIRv2, an efficient implementation of OnionPIR incorporating standard orthogonal techniques and engineering improvements.  OnionPIR is a single-server PIR scheme that improves response size and computation cost by utilizing recent advances in somewhat homomorphic encryption (SHE) and carefully composing two lattice-based SHE schemes to control the noise growth of SHE. OnionPIRv2 achieves $2.5$x-$3.6$x response overhead for databases with moderately large entries (around $4$ KB or above) and up to $1600$ MB/s server computation throughput.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Yue Chen",
+            "orcid": "0009-0003-5971-127X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                }
+            ],
+            "fullName": "Ling Ren",
+            "orcid": "0000-0003-3437-7570"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-17T10:32:05Z"
+        }
+    ],
+    "keywords": [
+        "Private Information Retrieval"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1142.pdf",
+    "pid": "1142",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "OnionPIRv2: Efficient Single-Server PIR",
+    "year": 2025,
+    "repo": [
+        "https://github.com/chenyue42/OnionPIRv2"
+    ]
+}
+,
+{
+    "abstract": "The Unbalanced Oil and Vinegar construction (UOV) has been the backbone of multivariate cryptography since the fall of HFE-based schemes. In fact, 7 UOV-based schemes have been submitted to the NIST additional call for signatures, and 4 of these made it to the second round. For efficiency considerations, most of these schemes are defined over a field of characteristic 2. This has as a side effect that the polar forms of the UOV public maps are not only symmetric, but also alternating.\r\n\r\nIn this work, we propose a new key-recovery attack on UOV in characteristic 2 that makes use of this property. We consider the polar forms of the UOV public maps as elements of the exterior algebra. We show that these are contained in a certain subspace of the second exterior power that is dependent on the oil space. This allows us to define relations between the polar forms and the image of the dual of the oil space under the Pl\u00fccker embedding. With this, we can recover the secret oil space using sparse linear algebra.\r\n\r\nThis new attack has an improved complexity over previous methods and reduces the security by 4, 11, and 20 bits for uov-Ip, uov-III, and uov-V, respectively. Furthermore, the attack is applicable to MAYO$_2$ and improves on the best attack by 28 bits.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Lars Ran"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-17T13:18:49Z"
+        }
+    ],
+    "keywords": [
+        "UOV",
+        "algebraic cryptanalysis",
+        "multivariate cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1143.pdf",
+    "pid": "1143",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Wedges, oil, and vinegar -- An analysis of UOV in characteristic 2",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Fully Homomorphic Encryption (FHE) is a key technology to enable privacy-preserving computation. While optimized FHE implementations already exist, the inner workings of FHE are technically complex. This makes it challenging, especially for non-experts, to develop highly-efficient FHE programs that can exploit the advanced hardware of today. Although several compilers have emerged to help in this process, due to design choices, they are limited in terms of application support and the efficiency levels they can achieve.\r\n\r\nIn this work, we showcase how to make FHE accessible to non-expert developers while retaining the performance provided by an expert-level implementation. We introduce Parasol, a novel end-to-end compiler encompassing a virtual processor with a custom Instruction Set Architecture (ISA) and a low-level library that implements FHE operations. Our processor integrates with existing compiler toolchains, thereby providing mainstream language support. We extract parallelism at multiple levels via our processor design and its computing paradigm. Specifically, we champion a Circuit Bootstrapping (CBS)-based paradigm, enabling efficient FHE circuit composition with multiplexers. Furthermore, Parasol\u2019s underlying design highlights the benefits of expressing FHE computations at a higher level\u2014producing highly compact program representations. Our experiments demonstrate the superiority of Parasol, in terms of runtime (up to 17x faster), program size (up to 22x smaller), and compile time (up to 32x shorter) compared to the current state-of-the-art. We expect the FHE computing paradigm underlying Parasol to attract future interest since it exposes added parallelism for FHE accelerators to exploit.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sunscreen"
+                }
+            ],
+            "fullName": "Rick Weber"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sunscreen"
+                }
+            ],
+            "fullName": "Ryan Orendorff"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Connecticut",
+                    "ror": "https://ror.org/02der9h97"
+                }
+            ],
+            "fullName": "Ghada Almashaqbeh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sunscreen"
+                }
+            ],
+            "fullName": "Ravital Solomon"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-17T18:51:55Z"
+        }
+    ],
+    "keywords": [
+        "Fully Homomorphic Encryption",
+        "Private Computing",
+        "Compilers",
+        "Secure Performance Optimization"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1144.pdf",
+    "pid": "1144",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Parasol Compiler: Pushing the Boundaries of FHE Program Efficiency",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Sunscreen-tech/compiler_benchmarks",
+        "https://github.com/Sunscreen-tech/compiler_benchmarks",
+        "https://github.com/nucypher/nufhe",
+        "https://github.com/zama-ai/tfhe-rs",
+        "https://github.com/Microsoft/SEAL",
+        "https://github.com/zama-ai/concrete",
+        "https://github.com/llvm/llvm-project",
+        "https://github.com/llvm/llvm-project",
+        "https://github.com/Sunscreen-tech/compiler$_$benchmarks",
+        "https://github.com/Sunscreen-tech/compiler$_$benchmarks",
+        "https://github.com/malb/lattice-estimator",
+        "https://github.com/malb/lattice-estimator"
+    ]
+}
+,
+{
+    "DOI": "108100a394/27kaGCryttC",
+    "abstract": "Group Signatures are fundamental cryptographic primitives that allow users to sign a message on behalf of a predefined set of users, curated by the group manager. The security properties ensure that members of the group can sign anonymously and without fear of being framed. In dynamic group signatures, the group manager has finer-grained control over group updates while ensuring membership privacy (i.e., hiding when users join and leave). The only known scheme that achieves standard security properties and membership privacy has been proposed by Backes et al. CCS 2019. However, they rely on an inefficient revocation mechanism that re-issues credentials to all active members during every group update, and users have to rely on a secure and private channel to join the group.\r\nIn this paper, we introduce a dynamic group signature that supports verifier-local revocation, while achieving strong security properties, including membership privacy for users joining over a public channel. Moreover, when our scheme is paired with structure-preserving signatures over equivalence class it enjoys a smaller signature size compared to Backes et al. Finally, as a stand-alone contribution we extend the primitive Asynchronous Remote Key Generation (Frymann et al. CCS 2020) with trapdoors and introduce new security properties to capture this new functionality, which is fundamental to the design of our revocation mechanism",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Surrey",
+                    "ror": "https://ror.org/00ks66431"
+                }
+            ],
+            "fullName": "Callum London"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Surrey",
+                    "ror": "https://ror.org/00ks66431"
+                }
+            ],
+            "fullName": "Daniel Gardham",
+            "orcid": "0000-0002-8856-1093"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Surrey",
+                    "ror": "https://ror.org/00ks66431"
+                }
+            ],
+            "fullName": "Constantin Catalin Dragan",
+            "orcid": "0000-0002-4033-9880"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-17T22:51:47Z"
+        }
+    ],
+    "keywords": [
+        "dynamic group signatures",
+        "membership privacy",
+        "verifier-local revocation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1145.pdf",
+    "pid": "1145",
+    "pubtype": {
+        "note": "2025 IEEE 38th Computer Security Foundations Symposium",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Dynamic Group Signatures with Verifier-Local Revocation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3719027.3744810",
+    "abstract": "Decentralized e-voting enables secure and transparent elections without relying on trusted authorities, with blockchain emerging as a popular platform. It has compelling applications in Decentralized Autonomous Organizations (DAOs), where governance relies on voting with blockchain-issued tokens. Quadratic voting (QV), a mechanism that mitigates the dominance of large token holders, has been adopted by many DAO elections to enhance fairness. However, current QV systems deployed in practice publish voters' choices in plaintext with digital signatures. The open nature of all ballots comprises voter privacy, potentially affecting voters' honest participation. Prior research proposes using cryptographic techniques to encrypt QV ballots, but they work in a centralized setting, relying on a trusted group of tallying authorities to administrate an election. However, in DAO voting, there is no trusted third party.   \r\n\r\nIn this paper, we propose QV Network (QV-net), the first decentralized quadratic voting scheme, in which voters do not need to trust any third party other than themselves for ballot secrecy. QV-net is self-tallying with maximal ballot secrecy. Self-tallying allows anyone to compute election results once all ballots are cast. Maximal ballot secrecy ensures that what each voter learns from QV-net is nothing more than the tally and their own ballot. We provide an open-source implementation of QV-net to demonstrate its practicality based on real-world DAO voting settings, reporting only a few milliseconds for voting and a maximum of 255 milliseconds for tallying.\r\n\r\nThe exceptional efficiency of QV-net is attributed to the design of two new Zero-Knowledge Argument of Knowledge (ZKAoK) protocols for QV ballot secrecy and integrity. Previous works generally rely on pairing-friendly curves to prove the well-formedness of an encrypted QV ballot. But they incur heavy computation and large data sizes. We tackle the challenges of appropriately formalizing and proving ZKAoK relations for QV without using these curves. Specifically, we develop a succinct ZKAoK to prove a new relation: the sum of squares of a private vector's components equals a private scalar. We also introduce the first aggregated range proof to prove that values committed under different keys fall within their respective ranges. Together, these two new zero-knowledge protocols enable us to build an efficient decentralized QV scheme and are of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                }
+            ],
+            "fullName": "Zibo Zhou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                },
+                {
+                    "name": "Beijing Advanced Innovation Center for Future Blockchain and Privacy Computing"
+                }
+            ],
+            "fullName": "Zongyang Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warwick"
+                }
+            ],
+            "fullName": "Feng Hao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beihang University"
+                }
+            ],
+            "fullName": "Bowen Zheng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Warwick"
+                }
+            ],
+            "fullName": "Zulkarnaim Masyhur"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T03:10:46Z"
+        }
+    ],
+    "keywords": [
+        "Decentralized e-Voting",
+        "Quadratic Voting",
+        "DAOs",
+        "ZKAoKs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1146.pdf",
+    "pid": "1146",
+    "pubtype": {
+        "note": "Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS '25)",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "QV-net: Decentralized Self-Tallying Quadratic Voting with Maximal Ballot Secrecy",
+    "year": 2025,
+    "repo": [
+        "https://www.krayondigital.com/blog/top-dao-voting-mechanisms-compared-2024",
+        "https://github.com/0xPARC/circom-ecdsa",
+        "https://github.com/ZenGo-X/curv",
+        "https://snapshot.box/#/s:gitcoindao.eth"
+    ]
+}
 ]
