@@ -10,7 +10,7 @@ orient express: using frobenius to express oriented isogenies;;;wouter castryck,
 upke and ukem schemes from supersingular isogenies;;;pratima jana, ratna dutta;;;2025/1010;;;last_month;;;none
 sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimension one;;;zheng xu, kaizhan lin, chang-an zhao, yi ouyang;;;2025/920;;;last_month;;;https://github.com/Kaizhan-Lin/SQIsign2DSquare
 hidden number problems in fiat-shamir based post-quantum signatures;;;yi-fu lai, jonas meers, julian nowakowski;;;2025/913;;;last_month;;;none
-sqisign2dpush: faster signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2025/897;;;last_month;;;https://github.com/hiroshi-onuki/SQIsign2D-Push
+sqisign2dpush: faster signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2025/897;;;last_year;;;https://github.com/hiroshi-onuki/SQIsign2D-Push
 improved subfield curve search for specific field characteristics;;;jesús-javier chi-domínguez;;;2025/226;;;last_year;;;none
 deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_year;;;https://github.com/houbenmr/DeterministicClassGroupActions
 constant-time integer arithmetic for sqisign;;;fatna kouider, anisha mukherjee, david jacquemin, péter kutas;;;2025/832;;;last_year;;;https://github.com/SQISign/sqisign-ec23
