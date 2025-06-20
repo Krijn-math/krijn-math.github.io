@@ -81055,4 +81055,496 @@
         "https://snapshot.box/#/s:gitcoindao.eth"
     ]
 }
+,
+{
+    "abstract": "Privacy is a growing concern for smart contracts on public ledgers. \r\nIn recent years, we have seen several practical systems for privacy-preserving smart contracts, but they only target privacy of on-chain data, and rely on trusted off-chain parties with user data -- for instance, a decentralized finance application (e.g. exchange) relies on an off-chain matching engine to process client orders that get settled on-chain, where privacy only applies to the on-chain data.\r\nPrivacy conscious users demand stronger notions of privacy, for their identity and their data, from all other parties in the ecosystem.\r\n\r\nWe propose a novel framework for smart contracts that ensures {\\em doubly private}\r\nexecution, addressing {both on-chain and off-chain privacy} requirements. \r\nIn our framework, clients submit their requests in a privacy-preserving manner to a group of (potentially mutually untrusting) servers. These servers collaboratively match client requests without learning any information about the data or identities of the clients.\r\n\r\nWe then present {\\em Jigsaw}, an efficient cryptographic realization of our proposed framework. {\\em Jigsaw} builds on the ZEXE architecture (Bowe et al., S\\&P 2020), which leverages zkSNARKs, and extends Collaborative zkSNARKs (Ozdemir and Boneh, USENIX 2022) to enable proof generation by a group of servers.\r\n\r\nIn Jigsaw, we introduce a novel collaborative zkSNARK construction that achieves low latency and reduced proving time, and showcase these advantages over sample applications ranging from trading in a decentralized exchange to auctions and voting.\r\nOur experiments demonstrate that {\\em Jigsaw} is roughly $40-50$x faster in proof generation and uses orders-of-magnitude less bandwidth than the naive approach of using off-the-shelf Collaborative zkSNARKs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "UC Berkeley"
+                }
+            ],
+            "fullName": "Sanjam Garg"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Purdue University"
+                }
+            ],
+            "fullName": "Aarushi Goel"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "UC Berkeley"
+                }
+            ],
+            "fullName": "Dimitris Kolonelos"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Supra Research"
+                }
+            ],
+            "fullName": "Rohit Sinha"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T04:31:56Z"
+        }
+    ],
+    "keywords": [
+        "Privacy-Preserving Smart Contracts",
+        "zkSNARKs",
+        "Collaborative zkSNARKs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1147.pdf",
+    "pid": "1147",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Jigsaw: Doubly Private Smart Contracts",
+    "year": 2025,
+    "repo": [
+        "https://github.com/noir-lang/noir",
+        "https://github.com/noir-lang/noir",
+        "https://github.com/TaceoLabs/co-snarks"
+    ]
+}
+,
+{
+    "DOI": "10.13154/TOSC.V2020.I2.1-39",
+    "abstract": "Observing the growing popularity of random permutation (RP)-based designs (e.g, Sponge), Bart Mennink in CRYPTO 2019 has initiated an interesting research in the direction of RP-based pseudorandom functions (PRFs). Both are claimed to achieve beyond-the-birthday-bound  (BBB) security of $2n/3$ bits ($n$ being the input block size in bits) but require two instances of RPs and can handle only one-block inputs. In this work, we extend research in this direction by providing two new BBB-secure constructions by composing the tweakable Even-Mansour appropriately.  Our first construction requires only one instance of an RP and requires only one key.  Our second construction extends the first to a nonce-based  Message Authentication Code (MAC) using a universal hash to deal with multi-block inputs.  We show that the hash key can be derived from the original key when the underlying hash is the Polyhash. We provide matching attacks for both constructions to demonstrate the tightness of the proven security bounds.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Institute for Advancing Intelligence, TCG CREST, India"
+                }
+            ],
+            "fullName": "Avik Chakraborti",
+            "orcid": "0000-0001-9144-0826"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute",
+                    "ror": "https://ror.org/00q2w1j53"
+                }
+            ],
+            "fullName": "Mridul Nandi",
+            "orcid": "0000-0002-1029-6576"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute",
+                    "ror": "https://ror.org/00q2w1j53"
+                }
+            ],
+            "fullName": "Suprita Talnikar",
+            "orcid": "0000-0002-9295-6688"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T05:13:58Z"
+        }
+    ],
+    "keywords": [
+        "PDMMAC",
+        "Davis-Meyer",
+        "PRF",
+        "MAC",
+        "permutation",
+        "beyond the birthday bound security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1148.pdf",
+    "pid": "1148",
+    "pubtype": {
+        "pubtype": "TOSC",
+        "revisiontype": "SAME",
+        "year": 2020
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Composition of Single-Keyed Tweakable Even-Mansour for Achieving BBB Security",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this paper, we propose an improvement to the McEliece encryption scheme by replacing the Goppa code with a  $(U+V,U+W)$ code. Specifically, we embed the generator matrices of a split Reed-Solomon code into the generator matrix of the $(U+V,U+W)$ code. This approach disrupts the algebraic structure of Reed-Solomon codes, thereby enhancing resistance against structural attacks targeting such codes, while simultaneously preserving their excellent error-correcting capabilities. As a result, the proposed scheme achieves a significant reduction in public key size. Under the hardness assumptions of the decoding problem and the code distinguishing problem for $(U+V,U+W)$ codes, we prove that the scheme achieves indistinguishability under chosen-plaintext attacks (IND-CPA security). Finally, we provide recommended parameters for various security levels and compare the proposed scheme with other code-based public key encryption schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sun Yat-sen University"
+                }
+            ],
+            "fullName": "Yang Yang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Sun Yat-sen University"
+                }
+            ],
+            "fullName": "Fangguo Zhang"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T07:39:48Z"
+        }
+    ],
+    "keywords": [
+        "Code-based cryptography",
+        "(U+V|U+W) codes",
+        "Reed-Solomon code",
+        "Public key encryptions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1149.pdf",
+    "pid": "1149",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An Efficient Encryption Scheme Based on $(U+V, U+W)$ Codes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Sorting encrypted values is an open research problem that plays a crucial role in the broader objective of providing efficient and practical privacy-preserving online services. \r\nThe current state of the art work by Mazzone, Everts, Hahn and Peter (USENIX Security '25) proposes efficient algorithms for ranking, indexing and sorting based on the CKKS scheme, which deviates from the compare-and-swap paradigm, typically used by sorting networks, using a permutation-based approach. This allows to build shallow sorting circuits in a very simple way.\r\nIn this work, we follow up their work and explore different approaches to approximate the nonlinear functions required by the encrypted circuit (where only additions and multiplications can be evaluated), and we propose simpler solutions that allow for faster computations and smaller memory requirements. \r\n\r\nIn particular, we drastically reduce the upper bound on the depth of the circuits from 65 to 20, making our circuits usable in relatively small rings such as $N=2^{16}$, even for sorting values while preserving up to three decimal places. As an example, our circuit sorts 128 values with duplicates in roughly 20 seconds on a laptop, using roughly 1 GB of memory, maintaining a precision of 0.01.\r\nFurthermore, we propose an implementation of a swap-based bitonic network that is not based on approximations of the sgn$(x)$ function, which scales linearly with the number of values, useful when the number of available slots is small.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Milano-Bicocca",
+                    "ror": "https://ror.org/01ynf4891"
+                }
+            ],
+            "fullName": "Lorenzo Rovida",
+            "orcid": "0000-0001-5093-7932"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Milano-Bicocca",
+                    "ror": "https://ror.org/01ynf4891"
+                }
+            ],
+            "fullName": "Alberto Leporati",
+            "orcid": "0000-0002-8105-4371"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Milano-Bicocca",
+                    "ror": "https://ror.org/01ynf4891"
+                }
+            ],
+            "fullName": "Simone Basile"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T11:01:28Z"
+        }
+    ],
+    "keywords": [
+        "FHE",
+        "CKKS",
+        "Sorting",
+        "Computing on encrypted data"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "note": "Preprint",
+    "pdffile": "2025/1150.pdf",
+    "pid": "1150",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lightweight Sorting in Approximate Homomorphic Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce a novel technique for verifying Schnorr signatures using fast endomorphisms. Traditionally, fast endomorphisms over prime field curves are used to decompose a scalar into two scalars of half of the size. This work shows that the context of the verification of signatures allows for the decomposition into three scalars of a third of the size. We apply our technique to three scenarios: verification of a single Schnorr signature, batch verification, and verification of BLS signatures within the Blind Diffie-Hellman key exchange protocol. Our experiments on AMD x86 and ARM Cortex-M4 platforms show performance improvements of approximately 20%, 13%, and 27%, respectively. The technique can also be used to accelerate the verification of ECDSA signatures, provided that one additional bit of information is appended to the signature.\r\n\r\nAs part of our work, we analyze the performance of 3-dimensional lattice reduction algorithms, which are critical for multi-scalar decompositions. To identify the most efficient approach, we experimentally compare Semaev\u2019s algorithm --- known for its best asymptotic complexity --- with the simpler Lagrange\u2019s algorithm. Our results reveal that, despite its simplicity, Lagrange\u2019s algorithm is nearly twice as fast as Semaev\u2019s in practice.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Masaryk University"
+                }
+            ],
+            "fullName": "Vojtech Suchanek"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Masaryk University"
+                }
+            ],
+            "fullName": "Marek Sys"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Masaryk University"
+                }
+            ],
+            "fullName": "Lukasz Chmielewski"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T11:37:59Z"
+        }
+    ],
+    "keywords": [
+        "elliptic curves",
+        "endomorphisms",
+        "Schnorr signatures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1151.pdf",
+    "pid": "1151",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Faster signature verification with 3-dimensional decomposition",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Program verification ensures software correctness through formal methods but incurs substantial computational overhead. It typically encodes program execution into formulas that are verified using a SAT solver and its extensions. However, this process exposes sensitive program details and requires redundant computations when multiple parties need to verify correctness. To overcome these limitations, zero-knowledge proofs (ZKPs) generate compact, reusable proofs with fast verification times, while provably hiding the program\u2019s internal logic. We propose a two-phase zero-knowledge protocol that hides program implementation details throughout verification. Phase I uses a zero-knowledge virtual machine (zkVM) to encode programs into SAT formulas without\r\nrevealing their semantics. Phase II employs the encoding of resolution proofs for UNSAT instances and circuits for satisfying assignment verification for SAT instances through PLONKish circuits. Evaluation on the Boolector benchmark demonstrates that our method achieves verification time that is efficient and is independent of clause width for UNSAT instances and formula size for SAT instances. The resulting ZKPs enable efficient verification of program properties while providing strong end-to-end privacy guarantees.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Haoyu Wei"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Jingyu Ke",
+            "orcid": "0009-0008-6848-3105"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Ruibang Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Guoqiang Li",
+            "orcid": "0000-0001-9005-7112"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T11:45:40Z"
+        }
+    ],
+    "keywords": [
+        "program verification",
+        "zero-knowledge proofs",
+        "SAT",
+        "PLONKish",
+        "zkVM"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1152.pdf",
+    "pid": "1152",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "ZK-ProVer: Proving Programming Verification in Non-Interactive Zero-Knowledge Proofs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In many areas of cybersecurity, we require access to Personally Identifiable Information (PII), such as names, postal addresses and email addresses. Unfortunately, this can lead to data breaches, especially in relation to data compliance regulations such as GDPR. An Internet Protocol (IP) address is an identifier that is assigned to a networked device to enable it to communicate over networks that use IP. Thus, in applications which are privacy-aware, we may aim to hide the IP address while aiming to determine if the address comes from a blacklist. One solution to this is to use homomorphic encryption to match an encrypted version of an IP address to a blacklisted network list. This matching allows us to encrypt the IP address and match it to an encrypted version of a blacklist. In this paper, we use the OpenFHE library \\cite{OpenFHE} to encrypt network addresses with the BFV homomorphic encryption scheme. In order to assess the performance overhead of BFV, we implement a matching method using the OpenFHE library and compare it against partial homomorphic schemes, including Paillier, Damgard-Jurik, Okamoto-Uchiyama, Naccache-Stern and Benaloh. The main findings are that the BFV method compares favourably against the partial homomorphic methods in most cases.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "William J Buchanan",
+            "orcid": "0000-0003-0809-3523"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LastingAsset"
+                }
+            ],
+            "fullName": "Jamie Gilchrist"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LastingAsset"
+                }
+            ],
+            "fullName": "Zakwan Jaroucheh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LastingAsset"
+                }
+            ],
+            "fullName": "Dmitri Timosenko"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LastingAsset"
+                }
+            ],
+            "fullName": "Nanik Ramchandani"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "LastingAsset"
+                }
+            ],
+            "fullName": "Ciara Mitchell"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Edinburgh Napier University",
+                    "ror": "https://ror.org/03zjvnn91"
+                }
+            ],
+            "fullName": "Hisham Ali"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T12:06:56Z"
+        }
+    ],
+    "keywords": [
+        "BFV",
+        "IP address",
+        "masking",
+        "fully homomorphic encryption",
+        "partially homomorphic encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1153.pdf",
+    "pid": "1153",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Privacy-aware White and Black List Searching for Fraud Analysis",
+    "year": 2025,
+    "repo": [
+        "https://github.com/openfheorg/openfhe-development/blob/main/src/pke/unittest/UnitTestSHE.cpp",
+        "https://github.com/openfheorg/openfhe-development/blob/main/src/pke/unittest/UnitTestSHE.cpp",
+        "https://github.com/openfheorg/openfhe-development/blob/main/src/pke/unittest/UnitTestSHE.cpp",
+        "https://github.com/openfheorg/openfhe-development/blob/main/src/pke/unittest/UnitTestSHE.cpp",
+        "https://github.com/openfheorg/education/tree/main/examples/ip_masking",
+        "https://github.com/openfheorg/education/tree/main/examples/ip_masking",
+        "https://github.com/openfheorg/education/tree/main/examples/ip_masking",
+        "https://github.com/openfheorg/education/tree/main/examples/ip_masking",
+        "https://github.com/serengil/LightPHE",
+        "https://github.com/serengil/LightPHE",
+        "https://github.com/serengil/LightPHE"
+    ]
+}
 ]
