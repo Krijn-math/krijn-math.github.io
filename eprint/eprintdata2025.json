@@ -81547,4 +81547,1282 @@
         "https://github.com/serengil/LightPHE"
     ]
 }
+,
+{
+    "abstract": "We present several new algorithms to evaluate modular polynomials of level $\\ell$ modulo a prime $p$ on an input $j$. \r\n    More precisely, we introduce two new generic algorithms, sharing the following similarities: they are based on a CRT approach; they make use of supersingular curves and the Deuring correspondence; and, their memory requirements are optimal. \r\n\r\n    The first algorithm combines the ideas behind a hybrid algorithm of Sutherland in 2013 with a recent algorithm to compute modular polynomials using supersingular curves introduced in 2023 by Leroux. The complexity (holding around several plausible heuristic assumptions) of the resulting algorithm matches the $O(\\ell^3 \\log^{3} \\ell + \\ell \\log p)$ time complexity of the best known algorithm by Sutherland, but has an optimal memory requirement.    \r\n    \r\n    Our second algorithm is based on a sub-algorithm that can evaluate modular polynomials efficiently on supersingular $j$-invariants defined over $\\mathbb{F}_p$, and achieves heuristic complexity quadratic in both $\\ell$ and $\\log j$, and linear in $\\log p$. In particular, it is the first generic algorithm with optimal memory requirement to obtain a quadratic complexity in~$\\ell$. \r\n    \r\n    Additionally, we show how to adapt our method to the computation of other types of modular polynomials such as the one stemming from Weber's function.  \r\n    \r\n    Finally, we provide an optimised implementation of the two algorithms detailed in this paper, though we emphasise that various modules in our codebase\r\n    may find applications outside their use in this paper.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ENS de Lyon, CNRS, UMPA, UMR 5669, Lyon, France"
+                }
+            ],
+            "fullName": "Maria Corte-Real Santos"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "COSIC, KU Leuven, Belgium"
+                }
+            ],
+            "fullName": "Jonathan Komada Eriksen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DGA-MI, Bruz, France"
+                },
+                {
+                    "name": "IRMAR - UMR 6625, Universit\u00b4e de Rennes, France"
+                }
+            ],
+            "fullName": "Antonin Leroux"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Regensburg, Germany"
+                }
+            ],
+            "fullName": "Michael Meyer"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technische Universit\u00a8at M\u00a8unchen, Germany"
+                }
+            ],
+            "fullName": "Lorenz Panny"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T13:13:25Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1154.pdf",
+    "pid": "1154",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Evaluation of Modular Polynomials from Supersingular Elliptic Curves",
+    "year": 2025,
+    "repo": [
+        "https://github.com/tonioecto/modular-polynomial-computation-and-evaluation-from-supersingular-curves",
+        "https://github.com/tonioecto/modular-polynomial-computation-and-evaluation-from-supersingular-curves"
+    ]
+}
+,
+{
+    "abstract": "We propose a dimension-reducing transformation on Group Ring Learning with Errors (GRLWE) samples. We exhibit an efficiently computable isomorphism which takes samples defined over the group rings used in the construction of GRLWE to twice as many samples defined over matrix rings, in half the dimension. This is done by composing two maps: the first map is a transformation showing that the group rings used are orders in central simple algebras, and the second map takes the obtained central simple algebra to a matrix ring. When combined with lattice reduction on the resulting matrix samples, this gives an attack on the GRLWE problem. We extend this attack to other groups proposed for cryptographic use by the creators of GRLWE, and display some numerical results quantifying the effects of the transformation, using the `Lattice Estimator'. We then give a family of groups from which GRLWE-style group rings can be constructed which are immune to our attack, namely the generalized quaternion groups. Finally, we discuss the merits and vulnerabilities of a number of different forms of structured LWE.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Andrew Mendelsohn",
+            "orcid": "0000-0003-4735-7157"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Flare Network"
+                }
+            ],
+            "fullName": "Charles Grover"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                }
+            ],
+            "fullName": "Cong Ling",
+            "orcid": "0000-0001-7873-4862"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T14:01:43Z"
+        }
+    ],
+    "keywords": [
+        "learning with errors",
+        "lattices",
+        "post-quantum",
+        "public-key encryption",
+        "cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1155.pdf",
+    "pid": "1155",
+    "pubtype": {
+        "pubtype": "CIC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On the Security of Group Ring Learning with Errors",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Randomness extractors are algorithms that distill weak random sources into near-perfect random numbers. Two-source extractors enable this distillation process by combining two independent weak random sources. Raz\u2019s extractor (STOC '05) was the first to achieve this in a setting where one source has linear min-entropy (i.e., proportional to its length), while the other has only logarithmic min-entropy in its length. However, Raz's original construction is impractical due to a polynomial computation time of at least degree 4. Our work solves this problem by presenting an improved version of Raz's extractor with quasi-linear computation time, as well as a new analytic theorem with reduced entropy requirements. We provide comprehensive analytical and numerical comparisons of our construction with others in the literature, and we derive strong and quantum-proof versions of our efficient Raz extractor. Additionally, we offer an easy-to-use, open-source code implementation of the extractor and a numerical parameter calculation module.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Quantinuum"
+                },
+                {
+                    "name": "University College London",
+                    "ror": "https://ror.org/02jx3x895"
+                }
+            ],
+            "fullName": "Cameron Foreman",
+            "orcid": "0000-0001-7942-9472"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of York",
+                    "ror": "https://ror.org/04m01e293"
+                },
+                {
+                    "name": "University of Bristol",
+                    "ror": "https://ror.org/0524sp257"
+                },
+                {
+                    "name": "\u00c9cole Normale Sup\u00e9rieure de Lyon",
+                    "ror": "https://ror.org/04zmssz18"
+                }
+            ],
+            "fullName": "Lewis Wooltorton",
+            "orcid": "0000-0002-7950-3844"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Quantinuum"
+                }
+            ],
+            "fullName": "Kevin Milner",
+            "orcid": "0000-0002-6328-611X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Quantinuum"
+                }
+            ],
+            "fullName": "Florian J. Curchod"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-20T21:18:32Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-18T15:16:57Z"
+        }
+    ],
+    "keywords": [
+        "extractors",
+        "randomness extractors",
+        "two-source extractors",
+        "Raz's extractor",
+        "efficient randomness extractors"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "note": "12 + 11 pages. Comments welcome!",
+    "pdffile": "2025/1156.pdf",
+    "pid": "1156",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An efficient construction of Raz's two-source randomness extractor with improved parameters",
+    "year": 2025,
+    "repo": [
+        "https://github.com/CQCL/cryptomite",
+        "https://github.com/CQCL/cryptomite"
+    ]
+}
+,
+{
+    "abstract": "Based on a sharpening of Carmichael\u2019s theorem and Euler\u2019s theorem we generalize RSA and CRT-RSA to arbitrary integer moduli $n > 1$, while restricting messages to integers $m$ which are regular modulo $n$, meaning that they have a John-von-Neumann pseudoinverse modulo $n$. We prove the correctness and completeness of our encryption and decryption method for this class of messages, and show that the restriction to regular integers is negligible, since under reasonable assumptions almost all integers are regular modulo $n$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Mathematics, Mittweida University of Applied Sciences, Mittweida, Germany"
+                }
+            ],
+            "fullName": "Klaus Dohmen",
+            "orcid": "0000-0002-8076-4101"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Department of Mathematics, Mittweida University of Applied Sciences, Mittweida, Germany"
+                }
+            ],
+            "fullName": "Mandy Lange-Geisler"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T18:01:24Z"
+        }
+    ],
+    "keywords": [
+        "RSA",
+        "CRT-RSA",
+        "multi-prime",
+        "multi-power",
+        "regular integer modulo n",
+        "unitary divisor",
+        "lambda function",
+        "totient function"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1157.pdf",
+    "pid": "1157",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "General Multi-Prime Multi-Power RSA - A Generalization of RSA and CRT-RSA to Regular Integers Modulo $n$",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A holy grail in blockchain infrastructure is a trustless bridge between Bitcoin and its second layers or other chains. We make progress toward this vision by introducing the first light-client based Bitcoin bridge. At the heart of its design lies BitVM2-core, a novel paradigm that enables arbitrary program execution on Bitcoin, combining Turing-complete expressiveness with the security of Bitcoin consensus. BitVM2-bridge advances prior approaches by reducing the trust assumption from an honest majority (t-of-n) to existential honesty (1-of-n) during setup. Liveness is guaranteed with only one rational operator, and any user can act as a challenger, enabling permissionless verification. A production-level implementation of BitVM2 has been developed and a full challenge verification has been executed on the Bitcoin mainnet.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ZeroSync Association"
+                },
+                {
+                    "name": "Stanford University",
+                    "ror": "https://ror.org/00f54p054"
+                }
+            ],
+            "fullName": "Robin Linus",
+            "orcid": "0009-0002-4026-4177"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Edinburgh",
+                    "ror": "https://ror.org/01nrxwf90"
+                },
+                {
+                    "name": "Common Prefix"
+                }
+            ],
+            "fullName": "Lukas Aumayr",
+            "orcid": "0000-0001-8006-3172"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Wien",
+                    "ror": "https://ror.org/04d836q62"
+                },
+                {
+                    "name": "Common Prefix"
+                }
+            ],
+            "fullName": "Zeta Avarikioti",
+            "orcid": "0000-0001-5255-8389"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Wien",
+                    "ror": "https://ror.org/04d836q62"
+                }
+            ],
+            "fullName": "Matteo Maffei",
+            "orcid": "0000-0001-8061-1685"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Pisa"
+                },
+                {
+                    "name": "University of Camerino"
+                },
+                {
+                    "name": "TU Wien",
+                    "ror": "https://ror.org/04d836q62"
+                }
+            ],
+            "fullName": "Andrea Pelosi",
+            "orcid": "0009-0001-4185-688X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Imperial College London",
+                    "ror": "https://ror.org/041kmwe10"
+                },
+                {
+                    "name": "Common Prefix"
+                }
+            ],
+            "fullName": "Orfeas Thyfronitis Litos",
+            "orcid": "0000-0002-8229-297X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TU Wien",
+                    "ror": "https://ror.org/04d836q62"
+                }
+            ],
+            "fullName": "Christos Stefo",
+            "orcid": "0009-0006-4958-992X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University",
+                    "ror": "https://ror.org/00f54p054"
+                }
+            ],
+            "fullName": "David Tse",
+            "orcid": "0000-0003-1460-5900"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "BOB"
+                }
+            ],
+            "fullName": "Alexei Zamyatin",
+            "orcid": "0000-0002-0609-9959"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-18T20:55:16Z"
+        }
+    ],
+    "keywords": [
+        "Bitcoin",
+        "BitVM",
+        "Light Client",
+        "Bridge",
+        "Rollup",
+        "Blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1158.pdf",
+    "pid": "1158",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Bridging Bitcoin to Second Layers via BitVM2",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ethereum/kzg-ceremony?tab=readme-ov-file",
+        "https://github.com/keep-network/tbtc-v2/tree/main/docs",
+        "https://github.com/bitcoin/bips/blob/c2f268e83031b9b67e798c5c72a1171bfc463d1f/bip-unknown-var-budget-script.mediawiki",
+        "https://github.com/bitcoin/bips/blob/c2f268e83031b9b67e798c5c72a1171bfc463d1f/bip-unknown-var-budget-script.mediawiki",
+        "https://github.com/bitcoin/bips/blob/c2f268e83031b9b67e798c5c72a1171bfc463d1f/bip-unknown-var-budget-script.mediawiki",
+        "https://github.com/BitVM/BitVM",
+        "https://github.com/BitVM/BitVM"
+    ]
+}
+,
+{
+    "abstract": "Let $p$ be a prime and consider a committed vector $\\vec{v} = (v_1, \\ldots, v_m) \\in \\mathbb{F}_p^m$. \r\nWe develop new techniques for succinctly proving in zero-knowledge that all the elements of $\\vec{v}$ are in the range $\\{0,1,\\ldots,n\\}$ for some $n<p$. \r\nWe refer to this as a batched zero-knowledge range proof, or a batched ZKRP. \r\nThis problem comes up often in cryptography: it is needed in publicly verifiable secret sharing (PVSS), confidential transactions, and election protocols. \r\nOur approach makes use of a multilinear polynomial commitment scheme and the sum check protocol to efficiently provide a batch range proof for the entire vector.\r\nAlong the way we introduce a new type of a Polynomial Interactive Oracle Proof (PIOP) we call a Homomorphic PIOP that can be compiled into a SNARK. \r\nWe use an HPIOP to construct a new efficient zero-knowledge version of the sum check protocol.  \r\nWe compare our new techniques with existing range proofs and lookup arguments.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University"
+                }
+            ],
+            "fullName": "Dan Boneh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University"
+                }
+            ],
+            "fullName": "Trisha Datta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aptos Labs"
+                }
+            ],
+            "fullName": "Rex Fernando"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University",
+                    "ror": "https://ror.org/00f54p054"
+                }
+            ],
+            "fullName": "Kamilla Nazirkhanova"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aptos Labs"
+                }
+            ],
+            "fullName": "Alin Tomescu"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-19T02:50:36Z"
+        }
+    ],
+    "keywords": [
+        "zero-knowledge",
+        "range proofs",
+        "publicly verifiable secret sharing",
+        "confidential transactions"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1159.pdf",
+    "pid": "1159",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "$\\mathsf{DekartProof}$: Efficient Vector Range Proofs and Their Applications",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Authenticated dictionaries (ADs) enable secure lookups to a dictionary hosted by an untrusted server and are a key component of various real-world applications, including transparency systems and cryptocurrencies. Despite significant overlap in techniques for building ADs and related primitives, such as memory checkers and accumulators (i.e., authenticated sets), these relationships have yet to be formalized.\r\n\r\nIn this work, we give a rigorous treatment of ADs and prove their precise connection to the latter two cornerstone primitives. We start by laying out the minimal algorithms and security properties needed in practice and introduce a new security notion for ADs called write-committing, which requires update proofs to guarantee an exact count of changes.\r\n\r\nWe prove that any AD built from a black-box authenticated set (AS) makes at least $\\Omega(\\log n)$ AS calls per lookup and obeys a trade-off between lookups and updates. With optimal lookups, such a scheme requires at least $\\Omega(\\log n/\\log\\log n)$ AS calls per update. \r\nWe also resolve the open question of constructing a secure AD from only black-box access to an AS and present two schemes adhering to the trade-off: one with optimal lookup overhead and the other with higher lookup complexity, but which only requires two AS calls for an update. \r\n\r\nFinally, we make strides towards unifying memory checkers and ADs. To this end, we present two constructions for memory checkers with black-box access to an AD: one that incurs constant overhead (but needs write-committing) and a second that only requires the AD to be lookup-secure but incurs logarithmic overhead. We then give a simple AD construction using a memory checker as a black-box, with $\\mathcal{O}(1)$ overhead. \r\n\r\nOur results demonstrate the inherent limitations of ADs built from accumulators but lay the foundation for extending existing results on memory checkers and other primitives, such as vector commitments, to ADs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Francesca Falzon",
+            "orcid": "0000-0001-8415-6237"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Illinois Urbana-Champaign",
+                    "ror": "https://ror.org/047426m28"
+                },
+                {
+                    "name": "IC3"
+                }
+            ],
+            "fullName": "Harjasleen Malvai",
+            "orcid": "0000-0001-9803-5559"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Emanuel Opel"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-19T07:59:42Z"
+        }
+    ],
+    "keywords": [
+        "Authenticated Dictionaries",
+        "Memory Checking",
+        "Accumulators"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1160.pdf",
+    "pid": "1160",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Black-box Approaches to Authenticated Dictionaries: New Constructions and Lower Bounds",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A significant effort in designing and engineering post-quantum cryptosystems is currently ongoing, also as a result of the National Institute of Standards and Technology (NIST) Post-quantum Cryptography (PQC) standardization process that started in 2016 and recently completed selecting two Key Encapsulation Mechanisms (KEMs), CRYSTALS-Kyber and HQC, and three digital signatures CRYSTALS-Dilithium, Falcon, and SPHINCS+ for standardization. In 2022, NIST launched another standardization effort for additional post-quantum digital signatures, preferably not based on the security assumptions of structured lattices, and with performance better than or equal to that of already standardized schemes (e.g., SPHINCS+ ). This initiative has narrowed down the initial 40 candidates to 14 in October 2024, eliciting public scrutiny of their algorithms and technical evaluation of their performance figures. Among the schemes admitted to the second round of  evaluation, the code-based CROSS signature scheme was praised for its speed and the noticeably smaller signature sizes over the standardized version of SPHINCS+ . In this work, we present the first RTL hardware design of CROSS tailored for FPGA devices, delineating efficient implementation strategies for the critical components of the cryptographic scheme. Depending on the chosen security level, our design generates a key pair in 9 to 152 \u00b5s, signs a message in 404 \u00b5s to 5.89 ms, and verifies a signature in 322 \u00b5s to 4.38 ms on the NIST reference FPGA, a Xilinx Artix-7 device, proving competitive when compared with other candidates in the on-ramp standardization effort, namely LESS, MEDS, MAYO, Raccoon and SDitH, and comparable to current standard-selected ML-DSA, FN-DSA, and SLH-DSA in terms of efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                }
+            ],
+            "fullName": "Patrick Karl",
+            "orcid": "0000-0001-9476-9651"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Politecnico di Milano",
+                    "ror": "https://ror.org/01nffqt88"
+                }
+            ],
+            "fullName": "Francesco Antognazza",
+            "orcid": "0000-0003-3480-486X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Politecnico di Milano",
+                    "ror": "https://ror.org/01nffqt88"
+                }
+            ],
+            "fullName": "Alessandro Barenghi",
+            "orcid": "0000-0003-0840-6358"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Politecnico di Milano",
+                    "ror": "https://ror.org/01nffqt88"
+                }
+            ],
+            "fullName": "Gerardo Pelosi",
+            "orcid": "0000-0002-3812-5429"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Technical University of Munich",
+                    "ror": "https://ror.org/02kkvpp62"
+                },
+                {
+                    "name": "Fraunhofer Institute for Applied and Integrated Security",
+                    "ror": "https://ror.org/03w0bbr97"
+                }
+            ],
+            "fullName": "Georg Sigl",
+            "orcid": "0000-0003-3152-941X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-19T10:49:39Z"
+        }
+    ],
+    "keywords": [
+        "Hardware Accelerator",
+        "CROSS",
+        "Post-quantum Digital Signature",
+        "Restricted Syndrome Decoding Problem",
+        "FPGA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1161.pdf",
+    "pid": "1161",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "High-Performance FPGA Accelerator for the Post-quantum Signature Scheme CROSS",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mupq/pqm4"
+    ]
+}
+,
+{
+    "abstract": "Ensuring the security of complex system-on-chips (SoCs) designs is a critical imperative, yet traditional verification techniques struggle to keep pace due to significant challenges in automation, scalability, comprehensiveness, and adaptability. The advent of large language models (LLMs), with their remarkable capabilities in natural language understanding, code generation, and advanced reasoning, presents a new paradigm for tackling these issues. Moving beyond monolithic models, an agentic approach allows for the creation of multi-agent systems where specialized LLMs collaborate to solve complex problems more effectively. Recognizing this opportunity, we introduce SV-LLM, a novel multi-agent assistant system designed to automate and enhance SoC security verification. By integrating specialized agents for tasks like verification question answering, security asset identification, threat modeling, test plan and property generation, vulnerability detection, and simulation-based bug validation, SV-LLM streamlines the workflow. To optimize their performance in these diverse tasks, agents leverage different learning paradigms, such as in-context learning, fine-tuning, and retrieval-augmented generation (RAG). The system aims to reduce manual intervention, improve accuracy, and accelerate security analysis, supporting proactive identification and mitigation of risks early in the design cycle. We demonstrate its potential to transform hardware security practices through illustrative case studies and experiments that showcase its applicability and efficacy.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Dipayan Saha",
+            "orcid": "0000-0001-9785-7024"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida"
+                }
+            ],
+            "fullName": "Shams Tarek"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Hasan Al Shaikh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Khan Thamid Hasan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Pavan Sai Nalluri"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Md. Ajoad Hasan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Nashmin Alam"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Jingbo Zhou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Sujan Kumar Saha"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Mark Tehranipoor"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Farimah Farahmandi"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-21T00:36:29Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-19T11:52:33Z"
+        }
+    ],
+    "keywords": [
+        "Security Verification",
+        "LLM",
+        "Chatbot",
+        "Asset Identification",
+        "Threat Modeling",
+        "Property Generation",
+        "Bug Detection"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1162.pdf",
+    "pid": "1162",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SV-LLM: An Agentic Approach for SoC Security Verification using Large Language Models",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A threshold signature is an advanced protocol that splits a secret signing key among multiple parties, allowing any subset above a threshold to jointly generate a signature. While post-quantum (PQ) threshold signatures are actively being studied --- especially in response to NIST's recent call for threshold schemes --- most existing solutions are tailored to specially designed, threshold-friendly signature schemes. In contrast, many real-world applications, such as distributed certificate authorities and digital currencies, require signatures that remain verifiable under the standardized verification procedures already in use. Given NIST's recent standardization of PQ signatures and ongoing industry deployment efforts, designing an efficient threshold scheme that interoperates with NIST-standardized verification remains a critical open problem.\r\n\r\nIn this work, we present the first efficient and scalable solution for multi-party generation of the module-lattice digital signature algorithm (ML-DSA), one of NIST's PQ signature standards. Our contributions are two-fold. First, we present a variant of the ML-DSA signing algorithm that is amenable to efficient multi-party computation (MPC) and prove that this variant achieves the same security as the original ML-DSA scheme. Second, we present several efficient & scalable MPC protocols to instantiate the threshold signing functionality. Our protocols can produce threshold signatures with as little as 100 KB (per party) of online communication per rejection-sampling round. In addition, we instantiate our protocols in the honest-majority setting, which allows us to avoid any additional public key assumptions. \r\n\r\nThe signatures produced by our protocols verify under the same implementation of ML-DSA verification for all three security levels. Thus, signatures and verification keys of our scheme are (naturally) the same size as that of ML-DSA; previous lattice-based threshold schemes could not match both of these sizes. Overall, our solution is the only method for producing threshold ML-DSA signatures compatible with NIST-standardized verification that scales to an arbitrary number of parties, without any new assumptions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "JP Morgan Chase"
+                }
+            ],
+            "fullName": "Alexander Bienstock"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "JP Morgan Chase"
+                }
+            ],
+            "fullName": "Leo de Castro"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "JP Morgan Chase"
+                }
+            ],
+            "fullName": "Daniel Escudero"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "JP Morgan Chase"
+                }
+            ],
+            "fullName": "Antigoni Polychroniadou"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "JP Morgan Chase"
+                }
+            ],
+            "fullName": "Akira Takahashi"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-19T14:46:15Z"
+        }
+    ],
+    "keywords": [
+        "Threshold Signatures",
+        "Threshold ML-DSA"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1163.pdf",
+    "pid": "1163",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient, Scalable Threshold ML-DSA Signatures: An MPC Approach",
+    "year": 2025,
+    "repo": [
+        "https://github.com/anderspkd/secure-computation-library",
+        "https://github.com/anderspkd/secure-computation-library"
+    ]
+}
+,
+{
+    "abstract": "The Q-problem has been introduced as a new post-quantum hard problem. We present two man-in-the-middle and three key recovery attacks against the key exchange protocol based on the Q-problem. The man-in-the-middle attacks take negligible time and allow the attacker to recover the exchanged key. The most effective key recovery attack has a computational complexity of $2^{40}$. We also propose countermeasures against all attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Nick Aquina",
+            "orcid": "0009-0003-1050-9185"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Simon Rommel",
+            "orcid": "0000-0001-8279-8180"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Idelfonso Tafur Monroy",
+            "orcid": "0000-0002-2935-7682"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-19T15:58:44Z"
+        }
+    ],
+    "keywords": [
+        "Q-problem",
+        "QP-KEM",
+        "key exchange protocol",
+        "PQC",
+        "Post-Quantum Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/1164.pdf",
+    "pid": "1164",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Man-in-the-Middle and Key Recovery Attacks against QP-KEM",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Message Authentication Codes (MACs) represent a fundamental symmetric key primitive, serving to ensure the authenticity and integrity of transmitted data.\r\nAs a building block in authenticated encryption and in numerous deployed standards, including TLS, IPsec, and SSH, MACs play a central role in practice.\r\nDue to their importance for practice, MACs have been subject to extensive research, leading to prominent schemes such as HMAC, CBCMAC, or LightMAC.\r\nDespite the existence of various MACs, there is still considerable interest in creating schemes that are more efficient, potentially parallelizable, or have specific non-cryptographic attributes, such as being patent-free.\r\n\r\nIn this context, we introduce an automated method for analyzing and synthesizing MAC schemes.\r\nIn order to achieve this goal, we have constructed a framework that restricts the class of MACs in such a way that it is sufficiently expressive to cover known constructions, yet also admits automated reasoning about the security guarantees of both known and new schemes.\r\nOur automated analysis has identified a novel category of MACs, termed \"hybrid\" MACs. These MACs operate by processing multiple blocks concurrently, with each block managed by a different, specified MAC scheme. A key finding is that in certain scenarios, the hybrid MAC marginally outperforms the simultaneous operation of the individual MACs. This improvement is attributed to the hybrid approach exploiting the strengths and compensating for the weaknesses of each distinct MAC scheme involved.\r\nOur implementation confirms that we have successfully identified new schemes that have comparable performance with state-of-the-art schemes and in some settings seem to be slightly more efficient.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Stefan Milius"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Dominik Paulus"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Dominique Schr\u00f6der"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Lutz Schr\u00f6der"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Julian Thomas"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-19T19:01:12Z"
+        }
+    ],
+    "keywords": [
+        "symmetric-key authentication",
+        "message authentication codes",
+        "program synthesis",
+        "pseudorandom function"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1165.pdf",
+    "pid": "1165",
+    "pubtype": {
+        "note": "CSF 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Automated Analysis and Synthesis of Message Authentication Codes",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Threshold signatures enable multiple participants to collaboratively produce a digital signature, ensuring both fault tolerance and decentralization. As we transition to the post-quantum era, lattice-based threshold constructions have emerged as promising candidates. However, existing approaches often struggle to scale efficiently, lack robustness guarantees, or are incompatible with standard schemes \u2014 most notably, the NIST-standard ML-DSA.\r\nIn this work, we explore the design space of Fiat-Shamir-based lattice threshold signatures and introduce the two most practical schemes to date. First, we present an enhanced TRaccoon-based [DKM+24] construction that supports up to 64 participants with identifiable aborts, leveraging novel short secret-sharing techniques to achieve greater scalability than previous state-of-the-art methods. Second \u2014 and most importantly \u2014 we propose the first practical ML-DSA-compatible threshold signature scheme, supporting up to 6 users.\r\nWe provide full implementations and benchmarks of our schemes, demonstrating their practicality and efficiency for real-world deployment as protocol messages are computed in at most a few milliseconds, and communication cost ranges from 10.5 kB to 525 kB depending on the threshold.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research Europe",
+                    "ror": "https://ror.org/02js37d36"
+                },
+                {
+                    "name": "University of Zurich",
+                    "ror": "https://ror.org/02crff812"
+                }
+            ],
+            "fullName": "Giacomo Borin",
+            "orcid": "0009-0001-7311-3802"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brave Research"
+                },
+                {
+                    "name": "University of Bristol",
+                    "ror": "https://ror.org/0524sp257"
+                }
+            ],
+            "fullName": "Sof\u00eda Celi",
+            "orcid": "0000-0002-3333-7764"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                }
+            ],
+            "fullName": "Rafael del Pino",
+            "orcid": "0009-0001-8638-787X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                }
+            ],
+            "fullName": "Thomas Espitau",
+            "orcid": "0000-0002-7655-9594"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                },
+                {
+                    "name": "Univ Rennes, CNRS, IRISA",
+                    "ror": "https://ror.org/015m7wh34"
+                }
+            ],
+            "fullName": "Guilhem Niot",
+            "orcid": "0000-0002-2497-8770"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/015m7wh34"
+                }
+            ],
+            "fullName": "Thomas Prest",
+            "orcid": "0000-0003-1445-6212"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-19T23:27:27Z"
+        }
+    ],
+    "keywords": [
+        "Threshold ML-DSA",
+        "ML-DSA",
+        "Dilithium",
+        "threshold cryptography",
+        "short secret sharing",
+        "Raccoon",
+        "Threshold Raccoon"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1166.pdf",
+    "pid": "1166",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Threshold Signatures Reloaded: ML-DSA and Enhanced Raccoon with Identifiable Aborts",
+    "year": 2025,
+    "repo": [
+        "https://github.com/GuilhemN/threshold-ml-dsa-and-raccoon",
+        "https://github.com/daryakaviani/ringtail",
+        "https://github.com/cloudflare/circl",
+        "https://github.com/cloudflare/circl",
+        "https://github.com/tuneinsight/lattigo"
+    ]
+}
+,
+{
+    "abstract": "Gao et al. (IEEE Internet of Things Journal 2024) proposed public-key inverted-index keyword search with designated tester as an extension of public key encryption with keyword search (PEKS). In their scheme, a server (a tester) has a secret key and uses the key for running the search algorithm due to the designated tester setting. They proved that no information of keyword is revealed from trapdoors under the decisional Diffie-Hellman (DDH) assumption. However, they also employed a symmetric pairing which can be seen as a DDH-solver. Thus, it is expected that information of keyword is revealed from trapdoors since the underlying complexity assumption does not hold. In this paper, we demonstrate two attacks against the Gao et al.'s scheme where information of keyword is revealed from a trapdoor. The first attack completes by using only the server's secret key in addition to the challenge trapdoor, without any additional encryption/trapdoor queries. We remark that an adversary is not allowed to obtain the server's secret key in their security model, and our attack is outside of their security model. Thus, we discuss the roles of the server, and stress that our attack scenario is reasonable. The second attack does not employ the server's secret key and utilizes linkability of two trapdoors.  In both attacks, the attack complexity is just two pairing computations and is feasible in terms of the computational cost.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Kanazawa University",
+                    "ror": "https://ror.org/02hwp6a56"
+                }
+            ],
+            "fullName": "Mizuki Hayashi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kanazawa University/AIST",
+                    "ror": "https://ror.org/02hwp6a56"
+                }
+            ],
+            "fullName": "Keita Emura",
+            "orcid": "0000-0002-8969-3581"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-19T23:56:03Z"
+        }
+    ],
+    "keywords": [
+        "PEKS",
+        "designated tester",
+        "DDH",
+        "Symmetric Pairing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "An extended abstract appeared at the 20th Asia Joint Conference on Information Security (AsiaJCIS) 2025 that introduced the first attack. In this full version, we newly propose the second attack where information of keyword is revealed from a trapdoor without using the server's secret key under the full TI setting.",
+    "pdffile": "2025/1167.pdf",
+    "pid": "1167",
+    "pubtype": {
+        "note": "AsiaJCIS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Security Analysis on a Public-Key Inverted-Index Keyword Search Scheme with Designated Tester",
+    "year": 2025,
+    "repo": [
+        "https://github.com/herumi/mcl"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3719027.3744879",
+    "abstract": "In timing-sensitive blockchain applications, such as decentralized finance (DeFi), achieving first-come-first-served (FCFS) transaction ordering among decentralized nodes is critical to prevent frontrunning attacks. Themis[CCS'23], a state-of-the-art decentralized FCFS ordering system, has become a key reference point for high-throughput fair ordering systems for real-world blockchain applications, such as rollup chains and decentralized sequencing, and has influenced the design of several subsequent proposals. In this paper, we critically analyze its core system property of practical batch-order fairness and evaluate the frontrunning resistance claim of Themis.  We present the Ambush attack, a new frontrunning technique that achieves nearly 100% success against the practical batch-order fair system with only a single malicious node and negligible attack costs. This attack causes a subtle temporary information asymmetry among nodes, which is allowed due to the heavily optimized communication model of the system. A fundamental trade-off we identify is a challenge in balancing security and performance in these systems; namely, enforcing timely dissemination of transaction information among nodes (to mitigate frontrunning) can easily lead to non-negligible network overheads (thus, degrading overall throughput performance). We show that it is yet possible to balance these two by delaying transaction dissemination to a certain tolerable level for frontrunning mitigation while maintaining high throughput. Our evaluation demonstrates that the proposed delayed gossiping mechanism can be seamlessly integrated into existing systems with only minimal changes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Eunchan Park"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Taeung Yoon"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Hocheol Nam"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Mysten Labs"
+                }
+            ],
+            "fullName": "Deepak Maram"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Korea Advanced Institute of Science and Technology",
+                    "ror": "https://ror.org/05apxxy63"
+                }
+            ],
+            "fullName": "Min Suk Kang"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-20T07:01:16Z"
+        }
+    ],
+    "keywords": [
+        "Blockchain",
+        "Batch-order fairness",
+        "Decentralized sequencing",
+        "Frontrunning attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This extended version includes additional appendices that were omitted from the conference version due to space limitations.",
+    "pdffile": "2025/1168.pdf",
+    "pid": "1168",
+    "pubtype": {
+        "note": "CCS",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On Frontrunning Risks in Batch-Order Fair Systems for Blockchains (Extended Version)",
+    "year": 2025,
+    "repo": [
+        "https://github.com/anonthemis/themis-src-anon",
+        "https://github.com/anonthemis/themis-src-anon",
+        "https://github.com/NetSP-KAIST/the-ambush-attack",
+        "https://github.com/NetSP-KAIST/the-ambush-attack",
+        "https://github.com/Determinant/salticidae ",
+        "https://github.com/Determinant/salticidae "
+    ]
+}
 ]
