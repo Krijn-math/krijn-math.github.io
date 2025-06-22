@@ -1,4 +1,4 @@
-experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_week;;;none
+experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_month;;;none
 tanuki: new frameworks for (concurrently secure) blind signatures from post-quantum groups actions;;;lucjan hanzlik, yi-fu lai, marzio mula, eugenio paracucchi, daniel slamanig, gang tang;;;2025/1100;;;last_month;;;https://pqcalteq.github.io/
 isogeny-based key exchange from orientations of large discriminant;;;marc houben;;;2025/1098;;;last_month;;;https://github.com/friends-of-quaternions/deuring
 key updatable identity-based-signature schemes;;;tobias guggemos, farzin renan;;;2025/1094;;;last_month;;;https://github.com/relic-toolkit/relic
