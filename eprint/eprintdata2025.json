@@ -82825,4 +82825,552 @@
         "https://github.com/Determinant/salticidae "
     ]
 }
+,
+{
+    "abstract": "In 2023, Srinath Setty, Justin Thaler, and Riad Wahby published a paper that describes a novel lookup argument with efficient verification called Lasso. We present a focused and accessible overview of the Lasso lookup argument that stands for the foundational component of the Jolt ZK-VM. This article distills the core principles behind Lasso: the sum-check protocol, multilinear polynomials and their extensions, Spark commitment, offline memory-checking, and the evolution of Spark called Surge. By clarifying the underlying protocols and their relationship to innovations like Spark and Surge, we aim to provide researchers and engineers with practical insights into the cryptographic foundations powering both Lasso and the Jolt virtual machine.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Distributed Lab"
+                }
+            ],
+            "fullName": "Oleg Fomenko"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Distributed Lab"
+                }
+            ],
+            "fullName": "Anton Levochko"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-20T12:19:00Z"
+        }
+    ],
+    "keywords": [
+        "Lasso",
+        "Lookup Argument",
+        "Spark",
+        "Surge",
+        "Jolt"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-ShareAlike",
+        "name": "CC BY-SA",
+        "reference": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "pdffile": "2025/1169.pdf",
+    "pid": "1169",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Understanding Lasso: A Novel Lookup Argument Protocol",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Sorting arrays encrypted under fully homomorphic encryption remains a fundamental challenge due to the high cost of private comparisons and the incompatibility of conventional sorting algorithms with the encrypted domain. Recently, Hong et al. (IEEE Transactions on Information Forensics and Security, 2021) proposed a $k$-way sorting network tailored to encrypted real numbers, but its reliance on multiple comparison stages incurs substantial multiplicative depth and significant bootstrapping overhead, even for modest array sizes.\r\n\r\nIn this work, we propose a novel rank-based sorting algorithm for encrypted real numbers that performs only a single comparison stage, thereby eliminating the need for bootstrapping operations. Our empirical evaluation demonstrates that the proposed method significantly outperforms the $k$-way approach for small to medium array sizes $(n\\leq 1024)$, achieving a $46.91\\times$ speedup at $n=256$ with a total runtime of $79$ seconds. Furthermore, we examine the recent matrix-based rank sort method by Mazzone et al. (USENIX Security '25) and show that integrating our optimized rank construction improves its efficiency. Specifically, we achieve $1.77\\times$ and $2.43\\times$ performance gains for $n=128$ and $n=512$, respectively.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Chung-Ang University",
+                    "ror": "https://ror.org/01r024a98"
+                }
+            ],
+            "fullName": "Seunghu Kim"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Istanbul Technical University",
+                    "ror": "https://ror.org/059636586"
+                }
+            ],
+            "fullName": "Eymen \u00dcnay"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Istanbul Technical University",
+                    "ror": "https://ror.org/059636586"
+                }
+            ],
+            "fullName": "Ayse Yilmazer-Metin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Chung-Ang University",
+                    "ror": "https://ror.org/01r024a98"
+                }
+            ],
+            "fullName": "Hyung Tae Lee",
+            "orcid": "0000-0002-0920-2026"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-20T12:20:31Z"
+        }
+    ],
+    "keywords": [
+        "Blind sort",
+        "rank sort",
+        "sorting encrypted array",
+        "fully homomorphic encryption",
+        "CKKS"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1170.pdf",
+    "pid": "1170",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Optimized Rank Sort for Encrypted Real Numbers",
+    "year": 2025,
+    "repo": [
+        "https://github.com/oksuman/FHE-Sorting.git"
+    ]
+}
+,
+{
+    "abstract": "We suggest a generalization of homomorphic encryption (HE) schemes from a purely geometrical and lattice-based perspective. All the current reference HE schemes are based on the ring version of the Learning with Errors (LWE) problem. In this proposal, we first investigate LWE-based cryptosystems from a lattice point of view and present a framework that allows to obtain the same result, in geometrical terms, from any lattice \u2014 as long as it contains a sufficiently short trapdoor vector. \r\n\r\nMore precisely, we generalize the classical BGV (Brakerski, Gentry and Vaikuntanathan, ITCS '12) and GSW (Gentry, Sahai and Waters, CRYPTO '14) schemes to purely lattice-based variants, which we call Lattice-BGV and Lattice-GSW.\r\nBy abstracting away the particular hardness assumption, our lattice framework allows to be instantiated with a broader range of lattices and hardness assumptions.\r\nFor example, LWE gives a natural trapdoor for random $q$-ary lattices, and when plugged into our framework one obtains the original BGV and GSW schemes, while in this work we will also consider an instantiation based on the Lattice Isomorphism Problem (LIP), leading to the first more advanced cryptographic scheme build from LIP$^*$. Our framework also gives a geometrical and natural explanation of HE procedures and generalizes some properties, such as the ability to store many messages in a single ciphertext, one for each short trapdoor vector, without relying on any particular algebraic structure.\r\n\r\n$^*$ In a concurrent work Branco, Malavolta and Maradni (ePrint 2025/993) propose an alternative LIP-based FHE construction.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Milano-Bicocca",
+                    "ror": "https://ror.org/01ynf4891"
+                }
+            ],
+            "fullName": "Alberto Leporati",
+            "orcid": "0000-0002-8105-4371"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Milano-Bicocca",
+                    "ror": "https://ror.org/01ynf4891"
+                }
+            ],
+            "fullName": "Lorenzo Rovida",
+            "orcid": "0000-0001-5093-7932"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield"
+                }
+            ],
+            "fullName": "Wessel van Woerden",
+            "orcid": "0000-0002-5565-4015"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-20T12:51:13Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic Encryption",
+        "Lattice-based cryptography",
+        "Lattice isomorphism problem"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1171.pdf",
+    "pid": "1171",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Beyond LWE: a Lattice Framework for Homomorphic Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Secure messaging protocols allow users to communicate asynchronously over untrusted channels with strong guarantees of privacy, authenticity, forward secrecy, and post-compromise security. However, traditional security analyses of these protocols assume complete trust in the hardware and software of honest participants, overlooking a significant class of real-world threats known as subversion attacks. These attacks alter cryptographic algorithms to compromise security, by exfiltrating secrets or creating vulnerabilities that are often undetected.\r\n\r\nThe notion of reverse firewalls (EC'15), aims at protecting against subversion attacks by introducing a third party, called a \"reverse firewall\" (RF), which sits between a party and the outside world and modifies its  outgoing and incoming messages in a way such that, even if the party's machine has been corrupted (in a way that maintains functionality), security is still preserved. Importantly, the firewall shares no private information with the parties, and parties put no more trust in the firewall than they do in the communication channel. In this work, we address the existing gap in secure messaging and subversion attacks by presenting several key contributions: \r\n\r\n- We design the first subversion-resilient secure messaging protocol based on the model of RF. Our protocol is based on the Signal protocol---the current state-of-the-art in two-party secure messaging, though it lacks subversion resilience---and achieves subversion resilience with only constant overhead over Signal. \r\n\r\n- We develop a subversion-resilient version of the X3DH protocol in the RF model. X3DH is a core component that facilitates secure initial key agreement in Signal's protocol. \r\n\r\n- We introduce and formalize the notion of Continuous Key Agreement with Tamper Detection, an essential concept for subversion-resilient secure messaging. Our notion enables parties to continuously agree on keys, even in the presence of active adversaries capable of partially tampering with the key exchange transcript. We present a construction of our notion and prove its subversion resilience in the model of RF.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "New York University",
+                    "ror": "https://ror.org/0190ak572"
+                }
+            ],
+            "fullName": "Yevgeniy Dodis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Manchester",
+                    "ror": "https://ror.org/027m9bs27"
+                }
+            ],
+            "fullName": "Bernardo Magri"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cornell University",
+                    "ror": "https://ror.org/05bnh6r87"
+                }
+            ],
+            "fullName": "Noah Stephens-Davidowitz"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway University of London",
+                    "ror": "https://ror.org/04g2vpn86"
+                }
+            ],
+            "fullName": "Yiannis Tselekounis"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-20T15:02:55Z"
+        }
+    ],
+    "keywords": [
+        "Signal",
+        "Reverse Firewalls",
+        "Secure Messaging",
+        "Subversion"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1172.pdf",
+    "pid": "1172",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Guarding the Signal: Secure Messaging with Reverse Firewalls",
+    "year": 2025,
+    "repo": [
+        "https://github.com/signalapp"
+    ]
+}
+,
+{
+    "abstract": "Differential privacy (DP) has emerged as a preferred solution for privacy-preserving data analysis, having been adopted by several leading Internet companies. DP is a privacy-preserving mechanism that protects against re-identification of individuals within aggregated datasets. It is known that the privacy budget $\\varepsilon$ determines the trade-off between privacy and utility. In this paper, we propose the use of novel set of metrics and an easy-to-implement, step-by-step framework to facilitate the implementation of the DP mechanism on real-world datasets and guide the selection of $\\varepsilon$ based on desired accuracy vs utility trade-off. Currently, for a given query there is no widely accepted methodology on how to select $\\varepsilon$ and choose the best DP mechanism that offers an optimal trade-off between privacy and utility. In order to address this gap, we perform experiments by considering three real-world datasets, aiming to identify optimal $\\varepsilon$ and suitable mechanisms (Laplace or Gaussian) based on privacy utility trade-off as per use case for the commonly used count, sum and average queries for each dataset. Based on our experiment results, we observe that using our metric and framework, one can analyse noise distribution charts of multiple queries, and choose the suitable $\\varepsilon$ and the DP mechanism for achieving a balance between privacy and utility. Additionally, we show that the optimal $\\varepsilon$ depends on the particular query, desired accuracy and context in which DP is implemented, which suggests that an arbitrary, a-prior selection of $\\varepsilon$ cannot provide adequate results. Our framework prioritises the plotting and visualisation of values and results in the DP analysis, making its adoption easy for a wider audience.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University College Cork",
+                    "ror": "https://ror.org/03265fv13"
+                }
+            ],
+            "fullName": "Akasha Shafiq",
+            "orcid": "0000-0002-2133-3547"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Abhishek Kesarwani",
+            "orcid": "0000-0001-8488-6811"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University College Cork",
+                    "ror": "https://ror.org/03265fv13"
+                }
+            ],
+            "fullName": "Dimitrios Vasilopoulos",
+            "orcid": "0000-0003-2237-9202"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University College Cork",
+                    "ror": "https://ror.org/03265fv13"
+                }
+            ],
+            "fullName": "Paolo Palmieri",
+            "orcid": "0000-0002-9819-4880"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-20T15:05:25Z"
+        }
+    ],
+    "keywords": [
+        "Differential Privacy",
+        "Privacy Budget Evaluation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1173.pdf",
+    "pid": "1173",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "The Effectiveness of Differential Privacy in Real-world Settings:  A Metrics-based Framework to help Practitioners Visualise and Evaluate $\\varepsilon$",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Akasha-Shafiq/Evaluating-Differential-Privacy-Frameworks-",
+        "https://github.com/opendp"
+    ]
+}
+,
+{
+    "abstract": "Linkable Ring Signatures (LRS) allow users to anonymously sign messages on behalf of ad-hoc rings, while ensuring that multiple signatures from the same user can be linked. This feature makes LRS widely used in privacy-preserving applications like e-voting and e-cash. To scale to systems with large user groups, efficient schemes with short signatures and fast verification are essential. Recent works, such as DualDory (ESORICS\u201922) and LLRing (ESORICS\u201924), improve verification efficiency through offline precomputations but rely on static rings, limiting their applicability in ad-hoc ring scenarios. Similarly, constant-size ring signature schemes based on accumulators face the same limitation.\r\n\r\nIn this paper, we propose a framework for constructing constant-size LRS suitable for large ad-hoc rings. We introduce a novel pairing-based Set Membership Argument (SMA) with a proof size of only three group elements. By leveraging KZG polynomial commitments, we optimize the verification to require only constant group exponentiations and pairings, as well as linear field multiplications. Utilizing the SMA, our framework achieves constant-size signatures with verification dominated by linear field operations, outperforming existing schemes that require linear group exponentiations in ad-hoc ring settings. Moreover, it exhibits strong scalability: (i) compatibility with any PKI-based cryptosystem and (ii) scoped linkability, enabling flexible definitions of linking scope.\r\n\r\nWe instantiate our framework using a discrete logarithm public key structure. On the $BN254$ curve, our signature size is fixed at 687 bytes, which to our best knowledge is the shortest LRS for ring sizes larger than 32. For a ring size of 1024, our verification cost is only 10.4 ms, achieving 48.6\u00d7, 2.6\u00d7\u2013467\u00d7, 7.9\u00d7\u201313.2\u00d7, and 2.2\u00d7\u2013102.5\u00d7 improvements over Omniring (CCS\u201919), DualDory (with and without precomputation), LLRing-DL (with and without precomputation), and LLRing-P (with and without precomputation), respectively. Moreover, this performance gap continues to grow as the ring size increases.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Harbin Institute of Technology, Shenzhen"
+                }
+            ],
+            "fullName": "Min Xie",
+            "orcid": "0000-0002-7853-1712"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Harbin Institute of Technology, Shenzhen"
+                }
+            ],
+            "fullName": "Zhengzhou Tu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "The Hong Kong Polytechnic University"
+                }
+            ],
+            "fullName": "Man Ho Au",
+            "orcid": "0000-0003-2068-9530"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Jinan University",
+                    "ror": "https://ror.org/02xe5ns62"
+                }
+            ],
+            "fullName": "Junbin Fang",
+            "orcid": "0000-0002-0730-8732"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Harbin Institute of Technology, Shenzhen"
+                },
+                {
+                    "name": "Guangdong Key Laboratory of New Security and Intelligence Technology"
+                }
+            ],
+            "fullName": "Xuan Wang",
+            "orcid": "0000-0002-3512-0649"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Harbin Institute of Technology, Shenzhen"
+                },
+                {
+                    "name": "Guangdong Key Laboratory of New Security and Intelligence Technology"
+                }
+            ],
+            "fullName": "Zoe Lin Jiang",
+            "orcid": "0000-0002-8944-7444"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-20T15:18:42Z"
+        }
+    ],
+    "keywords": [
+        "Linkable Ring Signatures",
+        "Ad-hoc Rings",
+        "Set Membership Arguments",
+        "Blockchain"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "note": "This is the full version of the paper accepted to ACM CCS 2025.",
+    "pdffile": "2025/1174.pdf",
+    "pid": "1174",
+    "pubtype": {
+        "note": "ACM CCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Constant-Size Linkable Ring Signatures for Ad-Hoc Rings via Pairing-Based Set Membership Arguments",
+    "year": 2025,
+    "repo": [
+        "https://github.com/TuZhengzhou/lrs-v2.git",
+        "https://github.com/iden3/circomlib/blob/master/circuits/babyjub.circom",
+        "https://github.com/iden3/circomlib/blob/master/circuits/mimc.circom",
+        "https://github.com/lovesh/legogro16",
+        "https://github.com/TuZhengzhou/lrs-v2.git"
+    ]
+}
+,
+{
+    "abstract": "We present a scheme for verifiably encrypting a Shamir secret sharing to a committee of shareholders.  Such a scheme can be used to easily implement distributed key generation (DKG) and resharing protocols used in threshold signing and decryption protocols.  Our scheme is a minor variation on known techniques, and is not the most efficient in terms of communication and computational complexity.  However, it is extremely simple and easy to implement.  Moreover, for moderately sized shareholder committees of up to, say, 13 parties or so, and for applications where a DKG/resharing only needs to be performed occasionally, its performance should be acceptable in practice.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Offchain Labs"
+                }
+            ],
+            "fullName": "Victor Shoup",
+            "orcid": "0009-0003-6996-5660"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-20T17:40:46Z"
+        }
+    ],
+    "keywords": [
+        "verifiable secret sharing",
+        "distributed key generation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/1175.pdf",
+    "pid": "1175",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Simple VESS",
+    "year": 2025,
+    "repo": [
+        "https://github.com/bitcoin-core/secp256k1"
+    ]
+}
+,
+{
+    "abstract": "The approximate Closest Vector Problem (CVP) is a core computational problem underlying many post-quantum lattice-based signature schemes, including Dilithium, one-more-ISIS, and HuFu. While the security of these schemes is typically expressed in terms of the Inhomogeneous Short Integer Solution (ISIS) problem, it is well-known that ISIS can be efficiently reduced to approximate CVP. Despite its foundational role, approximate CVP with non-negligible approximation factors remains far less explored than other lattice problems such as SVP or LWE, creating a critical gap in both theory and practice.\r\n\r\nIn this work, we bridge this gap by advancing the Colattice framework for solving approximate CVP with large approximation factors. More concretely, (1) We define a practical version of the Colattice algorithm and propose a randomized Nearest Colattice for generating more than one approximate closest vector. (2) Define a formal strategy space for blockwise approximate CVP. (3) Propose a polynomial-time strategy selection algorithm and prove its correctness under standard lattice heuristics. (4) Building on this, we design an efficient security estimator for approximate CVP in both Euclidean and Infinity norms, and extend it to approximate batch-CVP attack settings. (5) By applying this estimator, we perform concrete security evaluations of Dilithium, HuFu, and one-more-ISIS. Our results reveal that the security of Dilithium are 20 $\\log_2({\\rm gates})$ lower than the required security thresholds at NIST levels 3 and 5, and none of the evaluated schemes withstand approximate batch-CVP  attacks with $2^{64}$ queries. (6) We integrate a slicer and Colattice into G6K-CPU, leveraging the Locality-Sensitive Hashing (LSH) technqiue for nearest neighbors search (NNS). This is the first practical implementation of an NNS-accelerated slicer. Our results demonstrate the practical efficiency of approximate CVP and batch-CVP attacks, highlighting the need for more accurate security estimation.\r\n\r\nThese findings underscore the practical importance of accurate approximate CVP modeling and call for a reassessment of current parameter sets in post-quantum signature schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University"
+                }
+            ],
+            "fullName": "Wenwen Xia"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University"
+                }
+            ],
+            "fullName": "Geng Wang",
+            "orcid": "0000-0003-1000-7903"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Dawu Gu",
+            "orcid": "0000-0002-0504-9538"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-23T01:10:04Z"
+        }
+    ],
+    "keywords": [
+        "cryptanalysis",
+        "approximate CVP",
+        "Nearest-Colattice",
+        "dimension for free",
+        "sieve",
+        "slicer"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1176.pdf",
+    "pid": "1176",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Solve Approximate CVP via Variants of Nearest-Colattice",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Summwer/cvp-g6k-cpu-solver",
+        "https://github.com/fplll/g6k",
+        "https://github.com/WvanWoerden/randomized-slicer"
+    ]
+}
 ]
