@@ -83373,4 +83373,324 @@
         "https://github.com/WvanWoerden/randomized-slicer"
     ]
 }
+,
+{
+    "abstract": "Quantum Key Distribution (QKD) is a promising technology that enables information-theoretic secure key exchange using quantum principles. It is being increasingly deployed in critical sectors through emerging Quantum Key-as-a-Service (QKaaS) models. However, current standards like ETSI GS QKD 014 assume that QKD keys are consumed within trusted environments\u2014an assumption that breaks down in real-world deployments where keys are delivered over classical networks to remote, potentially untrusted endpoints. This creates a security gap at the interface between QKD systems and key-consuming applications. In this paper, we identify this gap and propose a proxy-based solution that secures QKD key delivery using post-quantum cryptography (PQC). Our proxy transparently applies PQC-based signatures and key encapsulation to ETSI-compliant QKD APIs, without requiring changes to existing infrastructure. It supports cryptographic agility, allowing runtime switching between multiple PQC schemes. We benchmark our design using both QKD simulators and production-grade QKD hardware, and show that it introduces minimal overhead with efficient NIST PQC algorithms. Our findings highlight the need for stronger protection of the QKD interface in practical deployments. We advocate for a revision to ETSI GS QKD 014 to include an addendum that addresses this critical gap and promotes end-to-end quantum-safe integration.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Sayan Das"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Aarav Varshney"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Prasanna Ravi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Nanyang Technological University",
+                    "ror": "https://ror.org/02e7b5302"
+                }
+            ],
+            "fullName": "Anupam Chattopadhyay"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-23T06:45:57Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Key Distribution",
+        "Post-Quantum Cryptography",
+        "Cryptographic Agility",
+        "Quantum-Safe Proxies"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1177.pdf",
+    "pid": "1177",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Mind the Gap: Securing QKD Interfaces with Post-Quantum Proxies",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "This paper builds the foundation for a cryptosystem based on p-adic representations of supersingular elliptic curve isogenies generated through Engel expansions of Laurent series. This mathematical framework manifests as a lightweight encryption scheme implemented on ESP32 microcontrollers for IoT applications. Efficient isogeny paths are constructed for quantum-resistant primitives secured against Shor's algorithm by decomposing elements into Engel sequences. Performance analysis confirms linear computational scaling with message size and speed gain at a higher clock rate, along with power trace signatures corroborating theoretical computational models. Consequently, we confirm the practical feasibility of our proposed p-adic isogeny cryptography on resource-constrained embedded systems while offering rigorous post-quantum security assurances.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Walton Institute"
+                }
+            ],
+            "fullName": "Ilias Cherkaoui",
+            "orcid": "0000-0002-7638-0615"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Walton Institute"
+                }
+            ],
+            "fullName": "Ciaran Clarke"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Walton Institute"
+                }
+            ],
+            "fullName": "Indrakshi Dey"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-23T11:49:35Z"
+        }
+    ],
+    "keywords": [
+        "Engel expansion",
+        "Laurent series",
+        "p-adic numbers",
+        "supersingular isogeny",
+        "post-quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1178.pdf",
+    "pid": "1178",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Engel p-adic Supersingular Isogeny-based Cryptography over Laurent series",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "PQ-WireGuard is a post-quantum variant of WireGuard\r\nVirtual Private Network (VPN), where Diffie-Hellman-based key exchange is\r\nreplaced by post-quantum Key Encapsulation Mechanisms-based key\r\nexchange. In this paper, we first conduct a thorough formal analysis\r\nof PQ-WireGuard's original design, in which we point out and fix a\r\nnumber of weaknesses. This leads us to an improved construction\r\nPQ-WireGuard*. Secondly, we propose and formally analyze a new\r\nprotocol, based on both WireGuard and PQ-WireGuard*, named\r\nHybrid-WireGuard, compliant with current best practices for\r\npost-quantum transition about hybridization techniques. For our\r\nanalysis, we use the SAPIC+ framework that enables the generation of\r\nthree state-of-the-art protocol models for the verification tools\r\nProVerif, DeepSec and Tamarin from a single specification,\r\nleveraging the strengths of each tool. We formally prove that\r\nHybrid-WireGuard is secure. Eventually, we propose a generic, efficient and usable Rust  implementation of our new protocol.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 Clermont Auvergne, CNRS, Clermont Auvergne INP, Mines Saint-Etienne, LIMOS, 63000 Clermont-Ferrand, France"
+                }
+            ],
+            "fullName": "Pascal Lafourcade",
+            "orcid": "0000-0002-4459-511X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universit\u00e9 Clermont Auvergne, CNRS, Clermont Auvergne INP, Mines Saint-Etienne, LIMOS, 63000 Clermont-Ferrand, France"
+                }
+            ],
+            "fullName": "Dhekra Mahmoud",
+            "orcid": "0009-0002-0555-0581"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Agence Nationale de la S\u00e9curit\u00e9 des Syst\u00e8mes d\u2019Information (ANSSI), France"
+                }
+            ],
+            "fullName": "Sylvain Ruhault",
+            "orcid": "0009-0007-3340-6460"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Agence Nationale de la S\u00e9curit\u00e9 des Syst\u00e8mes d\u2019Information (ANSSI), France"
+                }
+            ],
+            "fullName": "Abdul Rahman Taleb",
+            "orcid": "0009-0007-5725-8474"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-23T13:49:35Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1179.pdf",
+    "pid": "1179",
+    "pubtype": {
+        "note": "34th USENIX Security Symposium",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Tale of Two Worlds, a Formal Story of WireGuard Hybridization",
+    "year": 2025,
+    "repo": [
+        "https://github.com/strongX509/docker/tree/master/pq-strongswan",
+        "https://github.com/WireGuard/wireguard-rs",
+        "https://bblanche.gitlabpages.inria.fr/proverif/manual.pdf",
+        "https://bblanche.gitlabpages.inria.fr/proverif/manual.pdf"
+    ]
+}
+,
+{
+    "abstract": "We describe key recovery attacks on the authenticated stream cipher HiAE, which was recently proposed for future high-throughput communication networks such as 6G by Huawei.  HiAE uses a 2048-bit state, a 256-bit key and produces 128-bit tags, targeting 256-bit security against key and state recovery.  As a nonce-based AEAD scheme, it relies on the uniqueness of the nonce per key for these security claims. Our analysis indicates that a complete recovery of the 256-bit key of HiAE is possible with a complexity of $2^{128}$ data and at most $2^{129.585}$ time in the nonce-respecting attack setting, with various small tradeoffs concerning the data and time complexity.  While infeasible in practice, this attack therefore violates the 256-bit security claim for HiAE.   We describe further complete key-recovery attacks in the nonce-misuse and release of unverfied plaintext (RUP) settings which require only a small constant number of repeated nonces or unverified decryption queries, respectively.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Philipp University of Marburg",
+                    "ror": "https://ror.org/01rdrb571"
+                }
+            ],
+            "fullName": "Alexander Bille",
+            "orcid": "0009-0007-4117-8154"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Philipp University of Marburg",
+                    "ror": "https://ror.org/01rdrb571"
+                }
+            ],
+            "fullName": "Elmar Tischhauser",
+            "orcid": "0000-0002-2031-8652"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-23T19:48:35Z"
+        }
+    ],
+    "keywords": [
+        "Cryptanalysis",
+        "HiAE",
+        "Authenticated Encryption",
+        "Stream Cipher"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1180.pdf",
+    "pid": "1180",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cryptanalysis of HiAE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Verifiable Timed Signatures (VTS) are cryptographic primitives that enable the creation of a signature that can only be retrieved after a specific time delay, while also providing verifiable evidence of its existence. This framework is particularly useful in blockchain applications. Current VTS schemes rely on signature algorithms such as BLS, Schnorr, and ECDSA, which are vulnerable to quantum attacks due to the vulnerability of the discrete logarithm problem to Shor's Algorithm. We introduce VT-UOV, a novel VTS scheme based on the Salt-Unbalanced Oil and Vinegar (Salt-UOV) Digital Signature Algorithm. As a multivariate polynomial-based cryptographic primitive, Salt-UOV provides strong security against both classical and quantum adversaries. Adapting Salt-UOV into the VTS framework requires addressing challenges such as complex parameters instead of a integer, the computational complexity of solving multivariate equations, and the integration of Time-Lock Puzzles (TLPs) for enforcing delayed signature generation. Our experimental results show that VT-UOV exhibits a unique performance profile among existing VTS constructions. This paper offers a detailed exploration of the VT-UOV scheme and its overall security and performance properties.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Aselsan (Turkey)",
+                    "ror": "https://ror.org/04knh8e66"
+                },
+                {
+                    "name": "Middle East Technical University",
+                    "ror": "https://ror.org/014weej12"
+                }
+            ],
+            "fullName": "Erkan Uslu",
+            "orcid": "0000-0001-8033-8922"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Middle East Technical University",
+                    "ror": "https://ror.org/014weej12"
+                }
+            ],
+            "fullName": "O\u011fuz Yayla",
+            "orcid": "0000-0001-8945-2780"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-23T22:41:36Z"
+        }
+    ],
+    "keywords": [
+        "Post-Quantum Cryptography",
+        "Protocol",
+        "Public-Key Cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1181.pdf",
+    "pid": "1181",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "UOV-Based Verifiable Timed Signature Scheme",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
