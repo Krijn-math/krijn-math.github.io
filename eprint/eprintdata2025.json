@@ -83693,4 +83693,792 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "We construct an efficient pseudorandom correlation generator (PCG) (Boyle et al., Crypto'19) for two-party programmable oblivious linear evaluation (OLE) functionality over $\\mathbb{F}_2$. Our construction (i) has an efficient seed expansion phase, and (ii) comes with a concretely efficient protocol for distributing the seeds that makes black-box use of cryptography and runs in a constant number of rounds. \r\n\r\nPCGs for programmable OLE are known to imply PCGs for generating $n$-party Beaver triples over $\\mathbb{F}_2$. The resultant PCG has a seed setup phase whose communication cost is $n(n-1)$ times than that of the programmable OLE protocol.  The per-party seed size and the seed expansion time have a multiplicative overhead of $2(n-1)$. Prior constructions for efficiently generating multiparty Beaver triples only worked for finite fields $\\mathbb{F}_q$ where $q \\geq 3$ or required one bit of per-party communication for each triple generated (and hence, do not satisfy the PCG definition). Thus, ours is the first concretely efficient PCG for generating Beaver triples over $\\mathbb{F}_2$ in the multiparty setting.\r\n\r\nOur distributed seed generation protocol generates $N = 2^{30}$ two-party programmable OLEs in 3.5 minutes with 255 MB of communication over a LAN network. The PCG seed size is around 55 MB and the expansion phase requires 10 PRG calls and around 229 thousand XOR and AND operations per triple, producing roughly 31,000 triples per second.\r\n\r\nOur PCG for generating multiparty Beaver triples has lower concrete communication cost than the state-of-the-art for small number of parties. When compared to the FOLEAGE protocol (Bombar et al, Asiacrypt 2024) which requires one bit of per-party communication per triple that is generated, our communication cost is lower by $2.4\\times$ when generating $N = 2^{36}$ triples between three parties and is $1.2 \\times $ lower for the case of five parties.\r\n\r\nAt a conceptual level, our protocol deviates from the prior approaches which relied on variants of dual learning parity with noise (LPN) assumption. Instead, our construction combines both the primal and dual versions of LPN to achieve the aforementioned efficiency.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Brown University",
+                    "ror": "https://ror.org/05gq02987"
+                }
+            ],
+            "fullName": "Peihan Miao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Oregon State University",
+                    "ror": "https://ror.org/00ysfqy60"
+                }
+            ],
+            "fullName": "Alice Murphy"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Toronto",
+                    "ror": "https://ror.org/03dbr7087"
+                }
+            ],
+            "fullName": "Akshayaram Srinivasan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Cornell University",
+                    "ror": "https://ror.org/05bnh6r87"
+                }
+            ],
+            "fullName": "Max Tromanhauser"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-24T01:27:59Z"
+        }
+    ],
+    "keywords": [
+        "Pseudorandom Correlation Generators",
+        "Beaver Triples",
+        "Learning Parity with Noise"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1182.pdf",
+    "pid": "1182",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Pseudorandom Correlation Generators for Multiparty Beaver Triples over $\\mathbb{F}_2$",
+    "year": 2025,
+    "repo": [
+        "https://github.com/relic-toolkit/relic",
+        "https://github.com/osu-crypto/libOTe",
+        "https://github.com/ladnir/cryptoTools"
+    ]
+}
+,
+{
+    "abstract": "At ASIACRYPT 2014, Andreeva et al. put forward a definition for security of authenticated encryption under release of unverified plaintext. They introduced two notions of plaintext awareness (PA1 and its stronger sibling PA2), suggested to be used in conjunction with confidentiality in case of release of unverified plaintext, as well as the notion of integrity under release of unverified plaintext (INT-RUP). Various efforts have been made to develop a unified model (e.g., Ashur et al., CRYPTO 2017, Chang et al., ToSC 2019(4)). With respect to the analysis of existing and new modes under release of unverified plaintext, most research however has focused on INT-RUP security only. Plaintext awareness is less studied and understood.\r\nIn this work, we take a detailed look at the original definitions of PA1 and PA2 security. We observe that the definitions leave too much room for interpretation, and claimed results such as PA1 security of Encrypt-then-MAC are unjustified. The core of the issue lies in the fact that PA1 security is necessarily tied to the implementation of the scheme. To resolve this, we present refined definitions of PA1 and PA2 security. We argue that even for these refined definitions, there is no implementation of Encrypt-and-MAC that is PA1 (nor PA2) secure. For MAC-then-Encrypt, results depend on the actual scheme, as we demonstrate using a negative result and a positive result (from literature, on Romulus-M). Furthermore, we formally prove for Encrypt-then-MAC that (i) there exist implementations that are PA1 insecure and (ii) there exist implementations that are PA1 secure. In other words, Encrypt-then-MAC is insecure under the old definition but secure under the new definition, provided a proper implementation is used. We apply this observation to Isap v2, finalist in the NIST Lightweight Cryptography competition, where we additionally deal with the complication that the same key is used for encryption and authentication.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Bart Mennink",
+            "orcid": "0000-0001-6679-1878"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University Nijmegen",
+                    "ror": "https://ror.org/016xsfp80"
+                }
+            ],
+            "fullName": "Suprita Talnikar",
+            "orcid": "0000-0002-9295-6688"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-24T08:36:32Z"
+        }
+    ],
+    "keywords": [
+        "Authenticated Encryption",
+        "Release of Unverified Plaintext",
+        "Plaintext Awareness",
+        "Isap v2"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1183.pdf",
+    "pid": "1183",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PA1 Security on Release of Unverified Plaintext in Encrypt-then-MAC AE Schemes",
+    "year": 2025,
+    "repo": [
+        "https://romulusae.github.io/romulus/"
+    ]
+}
+,
+{
+    "abstract": "Large Language Models (LLMs) are widely employed for their ability to generate human-like text. However, service providers may deploy smaller models to reduce costs, potentially deceiving users. Zero-Knowledge Proofs (ZKPs) offer a solution by allowing providers to prove LLM inference without compromising the privacy of model parameters. Existing solutions either do not support LLM architectures or suffer from significant inefficiency and tremendous overhead. To address this issue, this paper introduces several new techniques. We propose new methods to efficiently prove linear and non-linear layers in LLMs, reducing computation overhead by orders of magnitude. To further enhance efficiency, we propose constraint fusion to reduce the overhead of proving non-linear layers and circuit squeeze to improve parallelism. We implement our efficient protocol, specifically tailored for popular LLM architectures like GPT-2, and deploy optimizations to enhance performance. Experiments show that our scheme can prove GPT-2 inference in less than 25 seconds. Compared with state-of-the-art systems such as Hao et al. (USENIX Security'24) and ZKML (Eurosys'24), our work achieves nearly $279\\times$ and $185\\times$ speedup, respectively.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore"
+                }
+            ],
+            "fullName": "Wenjie Qu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology"
+                }
+            ],
+            "fullName": "Yijun Sun"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore"
+                }
+            ],
+            "fullName": "Xuanming Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore"
+                }
+            ],
+            "fullName": "Tao Lu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore"
+                }
+            ],
+            "fullName": "Yanpei Guo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology"
+                }
+            ],
+            "fullName": "Kai Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore"
+                }
+            ],
+            "fullName": "Jiaheng Zhang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-24T09:05:26Z"
+        }
+    ],
+    "keywords": [
+        "Zero-knowledge Proof; LLM"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1184.pdf",
+    "pid": "1184",
+    "pubtype": {
+        "note": "Usenix Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "zkGPT: An Efficient Non-interactive Zero-knowledge Proof Framework for LLM Inference",
+    "year": 2025,
+    "repo": [
+        "https://github.com/emp-toolkit/emp-zk?tab=readme-ov-file#throughput-of-circuit-based-zk-protocol",
+        "https://github.com/emp-toolkit/emp-zk?tab=readme-ov-file#throughput-of-circuit-based-zk-protocol",
+        "https://github.com/emp-toolkit/emp-zk?tab=readme-ov-file#throughput-of-circuit-based-zk-protocol"
+    ]
+}
+,
+{
+    "abstract": "Indistinguishability obfuscation (iO) has emerged as a powerful cryptographic primitive with many implications. While classical iO, combined with the infinitely-often worst-case hardness of $\\mathsf{NP}$, is known to imply one-way functions (OWFs) and a range of advanced cryptographic primitives, the cryptographic implications of quantum iO remain poorly understood. In this work, we initiate a study of the power of quantum iO. We define several natural variants of quantum iO, distinguished by whether the obfuscation algorithm, evaluation algorithm, and description of obfuscated program are classical or quantum. For each variant, we identify quantum cryptographic primitives that can be constructed under the assumption of quantum iO and the infinitely-often quantum worst-case hardness of $\\mathsf{NP}$ (i.e., $\\mathsf{NP}\\not\\subseteq \\mathsf{i.o.BQP}$). In particular, we construct pseudorandom unitaries, QCCC quantum public-key encryption and (QCCC) quantum symmetric-key encryption, and several primitives implied by them such as one-way state generators, (efficiently-verifiable) one-way puzzles, and EFI pairs, etc. While our main focus is on quantum iO, even in the classical setting, our techniques yield a new and arguably simpler construction of OWFs from classical (imperfect) iO and the infinitely-often worst-case hardness of $\\mathsf{NP}$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Kyoto University",
+                    "ror": "https://ror.org/02kpeqv85"
+                }
+            ],
+            "fullName": "Tomoyuki Morimae"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Kyoto University",
+                    "ror": "https://ror.org/02kpeqv85"
+                }
+            ],
+            "fullName": "Yuki Shirakawa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT (Japan)",
+                    "ror": "https://ror.org/00berct97"
+                },
+                {
+                    "name": "Kyoto University",
+                    "ror": "https://ror.org/02kpeqv85"
+                }
+            ],
+            "fullName": "Takashi Yamakawa"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-24T12:04:08Z"
+        }
+    ],
+    "keywords": [
+        "Quantum cryptography",
+        "Indistinguishability obfuscation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1185.pdf",
+    "pid": "1185",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "From Worst-Case Hardness of $\\mathsf{NP}$ to Quantum Cryptography via Quantum Indistinguishability Obfuscation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We introduce a trapdoorless tracker construction for electronic voting that fundamentally reimagines verifiability through information flow control. Unlike existing E2E verifiable systems where receipt-freeness compromises individual verifiability, our approach achieves both simultaneously by requiring only temporary isolation of the voting calculator between ballot casting and verification\u2014when voters enter unique challenges to compute trackers for locating their votes on the public tally board. Our construction leverages perfectly hiding Pedersen commitments and a unique tracker challenge mechanism to simultaneously achieve unconditional individual verifiability, practical everlasting privacy, and receipt-freeness while relying only on standard cryptographic assumptions. When verification failures occur, our system provides transparent accountability by precisely identifying whether the voting calculator or voting device is responsible. The system maintains security even with partial compliance with isolation procedures and offers robust protection against various adversaries while requiring minimal trust assumptions.",
+    "authors": [
+        {
+            "affiliations": [],
+            "fullName": "Janis Erdmanis",
+            "orcid": "0000-0002-8963-5963"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-24T16:38:22Z"
+        }
+    ],
+    "keywords": [
+        "e-voting",
+        "E2E-V",
+        "individual verifiability",
+        "receipt-freeness",
+        "everlasting privacy",
+        "exponential mix",
+        "commitment shuffle"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1186.pdf",
+    "pid": "1186",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Unconditional Individual Verifiability with Receipt Freeness via Post-Cast Isolation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In this note we present Ligerito, a small and practically fast polynomial commitment and inner product scheme. For the case of univariate and multilinear polynomial evaluations, the scheme has a proof size of $\\sim \\log(N)^2/\\log\\log(N)$ up to constants and for a large enough field, where $N$ is the size of the input. Ligerito is also fast on consumer hardware: when run on an M1 MacBook Pro for a polynomial with $2^{24}$ coefficients over a 32-bit binary field, our Julia prover implementation has a proving time of 1.3 seconds and a proof size of 255 KiB. Ligerito is also relatively flexible: any linear code for which the rows of the generator matrix can be efficiently evaluated can be used. Such codes include Reed\u2013Solomon codes, Reed\u2013Muller codes, among others. This, in turn, allows for a high degree of flexibility on the choice of field and can likely give further efficiency gains in specific applications.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Bain Capital Crypto"
+                }
+            ],
+            "fullName": "Andrija Novakovic"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Bain Capital Crypto"
+                }
+            ],
+            "fullName": "Guillermo Angeris"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-24T18:00:24Z"
+        }
+    ],
+    "keywords": [
+        "polynomial commitment scheme",
+        "inner product scheme",
+        "ligero",
+        "proximity",
+        "error correcting codes",
+        "random oracle model"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1187.pdf",
+    "pid": "1187",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Ligerito: A Small and Concretely Fast Polynomial Commitment Scheme",
+    "year": 2025,
+    "repo": [
+        "https://github.com/bcc-research/Ligerito.jl"
+    ]
+}
+,
+{
+    "abstract": "Security weaknesses in the symmetric-key components of a cipher can compromise its overall security assurances. With the rapid progress in quantum computing in recent years, there is a growing focus on assessing the resilience of symmetric-key cryptography against possible quantum attacks (e.g., Grover's algorithm).\r\n\r\nThis paper is dedicated to examining the quantum attack resistance of CHAM, a family of lightweight block ciphers developed by a Korean research group. We provide an optimized quantum circuit implementation of CHAM and evaluate its complexity metrics, such as the number of qubits, gate count, and circuit depth, within the context of Grover's search algorithm.\r\n\r\nFor Grover's key search, minimizing the quantum circuit depth is the key optimization goal, particularly when parallel search capabilities are taken into account. Our approach enhances parallelism for a low-depth quantum circuit of the CHAM block cipher, significantly reducing the full circuit depth compared to previous works. For example, in the case of CHAM-128/128, our implementation achieves a full depth of 14,772, compared to 37,768 depth in the best known prior work. This highlights the substantial depth reduction enabled by our parallelism-oriented design, which facilitates more practical quantum attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Kyungbae Jang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Yujin Oh"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hansung University",
+                    "ror": "https://ror.org/048m9x696"
+                }
+            ],
+            "fullName": "Hwajeong Seo"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-25T01:16:39Z"
+        }
+    ],
+    "keywords": [
+        "Quantum Computing",
+        "Grover\u2019s Search",
+        "Qauntum Circuit",
+        "CHAM Block Cipher"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/1188.pdf",
+    "pid": "1188",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Depth-Optimized Quantum Implementation of CHAM",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "erforming privacy-preserving queries, particularly anonymous authentication, against large-scale datasets presents critical tradeoffs between security, latency, scalability. Existing cryptographic solutions often impose linear \r\ncomputation or communication overheads. This paper introduces a novel, \r\nefficient protocol for secure anonymous authentication, uniquely combining matrix partitioning via hash prefixes with Oblivious Pseudorandom Functions in a \r\nthree-server semi-honest model. Crucially, compared to our previous work published at TrustCom 2024, this enhanced protocol eliminates the dependency on a \r\ndesignated fully trusted server, achieving security when any single server is corrupted. Furthermore, our protocol demonstrates significant performance improvements over current state-of-the-art methods. It achieves sub-linear online \r\ncommunication complexity. Evaluations show that for datasets of size \ud835\udc5a \u2248 106\r\n, \r\nour protocol reduces online communication by at least 30% compared to other \r\nsub-linear schemes, while maintaining competitive online computation times. Security is proven via simulation, and comprehensive experiments confirm practicality for datasets up to \ud835\udc5a = 10^8",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Dongguan University of Technology"
+                }
+            ],
+            "fullName": "Wenjv Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Dongguan Sixth People's Hospital"
+                }
+            ],
+            "fullName": "Yanping Ye"
+        },
+        {
+            "affiliations": [],
+            "fullName": "Yin Li"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-25T05:10:01Z"
+        }
+    ],
+    "keywords": [
+        "Privacy-preserving authentication",
+        "Oblivious pseudorandom function",
+        "Bloom filter"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1189.pdf",
+    "pid": "1189",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Performance and Privacy: A Low-Latency Secure Anonymous Authentication Protocol with OPRF",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Side-channel analysis (SCA) is a persistent threat to security-critical systems, enabling attackers to exploit information leakage. To mitigate its harmful impacts, masking serves as a provably secure countermeasure that performs computing on random shares of secret values. As masking complexity, required effort, and cost increase dramatically with design complexity, recent techniques rely on designing and implementing smaller building blocks, so-called \u201cgadgets.\u201d Existing work on optimizing gadgets has primarily focused on latency, area, and power as their objectives. To the best of our knowledge, the most up-to-date ASIC-specific masking gadget optimization frameworks require significant manual effort. This paper is inspired by previous work introducing open-source academic tools to leverage aspects of artificial intelligence (AI) in electronic design automation (EDA) to attempt to optimize and enhance existing gadgets and overall designs. We concentrate on evolutionary algorithms (EA), optimization techniques inspired by biological evolution and natural selection, to find optimal or near-optimal solutions. In this regard, our goal is to improve gadgets in terms of power and area metrics. The primary objective is to demonstrate the effectiveness of our methods by integrating compatible gates from a technology library to generate an optimized and functional design without compromising security. Our results show a significant reduction in power consumption and promising area improvements, with values reduced by 15% in some cases, compared to the na\u00efve synthesis of masked designs. We evaluate our results using industry-standard synthesis and pre-silicon side-channel verification tools.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "David S. Koblah"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Dev M. Mehta"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Mohammad Hashemi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Worcester Polytechnic Institute",
+                    "ror": "https://ror.org/05ejpqr48"
+                }
+            ],
+            "fullName": "Fatemeh Ganji"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Florida",
+                    "ror": "https://ror.org/02y3ad647"
+                }
+            ],
+            "fullName": "Domenic Forte"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-25T16:55:32Z"
+        }
+    ],
+    "keywords": [
+        "Side Channel Analysis",
+        "Masking",
+        "Evolutionary Algorithms",
+        "Gadgets",
+        "Artificial Intelligence"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1190.pdf",
+    "pid": "1190",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Towards AI-driven Optimization of Robust Probing Model-compliant Masked Hardware Gadgets Using Evolutionary Algorithms",
+    "year": 2025,
+    "repo": [
+        "[Online] https://tilos-ai-institute.github.io/MacroPlacement/Enablements/NanGate45/ [Accessed: Apr.7, 2025] ",
+        "[Online] https://tilos-ai-institute.github.io/MacroPlacement/Enablements/NanGate45/ [Accessed: Apr.7, 2025] "
+    ]
+}
+,
+{
+    "abstract": "We propose a public-key cryptosystem based on Jacobian-preserving polynomial compositions, utilizing algebraically invertible polynomial maps with hard-to-invert composition. The construction utilizes polynomial maps over $\\mathbb{Z}_p$, where $p$ is a prime number, with Jacobian determinant equal to 1 to ensure invertibility. The public key function $H : \\mathbb{Z}_p^n \\to \\mathbb{Z}_p^n$ is defined as the composition of invertible polynomial maps $f_1, f_2, \\dots, f_k$, each with Jacobian determinant 1, while the private key consists of the individual components used in the composition. Although inverting the composition is possible, inverting without the knowledge of the factors is computationally infeasible. This system incorporates both triangular and affine polynomial maps. We discuss the construction, provide formal correctness proofs, analyze hardness assumptions, and present a Python-based prototype with benchmark results.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "St. Francis College"
+                }
+            ],
+            "fullName": "Saimon Ahmed",
+            "orcid": "0009-0005-3912-6967"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-25T19:06:28Z"
+        }
+    ],
+    "keywords": [
+        "Public-key cryptography",
+        "polynomial maps",
+        "Jacobian determinant",
+        "trapdoor functions",
+        "post-quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "This paper presents an original construction of a public-key cryptosystem based on Jacobian-preserving polynomial compositions. It includes formal proofs, worked examples, security analysis, and a Python implementation with benchmarks. In future versions, I plan to continue developing the system, including generalizations beyond tame automorphisms.",
+    "pdffile": "2025/1191.pdf",
+    "pid": "1191",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Polynomial Public-Key Cryptosystem Based on Jacobian-Preserving Composition",
+    "year": 2025,
+    "repo": [
+        "https://github.com/SAIMON-AHMED/jacobian-crypto-composition"
+    ]
+}
+,
+{
+    "abstract": "In digital advertising, accurate measurement is essential for optimiz- ing ad performance, requiring collaboration between advertisers and publishers to compute aggregate statistics\u2014such as total conver- sions\u2014while preserving user privacy. Traditional secure two-party computation methods allow joint computation on single-identifier data without revealing raw inputs, but they fall short when mul- tidimensional matching is needed and leak the intersection size, exposing sensitive information to privacy attacks.\r\nThis paper tackles the challenging and practical problem of multi- identifier private user profile matching for privacy-preserving ad measurement, a cornerstone of modern advertising analytics. We introduce a comprehensive cryptographic framework leveraging re- versed Oblivious Pseudorandom Functions (OPRF) and novel blind key rotation techniques to support secure matching across multiple identifiers. Our design prevents cross-identifier linkages and in- cludes a differentially private mechanism to obfuscate intersection sizes, mitigating risks such as membership inference attacks.\r\nWe present a concrete construction of our protocol that achieves both strong privacy guarantees and high efficiency. It scales to large datasets, offering a practical and scalable solution for privacy- centric applications like secure ad conversion tracking. By combin- ing rigorous cryptographic principles with differential privacy, our work addresses a critical need in the advertising industry, setting a new standard for privacy-preserving ad measurement frameworks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Jian Du"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Haohao Qian"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Shikun Zhang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Wen-jie Lu",
+            "orcid": "0009-0006-2512-5274"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Donghang Lu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Yongchuan Niu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Bo Jiang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Yongjun Zhao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "TikTok Inc"
+                }
+            ],
+            "fullName": "Qiang Yan"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-26T03:08:14Z"
+        }
+    ],
+    "keywords": [
+        "PSI"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1192.pdf",
+    "pid": "1192",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "PrivacyGo: Privacy-Preserving Ad Measurement with Multidimensional Intersection",
+    "year": 2025,
+    "repo": [
+        "https://github.com/google/private-join-and-compute",
+        "https://github.com/facebookresearch/Private-ID",
+        "https://github.com/emp-toolkit",
+        "https://github.com/Microsoft/SEAL",
+        "https://github.com/intel/hexl"
+    ]
+}
+,
+{
+    "abstract": "Key Blinding Signature Schemes allow to derive so-called\r\nblinded keys from public keys, which can be used to verify signatures\r\ncreated with the secret key. At the same time, neither the blinded keys\r\nnor their signatures disclose from which public key they were derived,\r\neffectively implementing pseudonyms for one\u2019s identity.\r\n\r\nIn search of conservative schemes, we deviate from the homomorphism-\r\nbased re-randomization approach in favor of a novel proof of knowledge-\r\nbased approach. To authenticate a message, a signer proves that they\r\nknow an original keypair and a valid way to commit to the corresponding\r\nverification key to derive a given blinded key. We provide a framework\r\nfor such constructions and indicate how MPC-friendly block ciphers and\r\none-way functions may be used for efficient instantiations. While the\r\ngeneral framework\u2019s security arguments are stated in the random oracle\r\nmodel, we show a natural instantiation approach whose security can be\r\nbased on collision-resistance and pseudorandomness instead. The result\r\nis the first standard model construction of key blinding.\r\n\r\nUsing our framework, we identify a shortcoming in the usual definition\r\nof unlinkability for key blinding signature schemes, which we rectify by\r\nconsidering an additional notion called targeted unlinkability.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Fraunhofer Institute for Applied and Integrated Security",
+                    "ror": "https://ror.org/03w0bbr97"
+                }
+            ],
+            "fullName": "Thomas Bellebaum"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-26T08:38:53Z"
+        }
+    ],
+    "keywords": [
+        "Key Blinding",
+        "Digital Signatures",
+        "Anonymity",
+        "Symmetric"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1193.pdf",
+    "pid": "1193",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Non-Homomorphic Key Blinding from Symmetric Primitives",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
