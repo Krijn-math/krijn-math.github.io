@@ -84481,4 +84481,1185 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "This paper introduces a protocol for verifiable encryption of values committed using Pedersen commitments. It enables a recipient to decrypt the hidden amount while proving its consistency with the original commitment, without revealing the value publicly. The construction combines symmetric encryption with zero-knowledge proofs and is made non-interactive via the Fiat-Shamir heuristic. The protocol is particularly useful in blockchain settings where confidential but verifiable value transfers are required.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Distributed Lab"
+                }
+            ],
+            "fullName": "Oleg Fomenko"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-26T10:39:02Z"
+        }
+    ],
+    "keywords": [
+        "Confidential assets",
+        "Verifiable encryption",
+        "Sigma-protocol",
+        "Pedersen commitment"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/1194.pdf",
+    "pid": "1194",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Private coins extension with verifiable encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Assume that the global density of multivariate map  over the commutative ring is the total number of its coefficients. In the case of finite commutative ring K with the multiplicative group  K* containing more than 2 elements we suggest multivariate public keys in n variables with the public rule of global density O(n) and degree O(1). Another public keys  use public rule of global density O(n) and degree O(n) together with the space of plaintexts (K*)^n and the space of ciphertext K^n . We consider examples of protocols of Noncommutative Cryptography implemented on the platform of  endomorphisms of which allow the con-version of mentioned above multivariate public keys into protocol based cryptosystems of El Gamal type. The cryptosystems and protocols are designed in terms of analogue of geometries of Chevalley groups over commutative rings  and their temporal versions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Royal Holloway University of London",
+                    "ror": "https://ror.org/04g2vpn86"
+                }
+            ],
+            "fullName": "Vasyl Ustimenko",
+            "orcid": "0000-0002-2138-2357"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-26T11:28:34Z"
+        }
+    ],
+    "keywords": [
+        "Symbolic Computation",
+        "Lie geometries",
+        "Noncommutative Cryptography",
+        "Multivariate public keys"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1195.pdf",
+    "pid": "1195",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "On symbolic computations and Post Quantum Cryptography with Lie Geometries.",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Private constrained PRFs are constrained PRFs where the constrained key hides information about the predicate circuit. Although there are many constructions and applications of PCPRF, its relationship to basic cryptographic primitives, such as one-way functions and public-key encryptions, has been unclear. For example, we don't know whether one-way functions imply PCPRFs for general predicates, nor do we know whether 1-key secure PCPRF for all polynomial-sized predicates imply public-key primitives such as public-key encryption and secret-key agreement.\r\n    \r\n    In this work, we prove the black-box separation between a 1-key secure PCPRF for any predicate and a secret-key agreement, which is the first black-box separation result about PCPRF. Specifically, we prove that there exists an oracle relative to which 1-key secure PCPRFs exist while secret-key agreement does not. Our proof is based on the simulation-based technique proposed by Impagliazzo and Rudich (STOC 89). The main technical challenge in generalizing the simulation-based technique to PCPRF is the issue of \\textit{unfaithfulness} of Eve's simulation to the real world because our oracle is more complicated than a random oracle. We introduce a new technique which we call the ``weighting\" technique and show how to leverage it to circumvent the issue of unfaithfulness in the proof framework of Impagliazzo and Rudich.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Mengda Bi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Chenxin Dai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Yaohua Ma"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-26T17:04:33Z"
+        }
+    ],
+    "keywords": [
+        "black box separations"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1196.pdf",
+    "pid": "1196",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Limits on the Power of Private Constrained PRFs",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Quantum copy-protection (Aaronson, CCC'09) is the problem of encoding a functionality/key into a quantum state to achieve an anti-piracy security notion that guarantees that the key cannot be split into two keys that both still work. Most works so far has focused on constructing copy-protection for specific functionalities. The only exceptions are the work of Aaronson, Liu, Liu, Zhandry, Zhang (CRYPTO'21) and Ananth and Behera (CRYPTO'24). The former constructs copy-protection for all functionalities in the classical oracle model and the latter constructs copy-protection for all circuits that can be punctured at a uniformly random point with negligible security, assuming a new unproven conjecture about simultaneous extraction from entangled quantum adversaries, on top of assuming subexponentially-secure indistinguishability obfuscation (iO) and hardness of Learning with Errors (LWE).\r\n\r\nIn this work, we show that the construction of Aaronson et al (CRYPTO'21), when the oracles are instantiated with iO, satisfies copy-protection security in the plain model for all cryptographically puncturable functionalities (instead of only puncturable circuits) with arbitrary success threshold (e.g. we get CPA-style security rather than unpredictability for encryption schemes), without any unproven conjectures, assuming only subexponentially secure iO and one-way functions (we do not assume LWE). Thus, our work resolves the five-year-old open question of Aaronson et al, and further, our work encompasses/supersedes and significantly improves upon all existing plain-model copy-protection results. \r\n\r\nSince puncturability has a long history of being studied in cryptography, our result immediately allows us to obtain copy-protection schemes for a large set of advanced functionalities for which no previous copy-protection scheme existed. Further, even for any functionality F that has not already been considered, through our result, constructing copy-protection for F essentially becomes a classical cryptographer's problem.\r\n\r\nGoing further, we show that our scheme also satisfies secure leasing (Ananth and La Placa, EUROCRYPT'21), unbounded/LOCC leakage-resilience and intrusion-detection security (Cakan, Goyal, Liu-Zhang, Ribeiro, TCC'24), giving a unified solution to the problem of quantum protection.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Alper \u00c7akan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Research"
+                },
+                {
+                    "name": "Carnegie Mellon University",
+                    "ror": "https://ror.org/05x2bcf33"
+                }
+            ],
+            "fullName": "Vipul Goyal"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-26T17:16:30Z"
+        }
+    ],
+    "keywords": [
+        "copy-protection",
+        "secure leasing"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1197.pdf",
+    "pid": "1197",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "How to Copy-Protect All Puncturable Functionalities Without Conjectures: A Unified Solution to Quantum Protection",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We evaluate the implementation aspects of Rijndael-256 using the ratified  RISC-V Vector Cryptography extension Zvkn. A positive finding is that Rijndael-256 can be implemented in constant time with the existing RISC-V ISA as the critical AES and fixed crossbar permutation instructions are in the DIEL (data-independent execution latency) set. Furthermore, simple tricks can be used to expand the functionality of key expansion instructions to cover the additional round constants required. However, due to the required additional byte shuffle in each round, Rijndael-256 will be significantly slower than AES-256 in terms of throughput. Without additional ISA modifications, the instruction count will be increased by the required switching of the  EEW (``effective element width'') parameter in each round between 8 bits (byte shuffle) and 32 bits (AES round instructions). Instruction counts for 1-kilobyte encryption and decryption with Rijndael-256 are factor $2.66\\times$ higher than with AES-256. The precise amount of throughput slowdown depends on the microarchitectural details of a particular RISC-V ISA hardware instantiation, but it may be substantial with some high-performance vector AES architectures due to the breakdown of AES pipelining and the relative slowness of crossbar permutation instructions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tampere University"
+                }
+            ],
+            "fullName": "Markku-Juhani O. Saarinen",
+            "orcid": "0000-0002-2555-235X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-30T06:56:01Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-26T18:46:42Z"
+        }
+    ],
+    "keywords": [
+        "Rijndael-256",
+        "RISC-V",
+        "Vector Cryptography",
+        "NIST"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "A comment submitted to NIST on June 25, 2025 in response to call https://csrc.nist.gov/news/2024/nist-proposes-to-standardize-wider-variant-of-aes",
+    "pdffile": "2025/1198.pdf",
+    "pid": "1198",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Brief Comments on Rijndael-256 and the Standard RISC-V Cryptography Extensions",
+    "year": 2025,
+    "repo": [
+        "https://github.com/mjosaarinen/rij256-rv",
+        "https://github.com/riscv/riscv-crypto/releases/download/v1.0.0/riscv-crypto-spec-vector.pdf",
+        "https://github.com/riscv/riscv-crypto/releases/download/v1.0.0/riscv-crypto-spec-vector.pdf",
+        "https://github.com/riscv/riscv-isa-manual/releases/download/20240411/unpriv-isa-asciidoc.pdf",
+        "https://github.com/riscv/riscv-isa-manual/releases/download/20240411/unpriv-isa-asciidoc.pdf"
+    ]
+}
+,
+{
+    "abstract": "Deep learning-based side-channel attack (DLSCA) has become the dominant paradigm for extracting sensitive information from hardware implementations due to its ability to learn discriminative features directly from raw side-channel traces. A common design choice in DLSCA involves embedding traces in Euclidean space, where the underlying geometry supports conventional objectives such as classification or contrastive learning. However, Euclidean space is fundamentally limited in capturing the multi-level hierarchical structure of side-channel traces, which often exhibit both coarse-grained clustering patterns (e.g., Hamming weight similarities) and fine-grained distinctions (e.g., instruction-level variations). These limitations adversely affect the discriminability and generalization of learned representations, particularly across diverse datasets and leakage models. In this work, we propose HypSCA, a dual-space representation learning method that embeds traces in hyperbolic space to exploit its natural ability to model hierarchical relationships through exponential volume growth. In contrast to existing approaches, HypSCA jointly combines hyperbolic structure modeling with local discriminative learning in Euclidean space, enabling the preservation of global hierarchies while enhancing fine-grained feature separation. Extensive experiments on multiple public datasets demonstrate that HypSCA achieves up to 51.6% improvement in attack performance over state-of-the-art DLSCA methods, consistently enhancing generalization across diverse datasets and leakage models.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "the School of Information Science and Technology,  \t\t\t\tSouthwest Jiaotong University, Chengdu"
+                }
+            ],
+            "fullName": "Kaibin Li",
+            "orcid": "0000-0001-9092-8627"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "the School of Information Science and Technology,  \t\t\t\tSouthwest Jiaotong University, Chengdu"
+                }
+            ],
+            "fullName": "Yihuai Liang",
+            "orcid": "0000-0002-6254-9969"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "the School of Information Science and Technology,  \t\t\t\tSouthwest Jiaotong University, Chengdu"
+                }
+            ],
+            "fullName": "Zhengchun Zhou",
+            "orcid": "0000-0002-0228-7119"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Computer Science, University of Technology Sydney, Australia"
+                }
+            ],
+            "fullName": "Shui Yu",
+            "orcid": "0000-0003-4485-6743"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-27T02:25:41Z"
+        }
+    ],
+    "keywords": [
+        "Side-channel attack",
+        "deep learning",
+        "hierarchical regularization",
+        "triplet loss",
+        "profiled attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1199.pdf",
+    "pid": "1199",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "HypSCA: A Hyperbolic Embedding Method for Enhanced Side-channel Attack",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The growing adoption of Large Language Models in privacy-sensitive domains necessitates secure inference mechanisms that preserve data confidentiality. Homomorphic encryption offers a promising pathway by enabling computation on encrypted inputs, yet existing approaches struggle to scale efficiently to full transformer models due to limitations in packing schemes, which must efficiently support a wide range of operations, including matrix multiplications, row-wise nonlinear operations, and self-attention. In this work, we present Tricycle, a framework for private transformer inference built on our novel packing scheme, called tricyclic encodings, which are designed to efficiently support these core operations. Tricyclic encodings are a generalization of bicyclic encodings, enabling privacy-preserving batch matrix multiplications with optimal multiplicative depth in order to facilitate parallelized multi-head self-attention. We optimize our matrix multiplications by incorporating Baby-Step Giant-Step optimizations to reduce ciphertext rotations and presenting new ciphertext-plaintext matrix multiplication techniques that relax prior limitations. A further contribution of our work is a lightweight and effective approach for stabilizing the softmax function via statistical max estimation. Our end-to-end implementation on a BERT-Tiny model shows that Tricycle achieves a \\(1.5 \\times\\) to \\(3 \\times\\) speedup over previous approaches, marking a step toward practical and scalable private LLM inference without sacrificing model fidelity.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                }
+            ],
+            "fullName": "Lawrence Lim",
+            "orcid": "0009-0006-9424-7849"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                }
+            ],
+            "fullName": "Vikas Kalagi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                }
+            ],
+            "fullName": "Divyakant Agrawal"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                }
+            ],
+            "fullName": "Amr El Abbadi"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-30T13:06:23Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-27T07:40:55Z"
+        }
+    ],
+    "keywords": [
+        "Private LLM Inference",
+        "Transformers",
+        "Homomorphic Encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1200.pdf",
+    "pid": "1200",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tricycle: Private Transformer Inference with Tricyclic Encodings",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1109/TDSC.2025.3579365",
+    "abstract": "Private Information Retrieval (PIR) allows a client to retrieve an entry from a database held by a server without leaking which entry is being requested. Symmetric PIR (SPIR) is a stronger variant of PIR with database privacy so that the client knows nothing about the database other than the retrieved entry.\r\n\r\nThis work studies SPIR in the batch setting (BatchSPIR), where the client wants to retrieve multiple entries. In particular, we focus on the case of bit entries, which has important real-world applications. We set up the connection between bit-entry information retrieval and set operation, and propose a black-box construction of BatchSPIR from Private Set Intersection (PSI). By applying an efficient PSI protocol with asymmetric set sizes, we obtain our BatchSPIR protocol named $\\mathsf{BitBatSPIR}$. We also introduce several optimizations for the underlying PSI. These optimizations improve the efficiency of our concrete BatchSPIR construction as well as the PSI protocol.\r\n\r\nWe implement $\\mathsf{BitBatSPIR}$ and compare the performance with the state-of-the-art PIR protocol in the batch setting. Our experimental results show that $\\mathsf{BitBatSPIR}$ not only achieves a stronger security guarantee (symmetric privacy) but also has a better performance for large databases, especially in the Wide Area Network (WAN) setting.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Zhongguancun Laboratory"
+                }
+            ],
+            "fullName": "Shuaishuai Li",
+            "orcid": "0000-0002-3982-4264"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)"
+                }
+            ],
+            "fullName": "Liqiang Peng",
+            "orcid": "0009-0008-4717-1604"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)"
+                }
+            ],
+            "fullName": "Weiran Liu",
+            "orcid": "0000-0002-1466-7418"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                }
+            ],
+            "fullName": "Cong Zhang",
+            "orcid": "0009-0000-5403-2866"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Alibaba Group (China)",
+                    "ror": "https://ror.org/00k642b80"
+                }
+            ],
+            "fullName": "Zhen Gu",
+            "orcid": "0000-0002-7067-492X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences"
+                },
+                {
+                    "name": "University of Chinese Academy of Sciences"
+                }
+            ],
+            "fullName": "Dongdai Lin",
+            "orcid": "0000-0002-3951-7889"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-27T09:25:51Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1201.pdf",
+    "pid": "1201",
+    "pubtype": {
+        "note": "Transactions on Dependable and Secure Computing (TDSC)",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "BitBatSPIR: Efficient Batch Symmetric Private Information Retrieval from PSI",
+    "year": 2025,
+    "repo": [
+        "https://github.com/microsoft/APSI",
+        "https://github.com/mhmughees/vectorized_batchpir"
+    ]
+}
+,
+{
+    "abstract": "The ongoing transition to post-quantum cryptography has led to a surge of research in side-channel countermeasures tailored to these schemes. A prominent method to prove security in the context of side-channel analysis is the utilization of the well-established t-probing model. However, recent studies by Hermelink et al. at CCS 2024 demonstrate a simple and practical attack on a provably secure implementation of the Fujisaki-Okamoto transform that raises concerns regarding the practical security of t-probing secure schemes.\r\n\r\nIn this paper, we present an unsupervised single-trace side-channel attack on a tenth order  masked implementation of fixed-weight polynomial sampling, which has also been proven to be secure in the t-probing model.  Both attacks reveal a mismatch between the correct, well-understood theory of the t-probing model and its practical application, since the security proofs are valid, yet the attacks still succeed at high noise levels.  Therefore, we take a closer look at the underlying causes and the assumptions that are made for transferring t-probing security to practice. In particular, we investigate the amount of noise required for this transfer. We find that, depending on the design decisions made, this can be very high and difficult to achieve.\r\n\r\nConsequently, we examine the factors impacting the required amount of noise and that should be considered for practically secure implementations.  In particular, non-uniformly distributed shares - a setting that is increasingly encountered in post-quantum cryptographic algorithms - could lead to an increased noise requirement, and thus it could reduce the security level of the masking scheme.  Our analysis then allows us to provide practical guidelines for implementation designers, thereby facilitating the development of practically secure designs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Dina Hesse",
+            "orcid": "0009-0005-7234-427X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Jakob Feldtkeller",
+            "orcid": "0000-0001-9797-1257"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Tim G\u00fcneysu",
+            "orcid": "0000-0002-3293-4989"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Max Planck Institute for Security and Privacy",
+                    "ror": "https://ror.org/00bj0r217"
+                }
+            ],
+            "fullName": "Julius Hermelink",
+            "orcid": "0000-0002-1649-4231"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Intel (United States)",
+                    "ror": "https://ror.org/01ek73717"
+                }
+            ],
+            "fullName": "Georg Land",
+            "orcid": "0000-0002-1533-3583"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "T\u00dcV Informationstechnik GmbH"
+                }
+            ],
+            "fullName": "Markus Krausz",
+            "orcid": "0000-0002-1362-423X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Jan Richter-Brockmann",
+            "orcid": "0000-0002-8454-4755"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-27T12:41:34Z"
+        }
+    ],
+    "keywords": [
+        "t-probing model",
+        "SCA",
+        "PQC",
+        "Masking",
+        "Mutual Information",
+        "Noise"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1202.pdf",
+    "pid": "1202",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "t-Probing (In-)Security - Pitfalls on Noise Assumptions",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "HiAE is the fastest AEAD solution on ARM chips to date, utilizing AES round functions while also setting a new performance benchmark on the latest x86 processors. In this paper, we employ algebraic techniques to investigate the security of HiAE. Our findings reveal that HiAE is vulnerable. Firstly, we employ the meet-in-the-middle technique and guess-and-determine technique to recover the state and derive a key-related equation resulting from two layers of AES round functions. Secondly, by adopting an algebraic approach to study the properties of the round function, we decompose the equation into byte-level equations for divide-and-conquer. Finally, we utilize the guess-and-determine technique to recover the key. Collectively, these techniques enable us to present the first full key-recovery attack on HiAE. Our attack achieves a data complexity of $2^{130}$ and a time complexity of approximately $2^{209}$, leveraging both encryption and decryption oracles with a success probability of 1. In a single-key and nonce-respecting scenario, the attack fully recovers the 256-bit key, breaking the claimed 256-bit security against key-recovery attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, Beijing, China"
+                }
+            ],
+            "fullName": "Xichao Hu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, Beijing, China"
+                }
+            ],
+            "fullName": "Lin Jiao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, Beijing, China"
+                }
+            ],
+            "fullName": "Dengguo Feng"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, Beijing, China"
+                }
+            ],
+            "fullName": "Yonglin Hao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Information Engineering University, Zhengzhou, China"
+                }
+            ],
+            "fullName": "Senpeng Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Key Laboratory of Cyberspace Security Defense, Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China; School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Yongqiang Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptology, Beijing, China"
+                }
+            ],
+            "fullName": "Xinxin Gong"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-27T13:02:38Z"
+        }
+    ],
+    "keywords": [
+        "HiAE",
+        "Algebraic attack",
+        "Meet-in-the-middle",
+        "Guess-and-determine"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1203.pdf",
+    "pid": "1203",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Breaking The Authenticated Encryption scheme HiAE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "At Eurocrypt 2003, Szydlo presented a search to distinguish reduction for the Lattice Isomorphism Problem (LIP) on the integer lattice $\\mathbb{Z}^n$. Here the search problem asks to find an isometry between $\\mathbb{Z}^n$ and an isomorphic lattice, while the distinguish variant asks to distinguish between a list of auxiliary lattices related to $\\mathbb{Z}^n$.\r\n\r\nIn this work we generalize Szydlo's search to distinguish reduction in two ways. Firstly, we generalize the reduction to any lattice isomorphic to $\\Gamma^n$, where $\\Gamma$ is a fixed base lattice. Secondly, we allow $\\Gamma$ to be a module lattice over any number field. Assuming the base lattice $\\Gamma$ and the number field $K$ are fixed, our reduction is polynomial in $n$.\r\n\r\nAs a special case we consider the module lattice $\\mathcal{O}_K^2$ used in the module-LIP based signature scheme HAWK, and we show that one can solve the search problem, leading to a full key recovery, with less than $2d^2$ distinguishing calls on two lattices each, where $d$ is the degree of the power-of-two cyclotomic number field and $\\mathcal{O}_K$  its ring of integers.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Centrum Wiskunde & Informatica",
+                    "ror": "https://ror.org/00x7ekv49"
+                }
+            ],
+            "fullName": "Dani\u00ebl van Gent",
+            "orcid": "0000-0001-9600-5954"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "PQShield",
+                    "ror": "https://ror.org/03sdv7269"
+                }
+            ],
+            "fullName": "Wessel van Woerden",
+            "orcid": "0000-0002-5565-4015"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-30T09:00:36Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-27T13:24:18Z"
+        }
+    ],
+    "keywords": [
+        "lattice-based cryptography",
+        "lattice isomorphism problem",
+        "module lattices",
+        "search to decision reduction"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1204.pdf",
+    "pid": "1204",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A search to distinguish reduction for the isomorphism problem on direct sum lattices",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "A t-out-of-n threshold ring signature allows $t$ parties to jointly sign a message on behalf of $n$ parties without revealing the identities of the signers. In this paper, we introduce a new generic construction for threshold ring signature, called GCTRS, which can be built on top of a selection on identification schemes, commitment schemes and a new primitive called t-out-of-n proof protocol which is a special type of zero-knowledge proof. In general, our design enables a group of $t$ signers to first generate an aggregated signature by interacting with each other; then they are able to compute a t-out-of-n proof to convince the verifier that the aggregated signature is indeed produced by $t$ individuals among a particular set. The signature is succinct, as it contains only one aggregated signature and one proof in the final signature. We define all the properties required for the building blocks to capture the security of the GCTRS and provide a detailed security proof. Furthermore, we propose two lattice-based instantiations for the GCTRS, named LTRS and CTRS, respectively. Notably, the CTRS scheme is the first scheme that has a logarithmic signature size relative to the ring size. Additionally, during the instantiation process, we construct two t-out-of-n proof protocols, which may be of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Naval University of Engineering"
+                }
+            ],
+            "fullName": "Hao Lin"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Mingqiang Wang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Telecom Paris, Institut Polytechnique de Paris"
+                }
+            ],
+            "fullName": "Weiqiang Wen",
+            "orcid": "0000-0001-5272-2572"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University"
+                }
+            ],
+            "fullName": "Shi-Feng Sun"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Delft University of Technology"
+                }
+            ],
+            "fullName": "Kaitai Liang"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-27T14:00:19Z"
+        }
+    ],
+    "keywords": [
+        "threshold ring signature",
+        "t-out-of-n proof",
+        "zero-knowledge proof",
+        "lattice-based cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/1205.pdf",
+    "pid": "1205",
+    "pubtype": {
+        "note": "Designs, Codes and Cryptography",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Generic Construction of Threshold Ring Signatures and Lattice-based Instantiations",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We consider perfectly secure MPC for $n$ players and $t$ malicious corruptions. We ask whether requiring only security with abort (rather than guaranteed output delivery, GOD) can help to achieve protocols with better resilience, communication complexity or round complexity. We show that for resilience and communication complexity, abort security does not help, one still needs $3t< n$ for a synchronous network and $4t< n$ in the asynchronous case. And, in both cases, a communication overhead of $O(n)$ bits per gate is necessary. \r\n\r\nWhen $O(n)$ overhead is inevitable, one can explore if this overhead can be pushed to the preprocessing phase and the online phase can be achieved with $O(1)$ overhead. This result was recently achieved in the synchronous setting, in fact, with GOD guarantee. We show this same result in the asynchronous setting. This was previously open since the main standard approach to getting constant overhead in a synchronous on-line phase fails in the asynchronous setting. In particular, this shows that we do not need to settle for abort security to get an asynchronous perfectly secure protocol with overheads $O(n)$ and $O(1)$.\r\n\r\nLastly, in the synchronous setting, we show that perfect secure MPC with abort requires only 2 rounds, in contrast to protocols with GOD that require 4 rounds.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Ivan Damg\u00e5rd"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Science Bangalore",
+                    "ror": "https://ror.org/04dese585"
+                }
+            ],
+            "fullName": "Shravani Patil"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Science Bangalore",
+                    "ror": "https://ror.org/04dese585"
+                }
+            ],
+            "fullName": "Arpita Patra"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Lawrence Roy"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-27T14:08:24Z"
+        }
+    ],
+    "keywords": [
+        "Multiparty Computation",
+        "Perfect Security",
+        "Lower Bounds",
+        "Communication Complexity",
+        "Round Complexity"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1206.pdf",
+    "pid": "1206",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "New Upper and Lower Bounds for Perfectly Secure MPC",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Quantum copy-protection is a foundational notion in quantum cryptography that leverages the governing principles of quantum mechanics to tackle the problem of software anti-piracy. Despite progress in recent years, precisely characterizing the class of functionalities that can be copy-protected is still not well understood.\r\nTwo recent works, by [Coladangelo and Gunn, STOC 2024] and [Ananth and Behera, CRYPTO 2024, showed that puncturable functionalities can be copy-protected. Both works have significant caveats with regard to the underlying cryptographic assumptions and additionally restrict the output length of the functionalities to be copy-protected. In this work, we make progress towards simultaneously addressing both caveats. We show the following:\r\n- Revisiting Unclonable Puncturable Obfuscation (UPO): We revisit the notion of UPO introduced by [Ananth and Behera, CRYPTO 2024]. We present a new approach to construct UPO and a variant of UPO, called independent-secure UPO. Unlike UPO, we show how to base the latter notion on well-studied assumptions.\r\n- Copy-Protection from Independent-secure UPO: Assuming independent-secure UPO, we show that any m-bit, for m \u2265 2, puncturable functionality can be copy-protected.\r\n- Copy-Protection from UPO: Assuming UPO, we show that any 1-bit puncturable functionality can be copy-protected. The security of copy-protection holds against identical challenge distributions.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Santa Barbara",
+                    "ror": "https://ror.org/02t274463"
+                }
+            ],
+            "fullName": "Prabhanjan Ananth"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ben-Gurion University of the Negev",
+                    "ror": "https://ror.org/05tkyf982"
+                }
+            ],
+            "fullName": "Amit Behera"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University",
+                    "ror": "https://ror.org/03cve4549"
+                }
+            ],
+            "fullName": "Zikuan Huang"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-27T14:12:46Z"
+        }
+    ],
+    "keywords": [
+        "quantum copy-protection",
+        "puncturable functionalities",
+        "unclonable cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1207.pdf",
+    "pid": "1207",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Copy-Protection from UPO, Revisited",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.1145/3719027.3744815",
+    "abstract": "Git services such as GitHub, have been widely used to manage projects and enable collaborations among multiple entities. Just as in messaging and cloud storage, where end-to-end security has been gaining increased attention, such a level of security is also demanded for Git services. Content in the repositories (and the data/code supply-chain facilitated by Git services) could be highly valuable, whereas the threat of system breaches has become routine nowadays. However, existing studies of Git security to date (mostly open source projects) suffer in two ways: they provide only very weak security, and they have a large overhead.\r\n\r\nIn this paper, we initiate the needed study of efficient end-to-end encrypted Git services. Specifically, we formally define the syntax and critical security properties, and then propose two constructions that provably meet those properties. Moreover, our constructions have the important property of platform-compatibility: They are compatible with current Git servers and reserve all basic Git operations, thus can be directly tested and deployed on top of existing platforms. Furthermore, the overhead we achieve is only proportional to the actual difference caused by each edit, instead of the whole file (or even the whole repository) as is the case with existing works. We implemented both constructions and tested them directly on several public GitHub repositories. Our evaluations show (1) the effectiveness of platform-compatibility, and (2) the significant efficiency improvement we got (while provably providing much stronger security than prior ad-hoc treatments).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sydney",
+                    "ror": "https://ror.org/0384j8v12"
+                }
+            ],
+            "fullName": "Ya-Nan Li",
+            "orcid": "0000-0002-1413-7273"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Electronic Science and Technology of China",
+                    "ror": "https://ror.org/04qr3zq92"
+                }
+            ],
+            "fullName": "Yaqing Song",
+            "orcid": "0009-0004-8966-2779"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Sydney",
+                    "ror": "https://ror.org/0384j8v12"
+                }
+            ],
+            "fullName": "Qiang Tang",
+            "orcid": "0000-0003-1113-6352"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Google (United States)",
+                    "ror": "https://ror.org/00njsd438"
+                },
+                {
+                    "name": "Columbia University",
+                    "ror": "https://ror.org/00hj8s172"
+                }
+            ],
+            "fullName": "Moti Yung",
+            "orcid": "0000-0003-0848-0873"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-27T22:11:26Z"
+        }
+    ],
+    "keywords": [
+        "Secure cloud storage",
+        "End-to-End security",
+        "Version control systems"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1208.pdf",
+    "pid": "1208",
+    "pubtype": {
+        "note": "CCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "End-to-End Encrypted Git Services",
+    "year": 2025,
+    "repo": [
+        "https://github.com/sindresorhus/awesome",
+        "https://github.com/AGWA/git-crypt",
+        "https://github.com/AGWA/git-crypt",
+        "https://spwhitton.name/tech/code/git-remote-gcrypt",
+        "https://spwhitton.name/tech/code/git-remote-gcrypt",
+        "https://github.com/twbs/bootstrap",
+        "https://github.com/google/diff-match-patch",
+        "https://docs.github.com/en/enterprise-cloud@latest/authentication/managing-commit-signature-verification/about-commit-signature-verification",
+        "https://docs.github.com/en/enterprise-cloud@latest/authentication/managing-commit-signature-verification/about-commit-signature-verification",
+        "https://docs.github.com/en/enterprise-cloud@latest/authentication/managing-commit-signature-verification/about-commit-signature-verification",
+        "https://docs.gitea.com/administration/signing",
+        "https://docs.gitea.com/administration/signing",
+        "https://github.com/EbookFoundation/free-programming-books",
+        "https://github.com/EbookFoundation/free-programming-books",
+        "https://github.com/freeCodeCamp/freeCodeCamp",
+        "https://docs.gitlab.com/ee/user/project/repository/signed_commits/",
+        "https://docs.gitlab.com/ee/user/project/repository/signed_commits/",
+        "https://github.com/facebook/react",
+        "https://github.com/sobolevn/git-secret"
+    ]
+}
+,
+{
+    "abstract": "Collaborative graph processing refers to the joint analysis of inter-connected graphs held by multiple graph owners. To honor data privacy and support various graph processing algorithms, existing approaches employ secure multi-party computation (MPC) protocols to express the vertex-centric abstraction. Yet, due to certain computation-intensive cryptography constructions, state-of-the-art (SOTA) approaches are asymptotically suboptimal, imposing significant overheads in terms of computation and communication. In this paper, we present RingSG, the first system to attain optimal communication/computation complexity within the MPC-based vertex-centric abstraction for collaborative graph processing. This optimal complexity is attributed to Ring-ScatterGather, a novel computation paradigm that can avoid exceedingly expensive cryptography operations (e.g., oblivious sort), and simultaneously ensure the overall workload can be optimally decomposed into parallelizable and mutually exclusive MPC tasks. Within Ring-ScatterGather, RingSG improves the concrete runtime efficiency by incorporating 3-party secure computation via share conversion, and optimizing the most cost-heavy part using a novel oblivious group aggregation protocol. Finally, unlike prior approaches, we instantiate RingSG into two end-to-end applications to effectively obtain application-specific results from the protocol outputs in a privacy-preserving manner. We developed a prototype of RingSG and extensively evaluated it across various graph collaboration settings, including different graph sizes, numbers of parties, and average vertex degrees. The results show RingSG reduces the system running time of SOTA approaches by up to 15.34\u00d7 and per-party communication by up to 10.36\u00d7. Notably, RingSG excels in processing sparse global graphs collectively held by more parties, consistent with our theoretical cost analysis.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                }
+            ],
+            "fullName": "Zhenhua Zou",
+            "orcid": "0009-0003-1681-3786"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                },
+                {
+                    "name": "State Key Laboratory of Internet Architecture"
+                }
+            ],
+            "fullName": "Zhuotao Liu",
+            "orcid": "0000-0002-7532-0434"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Beijing Smartchip Microelectronics Technology Co., Ltd."
+                }
+            ],
+            "fullName": "Jinyong Shan",
+            "orcid": "0000-0001-6237-986X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                },
+                {
+                    "name": "State Key Laboratory of Internet Architecture"
+                }
+            ],
+            "fullName": "Qi Li",
+            "orcid": "0000-0001-8776-8730"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                },
+                {
+                    "name": "State Key Laboratory of Internet Architecture"
+                }
+            ],
+            "fullName": "Ke Xu",
+            "orcid": "0000-0003-2587-8517"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Tsinghua University"
+                },
+                {
+                    "name": "State Key Laboratory of Internet Architecture"
+                }
+            ],
+            "fullName": "Mingwei Xu",
+            "orcid": "0000-0002-4847-4585"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-06-30T12:34:43Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-28T03:25:17Z"
+        }
+    ],
+    "keywords": [
+        "Collaborative Graph Processing",
+        "Secure Multi-party Computation",
+        "Vertex-Centric Computation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1209.pdf",
+    "pid": "1209",
+    "pubtype": {
+        "note": "ACM CCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MINOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "RingSG: Optimal Secure Vertex-Centric Computation for Collaborative Graph Processing",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
