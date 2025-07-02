@@ -1,3 +1,4 @@
+klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_week;;;https://github.com/KLPT2/KLPT2
 computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_week;;;https://github.com/fffmath/AsymptoticBounds
 engel p-adic supersingular isogeny-based cryptography over laurent series;;;ilias cherkaoui, ciaran clarke, indrakshi dey;;;2025/1178;;;last_month;;;none
 experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_month;;;none
@@ -38,7 +39,6 @@ radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;
 pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_year;;;https://github.com/pegasis4d
 constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_year;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
 a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_year;;;none
-klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_year;;;https://github.com/KLPT2/KLPT2
 poké: a compact and efficient pke from higher-dimensional isogenies;;;andrea basso, luciano maino;;;2024/624;;;last_year;;;https://github.com/andreavico/POKE-PKE
 unconditional foundations for supersingular isogeny-based cryptography;;;arthur herlédan le merdy, benjamin wesolowski;;;2025/271;;;last_year;;;none
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_year;;;https://gitlab.inria.fr/nsarkis/half-diff-add
@@ -78,7 +78,7 @@ foldable, recursive proofs of isogeny computation with reduced time complexity;;
 erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;last_year;;;https://github.com/giacomoborin/RingSQISign-poc
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_year;;;https://github.com/Breaking-SIDH/direct-attack
 a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;last_year;;;https://github.com/defeo/ss-isogeny-software
-climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;last_year;;;none
+climbing and descending tall volcanos;;;steven galbraith;;;2024/924;;;other;;;none
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;other;;;none
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;other;;;none
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;other;;;none
