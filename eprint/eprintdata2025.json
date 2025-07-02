@@ -85662,4 +85662,145 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "The Polynomial Learning With Errors problem (PLWE) serves as the background of two of the three cryptosystems standardized in August 2024 by the National Institute of Standards and Technology to replace non-quantum resistant current primitives like those based on RSA, Diffie-Hellman or its elliptic curve analogue. Although PLWE is highly believed to be quantum resistant, this fact has not yet been established, contrariwise to other post-quantum proposals like multivariate and some code based ones. Moreover, several vulnerabilities have been encountered for a number of specific instances. In a search for more flexibility, it becomes fully relevant to study the robustness of PLWE based on other polynomials, not necessarily cyclotomic. In 2015, Elias et al found a good number of attacks based on different features of the roots of the polynomial. In the present work we present an overview of the approximations made against PLWE derived from this and subsequent works, along with several new attacks which refine those by Elias et al. exploiting the order of the trace of roots over finite extensions of the finite field under the three scenarios laid out by Elias et al., allowing to generalize the setting in which the attacks can be carried out.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Universidad de Alcal\u00e1",
+                    "ror": "https://ror.org/04pmn0e78"
+                }
+            ],
+            "fullName": "Iv\u00e1n Blanco Chac\u00f3n",
+            "orcid": "0000-0002-4666-019X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Universidad de Alcal\u00e1",
+                    "ror": "https://ror.org/04pmn0e78"
+                }
+            ],
+            "fullName": "Ra\u00fal Dur\u00e1n D\u00edaz",
+            "orcid": "0000-0001-6217-4768"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Complutense University of Madrid",
+                    "ror": "https://ror.org/02p0gd045"
+                },
+                {
+                    "name": "Indra Sistemas de Comunicaciones Seguras",
+                    "ror": "https://ror.org/00vpq6g39"
+                }
+            ],
+            "fullName": "Rodrigo Mart\u00edn Sanchez-Ledesma",
+            "orcid": "0009-0001-1845-2959"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-28T11:10:00Z"
+        }
+    ],
+    "keywords": [
+        "PLWE",
+        "Number Theory",
+        "Algebraic roots",
+        "Trace-based Cryptanalysis"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1210.pdf",
+    "pid": "1210",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "A Generalized Approach to Root-based Attacks against PLWE",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "The use of biometric-based security protocols is on the steep rise. As\r\nbiometrics become more popular, we witness more attacks. For example, recent\r\nBrutePrint/InfinityGauntlet attacks showed how to brute-force fingerprints\r\nstored on an Android phone in about 40 minutes. The attacks are possible because biometrics, like passwords, do not have high entropy. But unlike passwords, brute-force attacks are much more damaging for biometrics, because one cannot easily change biometrics in case of compromise. In this work, we propose a novel provably secure Brute-Force Resistant Biometrics (BFRB) protocol for biometric-based authentication and key reconstruction that protects against brute-force attacks even when the server storing biometric-related data is compromised. Our protocol utilizes a verifiable partially oblivious pseudorandom function, an authenticated encryption scheme, a pseudorandom function, and a hash. We formally define security for a BFRB protocol and reduce the security of our protocol to the security of the building blocks. We implement the protocol and study its performance for the ND-0405 iris dataset.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Alexandra Boldyreva",
+            "orcid": "0009-0000-7019-884X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Georgia Institute of Technology",
+                    "ror": "https://ror.org/01zkghx44"
+                }
+            ],
+            "fullName": "Deep Inder Mohan",
+            "orcid": "0000-0001-9370-3060"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Eindhoven University of Technology",
+                    "ror": "https://ror.org/02c2kyt77"
+                }
+            ],
+            "fullName": "Tianxin Tang",
+            "orcid": "0000-0003-2179-6709"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-28T15:19:24Z"
+        }
+    ],
+    "keywords": [
+        "biometrics",
+        "brute-force resistance",
+        "authentication",
+        "key reconstruction",
+        "OPRF"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1211.pdf",
+    "pid": "1211",
+    "pubtype": {
+        "note": "ACM CCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "May the Force $\\textit{not}$ Be with you: Brute-Force Resistant Biometric Authentication and Key Reconstruction",
+    "year": 2025,
+    "repo": [
+        "https://github.com/facebook/voprf",
+        "https://github.com/RustCrypto/AEADs",
+        "https://github.com/deep-inder/BFRB"
+    ]
+}
 ]
