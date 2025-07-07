@@ -85803,4 +85803,935 @@
         "https://github.com/deep-inder/BFRB"
     ]
 }
+,
+{
+    "abstract": "Speedrunning is a competition that emerged from communities of early video\r\ngames such as Doom (1993). Speedrunners try to finish a game in minimal\r\ntime. Provably verifying the authenticity of submitted speedruns is an open\r\nproblem. Traditionally, best-effort speedrun verification is conducted by on-site\r\nhuman observers, forensic audio analysis, or a rigorous mathematical analysis\r\nof the game mechanics1. Such methods are tedious, fallible, and, perhaps worst\r\nof all, not cryptographic. Motivated by naivety and the Dunning-Kruger effect,\r\nwe attempt to build a system that cryptographically proves the authenticity of\r\nspeedruns. This paper describes our attempted solutions and ways to circumvent\r\nthem. Through a narration of our failures, we attempt to demonstrate the difficulty\r\nof authenticating live and interactive human input in untrusted environments, as\r\nwell as the limits of signature schemes, game integrity, and provable play.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "City College of New York",
+                    "ror": "https://ror.org/00wmhkr98"
+                }
+            ],
+            "fullName": "Hayder Tirmazi",
+            "orcid": "0009-0008-9360-9662"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T00:12:10Z"
+        }
+    ],
+    "keywords": [
+        "cryptography",
+        "speedrunning",
+        "video games",
+        "provable security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1212.pdf",
+    "pid": "1212",
+    "pubtype": {
+        "note": "CFAIL 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "All Proof of Work But No Proof of Play",
+    "year": 2025,
+    "repo": [
+        "https://github.com/cheat-engine/cheat-engine",
+        "https://github.com/lilyfarm/lilypond"
+    ]
+}
+,
+{
+    "abstract": "We introduce a novel Public Key Encryption with Equality Test supporting Flexible Authorization scheme offering User-Level, Ciphertext-Level, and User-Specific-Ciphertext-Level authorizations. Notably, our construction achieves security under the Decisional Diffie-Hellman assumption with a tight reduction, whereas the existing works are either not tightly secure or rely heavily on the random oracles. By relying solely on the standard DDH assumption, our scheme offers practical implementation without specialized cryptographic structures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "National Chengchi University",
+                    "ror": "https://ror.org/03rqk8h36"
+                }
+            ],
+            "fullName": "Yi-Fan Tseng",
+            "orcid": "0000-0001-6948-2405"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Chengchi University",
+                    "ror": "https://ror.org/03rqk8h36"
+                }
+            ],
+            "fullName": "Yi-Jiin Lu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Chengchi University",
+                    "ror": "https://ror.org/03rqk8h36"
+                }
+            ],
+            "fullName": "Tien-Lin Tsai"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "National Central University",
+                    "ror": "https://ror.org/00944ve71"
+                }
+            ],
+            "fullName": "Zi-Yuan Liu"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T04:17:26Z"
+        }
+    ],
+    "keywords": [
+        "Public-Key Encryption with Equality Test",
+        "Flexible Authorization",
+        "Standard Model",
+        "Tight Security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike",
+        "name": "CC BY-NC-SA",
+        "reference": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "note": "It is the full version of the paper accepted by AsiaJCIS.",
+    "pdffile": "2025/1213.pdf",
+    "pid": "1213",
+    "pubtype": {
+        "note": "AsiaJCIS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Tightly Secure Public-Key Encryption with Equality Test Supporting Flexible Authorization in the Standard Model",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Zero-knowledge succinct non-interactive arguments (zkSNARKs) are notorious for their large prover space requirements, which almost prohibits their use for really large instances. Space-efficient zkSNARKs aim to address this by limiting the prover space usage, without critical sacrifices to its runtime. In this work, we introduce Hobbit, the only existing space-efficient zkSNARK that achieves optimal prover time $O(|C|)$ for an arithmetic circuit $C$. At the same time, Hobbit is the first transparent and plausibly post-quantum secure construction of its kind. Moreover, our experimental evaluation shows that Hobbit outperforms all prior general-purpose space-efficient zkSNARKs in the literature across four different applications (arbitrary arithmetic circuits,  inference of pruned Multi-Layer Perceptron,  batch AES128 evaluation, and select-and-aggregate SQL query) by $\\times$8-$\\times$$56$ in terms or prover time while requiring up to $\\times$23 less total space.\r\n\r\nAt a technical level, we introduce two new building blocks that may be of independent interest: (i) the first sumcheck protocol for products of polynomials with optimal prover time in the streaming setting, and (ii) a novel multi-linear plausibly post-quantum polynomial commitment that outperforms all prior works in prover time (and can be tuned to work in a space-efficient manner). We build Hobbit by combining the above with a modified version of HyperPlonk, providing an explicit routine to stream access to the circuit evaluation.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Christodoulos Pappas",
+            "orcid": "0009-0003-5949-3620"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Hong Kong University of Science and Technology",
+                    "ror": "https://ror.org/00q4vv597"
+                }
+            ],
+            "fullName": "Dimitrios Papadopoulos",
+            "orcid": "0000-0003-2621-3015"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T05:47:56Z"
+        }
+    ],
+    "keywords": [
+        "zkSNARKs",
+        "Space-Efficient zkSNARKs",
+        "Zero-Knowledge"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1214.pdf",
+    "pid": "1214",
+    "pubtype": {
+        "note": "USENIX Security 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "MAJOR"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Hobbit: Space-Efficient zkSNARK with Optimal Prover Time",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.62056/ae89n59p1",
+    "abstract": "Searchable symmetric encryption (SSE) enables query execution directly over sym-\r\nmetrically encrypted databases. To support realistic query executions over encrypted\r\ndocument collections, one needs SSE schemes capable of supporting both conjunctive\r\nand disjunctive keyword queries. Unfortunately, existing solutions are either practi-\r\ncally inefficient (incur large storage overheads and/or high query processing latency)\r\nor are quantum-unsafe.\r\nIn this paper, we present the first practically efficient SSE scheme with fast con-\r\njunctive and disjunctive keyword searches, compact storage, and security based on the\r\n(plausible) quantum-hardness of well-studied lattice-based assumptions. We present\r\nNTRU-OQXT \u2013 a highly compact NTRU lattice-based conjunctive SSE scheme that\r\noutperforms all existing conjunctive SSE schemes in terms of search latency. We then\r\npresent an extension of NTRU-OQXT that additionally supports disjunctive queries,\r\nwe call it NTRU-TWINSSE. Technically, both schemes rely on a novel oblivious search\r\nprotocol based on highly optimized Fast-Fourier trapdoor sampling algorithms over\r\nNTRU lattices. While such techniques have been used to design other cryptographic\r\nprimitives (such as digital signatures), they have not been applied before in the context\r\nof SSE.\r\nWe present prototype implementations of both schemes, and experimentally val-\r\nidate their practical performance over a large real-world dataset. Our experiments\r\ndemonstrate that NTRU-OQXT achieves 2\u00d7 faster conjunctive keyword searches as\r\ncompared to all other conjunctive SSE schemes (including the best quantum-unsafe\r\nconjunctive SSE schemes), and substantially outperforms many of these schemes in\r\nterms of storage requirements. These efficiency benefits also translate to NTRU-\r\nTWINSSE, which is practically competitive with the best quantum-unsafe SSE schemes\r\ncapable of supporting both conjunctive and disjunctive queries.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Debadrita Talapatra"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IBM Research India"
+                }
+            ],
+            "fullName": "Sikhar Patranabis"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Debdeep Mukhopadhyay"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T06:20:25Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1215.pdf",
+    "pid": "1215",
+    "pubtype": {
+        "pubtype": "CIC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Highly Scalable Searchable Symmetric Encryption for Boolean Queries from NTRU Lattice Trapdoors",
+    "year": 2025,
+    "repo": [
+        "https://github.com/debadrita05/NTRU-OQXT.git"
+    ]
+}
+,
+{
+    "abstract": "Prior research on ensuring trust in delegated computation through lattice-based zero-knowledge proofs mostly rely on Learning-With-Errors (LWE) assumption. In this work, we propose a zero-knowledge proof of knowledge using the Ring Learning with Rounding (RLWR) assumption for an interesting and useful class of statements: linear relations on polynomials. We begin by proposing, to the best of our knowledge, the first efficient commitment scheme in literature based on the hardness of RLWR assumption. We establish two properties on RLWR that aid in the construction of our commitments: (i) closure under addition with double rounding, and (ii) closure under multiplication with a short polynomial. Building upon our RLWR commitment scheme, we consequently design a RLWR based $\\Sigma_2$ protocol for proving knowledge of a single committed message under linear relations with public polynomials.\r\n\r\nAs an use-case of our proposed $\\Sigma_2$ protocol, we showcase a construction of a quantum-safe Searchable Symmetric Encryption (SSE) scheme by plugging a prior LWR based SSE scheme from (EuroS&P 2023) with our $\\Sigma_2$ protocol. Concretely, using our $\\Sigma_2$ protocol for linear relations, we prove the correctness of an encrypted search result in a zero-knowledge manner. We implement our verifiable SSE framework and show that the overhead of an extra verification round is negligible ($0.0023$ seconds) and retains the asymptotic query execution time complexity of the original SSE scheme.\r\n\r\nOur work establishes results on zero-knowledge proof systems that can be of independent interest. By shifting the setting from RLWE to RLWR, we gain significant (i) efficiency improvements in terms of communication complexity by $O(M)$ (since some prior works on RLWE require rejection sampling by a factor of $M$), as well as (ii) very short proof size ($8.4$ KB) and tighter parameters (since RLWR does not explicitly manipulate error polynomials like RLWE).",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Debadrita Talapatra"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Nimish Mishra"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Institute of Technology Kharagpur",
+                    "ror": "https://ror.org/03w5sq511"
+                }
+            ],
+            "fullName": "Debdeep Mukhopadhyay"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T06:34:46Z"
+        }
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1216.pdf",
+    "pid": "1216",
+    "pubtype": {
+        "note": "ACM ASIACCS 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Ring-LWR based Commitments and ZK-PoKs with Application to Verifiable Quantum-Safe Searchable Symmetric Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "DOI": "10.46586/tches.v2025.i3.437-469",
+    "abstract": "Authenticated encryption (AE) is a fundamental tool in today's secure communication. Numerous designs have been proposed, including well-known standards such as GCM. While their performance for long inputs is excellent, that for short inputs is often problematic due to high overhead in computation, showing a gap between the real need for IoT-like protocols where packets are often very short. Existing dedicated short-input AEs are very scarce, the classical Encode-then-encipher (Bellare and Rogaway, Asiacrypt 2000) and Manx (Adomnic\\u{a}i et al., CT-RSA 2023), using up to two block cipher calls. They have superior performance for (very) short inputs, however, security is up to $n/2$ bits, where $n$ is the block size of the underlying block cipher.  \r\n    This paper proposes a new family of short-input AEs, dubbed Cymric, which ensures beyond-birthday-bound (BBB) security. It supports a wider range of input space than EtE and Manx with the help of one additional block cipher call (thus three calls). In terms of the number of block cipher calls, Cymric is the known minimum construction of BBB-secure AEs, and we also prove this is indeed minimal by presenting an impossibility result on BBB-secure AE with two calls. Finally, we show a comprehensive benchmark on microcontrollers to show performance advantage over existing schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Independent Researcher, Paris, France"
+                }
+            ],
+            "fullName": "Alexandre Adomnic\u0103i"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DGIST, Daegu, Korea"
+                }
+            ],
+            "fullName": "Wonseok Choi"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "DESILO Inc., Seoul, Korea"
+                }
+            ],
+            "fullName": "Yeongmin Lee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NEC, Kawasaki, Japan"
+                }
+            ],
+            "fullName": "Kazuhiko Minematsu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Mitsubishi Electric Corporation, Kanagawa, Japan"
+                }
+            ],
+            "fullName": "Yusuke Naito"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T06:39:02Z"
+        }
+    ],
+    "keywords": [
+        "Authenticated Encryption",
+        "Short input",
+        "Beyond birthday bound security"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1217.pdf",
+    "pid": "1217",
+    "pubtype": {
+        "pubtype": "TCHES",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Cymric: Short-tailed but Mighty",
+    "year": 2025,
+    "repo": [
+        "https://github.com/aadomn/cymric",
+        "https://github.com/XKCP/XKCP",
+        "https://github.com/rweather/lwc-finalists",
+        "https://github.com/ascon/ascon-c/tree/main/crypto_aead/asconaead128/avr",
+        "https://github.com/rweather/lwc-finalists/tree/master/src/individual/Xoodyak",
+        "https://github.com/rweather/lwc-finalists/tree/master/src/individual/Romulus",
+        "https://github.com/rweather/lwc-finalists/tree/master/src/individual/PHOTON-Beetle",
+        "https://github.com/aadomn/gift/blob/master/crypto_aead/giftcofb128v1/avr_fixsliced_medium/giftb128.S",
+        "https://github.com/ascon/ascon-c/tree/main/crypto_aead/asconaead128/bi32_armv7m_small",
+        "https://github.com/XKCP/XKCP/tree/master/lib/low/Xoodoo/ARM",
+        "https://github.com/aadomn/skinny/tree/master/crypto_aead/romulus-n/armv7m",
+        "https://github.com/rweather/lwc-finalists/tree/master/src/individual/PHOTON-Beetle",
+        "https://github.com/aadomn/gift/tree/master/crypto_aead/giftcofb128v1/armcortexm_compact"
+    ]
+}
+,
+{
+    "abstract": "Homomorphic encryption (HE) schemes have gained significant popularity in modern privacy-preserving applications across various domains. While research on HE constructions based on learning with errors (LWE) and ring-LWE has received major attention from both cryptographers and software-hardware designers alike, their module-LWE-based counterpart has remained comparatively under-explored in the literature. A recent work provides a module-LWE-based instantiation (MLWE-HE) of the Cheon-Kim-Kim-Song (CKKS) scheme and showcases several of its advantages such as parameter flexibility and improved parallelism. However, a primary limitation of this construction is the quadratic growth in the size of the relinearization keys. Our contribution is two-pronged: first, we present a new relinearization key-generation technique that addresses the issue of quadratic key size expansion by reducing it to linear growth. Second, we extend the application of MLWE-HE in a multi-group homomorphic encryption (MGHE) framework, thereby generalizing the favorable properties of the single-keyed HE to a multi-keyed setting as well as investigating additional flexibility attributes of the MGHE framework.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Anisha Mukherjee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Graz University of Technology",
+                    "ror": "https://ror.org/00d7xrm67"
+                }
+            ],
+            "fullName": "Sujoy Sinha Roy"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T06:41:12Z"
+        }
+    ],
+    "keywords": [
+        "Homomorphic encryption",
+        "module lattices",
+        "multi-party homomorphic encryption",
+        "multi-key homomorphic encryption"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1218.pdf",
+    "pid": "1218",
+    "pubtype": {
+        "pubtype": "CIC",
+        "revisiontype": "MINOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Revisiting Module Lattice-based Homomorphic Encryption and Application to Secure-MPC",
+    "year": 2025,
+    "repo": [
+        "https://github.com/anishamukh/MLWE-MGHE.git",
+        "https://github.com/tuneinsight/lattigo",
+        "https://github.com/tuneinsight/lattigo",
+        "https://github.com/Microsoft/SEAL"
+    ]
+}
+,
+{
+    "abstract": "Single decryptor encryption (SDE) is public key encryption (PKE) where the decryption key is an unclonable quantum state. Coladangelo, Liu, Liu, and Zhandry (CRYPTO 2021) realized the first SDE assuming subexponentially secure indistinguishability obfuscation (iO) and one-way functions (OWFs), along with the polynomial hardness of the learning with errors (LWE) assumption. Since then, SDE has played a pivotal role in recent advances in quantum cryptography. However, despite its central importance in unclonable cryptography, many fundamental questions about SDE remain unanswered. For example, a line of works has proposed various security notions for SDE, but their relationships have hardly been discussed. Moreover, while many subsequent works have adopted the construction methodology of Coladangelo et al., none have explored its improvement, leaving the possibility of a more efficient approach to SDE.\r\n\r\nIn this work, we address these fundamental questions concerning SDE. Our contributions are threefold.\r\n\r\nNew security notion: We introduce a strengthened indistinguishability-based security notion for SDE, which we call CPA+ anti-piracy security. We show that CPA+ security unifies the existing security notions for SDE, as detailed in the third item.\r\n\r\nNew construction: We present an SDE scheme that satisfies CPA+ anti-piracy security, based solely on polynomially secure iO and OWFs. In addition to relying on weaker and more general assumptions, our SDE scheme offers a significant advantage over the scheme of Coladangelo et al., as both the construction and its security proof are much simpler.\r\n\r\nRelationships among security notions: We demonstrate that CPA+ anti-piracy security implies all existing security notions for SDE, with the sole exception of identical challenge ciphertext security proposed by Georgiou and Zhandry (EPRINT 2020). Although we do not establish a direct implication from CPA+ anti-piracy security to identical challenge ciphertext security, we provide a generic transformation from an SDE scheme satisfying the former to one achieving the latter in the quantum random oracle model. Additionally, we establish various relationships among different security notions for SDE. By combining these results with our SDE construction, we derive several new feasibility results.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Fuyuki Kitagawa"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "NTT Social Informatics Laboratories"
+                }
+            ],
+            "fullName": "Takashi Yamakawa"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-07-07T03:15:21Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-06-30T07:53:19Z"
+        }
+    ],
+    "keywords": [
+        "Quantum copy-protection",
+        "Single-decryptor encryption",
+        "Security Definition"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1219.pdf",
+    "pid": "1219",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Foundations of Single-Decryptor Encryption",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Succinct non-interactive arguments of knowledge (SNARKs) based on lattice assumptions offer a promising post-quantum alternative to pairing-based systems, but have until now suffered from inherently quadratic proof sizes in the security parameter. We introduce RoK and Roll, the first lattice-based SNARK that breaks the quadratic barrier, achieving communication complexity of $\\tilde{O}(\\lambda)$ together with a succinct verification time. The protocol significantly improves upon the state of the art of fully-succinct argument systems established by ``RoK, Paper, SISsors'' (RPS) [ASIACRYPT'24] and hinges on two key innovations, presented as reductions of knowledge (RoKs):\r\n-  Structured random projections: We introduce a new technique for structured random projections that allows us to reduce the witness dimensions while approximately preserving its $\\ell_2$ norm and maintaining the desired tensor structure. In order to maintain succinct communication and verification, the projected image is further committed and adjoined to the original relation. This procedure is recursively repeated until dimension of the intermediate witness becomes $\\mathsf{poly}(\\lambda)$, i.e. independent of the original witness length. \r\n - Unstructured random projection: When the witness is sufficiently small, we let the unstructured projection (over coefficients $\\mathbb{Z}_q$) be sent in plain, as in LaBRADOR [CRYPTO'23]. We observe, however, that the strategy from prior works to immediately lift the projection claim to $\\mathcal{R}_q$, and into our relation, would impose a quadratic communication cost. Instead, we gradually batch-and-lift the projection a the tower of intermediate ring extensions. This reduces the communication cost to $\\tilde{O}(\\lambda)$ while maintaining a succinct verification time.\r\nThese two techniques, combined with existing RoKs from RPS, yield a succinct argument system with communication complexity $\\tilde{O}(\\lambda)$ and succinct verification for structured linear relations.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Karlsruhe Institute of Technology, Karlsruhe, Germany",
+                    "ror": "https://ror.org/04t3en479"
+                }
+            ],
+            "fullName": "Michael Kloo\u00df",
+            "orcid": "0000-0003-3466-0675"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aalto University, Espoo, Finland",
+                    "ror": "https://ror.org/020hwjq30"
+                }
+            ],
+            "fullName": "Russell W. F. Lai",
+            "orcid": "0000-0001-9126-1887"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "King\u2019s College London, London, UK",
+                    "ror": "https://ror.org/0220mzb33"
+                }
+            ],
+            "fullName": "Ngoc Khanh Nguyen",
+            "orcid": "0000-0001-8240-6167"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aalto University, Espoo, Finland",
+                    "ror": "https://ror.org/020hwjq30"
+                }
+            ],
+            "fullName": "Micha\u0142 Osadnik",
+            "orcid": "0000-0003-4000-3241"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T10:51:24Z"
+        }
+    ],
+    "keywords": [
+        "Lattice-based cryptography",
+        "SNARK"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1220.pdf",
+    "pid": "1220",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "RoK and Roll \u2013 Verifier-Efficient Random Projection for $\\tilde{O}(\\lambda)$-size Lattice Arguments",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "We propose the first updatable white-box secure cipher, EWEMrl, and its natural extension EWEMxl, both achieving longevity against non-adaptive read-only malware. The notion of longevity, introduced by Koike et al., addresses continuous code leakage and is stronger than incompressibility. While Yoroi claimed longevity, but was broken by Isobe and Todo. Given the prevalence of continuous leakage, developing such ciphers is crucial in white-box cryptography. Precisely, we have the following.\r\n\r\n\u2022 We first introduce EWEMr (Extended WEM against non-adaptive read-only adversaries), a generalization of WEM (White-box Even-Mansour). WEM is the first (and possibly only) white-box cipher based on EM, replacing its key addition layer with a secret Sbox. EWEMr achieves a high space-hardness bound, with a new generic proof strategy, but does not provide longevity. Instead, it serves as the base for EWEMrl.\r\n\r\n\u2022 We also present EWEMx, which uses EWEMr as subroutines and is secure in the stronger adaptive model. While EWEMx does not achieve longevity, it is the base design for EWEMxl.\r\n\r\n\u2022 We next propose EWEMrl, which is the first cipher to achieve longevity against non-adaptive read-only adversaries. No existing ciphers, such as SPNbox and SPACE, are designed for longevity. We show that EWEMrl ensures (against non-adaptive read-only adversaries) (1) longevity, (2) high space-hardness in both known-space and chosen-space settings, and (3) security against hybrid code-lifting attacks.\r\n\r\n\u2022 Finally, we introduce EWEMxl, a natural extension of EWEMrl with a structure similar to EWEMx. EWEMxl achieves (2) and (3) in the stronger adaptive model while maintaining (1) in the same non-adaptive and read-only setting.\r\n\r\nIn summary, EWEMrl and EWEMxl are the first ciphers providing longevity against non-adaptive read-only malware while ensuring security confidence in the black-box setting.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "IAI TCG CREST, Kolkata"
+                },
+                {
+                    "name": "Academy of Scientific and Innovative Research (AcSIR)"
+                }
+            ],
+            "fullName": "Avik Chakraborti",
+            "orcid": "0000-0001-9144-0826"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "INRIA, Paris"
+                }
+            ],
+            "fullName": "Shibam Ghosh",
+            "orcid": "0000-0002-4966-1681"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Osaka University, Japan",
+                    "ror": "https://ror.org/035t8zc32"
+                }
+            ],
+            "fullName": "Takanori Isobe",
+            "orcid": "0000-0003-4253-5567"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "IAI TCG CREST, Kolkata"
+                },
+                {
+                    "name": "Ramakrishna Mission Vivekananda Educational and Research Institute"
+                }
+            ],
+            "fullName": "Sajani Kundu",
+            "orcid": "0009-0007-8285-0576"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T12:36:52Z"
+        }
+    ],
+    "keywords": [
+        "White-Box",
+        "EM",
+        "WEM",
+        "EWEMr",
+        "EWEMx",
+        "EWEMrl",
+        "EWEMxl",
+        "Space-hardness",
+        "Longevity",
+        "Block cipher"
+    ],
+    "license": {
+        "label": "No rights reserved",
+        "name": "CC0",
+        "reference": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "pdffile": "2025/1221.pdf",
+    "pid": "1221",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "EWEMrl: A White-Box Secure Cipher with Longevity",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Post-Quantum Cryptography (PQC) algorithms should remain secure even in the presence of quantum computers. Although the security of such schemes is guaranteed at the algorithmic level, real-world implementations often suffer from other vulnerabilities like Side-Channel Attacks (SCA).  This Systematization of Knowledge (SoK) paper investigates side-channel attacks targeting implementations of PQC algorithms.  This work categorizes attacks from an adversarial perspective to identify the most vulnerable components of the algorithms' implementations and highlights unexplored parts in current implementations. In addition, it reviews and analyzes the efficiency and efficacy of existing countermeasures to SCA in current hardware implementations. This approach helps identify countermeasures that provide broader protection and highlights characteristics needed for future secure implementations. Our findings offer guidance in strengthening existing systems and developing more efficient defenses against side-channel attacks.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Brno University of Technology, Brno, Czech Republic"
+                }
+            ],
+            "fullName": "Patrik Dobias"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Delft University of Technology, Delft, The Netherlands"
+                }
+            ],
+            "fullName": "Azade Rezaeezade"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Masaryk University, Brno, Czech Republic"
+                }
+            ],
+            "fullName": "\u0141ukasz Chmielewski"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Brno University of Technology, Brno, Czech Republic"
+                }
+            ],
+            "fullName": "Lukas Malina"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Radboud University, Nijmegen, The Netherlands"
+                }
+            ],
+            "fullName": "Lejla Batina"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-06-30T12:47:12Z"
+        }
+    ],
+    "keywords": [
+        "Side-channel Attacks",
+        "Post-Quantum Cryptography",
+        "Countermeasures"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1222.pdf",
+    "pid": "1222",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "SoK: Reassessing Side-Channel Vulnerabilities and Countermeasures in PQC Implementations",
+    "year": 2025,
+    "repo": [
+        "https://github.com/Paprikadobi/Reassessing-SCA-Vulnerabilities-of-PQC-Implementations",
+        "https://github.com/pq-crystals/dilithium",
+        "https://github.com/mupq/pqm4",
+        "https://github.com/PQClean/PQClean/blob/8db3ba/crypto_kem/kyber512/clean/",
+        "https://github.com/PQClean/PQClean/blob/8db3ba/crypto_kem/kyber512/clean/"
+    ]
+}
+,
+{
+    "abstract": "Modern efficient secure multi-party computation (MPC) protocols typically follow an offline-online design, where offline protocols produce a sufficient amount of correlated randomness that would be consumed during the online phases. The past decades have witnessed maturing of efficient online protocols, for computing circuits over either arbitrary finite fields or rings $\\mathbb{Z}_{p^k}$. In particular, protocols tailored for $\\mathbb{Z}_{2^k}$ arithmetic have achieved better concrete efficiency in most real-life applications, as it naturally captures modern CPU architectures. On the other hand, a recent paradigm of {\\em pseudorandom correlation generator} (PCG) initiated by Boyle et al. (CCS'18, Crypto'19) opens a door to efficient preprocessing with sublinear communication. Since then, PCGs have been extensively studied and developed to produce various types of correlations required from online protocols. Although Li et al. (EuroCrypt'25) recently put a significant step forward and propose efficient PCGs for arbitrary finite fields, the current state of PCGs for rings is not satisfying at all.\r\nTowards the great demand for efficiently generating correlations over rings, we investigate PCGs for general Galois rings, which simultaneously unify finite fields and integer rings modulo $p^k$. In summary, we establish the following results:\r\n\r\n(i) We generalize the state-of-the-art PCG constructions for oblivious linear evaluations (OLE) over Galois fields to {\\em arbitrary Galois rings}, basing on Galois theory and the Hensel lift. Moreover, our PCGs for Galois rings are as efficient as PCGs for fields. Concretely, for $mN$ OLE correlations over $\\mathbb{Z}_{2^k}$, we require $O(m\\log{N})$ communication and $O(m^2N\\log{N})$ computation, where $m$ is an arbitrary integer $\\geq 2$. In comparison, to our best knowledge, previous approaches incur communication at least linear in $N$.\r\n\r\n(ii) We extend the above OLE construction to provide various types of correlations over any Galois ring. One of the fascinating applications is an efficient PCG for two-party SPD$\\mathbb{Z}_{2^k}$ authenticated multiplication triples (Crypto'18). For $mN$ SPD$\\mathbb{Z}_{2^k}$ triples, our approach requires only $O(m\\log{N})$ communication and $O(m^2N\\log{N})$ computation. Concrete evaluations show that our method significantly outperforms existing schemes based on homomorphic encryption.\r\n\r\n(iii) In addition, our PCGs for Galois rings also enable multi-party multiplication triple generation, yielding the first efficient MPC protocol for arithmetic circuits over $\\mathbb{Z}_{2^k}$ with \\emph{silent} and \\emph{sublinear} preprocessing. Additional applications include circuit-dependent preprocessing and matrix multiplication triples, etc, which are of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Xidian University",
+                    "ror": "https://ror.org/05s92vm98"
+                }
+            ],
+            "fullName": "Zhe Li"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Chaoping Xing",
+            "orcid": "0000-0002-1257-1033"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Yizhou Yao",
+            "orcid": "0009-0002-5720-906X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Shanghai Jiao Tong University",
+                    "ror": "https://ror.org/0220qvk04"
+                }
+            ],
+            "fullName": "Chen Yuan"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-01T06:09:38Z"
+        }
+    ],
+    "keywords": [
+        "Pseudorandom Correlation Generators",
+        "MPC"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial",
+        "name": "CC BY-NC",
+        "reference": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "pdffile": "2025/1223.pdf",
+    "pid": "1223",
+    "pubtype": {
+        "pubtype": "CRYPTO",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Efficient Pseudorandom Correlation Generators over $\\mathbb{Z}/p^k\\mathbb{Z}$",
+    "year": 2025,
+    "repo": [
+        "https://github.com/zhli271828/Trace-F2-OLE-PCG/",
+        "https://github.com/mbombar/estimator_folding",
+        "https://github.com/mbombar/estimator_folding"
+    ]
+}
+,
+{
+    "abstract": "New state-of-the-art assembly implementations show that BRWHash is consistently faster than polyHash and both t-BRWHash and d-2LHash for all message lengths and for both the primes $2^{127}-1$ and $2^{130}-5$.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute",
+                    "ror": "https://ror.org/00q2w1j53"
+                }
+            ],
+            "fullName": "Kaushik Nath"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Indian Statistical Institute",
+                    "ror": "https://ror.org/00q2w1j53"
+                }
+            ],
+            "fullName": "Palash Sarkar",
+            "orcid": "0000-0002-5346-2650"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-01T11:23:46Z"
+        }
+    ],
+    "keywords": [
+        "almost XOR universal hash function",
+        "polynomial hash",
+        "BRW hash"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1224.pdf",
+    "pid": "1224",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "An Update to ``Polynomial Hashing over Prime Order Fields''",
+    "year": 2025,
+    "repo": [
+        "https://github.com/kn-cs/BRWHash",
+        "https://github.com/kn-cs/t-BRWHash",
+        "https://github.com/kn-cs/polyHash",
+        "https://github.com/kn-cs/d2LHash"
+    ]
+}
+,
+{
+    "abstract": "Enhanced Privacy Identification (EPID) is one of the anonymous authentication mechanisms that found their way into the industry, being deployed in billions of chips and standardized at ISO. The linchpin of EPID lies in its decentralized revocation procedure that allows to revoke a signer by simply placing one of its signatures on a signature revocation list SRL. Each new signature must then include a proof that it has been generated with a key different from those used to produce the signatures on the SRL. This proof of non-revocation in current post-quantum schemes either relies on general-purpose NIZKs or on regular zero-knowledge proofs (ZKP) but with a witness dimension linear in the size of the SRL, which leads to large size and/or computational complexity. \r\nIn this paper, we rethink the standard approach of non-revocation so as to avoid its heavy reliance on ZKP. Our construction indeed combines features from different tools (such as Falcon signatures) that are unusual in this context to pull most elements out of the ZKP, leading to significant performance improvements. Providing all these elements unconcealed creates many security challenges for our construction but we yet manage to address all of them and prove security under well-understood lattice assumptions, and in the strong model of Sanders-Traor\u00e9 (CT-RSA'21) allowing malicious SRLs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Orange (France)",
+                    "ror": "https://ror.org/035j0tq82"
+                }
+            ],
+            "fullName": "Corentin Jeudy",
+            "orcid": "0000-0003-2869-3833"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Orange (France)",
+                    "ror": "https://ror.org/035j0tq82"
+                }
+            ],
+            "fullName": "Olivier Sanders",
+            "orcid": "0000-0003-1283-7257"
+        }
+    ],
+    "category": "Public-key cryptography",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-01T13:08:06Z"
+        }
+    ],
+    "keywords": [
+        "Lattice-Based Cryptography",
+        "EPID",
+        "Revocation",
+        "Privacy"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1225.pdf",
+    "pid": "1225",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Lattice EPID with Efficient Revocation",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
