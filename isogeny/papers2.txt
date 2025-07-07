@@ -1,6 +1,7 @@
+pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_week;;;https://github.com/pegasis4d
 return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real santos, krĳn reĳnders;;;2024/948;;;last_week;;;https://github.com/Krijn-math/return-of-the-kummer
 klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_week;;;https://github.com/KLPT2/KLPT2
-computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_week;;;https://github.com/fffmath/AsymptoticBounds
+computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_month;;;https://github.com/fffmath/AsymptoticBounds
 engel p-adic supersingular isogeny-based cryptography over laurent series;;;ilias cherkaoui, ciaran clarke, indrakshi dey;;;2025/1178;;;last_month;;;none
 experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_month;;;none
 tanuki: new frameworks for (concurrently secure) blind signatures from post-quantum groups actions;;;lucjan hanzlik, yi-fu lai, marzio mula, eugenio paracucchi, daniel slamanig, gang tang;;;2025/1100;;;last_month;;;https://pqcalteq.github.io/
@@ -37,7 +38,6 @@ an efficient collision attack on castryck-decru-smith’s hash function;;;ryo oh
 blind signatures from cryptographic group actions;;;dung hoang duong, xuan thanh khuc, youming qiao, willy susilo, chuanqi zhang;;;2025/397;;;last_year;;;https://csrc.nist.gov/news/2023/additional-pqc-digital-signature-candidates
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_year;;;https://github.com/levanin/cgl_rs
 radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_year;;;https://github.com/GiacomoPope/ThetaCGL
-pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_year;;;https://github.com/pegasis4d
 constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_year;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
 a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_year;;;none
 poké: a compact and efficient pke from higher-dimensional isogenies;;;andrea basso, luciano maino;;;2024/624;;;last_year;;;https://github.com/andreavico/POKE-PKE
