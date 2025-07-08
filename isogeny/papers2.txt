@@ -1,6 +1,6 @@
 pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_week;;;https://github.com/pegasis4d
 return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real santos, krĳn reĳnders;;;2024/948;;;last_week;;;https://github.com/Krijn-math/return-of-the-kummer
-klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_week;;;https://github.com/KLPT2/KLPT2
+klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_month;;;https://github.com/KLPT2/KLPT2
 computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_month;;;https://github.com/fffmath/AsymptoticBounds
 engel p-adic supersingular isogeny-based cryptography over laurent series;;;ilias cherkaoui, ciaran clarke, indrakshi dey;;;2025/1178;;;last_month;;;none
 experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_month;;;none
