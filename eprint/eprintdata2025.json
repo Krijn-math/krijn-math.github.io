@@ -86734,4 +86734,765 @@
         "none"
     ]
 }
+,
+{
+    "abstract": "Censorship resilience is a fundamental assumption underlying the security of blockchain protocols. Additionally, the analysis of blockchain security from an economic and game theoretic perspective has been growing in popularity in recent years.\r\nIn this work, we present a surprising rational censorship attack on blockchain censorship resilience when we adopt the analysis of blockchain security from a game theoretic lens and assume all users are rational. \r\nIn our attack, a colluding group with sufficient voting power censors the remainder nodes such that the group alone can gain all the rewards from maintaining the blockchain.\r\nWe show that if nodes are rational, coordinating this attack just requires a public read and write blackboard and we formally model the attack using a game theoretic framework.\r\nFurthermore, we note that to ensure the success of the attack, nodes need to know the total true voting power held by the colluding group.\r\nWe prove that the strategy to join the rational censorship attack and also for nodes to honestly declare their power is a subgame perfect equilibrium in the corresponding extensive form game induced by our attack.\r\nFinally, we discuss the implications of the attack on blockchain users and protocol designers as well as some potential countermeasures.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "National University of Singapore",
+                    "ror": "https://ror.org/01tgyzw49"
+                }
+            ],
+            "fullName": "Michelle Yeo"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+                    "ror": "https://ror.org/02s376052"
+                }
+            ],
+            "fullName": "Haoqian Zhang"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-02T07:34:40Z"
+        }
+    ],
+    "keywords": [
+        "censorship resilience",
+        "game theory",
+        "nash equilibrium",
+        "attacks"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1226.pdf",
+    "pid": "1226",
+    "pubtype": {
+        "note": "MARBLE",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Rational Censorship Attack: Breaking Blockchain with a Blackboard",
+    "year": 2025,
+    "repo": [
+        "https://github.com/randao/randao"
+    ]
+}
+,
+{
+    "abstract": "ARADI is a low-latency block cipher introduced by the U.S. National Security\r\nAgency (NSA), targeting secure and efficient memory encryption. However, unlike\r\nmost academic cipher proposals, the design rationale behind ARADI has not been made\r\npublic, leaving its security to be only assessed through independent analysis. In this\r\nwork, we present improved key-recovery attacks on up to 12 out of 16 rounds of ARADI\r\nin the single-key setting \u2014 advancing the best known attacks by two rounds. Our\r\ntechniques build upon the ZeroSum distinguisher framework and leverage the Fast\r\nHadamard Transform (FHT). A central insight in our attacks is that the linear layer\r\nof ARADI exhibits weak diffusion. This structural property allows partial decryption\r\nwith only a subset of the round keys, significantly reducing the key-guessing space.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Computer Science Department, University of Haifa, Haifa, Israel"
+                },
+                {
+                    "name": "Faculty of Electrical Engineering and Computer Science, TU Berlin, Germany"
+                }
+            ],
+            "fullName": "Orr Dunkelman"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Inria, Paris, France"
+                }
+            ],
+            "fullName": "Shibam Ghosh"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-02T09:09:34Z"
+        }
+    ],
+    "keywords": [
+        "ARADI",
+        "Lightweight Crypto",
+        "FHT-based attack"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1227.pdf",
+    "pid": "1227",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Key-recovery Attacks on ARADI",
+    "year": 2025,
+    "repo": [
+        "https://github.com/ShibamCrS/zerosum_attack_aradi.git",
+        "https://github.com/ShibamCrS/zerosum_attack_aradi.git"
+    ]
+}
+,
+{
+    "abstract": "Authenticated Key Exchange (AKE) between any two entities is one of the most important security protocols available for securing our digital networks and infrastructures. In PQCrypto 2023, Bruckner, Ramacher and Striecks proposed a novel hybrid AKE (HAKE) protocol dubbed Muckle+ that is particularly useful in large quantum-safe networks consisting of a large number of nodes. Their protocol is hybrid in the sense that it allows key material from conventional, post-quantum, and quantum cryptography primitives to be incorporated into a single end-to-end authenticated shared key.\r\n\r\nTo achieve the desired authentication properties, Muckle+ utilizes post-quantum digital signatures. However, available instantiations of such signatures schemes are not yet efficient enough compared to their post-quantum key-encapsulation mechanism (KEM) counterparts, particularly in large networks with potentially several connections in a short period of time.\r\n\r\nTo mitigate this gap, we propose Muckle# that pushes the efficiency boundaries of currently known HAKE constructions. Muckle# uses post-quantum key-encapsulating mechanisms for implicit authentication inspired by recent works done in the area of Transport Layer Security (TLS) protocols, particularly, in KEMTLS (CCS'20). \r\n\r\nWe port those ideas to the HAKE framework and develop novel proof techniques on the way. Due to our KEM-based approach, the resulting protocol has a slightly different message flow compared to prior work that we carefully align with the HAKE framework and which makes our changes to Muckle+ non-trivial. Lastly, we evaluate the approach by a prototypical implementation and a direct comparison with Muckle+ to highlight the efficiency gains.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Sorbonne University",
+                    "ror": "https://ror.org/02en5vm52"
+                }
+            ],
+            "fullName": "Christopher Battarbee"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "AIT Austrian Institute of Technology"
+                }
+            ],
+            "fullName": "Christoph Striecks"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Laboratoire de Recherche de l\u2019EPITA"
+                }
+            ],
+            "fullName": "Ludovic Perret"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "AIT Austrian Institute of Technology"
+                }
+            ],
+            "fullName": "Sebastian Ramacher"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "ETH Zurich",
+                    "ror": "https://ror.org/05a28rw58"
+                }
+            ],
+            "fullName": "Kevin Verhaeghe"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-02T12:54:40Z"
+        }
+    ],
+    "keywords": [
+        "hybrid authenticated key exchange",
+        "post-quantum cryptography",
+        "quantum cryptography"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "A version of this paper without implementation was uploaded to the arXiv on 6th November 2024.",
+    "pdffile": "2025/1228.pdf",
+    "pid": "1228",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Quantum-Safe Hybrid Key Exchanges with KEM-Based Authentication",
+    "year": 2025,
+    "repo": [
+        "https://digital-strategy.ec.europa.eu/en/policies/european-quantum-communication-infrastructure-euroqci",
+        "https://digital-strategy.ec.europa.eu/en/policies/european-quantum-communication-infrastructure-euroqci",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-recommendation-post-quantum-cryptography",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-recommendation-post-quantum-cryptography",
+        "https://github.com/open-quantum-safe/liboqs-python"
+    ]
+}
+,
+{
+    "abstract": "NTRU-based structured lattices underpin several standardized post-quantum cryptographic schemes, most notably the Falcon signature algorithms. While offering compactness and efficiency, the algebraic structure of NTRU lattices introduces new vulnerabilities under physical attacks, where partial secret key leakage may occur.\r\n\r\nThis work addresses the problem of full key recovery in NTRU-based schemes when adversaries obtain partial information through side-channel or fault attacks. Existing leakage-aware frameworks, including the DDGR estimator and the approach of May and Nowakowski, either lack scalability or are limited to structured, single-source leakage on one secret vector. These constraints make them ineffective against practical leakage patterns in NTRU settings.\r\n\r\nWe propose a unified and scalable framework for recovering NTRU secret keys under partial leakage. Our method supports diverse hint types, such as perfect hints, modular hints, and low-bit leakage, and enables joint integration of leakage across both secret polynomials \\( f \\) and \\( g \\). At its core, the framework uses a dimension-reduction strategy to eliminate \r\nknown coefficients and reduce the problem to a lower-dimensional NTRU instance suitable for lattice reduction. Additionally, we introduce a transformation that converts hints on \\( g \\) into modular constraints on \\( f \\), allowing unified hint embedding.\r\n\r\nWe demonstrate practical attacks on Falcon using NIST reference implementations. Leaking 400 coefficients of $f$ in Falcon-512 reduces the required BKZ block size from over 350 to 38, enabling full key recovery within 6 hours. Compared to MN23, our method achieves significant speedups: $5.83\\times$ for Falcon-512 with 400 leaked coefficients, and over $15\\times$ for Falcon-1024 with 910 leaked coefficients. These results highlight the efficiency and scalability of our framework and the importance of leakage-resilient design for structured NTRU lattices.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Engineering, Nanjing University of Science and Technology, Nanjing, China"
+                }
+            ],
+            "fullName": "Honglin Shao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Engineering, Nanjing University of Science and Technology, Nanjing, China"
+                }
+            ],
+            "fullName": "Yuejun Liu"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "State Key Laboratory of Cyberspace Security Defense, Beijing, China"
+                }
+            ],
+            "fullName": "Mingyao Shao"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "School of Cyber Science and Engineering, Nanjing University of Science and Technology, Nanjing, China"
+                },
+                {
+                    "name": "Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China"
+                },
+                {
+                    "name": "School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China"
+                }
+            ],
+            "fullName": "Yongbin Zhou"
+        }
+    ],
+    "category": "Attacks and cryptanalysis",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-02T13:23:09Z"
+        }
+    ],
+    "keywords": [
+        "Post-quantum cryptography",
+        "NTRU lattice",
+        "Cryptanalysis",
+        "NTRU with hints",
+        "Lattice reduction"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1229.pdf",
+    "pid": "1229",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "NTRU with Hints: Recovering NTRU Secret Keys from Partial Leakage",
+    "year": 2025,
+    "repo": [
+        "https://github.com/juliannowakowski/lwe_with_hints",
+        "https://github.com/lducas/leaky-LWE-Estimator",
+        "https://github.com/lducas/leaky-LWE-Estimator",
+        "https://github.com/tprest/falcon.py",
+        "https://github.com/hawk-sign/aux/tree/main/code",
+        "https://github.com/hawk-sign/aux/tree/main/code"
+    ]
+}
+,
+{
+    "abstract": "Since attribute-based encryption (ABE) was proposed in 2005, it has established itself as a valuable tool in the enforcement of access control. For practice, it is important that ABE satisfies many desirable properties such as multi-authority and negations support. Nowadays, we can attain these properties simultaneously, but none of these schemes have been implemented. Furthermore, although simpler schemes have been optimized extensively on a structural level, there is still much room for improvement for these more advanced schemes. However, even if we had schemes with such structural improvements, we would not have a way to benchmark and compare them fairly to measure the effect of such improvements. The only framework that aims to achieve this goal, ABE Squared (TCHES '22), was designed with simpler schemes in mind.\r\n\r\nIn this work, we propose the ABE Cubed framework, which provides advanced benchmarking extensions for ABE Squared. To motivate our framework, we first apply structural improvements to the decentralized ciphertext-policy ABE scheme supporting negations presented by Riepel, Venema and Verma (ACM CCS '24), which results in five new schemes with the same properties. We use these schemes to uncover and bridge the gaps in the ABE Squared framework. In particular, we observe that advanced schemes depend on more \"variables\" that affect the schemes' efficiency in different dimensions. Whereas ABE Squared only considered one dimension (as was sufficient for the schemes considered there), we devise a benchmarking strategy that allows us to analyze the schemes in multiple dimensions. As a result, we obtain a more complete overview on the computational efficiency of the schemes, and ultimately, this allows us to make better-founded choices about which schemes provide the best efficiency trade-offs for practice.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Sven Argo",
+            "orcid": "0009-0009-5544-6417"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of Wuppertal",
+                    "ror": "https://ror.org/00613ak93"
+                }
+            ],
+            "fullName": "Marloes Venema",
+            "orcid": "0000-0003-4483-400X"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Helmholtz Center for Information Security",
+                    "ror": "https://ror.org/02njgxr09"
+                }
+            ],
+            "fullName": "Doreen Riepel",
+            "orcid": "0000-0002-4990-0929"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                },
+                {
+                    "name": "Deutsches Forschungszentrum f\u00fcr K\u00fcnstliche Intelligenz",
+                    "ror": "https://ror.org/01ayc5b57"
+                }
+            ],
+            "fullName": "Tim G\u00fcneysu",
+            "orcid": "0000-0002-3293-4989"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Aarhus University",
+                    "ror": "https://ror.org/01aj84f44"
+                }
+            ],
+            "fullName": "Diego F. Aranha",
+            "orcid": "0000-0002-2457-0783"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-02T15:13:17Z"
+        }
+    ],
+    "keywords": [
+        "attribute-based encryption",
+        "multi-authority ABE",
+        "implementation"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1230.pdf",
+    "pid": "1230",
+    "pubtype": {
+        "pubtype": "TCHES",
+        "revisiontype": "MAJOR",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "ABE Cubed: Advanced Benchmarking Extensions for ABE Squared",
+    "year": 2025,
+    "repo": [
+        "https://github.com/lincolncryptools/ABE_Cubed",
+        "https://github.com/lincolncryptools/ABE_Cubed",
+        "https://github.com/lincolncryptools/ABE_Cubed",
+        "https://github.com/fentec-project",
+        "https://github.com/cloudflare/circl",
+        "https://github.com/cloudflare/circl",
+        "https://github.com/zeutro/openabe",
+        "https://github.com/zeutro/openabe"
+    ]
+}
+,
+{
+    "abstract": "Steganography is the practice of concealing messages or information within other non-secret text or media to avoid detection. A central challenge in steganography is balancing payload size with detectability and media constraints\u2014larger payloads increase the risk of detection and require proportionally larger or higher-capacity carriers. In this paper, we introduce a novel approach that combines Huffman coding, suitable dictionary identification, and large language models (LLMs) rephrasing techniques to significantly reduce payload size. This enables more efficient use of limited-capacity carriers, such as images, while minimizing the visual or statistical footprint. Our method allows for the embedding of larger payloads into fixed-size media, addressing a key bottleneck in traditional steganographic systems. By optimizing payload compression prior to encoding, we improve both the stealth and scalability of steganographic communication.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Latymer Upper School"
+                }
+            ],
+            "fullName": "Jaisal Ahmadullah"
+        }
+    ],
+    "category": "Applications",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-02T20:03:06Z"
+        }
+    ],
+    "keywords": [
+        "Steganography",
+        "LLM",
+        "Compression",
+        "Huffman coding"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1231.pdf",
+    "pid": "1231",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Compressing steganographic payloads with LLM assistance",
+    "year": 2025,
+    "repo": [
+        "https://github.com/daniellerch/hstego",
+        "https://github.com/cedricbonhomme/Stegano",
+        "https://github.com/daniellerch/stego-retweet"
+    ]
+}
+,
+{
+    "abstract": "In electronic voting systems, guaranteeing voter anonymity is essential. One primary method to ensure this is the use of a mix-net, in which a set of mix-servers sequentially shuffle a set of encrypted votes, and generate proofs that a correct permutation has been applied. Whilst mix-nets offer advantages over alternative approaches,  their traditional use during the tallying phase introduces a significant robustness bottleneck: the process is inherently sequential and critically depends on trusted authorities to perform shuffling and decryption. Any disruption can prevent the final result from being revealed.\r\n\r\nIn this work, we propose offline mixing OMIX, the first voting framework to support a mix-net-based system in which trustees never handle encrypted votes, while also ensuring that each voter's cost is independent of the total number of voters. In particular, the contributions of permutations by mix-servers and decryption shares by trustees are completed and publicly verified before any vote is cast. This eliminates the need for their participation during tallying and enables the first scalable, mix-net-based, and self-tallying voting protocol in the sense of Kiayias and Yung (PKC'02).\r\n\r\nAt the core of OMIX is a distributed key-generation mechanism: each voter locally generates a private voting key and registers a constant-size set of basis public keys. These are permuted and partially decrypted in an offline phase, resulting in a final public decryption key that reveals votes in shuffled order. Our construction leverages the homomorphic and structure-preserving properties of function-hiding inner-product functional encryption, combined with standard primitives, to achieve self-tallying, client scalability, ballot privacy and other voting properties. To support the new mixing structure introduced by OMIX, we also develop a compact and verifiable offline mix-net, based on an enhanced linearly homomorphic signature scheme. This latter primitive may be of independent interest.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Telecom Paris, Institut Polytechnique de Paris"
+                }
+            ],
+            "fullName": "S\u00e9bastien Canard",
+            "orcid": "0009-0006-9588-7418"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Telecom Paris, Institut Polytechnique de Paris"
+                }
+            ],
+            "fullName": "Liam Medley",
+            "orcid": "0009-0009-4533-7890"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Telecom Paris, Institut Polytechnique de Paris"
+                }
+            ],
+            "fullName": "Duy Nguyen",
+            "orcid": "0009-0002-7892-9146"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Telecom Paris, Institut Polytechnique de Paris"
+                }
+            ],
+            "fullName": "Duong Hieu Phan",
+            "orcid": "0000-0003-1136-4064"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-02T20:46:52Z"
+        }
+    ],
+    "keywords": [
+        "voting",
+        "mix-net",
+        "self-tallying",
+        "client-scalable",
+        "functional encryption",
+        "linearly-homomorphic signature"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1232.pdf",
+    "pid": "1232",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "OMIX: Offline Mixing for Scalable Self-Tallying Elections",
+    "year": 2025,
+    "repo": [
+        "https://github.com/republique-et-canton-de-geneve/chvote-protocol-poc",
+        "https://github.com/republique-et-canton-de-geneve/chvote-protocol-poc",
+        "https://github.com/verificatum/verificatum-vcr"
+    ]
+}
+,
+{
+    "DOI": "10.62056/anudy76bm",
+    "abstract": "Argument systems are a fundamental ingredient in many cryptographic constructions. The best-performing argument systems to date largely rely on a trusted setup, which is undesirable in trust-minimized applications. While transparent argument systems avoid this trust assumption, they have historically been inefficient, typically exhibiting polylogarithmic proof sizes compared to their trusted counterparts. In 2023, Arun et al. (PKC 2023) constructed the first transparent constant-sized polynomial commitment scheme (PCS), leading to transparent constant-sized arguments. However, the evaluation proof still comprises 66 group elements in a group of unknown order (GUO), rendering it rather impractical. In this work, we address this challenge by presenting a set of novel batching and aggregation techniques tailored for proofs of knowledge of ranges in GUOs. These techniques may also be of independent interest and are readily applicable to enhance and shorten other existing schemes in GUOs. Consequently, by applying these techniques, we immediately achieve an improved PCS with an evaluation proof consisting of only 10 group elements---an impressive 85% reduction. To our knowledge, this represents the shortest PCS in the transparent setting. Thus compiling known information-theoretic proof systems using our improved PCS yields highly compact transparent argument systems when instantiated in a class group, which is more practical than prior constant-sized schemes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "State Key Laboratory of Cryptography and Digital Economy Security, School of Cyber Science and Technology, Shandong University",
+                    "ror": "https://ror.org/0207yh398"
+                }
+            ],
+            "fullName": "Shihui Fu",
+            "orcid": "0000-0002-9288-2754"
+        }
+    ],
+    "category": "Cryptographic protocols",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-03T02:55:11Z"
+        }
+    ],
+    "keywords": [
+        "polynomial commitment scheme",
+        "constant size",
+        "transparent"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1233.pdf",
+    "pid": "1233",
+    "pubtype": {
+        "pubtype": "CIC",
+        "revisiontype": "SAME",
+        "year": 2025
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Improved Constant-Sized Polynomial Commitment Schemes Without Trusted Setup",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "Transparency logs are critical for a wide range of\r\napplications, from web certificates to end-to-end encrypted\r\nmessaging. Today, many transparency log designs exist for\r\nvarious applications and workloads, and developers must\r\nfully understand the design space to find the best design\r\nfor their needs. Worse, if a developer needs a transparency\r\nlog for an application and workload without an existing\r\ntransparency log, the developer (who might not be an expert)\r\nmust design a new log. To address these challenges, we\r\nintroduce the paradigm of a configurable transparency log,\r\nwhich takes as input a description of the application work-\r\nload and constraints of different entities and automatically\r\noutputs a transparency log uniquely suited to the application.\r\nWe present the first configurable transparency log design,\r\nLegoLog, which we implement and empirically evaluate end-\r\nto-end for three specialized transparency logs. We also show\r\nthat LegoLog can express six different applications, and\r\nwe compare the asymptotic complexity of LegoLog and\r\nexisting transparency logs tailored to individual applications.\r\nWe find that configurability does not come at the cost of\r\nperformance: LegoLog can capture a variety of applications\r\nwhile performing comparably to existing, special-purpose\r\ntransparency logs.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Vivian Fang",
+            "orcid": "0000-0002-9693-5438"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Stanford University",
+                    "ror": "https://ror.org/00f54p054"
+                },
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "ror": "https://ror.org/042nb2s44"
+                }
+            ],
+            "fullName": "Emma Dauterman",
+            "orcid": "0000-0003-0025-1742"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Akshay Ravoor"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Akshit Dewan"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "University of California, Berkeley",
+                    "ror": "https://ror.org/01an7q238"
+                }
+            ],
+            "fullName": "Raluca Ada Popa",
+            "orcid": "0000-0001-8899-801X"
+        }
+    ],
+    "category": "Implementation",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-03T03:12:35Z"
+        }
+    ],
+    "keywords": [
+        "transparency logs"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution-NonCommercial-NoDerivs",
+        "name": "CC BY-NC-ND",
+        "reference": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "pdffile": "2025/1234.pdf",
+    "pid": "1234",
+    "pubtype": {
+        "note": "EuroS&P 2025",
+        "pubtype": "OTHER",
+        "revisiontype": "SAME"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "LegoLog: A configurable transparency log",
+    "year": 2025,
+    "repo": [
+        "https://github.com/vivi/legolog",
+        "https://github.com/vivi/legolog",
+        "https://github.com/google/model-transparency",
+        "https://github.com/google/model-transparency",
+        "github.com/google/ keytransparency/blob/master/docs/design_new.md",
+        "github.com/google/ keytransparency/blob/master/docs/design_new.md",
+        "https://github.com/transparency-dev/trillian-tessera",
+        "https://github.com/transparency-dev/trillian-tessera",
+        "https://github.com/google/trillian",
+        "https://github.com/vivi/legolog"
+    ]
+}
+,
+{
+    "abstract": "HiAE is a recently proposed high-throughput authenticated encryption algorithm that achieves exceptional performance on both x86 and ARM architectures. Following its publication, several cryptanalysis papers have claimed that HiAE\u2019s 256-bit encryption security is broken under the nonce-respecting model. In this note, we clarify that the claimed attacks rely critically on submitting forged-tag decryption queries \u2014 a type of behavior explicitly excluded by HiAE\u2019s original security model.\r\n\r\nHiAE was designed under a standard nonce-based AEAD setting without decryption oracle access, offering 256-bit security against key and state recovery, and 128-bit security against forgery. This design approach follows the same principle as well-known schemes such as AEGIS and MORUS.\r\n\r\nThe conclusion that HiAE is broken is based on a misinterpretation of its security model, as the attacks rely on conditions that the design explicitly excludes.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Huawei International Pte Ltd."
+                }
+            ],
+            "fullName": "Han Chen"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Huawei International Pte Ltd."
+                }
+            ],
+            "fullName": "Tao Huang"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Huawei International Pte Ltd."
+                }
+            ],
+            "fullName": "Phuong Pham"
+        },
+        {
+            "affiliations": [
+                {
+                    "name": "Huawei International Pte Ltd."
+                }
+            ],
+            "fullName": "Shuang Wu"
+        }
+    ],
+    "category": "Secret-key cryptography",
+    "history": [
+        {
+            "action": "revised",
+            "when": "2025-07-09T02:06:59Z"
+        },
+        {
+            "action": "received",
+            "when": "2025-07-03T06:04:39Z"
+        }
+    ],
+    "keywords": [
+        "Authenticated Encryption",
+        "HiAE"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1235.pdf",
+    "pid": "1235",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "HiAE Remains Secure in Its Intended Model: A Clarification of Claimed Attacks",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
+,
+{
+    "abstract": "In 2000, Pliam showed that there does not exist an upper or lower bound in terms of Shannon entropy alone for the number of guesses required in order to guess some randomly sampled element $s$ with certainty $0<q<1$, denoted as marginal guesswork. \r\n   In comparison, it was shown by Arikan in 1996 that, if the distribution is defined over finite support, the expected guesswork, that is the expected amount of trials it takes to guess some random element $s$ with certainty, is bound in terms of R\\'enyi entropy $\\operatorname{H}_{1/2}$.\r\n   In this paper, we  utilize the Theorem of Berry-Ess\\'een to amend Pliams result. We show that there exists some asymptotic expression for the marginal guesswork in terms of Shannon entropy, variance in information and the probit function, provided $q$ is fixed.",
+    "authors": [
+        {
+            "affiliations": [
+                {
+                    "name": "Ruhr University Bochum",
+                    "ror": "https://ror.org/04tsk2644"
+                }
+            ],
+            "fullName": "Timo Glaser",
+            "orcid": "0009-0001-8970-3153"
+        }
+    ],
+    "category": "Foundations",
+    "history": [
+        {
+            "action": "received",
+            "when": "2025-07-03T10:17:54Z"
+        }
+    ],
+    "keywords": [
+        "Guesswork",
+        "Theorem of Berry-Esseen",
+        "Shannon Entropy",
+        "R\u00e9nyi Entropy",
+        "Probit Function",
+        "Variance in Information"
+    ],
+    "license": {
+        "label": "Creative Commons Attribution",
+        "name": "CC BY",
+        "reference": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pdffile": "2025/1236.pdf",
+    "pid": "1236",
+    "pubtype": {
+        "pubtype": "PREPRINT"
+    },
+    "schema_version": "1.0",
+    "status": "approved",
+    "title": "Exploring Marginal Guesswork with the Theorem of Berry-Ess\u00e9en",
+    "year": 2025,
+    "repo": [
+        "none"
+    ]
+}
 ]
