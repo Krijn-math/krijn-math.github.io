@@ -1,4 +1,5 @@
 pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_week;;;https://github.com/pegasis4d
+improving special cases of the computational isogeny problem;;;steven galbraith, valerie gilchrist, damien robert;;;2025/1243;;;last_month;;;none
 return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real santos, krĳn reĳnders;;;2024/948;;;last_month;;;https://github.com/Krijn-math/return-of-the-kummer
 klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_month;;;https://github.com/KLPT2/KLPT2
 computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_month;;;https://github.com/fffmath/AsymptoticBounds
@@ -95,6 +96,5 @@ lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki mori
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;other;;;none
 cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;other;;;none
 isogeny problems with level structure;;;luca de feo, tako boris fouotsa, lorenz panny;;;2024/459;;;other;;;https://issikebrokenyet.github.io/
-computing orientations from the endomorphism ring of supersingular curves and applications;;;jonathan komada eriksen, antonin leroux;;;2024/146;;;other;;;https://github.com/Jonathke/Computing-Optimal-Embeddings
 an efficient adaptive attack against festa;;;guoqing zhou, maozhi xu;;;2024/345;;;other;;;none
 a simpler and more efficient reduction of dlog to cdh for abelian group actions;;;steven galbraith, yi-fu lai, hart montgomery;;;2024/191;;;other;;;none
