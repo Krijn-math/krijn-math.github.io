@@ -1,3 +1,4 @@
+let us walk on the 3-isogeny graph: efficient, fast, and simple;;;jesús-javier chi-domínguez, eduardo ochoa-jimenez, ricardo-neftalí pontaza-rodas;;;2025/691;;;last_week;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
 pisignhd: a new structure for the sqisign family with flexible applicability;;;kaizhan lin, weize wang, chang-an zhao, yunlei zhao;;;2024/1404;;;last_week;;;https://github.com/Kaizhan-Lin/PIsignHD
 pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_month;;;https://github.com/pegasis4d
 improving special cases of the computational isogeny problem;;;steven galbraith, valerie gilchrist, damien robert;;;2025/1243;;;last_month;;;none
@@ -5,7 +6,7 @@ return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real sant
 klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_month;;;https://github.com/KLPT2/KLPT2
 computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_month;;;https://github.com/fffmath/AsymptoticBounds
 engel p-adic supersingular isogeny-based cryptography over laurent series;;;ilias cherkaoui, ciaran clarke, indrakshi dey;;;2025/1178;;;last_month;;;none
-experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_month;;;none
+experimentally studying path-finding problem between conjugates in supersingular isogeny graphs: optimizing primes and powers to speed-up cycle finding;;;madhurima mukhopadhyay;;;2025/189;;;last_year;;;none
 tanuki: new frameworks for (concurrently secure) blind signatures from post-quantum groups actions;;;lucjan hanzlik, yi-fu lai, marzio mula, eugenio paracucchi, daniel slamanig, gang tang;;;2025/1100;;;last_year;;;https://pqcalteq.github.io/
 isogeny-based key exchange from orientations of large discriminant;;;marc houben;;;2025/1098;;;last_year;;;https://github.com/friends-of-quaternions/deuring
 key updatable identity-based-signature schemes;;;tobias guggemos, farzin renan;;;2025/1094;;;last_year;;;https://github.com/relic-toolkit/relic
@@ -24,7 +25,6 @@ simple power analysis attack on sqisign;;;anisha mukherjee, maciej czuprynko, da
 efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_year;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
 superglue: fast formulae for (2,2) gluing isogenies;;;max duparc;;;2025/736;;;last_year;;;none
 universal blind and verifiable delegated quantum computation with classical clients;;;vicent esteve voltes;;;2025/734;;;last_year;;;none
-let us walk on the 3-isogeny graph: efficient, fast, and simple;;;jesús-javier chi-domínguez, eduardo ochoa-jimenez, ricardo-neftalí pontaza-rodas;;;2025/691;;;last_year;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
 simpler and faster pairings from the montgomery ladder;;;giacomo pope, krĳn reĳnders, damien robert, alessandro sferlazza, benjamin smith;;;2025/672;;;last_year;;;https://github.com/GiacomoPope/cubical-pairings
 sqiasignhd: sqisignhd adaptor signature;;;farzin renan, péter kutas;;;2024/561;;;last_year;;;none
 optimized one-dimensional sqisign verification on intel and cortex-m4;;;marius a. aardal, gora adj, arwa alblooshi, diego f. aranha, isaac a. canales-martínez, jorge chavez-saab, décio luiz gazzoni filho, krĳn reĳnders, francisco rodríguez-henríquez;;;2024/1563;;;last_year;;;https://github.com/SQISign/the-sqisign
