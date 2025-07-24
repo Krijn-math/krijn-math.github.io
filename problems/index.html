@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Unsolved Isogeny Problems</title>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      background: #fefefe;
+      color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .problem {
+      margin-bottom: 2em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .bounty {
+      color: #0077cc;
+      cursor: pointer;
+    }
+
+    .donors {
+      display: none;
+      margin-top: 0.5em;
+      padding-left: 1em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The Isogeny Problems</h1>
+
+  <div id="problems"></div>
+
+  <!-- Problem 1 -->
+
+
+  <div class="title">Problem 1: The Supersingular Isogeny Problem</div>
+  <p>
+    Given two supersingular elliptic curves \( E \) and \( E' \) over a finite field
+    \( \mathbb{F}_{p^2} \),
+    compute an explicit isogeny \( \varphi : E \to E' \).
+    A solution is accepted when either:
+  <ul>
+    <li>it gives a deterministic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \) </li>
+    <li>it gives a probabilistic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \) with
+      non-negligible failure probablity</li>
+  </ul>
+  <b>OR</b>, a solution shows that such an algorithm cannot exist.
+  </p>
+
+  <b>Reward:</b> € 100
+
+  <div class="problem"></div>
+
+
+  <!-- Problem 2 -->
+
+
+  <div class="title">Problem 2: The Vectorization Problem for Oriented Elliptic Curves</div>
+  <p>
+    Given two \( O \)-oriented elliptic curves \( (E, \omega) \) and \( (E', \omega') \),
+    find an ideal \( \mathfrak{a} \) such that \( \mathfrak{a} \ast (E, \omega) = (E', \omega') \).
+    A solution is accepted when either:
+  <ul>
+    <li>it gives a deterministic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \) </li>
+    <li>it gives a probabilistic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \), with
+      non-negligible failure probablity</li>
+  </ul>
+  <b>OR</b>, a solution shows that such an algorithm cannot exist.
+  </p>
+
+  <b>Reward:</b> € 100
+
+  <div class="problem"></div>
+
+
+  <!-- Problem 3 -->
+
+
+  <div class="title">Problem 3: Hashing into Supersingular Curves</div>
+  <p>
+    Define a cryptographic hash function \( \mathcal{H} \) that takes a binary string \( \mathtt{m} \)
+    and returns a supersingular \( j \)-invariant over \(\mathbb{F}_{p^2} \). A correct solution contains the
+    description of a hash function that satisfies the following properties:
+  <ol>
+    <li>It is efficient and deterministic.</li>
+    <li>It is hard to find a collision, that is, two binary strings \( \mathtt{m}_1 \) and \( \mathtt{m}_2 \) such that
+      \( \mathcal{H}( \mathtt{m}_1 ) = \mathcal{H}( \mathtt{m}_2 ) \).</li>
+    <li>It is hard to invert: given an \( h \) in the codomain, it is hard to compute a binary string \( \mathtt{m} \)
+      such that \( \mathcal{H}( \mathtt{m} ) = h \).</li>
+    <li>The \(j\)-invariants are uniformly distributed in the codomain.</li>
+  </ol>
+  <b>OR</b>, a solution shows that such a function cannot exist.
+  </p>
+
+  <b>Reward:</b> € 100
+
+  <div class="problem"></div>
+
+  <!-- Problem 4 -->
+
+
+  <div class="title">Problem 4: Optimal KLPT</div>
+  <p>
+    Given a prime number \( p \), a maximal order \( O \) in \(B_{p, \infty}\),
+    and a left integral \( O \)-ideal \( I \), find an equivalent ideal \( J \sim I \)
+    of norm \( N(J) = \ell^e \). A correct solution contains the description of an
+    algorithm that satisfies the following properties:
+  <ol>
+    <li>It is efficient and deterministic, or probabilistic with non-negligible failure probablity.</li>
+    <li>The norm of \( J \) is (close-to) optimal.</li>
+  </ol>
+  <b>OR</b>, a solution shows that such an algorithm cannot exist.
+  </p>
+
+  <b>Reward:</b> € 100
+
+  <div class="problem"></div>
+
+  <!-- Problem 5 -->
+
+
+  <div class="title">Problem 5: Random Prime Isogenies</div>
+  <p>
+    Given a curve \( E \) over a finite field \( \mathbb{F}_q \) and a positive integer \( n \), generate an isogeny
+    \( \varphi : E \to E' \) of degree \( n \) where \( E' \) is some other curve.
+    A solution contains the description of an algorithm that satisfies the following
+    properties:
+  <ol>
+    <li>It efficiently computes the j-invariant of the codomain \( E' \).</li>>
+    <li>It efficiently computes \( \varphi(P) \) for any point \( P \in E(\mathbb{F}_q) \).</li>
+    <li>It requires no a priori knowledge of the endomorphism ring \( \operatorname{End}(E) \).</li>
+  </ol>
+  <b>OR</b>, a solution shows that such an algorithm cannot exist.
+  </p>
+
+  <b>Reward:</b> € 100
+
+  <div class="problem"></div>
+
+  <!-- Problem 6 -->
+
+
+  <div class="title">Problem 6: Non-smooth Interpolation</div>
+  <p>
+    Given \( \operatorname{End}(E) \) and an isogeny \( \varphi : E \to E' \) in interpolation form,
+    where the points may have large non-smooth order,
+    find generators of the ideal \( I_\varphi \). A solution is accepted when either:
+  <ul>
+    <li>it gives an efficient deterministic algorithm</li>
+    <li>it gives an efficient probabilistic algorithm, with non-negligible failure probablity</li>
+  </ul>
+  <b>OR</b>, a solution shows that such an algorithm cannot exist.
+  </p>
+
+  <b>Reward:</b> € 100
+
+  <div class="problem"></div>
+
+  <!-- Problem 7 -->
+
+
+  <div class="title">Problem 7: Strong Encryption Protocols</div>
+  <p>
+    Construct post-quantum encryption schemes, whose security reduces to (a small variant of)
+    the Endomorphism Ring Problem. Several solutions can be accepted for the following constructions:
+  <ol>
+    <li>An efficient post-quantum key exchange.</li>
+    <li>An efficient post-quantum public-key encryption scheme.</li>
+    <li>An efficient post-quantum identity-based encryption scheme.</li>
+    <li>An efficient post-quantum attribute-based encryption scheme.</li>
+  </ol>
+  <b>OR</b>, a solution that shows that one of these cannot exist.
+  </p>
+
+  <b>Reward:</b> € 100
+
+  <div class="problem"></div>
+
+  <!-- Problem 8 -->
+
+  <div class="title">Problem 8: The Quantum Gap</div>
+  <p>
+    Give an efficient classical algorithm for any of the below problems, where we have efficient quantum algorithms.
+  <ol>
+    <li>The recovery of \( \operatorname{End}(E') \), given an efficient representation of an isogeny \( E \to E' \),
+      and knowledge of \( \operatorname{End}(E) \).</li>
+    <li>The equivalence or inequivalence of vectorization and parallelization for isogeny group actions</li>
+  </ol>
+  <b>OR</b>, show that a classical reduction cannot exist.
+  </p>
+
+  <b>Reward:</b> € 100
+
+  <div class="problem"></div>
+
+</body>
+
+</html>
