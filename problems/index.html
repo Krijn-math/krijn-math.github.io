@@ -27,7 +27,27 @@
     blockquote {
       width: 70%;
     }
+    #back-to-top {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 10px 220px;
+    font-size: 12px;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    opacity: 0;
+    /* display: none; */
+    pointer-events: none;
+    /* Prevent clicks when hidden */
+    /* transition: opacity 0.1s ease-in-out; */
+}
 
+#back-to-top:hover {
+    opacity: 1;
+}
   </style>
 </head>
 
@@ -74,9 +94,9 @@
     <br><br>
     A solution is accepted when either:
   <ul>
-    <li>it gives a deterministic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \) </li>
+    <li>it gives a deterministic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \),</li>
     <li>it gives a probabilistic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \) with
-      non-negligible failure probablity</li>
+      non-negligible failure probablity,</li>
   </ul>
   <b>OR</b>, a solution shows that such an algorithm cannot exist.
   </p>
@@ -102,7 +122,7 @@
   <ul>
     <li>it gives a deterministic algorithm with time complexity below \( L_d( 1/2 ) \), </li>
     <li>it gives a probabilistic algorithm with time complexity below \( L_d( 1/2 ) \), with
-      non-negligible failure probablity</li>
+      non-negligible failure probablity,</li>
   </ul>
   <b>OR</b>, a solution shows that such an algorithm cannot exist.
   </p>
@@ -179,7 +199,7 @@
     A solution contains the description of an algorithm that satisfies the following
     properties:
   <ol>
-    <li>It efficiently computes the j-invariant of the codomain \( E' \).</li>
+    <li>It efficiently computes the \(j\)-invariant of the codomain \( E' \).</li>
     <li>It efficiently computes \( \varphi(P) \) for any point \( P \in E(\mathbb{F}_q) \).</li>
     <li>It requires no a priori knowledge of the endomorphism ring \( \operatorname{End}(E) \).</li>
   </ol>
@@ -204,8 +224,8 @@
     <br><br>
     A solution is accepted when either:
   <ul>
-    <li>it gives an efficient deterministic algorithm</li>
-    <li>it gives an efficient probabilistic algorithm, with non-negligible failure probablity</li>
+    <li>it gives an efficient deterministic algorithm,</li>
+    <li>it gives an efficient probabilistic algorithm, with non-negligible failure probablity,</li>
   </ul>
   <b>OR</b>, a solution shows that such an algorithm cannot exist.
   </p>
@@ -249,7 +269,7 @@
   <ol>
     <li>The recovery of \( \operatorname{End}(E') \), given an efficient representation of an isogeny \( E \to E' \),
       and knowledge of \( \operatorname{End}(E) \).</li>
-    <li>The equivalence or inequivalence of vectorization and parallelization for isogeny group actions</li>
+    <li>The equivalence or inequivalence of vectorization and parallelization for isogeny group actions.</li>
   </ol>
   <b>OR</b>, show that a classical reduction cannot exist.
   </p>
@@ -263,7 +283,26 @@
   <p>
     <a href="mailto:crypto.krijn@gmail.com">Mail</a>
     your solutions in the form of a paper, preprint, or pdf.</p>
-
+    <br>
+    <br>  <br>
+    <br>
+    <div id="back-to-top">BACK TO TOP</div>
+    <script>
+      document.addEventListener("scroll", function () {
+        let button = document.getElementById("back-to-top");
+        if (window.scrollY < 200) {  // Show after scrolling 200px down
+          button.style.opacity = "0";
+          button.style.pointerEvents = "none";  // Disable clicks when hidden
+        } else {
+          button.style.opacity = "0.3";
+          button.style.pointerEvents = "auto";  // Enable clicks
+        }
+      });
+  
+      document.getElementById("back-to-top").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
 
 </body>
 
