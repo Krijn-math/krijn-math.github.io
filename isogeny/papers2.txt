@@ -1,7 +1,8 @@
+deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_week;;;https://github.com/houbenmr/DeterministicClassGroupActions
 exploring kaneko’s bound: on multi-edges, loops and the diameter of the supersingular ℓ-isogeny graph;;;sebastiano boscardin, sebastian a. spindler;;;2025/1361;;;last_week;;;https://github.com/S17A05/KanekoExploration
 climbing and descending tall isogeny volcanos;;;steven galbraith;;;2024/924;;;last_week;;;none
 a compact post-quantum strong designated verifier signature scheme from isogenies;;;farzin renan;;;2025/1335;;;last_week;;;none
-fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_week;;;https://github.com/Breaking-SIDH/direct-attack
+fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_month;;;https://github.com/Breaking-SIDH/direct-attack
 generation of fast finite field arithmetic for cortex-m4 with ecdh and sqisign applications;;;felix carvalho rodrigues, décio gazzoni filho, gora adj, isaac a. canales-martínez, jorge chávez-saab, julio lópez, michael scott, francisco rodríguez-henríquez;;;2025/1322;;;last_month;;;https://github.com/hayatofujii/curve25519-cortex-m4
 on the relations between matchmaking public key encryption and public key authenticated encryption with keyword search;;;takeshi yoshida, keita emura;;;2025/1297;;;last_month;;;none
 the computational refined humbert invariant problem is equivalent to the computational isogeny problem;;;eda kırımlı, chloe martindale;;;2025/1295;;;last_month;;;https://github.com/NSinvariant/RHI/
@@ -26,7 +27,6 @@ sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimen
 hidden number problems in fiat-shamir based post-quantum signatures;;;yi-fu lai, jonas meers, julian nowakowski;;;2025/913;;;last_year;;;none
 sqisign2dpush: faster signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2025/897;;;last_year;;;https://github.com/hiroshi-onuki/SQIsign2D-Push
 improved subfield curve search for specific field characteristics;;;jesús-javier chi-domínguez;;;2025/226;;;last_year;;;none
-deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_year;;;https://github.com/houbenmr/DeterministicClassGroupActions
 constant-time integer arithmetic for sqisign;;;fatna kouider, anisha mukherjee, david jacquemin, péter kutas;;;2025/832;;;last_year;;;https://github.com/SQISign/sqisign-ec23
 simple power analysis attack on sqisign;;;anisha mukherjee, maciej czuprynko, david jacquemin, péter kutas, sujoy sinha roy;;;2025/830;;;last_year;;;git@github.com:anishamukh/Key-Recovery-of-SQIsign.git
 efficient theta-based algorithms  for computing (ℓ, ℓ)-isogenies  on kummer surfaces for arbitrary odd ℓ;;;ryo yoshizumi, hiroshi onuki, ryo ohashi, momonari kudo, koji nuida;;;2024/1519;;;last_year;;;https://github.com/Yoshizumi-Ryo/ellell-isogeny_sage
