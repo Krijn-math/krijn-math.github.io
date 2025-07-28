@@ -90,13 +90,14 @@
   <center><h4>Problem 2</h4>
     <h3>Vectorization for Oriented Elliptic Curves</h3></center>
   <p>
-    Given two \( O \)-oriented elliptic curves \( (E, \omega) \) and \( (E', \omega') \),
+    Given two \( \mathcal{O} \)-oriented elliptic curves \( (E, \omega) \) and \( (E', \omega') \),
+    with  \( d =  |\operatorname{disc}(\mathcal{O})| \),
     find an ideal \( \mathfrak{a} \) such that \( \mathfrak{a} \ast (E, \omega) = (E', \omega') \).
     <br><br>
     A solution is accepted when either:
   <ul>
-    <li>it gives a deterministic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \) </li>
-    <li>it gives a probabilistic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \), with
+    <li>it gives a deterministic algorithm with time complexity below \( L_d( 1/2 ) \), </li>
+    <li>it gives a probabilistic algorithm with time complexity below \( L_d( 1/2 ) \), with
       non-negligible failure probablity</li>
   </ul>
   <b>OR</b>, a solution shows that such an algorithm cannot exist.
