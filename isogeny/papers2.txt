@@ -1,3 +1,5 @@
+a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_week;;;none
+cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_week;;;https://github.com/jtcc2/cycles-and-cuts
 a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_week;;;none
 deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_week;;;https://github.com/houbenmr/DeterministicClassGroupActions
 exploring kaneko’s bound: on multi-edges, loops and the diameter of the supersingular ℓ-isogeny graph;;;sebastiano boscardin, sebastian a. spindler;;;2025/1361;;;last_month;;;https://github.com/S17A05/KanekoExploration
@@ -48,13 +50,11 @@ blind signatures from cryptographic group actions;;;dung hoang duong, xuan thanh
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_year;;;https://github.com/levanin/cgl_rs
 radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_year;;;https://github.com/GiacomoPope/ThetaCGL
 constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_year;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
-a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_year;;;none
 poké: a compact and efficient pke from higher-dimensional isogenies;;;andrea basso, luciano maino;;;2024/624;;;last_year;;;https://github.com/andreavico/POKE-PKE
 unconditional foundations for supersingular isogeny-based cryptography;;;arthur herlédan le merdy, benjamin wesolowski;;;2025/271;;;last_year;;;none
 halving differential additions on kummer lines;;;damien robert, nicolas sarkis;;;2024/1582;;;last_year;;;https://gitlab.inria.fr/nsarkis/half-diff-add
 computing quaternion embeddings and endomorphism rings of supersingular oriented elliptic curves;;;maher mamah;;;2025/186;;;last_year;;;none
 the supersingular isogeny path and endomorphism ring problems: unconditional reductions;;;maher mamah;;;2024/1569;;;last_year;;;none
-cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_year;;;https://github.com/jtcc2/cycles-and-cuts
 efficient algorithms for the detection of (n,n)-splittings and endomorphisms;;;maria corte-real santos, craig costello, sam frengley;;;2025/147;;;last_year;;;https://github.com/mariascrs/SplitSearcher
 prism: simple and compact identification and signatures from large prime degree isogenies;;;andrea basso, giacomo borin, wouter castryck, maria corte-real santos, riccardo invernizzi, antonin leroux, luciano maino, frederik vercauteren, benjamin wesolowski;;;2025/135;;;last_year;;;https://github.com/KULeuven-COSIC/PRISM
 dctidh: fast & deterministic ctidh;;;fabio campos, andreas hellenbrand, michael meyer, krĳn reĳnders;;;2025/107;;;last_year;;;https://github.com/PaZeZeVaAt/dCTIDH/
