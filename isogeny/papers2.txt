@@ -1,7 +1,7 @@
 a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_week;;;none
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_week;;;https://github.com/jtcc2/cycles-and-cuts
 a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_week;;;none
-deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_week;;;https://github.com/houbenmr/DeterministicClassGroupActions
+deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_month;;;https://github.com/houbenmr/DeterministicClassGroupActions
 exploring kaneko’s bound: on multi-edges, loops and the diameter of the supersingular ℓ-isogeny graph;;;sebastiano boscardin, sebastian a. spindler;;;2025/1361;;;last_month;;;https://github.com/S17A05/KanekoExploration
 climbing and descending tall isogeny volcanos;;;steven galbraith;;;2024/924;;;last_month;;;none
 a compact post-quantum strong designated verifier signature scheme from isogenies;;;farzin renan;;;2025/1335;;;last_month;;;none
@@ -12,7 +12,7 @@ the computational refined humbert invariant problem is equivalent to the computa
 let us walk on the 3-isogeny graph: efficient, fast, and simple;;;jesús-javier chi-domínguez, eduardo ochoa-jimenez, ricardo-neftalí pontaza-rodas;;;2025/691;;;last_month;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
 pisignhd: a new structure for the sqisign family with flexible applicability;;;kaizhan lin, weize wang, chang-an zhao, yunlei zhao;;;2024/1404;;;last_month;;;https://github.com/Kaizhan-Lin/PIsignHD
 pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_month;;;https://github.com/pegasis4d
-improving special cases of the computational isogeny problem;;;steven galbraith, valerie gilchrist, damien robert;;;2025/1243;;;last_month;;;none
+improving special cases of the computational isogeny problem;;;steven galbraith, valerie gilchrist, damien robert;;;2025/1243;;;last_year;;;none
 return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real santos, krĳn reĳnders;;;2024/948;;;last_year;;;https://github.com/Krijn-math/return-of-the-kummer
 klpt²: algebraic pathfinding in dimension two and applications;;;wouter castryck, thomas decru, péter kutas, abel laval, christophe petit, yan bo ti;;;2025/372;;;last_year;;;https://github.com/KLPT2/KLPT2
 computing asymptotic bounds for small roots in coppersmith's method via sumset theory;;;yansong feng, hengyi luo, qiyuan chen, abderrahmane nitaj, yanbin pan;;;2024/1330;;;last_year;;;https://github.com/fffmath/AsymptoticBounds
