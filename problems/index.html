@@ -95,11 +95,11 @@
     <br><br>
     A solution is accepted when either:
   <ul>
-    <li>it gives a deterministic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \),</li>
-    <li>it gives a probabilistic algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2}} ) \) with
+    <li>it gives a deterministic classical algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2} - \varepsilon} ) \) for some \( \varepsilon > 0 \),</li>
+    <li>it gives a probabilistic classical algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2} - \varepsilon} ) \), for some \( \varepsilon > 0 \), with
       non-negligible success probablity,</li>
   </ul>
-  <b>OR</b>, a solution shows that such an algorithm cannot exist.
+  <b>OR</b>, a solution shows that such an algorithm cannot exist. 
   </p>
 
   <b>Reward:</b> € 100
@@ -115,8 +115,8 @@
   <center><h4>Problem 2</h4>
     <h3>Vectorization for Oriented Elliptic Curves</h3></center>
   <p>
+    Let \( \mathcal{O} \) be an imaginary quadratic order of discriminant \( d \).
     Given two \( \mathcal{O} \)-oriented elliptic curves \( (E, \omega) \) and \( (E', \omega') \),
-    with  \( d =  |\operatorname{disc}(\mathcal{O})| \),
     find an ideal \( \mathfrak{a} \) such that \( \mathfrak{a} \ast (E, \omega) = (E', \omega') \).
     <br><br>
     A solution is accepted when either:
@@ -125,7 +125,8 @@
     <li>it gives a probabilistic algorithm with time complexity below \( L_d( 1/2 ) \), with
       non-negligible success probablity,</li>
   </ul>
-  <b>OR</b>, a solution shows that such an algorithm cannot exist.
+  <b>OR</b>, a solution shows that such an algorithm cannot exist. 
+  The algorithm may be either a classical or a quantum algorithm.
   </p>
 
   <b>Reward:</b> € 100
@@ -141,22 +142,24 @@
   <center><h4>Problem 3</h4>
     <h3>Hashing into Supersingular Curves</h3></center>
   <p>
-    Define a cryptographic hash function \( \mathcal{H} \) that takes a binary string \( \mathtt{m} \)
-    and returns a supersingular \( j \)-invariant over \(\mathbb{F}_{p^2} \). 
+    Give an algorithm \( \mathcal{A} \) that takes a prime \( p \) and a binary string \( \mathtt{m} \),
+    and returns a supersingular curve \( E \) over \(\mathbb{F}_{p^2} \). 
     <br><br>
     A correct solution contains the
-    description of a hash function that satisfies the following properties:
+    description of an algorithm that satisfies the following properties:
   <ol>
-    <li>It is efficient and deterministic.</li>
-    <li>It is hard to find a collision, that is, two binary strings \( \mathtt{m}_1 \) and \( \mathtt{m}_2 \) such that
-      \( \mathcal{H}( \mathtt{m}_1 ) = \mathcal{H}( \mathtt{m}_2 ) \).</li>
-    <li>It is hard to invert: given an \( h \) in the codomain, it is hard to compute a binary string \( \mathtt{m} \)
-      such that \( \mathcal{H}( \mathtt{m} ) = h \).</li>
-    <li>The \(j\)-invariants are uniformly distributed in the codomain.</li>
+    <li>It is deterministic and polynomial time.</li>
+    <li>When  \( \mathtt{m} \) is a string of \( n \) uniformly random bits, the distribution of \( \mathcal{A}(p; r) \)
+      is close to uniform. 
+    </li>
+    <li>
+      There is no probabilistic polynomial time algorithm which on input \( p \) and \( r \), computes \( \operatorname{End}(E) \).
+    </li>
   </ol>
-  <b>OR</b>, a solution shows that such a function cannot exist.
+  <b>OR</b>, a solution shows that such a function cannot exist.<br>
+  By close to uniform, we mean that the statistical distance to the uniform distribution is a negligible function of \( n \). 
   </p>
-
+ 
   <b>Reward:</b> € 100
 
   <br>
@@ -202,7 +205,7 @@
   <ol>
     <li>It efficiently computes the \(j\)-invariant of the codomain \( E' \).</li>
     <li>It efficiently computes \( \varphi(P) \) for any point \( P \in E(\mathbb{F}_q) \).</li>
-    <li>It requires no a priori knowledge of the endomorphism ring \( \operatorname{End}(E) \).</li>
+    <li>It requires no a priori non-trivial knowledge of the endomorphism ring \( \operatorname{End}(E) \).</li>
   </ol>
   <b>OR</b>, a solution shows that such an algorithm cannot exist.
   </p>
