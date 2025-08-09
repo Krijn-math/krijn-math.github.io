@@ -1,3 +1,4 @@
+a note on the post-quantum security of identity-based encryption on isogenous pairing groups;;;malte andersch, cezary pilaszewicz, marian margraf;;;2025/1439;;;last_week;;;none
 orient express: using frobenius to express oriented isogenies;;;wouter castryck, riccardo invernizzi, gioella lorenzon, jonas meers, frederik vercauteren;;;2025/1047;;;last_week;;;https://github.com/KULeuven-COSIC/OrientExpress
 a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_month;;;none
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_month;;;https://github.com/jtcc2/cycles-and-cuts
@@ -97,4 +98,3 @@ supersingular hashing using lattès maps;;;daniel larsson;;;2024/539;;;other;;;n
 avoiding trusted setup in isogeny-based commitments;;;gustave tchoffo saah, tako boris fouotsa, emmanuel fouotsa, célestin nkuimi-jugnia;;;2024/531;;;other;;;none
 lit-sigamal: an efficient isogeny-based pke based on a lit diagram;;;tomoki moriya;;;2024/521;;;other;;;none
 distribution of cycles in supersingular ℓ-isogeny graphs;;;eli orvis;;;2024/509;;;other;;;none
-cca secure updatable encryption from non-mappable group actions;;;jonas meers, doreen riepel;;;2024/499;;;other;;;none
