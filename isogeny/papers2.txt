@@ -1,3 +1,4 @@
+mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_week;;;none
 large smooth twins from short lattice vectors;;;erik mulder, bruno sterner, wessel van woerden;;;2025/1462;;;last_week;;;https://github.com/fplll/g6k
 inke: fast isogeny-based pke using intermediate curves;;;hyeonhak kim, seokhie hong, suhri kim;;;2025/1458;;;last_week;;;https://github.com/SQISign/sqisign2d-west-ac24
 a note on the post-quantum security of identity-based encryption on isogenous pairing groups;;;malte andersch, cezary pilaszewicz, marian margraf;;;2025/1439;;;last_month;;;none
@@ -89,7 +90,6 @@ erebor and durian: full anonymous ring signatures from quaternions and isogenies
 a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;other;;;https://github.com/defeo/ss-isogeny-software
 a note on (2, 2)-isogenies via theta coordinates;;;jianming lin, saiyu wang, chang-an zhao;;;2024/971;;;other;;;none
 quantum cca-secure pke, revisited;;;navid alamati, varun maram;;;2024/944;;;other;;;none
-mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;other;;;none
 radical vélu isogeny formulae;;;thomas decru;;;2024/878;;;other;;;none
 on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, odalis ortega, amalia pizarro-madariaga;;;2024/851;;;other;;;https://github.com/TheParallelSquarerootVeluTeam/Parallel-Squareroot-Velu
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;other;;;none
