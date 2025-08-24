@@ -9,7 +9,7 @@ a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de f
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_month;;;https://github.com/jtcc2/cycles-and-cuts
 a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_month;;;none
 deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_month;;;https://github.com/houbenmr/DeterministicClassGroupActions
-exploring kaneko’s bound: on multi-edges, loops and the diameter of the supersingular ℓ-isogeny graph;;;sebastiano boscardin, sebastian a. spindler;;;2025/1361;;;last_month;;;https://github.com/S17A05/KanekoExploration
+exploring kaneko’s bound: on multi-edges, loops and the diameter of the supersingular ℓ-isogeny graph;;;sebastiano boscardin, sebastian a. spindler;;;2025/1361;;;last_year;;;https://github.com/S17A05/KanekoExploration
 climbing and descending tall isogeny volcanos;;;steven galbraith;;;2024/924;;;last_year;;;none
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_year;;;https://github.com/Breaking-SIDH/direct-attack
 generation of fast finite field arithmetic for cortex-m4 with ecdh and sqisign applications;;;felix carvalho rodrigues, décio gazzoni filho, gora adj, isaac a. canales-martínez, jorge chávez-saab, julio lópez, michael scott, francisco rodríguez-henríquez;;;2025/1322;;;last_year;;;https://github.com/hayatofujii/curve25519-cortex-m4
