@@ -1,7 +1,8 @@
-large smooth twins from short lattice vectors;;;erik mulder, bruno sterner, wessel van woerden;;;2025/1462;;;last_week;;;https://github.com/fplll/g6k
-a note on the post-quantum security of identity-based encryption on isogenous pairing groups;;;malte andersch, cezary pilaszewicz, marian margraf;;;2025/1439;;;last_week;;;none
-a compact post-quantum strong designated verifier signature scheme from isogenies;;;farzin renan;;;2025/1335;;;last_week;;;none
-mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_week;;;none
+exploring kaneko’s bound: on multi-edges, loops and the diameter of the supersingular ℓ-isogeny graph;;;sebastiano boscardin, sebastian a. spindler;;;2025/1361;;;last_week;;;https://github.com/S17A05/KanekoExploration
+large smooth twins from short lattice vectors;;;erik mulder, bruno sterner, wessel van woerden;;;2025/1462;;;last_month;;;https://github.com/fplll/g6k
+a note on the post-quantum security of identity-based encryption on isogenous pairing groups;;;malte andersch, cezary pilaszewicz, marian margraf;;;2025/1439;;;last_month;;;none
+a compact post-quantum strong designated verifier signature scheme from isogenies;;;farzin renan;;;2025/1335;;;last_month;;;none
+mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_month;;;none
 snake mackerel: an isogeny-based akem leveraging randomness reuse;;;jonas janneck, jonas meers, massimo ostuzzi, doreen riepel;;;2025/1474;;;last_month;;;https://github.com/Pierrick-Dartois/SQISignHD-lib
 inke: fast isogeny-based pke using intermediate curves;;;hyeonhak kim, seokhie hong, suhri kim;;;2025/1458;;;last_month;;;https://github.com/SQISign/sqisign2d-west-ac24
 orient express: using frobenius to express oriented isogenies;;;wouter castryck, riccardo invernizzi, gioella lorenzon, jonas meers, frederik vercauteren;;;2025/1047;;;last_month;;;https://github.com/KULeuven-COSIC/OrientExpress
@@ -9,7 +10,6 @@ a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de f
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_month;;;https://github.com/jtcc2/cycles-and-cuts
 a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_month;;;none
 deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_month;;;https://github.com/houbenmr/DeterministicClassGroupActions
-exploring kaneko’s bound: on multi-edges, loops and the diameter of the supersingular ℓ-isogeny graph;;;sebastiano boscardin, sebastian a. spindler;;;2025/1361;;;last_year;;;https://github.com/S17A05/KanekoExploration
 climbing and descending tall isogeny volcanos;;;steven galbraith;;;2024/924;;;last_year;;;none
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_year;;;https://github.com/Breaking-SIDH/direct-attack
 generation of fast finite field arithmetic for cortex-m4 with ecdh and sqisign applications;;;felix carvalho rodrigues, décio gazzoni filho, gora adj, isaac a. canales-martínez, jorge chávez-saab, julio lópez, michael scott, francisco rodríguez-henríquez;;;2025/1322;;;last_year;;;https://github.com/hayatofujii/curve25519-cortex-m4
