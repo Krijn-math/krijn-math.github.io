@@ -93,14 +93,10 @@
     \( \mathbb{F}_{p^2} \),
     compute an explicit isogeny \( \varphi : E \to E' \).
     <br><br>
-    A solution is accepted when either:
-  <ul>
-    <li>it gives a deterministic classical algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2} - \varepsilon} ) \) for some \( \varepsilon > 0 \),</li>
-    <li>it gives a probabilistic classical algorithm with time complexity below \( \mathcal{O} ( p^{\frac{1}{2} - \varepsilon} ) \), for some \( \varepsilon > 0 \), with
-      non-negligible success probablity,</li>
-  </ul>
+    A solution contains: the description of a classical algorithm 
+    with time complexity below \( \mathcal{O} ( p^{\frac{1}{2} - \varepsilon} ) \) for some \( \varepsilon > 0 \), <br><br>
   <b>OR</b>, a solution shows that such an algorithm cannot exist. 
-  </p>
+  </p><br>
 
   <b>Reward:</b> TBD.
 
@@ -119,15 +115,10 @@
     Given two \( \mathcal{O} \)-oriented elliptic curves \( (E, \omega) \) and \( (E', \omega') \),
     find an ideal \( \mathfrak{a} \) such that \( \mathfrak{a} \ast (E, \omega) = (E', \omega') \).
     <br><br>
-    A solution is accepted when either:
-  <ul>
-    <li>it gives a deterministic algorithm with time complexity below \( L_d( 1/2 ) \), </li>
-    <li>it gives a probabilistic algorithm with time complexity below \( L_d( 1/2 ) \), with
-      non-negligible success probablity,</li>
-  </ul>
+    A solution contains: the description of a classical or quantum algorithm with time complexity below \( L_d( 1/2 ) \), <br><br>
+    
   <b>OR</b>, a solution shows that such an algorithm cannot exist. 
-  The algorithm may be either a classical or a quantum algorithm.
-  </p>
+  </p><br>
 
   <b>Reward:</b> TBD.
 
@@ -149,11 +140,11 @@
     description of an algorithm that satisfies the following properties:
   <ol>
     <li>It is deterministic and polynomial time.</li>
-    <li>When  \( \mathtt{m} \) is a string of \( n \) uniformly random bits, the distribution of \( \mathcal{A}(p; r) \)
+    <li>When  \( \mathtt{m} \) is a string of \( n \) uniformly random bits, the distribution of \( \mathcal{A}(p; \mathtt{m}) \)
       is close to uniform. 
     </li>
     <li>
-      There is no probabilistic polynomial time algorithm which on input \( p \) and \( r \), computes \( \operatorname{End}(E) \).
+      There is no probabilistic polynomial time algorithm which on input \( p \) and \( \mathtt{m} \), computes \( \operatorname{End}(E) \).
     </li>
   </ol>
   <b>OR</b>, a solution shows that such a function cannot exist.<br>
@@ -176,14 +167,10 @@
     and a left integral \( O \)-ideal \( I \), find an equivalent ideal \( J \sim I \)
     of norm \( N(J) = \ell^e \). 
     <br><br>
-    A correct solution contains the description of an
-    algorithm that satisfies the following properties:
-  <ol>
-    <li>It is efficient and deterministic, or probabilistic with non-negligible success probablity.</li>
-    <li>The norm of \( J \) is (close-to) optimal.</li>
-  </ol>
+    A solution contains: the description of a polynomial-time 
+    algorithm that finds an ideal \( J \) with norm (close-to) optimal,<br><br>
   <b>OR</b>, a solution shows that such an algorithm cannot exist.
-  </p>
+  </p><br>
 
   <b>Reward:</b> A bar of Kvikk Lunsj.
 
@@ -200,15 +187,10 @@
     Given a curve \( E \) over a finite field \( \mathbb{F}_q \) and a positive integer \( n \), generate an isogeny
     \( \varphi : E \to E' \) of degree \( n \) where \( E' \) is some other curve.
     <br><br>
-    A solution contains the description of an algorithm that satisfies the following
-    properties:
-  <ol>
-    <li>It efficiently computes the \(j\)-invariant of the codomain \( E' \).</li>
-    <li>It efficiently computes \( \varphi(P) \) for any point \( P \in E(\mathbb{F}_q) \).</li>
-    <li>It requires no non-trivial knowledge of the endomorphism ring \( \operatorname{End}(E) \).</li>
-  </ol>
+    A solution contains: the description of a polynomial-time algorithm that requires no non-trivial knowledge of 
+    the endomorphism ring \( \operatorname{End}(E) \) and efficiently computes  \( \varphi(P) \) for any point \( P \in E(\mathbb{F}_q) \),<br><br>
   <b>OR</b>, a solution shows that such an algorithm cannot exist.
-  </p>
+  </p><br>
 
   <b>Reward:</b> TBD.
 
@@ -225,13 +207,10 @@
     Given \( \operatorname{End}(E) \) and a representation of an isogeny \( \varphi : E \to E' \),
     compute \( \operatorname{End}(E') \). 
     <br><br>
-    A solution is accepted when either:
-  <ul>
-    <li>it gives a <i>classical</i> efficient deterministic algorithm,</li>
-    <li>it gives a <i>classical</i> efficient probabilistic algorithm, with non-negligible failure probablity,</li>
-  </ul>
+    A solution contains: the description of a polynomial-time algorithm to compute \( \operatorname{End}(E') \)
+    for any representation of \( \varphi \), <br><br>
   <b>OR</b>, a solution shows that such an algorithm cannot exist.
-  </p>
+  </p><br>
 
   <b>Reward:</b> TBD.
 
