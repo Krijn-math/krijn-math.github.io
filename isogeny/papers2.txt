@@ -1,6 +1,9 @@
+sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimension one;;;zheng xu, kaizhan lin, chang-an zhao, yi ouyang;;;2025/920;;;last_week;;;https://github.com/Kaizhan-Lin/SQIsign2DSquare
+a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_week;;;none
+pisignhd: a new structure for the sqisign family with flexible applicability;;;kaizhan lin, weize wang, chang-an zhao, yunlei zhao;;;2024/1404;;;last_week;;;https://github.com/Kaizhan-Lin/PIsignHD
 tanuki: new frameworks for (concurrently secure) blind signatures from post-quantum groups actions;;;lucjan hanzlik, yi-fu lai, marzio mula, eugenio paracucchi, daniel slamanig, gang tang;;;2025/1100;;;last_week;;;https://pqcalteq.github.io/
 adaptive attack on static poké keys;;;david lim, yan bo ti;;;2025/1541;;;last_week;;;https://github.com/andreavico/POKE-PKE
-more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_week;;;https://github.com/QuSAC/IsogenyPoKviaCanonicalModPolys
+more efficient isogeny proofs of knowledge via canonical modular polynomials;;;thomas den hollander, sören kleine, marzio mula, daniel slamanig, sebastian a. spindler;;;2024/1738;;;last_month;;;https://github.com/QuSAC/IsogenyPoKviaCanonicalModPolys
 exploring kaneko’s bound: on multi-edges, loops and the diameter of the supersingular ℓ-isogeny graph;;;sebastiano boscardin, sebastian a. spindler;;;2025/1361;;;last_month;;;https://github.com/S17A05/KanekoExploration
 large smooth twins from short lattice vectors;;;erik mulder, bruno sterner, wessel van woerden;;;2025/1462;;;last_month;;;https://github.com/fplll/g6k
 a note on the post-quantum security of identity-based encryption on isogenous pairing groups;;;malte andersch, cezary pilaszewicz, marian margraf;;;2025/1439;;;last_month;;;none
@@ -8,10 +11,9 @@ a compact post-quantum strong designated verifier signature scheme from isogenie
 mathematical speculations on cryptography;;;anjali c b;;;2024/927;;;last_month;;;none
 snake mackerel: an isogeny-based akem leveraging randomness reuse;;;jonas janneck, jonas meers, massimo ostuzzi, doreen riepel;;;2025/1474;;;last_month;;;https://github.com/Pierrick-Dartois/SQISignHD-lib
 inke: fast isogeny-based pke using intermediate curves;;;hyeonhak kim, seokhie hong, suhri kim;;;2025/1458;;;last_month;;;https://github.com/SQISign/sqisign2d-west-ac24
-orient express: using frobenius to express oriented isogenies;;;wouter castryck, riccardo invernizzi, gioella lorenzon, jonas meers, frederik vercauteren;;;2025/1047;;;last_month;;;https://github.com/KULeuven-COSIC/OrientExpress
+orient express: using frobenius to express oriented isogenies;;;wouter castryck, riccardo invernizzi, gioella lorenzon, jonas meers, frederik vercauteren;;;2025/1047;;;last_year;;;https://github.com/KULeuven-COSIC/OrientExpress
 a complete security proof of sqisign;;;marius a. aardal, andrea basso, luca de feo, sikhar patranabis, benjamin wesolowski;;;2025/379;;;last_year;;;none
 cycles and cuts in supersingular l-isogeny graphs;;;sarah arpin, ross bowden, james clements, wissam ghantous, jason t. legrow, krystal maughan;;;2025/155;;;last_year;;;https://github.com/jtcc2/cycles-and-cuts
-a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_year;;;none
 deterministic algorithms for class group actions;;;marc houben;;;2025/847;;;last_year;;;https://github.com/houbenmr/DeterministicClassGroupActions
 climbing and descending tall isogeny volcanos;;;steven galbraith;;;2024/924;;;last_year;;;none
 fast computation of 2-isogenies in dimension 4 and cryptographic applications;;;pierrick dartois;;;2024/1180;;;last_year;;;https://github.com/Breaking-SIDH/direct-attack
@@ -19,7 +21,6 @@ generation of fast finite field arithmetic for cortex-m4 with ecdh and sqisign a
 on the relations between matchmaking public key encryption and public key authenticated encryption with keyword search;;;takeshi yoshida, keita emura;;;2025/1297;;;last_year;;;none
 the computational refined humbert invariant problem is equivalent to the computational isogeny problem;;;eda kırımlı, chloe martindale;;;2025/1295;;;last_year;;;https://github.com/NSinvariant/RHI/
 let us walk on the 3-isogeny graph: efficient, fast, and simple;;;jesús-javier chi-domínguez, eduardo ochoa-jimenez, ricardo-neftalí pontaza-rodas;;;2025/691;;;last_year;;;https://github.com/hiroshi-onuki/QFESTA-SageMath
-pisignhd: a new structure for the sqisign family with flexible applicability;;;kaizhan lin, weize wang, chang-an zhao, yunlei zhao;;;2024/1404;;;last_year;;;https://github.com/Kaizhan-Lin/PIsignHD
 pegasis: practical effective class group action using 4-dimensional isogenies;;;pierrick dartois, jonathan komada eriksen, tako boris fouotsa, arthur herlédan le merdy, riccardo invernizzi, damien robert, ryan rueger, frederik vercauteren, benjamin wesolowski;;;2025/401;;;last_year;;;https://github.com/pegasis4d
 improving special cases of the computational isogeny problem;;;steven galbraith, valerie gilchrist, damien robert;;;2025/1243;;;last_year;;;none
 return of the kummer: a toolbox for genus-2 cryptography;;;maria corte-real santos, krĳn reĳnders;;;2024/948;;;last_year;;;https://github.com/Krijn-math/return-of-the-kummer
@@ -32,7 +33,6 @@ key updatable identity-based-signature schemes;;;tobias guggemos, farzin renan;;
 another look at the quantum security of the vectorization problem with shifted inputs;;;paul frixons, valerie gilchrist, péter kutas, simon-philipp merz, christophe petit;;;2025/376;;;last_year;;;none
 cryptanalysis of isogeny-based quantum money with rational points;;;hyeonhak kim, donghoe heo, seokhie hong;;;2025/201;;;last_year;;;none
 upke and ukem schemes from supersingular isogenies;;;pratima jana, ratna dutta;;;2025/1010;;;last_year;;;none
-sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimension one;;;zheng xu, kaizhan lin, chang-an zhao, yi ouyang;;;2025/920;;;last_year;;;https://github.com/Kaizhan-Lin/SQIsign2DSquare
 hidden number problems in fiat-shamir based post-quantum signatures;;;yi-fu lai, jonas meers, julian nowakowski;;;2025/913;;;last_year;;;none
 sqisign2dpush: faster signature scheme using 2-dimensional isogenies;;;kohei nakagawa, hiroshi onuki;;;2025/897;;;last_year;;;https://github.com/hiroshi-onuki/SQIsign2D-Push
 improved subfield curve search for specific field characteristics;;;jesús-javier chi-domínguez;;;2025/226;;;last_year;;;none
