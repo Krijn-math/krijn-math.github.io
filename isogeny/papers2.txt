@@ -1,3 +1,5 @@
+endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants;;;dimitri koshelev, antonio sanso;;;2024/1985;;;last_week;;;https://github.com/daira/pluto-eris
+faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_week;;;https://github.com/levanin/cgl_rs
 sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimension one;;;zheng xu, kaizhan lin, chang-an zhao, yi ouyang;;;2025/920;;;last_week;;;https://github.com/Kaizhan-Lin/SQIsign2DSquare
 a note on the advanced use of the tate pairing;;;krĳn reĳnders;;;2025/477;;;last_week;;;none
 pisignhd: a new structure for the sqisign family with flexible applicability;;;kaizhan lin, weize wang, chang-an zhao, yunlei zhao;;;2024/1404;;;last_week;;;https://github.com/Kaizhan-Lin/PIsignHD
@@ -47,13 +49,11 @@ optimized one-dimensional sqisign verification on intel and cortex-m4;;;marius a
 signitc: supersingular isogeny graph non-interactive timed commitments;;;knud ahrens;;;2024/1225;;;last_year;;;none
 on some non-linear recurrences over finite fields linked to isogeny graphs;;;juan jesús  león, vicente muñoz;;;2025/608;;;last_year;;;none
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants, ii;;;dimitri koshelev, antonio sanso;;;2025/196;;;last_year;;;none
-endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants;;;dimitri koshelev, antonio sanso;;;2024/1985;;;last_year;;;https://github.com/daira/pluto-eris
 computing isomorphisms between products of supersingular elliptic curves;;;pierrick gaudry, julien soumier, pierre-jean spaenlehauer;;;2025/136;;;last_year;;;https://gitlab.inria.fr/superspecial-surfaces-isomorphisms/experiments
 models of kummer lines and galois representations;;;razvan barbulescu, damien robert, nicolas sarkis;;;2025/543;;;last_year;;;none
 division polynomials for arbitrary isogenies;;;katherine e. stange;;;2025/521;;;last_year;;;none
 an efficient collision attack on castryck-decru-smith’s hash function;;;ryo ohashi, hiroshi onuki;;;2024/1776;;;last_year;;;https://github.com/Ryo-Ohashi/CDScollision
 blind signatures from cryptographic group actions;;;dung hoang duong, xuan thanh khuc, youming qiao, willy susilo, chuanqi zhang;;;2025/397;;;last_year;;;https://csrc.nist.gov/news/2023/additional-pqc-digital-signature-candidates
-faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_year;;;https://github.com/levanin/cgl_rs
 radical 2-isogenies and cryptographic hash functions in dimensions 1, 2 and 3;;;sabrina kunzweiler, luciano maino, tomoki moriya, christophe petit, giacomo pope, damien robert, miha stopar, yan bo ti;;;2024/1732;;;last_year;;;https://github.com/GiacomoPope/ThetaCGL
 constant time lattice reduction in dimension 4 with application to sqisign;;;otto hanyecz, alexander karenin, elena kirshanova, péter kutas, sina schaeffler;;;2025/027;;;last_year;;;https://github.com/CTlll-SQIsign/CTlll-SQIsign
 poké: a compact and efficient pke from higher-dimensional isogenies;;;andrea basso, luciano maino;;;2024/624;;;last_year;;;https://github.com/andreavico/POKE-PKE
