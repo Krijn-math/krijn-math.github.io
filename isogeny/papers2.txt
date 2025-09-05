@@ -1,5 +1,6 @@
 optimized constant-time implementation of tersidh;;;taehun kang, donghoe heo, jeonghwan lee, suhri kim, changmin lee;;;2025/1563;;;last_week;;;none
 inke: fast isogeny-based pke using intermediate curves;;;hyeonhak kim, seokhie hong, suhri kim;;;2025/1458;;;last_week;;;https://github.com/SQISign/sqisign2d-west-ac24
+leaf: compact and efficient blind signature from code-based assumptions;;;yi-fu lai, edoardo persichetti;;;2025/1585;;;last_week;;;none
 endomorphisms for faster cryptography on elliptic curves of moderate cm discriminants;;;dimitri koshelev, antonio sanso;;;2024/1985;;;last_week;;;https://github.com/daira/pluto-eris
 faster proofs and vrfs from isogenies;;;shai levin, robi pedersen;;;2024/1626;;;last_week;;;https://github.com/levanin/cgl_rs
 sqisign2d²: new sqisign2d variant by leveraging power smooth isogenies in dimension one;;;zheng xu, kaizhan lin, chang-an zhao, yi ouyang;;;2025/920;;;last_week;;;https://github.com/Kaizhan-Lin/SQIsign2DSquare
@@ -86,7 +87,7 @@ sqisign2d-east: a new signature scheme using 2-dimensional isogenies;;;kohei nak
 extending class group action attacks via sesquilinear pairings;;;joseph macula, katherine e. stange;;;2024/880;;;last_year;;;none
 isogeny-based secure voting systems for large-scale elections;;;mohammed el baraka, siham ezzouak;;;2024/1472;;;last_year;;;none
 breaking and repairing sqisign2d-east;;;wouter castryck, mingjie chen, riccardo invernizzi, gioella lorenzon, frederik vercauteren;;;2024/1453;;;last_year;;;none
-key policy attribute-based encryption leveraging isogeny-based cryptography;;;madické diadji mbodj, anis bkakria;;;2024/1392;;;last_year;;;none
+key policy attribute-based encryption leveraging isogeny-based cryptography;;;madické diadji mbodj, anis bkakria;;;2024/1392;;;other;;;none
 foldable, recursive proofs of isogeny computation with reduced time complexity;;;krystal maughan, joseph near, christelle vincent;;;2024/1219;;;other;;;none
 erebor and durian: full anonymous ring signatures from quaternions and isogenies;;;giacomo borin, yi-fu lai, antonin leroux;;;2024/1185;;;other;;;https://github.com/giacomoborin/RingSQISign-poc
 a fast and efficient sike co-design: coarse-grained reconfigurable accelerators with custom risc-v microcontroller on fpga;;;jing tian, bo wu, lang feng, haochen zhang, zhongfeng wang;;;2024/1120;;;other;;;https://github.com/defeo/ss-isogeny-software
@@ -97,4 +98,3 @@ on the parallelization of square-root vélu's formulas;;;jorge chávez-saab, oda
 time-based cryptography from weaker assumptions: randomness beacons, delay functions and more;;;damiano abram, lawrence roy, mark simkin;;;2024/769;;;other;;;none
 efficient implementations of square-root vélu's formulas;;;jianming lin, weize wang, chang-an zhao, yuhao zheng;;;2024/584;;;other;;;none
 fault attack on sqisign;;;jeonghwan lee, donghoe heo, hyeonhak kim, gyusang kim, suhri kim, heeseok kim, seokhie hong;;;2024/581;;;other;;;none
-pairing optimizations for isogeny-based cryptosystems;;;shiping cai, kaizhan lin, chang-an zhao;;;2024/575;;;other;;;https://github.com/LinKaizhan/Pairingoptimizations
